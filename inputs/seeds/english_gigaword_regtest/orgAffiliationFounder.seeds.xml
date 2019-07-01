@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Founder" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="ross perot" slot1="reform party" />
+	<seed slot0="mao zedong" slot1="people 's republic of china" />
+	<seed slot0="sheikh ahmed yassin" slot1="hamas" />
+	<seed slot0="yasser arafat" slot1="fatah" />
+	<seed slot0="steve jobs" slot1="apple computer" />
+	<seed slot0="takafumi horie" slot1="livedoor" />
+	<seed slot0="bill gates" slot1="microsoft corp" />
+	<seed slot0="paul allen" slot1="microsoft" />
+	<seed slot0="ted turner" slot1="cnn" />
+	<seed slot0="steven p jobs" slot1="apple computer inc" />
+	<seed slot0="takafumi horie" slot1="livedoor co" />
+	<seed slot0="calisto tanzi" slot1="parmalat" />
+	<seed slot0="jerry yang" slot1="yahoo inc" />
+	<seed slot0="julian assange" slot1="wikileaks" />
+	<seed slot0="foday sankoh" slot1="revolutionary united front" />
+	<seed slot0="bill gates" slot1="microsoft" />
+	<seed slot0="li hongzhi" slot1="falun gong" />
+	<seed slot0="tony george" slot1="indy racing league" />
+	<seed slot0="paul allen" slot1="microsoft corp" />
+	<seed slot0="pat robertson" slot1="christian coalition" />
+	<seed slot0="sheik ahmed yassin" slot1="hamas" />
+	<seed slot0="mustafa kemal ataturk" slot1="turkish" />
+	<seed slot0="steve jobs" slot1="apple computer inc" />
+	<seed slot0="abu bakar bashir" slot1="jemaah islamiyah" />
+	<seed slot0="sheikh mujibur rahman" slot1="bangladeshi" />
+	<seed slot0="osama bin laden" slot1="al - qaida" />
+	<seed slot0="sheikh ahmed yassin" slot1="islamic resistance movement" />
+	<seed slot0="mikhail khodorkovsky" slot1="yukos" />
+	<seed slot0="harvey weinstein" slot1="miramax films" />
+	<seed slot0="mustafa kemal ataturk" slot1="turkey" />
+	<seed slot0="joseph lowery" slot1="southern christian leadership conference" />
+	<seed slot0="sam rainsy" slot1="khmer nation party" />
+	<seed slot0="jimmy carter" slot1="carter center" />
+	<seed slot0="mark zuckerberg" slot1="facebook" />
+	<seed slot0="jesus blancornelas" slot1="zeta" />
+	<seed slot0="larry page" slot1="google" />
+	<seed slot0="victor conte" slot1="balco" />
+	<seed slot0="james dobson" slot1="focus on the family" />
+	<seed slot0="harvey weinstein" slot1="miramax" />
+	<seed slot0="marc andreessen" slot1="netscape communications corp" />
+	<seed slot0="martha stewart" slot1="martha stewart living omnimedia" />
+	<seed slot0="muhammad yunus" slot1="grameen bank" />
+	<seed slot0="jeff bezos" slot1="amazoncom" />
+	<seed slot0="steven spielberg" slot1="dreamworks skg" />
+	<seed slot0="martin luther king jr" slot1="southern christian leadership conference" />
+	<seed slot0="jerry yang" slot1="yahoo" />
+	<seed slot0="mullah krekar" slot1="ansar al- islam" />
+	<seed slot0="sergey brin" slot1="google" />
+	<seed slot0="bernard kouchner" slot1="doctors without borders" />
+	<seed slot0="marvin hier" slot1="simon wiesenthal center" />
+</seeds>

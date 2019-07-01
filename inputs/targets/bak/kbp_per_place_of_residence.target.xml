@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+	<target name="per_place_of_residence" elf_ontology_type="per_place_of_residence"
+          description="{0} is a resident of {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person" elf_role="0_person"
+           mention_constraints="(acetype PER) (min-entitylevel DESC)" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_loc_gpe" elf_role="1_loc_gpe"
+           mention_constraints="(acetype LOC GPE) (min-entitylevel DESC)" />
+    <slot_pair a="1" b="0" symmetric="0" must_not_corefer="1"/>
+  </target>
+</targets>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Agent_Artifact_User-Owner-Inventor-Manufacturer" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="united states" slot1="uss kitty hawk" language="English" />
+	<seed slot0="russian" slot1="kursk" language="English" />
+	<seed slot0="united states" slot1="atlantis" language="English" />
+	<seed slot0="american" slot1="uss bainbridge" language="English" />
+	<seed slot0="new york" slot1="rockefeller center" language="English" />
+	<seed slot0="united states" slot1="uss cole" language="English" />
+	<seed slot0="united states" slot1="cole" language="English" />
+	<seed slot0="united states" slot1="maersk alabama" language="English" />
+	<seed slot0="egyptian" slot1="sharm el- sheik" language="English" />
+	<seed slot0="london" slot1="st james 's palace" language="English" />
+	<seed slot0="us" slot1="endeavour" language="English" />
+	<seed slot0="london" slot1="buckingham palace" language="English" />
+	<seed slot0="north korean" slot1="taepodong -2" language="English" />
+	<seed slot0="united states" slot1="uss bainbridge" language="English" />
+	<seed slot0="russian" slot1="mir" language="English" />
+	<seed slot0="american" slot1="maersk alabama" language="English" />
+	<seed slot0="russian" slot1="neustrashimy" language="English" />
+	<seed slot0="american" slot1="endeavour" language="English" />
+	<seed slot0="iranian" slot1="bushehr" language="English" />
+	<seed slot0="russian" slot1="the kursk" language="English" />
+	<seed slot0="united states" slot1="endeavour" language="English" />
+	<seed slot0="patriots" slot1="gillette stadium" language="English" />
+	<seed slot0="united states of america" slot1="uss cole" language="English" />
+	<seed slot0="princess of wales" slot1="kensington palace" language="English" />
+	<seed slot0="united states" slot1="air force one" language="English" />
+	<seed slot0="paris" slot1="charles de gaulle airport" language="English" />
+	<seed slot0="united states" slot1="the uss cole" language="English" />
+	<seed slot0="us" slot1="air force one" language="English" />
+	<seed slot0="united states" slot1="uss essex" language="English" />
+	<seed slot0="russian" slot1="mir space station" language="English" />
+	<seed slot0="iranian" slot1="bushehr reactor" language="English" />
+	<seed slot0="iranian" slot1="bushehr plant" language="English" />
+	<seed slot0="britain" slot1="buckingham palace" language="English" />
+	<seed slot0="美国" slot1="罗斯 福 号" language="Chinese" />
+	<seed slot0="美国" slot1="柯尔 号" language="Chinese" />
+	<seed slot0="美国" slot1="罗斯 福 号 航 舰" language="Chinese" />
+	<seed slot0="美国" slot1="太空梭" language="Chinese" />
+	<seed slot0="美国" slot1="战舰" language="Chinese" />
+	<seed slot0="美国" slot1="航空母舰" language="Chinese" />
+	<seed slot0="美国" slot1="亚 兰 提 斯 号" language="Chinese" />
+	<seed slot0="美国" slot1="柯 号 号" language="Chinese" />
+	<seed slot0="美国" slot1="奋进 号 太空梭" language="Chinese" />
+	<seed slot0="美国" slot1="驱逐舰" language="Chinese" />
+	<seed slot0="us" slot1="discovery" language="English" />
+	<seed slot0="united states" slot1="columbia" language="English" />
+	<seed slot0="united states" slot1="atlantis" language="English" />
+	<seed slot0="united states" slot1="discovery" language="English" />
+	<seed slot0="british airways" slot1="concorde" language="English" />
+	<seed slot0="us" slot1="endeavour" language="English" />
+	<seed slot0="russian" slot1="baikonur space center" language="English" />
+	<seed slot0="us" slot1="atlantis" language="English" />
+	<seed slot0="russian" slot1="soyuz" language="English" />
+	<seed slot0="united states" slot1="endeavour" language="English" />
+	<seed slot0="united states" slot1="uss roosevelt" language="English" />
+	<seed slot0="united states" slot1="uss houston" language="English" />
+	<seed slot0="us" slot1="uss roosevelt" language="English" />
+	<seed slot0="european" slot1="airbus a3" language="English" />
+	<seed slot0="united states" slot1="warships" language="English" />
+	<seed slot0="russian" slot1="spaceship" language="English" />
+	<seed slot0="crew" slot1="atlantis" language="English" />
+	<seed slot0="united states" slot1="destroyers" language="English" />
+	<seed slot0="洋 基 队" slot1="洋 基 球场" language="Chinese" />
+	<seed slot0="海军陆战队" slot1="普天间 空军基地" language="Chinese" />
+	<seed slot0="李 培 宜" slot1="官邸" language="Chinese" />
+	<seed slot0="台大 医院" slot1="国际会议中心 庭园 会馆" language="Chinese" />
+	<seed slot0="辅仁大学" slot1="国际 会议厅" language="Chinese" />
+	<seed slot0="白宫" slot1="白宫 草坪" language="Chinese" />
+	<seed slot0="白宫" slot1="白宫 菜园" language="Chinese" />
+	<seed slot0="台大 医学院" slot1="国际会议中心" language="Chinese" />
+	<seed slot0="白宫" slot1="白宫 篮球场" language="Chinese" />
+	<seed slot0="武汉 铁路 局" slot1="l4 次 列车" language="Chinese" />
+	<seed slot0="台北 医学 大学" slot1="国际会议中心" language="Chinese" />
+	<seed slot0="美国 波音公司" slot1="代尔 塔 二 号" language="Chinese" />
+	<seed slot0="职棒 纽约 洋 基 队" slot1="洋 基 球场" language="Chinese" />
+	<seed slot0="台北 医学 大学" slot1="国际会议中心 楼" language="Chinese" />
+	<seed slot0="nasa" slot1="提 斯 号" language="Chinese" />
+	<seed slot0="台大 医院" slot1="国际 会议厅 中心" language="Chinese" />
+	<seed slot0="台大 医院" slot1="国际会议中心 楼" language="Chinese" />
+	<seed slot0="纽约 洋 基 队" slot1="洋 基 球场" language="Chinese" />
+	<seed slot0="白宫" slot1="白宫 厨房" language="Chinese" />
+	<seed slot0="中 石化" slot1="西南 油气田" language="Chinese" />
+	<seed slot0="华航" slot1="华航 班机" language="Chinese" />
+	<seed slot0="国会" slot1="国会 山庄" language="Chinese" />
+	<seed slot0="美军" slot1="美军 基地" language="Chinese" />
+	<seed slot0="长荣" slot1="长荣 班机" language="Chinese" />
+	<seed slot0="行政院" slot1="行政院 大 礼堂" language="Chinese" />
+	<seed slot0="中华 航空公司" slot1="中华 航空公司 班机" language="Chinese" />
+	<seed slot0="长荣 航空" slot1="长荣 航空 班机" language="Chinese" />
+	<seed slot0="国泰" slot1="国泰 班机" language="Chinese" />
+	<seed slot0="美国" slot1="美国 太空梭" language="Chinese" />
+	<seed slot0="台大" slot1="台大 校园" language="Chinese" />
+	<seed slot0="全国政协" slot1="全国政协 礼堂" language="Chinese" />
+<seed slot0="中国" slot1="铁路" language="Chinese" />
+<seed slot0="taiwan" slot1="weapons" language="English" />
+<seed slot0="美国" slot1="使馆" language="Chinese" />
+<seed slot0="美国" slot1="飞机" language="Chinese" />
+<seed slot0="美军" slot1="基地" language="Chinese" />
+<seed slot0="澳门" slot1="机场" language="Chinese" />
+<seed slot0="台湾" slot1="渔船" language="Chinese" />
+<seed slot0="香港" slot1="机场" language="Chinese" />
+<seed slot0="中国" slot1="汽车" language="Chinese" />
+<seed slot0="台湾" slot1="武器" language="Chinese" />
+<seed slot0="华航" slot1="班机" language="Chinese" />
+<seed slot0="china" slot1="embassy" language="English" />
+<seed slot0="中国" slot1="馆" language="Chinese" />
+<seed slot0="北京" slot1="机场" language="Chinese" />
+<seed slot0="深圳" slot1="机场" language="Chinese" />
+<seed slot0="中国" slot1="使馆" language="Chinese" />
+<seed slot0="美国" slot1="军舰" language="Chinese" />
+<seed slot0="united states" slot1="bases" language="English" />
+<seed slot0="以色列" slot1="战机" language="Chinese" />
+<seed slot0="美国" slot1="大使馆" language="Chinese" />
+<seed slot0="china airlines" slot1="flight" language="English" />
+<seed slot0="国会" slot1="国会 山庄" language="Chinese" />
+<seed slot0="united states" slot1="weapons" language="English" />
+<seed slot0="澳门" slot1="国际机场" language="Chinese" />
+<seed slot0="上海" slot1="口岸" language="Chinese" />
+<seed slot0="台湾" slot1="台湾 馆" language="Chinese" />
+<seed slot0="香港" slot1="国际机场" language="Chinese" />
+<seed slot0="杭州" slot1="杭州 南路" language="Chinese" />
+<seed slot0="日本" slot1="港口" language="Chinese" />
+<seed slot0="以色列" slot1="监狱" language="Chinese" />
+<seed slot0="iran" slot1="weapons" language="English" />
+<seed slot0="中国" slot1="船舶" language="Chinese" />
+<seed slot0="taiwan" slot1="weapons" language="English" />
+<seed slot0="北京" slot1="地铁" language="Chinese" />
+<seed slot0="全国政协" slot1="礼堂" language="Chinese" />
+<seed slot0="china" slot1="the china pavilion" language="English" />
+<seed slot0="长荣" slot1="班机" language="Chinese" />
+<seed slot0="美军" slot1="基地" language="Chinese" />
+<seed slot0="taiwan" slot1="taiwan 's fishing boats" language="English" />
+<seed slot0="广州" slot1="火车站" language="Chinese" />
+<seed slot0="北京" slot1="地铁" language="Chinese" />
+<seed slot0="台湾" slot1="会馆" language="Chinese" />
+<seed slot0="中国" slot1="大使馆" language="Chinese" />
+<seed slot0="台北" slot1="宾馆" language="Chinese" />
+<seed slot0="厦门" slot1="机场" language="Chinese" />
+<seed slot0="行政院" slot1="礼堂" language="Chinese" />
+<seed slot0="深圳" slot1="口岸" language="Chinese" />
+<seed slot0="洛杉矶" slot1="机场" language="Chinese" />
+<seed slot0="台北" slot1="监狱" language="Chinese" />
+<seed slot0="美国" slot1="武器" language="Chinese" />
+<seed slot0="台湾" slot1="高铁" language="Chinese" />
+<seed slot0="北京" slot1="北京 站" language="Chinese" />
+<seed slot0="美国" slot1="卫星" language="Chinese" />
+<seed slot0="美国" slot1="美国 工厂" language="Chinese" />
+<seed slot0="美国" slot1="使馆" language="Chinese" />
+<seed slot0="美国" slot1="航天飞机" language="Chinese" />
+<seed slot0="松山" slot1="机场" language="Chinese" />
+<seed slot0="德国" slot1="汽车" language="Chinese" />
+<seed slot0="japan" slot1="embassy" language="English" />
+<seed slot0="以色列" slot1="飞机" language="Chinese" />
+<seed slot0="united states" slot1="embassy" language="English" />
+<seed slot0="美国" slot1="机场" language="Chinese" />
+<seed slot0="北京市" slot1="机动车" language="Chinese" />
+<seed slot0="美国国会" slot1="美国国会 图书馆" language="Chinese" />
+<seed slot0="台北" slot1="国际会议中心" language="Chinese" />
+<seed slot0="中央 联合" slot1="中央 联合 办公 大楼" language="Chinese" />
+<seed slot0="israel" slot1="prisons" language="English" />
+<seed slot0="中国" slot1="港口" language="Chinese" />
+<seed slot0="中国" slot1="渔船" language="Chinese" />
+<seed slot0="中华 航空公司" slot1="班机" language="Chinese" />
+<seed slot0="法兰克福" slot1="机场" language="Chinese" />
+<seed slot0="台中市" slot1="警察局" language="Chinese" />
+<seed slot0="重庆" slot1="重庆 北路" language="Chinese" />
+<seed slot0="taipei" slot1="the taipei train station" language="English" />
+<seed slot0="taiwan" slot1="weapons" language="English" />
+<seed slot0="美国" slot1="监狱" language="Chinese" />
+<seed slot0="中国" slot1="餐馆" language="Chinese" />
+<seed slot0="israel" slot1="warplanes" language="English" />
+<seed slot0="guangzhou" slot1="the guangzhou railway station" language="English" />
+<seed slot0="柏林" slot1="围墙" language="Chinese" />
+<seed slot0="尚 义" slot1="机场" language="Chinese" />
+<seed slot0="中国" slot1="煤矿" language="Chinese" />
+<seed slot0="japan" slot1="ports" language="English" />
+<seed slot0="天津" slot1="开发区" language="Chinese" />
+<seed slot0="以色列" slot1="占领区" language="Chinese" />
+<seed slot0="澳门" slot1="赌场" language="Chinese" />
+<seed slot0="曼谷" slot1="机场" language="Chinese" />
+<seed slot0="国泰" slot1="班机" language="Chinese" />
+<seed slot0="上海" slot1="机场" language="Chinese" />
+<seed slot0="china" slot1="railway" language="English" />
+<seed slot0="美军" slot1="基地" language="Chinese" />
+<seed slot0="美国" slot1="航空母舰" language="Chinese" />
+<seed slot0="美国" slot1="太空梭" language="Chinese" />
+<seed slot0="开城" slot1="工业园区" language="Chinese" />
+<seed slot0="长荣 航空" slot1="班机" language="Chinese" />
+<seed slot0="台湾" slot1="武器" language="Chinese" />
+<seed slot0="taiwan" slot1="boats" language="English" />
+<seed slot0="beijing" slot1="station" language="English" />
+<seed slot0="高雄" slot1="机场" language="Chinese" />
+<seed slot0="台北" slot1="台北 11 大楼" language="Chinese" />
+<seed slot0="北京" slot1="西站" language="Chinese" />
+<seed slot0="美国" slot1="战机" language="Chinese" />
+<seed slot0="巴黎" slot1="机场" language="Chinese" />
+<seed slot0="厦门" slot1="口岸" language="Chinese" />
+<seed slot0="中国" slot1="军舰" language="Chinese" />
+<seed slot0="台北" slot1="国父 纪念馆" language="Chinese" />
+<seed slot0="chinese" slot1="embassy" language="English" />
+<seed slot0="苏州" slot1="工业园区" language="Chinese" />
+<seed slot0="桃园" slot1="机场" language="Chinese" />
+<seed slot0="威尼斯" slot1="影展" language="Chinese" />
+<seed slot0="台大" slot1="校园" language="Chinese" />
+<seed slot0="台北市" slot1="公车" language="Chinese" />
+<seed slot0="北京" slot1="铁路" language="Chinese" />
+<seed slot0="北京" slot1="火车站" language="Chinese" />
+<seed slot0="中山" slot1="高速公路" language="Chinese" />
+<seed slot0="中国" slot1="使馆" language="Chinese" />
+<seed slot0="高雄" slot1="火车站" language="Chinese" />
+<seed slot0="台湾" slot1="铁路" language="Chinese" />
+<seed slot0="中国" slot1="卫星" language="Chinese" />
+<seed slot0="浦东" slot1="机场" language="Chinese" />
+<seed slot0="以色列" slot1="战斗机" language="Chinese" />
+<seed slot0="china" slot1="railway" language="English" />
+<seed slot0="美国" slot1="领事馆" language="Chinese" />
+<seed slot0="北京" slot1="西站" language="Chinese" />
+<seed slot0="united states" slot1="bases" language="English" />
+<seed slot0="台北市" slot1="中山 堂" language="Chinese" />
+<seed slot0="台北" slot1="机场" language="Chinese" />
+<seed slot0="north korean" slot1="weapons" language="English" />
+<seed slot0="香港" slot1="酒店" language="Chinese" />
+<seed slot0="开罗" slot1="机场" language="Chinese" />
+<seed slot0="坎城" slot1="影展" language="Chinese" />
+<seed slot0="中国" slot1="长城" language="Chinese" />
+<seed slot0="书 田" slot1="诊所" language="Chinese" />
+<seed slot0="台北" slot1="松山 机场" language="Chinese" />
+<seed slot0="台北" slot1="中正 机场" language="Chinese" />
+<seed slot0="美国" slot1="飞机" language="Chinese" />
+<seed slot0="小泉纯一郎" slot1="官邸" language="Chinese" />
+<seed slot0="北约" slot1="战机" language="Chinese" />
+<seed slot0="北京 大学" slot1="校园" language="Chinese" />
+<seed slot0="美国" slot1="导弹" language="Chinese" />
+<seed slot0="陈水扁" slot1="家" language="Chinese" />
+<seed slot0="毛泽东" slot1="故居" language="Chinese" />
+</seeds>

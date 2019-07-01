@@ -1,0 +1,446 @@
+<html>
+<head>
+    <title>LearnIt Server</title>
+
+    <link type="text/css" href="/css/jquery-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/layout-default-latest.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/colorbrewer/colorbrewer.css" rel="stylesheet">
+    <link type="text/css" href="/css/tipsy.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/typeahead.css" rel="stylesheet">
+    <link type="text/css" href="/css/nv.d3.css" rel="stylesheet">
+    <link type="text/css" href="/css/main.css" rel="stylesheet">
+    <link type="text/css" href="/css/graph.css" rel="stylesheet">
+    <link type="text/css" href="/css/initialization.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery.layout-latest.min.js"></script>
+    <script type="text/javascript" src="/css/colorbrewer/colorbrewer.js"></script>
+    <script type="text/javascript" src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/typeahead.bundle.js"></script>
+    <script type="text/javascript" src="/scripts/lib/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/d3.v2.js"></script>
+    <script type="text/javascript" src="/scripts/lib/nv.d3.js"></script>
+
+    <script type="text/javascript" src="/scripts/util.js"></script>
+
+    <script type="text/javascript" src="/scripts/graph/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/graph/node.js"></script>
+    <script type="text/javascript" src="/scripts/graph/edge.js"></script>
+    <script type="text/javascript" src="/scripts/graph/graph.js"></script>
+
+    <script type="text/javascript" src="/scripts/objects/Answer.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Match.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Pattern.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Seed.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Target.js"></script>
+
+    <script type="text/javascript" src="/scripts/initialization/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/initialization/initialization.js"></script>
+</head>
+
+<script type="text/html" id="pattern-set-template">
+    <div class="listElement"
+         data-bind="css: {listElementFocused: focus,
+                          listElementSelectedGreen: frozenGood,
+                          listElementSelectedRed: frozenBad},
+                            event: {click: click}">
+        <span data-bind="text: toString()"></span>
+
+
+        <button class="btn btn-default" style="position:absolute; right: 5px;"
+                title="Accept/Unaccept this pattern as bad"
+                data-bind="click: unfreeze, clickBubble: false, visible: frozen">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        <button class="btn btn-default" style="position:absolute; right: 50px;"
+                title="Accept/Unaccept this pattern as bad"
+                data-bind="click: freezeBad, clickBubble: false, visible: !frozen()">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button class="btn btn-default" style="position:absolute; right: 5px;"
+                title="Accept/Unaccept this pattern as good"
+                data-bind="click: freeze, clickBubble: false, visible: !frozen()">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </div>
+</script>
+
+<script type="text/html" id="seed-set-template">
+    <div class="listElement"
+         data-bind="css: {listElementFocused: focus,
+                          listElementSelectedGreen: frozenGood,
+                          listElementSelectedRed: frozenBad,
+                          listElementBanned: banned},
+                            event: {click: click}">
+        <span style="right: 90px;" data-bind="text: toString()"></span>
+
+        <button class="btn btn-default" style="position:absolute; right: 50px;" data-bind="click: toggleBanned, clickBubble: false"
+                title="Ban/Un-ban this seed from being accepted automatically">
+            <span class="glyphicon" data-bind="css: {'glyphicon-ban-circle': !banned(), 'glyphicon-ok-circle': banned}"></span>
+        </button>
+        <button class="btn btn-default" style="position:absolute; right: 5px;" data-bind="click: toggleAccept, clickBubble: false"
+                title="Accept/Unaccept this seed">
+            <span class="glyphicon" data-bind="css: {'glyphicon-plus': !frozen(), 'glyphicon-minus': frozen}"></span>
+        </button>
+    </div>
+</script>
+
+<body>
+
+
+    <!-- NAVIGATION BAR  -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">LearnIt KB Builder</a>
+            </div>
+
+            <div class="navbar-header" style="font-weight: bolder;">
+                <a class="navbar-brand" href="#"><span data-bind="text: currentTarget() ? currentTarget().name() : ''"></span></a>
+            </div>
+
+            <div class="navbar-form navbar-left">
+                <button type="button" class="btn btn-default" onclick="vm.clearUnknown()">Clear Unaccepted</button>
+                <button type="button" class="btn btn-default" onclick="vm.clearAll()">Clear Everything</button>
+                <button type="button" class="btn btn-default" onclick="vm.refresh()">Refresh</button>
+            </div>
+
+            <div class="navbar-form navbar-right">
+                <button type="button" class="btn btn-default" onclick="vm.shutdown()">Shutdown Server</button>
+            </div>
+
+            <div class="navbar-form navbar-right">
+                <span data-bind="visible: isTiming">
+                    <button type="button" class="btn btn-default"
+                            data-bind="click: stopTimer"><span class="glyphicon glyphicon-pause"></span></button>
+                </span>
+                <span data-bind="visible: !isTiming()">
+                    <button type="button" class="btn btn-default"
+                            data-bind="click: startTimer"><span class="glyphicon glyphicon-play"></span></button>
+                </span>
+            </div>
+
+            <div class="navbar-header navbar-right" style="font-weight: bolder; margin-right: 20px;">
+                <a class="navbar-brand" href="#"><span style="color: #e38d13;" data-bind="text: loadingMessage"></span></a>
+                <a class="navbar-brand" href="#"><span style="color: black;" data-bind="text: timeDisplay"></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+
+        <!-- TARGET TOP SIDEBAR -->
+
+        <div class="ui-layout-north">
+            <div class="sideList">
+                <span style="font-size: 25px; display:inline-block;float:left;
+                    margin-left:10px; margin-right:10px">Relations</span>
+                <div data-bind="foreach: targets">
+                    <div class="sideListElement"
+                         data-bind="css: {sideListElementSelected: $root.currentTarget() == $data},
+                            style: {'background-color': color},
+                            event: {click: selectTarget}">
+                        <span data-bind="text: name"></span>
+                    </div>
+                </div>
+                <div class="sideListElement" style="width: 50px;background-color:lightgrey;"
+                     data-toggle="modal" data-target="#targetModal"
+                     data-bind="click: addNewRTarget">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- KB GRAPH -->
+
+        <div class="ui-layout-center">
+
+            <!-- div id="graph" -->
+
+            <!-- /div -->
+
+        </div>
+
+        <!-- PATTERN LEFT SIDEBAR -->
+
+        <div class="ui-layout-west" style="position:relative">
+
+            <h4>Patterns <span data-bind="text: patternCount"></span></h4>
+
+
+            <!-- New Pattern List     -->
+
+            <div data-bind="if: addingPatterns">
+                <div class="form-inline" data-bind="with: patternForm">
+                    Keyword: <input class="form-control" id="keywordBox"
+                                    data-bind="value: keyword, returnKey: submitKeyword" />
+                    <button class="btn btn-primary" data-bind="click: submitKeyword">Search</button>
+                </div>
+
+                <div class="list" style="position:absolute;top: 80px;bottom:60px;left:0px;right:0px;overflow:auto;">
+                    <div data-bind="template: {name: 'pattern-set-template', foreach: patternForm.patterns()}"></div>
+                </div>
+
+                <div style="position:absolute; bottom: 10px; height: 50px;">
+                    <button class="btn btn-primary" data-bind="click: unsetAddingPatterns">Save and Back</button>
+                </div>
+            </div>
+
+            <!-- Regular Pattern List   -->
+            <div data-bind="if: !addingPatterns()">
+                <div class="list" style="position:absolute;top: 40px;bottom:60px;left:0px;right:0px;overflow:auto;">
+                    <div data-bind="template: {name: 'pattern-set-template', foreach: patterns}"></div>
+                </div>
+
+                <div style="position:absolute; bottom: 10px; height: 50px;">
+                    <button class="btn btn-primary"
+                            data-bind="visible: currentTarget, click: setAddingPatterns"
+                            title="Add some new patterns by keyword">Add New</button>
+                    <button class="btn btn-primary"
+                            data-bind="visible: currentTarget, click: proposePatterns"
+                            title="Propose some new patterns based off your pairs">Propose</button>
+                    <button class="btn btn-primary"
+                            data-bind="visible: currentTarget, click: rescorePatterns"
+                            title="Rescore the currently shown patterns">Rescore</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- SEED RIGHT SIDEBAR -->
+
+        <div class="ui-layout-east" style="position:relative;">
+
+            <h4>Pairs <span data-bind="text: seedCount"></span></h4>
+
+            <!-- New Seed List        -->
+
+            <div data-bind="if: addingSeeds">
+                <div class="form-inline" data-bind="with: seedForm">
+                    Slot0: <input class="form-control" id="slot0Box"
+                                    data-bind="value: slot0, returnKey: submitSlots" /><br/>
+                    Slot1: <input class="form-control" id="slot1Box"
+                                  data-bind="value: slot1, returnKey: submitSlots" />
+                    <button class="btn btn-primary" data-bind="click: submitSlots">Search</button>
+                </div>
+
+                <div class="list" style="position:absolute;top:120px;bottom:60px;left:0px;right:0px;overflow:auto;">
+                    <div data-bind="template: {name: 'seed-set-template', foreach: seedForm.seeds()}"></div>
+                </div>
+
+                <div style="position:absolute; bottom: 10px; height: 50px;">
+                    <button class="btn btn-primary" data-bind="click: unsetAddingSeeds">Save and Back</button>
+                </div>
+            </div>
+
+            <!-- Regular Seed List      -->
+
+            <div data-bind="if: !addingSeeds()">
+                <div class="list" style="position:absolute;top:40px;bottom:80px;left:0px;right:0px;overflow:auto;">
+                    <div data-bind="template: {name: 'seed-set-template', foreach: seeds}"></div>
+                </div>
+
+                <div style="position:absolute; bottom: 10px; height: 70px;">
+                    <div>
+                        <button class="btn btn-primary"
+                                data-bind="visible: currentTarget, click: setAddingSeeds"
+                                title="Add some new entity pairs by slot">Add New</button>
+                        <button class="btn btn-primary"
+                                data-bind="visible: currentTarget, click: proposeSeeds"
+                                title="Propose some new entity pairs">Propose</button>
+                        <button class="btn btn-primary"
+                                data-bind="visible: currentTarget, click: rescoreSeeds"
+                                title="Rescore the currently shown entity pairs">Rescore</button>
+                    </div>
+                    <div style="margin-top: 3px;">
+                        <button class="btn btn-primary"
+                                data-bind="visible: currentTarget, click: autoAcceptSeeds"
+                                title="Automatically accept the a few of the system's best entity pairs">Auto-Accept</button>
+                        <button class="btn btn-primary"
+                                data-bind="visible: currentTarget, click: loadAdditionalSeeds"
+                                title="Load some extra pairs from .additional seed files on disk">Get Additional</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- INSTANCES BOTTOM SIDEBAR -->
+
+        <div class="ui-layout-south">
+            <div data-bind="if: infoHeader">
+                <h3><span data-bind="text: infoHeader"></span> Instances</h3>
+                <span data-bind="visible: infoHeader().frozen()"><b>ACCEPTED</b></span>
+                <span data-bind="visible: !infoHeader().frozen()"><b>NOT ACCEPTED</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button data-bind="click: toggleInfoAccept">Toggle Acceptance</button><br />
+                <b>PRECISION/SCORE:</b> <span data-bind="text: infoHeader().score().precisionOrScoreDisplay()"></span><br />
+                <b>CONFIDENCE:</b> <span data-bind="text: infoHeader().score().confidenceDisplay()"></span><br />
+                <b>CONFIDENCE ANALYSIS:</b> <span data-bind="text: infoHeader().score().confidenceAnalysisDisplay"></span><br />
+                <b>FREQUENCY:</b> <span data-bind="text: infoHeader().score().frequency"></span>
+                <hr />
+            </div>
+            <div data-bind="foreach: info">
+                <div data-bind="html: $data"></div><br />
+            </div>
+            <div data-bind="if: loadingInfo">
+                <img src="/css/circleloader.gif" /> Loading Instances...
+            </div>
+            <div data-bind="if: infoHeader">
+                <button data-bind="click: loadMoreInstances">Load More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD NEW TARGET FORM -->
+
+    <div class="modal fade" data-bind="with: stagedTarget" id="targetModal" tabindex="-1" role="dialog"
+         aria-labelledby="targetModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add New Relation</h4>
+                </div>
+                <div class="modal-body" style="overflow-y: scroll; max-height: 600px;">
+                    <form clas="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" data-bind="value: name" />
+                            </div>
+                            <br/><br/>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Description</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" data-bind="value: description" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-bind="checked: symmetric"/>
+                                        Symmetrical
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">First Slot Types</label>
+                            <div class="col-sm-10">
+                                <div data-bind="foreach: slot0Types">
+                                    <div class="checkbox" style="display: inline-block">
+                                        <label>
+                                            <input type="checkbox" data-bind="checked: value">
+                                            <span data-bind="text:name"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <br/><br/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Second Slot Types</label>
+                            <div class="col-sm-10">
+                                <div data-bind="foreach: slot1Types">
+                                    <div class="checkbox" style="display: inline-block">
+                                        <label>
+                                            <input type="checkbox" data-bind="checked: value">
+                                            <span data-bind="text:name"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                   </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"
+                            data-dismiss="modal" data-bind="click: save">Add</button>
+                    <button type="button" class="btn btn-primary"
+                            data-dismiss="modal" data-bind="click: cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ADD NEW PATTERN FORM -->
+
+    <!--
+    <div class="modal fade" id="patternModal" tabindex="-1" role="dialog"
+         aria-labelledby="patternModalLabel" aria-hidden="true"
+         data-bind="with: patternForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add New Patterns</h4>
+                </div>
+                <div class="modal-body" style="overflow-y: scroll; max-height: 600px;">
+                    <div class="form-inline">
+                        Keyword: <input class="form-control"
+                                        data-bind="value: keyword, returnKey: submitKeyword" />
+                        <button class="btn btn-primary" data-bind="click: submitKeyword">Search</button>
+                    </div>
+                    <div class="list" style="height:500px;left:0px;right:0px;overflow:auto;">
+                        <div data-bind="foreach: patterns">
+                            <div class="listElement"
+                                 data-bind="css: {listElementSelectedGreen: selectedForAddition},
+                                            event: {click: toggleForAddition}">
+                                <span data-bind="text: toString()"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                            data-bind="click: addPatterns">Add</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"
+                            data-bind="click: clear">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+
+
+
+    <!-- ADD NEW SEED FORM -->
+
+    <!--
+    <div class="modal fade" id="seedModal" tabindex="-1" role="dialog"
+         aria-labelledby="seedModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Add New Seeds</h4>
+                </div>
+                <div class="modal-body" style="overflow-y: scroll; max-height: 600px;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+</body>
+</html>

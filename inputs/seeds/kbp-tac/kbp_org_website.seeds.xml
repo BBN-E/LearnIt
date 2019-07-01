@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_website" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="a123 systems inc" slot1="http://wwwa123systemscom" />
+	<seed slot0="a123 systems inc" slot1="http://wwwa123systemscom/" />
+	<seed slot0="a123 systems inc" slot1="wwwa123systemscom" />
+	<seed slot0="access industries" slot1="http://wwwaccessindustriescom" />
+	<seed slot0="access industries" slot1="wwwaccessindustriescom" />
+	<seed slot0="american association for the advancement of science" slot1="http://wwwaaasorg" />
+	<seed slot0="american automobile association" slot1="aaacom" />
+	<seed slot0="american automobile association" slot1="aaacom" />
+	<seed slot0="american bankers association" slot1="http://wwwabacom" />
+	<seed slot0="american bankers association" slot1="http://wwwabacom/defaulthtm" />
+	<seed slot0="american bar association" slot1="http://wwwabanetorg" />
+	<seed slot0="american beverage association" slot1="http://wwwameribevorg" />
+	<seed slot0="american beverage association" slot1="http://wwwschoolbeveragescom" />
+	<seed slot0="american psychiatric association" slot1="http://wwwpsychorg/" />
+	<seed slot0="arsenal football club" slot1="http://arsenaltomcom" />
+	<seed slot0="arsenal football club" slot1="wwwarsenalcom" />
+	<seed slot0="asian development bank" slot1="http://wwwadborg" />
+	<seed slot0="asian development bank" slot1="http://wwwadborg/" />
+	<seed slot0="association of greek tourism enterprises" slot1="http://wwwsetegr/" />
+	<seed slot0="association of greek tourism enterprises" slot1="http:\\wwwsetegr\" />
+	<seed slot0="association of greek tourism enterprises" slot1="wwwsetegr" />
+	<seed slot0="barnes foundation" slot1="http://wwwbarnesfoundationorg" />
+	<seed slot0="benedictine sisters of virginia" slot1="http://wwwosbvaorg" />
+	<seed slot0="benedictine sisters of virginia" slot1="http://wwwosbvaorg/" />
+	<seed slot0="bipartisan policy center" slot1="http://wwwbipartisanpolicyorg/" />
+	<seed slot0="blackburn rovers" slot1="wwwroverscouk" />
+	<seed slot0="burlington northern santa fe corp" slot1="http://wwwbnsfcom" />
+	<seed slot0="burlington northern santa fe corp" slot1="http:\\wwwbnsfcom" />
+	<seed slot0="burlington northern santa fe corp" slot1="wwwbnsfcom" />
+	<seed slot0="champalimaud foundation" slot1="http://wwwfchampalimaudorg/" />
+	<seed slot0="champalimaud foundation" slot1="wwwfchampalimaudorg" />
+	<seed slot0="china banking regulatory commission" slot1="http://wwwcbrcgovcn" />
+	<seed slot0="community foundation of middle tennessee" slot1="http://wwwcfmtorg" />
+	<seed slot0="community foundation of middle tennessee" slot1="wwwcfmtorg" />
+	<seed slot0="council of mortgage lenders" slot1="http://wwwcmlorguk" />
+	<seed slot0="country music association" slot1="http://wwwcmaworldcom" />
+	<seed slot0="focus on the family" slot1="wwwpluggedinonlinecom" />
+	<seed slot0="georgia peanut commission" slot1="http://wwwgapeanutscom" />
+	<seed slot0="global infrastructure partners" slot1="http://wwwglobal - infracom" />
+	<seed slot0="global infrastructure partners" slot1="wwwglobal - infracom" />
+	<seed slot0="indoor tanning association" slot1="http://wwwtheitacom" />
+	<seed slot0="indoor tanning association" slot1="wwwtheitacom" />
+	<seed slot0="international agency for research on cancer" slot1="http://wwwiarcfr/" />
+	<seed slot0="international agency for research on cancer" slot1="http:\\wwwiarcfr\" />
+	<seed slot0="international agency for research on cancer" slot1="wwwiarcfr" />
+	<seed slot0="international crisis group" slot1="wwwcrisisgrouporg" />
+	<seed slot0="international water management institute" slot1="http://wwwiwmicgiarorg" />
+	<seed slot0="irish nationwide building society" slot1="http://wwwiniomcom" />
+	<seed slot0="joint council on international children &apos;s services" slot1="http://wwwjcicsorg/" />
+	<seed slot0="joint council on international children &apos;s services" slot1="wwwjcicsorg" />
+	<seed slot0="lashkar - e - taiba" slot1="http://wwwjamatdawahorg/" />
+	<seed slot0="national council for adoption" slot1="http://wwwadoptioncouncilorg" />
+	<seed slot0="national council for adoption" slot1="wwwadoptioncouncilorg" />
+	<seed slot0="new york immigration coalition" slot1="thenyicorg" />
+	<seed slot0="nigeria police force" slot1="http://wwwnpfgovng" />
+	<seed slot0="nuclear energy institute" slot1="http://wwwneiorg" />
+	<seed slot0="nuclear energy institute" slot1="http://wwwneiorg/" />
+	<seed slot0="patterson - uti drilling co" slot1="http://wwwpatenergycom" />
+	<seed slot0="public library of science" slot1="http://wwwplosorg" />
+	<seed slot0="public library of science" slot1="http://wwwplosorg/" />
+	<seed slot0="public library of science" slot1="wwwplosorg" />
+	<seed slot0="river road asset management" slot1="http://wwwriverroadamcom" />
+	<seed slot0="river road asset management" slot1="http://wwwriverroadamcom/" />
+	<seed slot0="river road asset management" slot1="wwwriverroadamcom" />
+	<seed slot0="stx finland" slot1="http://wwwstxeuropecom" />
+	<seed slot0="stx finland" slot1="wwwstxeuropecom" />
+	<seed slot0="safe passage" slot1="wwwsafepassageorg" />
+	<seed slot0="southgobi energy resources" slot1="http://wwwsouthgobicom" />
+	<seed slot0="southgobi energy resources" slot1="wwwsouthgobicom" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="http://wwwsasacgovcn" />
+	<seed slot0="stockholm international peace research institute" slot1="http://wwwsipriorg/" />
+	<seed slot0="stockholm international peace research institute" slot1="wwwsipriorg" />
+	<seed slot0="stockholm international water institute" slot1="http://wwwsiwiorg" />
+	<seed slot0="stockholm international water institute" slot1="wwwsiwiorg" />
+	<seed slot0="swiss bankers association" slot1="http://wwwswissbankingorg" />
+	<seed slot0="swiss bankers association" slot1="wwwswissbankingorg" />
+	<seed slot0="thomas more law center" slot1="http://wwwthomasmoreorg" />
+	<seed slot0="us high speed rail association" slot1="http//wwwushsrcom" />
+	<seed slot0="us high speed rail association" slot1="http://wwwushsrcom" />
+	<seed slot0="washington national opera" slot1="http://wwwdc - operaorg/" />
+</seeds>

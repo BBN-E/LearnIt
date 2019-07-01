@@ -1,0 +1,213 @@
+
+
+#graph {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.link {
+    stroke: #000;
+    stroke-width: 15px;
+    cursor: pointer;
+    transition: stroke-width 0.2s ease;
+}
+
+.selectedLink {
+    stroke: #000;
+    stroke-width: 35px;
+    cursor: pointer;
+    transition: stroke-width 0.2s ease;
+}
+
+.link:hover {
+    stroke-width: 35px;
+}
+
+.selectedLink:hover {
+    stroke-width: 35px;
+}
+
+.node {
+    stroke-width: 1px;
+    stroke: #000;
+    cursor: pointer;
+    transition: stroke-width 0.2s ease;
+}
+
+.selectedNode {
+    stroke-width: 5px;
+    stroke: #000;
+    cursor: pointer;
+}
+
+.node:hover {
+    stroke-width: 5px;
+}
+
+.text {
+    pointer-events: none;
+}
+
+.nodeText {
+    font: 20px sans-serif;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.linkText {
+    font: 14px sans-serif;
+}
+
+.selectedText .nodeText {
+    font: 32px sans-serif;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.selectedText .linkText {
+    font: 18px sans-serif;
+}
+
+.selectedText {
+    font-weight: bolder;
+    pointer-events: none;
+}
+
+
+.legendEntry {
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.legendEntry:hover {
+    background-color: grey;
+}
+
+.legendEntryBox {
+    padding-left: 20px;
+    border: 1px solid black;
+}
+
+.hoverPanelHeading {
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.hoverPanelHeading:hover {
+    background-color: lightgrey !important;
+}
+
+.hoverOpaque {
+    opacity: 0.6;
+    /* transition: opacity 0.5s; */
+}
+
+.hoverOpaque:hover {
+    opacity: 1.0;
+}
+
+.bottomPanelHeader {
+    background-color: #428bca;
+    color: white;
+    margin-top:0px;
+    position:absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    padding-left: 10px;
+}
+
+.bottomPanelContent {
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.navlabel {
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.mentionSpan {
+    background-color: yellow;
+}
+
+.arg1Span {
+    background-color: lightgreen;
+}
+
+.arg2Span {
+    background-color: lightblue;
+}
+
+
+/*
+  DOCUMENT VIEW
+*/
+
+#sb-contents {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#doc-selection {
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: #999;
+}
+
+#topLabel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    z-index: 10;
+}
+
+#topLabelSpan {
+    background-color: #428bca;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: .8;
+    border: 1px solid black;
+}
+
+.collapsibleHeader {
+    background-color: lightblue;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px;
+    transition: background-color 0.5s;
+}
+
+.collapsibleHeader:hover {
+    background-color: #cbf7ff;
+}
+
+.collapsibleBody {
+    margin-left: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}

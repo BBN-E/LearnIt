@@ -1,0 +1,79 @@
+<!-- <html>
+<head>
+	<title>LearnIt Server</title>
+	
+	<link type="text/css" href="/css/jquery-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/layout-default-latest.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/colorbrewer/colorbrewer.css" rel="stylesheet">
+    <link type="text/css" href="/css/tipsy.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/typeahead.css" rel="stylesheet">
+    <link type="text/css" href="/css/main.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="/scripts/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery.layout-latest.min.js"></script>
+    <script type="text/javascript" src="/css/colorbrewer/colorbrewer.js"></script>
+    <script type="text/javascript" src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/typeahead.bundle.js"></script>
+	<script type="text/javascript" src="/scripts/lib/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/d3.v2.js"></script>
+
+    <script type="text/javascript" src="/scripts/util.js"></script>
+    <script type="text/javascript" src="/scripts/ajax.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</head>
+
+
+<body style="margin: 20px;">
+
+    <h1>Evaluation Reports
+        <button class="btn btn-primary" data-bind="click: refreshCache">
+            Refresh eval report cache
+            <span id="check" style="display:none" class="glyphicon glyphicon-ok"></span>
+        </button>
+    </h1>
+    <hr />
+
+    <div data-bind="with: reportTopLevel">
+
+        <div data-bind="foreach: items">
+
+            <div class="panel panel-primary">
+
+                <div class="panel-heading clickPanelHeader" data-bind="event: {click: toggleShow}">
+                    <h3><span data-bind="text:name"></span></h3>
+                </div>
+
+                <div class="panel-body" data-bind="visible: show">
+                    <div data-bind="foreach: items">
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading clickPanelHeader" data-bind="event: {click: toggleShow}">
+                                <h4>Relation <span data-bind="text:name"></span></h4>
+                            </div>
+
+                            <div class="panel-body" data-bind="visible: show">
+                                <div data-bind="foreach: items">
+                                    <button class="btn-link" data-bind="text: displayText, event: {click: open}"></button><br />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html> -->

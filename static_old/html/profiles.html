@@ -1,0 +1,252 @@
+<html>
+<head>
+    <title>LearnIt Server</title>
+
+    <link type="text/css" href="/css/jquery-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/layout-default-latest.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/colorbrewer/colorbrewer.css" rel="stylesheet">
+    <link type="text/css" href="/css/tipsy.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/typeahead.css" rel="stylesheet">
+    <link type="text/css" href="/css/nv.d3.css" rel="stylesheet">
+    <link type="text/css" href="/css/main.css" rel="stylesheet">
+    <link type="text/css" href="/css/graph.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery.layout-latest.min.js"></script>
+    <script type="text/javascript" src="/css/colorbrewer/colorbrewer.js"></script>
+    <script type="text/javascript" src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/typeahead.bundle.js"></script>
+    <script type="text/javascript" src="/scripts/lib/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/d3.v2.js"></script>
+    <script type="text/javascript" src="/scripts/lib/nv.d3.js"></script>
+
+    <script type="text/javascript" src="/scripts/util.js"></script>
+
+    <script type="text/javascript" src="/scripts/graph/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/graph/node.js"></script>
+    <script type="text/javascript" src="/scripts/graph/edge.js"></script>
+    <script type="text/javascript" src="/scripts/graph/graph.js"></script>
+
+    <script type="text/javascript" src="/scripts/objects/Pattern.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Seed.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Target.js"></script>
+
+    <script type="text/javascript" src="/scripts/demo/profile_utils.js"></script>
+    <script type="text/javascript" src="/scripts/demo/profiles.js"></script>
+</head>
+
+<script type="text/html" id="entity-set-template">
+    <div class="listElement" data-bind="css: {listElementSelectedGreen: selected,
+    																					listElementSpecial: corefSelected},
+    																		click: toggle, clickBubble: false">
+        <span style="right: 90px;" data-bind="text: entity"></span>
+        <button class="btn btn-default" style="position:absolute; right: 5px; margin-top: -5px"
+            data-bind="click: setLink, clickBubble: false, visible: !corefSelected()"
+            title="Set for linking">
+            <span class="glyphicon glyphicon-link"></span>
+        </button>
+        <button class="btn btn-default" style="position:absolute; right: 5px; margin-top: -5px"
+            data-bind="click: unsetLink, clickBubble: false, visible: corefSelected()"
+            title="Unset for linking">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+</script>
+
+<body>
+
+	<div data-bind="visible: showEntities()"> <!--Start entity visualizalization-->
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" name="navbar">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand">LearnIt Results</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a class="navbar-brand">Entity Profiles</a></li>				
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><button class="btn btn-default navbar-btn" data-bind="click:drawGraph">Show Graph</button></li>
+					</ul>
+					
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div id="content" style="padding-top: 50px;">
+
+			<div class="ui-layout-west" style="position:relative">
+	      <h4>Entities</h4>
+
+	      <div class="form-inline">
+		      <input class="form-control" style="width: 190px" id="searchBox" data-bind="value: searchEntry, returnKey: setSearchTerm"/>
+	        <button class="btn btn-primary" data-bind="click: setSearchTerm">Search</button>
+        </div>
+
+        <!-- entitiesToList determine which entity to show in the left panel -->
+        <div class="list" style="position:absolute;top: 80px;bottom:60px;left:0px;right:0px;overflow:auto;">
+            <div data-bind="template: {name: 'entity-set-template', foreach: entitiesToList}"></div>
+        </div>
+
+        <div style="position:absolute; bottom: 10px; height: 50px;">
+	        <button class="btn btn-default" data-bind="click:showAll">Show All</button>
+		      <button class="btn btn-default" data-bind="click:toggleEntitySort">
+		      	<span data-bind="if: freqSort">A-Z</span><span data-bind="ifnot: freqSort">Freq</span> Sort
+		      </button>
+		      <button class="btn btn-default" data-bind="click:linkSelected, visible:canLink">Link</button>
+		      <button class="btn btn-default" disabled="disabled" data-bind="click:linkSelected, visible:!canLink()">Link</button>
+	      </div>
+
+	    </div>
+
+	    <div class="ui-layout-center" style="position:relative">
+
+	    	<div class="ui-layout-center" style="position:relative">
+
+	    			<!-- selectedProfiles determine which entity profile to show in the main panel -->
+					<div data-bind="foreach: selectedProfiles" class="row" style="position:relative;width:99%">
+						<div class="col-md-3">
+							<div class="panel panel-default">
+								<div class="panel-heading" data-bind="css: {listElementSpecial: vm.entityMap[entity].corefSelected()}">
+									<strong><span data-bind="text: entity"/></strong>
+									<button class="btn btn-default" style="position:absolute; right: 18px; margin-top: -5px"
+					            data-bind="click: vm.entityMap[entity].setLink, clickBubble: false,
+					            					 visible: !vm.entityMap[entity].corefSelected()"
+					            title="Set for linking">
+					            <span class="glyphicon glyphicon-link"></span>
+					        </button>
+					        <button class="btn btn-default" style="position:absolute; right: 18px; margin-top: -5px"
+					            data-bind="click: vm.entityMap[entity].unsetLink, clickBubble: false,
+					            					 visible: vm.entityMap[entity].corefSelected()"
+					            title="Unset for linking">
+					            <span class="glyphicon glyphicon-remove"></span>
+					        </button>
+								</div>
+								<div class="panel-body">
+									<div data-bind="foreach: displayRelations">
+										<strong><span data-bind="text: relation"/></strong>
+										<div data-bind="foreach: entities">
+											<div>
+												&nbsp;&nbsp;&nbsp;&nbsp;
+												<span data-bind="text: $data, click: $parent.getDisplays.bind($data,$data)"></span>
+												&#58; <span data-bind="text: $parent.entityCounts()[$data]"></span>
+											</div>
+
+										</div>
+										<br />
+									</div>
+								</div> <!--End individual panel-->
+							</div>
+						</div>
+					</div> <!--End profiles-->
+
+				</div> <!--End inner center -->
+
+				<div class="ui-layout-south" style="position:relative">
+					<span data-bind="html: activeEntityPair"></span>
+					<br /><br />
+					<div data-bind="foreach: activeDisplays">
+						<span data-bind="html: html"></span>
+						<!-- <span data-bind="if: isValidTransliteration"><span data-bind="html: html"></span></span>
+						<span data-bind="ifnot: isValidTransliteration"><span class="incorrect" data-bind="html: html"></span></span> -->
+						<strong>Confidence: <span data-bind="text: $parent.maxConfs[$data]"></span></strong><br /><br />
+					</div>
+				</div>
+
+
+			</div> <!--End center panel-->
+
+		</div> <!--End content-->
+	</div> <!--End entity visualizalization-->
+	
+	<div data-bind="visible: !showEntities()"> <!--Start graph visualizalization-->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" name="navbar">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand">LearnIt Results</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a class="navbar-brand">Relation Graph</a></li>
+						
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">Relations <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu" data-bind="foreach:relations">
+								<li>
+									<!--<a href="" data-bind='text:$data.name(),
+																				event:{click:demoViewModel.search.bind($data.name(),$data.name(),"relation")}'>
+									</a>-->
+								</li>
+							</ul>
+						</li>					
+					</ul>
+					
+					<!--<form class="navbar-form navbar-left" role="search" data-bind="submit:searchFromForm">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>-->
+					
+					<button class="btn btn-default navbar-btn" data-bind="click:clearGraphFilter">Show All</button>
+					
+					<button class="btn btn-default navbar-btn" data-bind="click:toggleInstanceDisplay">Toggle Instance Panel</button>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><button class="btn btn-default navbar-btn" data-bind="click:toggleEntities">Return to Profiles</button></li>
+					</ul>
+					
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		<!--Graph macro placeholder-->
+		<div class="ui-layout-center">
+			<div id="graph"></div>
+		</div>
+		
+		<!--Legend-->
+		<div id="legend" style="position: absolute; top: 10px; right: 5px; width: 300px; height: 220px; bottom: 0px; overflow-y: auto;">
+			<div class="panel panel-default hoverOpaque">
+				<div class="panel-heading hoverPanelHeading">Relation Types</div>
+				<div class="panel-body">
+					<div data-bind="foreach: relations">
+						<div class="legendEntry">
+							<span class="legendEntryBox" data-bind="style: {'background-color': color}"></span>&nbsp;
+							<span data-bind='text: name, event:{click:$parent.filterGraph.bind($data,$data.name())}'></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Instance View-->
+		<div data-bind="visible:showInstancesOnGraph" 
+					style="position: absolute; height: 200px; bottom: 0px; left:0px; right: 0px; padding: 5px; overflow-y: auto; margin-bottom: 0px; border-top: 1px solid #ddd; background-color: white">
+			<div class="panel-body">
+				<span data-bind="html: activeEntityPair"></span>
+				<br /><br />
+				<div data-bind="foreach: activeDisplays">
+					<span data-bind="html: html"></span>
+					<strong>Confidence: <span data-bind="text: $parent.maxConfs[$data]"></span></strong><br /><br />
+				</div>
+			</div>			
+		</div>
+		
+	</div> <!--End Graph visualizalization-->
+	
+</body>
+</html>

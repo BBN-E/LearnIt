@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Part_Whole_Geographical" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="hong kong" slot1="chinese" language="" />
+	<seed slot0="beijing" slot1="chinese" language="" />
+	<seed slot0="chechnya" slot1="russian" language="" />
+	<seed slot0="baghdad" slot1="iraqi" language="" />
+	<seed slot0="washington" slot1="united states" language="" />
+	<seed slot0="moscow" slot1="russian" language="" />
+	<seed slot0="kashmir" slot1="pakistani" language="" />
+	<seed slot0="jerusalem" slot1="israeli" language="" />
+	<seed slot0="darfur" slot1="sudanese" language="" />
+	<seed slot0="sudanese" slot1="darfur" language="" />
+	<seed slot0="tokyo" slot1="japanese" language="" />
+	<seed slot0="kashmir" slot1="indian" language="" />
+	<seed slot0="kabul" slot1="afghanistan" language="" />
+	<seed slot0="new york" slot1="united states" language="" />
+	<seed slot0="washington" slot1="american" language="" />
+	<seed slot0="beirut" slot1="lebanese" language="" />
+	<seed slot0="shanghai" slot1="chinese" language="" />
+	<seed slot0="paris" slot1="french" language="" />
+	<seed slot0="new delhi" slot1="indian" language="" />
+	<seed slot0="madrid" slot1="spanish" language="" />
+	<seed slot0="damascus" slot1="syrian" language="" />
+	<seed slot0="cairo" slot1="egyptian" language="" />
+	<seed slot0="islamabad" slot1="pakistani" language="" />
+	<seed slot0="paris" slot1="france" language="" />
+	<seed slot0="washington" slot1="us" language="" />
+	<seed slot0="cypriot" slot1="greece" language="" />
+	<seed slot0="belgrade" slot1="serbian" language="" />
+	<seed slot0="london" slot1="britain" language="" />
+	<seed slot0="mosul" slot1="iraqi" language="" />
+	<seed slot0="basra" slot1="iraqi" language="" />
+	<seed slot0="seoul" slot1="south korean" language="" />
+	<seed slot0="baghdad" slot1="iraq" language="" />
+	<seed slot0="east jerusalem" slot1="israeli" language="" />
+</seeds>

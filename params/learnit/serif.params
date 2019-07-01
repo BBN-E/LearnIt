@@ -1,0 +1,59 @@
+modules: English
+run_equivalent_names: false
+
+# Brandy/Serif params
+entity_type_set:    %serif_data%/ace/ace_2004_entity_types.txt
+entity_subtype_set: %serif_data%/ace/entity-subtypes-2005.txt
+value_type_set: %serif_data%/ace/ace_2005_plus_nums_value_types.txt
+other_value_tag_set_file:   %serif_data%/english/values/pidf/no-timex-plus-nums.tags
+word_net_dictionary_path: c:/wn16/dict
+word_net_backup_dictionary_path: %serif_data%/english/Software/WN16/DICT
+use_7zip_distill_doc_compression: true
+downcase_all_uppercase_docs: false
+
+output_propositions: false
+blocked_proposition_types: future,negative,modal,if,unreliable
+proposition_unreliability_indicator_words: %serif_data%/english/misc/unreliability-indicator-words.txt
+
+segment_input_field: src
+mt_doc_reader_preserve_offsets: true
+
+lexicalize_props: true
+skip_filter_node_content_dictionary: true
+pattern_matcher_ignore_dates: true
+
+skip_metadata: true
+
+# equivalent names uploader parameters
+db_server: distill.d4m.bbn.com
+xdoc_db_database: GALE_XDOC_Y2
+db_username: sa
+db_password: galeportal
+
+# Tokenizer params which are apparently needed by equivalent names uploader (check this)
+tokenizer_params:             %serif_data%/english/tokenization/default.params
+tokenizer_subst:              %serif_data%/english/tokenization/token-subst.data
+tokenizer_short_words:        %serif_data%/english/tokenization/short-words.data
+tokenizer_non_final_abbrevs:  %serif_data%/english/tokenization/non-final-abbrevs.data
+tokenizer_no_split_abbrevs:   %serif_data%/english/tokenization/no-split-abbrevs.data
+tokenizer_hyphenated_endings: %serif_data%/english/tokenization/hyphenated-endings.data
+tokenizer_hyphenated_tokens:  %serif_data%/english/tokenization/hyphenated-tokens.data
+tokenizer_hyphenated_prefixes:%serif_data%/english/tokenization/hyphenated-prefixes.data
+
+##### RECENTLY ADDED SERIF PARAMS #####
+
+# align mentions by full mention or head alignment
+mention_alignment_type: head
+# percentage overlap needed for match
+mention_alignment_threshold: 1
+# only return name-name seeds when matching
+only_name_seeds: true
+
+# force BRANDY to only match mentions with ALL entitylabels matching.
+force_entitylabels: true
+
+# force BRANDY to match mention subtypes
+force_entity_subtypes: true
+
+word_cluster_bits_file:    %serif_data%/english/clusters/ace2005.hBits
+domain_word_cluster_bits_file: %serif_data%/english/clusters/ace2005.hBits

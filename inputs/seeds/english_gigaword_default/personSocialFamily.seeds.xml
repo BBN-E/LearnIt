@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Per_Social_Family" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="aung san suu kyi" slot1="michael aris" />
+	<seed slot0="elisabeth" slot1="josef fritzl" />
+	<seed slot0="sylvia plath" slot1="ted hughes" />
+	<seed slot0="marta sahagun" slot1="vicente fox" />
+	<seed slot0="gamal" slot1="hosni mubarak" />
+	<seed slot0="khaleda zia" slot1="ziaur rahman" />
+	<seed slot0="serena williams" slot1="venus" />
+	<seed slot0="anna nicole smith" slot1="dannielynn" />
+	<seed slot0="grace kelly" slot1="rainier iii" />
+	<seed slot0="laci peterson" slot1="scott peterson" />
+	<seed slot0="george w bush" slot1="laura" />
+	<seed slot0="anna nicole smith" slot1="virgie arthur" />
+	<seed slot0="suha" slot1="yasser arafat" />
+	<seed slot0="dodi fayed" slot1="mohamed al fayed" />
+	<seed slot0="cherie" slot1="tony blair" />
+	<seed slot0="hussein" slot1="noor" />
+	<seed slot0="bobby brown" slot1="whitney houston" />
+	<seed slot0="harry" slot1="william" />
+	<seed slot0="ingrid betancourt" slot1="yolanda pulecio" />
+	<seed slot0="ingrid betancourt" slot1="juan carlos lecompte" />
+	<seed slot0="john lennon" slot1="yoko ono" />
+	<seed slot0="saddam hussein" slot1="uday" />
+	<seed slot0="cindy" slot1="john mccain" />
+	<seed slot0="asif ali zardari" slot1="zulfikar ali bhutto" />
+	<seed slot0="anna nicole smith" slot1="j howard marshall ii" />
+	<seed slot0="juan carlos" slot1="sofia" />
+	<seed slot0="boris yeltsin" slot1="naina" />
+	<seed slot0="andre agassi" slot1="brooke shields" />
+	<seed slot0="denise brown" slot1="nicole brown simpson" />
+	<seed slot0="megawati sukarnoputri" slot1="sukarno" />
+	<seed slot0="faure gnassingbe" slot1="gnassingbe eyadema" />
+	<seed slot0="mira markovic" slot1="slobodan milosevic" />
+	<seed slot0="elizabeth ii" slot1="philip" />
+	<seed slot0="odai" slot1="saddam hussein" />
+	<seed slot0="george w bush" slot1="laura bush" />
+	<seed slot0="diana" slot1="earl spencer" />
+	<seed slot0="liam neeson" slot1="natasha richardson" />
+	<seed slot0="woody allen" slot1="yi previn" />
+	<seed slot0="asif ali zardari" slot1="benazir bhutto" />
+	<seed slot0="michael schiavo" slot1="terri schiavo" />
+	<seed slot0="lee hsien loong" slot1="lee kuan yew" />
+	<seed slot0="carlo ponti" slot1="sophia loren" />
+	<seed slot0="hagai" slot1="yigal amir" />
+	<seed slot0="guy ritchie" slot1="madonna" />
+	<seed slot0="lourdes" slot1="madonna" />
+	<seed slot0="keith urban" slot1="nicole kidman" />
+	<seed slot0="indira gandhi" slot1="jawaharlal nehru" />
+	<seed slot0="sania mirza" slot1="shoaib malik" />
+	<seed slot0="dodi fayed" slot1="mohammed al fayed" />
+	<seed slot0="jesse james" slot1="sandra bullock" />
+	<seed slot0="bill clinton" slot1="hillary clinton" />
+	<seed slot0="bill clinton" slot1="hillary rodham clinton" />
+	<seed slot0="qusai" slot1="saddam hussein" />
+	<seed slot0="brad pitt" slot1="jennifer aniston" />
+	<seed slot0="jennifer lopez" slot1="marc anthony" />
+	<seed slot0="barack obama" slot1="michelle" />
+	<seed slot0="hassan ii" slot1="mohammed vi" />
+	<seed slot0="marko" slot1="slobodan milosevic" />
+	<seed slot0="ariel sharon" slot1="gilad" />
+	<seed slot0="harry" slot1="prince charles" />
+	<seed slot0="lisa" slot1="nick leeson" />
+	<seed slot0="angela merkel" slot1="joachim sauer" />
+	<seed slot0="alan greenspan" slot1="andrea mitchell" />
+	<seed slot0="heidar aliyev" slot1="ilham" />
+	<seed slot0="saddam hussein" slot1="sajida" />
+	<seed slot0="natasha richardson" slot1="vanessa redgrave" />
+	<seed slot0="heydar aliyev" slot1="ilham aliyev" />
+	<seed slot0="kofi annan" slot1="kojo" />
+	<seed slot0="cindy mccain" slot1="john mccain" />
+	<seed slot0="daniel day - lewis" slot1="rebecca miller" />
+	<seed slot0="anne morrow lindbergh" slot1="charles a lindbergh" />
+	<seed slot0="rafiq hariri" slot1="saad hariri" />
+	<seed slot0="david beckham" slot1="victoria" />
+	<seed slot0="akihito" slot1="hirohito" />
+	<seed slot0="qusay" slot1="saddam hussein" />
+	<seed slot0="lisa marie presley" slot1="michael jackson" />
+	<seed slot0="flora" slot1="jim swire" />
+	<seed slot0="raghad" slot1="saddam hussein" />
+	<seed slot0="bernadette" slot1="jacques chirac" />
+	<seed slot0="diana" slot1="frances shand kydd" />
+	<seed slot0="benazir bhutto" slot1="zulfikar ali bhutto" />
+	<seed slot0="efrain bamaca velasquez" slot1="jennifer harbury" />
+	<seed slot0="sheikh hasina wajed" slot1="sheikh mujibur rahman" />
+	<seed slot0="ava gardner" slot1="frank sinatra" />
+	<seed slot0="edward viii" slot1="george vi" />
+	<seed slot0="bart conner" slot1="nadia comaneci" />
+	<seed slot0="andre agassi" slot1="steffi graf" />
+	<seed slot0="suha arafat" slot1="yasser arafat" />
+	<seed slot0="serena williams" slot1="venus williams" />
+	<seed slot0="joseph wilson" slot1="valerie plame" />
+	<seed slot0="moamer kadhafi" slot1="seif al- islam" />
+	<seed slot0="sting" slot1="trudie styler" />
+</seeds>

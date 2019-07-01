@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Part_Whole_Geographical" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="hong kong" slot1="chinese" language="English" />
+	<seed slot0="beijing" slot1="chinese" language="English" />
+	<seed slot0="chechnya" slot1="russian" language="English" />
+	<seed slot0="baghdad" slot1="iraqi" language="English" />
+	<seed slot0="washington" slot1="united states" language="English" />
+	<seed slot0="moscow" slot1="russian" language="English" />
+	<seed slot0="kashmir" slot1="pakistani" language="English" />
+	<seed slot0="jerusalem" slot1="israeli" language="English" />
+	<seed slot0="darfur" slot1="sudanese" language="English" />
+	<seed slot0="sudanese" slot1="darfur" language="English" />
+	<seed slot0="tokyo" slot1="japanese" language="English" />
+	<seed slot0="kashmir" slot1="indian" language="English" />
+	<seed slot0="kabul" slot1="afghanistan" language="English" />
+	<seed slot0="new york" slot1="united states" language="English" />
+	<seed slot0="washington" slot1="american" language="English" />
+	<seed slot0="beirut" slot1="lebanese" language="English" />
+	<seed slot0="shanghai" slot1="chinese" language="English" />
+	<seed slot0="paris" slot1="french" language="English" />
+	<seed slot0="new delhi" slot1="indian" language="English" />
+	<seed slot0="madrid" slot1="spanish" language="English" />
+	<seed slot0="damascus" slot1="syrian" language="English" />
+	<seed slot0="cairo" slot1="egyptian" language="English" />
+	<seed slot0="islamabad" slot1="pakistani" language="English" />
+	<seed slot0="paris" slot1="france" language="English" />
+	<seed slot0="washington" slot1="us" language="English" />
+	<seed slot0="cypriot" slot1="greece" language="English" />
+	<seed slot0="belgrade" slot1="serbian" language="English" />
+	<seed slot0="london" slot1="britain" language="English" />
+	<seed slot0="mosul" slot1="iraqi" language="English" />
+	<seed slot0="basra" slot1="iraqi" language="English" />
+	<seed slot0="seoul" slot1="south korean" language="English" />
+	<seed slot0="baghdad" slot1="iraq" language="English" />
+	<seed slot0="east jerusalem" slot1="israeli" language="English" />
+	<seed slot0="巴黎" slot1="法国" language="Chinese" />
+	<seed slot0="利马" slot1="秘鲁" language="Chinese" />
+	<seed slot0="巴格达" slot1="伊拉克" language="Chinese" />
+	<seed slot0="汉城" slot1="南韩" language="Chinese" />
+	<seed slot0="曼谷" slot1="泰国" language="Chinese" />
+	<seed slot0="新德里" slot1="印度" language="Chinese" />
+	<seed slot0="吉隆坡" slot1="马来西亚" language="Chinese" />
+	<seed slot0="德黑兰" slot1="伊朗" language="Chinese" />
+	<seed slot0="喀布尔" slot1="阿富汗" language="Chinese" />
+	<seed slot0="伊斯兰堡" slot1="巴基斯坦" language="Chinese" />
+	<seed slot0="安卡拉" slot1="土耳其" language="Chinese" />
+	<seed slot0="马德里" slot1="西班牙" language="Chinese" />
+	<seed slot0="安曼" slot1="约旦" language="Chinese" />
+	<seed slot0="平壤" slot1="北韩" language="Chinese" />
+	<seed slot0="马尼拉" slot1="菲律宾" language="Chinese" />
+	<seed slot0="东京" slot1="日本" language="Chinese" />
+	<seed slot0="金边" slot1="柬埔寨" language="Chinese" />
+	<seed slot0="贝鲁特" slot1="黎巴嫩" language="Chinese" />
+	<seed slot0="莫斯科" slot1="俄罗斯" language="Chinese" />
+	<seed slot0="开罗" slot1="埃及" language="Chinese" />
+	<seed slot0="雅加达" slot1="印尼" language="Chinese" />
+	<seed slot0="哈瓦那" slot1="古巴" language="Chinese" />
+	<seed slot0="布拉格" slot1="捷克" language="Chinese" />
+	<seed slot0="布达佩斯" slot1="匈牙利" language="Chinese" />
+	<seed slot0="拉萨" slot1="西藏" language="Chinese" />
+	<seed slot0="赫尔辛基" slot1="芬兰" language="Chinese" />
+	<seed slot0="多哈" slot1="卡塔尔" language="Chinese" />
+	<seed slot0="波哥大" slot1="哥伦比亚" language="Chinese" />
+	<seed slot0="布宜诺斯艾利斯" slot1="阿根廷" language="Chinese" />
+	<seed slot0="大马士革" slot1="叙利亚" language="Chinese" />
+	<seed slot0="奥斯陆" slot1="挪威" language="Chinese" />
+	<seed slot0="利雅德" slot1="沙乌地阿拉伯" language="Chinese" />
+	<seed slot0="哥本哈根" slot1="丹麦" language="Chinese" />
+	<seed slot0="摩加迪沙" slot1="索马里" language="Chinese" />
+	<seed slot0="仰光" slot1="缅甸" language="Chinese" />
+	<seed slot0="斯德哥尔摩" slot1="瑞典" language="Chinese" />
+	<seed slot0="约翰内斯堡" slot1="南非" language="Chinese" />
+	<seed slot0="雅加达" slot1="印度尼西亚" language="Chinese" />
+	<seed slot0="特拉维夫" slot1="以色列" language="Chinese" />
+	<seed slot0="基辅" slot1="乌克兰" language="Chinese" />
+	<seed slot0="里斯本" slot1="葡萄牙" language="Chinese" />
+	<seed slot0="杜哈" slot1="卡达" language="Chinese" />
+	<seed slot0="加德满都" slot1="尼泊尔" language="Chinese" />
+	<seed slot0="kabul" slot1="afghanistan" language="English" />
+	<seed slot0="jakarta" slot1="indonesian" language="English" />
+	<seed slot0="beirut" slot1="lebanese" language="English" />
+	<seed slot0="baghdad" slot1="iraqi" language="English" />
+	<seed slot0="new delhi" slot1="indian" language="English" />
+	<seed slot0="washington" slot1="united states" language="English" />
+	<seed slot0="bangkok" slot1="thailand" language="English" />
+	<seed slot0="riyadh" slot1="saudi arabia" language="English" />
+	<seed slot0="grozny" slot1="chechnya" language="English" />
+	<seed slot0="manila" slot1="philippines" language="English" />
+	<seed slot0="islamabad" slot1="pakistani" language="English" />
+	<seed slot0="prague" slot1="czech republic" language="English" />
+	<seed slot0="manila" slot1="philippine" language="English" />
+	<seed slot0="doha" slot1="qatar" language="English" />
+	<seed slot0="bangkok" slot1="thai" language="English" />
+	<seed slot0="havana" slot1="cuban" language="English" />
+	<seed slot0="munich" slot1="germany" language="English" />
+	<seed slot0="dhaka" slot1="bangladesh" language="English" />
+	<seed slot0="ankara" slot1="turkish" language="English" />
+	<seed slot0="lhasa" slot1="tibetan" language="English" />
+</seeds>

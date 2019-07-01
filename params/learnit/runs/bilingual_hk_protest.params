@@ -1,0 +1,12 @@
+INCLUDE ./default.params
+INCLUDE ../domains/bilingual_hk_protest.params
+
+
+sent_builder_dbg_info: false
+enable_exception_contradictory_answers: false
+
+OVERRIDE learnit_expt_suffix: bilingual_hk_protest
+
+#OVERRIDE mappings_dir: /nfs/mercury-04/u22/d2d/hong_kong_protest/source_mappings_full
+#OVERRIDE mappings_lists_dir: /nfs/mercury-04/u22/d2d/hong_kong_protest/source_mappings_full_lists
+

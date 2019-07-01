@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_date_dissolved" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="american basketball association" slot1="1976" />
+	<seed slot0="daily news" slot1="2003-09" />
+	<seed slot0="scorpions" slot1="2003" />
+</seeds>

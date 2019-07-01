@@ -1,0 +1,14 @@
+INCLUDE ./default.params
+INCLUDE ../domains/snt.params
+
+OVERRIDE learnit_expt_suffix: snt
+
+OVERRIDE stop_iteration: 15
+
+OVERRIDE do_post_pruning: false
+
+regtest_confidence_cutoff: .01
+
+OVERRIDE seed_confidence_threshold: .25
+
+use_arbitrary_seed_clusters: true

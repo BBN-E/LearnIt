@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_schools_attended" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="alexander haig" slot1="georgetown" />
+	<seed slot0="alexander haig" slot1="us military academy" />
+	<seed slot0="art buchwald" slot1="forest hills high school" />
+	<seed slot0="art buchwald" slot1="jamaica high school" />
+	<seed slot0="art buchwald" slot1="university of southern california" />
+	<seed slot0="augustus hawkins" slot1="university of california" />
+	<seed slot0="beverly sills" slot1="erasmus hall high school" />
+	<seed slot0="beverly sills" slot1="professional children &apos;s school" />
+	<seed slot0="bradford washburn" slot1="harvard" />
+	<seed slot0="bradford washburn" slot1="harvard" />
+	<seed slot0="carolyn goodman" slot1="city university of new york" />
+	<seed slot0="carolyn goodman" slot1="columbia university teachers college" />
+	<seed slot0="carolyn goodman" slot1="cornell university" />
+	<seed slot0="catherine roraback" slot1="mount holyoke college" />
+	<seed slot0="catherine roraback" slot1="yale school of law" />
+	<seed slot0="cathleen p black" slot1="trinity college" />
+	<seed slot0="cathleen p black" slot1="trinity university" />
+	<seed slot0="charles gwathmey" slot1="university of pennsylvania" />
+	<seed slot0="charles gwathmey" slot1="yale university" />
+	<seed slot0="charles gwathmey" slot1="the university of pennsylvania" />
+	<seed slot0="dominick dunne" slot1="williams college" />
+	<seed slot0="don hewitt" slot1="merchant marine academy" />
+	<seed slot0="don hewitt" slot1="new york university" />
+	<seed slot0="don meredith" slot1="southern methodist university" />
+	<seed slot0="ellie greenwich" slot1="hofstra" />
+	<seed slot0="ellie greenwich" slot1="hofstra university" />
+	<seed slot0="ellie greenwich" slot1="queens college" />
+	<seed slot0="gilbert gude" slot1="cornell university" />
+	<seed slot0="gilbert gude" slot1="george washington university" />
+	<seed slot0="harry dent" slot1="columbia international university" />
+	<seed slot0="harry dent" slot1="george washington university" />
+	<seed slot0="harry dent" slot1="george washington university law school" />
+	<seed slot0="harry dent" slot1="georgetown university" />
+	<seed slot0="harry dent" slot1="presbyterian college" />
+	<seed slot0="harry dent" slot1="george washington university law school" />
+	<seed slot0="harvey pekar" slot1="case western reserve university" />
+	<seed slot0="hwang jang - yop" slot1="kim il sung university" />
+	<seed slot0="hwang jang - yop" slot1="moscow university" />
+	<seed slot0="irene kirkaldy" slot1="queens college" />
+	<seed slot0="irene kirkaldy" slot1="st john &apos;s university" />
+	<seed slot0="jane bolin" slot1="wellesley college" />
+	<seed slot0="jane bolin" slot1="yale law school" />
+	<seed slot0="jane bolin" slot1="yale lawschool" />
+	<seed slot0="jefferson deblanc" slot1="louisiana state university" />
+	<seed slot0="jefferson deblanc" slot1="mcneese state university" />
+	<seed slot0="jefferson deblanc" slot1="southwestern louisiana institute" />
+	<seed slot0="john henebry" slot1="university of notre dame" />
+	<seed slot0="joseph farland" slot1="west virginia university" />
+	<seed slot0="joseph farland" slot1="west virginia university" />
+	<seed slot0="keli mcgregor" slot1="colorado state university" />
+	<seed slot0="keli mcgregor" slot1="lakewood high" />
+	<seed slot0="keli mcgregor" slot1="university of florida" />
+	<seed slot0="kurt waldheim" slot1="consular academy" />
+	<seed slot0="laurent fignon" slot1="university of villetaneuse" />
+	<seed slot0="lorraine rothman" slot1="california state university" />
+	<seed slot0="lorraine rothman" slot1="california state university, los angeles" />
+	<seed slot0="lorraine rothman" slot1="chapman university" />
+	<seed slot0="lorraine rothman" slot1="california state university" />
+	<seed slot0="lucille clifton" slot1="coppin state college" />
+	<seed slot0="lucille clifton" slot1="howard university" />
+	<seed slot0="mary crisp" slot1="arizona state university" />
+	<seed slot0="mary crisp" slot1="oberlin college" />
+	<seed slot0="merce cunningham" slot1="black mountain college" />
+	<seed slot0="merce cunningham" slot1="cornish school" />
+	<seed slot0="merce cunningham" slot1="cornish school of fine arts" />
+	<seed slot0="michael deaver" slot1="san jose state college" />
+	<seed slot0="mike penner" slot1="cal state fullerton" />
+	<seed slot0="mike penner" slot1="california state university" />
+	<seed slot0="mike penner" slot1="western high school" />
+	<seed slot0="mohammed sayed tantawi" slot1="al - azhar" />
+	<seed slot0="mohammed sayed tantawi" slot1="al - azhar university" />
+	<seed slot0="pamela ahearn" slot1="university of alabama" />
+	<seed slot0="parren mitchell" slot1="university of maryland" />
+	<seed slot0="patricia neal" slot1="knoxville high school" />
+	<seed slot0="patricia neal" slot1="northwestern university" />
+	<seed slot0="philip kaiser" slot1="balliol college, oxford" />
+	<seed slot0="philip kaiser" slot1="university of wisconsin" />
+	<seed slot0="ramazan bashardost" slot1="toloz university" />
+	<seed slot0="ramazan bashardost" slot1="university of toulouse" />
+	<seed slot0="randall forsberg" slot1="barnard college" />
+	<seed slot0="randall forsberg" slot1="massachusetts institute of technology" />
+	<seed slot0="randall forsberg" slot1="barnard college" />
+	<seed slot0="richard nolte" slot1="oxford university" />
+	<seed slot0="richmond flowers" slot1="university of alabama school of law" />
+	<seed slot0="steven derounian" slot1="fordham university law school" />
+	<seed slot0="steven derounian" slot1="new york university" />
+	<seed slot0="steven derounian" slot1="officer candidate school" />
+	<seed slot0="tahawwur hussain rana" slot1="hasan abdal cadet college" />
+	<seed slot0="thomas meskill" slot1="trinity college" />
+	<seed slot0="thomas meskill" slot1="university of connecticut" />
+	<seed slot0="thomas meskill" slot1="trinity college" />
+	<seed slot0="vitaly ginzburg" slot1="moscow state university" />
+	<seed slot0="william verity" slot1="phillips exeter academy" />
+	<seed slot0="william verity" slot1="yale university" />
+	<seed slot0="yolanda king" slot1="grady high school" />
+	<seed slot0="yolanda king" slot1="new york university" />
+	<seed slot0="yolanda king" slot1="smith college" />
+	<seed slot0="yolanda king" slot1="smith_college" />
+</seeds>

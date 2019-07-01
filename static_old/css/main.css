@@ -1,0 +1,202 @@
+.box {
+    border: 1px solid black;
+    padding: 3px;
+    display: inline-block;
+    margin: 2px;
+}
+
+.bar {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 2px;
+    margin-left: 10px;
+    background-color: ghostwhite;
+    box-shadow: 2px 2px 3px;
+}
+
+.title {
+    background-color: ghostwhite;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.title:hover {
+    background-color: lightcyan;
+}
+
+.slot0 {
+    background-color: lightblue;
+    border-bottom: 2px solid blue;
+}
+
+.slot1 {
+    background-color: lightgreen;
+    border-top: 2px solid green;
+}
+
+.correct {
+    background-color: #c9e2b3;
+}
+
+.incorrect {
+    background-color: #E1A4A4;
+}
+
+#content {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+}
+
+#topContent {
+    position: absolute;
+    top: 0px;
+    bottom: 300px;
+    left:0px;
+    right:0px;
+    overflow: auto;
+}
+
+#bottomContent {
+    position: absolute;
+    bottom: 0px;
+    height: 300px;
+    border-top: 1px solid black;
+    left:0px;
+    right:0px;
+    padding: 3px;
+    background-color: #eee;
+    box-shadow: 0px -3px 5px;
+    overflow: auto;
+}
+
+.leftBlock {
+    position: absolute;
+    top: 90px;
+    width:49%;
+    left: 5px;
+    bottom: 0px;
+    overflow: auto;
+}
+
+.rightBlock {
+    position: absolute;
+    top: 90px;
+    width:50%;
+    right: 5px;
+    bottom: 0px;
+    overflow: auto;
+}
+
+.list {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 2px;
+    overflow: auto;
+}
+
+.listElement {
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 3px;
+    transition: 0.2s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    position: relative;
+}
+
+.listElement:hover {
+    background-color: lightblue;
+}
+
+.listElementFocused {
+    border: 1px solid blue;
+    border-left: 10px solid blue;
+}
+
+.listElementSelected {
+    background-color: dodgerblue;
+}
+
+.listElementSelectedGreen {
+    background-color: seagreen;
+}
+
+.listElementSelectedRed {
+    background-color: lightcoral;
+}
+
+.listElementSpecial {
+    background-color: dodgerblue;
+}
+
+.listElementBanned {
+    background-color: goldenrod;
+}
+
+.colorGreen {
+    background-color: lightgreen;
+}
+
+.colorRed {
+    background-color: lightcoral;
+}
+
+.sideList {
+    background-color: #d3d3d3;
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding: 5px;
+}
+
+.sideListElement {
+    float: left;
+    margin-left: 1px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px;
+    height: 40px;
+    padding: 5px;
+    padding-top: 10px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer
+}
+
+.sideListElement:hover {
+    border: 2px solid black;
+}
+
+.sideListElementSelected {
+    border: 3px solid black;
+}
+
+.clickPanelHeader {
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+.clickableHeader {
+    cursor: pointer;
+}
+
+.clickableHeader:hover {
+    color: #40f;
+}
+
+.legendEntry {
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+.legendEntryBox {
+    padding-left: 20px;
+    border: 1px solid black;
+}

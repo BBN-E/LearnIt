@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_age" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abdul aziz al - hakim" slot1="59" />
+	<seed slot0="adam gadahn" slot1="18" />
+	<seed slot0="adam gadahn" slot1="28" />
+	<seed slot0="adam gadahn" slot1="31" />
+	<seed slot0="adam gadahn" slot1="31 - year - old" />
+	<seed slot0="ali akbar khan" slot1="13" />
+	<seed slot0="ali akbar khan" slot1="87" />
+	<seed slot0="ali akbar khan" slot1="88" />
+	<seed slot0="andre carson" slot1="33" />
+	<seed slot0="anthony marshall" slot1="85" />
+	<seed slot0="anwar chowdhry" slot1="87" />
+	<seed slot0="anwar chowdhry" slot1="88" />
+	<seed slot0="beverly sills" slot1="78" />
+	<seed slot0="bobby frankel" slot1="68" />
+	<seed slot0="bradford washburn" slot1="96" />
+	<seed slot0="carolyn goodman" slot1="91" />
+	<seed slot0="catherine roraback" slot1="87" />
+	<seed slot0="cathleen p black" slot1="63" />
+	<seed slot0="cathleen p black" slot1="66" />
+	<seed slot0="charles gwathmey" slot1="71" />
+	<seed slot0="crystal taylor" slot1="38" />
+	<seed slot0="david gutierrez" slot1="43" />
+	<seed slot0="dominick dunne" slot1="83" />
+	<seed slot0="don hewitt" slot1="6" />
+	<seed slot0="don hewitt" slot1="80" />
+	<seed slot0="don hewitt" slot1="86" />
+	<seed slot0="douglas flint" slot1="55" />
+	<seed slot0="dudu topaz" slot1="62" />
+	<seed slot0="ellie greenwich" slot1="68" />
+	<seed slot0="gilbert gude" slot1="84" />
+	<seed slot0="girija prasad koirala" slot1="84" />
+	<seed slot0="girija prasad koirala" slot1="85" />
+	<seed slot0="girija prasad koirala" slot1="86" />
+	<seed slot0="girija prasad koirala" slot1="87" />
+	<seed slot0="harry dent" slot1="77" />
+	<seed slot0="henry olonga" slot1="26" />
+	<seed slot0="henry olonga" slot1="34" />
+	<seed slot0="hwang jang - yop" slot1="87" />
+	<seed slot0="irene kirkaldy" slot1="90" />
+	<seed slot0="jane bolin" slot1="98" />
+	<seed slot0="john henebry" slot1="89" />
+	<seed slot0="joseph farland" slot1="92" />
+	<seed slot0="keli mcgregor" slot1="47" />
+	<seed slot0="keli mcgregor" slot1="48" />
+	<seed slot0="ko yong - hi" slot1="51" />
+	<seed slot0="lorraine rothman" slot1="75" />
+	<seed slot0="lucille clifton" slot1="73" />
+	<seed slot0="marc bolland" slot1="50" />
+	<seed slot0="maria kaczynska" slot1="59" />
+	<seed slot0="maria kaczynska" slot1="66" />
+	<seed slot0="maria kaczynska" slot1="67" />
+	<seed slot0="mary crisp" slot1="83" />
+	<seed slot0="merce cunningham" slot1="20" />
+	<seed slot0="merce cunningham" slot1="80" />
+	<seed slot0="merce cunningham" slot1="90" />
+	<seed slot0="michael deaver" slot1="69" />
+	<seed slot0="mike penner" slot1="52" />
+	<seed slot0="mikel karrera sarobe" slot1="37" />
+	<seed slot0="mohammed oudeh" slot1="73" />
+	<seed slot0="mohammed sayed tantawi" slot1="81" />
+	<seed slot0="nancy kissel" slot1="45" />
+	<seed slot0="nancy kissel" slot1="46" />
+	<seed slot0="orlando zapata" slot1="42" />
+	<seed slot0="pamela ahearn" slot1="52" />
+	<seed slot0="parren mitchell" slot1="85" />
+	<seed slot0="pascal yoadimnadji" slot1="56" />
+	<seed slot0="ramazan bashardost" slot1="43" />
+	<seed slot0="ramazan bashardost" slot1="44" />
+	<seed slot0="ramazan bashardost" slot1="47" />
+	<seed slot0="randall forsberg" slot1="64" />
+	<seed slot0="richard nolte" slot1="86" />
+	<seed slot0="richmond flowers" slot1="88" />
+	<seed slot0="robert mcnair" slot1="83" />
+	<seed slot0="tahawwur hussain rana" slot1="48" />
+	<seed slot0="tahawwur hussain rana" slot1="49" />
+	<seed slot0="theodor kollek" slot1="95" />
+	<seed slot0="thomas meskill" slot1="79" />
+	<seed slot0="vernon bellecourt" slot1="75" />
+	<seed slot0="william verity" slot1="89" />
+</seeds>

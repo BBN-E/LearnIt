@@ -1,0 +1,54 @@
+INCLUDE ./bilingual_chinese_gigaword/proposing.params
+INCLUDE ./bilingual_chinese_gigaword/pruning.params
+
+# Pointers to the data
+learnit_data_dir: /nfs/mercury-04/u42/bmin/d2d/hong_kong_protest_v2
+
+corpus_dir: %learnit_data_dir%/source_lists
+
+mappings_dir: %learnit_data_dir%/source_mappings_full
+mappings_lists_dir: %learnit_data_dir%/source_mappings_full_lists
+mappings_list_batches: 1
+target_batches: 1
+
+
+bilingual: true
+languages: chinese,english
+alignments_dir: %learnit_data_dir%/alignments
+
+path_conversions: %learnit_root%/params/domains/bilingual_hk_protest/path_conversions.txt
+alignment_path_conversions: %learnit_root%/params/domains/bilingual_hk_protest/alignment_path_conversions.txt
+source_dir: /nfs/mercury-04/u42/bmin/d2d/hong_kong_protest_v2/serifxml/+language+
+
+# A file containing a list of stopwords.  These are used to rule out
+# search queries and patterns that would overgenerate.
+stopwords: %learnit_root%/inputs/resources/stopwords/chinese_gigaword_df.txt 
+
+# General Domain Parameters
+corpus_name: bilingual_hk_protest
+learnit_expt_suffix: bilingual_hk_protest
+
+# the minimum amount of alignment to allow between the spannings in the source
+# language and the target language. Less overlap means the spanning is considered
+# invalid.
+min_alignment_overlap: 0.5
+
+# list of language:variant:combined name
+language_variants: English:source:english, Chinese:source:chinese
+
+# list of 'source langauge' : 'source variant' = 'target language' : 'target variant' 'alignment location'
+variant_alignments: Chinese:source=English:source english
+
+#######################################################
+#    For Evaluation
+#######################################################
+
+# whether to automatically do evaluation after each iteration
+OVERRIDE do_evaluation: true
+use_gold_coreference: true
+OVERRIDE partial_match_allowance: 1
+
+eval_dir: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/chinese_ace
+rawtext_dir: %eval_dir%/rawtext
+test_set_serifxmls: %eval_dir%/dev_and_train_set.txt
+test_set_apfs: %eval_dir%/dev_and_train_set_gold.txt

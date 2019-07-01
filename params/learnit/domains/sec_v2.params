@@ -1,0 +1,65 @@
+INCLUDE ./sec_v2/proposing.params
+INCLUDE ./sec_v2/pruning.params
+
+# Pointers to the data
+learnit_data_dir: /nfs/mercury-04/u41/SECFilings/
+
+# point at a directory containing lists of serifxml, one per line
+corpus_dir: /nfs/mercury-04/u41/SECFilings/v2/training_batches/
+
+# where the mappings go
+mappings_dir: %learnit_data_dir%/neolearnit/source_mappings
+mappings_lists_dir: %learnit_data_dir%/neolearnit/source_mappings_lists
+
+bilingual: false
+languages: English
+
+path_conversions: %learnit_root%/params/domains/sec_v2/path_conversions.txt
+source_dir: %learnit_data_dir%/v2/serifxml_v2
+
+# A file containing a list of stopwords.  These are used to rule out
+# patterns that would overgenerate or pattern restrictions that would be meaningless.
+stopwords: %learnit_data_dir%/stopwords.txt
+expanded_stopwords: %learnit_data_dir%/stopwords_medium.txt
+overlap_seed_match_filter_word_list: /nfs/mercury-04/u41/SECFilings/stopwords_large.txt
+
+ignore_stopword_slots: true
+
+# General Domain Parameters
+corpus_name: sec
+
+use_patterns_to_initialize: true
+OVERRIDE only_depth_1_props_at_initialization: true
+
+use_seed_groups: false
+
+#################################
+# SERIF PARAMS FOR NEW PRN TYPE #
+#################################
+
+OVERRIDE entity_type_set: /nfs/mercury-03/u12/users/nbotchan/Active/Training/add-new-names-descriptors/files/entity_types.txt
+OVERRIDE entity_subtype_set: /nfs/mercury-03/u12/users/nbotchan/Active/Training/add-new-names-descriptors/files/entity_subtypes.txt
+OVERRIDE domain_word_cluster_bits_file: /nfs/mercury-03/u12/users/nbotchan/Active/Training/add-new-names-descriptors/files/sec.hBits
+
+OVERRIDE cluster_file: /nfs/mercury-03/u12/users/nbotchan/Active/Training/add-new-names-descriptors/files/sec.hBits
+OVERRIDE clusterWordMax: 200
+OVERRIDE clusterWordMin: 2
+
+#################################
+# OVERRIDES FOR MATCHING        #
+#################################
+
+mappings_list_batches: 350
+target_batches: 40
+
+use_parent_for_desc: true
+
+#######################################################
+#    For Evaluation
+#######################################################
+
+eval_dir: /nfs/mercury-04/u24/mcrivaro/source/trunk/Active/Projects/learnit/evaluation/sec/annotated_test_set/%s_serifxml
+test_set_serifxmls: /nfs/mercury-04/u24/mcrivaro/source/trunk/Active/Projects/learnit/evaluation/sec/annotated_test_set/%s_raw_list.txt
+test_set_apfs: /nfs/mercury-04/u24/mcrivaro/source/trunk/Active/Projects/learnit/evaluation/sec/annotated_test_set/%s
+
+use_char_offsets_for_apf: true

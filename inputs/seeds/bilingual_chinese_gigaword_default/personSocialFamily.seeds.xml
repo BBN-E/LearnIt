@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Per_Social_Family" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="aung san suu kyi" slot1="michael aris" language="English" />
+	<seed slot0="elisabeth" slot1="josef fritzl" language="English" />
+	<seed slot0="sylvia plath" slot1="ted hughes" language="English" />
+	<seed slot0="marta sahagun" slot1="vicente fox" language="English" />
+	<seed slot0="gamal" slot1="hosni mubarak" language="English" />
+	<seed slot0="khaleda zia" slot1="ziaur rahman" language="English" />
+	<seed slot0="serena williams" slot1="venus" language="English" />
+	<seed slot0="anna nicole smith" slot1="dannielynn" language="English" />
+	<seed slot0="grace kelly" slot1="rainier iii" language="English" />
+	<seed slot0="laci peterson" slot1="scott peterson" language="English" />
+	<seed slot0="george w bush" slot1="laura" language="English" />
+	<seed slot0="anna nicole smith" slot1="virgie arthur" language="English" />
+	<seed slot0="suha" slot1="yasser arafat" language="English" />
+	<seed slot0="dodi fayed" slot1="mohamed al fayed" language="English" />
+	<seed slot0="cherie" slot1="tony blair" language="English" />
+	<seed slot0="hussein" slot1="noor" language="English" />
+	<seed slot0="bobby brown" slot1="whitney houston" language="English" />
+	<seed slot0="harry" slot1="william" language="English" />
+	<seed slot0="ingrid betancourt" slot1="yolanda pulecio" language="English" />
+	<seed slot0="ingrid betancourt" slot1="juan carlos lecompte" language="English" />
+	<seed slot0="john lennon" slot1="yoko ono" language="English" />
+	<seed slot0="saddam hussein" slot1="uday" language="English" />
+	<seed slot0="cindy" slot1="john mccain" language="English" />
+	<seed slot0="asif ali zardari" slot1="zulfikar ali bhutto" language="English" />
+	<seed slot0="anna nicole smith" slot1="j howard marshall ii" language="English" />
+	<seed slot0="juan carlos" slot1="sofia" language="English" />
+	<seed slot0="boris yeltsin" slot1="naina" language="English" />
+	<seed slot0="andre agassi" slot1="brooke shields" language="English" />
+	<seed slot0="denise brown" slot1="nicole brown simpson" language="English" />
+	<seed slot0="megawati sukarnoputri" slot1="sukarno" language="English" />
+	<seed slot0="faure gnassingbe" slot1="gnassingbe eyadema" language="English" />
+	<seed slot0="mira markovic" slot1="slobodan milosevic" language="English" />
+	<seed slot0="elizabeth ii" slot1="philip" language="English" />
+	<seed slot0="odai" slot1="saddam hussein" language="English" />
+	<seed slot0="george w bush" slot1="laura bush" language="English" />
+	<seed slot0="diana" slot1="earl spencer" language="English" />
+	<seed slot0="liam neeson" slot1="natasha richardson" language="English" />
+	<seed slot0="woody allen" slot1="yi previn" language="English" />
+	<seed slot0="asif ali zardari" slot1="benazir bhutto" language="English" />
+	<seed slot0="michael schiavo" slot1="terri schiavo" language="English" />
+	<seed slot0="lee hsien loong" slot1="lee kuan yew" language="English" />
+	<seed slot0="carlo ponti" slot1="sophia loren" language="English" />
+	<seed slot0="hagai" slot1="yigal amir" language="English" />
+	<seed slot0="guy ritchie" slot1="madonna" language="English" />
+	<seed slot0="lourdes" slot1="madonna" language="English" />
+	<seed slot0="keith urban" slot1="nicole kidman" language="English" />
+	<seed slot0="indira gandhi" slot1="jawaharlal nehru" language="English" />
+	<seed slot0="sania mirza" slot1="shoaib malik" language="English" />
+	<seed slot0="dodi fayed" slot1="mohammed al fayed" language="English" />
+	<seed slot0="jesse james" slot1="sandra bullock" language="English" />
+	<seed slot0="bill clinton" slot1="hillary clinton" language="English" />
+	<seed slot0="bill clinton" slot1="hillary rodham clinton" language="English" />
+	<seed slot0="qusai" slot1="saddam hussein" language="English" />
+	<seed slot0="brad pitt" slot1="jennifer aniston" language="English" />
+	<seed slot0="jennifer lopez" slot1="marc anthony" language="English" />
+	<seed slot0="barack obama" slot1="michelle" language="English" />
+	<seed slot0="hassan ii" slot1="mohammed vi" language="English" />
+	<seed slot0="marko" slot1="slobodan milosevic" language="English" />
+	<seed slot0="ariel sharon" slot1="gilad" language="English" />
+	<seed slot0="harry" slot1="prince charles" language="English" />
+	<seed slot0="lisa" slot1="nick leeson" language="English" />
+	<seed slot0="angela merkel" slot1="joachim sauer" language="English" />
+	<seed slot0="alan greenspan" slot1="andrea mitchell" language="English" />
+	<seed slot0="heidar aliyev" slot1="ilham" language="English" />
+	<seed slot0="saddam hussein" slot1="sajida" language="English" />
+	<seed slot0="natasha richardson" slot1="vanessa redgrave" language="English" />
+	<seed slot0="heydar aliyev" slot1="ilham aliyev" language="English" />
+	<seed slot0="kofi annan" slot1="kojo" language="English" />
+	<seed slot0="cindy mccain" slot1="john mccain" language="English" />
+	<seed slot0="daniel day - lewis" slot1="rebecca miller" language="English" />
+	<seed slot0="anne morrow lindbergh" slot1="charles a lindbergh" language="English" />
+	<seed slot0="rafiq hariri" slot1="saad hariri" language="English" />
+	<seed slot0="david beckham" slot1="victoria" language="English" />
+	<seed slot0="akihito" slot1="hirohito" language="English" />
+	<seed slot0="qusay" slot1="saddam hussein" language="English" />
+	<seed slot0="lisa marie presley" slot1="michael jackson" language="English" />
+	<seed slot0="flora" slot1="jim swire" language="English" />
+	<seed slot0="raghad" slot1="saddam hussein" language="English" />
+	<seed slot0="bernadette" slot1="jacques chirac" language="English" />
+	<seed slot0="diana" slot1="frances shand kydd" language="English" />
+	<seed slot0="benazir bhutto" slot1="zulfikar ali bhutto" language="English" />
+	<seed slot0="efrain bamaca velasquez" slot1="jennifer harbury" language="English" />
+	<seed slot0="sheikh hasina wajed" slot1="sheikh mujibur rahman" language="English" />
+	<seed slot0="ava gardner" slot1="frank sinatra" language="English" />
+	<seed slot0="edward viii" slot1="george vi" language="English" />
+	<seed slot0="bart conner" slot1="nadia comaneci" language="English" />
+	<seed slot0="andre agassi" slot1="steffi graf" language="English" />
+	<seed slot0="suha arafat" slot1="yasser arafat" language="English" />
+	<seed slot0="serena williams" slot1="venus williams" language="English" />
+	<seed slot0="joseph wilson" slot1="valerie plame" language="English" />
+	<seed slot0="moamer kadhafi" slot1="seif al- islam" language="English" />
+	<seed slot0="sting" slot1="trudie styler" language="English" />
+	<seed slot0="威尔 森" slot1="普 拉 姆" language="Chinese" />
+	<seed slot0="苏珊娜" slot1="藤森" language="Chinese" />
+	<seed slot0="威廉 王子" slot1="查尔斯" language="Chinese" />
+	<seed slot0="陈幸妤" slot1="陈水扁" language="Chinese" />
+	<seed slot0="克林顿" slot1="希拉里" language="Chinese" />
+	<seed slot0="陈 志 忠" slot1="陈 志 明" language="Chinese" />
+	<seed slot0="金日成" slot1="金正日" language="Chinese" />
+	<seed slot0="朱琳" slot1="李鹏" language="Chinese" />
+	<seed slot0="奥 巴 马" slot1="米歇尔" language="Chinese" />
+	<seed slot0="伍兹" slot1="艾 琳" language="Chinese" />
+	<seed slot0="塞 西 莉 亚" slot1="萨 科 齐" language="Chinese" />
+	<seed slot0="希拉里克林顿" slot1="比尔 克林顿" language="Chinese" />
+	<seed slot0="哈利" slot1="查尔斯" language="Chinese" />
+	<seed slot0="布莱德 彼 特" slot1="珍妮佛 安妮 斯顿" language="Chinese" />
+	<seed slot0="曼德拉" slot1="葛 拉 嘉" language="Chinese" />
+	<seed slot0="维 多 莉 亚" slot1="贝克 汉" language="Chinese" />
+	<seed slot0="威廉" slot1="查尔斯" language="Chinese" />
+	<seed slot0="沈 殿 霞" slot1="郑 欣 宜" language="Chinese" />
+	<seed slot0="李光耀" slot1="柯 玉 芝" language="Chinese" />
+	<seed slot0="bush" slot1="laura" language="English" />
+	<seed slot0="camila" slot1="charles" language="English" />
+	<seed slot0="bill clinton" slot1="hillary clinton" language="English" />
+	<seed slot0="nicole kidman" slot1="tom cruise" language="English" />
+	<seed slot0="jason hu" slot1="shao hsiao @-@ ling" language="English" />
+	<seed slot0="agassi" slot1="graff" language="English" />
+	<seed slot0="nelson mandela" slot1="winnie mandela" language="English" />
+	<seed slot0="li peng" slot1="zhu lin" language="English" />
+	<seed slot0="charles" slot1="william" language="English" />
+	<seed slot0="liu xia" slot1="liu xiaobo" language="English" />
+	<seed slot0="celia" slot1="sarkozy" language="English" />
+	<seed slot0="carla bruni" slot1="sarkozy" language="English" />
+	<seed slot0="barbara" slot1="bush" language="English" />
+	<seed slot0="chen chih" slot1="chen shui @-@ bian" language="English" />
+	<seed slot0="hu jintao" slot1="liu yongqing" language="English" />
+	<seed slot0="charles" slot1="diana" language="English" />
+	<seed slot0="david beckham" slot1="victoria" language="English" />
+	<seed slot0="saddam hussein" slot1="uday" language="English" />
+	<seed slot0="monique" slot1="norodom sihanouk" language="English" />
+	<seed slot0="jiang zemin" slot1="wang yeping" language="English" />
+	<seed slot0="elizabeth ii" slot1="philip" language="English" />
+	<seed slot0="michelle" slot1="obama" language="English" />
+	<seed slot0="hu jia" slot1="zeng jinyan" language="English" />
+	<seed slot0="carla bruni" slot1="nicolas sarkozy" language="English" />
+	<seed slot0="jaroslaw kaczynski" slot1="lech kaczynski" language="English" />
+	<seed slot0="chow mei @-@ ching" slot1="ma ying @-@ jeou" language="English" />
+	<seed slot0="dick cheney" slot1="lynne" language="English" />
+	<seed slot0="bill clinton" slot1="hillary rodham clinton" language="English" />
+	<seed slot0="barack obama" slot1="michelle" language="English" />
+	<seed slot0="bruni" slot1="sarkozy" language="English" />
+	<seed slot0="george w bush" slot1="laura" language="English" />
+	<seed slot0="david beckham" slot1="viktoria" language="English" />
+	<seed slot0="charles" slot1="queen" language="English" />
+	<seed slot0="diana" slot1="prince charles" language="English" />
+	<seed slot0="george w bush" slot1="jeb bush" language="English" />
+	<seed slot0="asif ali zardari" slot1="benazir bhutto" language="English" />
+	<seed slot0="suha arafat" slot1="yasser arafat" language="English" />
+	<seed slot0="elizabeth ii" slot1="george vi" language="English" />
+	<seed slot0="nelson mandela" slot1="winnie" language="English" />
+	<seed slot0="david beckham" slot1="victoria beckham" language="English" />
+	<seed slot0="克里斯蒂娜" slot1="基 什 内尔" language="Chinese" />
+	<seed slot0="宋楚瑜" slot1="陈 万 水" language="Chinese" />
+	<seed slot0="威廉 王子" slot1="王储 查尔斯" language="Chinese" />
+	<seed slot0="皮尔 斯 布 洛斯 南" slot1="西 恩" language="Chinese" />
+	<seed slot0="多 迪" slot1="法 耶 德" language="Chinese" />
+	<seed slot0="席 琳 狄 翁" slot1="雷 恩 安 杰 利" language="Chinese" />
+	<seed slot0="金 弘 杰" slot1="金大中" language="Chinese" />
+	<seed slot0="福特" slot1="贝 蒂" language="Chinese" />
+	<seed slot0="威廉 王子" slot1="查尔斯 王子" language="Chinese" />
+	<seed slot0="威廉 王子" slot1="查尔斯" language="Chinese" />
+	<seed slot0="奚 拉 瑞" slot1="柯林顿" language="Chinese" />
+	<seed slot0="明仁" slot1="裕仁" language="Chinese" />
+	<seed slot0="朴 槿 惠" slot1="朴正熙" language="Chinese" />
+	<seed slot0="卡特" slot1="罗莎 琳" language="Chinese" />
+	<seed slot0="老 布希" slot1="芭芭拉" language="Chinese" />
+	<seed slot0="宋美龄" slot1="蒋公" language="Chinese" />
+	<seed slot0="塞 西 莉 亚" slot1="萨 科 齐" language="Chinese" />
+	<seed slot0="鲍 彤" slot1="鲍 朴" language="Chinese" />
+	<seed slot0="梅 嘉 娃 蒂" slot1="苏 卡诺" language="Chinese" />
+	<seed slot0="李 小 琳" slot1="李鹏" language="Chinese" />
+	<seed slot0="威廉" slot1="黛安娜 王妃" language="Chinese" />
+	<seed slot0="欧 巴 马" slot1="蜜 雪 儿" language="Chinese" />
+	<seed slot0="乌 代" slot1="萨达姆" language="Chinese" />
+	<seed slot0="班 邦" slot1="苏哈托" language="Chinese" />
+	<seed slot0="成 惠 琳" slot1="金正日" language="Chinese" />
+	<seed slot0="朱 俶 贤" slot1="萧万长" language="Chinese" />
+	<seed slot0="劳尔 卡斯 楚" slot1="卡斯 楚" language="Chinese" />
+	<seed slot0="基瓦" slot1="阿拉法特" language="Chinese" />
+	<seed slot0="曼德拉" slot1="葛 拉 嘉" language="Chinese" />
+	<seed slot0="威廉 王子" slot1="黛安娜" language="Chinese" />
+	<seed slot0="威廉 王子" slot1="黛安娜 王妃" language="Chinese" />
+	<seed slot0="卢 恰 诺 帕 瓦罗 蒂" slot1="尼 科 莱 塔 曼 托 瓦 尼" language="Chinese" />
+	<seed slot0="球王 老虎 伍兹" slot1="艾 琳" language="Chinese" />
+	<seed slot0="威廉" slot1="查尔斯" language="Chinese" />
+	<seed slot0="布希" slot1="杰布" language="Chinese" />
+	<seed slot0="尤 恩" slot1="布莱尔" language="Chinese" />
+	<seed slot0="叶利钦" slot1="奈 娜" language="Chinese" />
+	<seed slot0="李 在 灿" slot1="李 昌 熙" language="Chinese" />
+	<seed slot0="宋美龄" slot1="蒋介石" language="Chinese" />
+	<seed slot0="巴希尔 阿萨德" slot1="阿萨德" language="Chinese" />
+	<seed slot0="王 建民" slot1="贾 斯汀" language="Chinese" />
+	<seed slot0="多 迪" slot1="老 法 耶 德" language="Chinese" />
+	<seed slot0="艾 玛" slot1="艾 瑞 克 罗 勃 兹" language="Chinese" />
+	<seed slot0="穆罕默德 萨阿德" slot1="艾哈迈德 萨阿德" language="Chinese" />
+	<seed slot0="凯 莉 史密斯" slot1="皮尔 斯 布 洛斯 南" language="Chinese" />
+	<seed slot0="布什" slot1="杰布 布什" language="Chinese" />
+	<seed slot0="拉 吉尔" slot1="柯林顿" language="Chinese" />
+	<seed slot0="卡罗琳" slot1="朱利安 尼" language="Chinese" />
+	<seed slot0="尤 瑞 奥 斯 德" slot1="詹森" language="Chinese" />
+	<seed slot0="罗 月 英" slot1="罗 添 发" language="Chinese" />
+	<seed slot0="奥 鲁 奇" slot1="玛格丽特" language="Chinese" />
+	<seed slot0="乔治 布希" slot1="布希" language="Chinese" />
+	<seed slot0="希 拉 蕊 柯林顿" slot1="柯林顿" language="Chinese" />
+	<seed slot0="多 迪 法 耶 德" slot1="穆罕默德 法 耶 德" language="Chinese" />
+	<seed slot0="布希" slot1="芭芭拉 布希" language="Chinese" />
+	<seed slot0="吉 娜" slot1="布希" language="Chinese" />
+	<seed slot0="戈登 布朗" slot1="萨拉 布朗" language="Chinese" />
+	<seed slot0="柯林顿" slot1="罗德 翰" language="Chinese" />
+	<seed slot0="伊 梅尔 达 马科斯" slot1="马科斯" language="Chinese" />
+	<seed slot0="王 雁 南" slot1="赵紫阳" language="Chinese" />
+	<seed slot0="金 正 银" slot1="金正日" language="Chinese" />
+<seed slot0="陈水扁" slot1="吴淑珍" language="Chinese" />
+<seed slot0="郑 洁" slot1="晏 紫" language="Chinese" />
+<seed slot0="吴淑珍" slot1="陈水扁" language="Chinese" />
+<seed slot0="胡锦涛" slot1="刘永清" language="Chinese" />
+<seed slot0="陈水扁" slot1="陈幸妤" language="Chinese" />
+<seed slot0="李鹏" slot1="朱琳" language="Chinese" />
+<seed slot0="马英九" slot1="周 美 青" language="Chinese" />
+</seeds>

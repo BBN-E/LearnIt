@@ -1,0 +1,36 @@
+INCLUDE ./default.params
+
+OVERRIDE learnit_expt_suffix: bilingual_chinese_gigaword_default
+
+
+INCLUDE ../domains/kbp-tac/proposing.params
+INCLUDE ../domains/kbp-tac/pruning.params
+
+# learnit_data_dir: /nfs/mercury-04/u41/learnit/ERE/
+# corpus_dir: %learnit_data_dir%/source_lists
+# mappings_dir: %learnit_data_dir%/source_mappings
+# mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+
+bilingual: false
+languages: Chinese
+
+path_conversions: %learnit_root%/params/learnit/domains/path_conversions.txt
+# source_dir: %learnit_data_dir%/serifxml
+
+stopwords: %learnit_root%/inputs/resources/stopwords/english_gigaword_df.txt
+
+corpus_name: ere_LDC2015E29_and_LDC2015E68
+
+
+OVERRIDE do_initialization: false
+OVERRIDE do_post_pruning: false
+
+OVERRIDE do_evaluation: true
+
+regtest_confidence_cutoff: .01
+
+transliterationFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.validTranslations
+chiEngNameMappingFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.normalizedTranslations
+
+sent_builder_dbg_info: false
+enable_exception_contradictory_answers: false

@@ -1,0 +1,17 @@
+INCLUDE ./default.params
+INCLUDE ../domains/bilingual_chinese_gigaword.params
+
+OVERRIDE learnit_expt_suffix: hk_protest
+
+OVERRIDE do_initialization: false
+OVERRIDE do_post_pruning: false
+
+regtest_confidence_cutoff: .01
+
+transliterationFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.validTranslations
+chiEngNameMappingFile: /nfs/mercury-04/u22/d2d/hong_kong_protest/entityInfo/HKprotest_entityInfo.manual.translation
+
+OVERRIDE running_test_set: true
+
+extractor.threshold: 0.2
+extractor.directory: /nfs/mercury-04/u42/bmin/source/Active/Projects/neolearnit/outputs/bll/pruned

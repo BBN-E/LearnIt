@@ -1,0 +1,72 @@
+[{
+    "language": "English",
+    "predicateType": "verb",
+    "predicates": [{
+        "string": "cause"
+    }],
+    "args": [{
+        "role": {
+            "string": "<obj>"
+        },
+        "slot": 0,
+        "prop": null
+    }, {
+        "role": {
+            "string": "<sub>"
+        },
+        "slot": 1,
+        "prop": null
+    }]
+}, {
+    "language": "English",
+    "predicateType": "verb",
+    "predicates": [{
+        "string": "cause"
+    }],
+    "args": [{
+        "role": {
+            "string": "<obj>"
+        },
+        "slot": 1,
+        "prop": null
+    }, {
+        "role": {
+            "string": "<sub>"
+        },
+        "slot": 0,
+        "prop": null
+    }]
+}, {
+    "language": "English",
+    "predicateType": "copula",
+    "predicates": [{
+        "string": "was"
+    }],
+    "args": [{
+        "role": {
+            "string": "<obj>"
+        },
+        "slot": 0,
+        "prop": null
+    }, {
+        "role": {
+            "string": "<sub>"
+        },
+        "slot": null,
+        "prop": {
+            "@class": ".PropPattern",
+            "language": "English",
+            "predicateType": "noun",
+            "predicates": [{
+                "string": "cause"
+            }],
+            "args": [{
+                "role": {
+                    "string": "of"
+                },
+                "slot": 1,
+                "prop": null
+            }]
+        }
+    }]
+}]

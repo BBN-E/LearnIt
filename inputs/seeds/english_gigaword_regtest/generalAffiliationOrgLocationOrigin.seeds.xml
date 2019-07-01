@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Gen_Aff_Org-Location" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="fbi" slot1="washington" />
+	<seed slot0="baath party" slot1="baghdad" />
+	<seed slot0="xinhua news agency" slot1="beijing" />
+	<seed slot0="international atomic energy agency" slot1="vienna" />
+	<seed slot0="xinhua news agency" slot1="chinese" />
+	<seed slot0="nato" slot1="europe" />
+	<seed slot0="plo" slot1="jerusalem" />
+	<seed slot0="boeing co" slot1="seattle" />
+	<seed slot0="revolutionary armed forces of colombia" slot1="colombian" />
+	<seed slot0="world trade organisation" slot1="geneva" />
+	<seed slot0="al - qaeda" slot1="afghanistan" />
+	<seed slot0="north atlantic treaty organization" slot1="brussels" />
+	<seed slot0="un" slot1="geneva" />
+	<seed slot0="world trade organization" slot1="geneva" />
+	<seed slot0="al - qaeda" slot1="yemeni" />
+	<seed slot0="al - qaeda" slot1="iraqi" />
+	<seed slot0="united nations" slot1="geneva" />
+	<seed slot0="jemaah islamiyah" slot1="southeast asia" />
+	<seed slot0="nasa" slot1="washington" />
+	<seed slot0="moro islamic liberation front" slot1="philippines" />
+	<seed slot0="la stampa" slot1="turin" />
+	<seed slot0="al - qaeda" slot1="yemen" />
+	<seed slot0="google" slot1="mountain view" />
+	<seed slot0="chatham house" slot1="london" />
+	<seed slot0="yankee group" slot1="boston" />
+	<seed slot0="organization for security and cooperation" slot1="europe" />
+	<seed slot0="unhcr" slot1="geneva" />
+	<seed slot0="federal bureau of investigation" slot1="washington" />
+	<seed slot0="heritage foundation" slot1="washington" />
+	<seed slot0="moro national liberation front" slot1="philippines" />
+	<seed slot0="boeing" slot1="seattle" />
+	<seed slot0="verizon wireless" slot1="united states" />
+	<seed slot0="plo" slot1="east jerusalem" />
+	<seed slot0="google inc" slot1="mountain view" />
+	<seed slot0="5th fleet" slot1="bahrain" />
+</seeds>

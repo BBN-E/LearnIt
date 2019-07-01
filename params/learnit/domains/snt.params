@@ -1,0 +1,61 @@
+INCLUDE ./snt/proposing.params
+INCLUDE ./snt/pruning.params
+
+# Pointers to the data
+learnit_data_dir: /nfs/mercury-04/u18/mshafir/mr/data/processing
+
+# point at a directory containing lists of serifxml, one per line
+corpus_dir: %learnit_data_dir%/doc_lists
+
+# where the mappings go
+mappings_dir: /nfs/mercury-04/u41/SnT/data/source_mappings
+mappings_lists_dir: /nfs/mercury-04/u41/SnT/data/source_mappings_lists
+
+bilingual: false
+languages: English
+
+path_conversions: %learnit_root%/params/domains/snt/path_conversions.txt
+source_dir: %learnit_data_dir%/serifxml
+
+# A file containing a list of stopwords.  These are used to rule out
+# search queries and patterns that would overgenerate.
+stopwords: %learnit_root%/inputs/resources/stopwords/english.txt
+
+# General Domain Parameters
+corpus_name: snt
+
+use_patterns_to_initialize: true
+OVERRIDE only_depth_1_props_at_initialization: true
+
+do_lexical_expansion: true
+
+relations_accepting_stopword_patterns: producesTech, ownsOrAcquiresTech, techIsA, personHasTitle
+
+#################################
+# SERIF PARAMS FOR NEW TPN TYPE #
+#################################
+
+OVERRIDE entity_type_set: %learnit_root%/inputs/resources/serif_data/snt_entity_types.txt
+OVERRIDE entity_subtype_set: %learnit_root%/inputs/resources/serif_data/snt_entity_subtypes.txt
+OVERRIDE domain_word_cluster_bits_file: %serif_data%/english/clusters/snt2.hBits
+
+OVERRIDE cluster_file: %serif_data%/english/clusters/snt2.hBits
+OVERRIDE clusterWordMax: 200
+OVERRIDE clusterWordMin: 2
+
+#################################
+# OVERRIDES FOR MATCHING        #
+#################################
+
+mappings_list_batches: 400
+target_batches: 40
+
+#######################################################
+#    For Evaluation
+#######################################################
+
+eval_dir: /nfs/mercury-04/u24/mcrivaro/source/trunk/Active/Projects/learnit/evaluation/snt/annotated_test_set/%s_serifxml
+test_set_serifxmls: /nfs/mercury-04/u24/mcrivaro/source/trunk/Active/Projects/learnit/evaluation/snt/annotated_test_set/%s_doclist.txt
+test_set_apfs: /nfs/mercury-04/u24/mcrivaro/source/trunk/Active/Projects/learnit/evaluation/snt/annotated_test_set/%s
+
+use_char_offsets_for_apf: false

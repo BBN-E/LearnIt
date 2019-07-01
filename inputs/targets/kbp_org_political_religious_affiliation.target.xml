@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="org_political_religious_affiliation" elf_ontology_type="org_political_religious_affiliation"
+          description="{1} is the political, religious affiliation of {0}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_org" elf_role="0_org"
+           mention_constraints="(acetype ORG) (min-entitylevel NONE)" allow_desc_training="1" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_per_gpe_loc" elf_role="1_per_gpe_loc"
+           mention_constraints="(acetype PER GPE LOC) (min-entitylevel NONE)" allow_desc_training="1" />
+    <slot_pair a="1" b="0" symmetric="0" must_not_corefer="1"/>
+  </target>
+</targets>

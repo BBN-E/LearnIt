@@ -1,0 +1,751 @@
+package com.bbn.akbc.coldstart.kb;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import Query;
+import com.bbn.akbc.coldstart.kb.Slot;
+import com.bbn.akbc.coldstart.kb.SlotFactory;
+import CSAssessment;
+import CSInitQuery;
+import EquivalentClass;
+import com.bbn.akbc.coldstart.nlp.entity.KBPEntity;
+import com.bbn.akbc.coldstart.nlp.entity.KBPMention;
+import com.bbn.akbc.coldstart.nlp.generic.Span;
+import com.bbn.akbc.coldstart.nlp.relation.KBRelationon;
+import com.bbn.akbc.coldstart.nlp.KBRelation.RelationFactory;
+import com.bbn.akbc.coldstart.nlp.KBRelation.KBRelationMention;
+import AssessmentReader;
+import QueryReader;
+import FileUtil;
+import Resources;
+import StringUtil;
+import com.bbn.serif.io.SerifXMLLoader;
+import com.bbn.serif.theories.DocTheory;
+import com.bbn.serif.theories.Entity;
+import com.bbn.serif.theories.Mention;
+import com.bbn.serif.theories.SentenceTheory;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.common.base.Optional;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Multimap;
+
+@JsonAutoDetect(
+		fieldVisibility=JsonAutoDetect.Visibility.NONE,
+		getterVisibility=JsonAutoDetect.Visibility.NONE,
+		isGetterVisibility=JsonAutoDetect.Visibility.NONE)
+public class ColdStartKB {
+	@JsonProperty
+	String id;
+	@JsonProperty
+	Map<String, EntityInfo> id2entities;
+	@JsonProperty
+	Set<Relation> listKBRelations;
+
+	@JsonCreator
+	public ColdStartKB(
+			@JsonProperty("id") String id,
+			@JsonProperty("id2entities") Map<String, EntityInfo> id2entities,
+			@JsonProperty("listKBRelations") Set<Relation> listKBRelations) {
+		this.id = id;
+		this.id2entities = id2entities;
+		this.listKBRelations = listKBRelations;
+	}
+
+	public Map<String, EntityInfo> getId2entities() {
+		return this.id2entities;
+	}
+
+	public Set<Relation> getRelations() {
+		return this.listKBRelations;
+	}
+
+	public String getId() {
+		return this.id;
+	}
+
+	public void addRelation(Relation KBRelation) {
+		listKBRelations.add(KBRelation);
+	}
+
+	public Optional<String> getEntityIdByMention(MentionInfo KBMention) {
+		for(String entityId : id2entities.keySet()) {
+			if(id2entities.get(entityId).hasMention(KBMention))
+				return Optional.of(entityId);
+		}
+
+		return Optional.absent();
+	}
+
+	public Set<Relation> getRelationsByQuery(String queryId) {
+		Set<Relation> filteredKBRelationSet = new HashSet<Relation>();
+
+		for(Relation reln : listKBRelations) {
+			if(reln.query.id.equals(queryId))
+				filteredKBRelationSet.add(reln);
+		}
+
+		return filteredKBRelationSet;
+	}
+
+	public Collection<MentionInfo> getSystemMentionsForQuery(String queryId) {
+		return id2entities.get(queryId).mentions;
+	}
+
+	public void testChopList(int sizeChoppedList) {
+		throw new RuntimeException("Not implemented yet. code refactoring in progress");
+	}
+	/*
+	public void testChopList(int sizeChoppedList) {
+		this.addInverse();
+		try {
+			this.applyInference("/nfs/mercury-04/u42/bmin/Git_repo/repo/kbp/coldstart/tmp/empty_file_of_inference_rules.txt", 1, Optional.of("/nfs/mercury-04/u42/bmin/Git_repo/repo/kbp/coldstart/tmp/dummy_file_of_inference_traces.html"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		eidToDocs.clear();
+		eid1ToRelnToSetEid2.clear();
+		relnToSrcEid.clear();
+		eid2ToRelnToSetEid1.clear();
+		relnToSrcEid.clear();
+		id2entities.clear();
+
+		System.out.println("listKBRelations.size(): " + listKBRelations.size());
+
+		List<Relation> listRelationsNew = new ArrayList<Relation>();
+		listRelationsNew.addAll(listKBRelations);
+		listRelationsNew = listRelationsNew.subList(0, sizeChoppedList);
+		listKBRelations.clear();
+		listKBRelations.addAll(listRelationsNew);
+	}
+	*/
+
+	public void printStats() {
+		System.out.println("=============== System KB Info ===============");
+		System.out.println("= # entities: " + this.id2entities.size());
+		System.out.println("= # relnInfo: " + this.listKBRelations.size());
+		System.out.println("==============================================");
+	}
+
+	public void writeToFile(String strFileKB) {
+		writeToFile(strFileKB, false);
+	}
+
+	public void writeToFile(String strFileKB, boolean withAnnotation) {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(strFileKB)));
+
+			List<String> id2entitiesKeys = new ArrayList<String>(id2entities.keySet());
+			Collections.sort(id2entitiesKeys);
+			for(String id : id2entitiesKeys) {
+				EntityInfo KBEntity = id2entities.get(id);
+				writer.write(KBEntity.toColdStartString().replace("#", "_"));
+			}
+
+			List<String> KBRelations = new ArrayList<String>();
+			for(Relation KBRelation : listKBRelations) {
+				if(SlotFactory.isVirtual(KBRelation.slot)) continue; // virtual KBRelations are for inference only
+				KBRelations.add(KBRelation.toColdStartString(withAnnotation).replace("#", "_"));
+			}
+			Collections.sort(KBRelations);
+			for(String s : KBRelations)
+				writer.write(s);
+
+			writer.close();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+
+	public void writeAnnotationToFile(String strFile) {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(strFile)));
+
+			/*
+			for(String id : id2entities.keySet()) {
+				EntityInfo KBEntity = id2entities.get(id);
+				writer.write(KBEntity.toColdStartString().replace("#", "_"));
+			}
+			*/
+
+
+			for(Relation KBRelation : listKBRelations) {
+				if(SlotFactory.isVirtual(KBRelation.slot)) continue; // virtual KBRelations are for inference only
+
+				for(RelationMention rm : KBRelation.mentions)
+					if(rm.judgementOnQuery.isPresent() || rm.judgementOnRelation.isPresent())
+						writer.write(rm.toStringAssessMent() + "\n");
+			}
+
+			writer.close();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+
+
+	public void addInverse() {
+		Set<Relation> listRelationsNew = new HashSet<Relation>();
+		listRelationsNew.addAll(listKBRelations);
+
+		// add reverse KBRelations
+		for(Relation KBRelationInfo : listKBRelations) {
+			Optional<Relation> inverseRelnMention = RelationFactory.getReverseRelation(KBRelationInfo);
+
+			if(inverseRelnMention.isPresent())
+				listRelationsNew.add(inverseRelnMention.get());
+		}
+		listKBRelations = listRelationsNew;
+	}
+
+	private BiMap<String, String> loadSysEntityToQueryMapping(String fileEvalLog) {
+		BiMap<String, String> sysEntity2query = HashBiMap.create();
+
+		try {
+			String sline;
+			BufferedReader reader = new BufferedReader(new FileReader(fileEvalLog));
+			while ( (sline = reader.readLine()) != null) {
+				String [] fields = sline.trim().split("\t");
+				if(fields.length!=3) continue;
+
+				if(!fields[0].equals("dbg")) continue;
+
+				sysEntity2query.put(fields[2], fields[1] + "_00"); // append hop info for initial queries
+			}
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return sysEntity2query;
+	}
+
+	static int getSentenceId(DocTheory dt, int offset) {
+		for(int sid = 0; sid < dt.sentenceTheories().size(); sid++) {
+			SentenceTheory s = dt.sentenceTheories().get(sid);
+
+			int start = s.span().startCharOffset().value();
+			int end = s.span().endCharOffset().value();
+
+			if(offset>=start && offset<=end)
+				return sid;
+		}
+
+		return -1;
+	}
+
+	static Entity getEntityByCharOffsets(DocTheory dt, int start, int end) {
+		for(Entity e : dt.entities().asList()) {
+			for(Mention m : e.mentions()) {
+				int mention_start = m.span().startCharOffset().value();
+				int mention_end = m.span().endCharOffset().value();
+
+				if(overlap(start, end, mention_start, mention_end))
+					return e;
+			}
+		}
+
+		return null;
+	}
+
+	static boolean overlap(int start1, int end1, int start2, int end2) {
+		if(start1 <= start2) {
+			if(end1 >= start2)
+				return true;
+			else
+				return false;
+		}
+		else {
+			if(end2 >= start1)
+				return true;
+			else
+				return false;
+		}
+	}
+
+	static boolean matchByCoref(String docId,
+			Span span1, Span span2,
+			int thres_num_sentences_apart) {
+
+		int start1 = span1.getStart();
+		int end1 = span1.getEnd();
+		int start2 = span2.getStart();
+		int end2 = span2.getEnd();
+
+		String strPathSerifXml = Resources.getPathSerifXml() + docId + ".xml";
+		try {
+			SerifXMLLoader fromXML = SerifXMLLoader.fromStandardACETypes();
+			DocTheory dt = fromXML.loadFrom(new File(strPathSerifXml));
+
+			int sid1 = getSentenceId(dt, start1);
+			int sid2 = getSentenceId(dt, start2);
+
+			if(sid1==-1 || sid2==-1 || Math.abs(sid1-sid2)>thres_num_sentences_apart)
+				return false;
+
+			Entity e1 = getEntityByCharOffsets(dt, start1, end1);
+			Entity e2 = getEntityByCharOffsets(dt, start2, end2);
+
+			if(e1==null || e2==null)
+				return false;
+
+			if(e1.equals(e2))
+				return true;
+			else
+				return false;
+
+		}catch(IOException e){
+			e.printStackTrace();
+			//code to handle an IOException here
+			System.out.println("Exception in reading: " + strPathSerifXml);
+		}
+
+		return false;
+	}
+
+
+	// queryId+docId -> list of assessments: for fast alignment
+	static Multimap<String, CSAssessment> queryIdAndDocId2listOfAssessments= ArrayListMultimap.create();
+	static Optional<CSAssessment> findAlignedAssessment(String queryId, RelationMention rm) {
+		String strKey = queryId + "|" + rm.slot.toString() + "|" + rm.getDocId();
+		for(CSAssessment assessment : queryIdAndDocId2listOfAssessments.get(strKey)) { // match queryId + docId
+			if(assessment.spanOfFiller.overlapWith(rm.answer.span))
+		//	if(matchByCoref(rm.getDocId(), assessment.spanOfFiller, rm.answer.span, 5))
+				return Optional.of(assessment);
+		}
+
+		return Optional.absent();
+	}
+
+	public void injectQueryAndAssessmentsAndEquivalentClasses(String strFileAssessment, String strFileEvalLog, String strFileQuery) {
+		injectQueryAndAssessmentsAndEquivalentClasses(strFileAssessment, strFileEvalLog, strFileQuery,
+				false);
+	}
+
+	public void injectQueryAndAssessmentsAndEquivalentClasses(String strFileAssessment, String strFileEvalLog, String strFileQuery,
+			boolean addMissesFromAssessment) {
+		// read assessment
+		List<CSAssessment> listAssessments = AssessmentReader.readCSAssessmentsFromFile(strFileAssessment);
+		for(CSAssessment assessment : listAssessments) {
+			String strKey = assessment.queryId + "|" + assessment.slot + "|" + assessment.docid;
+			ColdStartKB.queryIdAndDocId2listOfAssessments.put(strKey, assessment); // TODO: put more judgement fields
+
+			System.out.println("Assessment: strKey=" + strKey + "\t" + assessment.toString());
+		}
+
+		Set<CSAssessment> setOfAssessmentsFound = new HashSet<CSAssessment>();
+
+		// read queries
+		List<Query> listQueries = QueryReader.readQueriesFromFile(strFileQuery);
+		Map<String, Query> id2query = Maps.newHashMap();
+		for(Query query : listQueries)
+			id2query.put(query.id, query);
+
+		// load alignment query -> sysEntity
+		BiMap<String, String> sysEntity2query = loadSysEntityToQueryMapping(strFileEvalLog);
+
+		// attach queries & judgements to the system KB
+		for(Relation KBRelation : this.listKBRelations) {
+			String sysEntityId = KBRelation.query.id;
+			if(sysEntity2query.containsKey(sysEntityId)) { // found query entity
+				String queryId = sysEntity2query.get(sysEntityId);
+				KBRelation.setEvalQuery((CSInitQuery)id2query.get(queryId)); // set query entity on query of a KBRelation
+
+				for(RelationMention rm : KBRelation.mentions) {
+					Optional<CSAssessment> assessment = ColdStartKB.findAlignedAssessment(queryId, rm);
+					if(assessment.isPresent()) {
+						System.out.println("[dbg] Found an aligned assessment for query: " + queryId);
+						rm.judgementOnRelation = Optional.of(assessment.get().judgement1); // set judgement on KBRelation mention
+						rm.answer.idEquivalentClass = Optional.of(assessment.get().equivalent_class_id);
+
+						setOfAssessmentsFound.add(assessment.get());
+					}
+				}
+			}
+		}
+
+		// add missed KBRelation mentions from assessments
+		if(addMissesFromAssessment) {
+			List<Relation> listMissedKBRelations = constructListOfRelationsFromMissingAnswers(listAssessments, setOfAssessmentsFound,
+					sysEntity2query);
+
+			for(Relation r : listMissedKBRelations)
+				this.addRelation(r);
+		}
+
+	}
+
+	public List<Relation> constructListOfRelationsFromMissingAnswers(List<CSAssessment> listAssessments, Set<CSAssessment> setOfAssessmentsFound,
+			BiMap<String, String> sysEntity2query) {
+		List<Relation> listKBRelations = new ArrayList<Relation>();
+
+		// eclassId 2 eclass
+		Map<String, EquivalentClass> eclassStr2equivalentClasses = new HashMap<String, EquivalentClass>();
+		Map<String, String> eclassStr2eid = new HashMap<String, String>();
+
+		Map<String, String> responseId2eclassId = new HashMap<String, String>();
+		for(CSAssessment assessment : listAssessments) {
+			String equivalent_class = Integer.toString(assessment.equivalent_class_id);
+
+			responseId2eclassId.put(assessment.responseId, equivalent_class);
+
+			EquivalentClass eclass = new EquivalentClass(equivalent_class, assessment.hopId);
+			if(!eclassStr2equivalentClasses.containsKey(equivalent_class)) eclassStr2equivalentClasses.put(equivalent_class, eclass);
+			eclassStr2equivalentClasses.get(equivalent_class).addAssessment(assessment);
+
+			MentionInfo fillerMention = new MentionInfo(assessment.docid,
+					assessment.spanOfFiller.getStart(), assessment.spanOfFiller.getEnd());
+			Optional<String> idTmp = getEntityIdByMention(fillerMention);
+
+			if(idTmp.isPresent())
+				eclassStr2eid.put(equivalent_class, idTmp.get());
+		}
+
+		List<EquivalentClass> listEquivalentClass = new ArrayList<EquivalentClass>();
+		listEquivalentClass.addAll(eclassStr2equivalentClasses.values());
+		Collections.sort(listEquivalentClass, new Comparator<EquivalentClass>() {
+			@Override
+			public int compare(EquivalentClass arg0, EquivalentClass arg1) {
+		    	return arg0.hop-arg1.hop;
+			}
+		});
+
+		// generate KBRelations from missing equivalent classes
+		for(EquivalentClass eclass : listEquivalentClass) {
+			boolean isFoundInSysKB = false;
+			boolean isCorrect = true;
+			for(CSAssessment assessment : eclass.listAssessment) {
+				if(setOfAssessmentsFound.contains(assessment)) isFoundInSysKB = true;
+
+				if(!assessment.isCorrect()) {
+					isCorrect = false;
+				}
+			}
+
+			if(!isFoundInSysKB && isCorrect) {
+				for(CSAssessment assessment : eclass.listAssessment) {
+					Optional<String> eid1 = Optional.absent();
+					String queryId1;
+
+					if(assessment.parentId.equals("NIL")) {
+						queryId1 = assessment.queryId;
+						eid1 = Optional.of(sysEntity2query.inverse().get(queryId1));
+					}
+					else {
+						String eclassId = responseId2eclassId.get(assessment.parentId);
+						if(eclassStr2eid.containsKey(eclassId))
+							eid1 = Optional.of(eclassStr2eid.get(eclass.id));
+						else
+							continue; // entry point not found
+					}
+
+					if(!eid1.isPresent()) continue; // entry point not found
+
+					EntityInfo e1 = id2entities.get(eid1);
+
+
+					EntityInfo e2 = null;
+					String eid2 = "CS_ANSWER_E_" + eclass.id;
+					MentionInfo fillerMention = new MentionInfo(assessment.docid,
+							assessment.spanOfFiller.getStart(), assessment.spanOfFiller.getEnd());
+					fillerMention.setText(assessment.text);
+					Optional<String> fillerId = getEntityIdByMention(fillerMention);
+					if(fillerId.isPresent()) {
+						eid2 = fillerId.get();
+						e2 = this.id2entities.get(eid2);
+					}
+					else {
+						e2 = new EntityInfo(eid2);
+						e2.addMention(fillerMention);
+					}
+
+					Relation KBRelation = new Relation(e1, e2, assessment.slot);
+					RelationMention rm = new RelationMention(new MentionInfo(e1), fillerMention, assessment.slot);
+					rm.setHopId(assessment.hopId);
+					rm.setJudgement(assessment.judgement1);
+					KBRelation.addMention(rm);
+
+					listKBRelations.add(KBRelation);
+
+//					id2relations.get(KBRelation.hashCode()).addMention(rm);
+				}
+			}
+		}
+
+		return listKBRelations;
+	}
+
+	public static class Builder {
+		String id;
+		private final ImmutableMap.Builder<String, EntityInfo> id2entitiesBuilder;
+		private final ImmutableSet.Builder<Relation> listRelationsBuilder;
+
+		public Builder(String id) {
+			this.id = id;
+			this.id2entitiesBuilder = new ImmutableMap.Builder<String, EntityInfo>();
+			this.listRelationsBuilder = new ImmutableSet.Builder<Relation>();
+		}
+
+		public Builder withAddedEntity(EntityInfo entity) {
+			this.id2entitiesBuilder.put(entity.id, entity);
+			return this;
+		}
+
+		public Builder withAddedRelation(Relation KBRelation) {
+			this.listRelationsBuilder.add(KBRelation);
+			return this;
+		}
+
+		public Builder withAddedRelationAll(Set<Relation> KBRelations) {
+			this.listRelationsBuilder.addAll(KBRelations);
+			return this;
+		}
+
+		public Builder withAddedEntityAll(Map<String, EntityInfo> id2entities) {
+			this.id2entitiesBuilder.putAll(id2entities);
+			return this;
+		}
+
+		public ColdStartKB build() {
+			return new ColdStartKB(id, id2entitiesBuilder.build(), listRelationsBuilder.build());
+//			return new CSInitQuery(id, mentionListBuilder.build(), slotsHop0Builder.build(), slotsHop1Builder.build());
+		}
+
+		public ColdStartKB fromFile(String strFileKB) {
+			Map<String, EntityInfo> cacheEid2entities = new HashMap<String, EntityInfo>();
+
+			try {
+				BufferedReader reader = new BufferedReader(new FileReader(strFileKB));
+				int nLine = 0;
+				String sline;
+				while ((sline = reader.readLine()) != null) {
+					if(nLine++%100000==0)
+						System.out.println("# lines read: " + nLine);
+
+					String [] fields = sline.trim().split("\t");
+
+					String predicate = fields[1];
+
+					if(predicate.equals("type") || predicate.equals("mention") || predicate.equals("canonical_mention")) {
+						String srcId = fields[0];
+						if(!cacheEid2entities.containsKey(srcId))
+							cacheEid2entities.put(srcId, new EntityInfo(srcId));
+
+						if(predicate.equals("type")) {
+							cacheEid2entities.get(srcId).addType(fields[2]);
+						}
+						else if(predicate.equals("mention")) {
+							if(!StringUtil.isNumeric(fields[4]) || !StringUtil.isNumeric(fields[5]))
+								throw new RuntimeException("Invalid line: " + sline);
+
+							MentionInfo mention = new MentionInfo(fields[3], Integer.parseInt(fields[4]), Integer.parseInt(fields[5]));
+							mention.setText(fields[2].substring(1, fields[2].length()-1));
+							mention.setEntityId(srcId);
+
+							mention.setConfidence(Double.parseDouble(fields[6]));
+							mention.setLinkConfidence(Double.parseDouble(fields[7]));
+							mention.setBrandyConfidence(fields[8].trim());
+
+							cacheEid2entities.get(srcId).addMention(mention);
+
+						}
+						else if(predicate.equals("canonical_mention")) {
+
+							if(!StringUtil.isNumeric(fields[4]) || !StringUtil.isNumeric(fields[5]))
+								throw new RuntimeException("Invalid line: " + sline);
+
+							MentionInfo mention = new MentionInfo(fields[3], Integer.parseInt(fields[4]), Integer.parseInt(fields[5]));
+							mention.setText(fields[2].substring(1, fields[2].length()-1));
+							mention.setEntityId(srcId);
+							cacheEid2entities.get(srcId).addCanonicalMention(mention);
+						}
+					}
+					else {
+						sline = sline.replace("\t\t", "\t");
+						fields = sline.trim().split("\t");
+
+						if(fields.length<17) {
+							System.out.println("Error in format: " + sline);
+							continue;
+						}
+
+//						System.out.println("Line|" + sline);
+
+						String filler = fields[12];
+						boolean isValue = filler.startsWith("\"") && filler.endsWith("\"");
+
+						String relnType = fields[1];
+						String docId = fields[0];
+
+						String role1 = fields[2];
+
+						// for agent1
+						String srcEntityId;
+						String queryType;
+						String querySubType;
+						int arg1_start;
+						int arg1_end;
+						double arg1_confidence;
+						double arg1_linkConfidence;
+						String arg1_brandyConfidence;
+
+						// for filler
+						String dstEntityId;
+						String answerType;
+						String answerSubType;
+						int arg2_start;
+						int arg2_end;
+						double arg2_confidence;
+						double arg2_linkConfidence;
+						String arg2_brandyConfidence;
+
+						if(role1.equals("AGENT1")) {
+							srcEntityId = fields[3];
+							queryType = fields[4];
+							querySubType = fields[5];
+							arg1_start = Integer.parseInt(fields[6]);
+							arg1_end = Integer.parseInt(fields[7]);
+
+							arg1_confidence = Double.parseDouble(fields[8]);
+							arg1_linkConfidence = Double.parseDouble(fields[9]);
+							arg1_brandyConfidence = fields[10].trim();
+
+//							System.out.println("fields[12]: " + fields[12]);
+							dstEntityId = fields[12];
+							answerType = fields[13];
+							answerSubType = fields[14];
+							arg2_start = Integer.parseInt(fields[15]);
+							arg2_end = Integer.parseInt(fields[16]);
+
+							if(fields[17].equals("NULL"))
+								arg2_confidence = 0;
+							else
+								arg2_confidence = Double.parseDouble(fields[17]);
+//							System.out.println("fields[19]: " + fields[18]);
+							if(fields[18].equals("NULL"))
+								arg2_linkConfidence = 0;
+							else
+								arg2_linkConfidence = Double.parseDouble(fields[18]);
+							arg2_brandyConfidence = fields[19].trim();
+						}
+						else {
+							dstEntityId = fields[3];
+							answerType = fields[4];
+							answerSubType = fields[5];
+							arg2_start = Integer.parseInt(fields[6]);
+							arg2_end = Integer.parseInt(fields[7]);
+
+							arg2_confidence = Double.parseDouble(fields[8]);
+							arg2_linkConfidence = Double.parseDouble(fields[9]);
+							arg2_brandyConfidence = fields[10].trim();
+
+							srcEntityId = fields[12];
+							queryType = fields[13];
+							querySubType = fields[14];
+							arg1_start = Integer.parseInt(fields[15]);
+							arg1_end = Integer.parseInt(fields[16]);
+
+							if(fields[17].equals("NULL"))
+								arg1_confidence = 0;
+							else
+								arg1_confidence = Double.parseDouble(fields[17]);
+							if(fields[18].equals("NULL"))
+								arg1_linkConfidence = 0;
+							else
+								arg1_linkConfidence = Double.parseDouble(fields[18]);
+							arg1_brandyConfidence = fields[19].trim();
+						}
+
+
+//						System.out.println("fields[20]: " + fields[20]);
+//						System.out.println("fields[21]: " + fields[21]);
+//						System.out.println("fields[22]: " + fields[22]);
+
+						int sent_start = Integer.parseInt(fields[20]);
+						int sent_end = Integer.parseInt(fields[21]);
+
+						double confidence = Double.parseDouble(fields[22]);
+
+						if(answerType.trim().isEmpty()||queryType.trim().isEmpty()) {System.out.println("-- " + sline); System.exit(0);}
+
+						if(!cacheEid2entities.containsKey(srcEntityId))
+							throw new RuntimeException("No srcEntityId found: " + sline);
+
+						EntityInfo query = cacheEid2entities.get(srcEntityId);
+						Optional<Slot> slot = SlotFactory.fromFactTypeString(relnType, querySubType, answerSubType);
+						if(!slot.isPresent()) {
+							System.out.println("SKIP: " + sline);
+							continue;
+						}
+
+						MentionInfo queryMention = new MentionInfo(docId, arg1_start, arg1_end, queryType, querySubType);
+						queryMention.setEntityId(srcEntityId);
+						queryMention.setConfidence(arg1_confidence);
+						queryMention.setLinkConfidence(arg1_linkConfidence);
+						queryMention.setBrandyConfidence(arg1_brandyConfidence);
+
+						MentionInfo answerMention = new MentionInfo(docId, arg2_start, arg2_end, answerType, answerSubType);
+						answerMention.setEntityId(dstEntityId);
+						answerMention.setConfidence(arg2_confidence);
+						answerMention.setLinkConfidence(arg2_linkConfidence);
+						answerMention.setBrandyConfidence(arg2_brandyConfidence);
+
+						Relation KBRelation = null;
+						if(!isValue) {
+							EntityInfo answer = cacheEid2entities.get(dstEntityId); // MentionInfo
+							KBRelation = new Relation(query, answer, slot.get());
+						}
+						else {
+							MentionInfo value = answerMention;
+							value.setText(dstEntityId.substring(1, dstEntityId.length()-1)); // dstEntityId is text; strip ""
+							KBRelation = new Relation(query, value, slot.get());
+						}
+
+						RelationMention rm = new RelationMention(queryMention, answerMention, slot.get());
+						rm.setConfidence(confidence);
+						rm.setSpan(new Span(sent_start, sent_end));
+						rm.setIsValueSlot(isValue);
+
+						KBRelation.addMention(rm);
+
+						KBRelation.isValueSlot = Optional.of(isValue);
+
+						this.withAddedRelation(KBRelation);
+					}
+				}
+				reader.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+			//		Map<String, EntityInfo> cacheEid2entities = new HashMap<String, EntityInfo>();
+			for(String eid : cacheEid2entities.keySet())
+				this.withAddedEntity(cacheEid2entities.get(eid));
+
+			return this.build();
+		}
+	}
+}

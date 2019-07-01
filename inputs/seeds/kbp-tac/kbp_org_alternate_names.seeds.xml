@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_alternate_names" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="a123 systems inc" slot1="a123" />
+	<seed slot0="a123 systems inc" slot1="a123 systems" />
+	<seed slot0="access industries" slot1="access" />
+	<seed slot0="access industries" slot1="access industries holdings" />
+	<seed slot0="aerolineas argentinas" slot1="aa" />
+	<seed slot0="aerolineas argentinas" slot1="aerolineas" />
+	<seed slot0="aerolineas argentinas" slot1="aerolineas argentina" />
+	<seed slot0="aerolineas argentinas" slot1="aerolineas argentinas sa" />
+	<seed slot0="alcatel - lucent" slot1="alcatel - lucent sa" />
+	<seed slot0="alcatel - lucent" slot1="alcatel - lucent shanghai bell" />
+	<seed slot0="alcatel - lucent" slot1="alcatel - lucent submarine networks sas" />
+	<seed slot0="alcatel - lucent" slot1="alcatel - lucent technologies" />
+	<seed slot0="american association for the advancement of science" slot1="aaas" />
+	<seed slot0="american automobile association" slot1="aaa" />
+	<seed slot0="american automobile association" slot1="auto club" />
+	<seed slot0="american bankers association" slot1="aba" />
+	<seed slot0="american bar association" slot1="aba" />
+	<seed slot0="american bar association" slot1="bar association" />
+	<seed slot0="american basketball association" slot1="aba" />
+	<seed slot0="american beverage association" slot1="aba" />
+	<seed slot0="american beverage association" slot1="national soft drink association" />
+	<seed slot0="american motorcyclists association" slot1="&lt;ama" />
+	<seed slot0="american motorcyclists association" slot1="ama" />
+	<seed slot0="american motorcyclists association" slot1="the american motorcyclist association" />
+	<seed slot0="american psychiatric association" slot1="apa" />
+	<seed slot0="american psychological association" slot1="apa" />
+	<seed slot0="arcandor" slot1="arcandor ag" />
+	<seed slot0="arcandor" slot1="karstadtquelle" />
+	<seed slot0="arsenal football club" slot1="arsenal" />
+	<seed slot0="asian development bank" slot1="abd" />
+	<seed slot0="asian development bank" slot1="adb" />
+	<seed slot0="asian development bank" slot1="asdb" />
+	<seed slot0="asian development bank" slot1="asia development bank" />
+	<seed slot0="association of greek tourism enterprises" slot1="sete" />
+	<seed slot0="attenti holdings" slot1="attenti" />
+	<seed slot0="attenti holdings" slot1="attenti holdings sa" />
+	<seed slot0="awami league" slot1="al" />
+	<seed slot0="awami league" slot1="all pakistan awami muslim league" />
+	<seed slot0="awami league" slot1="bangladesh awami league" />
+	<seed slot0="awami league" slot1="people &apos;s league" />
+	<seed slot0="awami national party" slot1="anp" />
+	<seed slot0="awami national party" slot1="anp" />
+	<seed slot0="awami national party" slot1="awami party" />
+	<seed slot0="awami national party" slot1="pashtun awami national party" />
+	<seed slot0="awami national party" slot1="people  &apos;s national party" />
+	<seed slot0="awami national party" slot1="people_ &apos;s_national_party" />
+	<seed slot0="bank julius baer" slot1="bank julius baer &amp; co" />
+	<seed slot0="bank julius baer" slot1="bank julius baer co" />
+	<seed slot0="bank julius baer" slot1="julius baer" />
+	<seed slot0="bank julius baer" slot1="julius baer group" />
+	<seed slot0="barnes foundation" slot1="barnes foundation of art" />
+	<seed slot0="bipartisan policy center" slot1="bpc" />
+	<seed slot0="bipartisan policy center" slot1="bipartisan center" />
+	<seed slot0="bipartisan policy center" slot1="bipartisan policy" />
+	<seed slot0="bipartisan policy center" slot1="bipartisan policy group" />
+	<seed slot0="blackburn rovers" slot1="blackburn" />
+	<seed slot0="blackburn rovers" slot1="blackburn rovers football club" />
+	<seed slot0="blackburn rovers" slot1="rovers" />
+	<seed slot0="bolivarian alternative for the americas" slot1="alba" />
+	<seed slot0="bolivarian alternative for the americas" slot1="bolivarian alliance for the americas" />
+	<seed slot0="burlington northern santa fe corp" slot1="bnsf" />
+	<seed slot0="burlington northern santa fe corp" slot1="burlington" />
+	<seed slot0="burlington northern santa fe corp" slot1="burlington northern santa fe" />
+	<seed slot0="capitalia spa" slot1="capitalia" />
+	<seed slot0="capitalia spa" slot1="capitalia spa" />
+	<seed slot0="carnival corp" slot1="carnival" />
+	<seed slot0="carnival cruise lines" slot1="ccl" />
+	<seed slot0="carnival cruise lines" slot1="carnival cruise" />
+	<seed slot0="carnival cruise lines" slot1="carnival lines" />
+	<seed slot0="central american parliament" slot1="parlacen" />
+	<seed slot0="central american parliament" slot1="parlacen" />
+	<seed slot0="champalimaud foundation" slot1="champalimaud" />
+	<seed slot0="china banking regulatory commission" slot1="cbrc" />
+	<seed slot0="china banking regulatory commission" slot1="commission" />
+	<seed slot0="community foundation of middle tennessee" slot1="cfmt" />
+	<seed slot0="community foundation of middle tennessee" slot1="community relief foundation of middle tennessee" />
+	<seed slot0="conagra foods" slot1="conagra" />
+	<seed slot0="council of mortgage lenders" slot1="british council of mortgage lenders" />
+	<seed slot0="council of mortgage lenders" slot1="cml" />
+	<seed slot0="country music association" slot1="cma" />
+	<seed slot0="country music association" slot1="us country music association" />
+	<seed slot0="dcns" slot1="dcn" />
+	<seed slot0="dcns" slot1="direction des constructions navales" />
+	<seed slot0="economic cooperation organization" slot1="eco" />
+	<seed slot0="economic cooperation organization" slot1="economic cooperation organisation" />
+	<seed slot0="election complaints commission" slot1="ecc" />
+	<seed slot0="election complaints commission" slot1="election complained commission" />
+	<seed slot0="election complaints commission" slot1="electoral complaints commission" />
+	<seed slot0="election complaints commission" slot1="electoral_complaints_commission" />
+	<seed slot0="escada" slot1="escada ag" />
+	<seed slot0="euskadi ta askatasuna" slot1="eta" />
+	<seed slot0="focus on the family" slot1="fof" />
+	<seed slot0="focus on the family" slot1="fotf" />
+	<seed slot0="focus on the family" slot1="focus on the family action" />
+	<seed slot0="freedom communications" slot1="freedom communications holdings inc" />
+	<seed slot0="freedom communications" slot1="freedom communications inc" />
+	<seed slot0="galleon group" slot1="galleon" />
+	<seed slot0="galleon group" slot1="galleon fund" />
+	<seed slot0="galleon group" slot1="galleon group llc" />
+	<seed slot0="galleon group" slot1="galleon group llp" />
+	<seed slot0="global infrastructure partners" slot1="gip" />
+	<seed slot0="indoor tanning association" slot1="ita" />
+	<seed slot0="intercontinental hotels group" slot1="ihg" />
+	<seed slot0="intercontinental hotels group" slot1="intercontinental" />
+	<seed slot0="intercontinental hotels group" slot1="intercontinental hotels group plc" />
+	<seed slot0="intercontinental hotels group" slot1="intercontinental hotels group plc" />
+	<seed slot0="intercontinental hotels group" slot1="intercontinental hotels" />
+	<seed slot0="international agency for research on cancer" slot1="iarc" />
+	<seed slot0="international crisis group" slot1="crisis group" />
+	<seed slot0="international crisis group" slot1="icg" />
+	<seed slot0="international water management institute" slot1="iwmi" />
+	<seed slot0="irish nationwide building society" slot1="inbs" />
+	<seed slot0="irish nationwide building society" slot1="irish nationwide" />
+	<seed slot0="irish nationwide building society" slot1="irish nationwide building society" />
+	<seed slot0="jamaat - al - muslimeen" slot1="jam" />
+	<seed slot0="joint council on international children &apos;s services" slot1="jcics" />
+	<seed slot0="justice and equality movement" slot1="jem" />
+	<seed slot0="lashkar - e - taiba" slot1="army of the pious" />
+	<seed slot0="lashkar - e - taiba" slot1="army of the pure" />
+	<seed slot0="lashkar - e - taiba" slot1="army of the righteous" />
+	<seed slot0="lashkar - e - taiba" slot1="army_of_the_pious" />
+	<seed slot0="lashkar - e - taiba" slot1="army_of_the_pure" />
+	<seed slot0="lashkar - e - taiba" slot1="army_of_the_righteous" />
+	<seed slot0="lashkar - e - taiba" slot1="let" />
+	<seed slot0="lashkar - e - taiba" slot1="lashkar" />
+	<seed slot0="lashkar - e - taiba" slot1="lashkar - e - tayyaba" />
+	<seed slot0="lashkar - e - taiba" slot1="lashkar - e - tayyiba" />
+	<seed slot0="lashkar - e - taiba" slot1="lashkar - e - toiba" />
+	<seed slot0="lashkar - e - taiba" slot1="lashkar - i - taiba" />
+	<seed slot0="lashkar - e - taiba" slot1="let" />
+	<seed slot0="lashkar - e - taiba" slot1="markaz dawa - wal irshad" />
+	<seed slot0="lashkar - e - taiba" slot1="the army of the pure" />
+	<seed slot0="mtc technologies" slot1="mtc" />
+	<seed slot0="mainland affairs council" slot1="mac" />
+	<seed slot0="millipore corp" slot1="emd millipore" />
+	<seed slot0="millipore corp" slot1="millipore" />
+	<seed slot0="millipore corp" slot1="millipore" />
+	<seed slot0="moody &apos;s corp" slot1="moody &apos;s" />
+	<seed slot0="new york immigration coalition" slot1="immigration coalition" />
+	<seed slot0="nigeria police force" slot1="npf" />
+	<seed slot0="nigeria police force" slot1="nigerian police force" />
+	<seed slot0="nigeria police force" slot1="nigerian police force" />
+	<seed slot0="norwegian university of science and technology" slot1="ntnu" />
+	<seed slot0="norwegian university of science and technology" slot1="university of trondheim" />
+	<seed slot0="nuclear energy institute" slot1="nei" />
+	<seed slot0="oxford university press" slot1="oup" />
+	<seed slot0="oxford university press" slot1="oxford" />
+	<seed slot0="oxford university press" slot1="oxford press" />
+	<seed slot0="patterson - uti drilling co" slot1="patterson - uti" />
+	<seed slot0="patterson - uti drilling co" slot1="patterson - uti energy inc" />
+	<seed slot0="public library of science" slot1="plos" />
+	<seed slot0="rapiscan systems" slot1="rapiscan" />
+	<seed slot0="river road asset management" slot1="river road" />
+	<seed slot0="rosoboronexport" slot1="roe" />
+	<seed slot0="rosoboronexport" slot1="rosoboronexport" />
+	<seed slot0="stx finland" slot1="stx finland cruise" />
+	<seed slot0="stx finland" slot1="stx finland oy" />
+	<seed slot0="stx finland" slot1="stx finland oy" />
+	<seed slot0="safe passage" slot1="camino seguro" />
+	<seed slot0="saudi oger" slot1="saudi oger ltd" />
+	<seed slot0="saudi oger" slot1="saudi oger ltd" />
+	<seed slot0="scorpions" slot1="dso" />
+	<seed slot0="scorpions" slot1="directorate of special operatioins" />
+	<seed slot0="scorpions" slot1="directorate of special operations" />
+	<seed slot0="scorpions" slot1="the scorpions" />
+	<seed slot0="southgobi energy resources" slot1="southgobi energy resources ltd" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="sasac" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="state assets supervision and administration commission" />
+	<seed slot0="stockholm international peace research institute" slot1="sipri" />
+	<seed slot0="stockholm international water institute" slot1="siwi" />
+	<seed slot0="swiss bankers association" slot1="sba" />
+	<seed slot0="the starr foundation" slot1="cv starr foundation" />
+	<seed slot0="the starr foundation" slot1="starr" />
+	<seed slot0="the starr foundation" slot1="starr foundation" />
+	<seed slot0="the starr foundation" slot1="the starr foundation" />
+	<seed slot0="thomas more law center" slot1="thomas more" />
+	<seed slot0="thomas more law center" slot1="thomas more law centre" />
+	<seed slot0="us high speed rail association" slot1="us high speed rail" />
+	<seed slot0="usa network" slot1="usa" />
+	<seed slot0="united national congress" slot1="unc" />
+	<seed slot0="united national congress" slot1="unc alliance" />
+	<seed slot0="united national congress" slot1="united national congress alliance" />
+	<seed slot0="united national congress" slot1="united national congress party" />
+	<seed slot0="united steelworkers of america" slot1="steelworkers" />
+	<seed slot0="united steelworkers of america" slot1="the united steel, paper and forestry, rubber, manufacturing, energy, allied industrial and service workers international union" />
+	<seed slot0="united steelworkers of america" slot1="usw" />
+	<seed slot0="united steelworkers of america" slot1="uswa" />
+	<seed slot0="united steelworkers of america" slot1="united steel workers" />
+	<seed slot0="united steelworkers of america" slot1="united steelworkers" />
+	<seed slot0="united steelworkers of america" slot1="united steelworkers union" />
+	<seed slot0="washington national opera" slot1="dc opera" />
+	<seed slot0="washington national opera" slot1="opera society of washington" />
+	<seed slot0="washington national opera" slot1="wno" />
+	<seed slot0="washington national opera" slot1="washington opera" />
+	<seed slot0="zondervan publishing, inc" slot1="zondervan" />
+	<seed slot0="zondervan publishing, inc" slot1="zondervan" />
+	<seed slot0="zondervan publishing, inc" slot1="zondervan publishing" />
+	<seed slot0="zondervan publishing, inc" slot1="zondervan publishing house" />
+</seeds>

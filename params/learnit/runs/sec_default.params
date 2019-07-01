@@ -1,0 +1,10 @@
+INCLUDE ./default.params
+INCLUDE ../domains/sec_v2.params
+
+OVERRIDE learnit_expt_suffix: sec
+
+OVERRIDE do_post_pruning: false
+
+regtest_confidence_cutoff: .01
+
+OVERRIDE stop_iteration: 10

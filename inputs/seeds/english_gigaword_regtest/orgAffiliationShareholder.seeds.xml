@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Investor-Shareholder" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="kirk kerkorian" slot1="chrysler" />
+	<seed slot0="kirk kerkorian" slot1="chrysler corp" />
+	<seed slot0="eads" slot1="airbus" />
+	<seed slot0="platon lebedev" slot1="yukos" />
+	<seed slot0="martha stewart" slot1="imclone systems inc" />
+	<seed slot0="kirk kerkorian" slot1="general motors corp" />
+	<seed slot0="kirk kerkorian" slot1="general motors" />
+	<seed slot0="acciona" slot1="endesa" />
+	<seed slot0="ryanair holdings plc" slot1="aer lingus" />
+	<seed slot0="ferdinand porsche" slot1="volkswagen" />
+	<seed slot0="hearst corp" slot1="medianews" />
+	<seed slot0="european aeronautic defence and space company" slot1="airbus" />
+	<seed slot0="kirk kerkorian" slot1="ford motor co" />
+	<seed slot0="ryanair" slot1="aer lingus" />
+	<seed slot0="carlo de benedetti" slot1="olivetti spa" />
+	<seed slot0="leonid nevzlin" slot1="yukos" />
+	<seed slot0="daimlerchrysler" slot1="mitsubishi motors" />
+	<seed slot0="volkswagen ag" slot1="scania ab" />
+	<seed slot0="ford motor co" slot1="mazda motor corp" />
+	<seed slot0="acciona sa" slot1="endesa sa" />
+	<seed slot0="volkswagen" slot1="scania" />
+	<seed slot0="ferdinand piech" slot1="porsche" />
+	<seed slot0="porsche" slot1="volkswagen ag" />
+	<seed slot0="bernard arnault" slot1="lvmh" />
+	<seed slot0="nec corp" slot1="packard bell electronics inc" />
+	<seed slot0="alisher usmanov" slot1="arsenal" />
+	<seed slot0="sovereign asset management" slot1="sk corp" />
+	<seed slot0="daimler - benz" slot1="fokker" />
+	<seed slot0="volvo ab" slot1="scania" />
+	<seed slot0="warren buffett" slot1="kraft foods inc" />
+	<seed slot0="daimlerchrysler ag" slot1="mitsubishi motors corp" />
+	<seed slot0="john magnier" slot1="manchester united" />
+	<seed slot0="rafic hariri" slot1="solidere" />
+	<seed slot0="solomon lew" slot1="coles myer ltd" />
+	<seed slot0="umberto agnelli" slot1="fiat" />
+	<seed slot0="ryanair" slot1="aer lingus group plc" />
+	<seed slot0="tracinda corp" slot1="chrysler corp" />
+	<seed slot0="general motors corp" slot1="gmac llc" />
+	<seed slot0="ryanair" slot1="aer - lingus" />
+	<seed slot0="renault" slot1="avtovaz" />
+	<seed slot0="khazanah nasional" slot1="proton" />
+</seeds>

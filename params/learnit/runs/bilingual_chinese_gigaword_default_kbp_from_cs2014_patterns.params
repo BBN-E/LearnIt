@@ -1,0 +1,33 @@
+INCLUDE ./default.params
+INCLUDE ../domains/bilingual_chinese_gigaword.params
+
+# OVERRIDE learnit_expt_suffix: bilingual_chinese_gigaword_default_20150601
+OVERRIDE learnit_expt_suffix: bilingual_chinese_gigaword_default
+
+OVERRIDE do_initialization: false
+OVERRIDE do_post_pruning: false
+
+OVERRIDE do_evaluation: false
+
+OVERRIDE use_seeds_to_initialize: false
+OVERRIDE use_patterns_to_initialize: true
+
+regtest_confidence_cutoff: .01
+
+transliterationFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.validTranslations
+chiEngNameMappingFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.normalizedTranslations
+
+sent_builder_dbg_info: false
+enable_exception_contradictory_answers: false
+
+# OVERRIDE stop_iteration: 30
+
+
+# relax parameters
+# OVERRIDE num_patterns_to_propose: 2000
+# OVERRIDE num_seeds_to_propose: 4000
+# OVERRIDE min_num_patterns_to_freeze: 60
+# OVERRIDE max_num_patterns_to_freeze: 300
+# OVERRIDE min_num_seeds_to_freeze: 150
+# OVERRIDE max_num_seeds_to_freeze: 1000
+# OVERRIDE min_unique_seeds: 5

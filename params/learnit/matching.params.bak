@@ -1,0 +1,28 @@
+
+# this means evaluation must perform exact match
+partial_match_allowance: 1
+
+loader_concurrency: 5
+
+# number of sjson objects per final batch
+mappings_per_batch: 25
+mappings_per_target_batch: 10
+
+################################################################################
+# Parameters for building up the large mapping used for initialization
+################################################################################
+
+# how many pattern-instance + seed-instance pairs to collect at maximimum
+initialization_size_stage_2: 4000000
+initialization_size_stage_1: 200000
+
+# how many instances at most to record for each pattern and seed
+initialization_instance_cap: 1000
+
+# remove patterns and seeds that match more than this many times in a single batch
+initialization_instance_max: 5000
+
+# how many files to use for building up the initial mapping 
+# (sampled randomly from target mappings)
+number_of_mappings_for_initialization: 1000
+

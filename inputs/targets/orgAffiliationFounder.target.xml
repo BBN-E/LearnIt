@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="Org_Aff_Founder" elf_ontology_type="Org_Aff_Founder"
+          description="{0} founded {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person_or_org" elf_role="0_founder"
+           mention_constraints="(acetype PER ORG) (min-entitylevel DESC)" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_org_or_gpe" elf_role="1_orgOrGPEFounded"
+           mention_constraints="(acetype ORG GPE) (min-entitylevel DESC)" />
+    <slot_pair a="1" b="0" must_not_corefer="1"/>
+  </target>
+</targets>

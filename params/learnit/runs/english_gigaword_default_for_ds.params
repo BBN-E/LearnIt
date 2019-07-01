@@ -1,0 +1,14 @@
+INCLUDE ./default.params
+INCLUDE ../domains/english_gigaword.params
+
+OVERRIDE do_post_pruning: true
+OVERRIDE do_initialization: true
+
+OVERRIDE learnit_expt_suffix: english_gigaword_default
+
+running_test_set: true
+
+regtest_confidence_cutoff: .01
+
+# OVERRIDE linux_queue: gale64b8G+nongale
+# OVERRIDE queue_priority: 5

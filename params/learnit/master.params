@@ -1,0 +1,22 @@
+################################################################################
+# Bilingual Learnit Master Param File
+#        This file sets up all the general options for a run of LearnIt
+#        Runs will include additional params from the 'settings' dir to
+#        specify desired functionality
+#
+# Author: Michael Shafir mshafir@bbn.com
+# Copyright 2013 Raytheon BBN Technologies
+################################################################################
+
+# Sets global paths for learnit and script/bin paths
+# You should update this file with proper paths if it is your first time using LearnIt
+INCLUDE ./root.params
+
+# Sets parameters regarding IR and pattern matching processing
+INCLUDE ./matching.params
+
+INCLUDE ./serif.params
+
+# misc global options
+INCLUDE ./settings/pruning.params
+INCLUDE ./settings/proposing.params

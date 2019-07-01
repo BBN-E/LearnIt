@@ -1,0 +1,21 @@
+########################### NEW TO LEARNIT? CHANGE THIS ########################
+
+learnit_root: /nfs/mercury-04/u42/bmin/source/Active/Projects/neolearnit
+serif_data: /nfs/mercury-04/u42/bmin/source/Active/Data/SERIF
+
+################################################################################
+
+linux_queue: gale64b8G+nongale
+# linux_queue: nongale
+# linux_queue: erudite_machines_linux
+# linux_queue: gale64b8G+nongale
+fast_linux_queue: erudite_machines_linux
+queue_priority: 5
+
+base_jars: /opt/junit4.4/junit-4.4.jar:/opt/xerces-j-2.9.1-jdk-1.5.0_14/build/xercesImpl.jar
+dependency_dir: %learnit_root%/target/dependency
+learnit_jar: %learnit_root%/target/neolearnit-core-1.0.0-SNAPSHOT.jar
+
+java_command: java -Xmx8G -cp %base_jars%:%dependency_dir%:%learnit_jar% com.bbn.neolearnit.exec.
+
+archive_dir: %learnit_root%/archive

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Agent_Artifact_User-Owner-Inventor-Manufacturer" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="united states" slot1="uss kitty hawk" />
+	<seed slot0="russian" slot1="kursk" />
+	<seed slot0="united states" slot1="atlantis" />
+	<seed slot0="american" slot1="uss bainbridge" />
+	<seed slot0="new york" slot1="rockefeller center" />
+	<seed slot0="united states" slot1="uss cole" />
+	<seed slot0="united states" slot1="cole" />
+	<seed slot0="united states" slot1="maersk alabama" />
+	<seed slot0="egyptian" slot1="sharm el- sheik" />
+	<seed slot0="london" slot1="st james 's palace" />
+	<seed slot0="us" slot1="endeavour" />
+	<seed slot0="london" slot1="buckingham palace" />
+	<seed slot0="north korean" slot1="taepodong -2" />
+	<seed slot0="united states" slot1="uss bainbridge" />
+	<seed slot0="russian" slot1="mir" />
+	<seed slot0="american" slot1="maersk alabama" />
+	<seed slot0="russian" slot1="neustrashimy" />
+	<seed slot0="american" slot1="endeavour" />
+	<seed slot0="iranian" slot1="bushehr" />
+	<seed slot0="russian" slot1="the kursk" />
+	<seed slot0="united states" slot1="endeavour" />
+	<seed slot0="patriots" slot1="gillette stadium" />
+	<seed slot0="united states of america" slot1="uss cole" />
+	<seed slot0="princess of wales" slot1="kensington palace" />
+	<seed slot0="united states" slot1="air force one" />
+	<seed slot0="paris" slot1="charles de gaulle airport" />
+	<seed slot0="united states" slot1="the uss cole" />
+	<seed slot0="us" slot1="air force one" />
+	<seed slot0="united states" slot1="uss essex" />
+	<seed slot0="russian" slot1="mir space station" />
+	<seed slot0="iranian" slot1="bushehr reactor" />
+	<seed slot0="iranian" slot1="bushehr plant" />
+	<seed slot0="britain" slot1="buckingham palace" />
+</seeds>

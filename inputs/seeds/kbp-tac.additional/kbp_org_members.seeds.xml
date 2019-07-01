@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_members" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="white house" slot1="republicans" />
+	<seed slot0="nato" slot1="turkish" />
+	<seed slot0="nato" slot1="united states" />
+	<seed slot0="republicans" slot1="house" />
+	<seed slot0="democratic" slot1="senate" />
+	<seed slot0="nato" slot1="us" />
+	<seed slot0="oracle certified company" slot1="ssi" />
+	<seed slot0="republican party" slot1="republican district" />
+	<seed slot0="congressional" slot1="republicans" />
+	<seed slot0="nato" slot1="poland" />
+	<seed slot0="nato" slot1="turkey" />
+	<seed slot0="house of representatives" slot1="republican party" />
+	<seed slot0="republican party" slot1="house boehner" />
+	<seed slot0="house" slot1="republican party" />
+	<seed slot0="republican party" slot1="house" />
+	<seed slot0="bric" slot1="china" />
+	<seed slot0="school committee of burlington" slot1="u s district" />
+	<seed slot0="republicans" slot1="white house" />
+	<seed slot0="nato  -  council on foreign relations" slot1="greece" />
+	<seed slot0="bbb" slot1="dunn and bradstreet" />
+	<seed slot0="arizona senate judiciary committee" slot1="georgia government affairs committee" />
+	<seed slot0="que son" slot1="que trung" />
+	<seed slot0="glass manufacturing company" slot1="saint  -  gobain" />
+	<seed slot0="teabagger house" slot1="republicans" />
+	<seed slot0="new york stock exchange" slot1="euronext" />
+	<seed slot0="nyse" slot1="euronext" />
+	<seed slot0="nato" slot1="washington" />
+	<seed slot0="nato" slot1="american" />
+	<seed slot0="washington house" slot1="republican party" />
+	<seed slot0="north central association" slot1="devry university" />
+	<seed slot0="aacsb" slot1="arab academy for science &amp;amp; technology" />
+	<seed slot0="senate" slot1="american  -  arab anti  -  discrimination committee" />
+	<seed slot0="house of representatives" slot1="republicans" />
+	<seed slot0="house appropriations committee" slot1="republicans" />
+	<seed slot0="group seven" slot1="serbia" />
+	<seed slot0="bric" slot1="chinese" />
+	<seed slot0="american" slot1="shitcago" />
+	<seed slot0="white house" slot1="republican party" />
+	<seed slot0="white house" slot1="republicans" />
+	<seed slot0="republicans" slot1="senate" />
+	<seed slot0="multinational coalition" slot1="turks" />
+	<seed slot0="iowa city" slot1="kansas city" />
+	<seed slot0="house" slot1="republican national committee" />
+	<seed slot0="democratic" slot1="american" />
+	<seed slot0="world bank group" slot1="international finance corporation" />
+	<seed slot0="world bank group" slot1="ifc" />
+	<seed slot0="united arab emirates" slot1="dubai" />
+	<seed slot0="security council" slot1="turkish" />
+	<seed slot0="republicans" slot1="congressional" />
+	<seed slot0="republican party" slot1="senate" />
+	<seed slot0="palestine liberation organization" slot1="palestinian national council" />
+	<seed slot0="palestine liberation organization" slot1="palestinian national authority" />
+	<seed slot0="nato" slot1="russian" />
+	<seed slot0="nato" slot1="britain" />
+	<seed slot0="democratic party" slot1="senate" />
+	<seed slot0="conservative democrats" slot1="republican party" />
+	<seed slot0="security council resolution 1540" slot1="committee" />
+	<seed slot0="security council" slot1="chinese" />
+	<seed slot0="rest of us new york transfer news collective" slot1="cuban" />
+	<seed slot0="nato  -  council on foreign relations" slot1="poland" />
+	<seed slot0="nato" slot1="greece" />
+	<seed slot0="leadership for quality education" slot1="better chicago schools" />
+	<seed slot0="islamist" slot1="iran" />
+	<seed slot0="group of seven" slot1="mexico" />
+	<seed slot0="arkansas" slot1="morris" />
+	<seed slot0="communists" slot1="semillas del pueblo" />
+	<seed slot0="communist" slot1="soviet union" />
+	<seed slot0="world uygur congress" slot1="rebiya kadeer" />
+	<seed slot0="va" slot1="ashburn" />
+	<seed slot0="united nations security council" slot1="russian" />
+	<seed slot0="taliban" slot1="afghan" />
+	<seed slot0="sec western" slot1="bama" />
+	<seed slot0="rockefeller" slot1="republicans" />
+	<seed slot0="republicans" slot1="us house roll call" />
+	<seed slot0="republicans" slot1="house of representatives" />
+	<seed slot0="political bureau of the communist party of china  - lrb -  cpc  - rrb -  central committee" slot1="wang gang" />
+	<seed slot0="political bureau" slot1="wang gang" />
+	<seed slot0="north atlantic treaty organization" slot1="american" />
+	<seed slot0="house ways and means committee" slot1="republicans" />
+	<seed slot0="house" slot1="republican congressional" />
+	<seed slot0="conservative party" slot1="basra" />
+	<seed slot0="camp creek elementary school" slot1="lilburn" />
+	<seed slot0="board of education" slot1="freehold" />
+	<seed slot0="asean" slot1="myanmar" />
+	<seed slot0="xinli central school of zhongxian" slot1="dazu" />
+	<seed slot0="wisconsin assembly passes bill limiting union rights  -  foxnewscom" slot1="republicans" />
+	<seed slot0="white house" slot1="republicans order destruction of telephone system in favor of tin cans" />
+	<seed slot0="white house" slot1="federal republic" />
+	<seed slot0="white house" slot1="congressional republicans" />
+	<seed slot0="ways republicans" slot1="ways" />
+	<seed slot0="united nations" slot1="nauru" />
+	<seed slot0="union government" slot1="india educational" />
+	<seed slot0="uws college" slot1="republican national committees" />
+	<seed slot0="uscf" slot1="committee" />
+	<seed slot0="usa nato arabian" slot1="israel palestine" />
+	<seed slot0="us senate" slot1="senate armed services committee" />
+	<seed slot0="senate legal and constitutional committees" slot1="constitutional affairs  -  standing committee" />
+	<seed slot0="senate" slot1="senate finance committee" />
+	<seed slot0="senate" slot1="committee" />
+	<seed slot0="security council" slot1="russian" />
+	<seed slot0="security council" slot1="russia" />
+	<seed slot0="security council" slot1="france" />
+	<seed slot0="school for the arts and city college" slot1="woodlawn" />
+	<seed slot0="sampdoria" slot1="champions inter" />
+	<seed slot0="sec" slot1="ncaa" />
+	<seed slot0="republicans" slot1="senate armed services committee" />
+	<seed slot0="republican party" slot1="palin children thread" />
+	<seed slot0="republican party" slot1="house of representatives" />
+	<seed slot0="premier league" slot1="wigan" />
+	<seed slot0="palestine liberation organization" slot1="popular front for the liberation of palestine" />
+	<seed slot0="official says senate" slot1="senate intelligence committee" />
+	<seed slot0="occidental petroleum corp" slot1="united states" />
+	<seed slot0="opec" slot1="dutch" />
+	<seed slot0="north atlantic treaty organization" slot1="estonian" />
+	<seed slot0="north atlantic treaty organisation" slot1="jerusalem" />
+	<seed slot0="non  -  aligned movement" slot1="federal republic of yugoslavia" />
+	<seed slot0="nato" slot1="us" />
+	<seed slot0="nato" slot1="south vietnamese" />
+	<seed slot0="nato" slot1="latvia" />
+	<seed slot0="nato" slot1="islamic republic of pakistan" />
+	<seed slot0="nato" slot1="europe" />
+	<seed slot0="messianic" slot1="israel" />
+	<seed slot0="marathon international petroleum turquesa ltd" slot1="united states" />
+	<seed slot0="jeffersonian" slot1="republican party" />
+	<seed slot0="irish nationalist" slot1="from the republic or north" />
+	<seed slot0="house of lords" slot1="law lords" />
+	<seed slot0="house transportation and infrastructure committee" slot1="oregon" />
+	<seed slot0="house" slot1="republican study committee" />
+	<seed slot0="hess corp" slot1="united states" />
+	<seed slot0="house" slot1="ways and means committee" />
+	<seed slot0="house" slot1="house intelligence committee" />
+	<seed slot0="gulf cooperation council" slot1="greece" />
+	<seed slot0="group of seven" slot1="japanese" />
+	<seed slot0="group of seven" slot1="chinese" />
+	<seed slot0="group one" slot1="denmark" />
+	<seed slot0="group four" slot1="germany" />
+	<seed slot0="group c" slot1="algeria" />
+	<seed slot0="f teaching for social justice" slot1="philly" />
+	<seed slot0="exxonmobil iraq ltd" slot1="united states" />
+	<seed slot0="dongfeng" slot1="jilin" />
+	<seed slot0="democrats" slot1="republicans" />
+	<seed slot0="democratic senatorial campaign committee" slot1="national republican congressional committee" />
+	<seed slot0="democratic party" slot1="vietnam" />
+	<seed slot0="democratic national committee" slot1="senate" />
+	<seed slot0="democratic house" slot1="republicans" />
+	<seed slot0="confederate" slot1="republicans" />
+	<seed slot0="college" slot1="republicans" />
+	<seed slot0="chevron corp" slot1="united states" />
+	<seed slot0="cpc hunan" slot1="political and legislative affairs committee" />
+	<seed slot0="bureau of engraving and printing  - lrb -  treasury" slot1="federal reserve bank ownership" />
+	<seed slot0="blue bell" slot1="pa" />
+	<seed slot0="bric" slot1="india" />
+	<seed slot0="association of southeast asian nations" slot1="myanmar" />
+	<seed slot0="asia  -  pacific economic cooperation" slot1="china" />
+	<seed slot0="asean research scholars" slot1="singapore" />
+	<seed slot0="all" slot1="republicans" />
+	<seed slot0="jeep liberty ohio auto dealers" slot1="michigan" />
+	<seed slot0="jeep liberty ohio auto dealers" slot1="colorado springs" />
+	<seed slot0="highly regarded" slot1="senate" />
+	<seed slot0="vatican" slot1="treasury" />
+	<seed slot0="unioflife urban" slot1="torah" />
+	<seed slot0="unesco" slot1="world heritage committee" />
+	<seed slot0="un" slot1="russia" />
+	<seed slot0="uae" slot1="dubai" />
+	<seed slot0="us house of representatives" slot1="republicans" />
+	<seed slot0="un security council" slot1="china" />
+	<seed slot0="true" slot1="makes people vote republican" />
+	<seed slot0="taliban" slot1="soviet" />
+	<seed slot0="taliban" slot1="german" />
+	<seed slot0="stalinist" slot1="danish" />
+	<seed slot0="st martin  - in - the -  fields" slot1="pembroke" />
+	<seed slot0="sky team" slot1="aeroflot cargo" />
+	<seed slot0="siberian railway guard" slot1="space forces" />
+	<seed slot0="shaker heights high school" slot1="shaker district" />
+	<seed slot0="senate finance committee" slot1="democratic" />
+	<seed slot0="senate" slot1="senate armed services committee" />
+	<seed slot0="senate" slot1="republican" />
+	<seed slot0="scottish premier league" slot1="aberdeen" />
+	<seed slot0="swf" slot1="chinese" />
+	<seed slot0="sec" slot1="national champion" />
+	<seed slot0="right wing confederate" slot1="world health organization" />
+	<seed slot0="republicans" slot1="house republicans" />
+	<seed slot0="republicans" slot1="democrats &amp;amp;" />
+	<seed slot0="republicans" slot1="democrats" />
+	<seed slot0="poway unified school" slot1="rancho bernardo" />
+	<seed slot0="pirate" slot1="cambodian" />
+	<seed slot0="partnership for peace" slot1="russian" />
+	<seed slot0="posco project" slot1="bhubaneswar" />
+	<seed slot0="organization of petroleum exporting countries" slot1="saudi arabian" />
+	<seed slot0="organization of petroleum exporting countries" slot1="iranian" />
+	<seed slot0="organisation of petroleum exporting countries" slot1="angolan" />
+	<seed slot0="ohio house of representatives" slot1="republicans" />
+	<seed slot0="opec" slot1="venezuelan" />
+	<seed slot0="opec" slot1="nigerian" />
+	<seed slot0="oecd" slot1="iranian" />
+	<seed slot0="new york stock exchange" slot1="euronext nv" />
+	<seed slot0="nyse euronext data solutions" slot1="euronext data" />
+	<seed slot0="nato" slot1="pakistani" />
+	<seed slot0="nato" slot1="iranian" />
+	<seed slot0="nato" slot1="germany" />
+	<seed slot0="nato" slot1="east europe" />
+	<seed slot0="nato" slot1="croatian" />
+	<seed slot0="nato" slot1="croatia" />
+	<seed slot0="nato" slot1="america" />
+	<seed slot0="morissette" slot1="united states district judge" />
+	<seed slot0="leckie elementary school" slot1="arlington county" />
+	<seed slot0="kokang region provisional leading committee" slot1="myanmar" />
+	<seed slot0="juventus" slot1="sampdoria" />
+	<seed slot0="jupp heynckes &amp;apos; bayer leverkusen" slot1="hamburg" />
+	<seed slot0="iowa city" slot1="oklahoma city" />
+	<seed slot0="iowa city" slot1="new york long island" />
+	<seed slot0="international atomic energy agency" slot1="iranian" />
+	<seed slot0="information technology resource management company" slot1="focalpoint corporation , inc" />
+	<seed slot0="iaea" slot1="islamic republic of iran" />
+	<seed slot0="house republican conference" slot1="republicans" />
+	<seed slot0="house oversight &amp;amp; government reform committee" slot1="republicans" />
+	<seed slot0="house environment and natural resources committee" slot1="republicans" />
+	<seed slot0="house budget committee" slot1="republicans" />
+	<seed slot0="house boehner" slot1="republican party" />
+	<seed slot0="house appropriations committee" slot1="republicans" />
+	<seed slot0="house" slot1="ways and means committee" />
+	<seed slot0="house" slot1="republican conference" />
+	<seed slot0="house" slot1="national republican congressional committee" />
+	<seed slot0="house" slot1="house homeland security committee" />
+	<seed slot0="gulf cooperation council" slot1="saudi arabia" />
+	<seed slot0="group of seven" slot1="canadian" />
+	<seed slot0="group of five" slot1="group of eight rich" />
+	<seed slot0="group of 77" slot1="european union" />
+	<seed slot0="g  - 20" slot1="south korea" />
+	<seed slot0="fuzhou" slot1="fujian" />
+	<seed slot0="europhile" slot1="republicans" />
+	<seed slot0="euroatlantic partnership council" slot1="russian" />
+	<seed slot0="ex nda" slot1="gujarat" />
+	<seed slot0="democratic party" slot1="winner" />
+	<seed slot0="democratic" slot1="mexico" />
+	<seed slot0="democratic" slot1="catholics / republicans" />
+	<seed slot0="democrat  -  controlled" slot1="senate" />
+	<seed slot0="conservative party" slot1="english mps" />
+	<seed slot0="conservative party" slot1="dallas" />
+	<seed slot0="communist party of china  - lrb -  cpc" slot1="political and legislative affairs committee" />
+	<seed slot0="communist" slot1="laotian" />
+	<seed slot0="commonwealth" slot1="trinidad" />
+	<seed slot0="coalition" slot1="labour / lib dem / centre party / ukip" />
+	<seed slot0="cpc" slot1="central committee" />
+	<seed slot0="cpc" slot1="cpc central committee &amp;apos;s organization department , publicity department" />
+	<seed slot0="cpc" slot1="cpc central committee" />
+	<seed slot0="caricom nations" slot1="la union" />
+	<seed slot0="bundesliga" slot1="hamburg" />
+	<seed slot0="bucks" slot1="andalusia" />
+	<seed slot0="borrow" slot1="republicans" />
+	<seed slot0="bric countries" slot1="indian" />
+	<seed slot0="bric" slot1="european union" />
+	<seed slot0="association of southeast asian nations" slot1="indonesian" />
+	<seed slot0="arab league" slot1="al committee" />
+	<seed slot0="asean" slot1="vietnam" />
+	<seed slot0="asean" slot1="singapore" />
+	<seed slot0="asean" slot1="republic of korea" />
+	<seed slot0="ansi c" slot1="committee paper" />
+	<seed slot0="jeep liberty ohio auto dealers" slot1="maine" />
+	<seed slot0="jeep liberty ohio auto dealers" slot1="lehigh valley pa" />
+	<seed slot0="jeep liberty ohio auto dealers" slot1="connecticut" />
+	<seed slot0="corner of college" slot1="new york" />
+	<seed slot0="youtube  -  insurance company rules youtube  -  insurance company" slot1="insurance company rules" />
+	<seed slot0="yuxian" slot1="yuxian county" />
+	<seed slot0="wyandanch high school" slot1="ny" />
+	<seed slot0="world team cups" slot1="south african" />
+	<seed slot0="wolfsburg" slot1="royal blues" />
+	<seed slot0="white house" slot1="republican national committee" />
+	<seed slot0="white house" slot1="judiciary committee" />
+	<seed slot0="white house" slot1="gop" />
+	<seed slot0="white house" slot1="american national red cross catholic charities usa america" />
+	<seed slot0="washington" slot1="champaign" />
+	<seed slot0="versailles peace conference" slot1="germany" />
+	<seed slot0="vatican bank" slot1="spa" />
+	<seed slot0="vatican" slot1="illuminati" />
+	<seed slot0="utah national guard" slot1="aviation regiment" />
+	<seed slot0="uriminzokkiri" slot1="russia" />
+	<seed slot0="university of padova" slot1="wales" />
+	<seed slot0="united nations security council" slot1="turkish" />
+	<seed slot0="united nations security council" slot1="fdlr" />
+	<seed slot0="united nations security council" slot1="brazilian" />
+	<seed slot0="united nations human rights council" slot1="united states" />
+	<seed slot0="united nations general assembly" slot1="kingdom of cambodia" />
+	<seed slot0="united nations educational , scientific and cultural organization" slot1="chinese" />
+	<seed slot0="united nations" slot1="un committee on the elimination of racial discrimination" />
+	<seed slot0="united nations" slot1="somaliland" />
+	<seed slot0="united nations" slot1="senate foreign relations committee" />
+	<seed slot0="united nations" slot1="russian" />
+	<seed slot0="united nations" slot1="paris" />
+	<seed slot0="united nations" slot1="jerusalem" />
+	<seed slot0="united nations" slot1="iraqi" />
+	<seed slot0="united nations" slot1="iran" />
+	<seed slot0="united nations" slot1="brazilian" />
+	<seed slot0="united kingdom" slot1="united kingdom of great britain" />
+	<seed slot0="united company" slot1="rusal" />
+	<seed slot0="union of south american nations" slot1="brazilian" />
+	<seed slot0="uscf" slot1="moderation committee" />
+	<seed slot0="usa nato arabian" slot1="iranian" />
+	<seed slot0="us - " slot1="georgia" />
+	<seed slot0="unsg" slot1="democratic republic of congo" />
+	<seed slot0="unsc" slot1="america" />
+	<seed slot0="un human rights council" slot1="united states" />
+	<seed slot0="un" slot1="taliban" />
+	<seed slot0="un" slot1="sudan" />
+	<seed slot0="un" slot1="chinese" />
+	<seed slot0="un" slot1="cambodian" />
+	<seed slot0="un" slot1="britain" />
+	<seed slot0="uk parliament" slot1="scottish mps" />
+	<seed slot0="uconn college" slot1="uconn college republicans" />
+	<seed slot0="us house" slot1="house ways and means committee" />
+	<seed slot0="us federal reserve board" slot1="harken energy corporation" />
+	<seed slot0="un security council" slot1="russia" />
+	<seed slot0="un security council" slot1="chinese" />
+	<seed slot0="un" slot1="chinese" />
+	<seed slot0="turkut" slot1="georgian" />
+	<seed slot0="trilateral commission" slot1="archer daniels midland" />
+	<seed slot0="tories" slot1="conservatives" />
+	<seed slot0="texas pension review board" slot1="calpers" />
+	<seed slot0="texas house" slot1="republicans" />
+	<seed slot0="technology solutions group" slot1="implementation engineers" />
+	<seed slot0="tea party" slot1="china" />
+	<seed slot0="shia" slot1="kufa" />
+	<seed slot0="senate legal and constitutional committees" slot1="senate committee" />
+	<seed slot0="senate armed services" slot1="senate committee on intelligence" />
+	<seed slot0="senate appropriations committee" slot1="republicans" />
+	<seed slot0="senate" slot1="senate judiciary committee" />
+	<seed slot0="senate" slot1="senate environment and public works committee" />
+	<seed slot0="senate" slot1="senate committee" />
+	<seed slot0="senate" slot1="republicans" />
+	<seed slot0="senate" slot1="judiciary committee" />
+	<seed slot0="senate" slot1="international committee of the red cross" />
+	<seed slot0="senate" slot1="democratic senatorial campaign committee" />
+	<seed slot0="senate" slot1="democratic" />
+	<seed slot0="security council" slot1="wales" />
+	<seed slot0="security council" slot1="lebanese" />
+	<seed slot0="security council" slot1="islamic republic of afghanistan" />
+	<seed slot0="security council" slot1="china" />
+	<seed slot0="seattle school district" slot1="vestavia hills" />
+	<seed slot0="school curriculum" slot1="east point" />
+	<seed slot0="school board" slot1="hannukah" />
+	<seed slot0="schiavone construction co" slot1="new york state" />
+	<seed slot0="scare people and vilify" slot1="republicans" />
+	<seed slot0="santa reparata international school of art" slot1="vestavia hills" />
+	<seed slot0="sec" slot1="seminoles" />
+	<seed slot0="sec" slot1="external reporting" />
+	<seed slot0="seato" slot1="south vietnamese" />
+	<seed slot0="sa" slot1="indonesian" />
+	<seed slot0="rovian" slot1="republicans" />
+	<seed slot0="roman catholic" slot1="jakarta" />
+	<seed slot0="rio group" slot1="honduras" />
+	<seed slot0="republicans and tea party" slot1="house of representatives" />
+	<seed slot0="republicans" slot1="tea party" />
+	<seed slot0="republicans" slot1="senate judiciary committee" />
+	<seed slot0="republicans" slot1="national republican congressional committee" />
+	<seed slot0="republicans" slot1="house ways and means committee" />
+	<seed slot0="republicans" slot1="house budget committee" />
+	<seed slot0="republicans" slot1="democratic house" />
+	<seed slot0="republicans" slot1="college" />
+	<seed slot0="republicans" slot1="blue springs" />
+	<seed slot0="republicans" slot1="amnesty" />
+	<seed slot0="republicans" slot1="all republicans" />
+	<seed slot0="republican senate" slot1="house budget committee" />
+	<seed slot0="republican party" slot1="orange county" />
+	<seed slot0="republican party" slot1="house committee on oversight and government reform" />
+	<seed slot0="republican house" slot1="republican conservatives" />
+	<seed slot0="republican congresspersons" slot1="big government" />
+	<seed slot0="republican" slot1="national republican congressional committee" />
+	<seed slot0="radical" slot1="republicans" />
+	<seed slot0="quinnipiac university" slot1="the democratic hopeful" />
+	<seed slot0="premier league" slot1="portsmouth" />
+	<seed slot0="premier league" slot1="fulham" />
+	<seed slot0="pota" slot1="senate committee" />
+	<seed slot0="political bureau of the communist party of china central committee" slot1="wang gang" />
+	<seed slot0="philadelphia fed" slot1="federal open market committee" />
+	<seed slot0="pennsylvania democrats" slot1="democratic national committee" />
+	<seed slot0="pcc" slot1="daily mail" />
+	<seed slot0="organization of petroleum exporting countries" slot1="kuwait" />
+	<seed slot0="organization of petroleum exporting countries" slot1="algeria" />
+	<seed slot0="organization of ibero  -  american states" slot1="brazilian" />
+	<seed slot0="organization for security and cooperation in europe" slot1="us" />
+	<seed slot0="organization for economic cooperation and development" slot1="canadian" />
+	<seed slot0="organisation of the petroleum exporting countries" slot1="saudi arabian" />
+	<seed slot0="organisation of the petroleum exporting countries" slot1="kuwait" />
+	<seed slot0="organisation of the petroleum exporting countries" slot1="angola" />
+	<seed slot0="organisation of petroleum exporting countries" slot1="nigerian" />
+	<seed slot0="oregon firearms educational foundation" slot1="medford" />
+	<seed slot0="orange revolution" slot1="ukrainian" />
+	<seed slot0="operations management" slot1="product management" />
+	<seed slot0="oakland unified school district" slot1="conjeeveram" />
+	<seed slot0="opec" slot1="russia" />
+	<seed slot0="opec" slot1="egyptian" />
+	<seed slot0="oecd" slot1="turkish" />
+	<seed slot0="oecd" slot1="germany" />
+	<seed slot0="oecd" slot1="australian" />
+	<seed slot0="northern securities co" slot1="united states of america" />
+	<seed slot0="north atlantic treaty organization" slot1="united states" />
+	<seed slot0="north atlantic treaty organization" slot1="russia" />
+	<seed slot0="north atlantic treaty organization" slot1="canadian" />
+	<seed slot0="north atlantic treaty organisation" slot1="turkish" />
+	<seed slot0="nile" slot1="egyptian" />
+	<seed slot0="nigeria football federation" slot1="fifa executive committee" />
+	<seed slot0="new democracy party" slot1="pasok" />
+	<seed slot0="nato" slot1="republic of turkey" />
+	<seed slot0="national union of metalworkers of south africa" slot1="reserve bank monetary policy committee" />
+	<seed slot0="national research council" slot1="national fluoridation advisory committee" />
+	<seed slot0="national republican congressional committee" slot1="house" />
+	<seed slot0="national post" slot1="canadian" />
+	<seed slot0="national league for democracy party" slot1="nine nine" />
+	<seed slot0="national league" slot1="major league baseball" />
+	<seed slot0="nfc east" slot1="dallas cowboys" />
+	<seed slot0="nber" slot1="federal open market committee" />
+	<seed slot0="nato" slot1="turkish" />
+	<seed slot0="nato  -  russia council" slot1="russian federation" />
+	<seed slot0="nato  -  russia council" slot1="afghanistan" />
+	<seed slot0="nato  -  council on foreign relations" slot1="european allies" />
+	<seed slot0="nato" slot1="turkish" />
+	<seed slot0="nato" slot1="west german" />
+	<seed slot0="nato" slot1="ukrainian" />
+	<seed slot0="nato" slot1="soviet" />
+	<seed slot0="nato" slot1="russia -  georgia" />
+	<seed slot0="nato" slot1="russia" />
+	<seed slot0="nato" slot1="romanian" />
+	<seed slot0="nato" slot1="norwegian" />
+	<seed slot0="nato" slot1="n korea" />
+	<seed slot0="nato" slot1="israeli" />
+	<seed slot0="nato" slot1="guatemala" />
+	<seed slot0="nato" slot1="european" />
+	<seed slot0="nato" slot1="denmark" />
+	<seed slot0="nato" slot1="bosnian serb republic" />
+	<seed slot0="nato" slot1="athens" />
+	<seed slot0="mount olive" slot1="nj" />
+	<seed slot0="monayr asha aid" slot1="israel" />
+	<seed slot0="moldovan parliament" slot1="ala mindicanu" />
+	<seed slot0="messianic" slot1="ethiopian" />
+	<seed slot0="mercosul" slot1="brazilian" />
+	<seed slot0="mediterranean" slot1="cypriot" />
+	<seed slot0="mic" slot1="saic" />
+	<seed slot0="log cabin" slot1="republicans" />
+	<seed slot0="league one" slot1="leeds" />
+	<seed slot0="labeling task force" slot1="higher level" />
+	<seed slot0="korean peninsula energy development organisation" slot1="european union" />
+	<seed slot0="keralan communist party" slot1="russia" />
+	<seed slot0="kennedy school of government" slot1="shaker district" />
+	<seed slot0="kansas city" slot1="pittsburgh" />
+	<seed slot0="justice department" slot1="joint terrorism task force" />
+	<seed slot0="jefferson co incident" slot1="waukesha county" />
+	<seed slot0="italian defence ministry" slot1="afghan" />
+	<seed slot0="inventory &amp;amp; revenue acctg team" slot1=" - rrb -  city" />
+	<seed slot0="international monetary fund" slot1="international monetary and financial committee" />
+	<seed slot0="inter governmental authority on development" slot1="djibouti" />
+	<seed slot0="information technology resource management company" slot1="focal point corporation , inc" />
+	<seed slot0="iowa" slot1="new york long island" />
+	<seed slot0="iowa" slot1="kansas city" />
+	<seed slot0="ifad" slot1="venezuelan" />
+	<seed slot0="iaea board of governors" slot1="united states" />
+	<seed slot0="iac" slot1="us national academy of sciences" />
+	<seed slot0="house of representatives" slot1="republican southern" />
+	<seed slot0="house of representatives" slot1="house foreign affairs committee" />
+	<seed slot0="house judiciary committee" slot1="ways and means committee" />
+	<seed slot0="house judiciary committee" slot1="republicans" />
+	<seed slot0="house genocide vote" slot1="foreign affairs committee of the turkish parliament" />
+	<seed slot0="house financial services committee" slot1="d" />
+	<seed slot0="house financial services" slot1="republicans" />
+	<seed slot0="house democrats" slot1="republican national committee" />
+	<seed slot0="house democratic caucus" slot1="republicans" />
+	<seed slot0="house democratic" slot1="united states" />
+	<seed slot0="house budget committee" slot1="republican party" />
+	<seed slot0="house : commerce &amp;amp; justice" slot1="committee" />
+	<seed slot0="house" slot1="senate judiciary committee" />
+	<seed slot0="house" slot1="senate" />
+	<seed slot0="house" slot1="interior ministry" />
+	<seed slot0="house" slot1="house financial services committee" />
+	<seed slot0="house" slot1="house committee on oversight and government reform" />
+	<seed slot0="house" slot1="flitwick" />
+	<seed slot0="house" slot1="financial services committee" />
+	<seed slot0="house" slot1="committee" />
+	<seed slot0="hezbollah" slot1="saudi arabia" />
+	<seed slot0="hezbollah" slot1="khirbet selm" />
+	<seed slot0="hezbollah" slot1="iranian" />
+	<seed slot0="headquarters contracts committee" slot1="visa committee , staff management coordination committee" />
+	<seed slot0="hamas" slot1="pigs" />
+	<seed slot0="hamas" slot1="iranian" />
+	<seed slot0="house" slot1="republicans" />
+	<seed slot0="house" slot1="republican congress" />
+	<seed slot0="gulf cooperation council" slot1="gulf" />
+	<seed slot0="gulf" slot1="uae" />
+	<seed slot0="group of seven" slot1="us" />
+	<seed slot0="group of 77" slot1="eu" />
+	<seed slot0="group three" slot1="slovakia" />
+	<seed slot0="group b" slot1="tunisia" />
+	<seed slot0="group b" slot1="australia" />
+	<seed slot0="group" slot1="switzerland" />
+	<seed slot0="group" slot1="gaza" />
+	<seed slot0="green party national peace action committee" slot1="nyc" />
+	<seed slot0="google board" slot1="apple inc" />
+	<seed slot0="google" slot1="youtube" />
+	<seed slot0="globe and mail" slot1="canadian" />
+	<seed slot0="gentile" slot1="psalms" />
+	<seed slot0="gaia steering committee" slot1="jayan" />
+	<seed slot0="g  - 20" slot1="republic of korea" />
+	<seed slot0="freshmen" slot1="republicans" />
+	<seed slot0="florida democratic party" slot1="senate" />
+	<seed slot0="first citizens bank headquarters address citizens national bank waxahachie texas first citizens bank union city tn" slot1="sacramento" />
+	<seed slot0="fiat" slot1="general motors" />
+	<seed slot0="ferrari" slot1="finn" />
+	<seed slot0="exhibits committee" slot1="visa committee , staff management coordination committee" />
+	<seed slot0="european free trade association" slot1="switzerland" />
+	<seed slot0="europa league" slot1="lille" />
+	<seed slot0="english premier league" slot1="manchester city" />
+	<seed slot0="english premier league" slot1="fulham" />
+	<seed slot0="eastern" slot1="nigerian" />
+	<seed slot0="east brunswick high school" slot1="east brunswick" />
+	<seed slot0="ek" slot1="ba sing se" />
+	<seed slot0="dodge" slot1="east nashvillian" />
+	<seed slot0="democratic party" slot1="senate" />
+	<seed slot0="democratic socialists of america" slot1="democratic socialists caucus" />
+	<seed slot0="democratic socialists caucus" slot1="michigan" />
+	<seed slot0="democratic house" slot1="republicans" />
+	<seed slot0="democratic congressional campaign committee" slot1="democratic national committee" />
+	<seed slot0="democratic" slot1="english" />
+	<seed slot0="darwin go home" slot1="northport" />
+	<seed slot0="dap" slot1="german workers &amp;apos; party" />
+	<seed slot0="cubadebate" slot1="tlaxcala" />
+	<seed slot0="constitutional council" slot1="cote" />
+	<seed slot0="conservative" slot1="republicans" />
+	<seed slot0="congress" slot1="senate foreign relations committee" />
+	<seed slot0="congress" slot1="republicans" />
+	<seed slot0="company" slot1="description boston market corporation" />
+	<seed slot0="communists" slot1="philippines" />
+	<seed slot0="communists" slot1="hong kong" />
+	<seed slot0="communist party of china  - lrb -  cpc" slot1="kmt central committee" />
+	<seed slot0="communist party" slot1="state administration of work safety" />
+	<seed slot0="communist" slot1="vietnamese" />
+	<seed slot0="communist" slot1="vietnam" />
+	<seed slot0="communist" slot1="north korean" />
+	<seed slot0="communist" slot1="iraq" />
+	<seed slot0="communist" slot1="chinese" />
+	<seed slot0="commonwealth space agency" slot1="canada" />
+	<seed slot0="commonwealth" slot1="united states of america" />
+	<seed slot0="commonwealth" slot1="burma" />
+	<seed slot0="college republicans" slot1="republican party" />
+	<seed slot0="claims board" slot1="visa committee , staff management coordination committee" />
+	<seed slot0="chicago council on global affairs" slot1="global council" />
+	<seed slot0="chassidim" slot1="lubavitchers" />
+	<seed slot0="charles spragg elementary school" slot1="south jersey" />
+	<seed slot0="central intelligence agency" slot1="united states" />
+	<seed slot0="central division" slot1="cleveland cavaliers" />
+	<seed slot0="catholic school" slot1="sidwell liberals" />
+	<seed slot0="carrefour" slot1="port  - au -  prince" />
+	<seed slot0="capitol hill" slot1="republican national committee" />
+	<seed slot0="cannella elementary school" slot1="hillsborough" />
+	<seed slot0="cpc central commission for discipline inspection" slot1="cpc central committee" />
+	<seed slot0="communist" slot1="cambodian" />
+	<seed slot0="cdu" slot1="csu" />
+	<seed slot0="buganda" slot1="ugandan" />
+	<seed slot0="buganda" slot1="kingdom of bunganda" />
+	<seed slot0="buganda" slot1="kampala" />
+	<seed slot0="buffalo bills" slot1="erie county" />
+	<seed slot0="basel" slot1="roma" />
+	<seed slot0="baganda mps" slot1="ugandan" />
+	<seed slot0="bric" slot1="eu" />
+	<seed slot0="bric" slot1="brazilian" />
+	<seed slot0="brianna blake register" slot1="southeast polk" />
+	<seed slot0="association of southeast asian nations" slot1="thailand" />
+	<seed slot0="arrowhead high school" slot1="waunakee" />
+	<seed slot0="arrowhead high school" slot1="north campus" />
+	<seed slot0="armed forces" slot1="belize" />
+	<seed slot0="americans against escalation" slot1="working assets wireless" />
+	<seed slot0="amazon" slot1="amazonian" />
+	<seed slot0="albion" slot1="magpies" />
+	<seed slot0="al qaeda" slot1="middle eastern" />
+	<seed slot0="al arabiya" slot1="abdolmalek rigi" />
+	<seed slot0="al  -  qaida" slot1="abu musab al -  zarqawi" />
+	<seed slot0="al  -  aqab" slot1="dhahran" />
+	<seed slot0="air force" slot1="pueblo weisbrod aircraft museum" />
+	<seed slot0="aggressor" slot1="european union" />
+	<seed slot0="african union" slot1="mauritanian" />
+	<seed slot0="asean regional forum" slot1="european union" />
+	<seed slot0="asean" slot1="south korea" />
+	<seed slot0="apec" slot1="chinese" />
+	<seed slot0="ansi / iso" slot1="committee paper" />
+	<seed slot0="amd" slot1="intel" />
+	<seed slot0="als committee" slot1="penn yan" />
+	<seed slot0="all" slot1="republican party platform" />
+	<seed slot0="al" slot1="arab league committee" />
+	<seed slot0="afc west" slot1="chargers" />
+	<seed slot0="aig &amp;apos;s international advisory board" slot1="challenge fund" />
+</seeds>

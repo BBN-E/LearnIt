@@ -1,0 +1,22 @@
+INCLUDE ./default.params
+INCLUDE ../domains/bilingual_chinese_gigaword.params
+
+OVERRIDE learnit_expt_suffix: bilingual_chinese_gigaword_default
+
+OVERRIDE do_initialization: true
+OVERRIDE do_post_pruning: true
+
+regtest_confidence_cutoff: .01
+
+transliterationFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.validTranslations
+chiEngNameMappingFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.normalizedTranslations
+
+sent_builder_dbg_info: false
+enable_exception_contradictory_answers: false
+
+
+OVERRIDE eval_dir: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/chinese_ace
+OVERRIDE rawtext_dir: %eval_dir%/rawtext
+OVERRIDE test_set_serifxmls: %eval_dir%/dev_and_train_set.txt
+OVERRIDE test_set_apfs: %eval_dir%/dev_and_train_set_gold.txt
+

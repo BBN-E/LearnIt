@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_place_of_headquarters" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="european central bank" slot1="frankfurt" />
+	<seed slot0="human rights watch" slot1="new york" />
+	<seed slot0="ambit energy" slot1="dallas" />
+	<seed slot0="national hurricane center" slot1="miami" />
+	<seed slot0="al -  qaida" slot1="yemeni" />
+	<seed slot0="hamas" slot1="gaza" />
+	<seed slot0="international monetary fund" slot1="washington" />
+	<seed slot0="un human rights council" slot1="geneva" />
+	<seed slot0="un" slot1="new york" />
+	<seed slot0="international monetary fund" slot1="washington" />
+	<seed slot0="straits exchange foundation" slot1="taiwan" />
+	<seed slot0="international crisis group" slot1="brussels" />
+	<seed slot0="international energy agency" slot1="paris" />
+	<seed slot0="committee to protect journalists" slot1="new york" />
+	<seed slot0="united nations" slot1="new york" />
+	<seed slot0="human rights watch" slot1="us" />
+	<seed slot0="amnesty international" slot1="london" />
+	<seed slot0="organization for economic cooperation and development" slot1="paris" />
+	<seed slot0="pacific tsunami warning center" slot1="hawaii" />
+	<seed slot0="bp" slot1="london" />
+	<seed slot0="asian development bank" slot1="manila" />
+	<seed slot0="healthcare information systems , inc" slot1="horsham" />
+	<seed slot0="current tv" slot1="california" />
+	<seed slot0="capital economics" slot1="london" />
+	<seed slot0="al  -  qaida" slot1="yemeni" />
+	<seed slot0="organization of petroleum exporting countries" slot1="vienna" />
+	<seed slot0="*ambit energy" slot1="dallas" />
+	<seed slot0="boeing" slot1="chicago" />
+	<seed slot0="nato" slot1="brussels" />
+	<seed slot0="international monetary fund" slot1="washington" />
+	<seed slot0="selzer &amp;amp; co" slot1="iowa" />
+	<seed slot0="astrazeneca plc" slot1="london" />
+	<seed slot0="reporters without borders" slot1="paris" />
+	<seed slot0="janssen pharmaceutica of johnson &amp;amp;johnson inc" slot1="nj" />
+	<seed slot0="arab league" slot1="cairo" />
+	<seed slot0="general motors" slot1="detroit" />
+	<seed slot0="international atomic energy agency" slot1="vienna" />
+	<seed slot0="united nations" slot1="new york" />
+	<seed slot0="international federation for human rights" slot1="paris" />
+	<seed slot0="islamist" slot1="pakistani" />
+	<seed slot0="al -  qaida" slot1="yemen" />
+	<seed slot0="hamas" slot1="gaza strip" />
+	<seed slot0="nato" slot1="kabul" />
+	<seed slot0="asian development bank" slot1="manila" />
+	<seed slot0="transparency international" slot1="berlin" />
+	<seed slot0="international energy agency" slot1="paris" />
+	<seed slot0="current tv" slot1="san francisco" />
+	<seed slot0="berkshire hathaway inc" slot1="neb" />
+	<seed slot0="organization of economic cooperation and development" slot1="paris" />
+	<seed slot0="nhc" slot1="miami" />
+	<seed slot0="hamas" slot1="damascus" />
+	<seed slot0="google" slot1="california" />
+	<seed slot0="world bank" slot1="washington" />
+	<seed slot0="gm" slot1="detroit" />
+	<seed slot0="9th us circuit court of appeals" slot1="san francisco" />
+	<seed slot0="al -  ayyam" slot1="ramallah" />
+	<seed slot0="united airlines" slot1="chicago" />
+	<seed slot0="international maritime bureau &amp;apos;s piracy reporting centre" slot1="kuala lumpur" />
+	<seed slot0="healthcare information systems , inc" slot1="pa" />
+	<seed slot0="arab league" slot1="cairo" />
+	<seed slot0="apple" slot1="california" />
+	<seed slot0="*orascom" slot1="egypt" />
+	<seed slot0="transocean" slot1="swiss" />
+	<seed slot0="the green team" slot1="texas" />
+	<seed slot0="lashkar  - e -  taiba" slot1="pakistani" />
+	<seed slot0="hezbollah" slot1="lebanese" />
+	<seed slot0="china times" slot1="taipei" />
+	<seed slot0="asian institute of technology" slot1="thailand" />
+	<seed slot0="us national hurricane center" slot1="miami" />
+	<seed slot0="palestinian national authority" slot1="west bank" />
+	<seed slot0="organization for economic cooperation and development" slot1="paris" />
+	<seed slot0="national hurricane center" slot1="miami" />
+	<seed slot0="ide" slot1="eclipse" />
+	<seed slot0="hsbc" slot1="london" />
+	<seed slot0="google" slot1="mountain view" />
+	<seed slot0="carnegie middle east centre" slot1="beirut" />
+	<seed slot0="boeing co" slot1="chicago" />
+	<seed slot0="pacific tsunami warning centre" slot1="hawaii" />
+	<seed slot0="organization of american states" slot1="washington" />
+	<seed slot0="hamas" slot1="damascus" />
+	<seed slot0="gold and silver exchange society" slot1="hong kong" />
+	<seed slot0="comcast" slot1="pennsylvania" />
+	<seed slot0="cia" slot1="langley" />
+	<seed slot0="al  -  baghdadia" slot1="cairo" />
+	<seed slot0="al  -  arabiya" slot1="dubai" />
+	<seed slot0="organisation for economic cooperation and development" slot1="paris" />
+	<seed slot0="national hurricane center" slot1="miami" />
+	<seed slot0="nato" slot1="brussels" />
+	<seed slot0="international council on security and development" slot1="london" />
+	<seed slot0="hamas" slot1="gaza" />
+	<seed slot0="glaxosmithkline" slot1="london" />
+	<seed slot0="fudan university" slot1="shanghai" />
+	<seed slot0="cdc" slot1="atlanta" />
+	<seed slot0="al  -  jazeera" slot1="qatar" />
+	<seed slot0="at&amp;amp;t" slot1="dallas" />
+	<seed slot0="world economic forum" slot1="geneva" />
+	<seed slot0="trapez recordings" slot1="cologne" />
+	<seed slot0="toyota" slot1="japan" />
+	<seed slot0="oecd" slot1="paris" />
+	<seed slot0="oecd" slot1="paris" />
+	<seed slot0="international criminal court" slot1="hague" />
+	<seed slot0="intelsat corporation" slot1="washington" />
+	<seed slot0="electronic data system" slot1="cyberjaya" />
+	<seed slot0="conocophillips" slot1="houston" />
+	<seed slot0="citigroup" slot1="new york" />
+	<seed slot0="centers for disease control and prevention" slot1="atlanta" />
+	<seed slot0="bank of america" slot1="nc" />
+	<seed slot0="bdr" slot1="dhaka" />
+	<seed slot0="american international group inc" slot1="new york" />
+	<seed slot0="amazon" slot1="seattle" />
+	<seed slot0="wells fargo &amp;amp; co" slot1="san francisco" />
+	<seed slot0="unesco" slot1="paris" />
+	<seed slot0="un" slot1="the hague" />
+	<seed slot0="un" slot1="geneva" />
+	<seed slot0="us southern command" slot1="west miami  -  dade" />
+	<seed slot0="telesur" slot1="caracas" />
+	<seed slot0="simon wiesenthal center" slot1="los angeles" />
+	<seed slot0="nld" slot1="yangon" />
+	<seed slot0="islamist" slot1="pakistan" />
+	<seed slot0="international security assistance force" slot1="afghanistan" />
+	<seed slot0="information centre for human rights and democracy" slot1="hong kong" />
+	<seed slot0="hurun report" slot1="shanghai" />
+	<seed slot0="gmac" slot1="detroit" />
+	<seed slot0="food and agriculture organization" slot1="rome" />
+	<seed slot0="fbi" slot1="washington" />
+	<seed slot0="emirates" slot1="gulf" />
+	<seed slot0="conference board" slot1="new york" />
+	<seed slot0="citigroup inc" slot1="new york" />
+	<seed slot0="center for strategic and international studies" slot1="washington" />
+	<seed slot0="carnegie endowment for international peace" slot1="united states" />
+	<seed slot0="all ocean shipping" slot1="athens" />
+	<seed slot0="al  -  qaeda" slot1="yemen" />
+	<seed slot0="afp" slot1="california" />
+	<seed slot0="al -  jazeera" slot1="doha" />
+	<seed slot0="al -  arabiyah tv" slot1="dubai" />
+	<seed slot0="world trade organization" slot1="geneva" />
+	<seed slot0="world health organization" slot1="geneva" />
+	<seed slot0="wells fargo" slot1="san francisco" />
+	<seed slot0="us post office" slot1="california" />
+	<seed slot0="ubs" slot1="swiss" />
+	<seed slot0="transcanada corporation" slot1="calgary" />
+	<seed slot0="traditional anglican communion" slot1="australia" />
+	<seed slot0="shanghai stock exchange" slot1="beijing" />
+	<seed slot0="protein sciences corporation" slot1="connecticut" />
+	<seed slot0="porsche" slot1="stuttgart" />
+	<seed slot0="pfizer inc" slot1="new york" />
+	<seed slot0="pfizer" slot1="new york" />
+	<seed slot0="opel" slot1="germany" />
+	<seed slot0="microsoft research" slot1="washington state" />
+	<seed slot0="japan international cooperation agency" slot1="tokyo" />
+	<seed slot0="jpmorgan chase" slot1="new york" />
+	<seed slot0="international federation of journalists" slot1="brussels" />
+	<seed slot0="international criminal court" slot1="the hague" />
+	<seed slot0="insource , inc" slot1="king of prussia" />
+	<seed slot0="human rights watch" slot1="united states" />
+	<seed slot0="human rights council" slot1="geneva" />
+	<seed slot0="hezbollah" slot1="lebanon" />
+	<seed slot0="global fund" slot1="geneva" />
+	<seed slot0="general electric" slot1="conn" />
+	<seed slot0="food and agriculture organization" slot1="rome" />
+	<seed slot0="devry university" slot1="oakbrook terrace" />
+	<seed slot0="court of arbitration for sport" slot1="lausanne" />
+	<seed slot0="china times" slot1="taipei" />
+	<seed slot0="chinext" slot1="shenzhen" />
+	<seed slot0="caterpillar inc" slot1="ill" />
+	<seed slot0="blackwater usa" slot1="moyock" />
+	<seed slot0="anglo" slot1="london" />
+	<seed slot0="al  -  qaeda" slot1="yemeni" />
+	<seed slot0="zew center for european economic research" slot1="mannheim" />
+	<seed slot0="yahoo !" slot1="california" />
+	<seed slot0="xinhua" slot1="beijing" />
+	<seed slot0="wal  -  mart stores inc" slot1="ark" />
+	<seed slot0="united nations educational , scientific and cultural organization" slot1="paris" />
+	<seed slot0="united nations" slot1="honduras" />
+	<seed slot0="us fifth fleet" slot1="bahrain" />
+	<seed slot0="un educational , scientific and cultural organization" slot1="paris" />
+	<seed slot0="ubs" slot1="zurich" />
+	<seed slot0="tea party express" slot1="sacramento" />
+	<seed slot0="southwest airlines" slot1="dallas" />
+	<seed slot0="solvay" slot1="belgium" />
+	<seed slot0="solarreserve llc" slot1="california" />
+	<seed slot0="shenzhen airlines" slot1="shenzhen" />
+	<seed slot0="seafarers assistance programme" slot1="kenya" />
+	<seed slot0="reporters without borders" slot1="paris" />
+	<seed slot0="renmin university of china" slot1="beijing" />
+	<seed slot0="rebiya kadeer" slot1="washington" />
+	<seed slot0="palestinian authority" slot1="west bank" />
+	<seed slot0="pakistani daily newspaper" slot1="karachi" />
+	<seed slot0="oxfam" slot1="british" />
+	<seed slot0="occidental petroleum" slot1="los angeles" />
+	<seed slot0="nasdaqdubai exchange" slot1="dubai" />
+	<seed slot0="monsanto" slot1="st louis" />
+	<seed slot0="international press institute" slot1="vienna" />
+	<seed slot0="international federation of human rights" slot1="paris" />
+	<seed slot0="international criminal tribunal" slot1="hague" />
+	<seed slot0="international atomic energy agency" slot1="vienna" />
+	<seed slot0="inter services intelligence" slot1="peshawar" />
+	<seed slot0="intel" slot1="california" />
+	<seed slot0="institute for supply management" slot1="ariz" />
+	<seed slot0="ifo" slot1="munich" />
+	<seed slot0="humantics foundation for women" slot1="san diego" />
+	<seed slot0="goldman sachs" slot1="new york" />
+	<seed slot0="freddie mac" slot1="va" />
+	<seed slot0="first pacific co" slot1="hong kong" />
+	<seed slot0="fannie mae" slot1="washington" />
+	<seed slot0="fifa" slot1="zurich" />
+	<seed slot0="ecoterra international" slot1="kenya" />
+	<seed slot0="etl" slot1="informatica" />
+	<seed slot0="continental airlines" slot1="houston" />
+	<seed slot0="china labor watch" slot1="new york" />
+	<seed slot0="central intelligence agency" slot1="langley" />
+	<seed slot0="center for justice and international law" slot1="washington" />
+	<seed slot0="cts corp" slot1="ind" />
+	<seed slot0="brookings institution" slot1="washington" />
+	<seed slot0="break the chain campaign" slot1="washington" />
+	<seed slot0="bank of communications" slot1="shanghai" />
+	<seed slot0="arab news" slot1="london" />
+	<seed slot0="al  -  qaida" slot1="yemen" />
+	<seed slot0="al  -  jazeera" slot1="doha" />
+	<seed slot0="aqap" slot1="yemeni" />
+	<seed slot0="afp" slot1="bangalore" />
+	<seed slot0="al -  jazeera" slot1="qatar" />
+	<seed slot0="al -  arabiya" slot1="dubai" />
+	<seed slot0="zaidi" slot1="yemeni" />
+	<seed slot0="xinhua" slot1="london" />
+	<seed slot0="xinhua" slot1="lagos" />
+	<seed slot0="world food program" slot1="rome" />
+	<seed slot0="wedge group" slot1="houston" />
+	<seed slot0="wachovia" slot1="charlotte" />
+	<seed slot0="verizon communications inc" slot1="new york" />
+	<seed slot0="verizon communications" slot1="new york" />
+	<seed slot0="united nations" slot1="haitian" />
+	<seed slot0="united daily news" slot1="taipei" />
+	<seed slot0="un general assembly" slot1="new york" />
+	<seed slot0="un" slot1="baghdad" />
+	<seed slot0="train foundation" slot1="new york" />
+	<seed slot0="tea party embraces pro  -  life" slot1="california" />
+	<seed slot0="taseko mines limited" slot1="vancouver" />
+	<seed slot0="solchart arkhangelsk" slot1="russian" />
+	<seed slot0="smart interactive systems , inc" slot1="new york" />
+	<seed slot0="sinovac" slot1="beijing" />
+	<seed slot0="saar foundation" slot1="virginia" />
+	<seed slot0="site intelligence group" slot1="american" />
+	<seed slot0="regional cra" slot1="home" />
+	<seed slot0="rhj international" slot1="brussels" />
+	<seed slot0="qatar exchange" slot1="doha" />
+	<seed slot0="primus financial holdings" slot1="hong kong" />
+	<seed slot0="prestige economics" slot1="texas" />
+	<seed slot0="oriental morning post" slot1="shanghai" />
+	<seed slot0="organisation for economic cooperation and development" slot1="paris" />
+	<seed slot0="national australia bank" slot1="melbourne" />
+	<seed slot0="nasa" slot1="washington" />
+	<seed slot0="nasa" slot1="washington" />
+	<seed slot0="microsoft" slot1="washington" />
+	<seed slot0="lashkar  - e -  taiba" slot1="pakistan" />
+	<seed slot0="jetblue airways" slot1="new york" />
+	<seed slot0="islamic jihad" slot1="gaza" />
+	<seed slot0="international court of justice" slot1="the hague" />
+	<seed slot0="institute for near east" slot1="dubai" />
+	<seed slot0="institute for conflict management" slot1="new delhi" />
+	<seed slot0="intel" slot1="santa clara" />
+	<seed slot0="ing asia private bank limited" slot1="singapore" />
+	<seed slot0="homeland security" slot1="washington" />
+	<seed slot0="halliburton" slot1="texas" />
+	<seed slot0="htc" slot1="taiwan" />
+	<seed slot0="general motors corp" slot1="detroit" />
+	<seed slot0="free gaza movement" slot1="us" />
+	<seed slot0="foxconn technology group" slot1="taiwan" />
+	<seed slot0="formula one teams association" slot1="geneva" />
+	<seed slot0="ford motor co" slot1="dearborn" />
+	<seed slot0="financial times" slot1="london" />
+	<seed slot0="european commission" slot1="brussels" />
+	<seed slot0="emea" slot1="london" />
+	<seed slot0="dominion wireless , inc" slot1="virginia" />
+	<seed slot0="democracy international" slot1="us" />
+	<seed slot0="citigroup" slot1="new york" />
+	<seed slot0="cisco" slot1="california" />
+	<seed slot0="china digital times" slot1="us" />
+	<seed slot0="chevron" slot1="us" />
+	<seed slot0="center for constitutional rights" slot1="new york" />
+	<seed slot0="caterpillar" slot1="ill" />
+	<seed slot0="capital economics" slot1="london" />
+	<seed slot0="capital city partners" slot1="washington" />
+	<seed slot0="cairn energy" slot1="edinburgh" />
+	<seed slot0="cia" slot1="italian" />
+	<seed slot0="british airways" slot1="london" />
+	<seed slot0="black republicans" slot1="confederate south" />
+	<seed slot0="bank of east asia" slot1="hong kong" />
+	<seed slot0="bp" slot1="london" />
+	<seed slot0="arms control association" slot1="washington" />
+	<seed slot0="apple inc" slot1="cupertino" />
+	<seed slot0="american international group" slot1="new york" />
+	<seed slot0="american enterprise institute" slot1="dc" />
+	<seed slot0="al jazeera" slot1="qatar" />
+	<seed slot0="airbus" slot1="france" />
+	<seed slot0="addax petroleum" slot1="calgary" />
+	<seed slot0="at&amp;amp;t inc" slot1="dallas" />
+	<seed slot0="al -  qaeda" slot1="yemeni" />
+	<seed slot0="al -  hayat" slot1="london" />
+	<seed slot0="world uighur congress" slot1="us" />
+	<seed slot0="world uighur congress" slot1="germany" />
+	<seed slot0="wmi" slot1="houston" />
+	<seed slot0="united nations" slot1="rome" />
+	<seed slot0="ulster" slot1="paris" />
+	<seed slot0="ubisoft" slot1="france" />
+	<seed slot0="un" slot1="vienna" />
+	<seed slot0="toyota" slot1="japanese" />
+	<seed slot0="the sales company" slot1="dallas" />
+	<seed slot0="the international banking corp" slot1="bahrain" />
+	<seed slot0="taliban" slot1="kunduz" />
+	<seed slot0="supreme iraqi islamic council" slot1="iran" />
+	<seed slot0="steel development co" slot1="mississippi" />
+	<seed slot0="staffing industry leader" slot1="new york city" />
+	<seed slot0="southern peru copper corporation" slot1="phoenix" />
+	<seed slot0="solchart management" slot1="helsinki" />
+	<seed slot0="satyam" slot1="hyderabad" />
+	<seed slot0="renmin university" slot1="beijing" />
+	<seed slot0="ramadhan foundation" slot1="rochdale" />
+	<seed slot0="qvcs" slot1="west chester" />
+	<seed slot0="pttep australasia" slot1="thai" />
+	<seed slot0="organization for economic co - operation and development" slot1="paris" />
+	<seed slot0="nile news tv" slot1="cairo" />
+	<seed slot0="national ocean industries association" slot1="washington" />
+	<seed slot0="national association of realtors" slot1="chicago" />
+	<seed slot0="nato" slot1="afghanistan" />
+	<seed slot0="markon realty and management company" slot1="florida" />
+	<seed slot0="maritime patrol aircraft" slot1="britain" />
+	<seed slot0="mariner energy" slot1="houston" />
+	<seed slot0="macintosh" slot1="california" />
+	<seed slot0="lhbd holding limited" slot1="british" />
+	<seed slot0="lbc" slot1="beirut" />
+	<seed slot0="internet star" slot1="california" />
+	<seed slot0="international personal development company" slot1="us" />
+	<seed slot0="international olympic committee" slot1="lausanne" />
+	<seed slot0="intel corp" slot1="calif" />
+	<seed slot0="institute for reporter freedom" slot1="baku" />
+	<seed slot0="infosys technologies" slot1="bangalore" />
+	<seed slot0="index ventures" slot1="london" />
+	<seed slot0="ihs global insight" slot1="london" />
+	<seed slot0="hyperfeed" slot1="pleasanton" />
+	<seed slot0="humantics foundation for women" slot1="san diego county" />
+	<seed slot0="human rights watch" slot1="us" />
+	<seed slot0="huarong securities" slot1="beijing" />
+	<seed slot0="hon hai group" slot1="taiwan" />
+	<seed slot0="heilongjiang longmay mining holding group" slot1="harbin" />
+	<seed slot0="health and human services" slot1="washington" />
+	<seed slot0="harris private bank" slot1="chicago" />
+	<seed slot0="hamas" slot1="gaza city" />
+	<seed slot0="halliburton" slot1="houston" />
+	<seed slot0="google" slot1="calif" />
+	<seed slot0="galleon management" slot1="new york" />
+	<seed slot0="financial times" slot1="london" />
+	<seed slot0="fifth fleet" slot1="bahrain" />
+	<seed slot0="federal labor agency" slot1="nuremberg" />
+	<seed slot0="fatah" slot1="gaza strip" />
+	<seed slot0="facebook" slot1="california" />
+	<seed slot0="ftv" slot1="sarajevo" />
+	<seed slot0="ford" slot1="dearborn" />
+	<seed slot0="exxon mobil corp" slot1="texas" />
+	<seed slot0="european court of human rights" slot1="strasbourg" />
+	<seed slot0="escada" slot1="germany" />
+	<seed slot0="emigrant bank fine art finance" slot1="new york" />
+	<seed slot0="ec  -  cs consultants malaysia / singapore" slot1="singapore" />
+	<seed slot0="dui hua foundation" slot1="san francisco" />
+	<seed slot0="democratic action party" slot1="chinese" />
+	<seed slot0="delta air lines" slot1="atlanta" />
+	<seed slot0="dell" slot1="texas" />
+	<seed slot0="defence of human rights" slot1="dakar" />
+	<seed slot0="data domain" slot1="california" />
+	<seed slot0="daily independent" slot1="lagos" />
+	<seed slot0="d" slot1="massachusetts" />
+	<seed slot0="credit suisse group" slot1="zurich" />
+	<seed slot0="court of arbritation for sports" slot1="lausanne" />
+	<seed slot0="constitutional court" slot1="saint petersburg" />
+	<seed slot0="chrysler group llc" slot1="auburn hills" />
+	<seed slot0="china labour bulletin" slot1="hong kong" />
+	<seed slot0="centre for economics and business research" slot1="london" />
+	<seed slot0="center for european reform" slot1="london" />
+	<seed slot0="carter center" slot1="atlanta" />
+	<seed slot0="cges" slot1="london" />
+	<seed slot0="cas" slot1="lausanne" />
+	<seed slot0="bureau of engraving and printing  - lrb -  treasury" slot1="washington" />
+	<seed slot0="bulletin of the atomic scientists" slot1="chicago" />
+	<seed slot0="brookings institution" slot1="dc" />
+	<seed slot0="bridas energy holdings" slot1="argentina" />
+	<seed slot0="blackstone group" slot1="new york" />
+	<seed slot0="bank of america corp" slot1="nc" />
+	<seed slot0="bank for international settlements" slot1="basel" />
+	<seed slot0="byd co" slot1="shenzhen" />
+	<seed slot0="bhp billiton" slot1="melbourne" />
+	<seed slot0="asian human rights commission" slot1="hong kong" />
+	<seed slot0="asian development bank" slot1="philippines" />
+	<seed slot0="americas wetland foundation" slot1="north carolina" />
+	<seed slot0="american international group" slot1="new york" />
+	<seed slot0="america online" slot1="virginia" />
+	<seed slot0="ally financial inc" slot1="detroit" />
+	<seed slot0="abb power" slot1="zurich" />
+	<seed slot0="aa" slot1="new york" />
+	<seed slot0="1st army region" slot1="bangkok" />
+	<seed slot0="al -  qaida" slot1="pakistan" />
+	<seed slot0="al -  azhar university" slot1="gaza" />
+	<seed slot0="al -  ayyam daily" slot1="ramallah" />
+	<seed slot0="al -  ayyam daily" slot1="ramallah" />
+	<seed slot0="zen" slot1="french" />
+	<seed slot0="zarooni group" slot1="dubai" />
+	<seed slot0="zionist global economy" slot1="rome" />
+	<seed slot0="xinhua" slot1="dubai" />
+	<seed slot0="world uighur congress" slot1="munich" />
+	<seed slot0="world organization for animal health" slot1="paris" />
+	<seed slot0="world health organisation" slot1="geneva" />
+	<seed slot0="world food programme" slot1="rome" />
+	<seed slot0="wikipedia" slot1="united states of ameriaca" />
+	<seed slot0="wellpoint inc" slot1="indianapolis" />
+	<seed slot0="wegman" slot1="rochester" />
+	<seed slot0="viva palestina" slot1="british" />
+	<seed slot0="vedanta mining" slot1="britain" />
+	<seed slot0="united nations" slot1="vienna" />
+	<seed slot0="united nations" slot1="port  - au -  prince" />
+	<seed slot0="united nations" slot1="geneva" />
+	<seed slot0="ummat group of publications" slot1="karachi" />
+	<seed slot0="unicef" slot1="new york" />
+	<seed slot0="unep" slot1="nairobi" />
+	<seed slot0="un" slot1="haitian" />
+	<seed slot0="un" slot1="haiti" />
+	<seed slot0="uas" slot1="gecko" />
+	<seed slot0="us central command" slot1="tampa" />
+	<seed slot0="us bancorp" slot1="minneapolis" />
+	<seed slot0="un" slot1="new york" />
+	<seed slot0="tsinghua university" slot1="chinese" />
+	<seed slot0="tsinghua university" slot1="beijing" />
+	<seed slot0="toyota" slot1="bangkok south korean" />
+	<seed slot0="times" slot1="london" />
+	<seed slot0="the woods fund" slot1="chicago" />
+	<seed slot0="the times" slot1="london" />
+	<seed slot0="the telegraph" slot1="kolkata" />
+	<seed slot0="taipei palace museum" slot1="taipei" />
+	<seed slot0="syrian observatory for human rights" slot1="london" />
+	<seed slot0="strategy analytics" slot1="boston" />
+	<seed slot0="straits exchange foundation" slot1="taiwanese" />
+	<seed slot0="straits exchange foundation" slot1="taiwan straits" />
+	<seed slot0="solarreserve llc" slot1="santa monica" />
+	<seed slot0="society" slot1="hong kong" />
+	<seed slot0="simon wiesenthal center" slot1="us" />
+	<seed slot0="siemens" slot1="munich" />
+	<seed slot0="semiconductor industry association" slot1="san jose" />
+	<seed slot0="sanofi  -  aventis" slot1="paris" />
+	<seed slot0="risk management" slot1="houston" />
+	<seed slot0="ram bahadur thakur limited" slot1="bihar" />
+	<seed slot0="rpm nautical foundation / ap" slot1="fla" />
+	<seed slot0="rhj international" slot1="belgium" />
+	<seed slot0="qvc , inc" slot1="pa" />
+	<seed slot0="pew research centre" slot1="us" />
+	<seed slot0="permanent court of arbitration" slot1="hague" />
+	<seed slot0="people first party" slot1="taiwan" />
+	<seed slot0="pacific investment management co" slot1="calif" />
+	<seed slot0="pacific consultants international" slot1="tokyo" />
+	<seed slot0="pttep" slot1="bangkok" />
+	<seed slot0="organization of american states" slot1="washington" />
+	<seed slot0="organisation of the islamic conference" slot1="saudi" />
+	<seed slot0="oneunited bank" slot1="boston" />
+	<seed slot0="novartis" slot1="switzerland" />
+	<seed slot0="noble energy" slot1="houston" />
+	<seed slot0="news corp" slot1="new york" />
+	<seed slot0="new party" slot1="taiwan" />
+	<seed slot0="netapp" slot1="california" />
+	<seed slot0="neptune orient lines" slot1="singapore" />
+	<seed slot0="nature conservancy" slot1="washington" />
+	<seed slot0="national research center for women and families" slot1="dc" />
+	<seed slot0="national opinion research center" slot1="chicago" />
+	<seed slot0="national hurricane center" slot1="us" />
+	<seed slot0="national democratic institute" slot1="washington" />
+	<seed slot0="national coalition for child protection reform" slot1="alexandria" />
+	<seed slot0="nankai university" slot1="tianjin" />
+	<seed slot0="myanmar airways international" slot1="singapore" />
+	<seed slot0="mortgage bankers association" slot1="washington" />
+	<seed slot0="morgan stanley" slot1="new york" />
+	<seed slot0="microsoft corp" slot1="redmond" />
+	<seed slot0="microsoft" slot1="redmond" />
+	<seed slot0="mena news agency" slot1="cairo" />
+	<seed slot0="lockheed martin corp" slot1="md" />
+	<seed slot0="lockheed martin" slot1="md" />
+	<seed slot0="laskhar  - e -  toiba" slot1="pakistani" />
+	<seed slot0="lashkar  - e -  islam" slot1="tirrah valley" />
+	<seed slot0="lvmh moet hennessy louis vuitton" slot1="paris" />
+	<seed slot0="lbc" slot1="lebanon" />
+	<seed slot0="khmer rouge tribunal" slot1="phnom penh" />
+	<seed slot0="journalistic freedoms observatory" slot1="baghdad" />
+	<seed slot0="jemaah islamiyah" slot1="indonesian" />
+	<seed slot0="jpmorgan chase &amp;amp; co" slot1="new york" />
+	<seed slot0="jbc energy" slot1="vienna" />
+	<seed slot0="interpol" slot1="lyon" />
+	<seed slot0="internet corporation" slot1="us" />
+	<seed slot0="international food policy research institute" slot1="washington" />
+	<seed slot0="international criminal tribunal" slot1="tanzania" />
+	<seed slot0="international chamber of commerce" slot1="paris" />
+	<seed slot0="intelligo inc" slot1="denver" />
+	<seed slot0="institute of international finance" slot1="washington" />
+	<seed slot0="independent election commission" slot1="kabul" />
+	<seed slot0="iaea" slot1="vienna" />
+	<seed slot0="hyundai" slot1="seoul" />
+	<seed slot0="hyatt hotels" slot1="chicago" />
+	<seed slot0="human rights watch" slot1="washington" />
+	<seed slot0="hudson institute" slot1="washington" />
+	<seed slot0="horizon research consultancy group" slot1="beijing" />
+	<seed slot0="honda" slot1="tokyo" />
+	<seed slot0="heritage foundation" slot1="united states" />
+	<seed slot0="hercules offshore" slot1="houston" />
+	<seed slot0="gulf international bank" slot1="bahrain" />
+	<seed slot0="guardian" slot1="london" />
+	<seed slot0="grantham research institute on climate change" slot1="uk" />
+	<seed slot0="graduate scheme  -  finance" slot1="holborn" />
+	<seed slot0="google inc" slot1="mountain view" />
+	<seed slot0="goldman sachs group inc" slot1="new york" />
+	<seed slot0="goldman sachs" slot1="new york" />
+	<seed slot0="godrej group" slot1="pakistani" />
+	<seed slot0="globalysis" slot1="las vegas" />
+	<seed slot0="global green solutions" slot1="georgia" />
+	<seed slot0="gfk" slot1="nuremberg" />
+	<seed slot0="general motors co" slot1="detroit" />
+	<seed slot0="general electric" slot1="fairfield" />
+	<seed slot0="gata" slot1="united states" />
+	<seed slot0="ford motor co " slot1="united states" />
+	<seed slot0="fatah" slot1="gaza" />
+	<seed slot0="fia" slot1="paris" />
+	<seed slot0="f1 team sdn bhd" slot1="norfolk" />
+	<seed slot0="european banking authority" slot1="london" />
+	<seed slot0="eritrea  -  ethiopia claims commission" slot1="hague" />
+	<seed slot0="eli lilly" slot1="indianapolis" />
+	<seed slot0="echebastar fleet" slot1="basque" />
+	<seed slot0="earthrights international" slot1="us" />
+	<seed slot0="dow chemical" slot1="mich" />
+	<seed slot0="dongguan meixiang aviation club" slot1="guangdong province" />
+	<seed slot0="dimension data" slot1="south africa" />
+	<seed slot0="deutsche bank" slot1="frankfurt" />
+	<seed slot0="countrywide financial corp" slot1="calabasas" />
+	<seed slot0="continental airlines inc" slot1="houston" />
+	<seed slot0="commonwealth games federation" slot1="london" />
+	<seed slot0="committee for racial justice" slot1="vancouver island" />
+	<seed slot0="cirque du soleil" slot1="montreal" />
+	<seed slot0="chrysler group" slot1="mich" />
+	<seed slot0="chinese culture university" slot1="taipei" />
+	<seed slot0="china mobile" slot1="beijing" />
+	<seed slot0="chief oil and gas" slot1="dallas" />
+	<seed slot0="charles schwab corp" slot1="san francisco" />
+	<seed slot0="central command" slot1="tampa" />
+	<seed slot0="center for responsive politics" slot1="washington" />
+	<seed slot0="center for responsive politics" slot1="dc" />
+	<seed slot0="caterpillar inc" slot1="illinois" />
+	<seed slot0="carnegie endowment for international peace" slot1="washington" />
+	<seed slot0="carnegie endowment for international peace" slot1="us" />
+	<seed slot0="cnn" slot1="los angeles" />
+	<seed slot0="cias" slot1="langley" />
+	<seed slot0="cepii" slot1="paris" />
+	<seed slot0="cda collaborative learning projects" slot1="us" />
+	<seed slot0="business machines* corp" slot1="chicago" />
+	<seed slot0="brookings institution" slot1="united states" />
+	<seed slot0="bloomberg" slot1="new york" />
+	<seed slot0="blackrock inc" slot1="new york" />
+	<seed slot0="bingtuan television" slot1="xinjiang" />
+	<seed slot0="berkshire hathaway" slot1="neb" />
+	<seed slot0="bearingpoint" slot1="va" />
+	<seed slot0="bear stearns" slot1="boulder colorado" />
+	<seed slot0="barclays capital" slot1="london" />
+	<seed slot0="barclays capital" slot1="frankfurt" />
+	<seed slot0="bangladesh rifles" slot1="dhaka" />
+	<seed slot0="asian development outlook" slot1="manila" />
+	<seed slot0="asia society" slot1="new york" />
+	<seed slot0="armorgroup" slot1="british" />
+	<seed slot0="arabiyah pan" slot1="dubai" />
+	<seed slot0="apple daily" slot1="taipei" />
+	<seed slot0="apple" slot1="cupertino" />
+	<seed slot0="apple" slot1="calif" />
+	<seed slot0="ammantimes" slot1="amman" />
+	<seed slot0="american medical association" slot1="chicago" />
+	<seed slot0="american international group inc" slot1="new york" />
+	<seed slot0="american international assurance" slot1="asia" />
+	<seed slot0="american financial group" slot1="cincinnati" />
+	<seed slot0="ally financial" slot1="detroit" />
+	<seed slot0="al arabiya tv channel" slot1="dubai" />
+	<seed slot0="al  -  quds al  -  arabi" slot1="london" />
+	<seed slot0="air comet" slot1="madrid" />
+	<seed slot0="air arabia" slot1="sharjah" />
+	<seed slot0="african union" slot1="addis ababa" />
+	<seed slot0="addax petroleum corp" slot1="geneva" />
+	<seed slot0="acer" slot1="taiwan" />
+	<seed slot0="abu sayyaf" slot1="philippines" />
+	<seed slot0="amd??" slot1="california" />
+	<seed slot0="al" slot1="cairo" />
+	<seed slot0="age refining" slot1="san antonio" />
+	<seed slot0="afp" slot1="san francisco" />
+	<seed slot0="3m co" slot1="minn" />
+	<seed slot0="ebay" slot1="california" />
+	<seed slot0="al -  quds al -  arabi" slot1="london" />
+	<seed slot0="al -  qaeda" slot1="yemen" />
+	<seed slot0="al -  jazeera tv" slot1="doha" />
+	<seed slot0="al -  arabiya tv channel" slot1="dubai" />
+	<seed slot0="al -  arabiya tv" slot1="dubai" />
+	<seed slot0="yonhap news agency" slot1="seoul" />
+	<seed slot0="yamada corp" slot1="tokyo" />
+	<seed slot0="yahoo" slot1="california" />
+	<seed slot0="xstrata" slot1="swiss" />
+	<seed slot0="xinhua" slot1="texas" />
+	<seed slot0="xinhua" slot1="paris" />
+	<seed slot0="world sport group" slot1="singapore" />
+	<seed slot0="world resources institute" slot1="united states" />
+	<seed slot0="world health organization" slot1="melbourne" />
+	<seed slot0="world health organization" slot1="geneva" />
+	<seed slot0="world economic forum" slot1="swiss" />
+	<seed slot0="world bank" slot1="washington" />
+	<seed slot0="world alliance of reformed churches" slot1="geneva" />
+	<seed slot0="westinghouse" slot1="us" />
+	<seed slot0="walt disney company" slot1="shanghai" />
+	<seed slot0="wal  -  mart" slot1="ark" />
+	<seed slot0="volkswagen" slot1="germany" />
+	<seed slot0="vantagepoint venture partners" slot1="united arab emirates" />
+	<seed slot0="vf corp" slot1="nc" />
+	<seed slot0="universal health services inc" slot1="king of prussia" />
+	<seed slot0="united states chess federation" slot1="new york city" />
+	<seed slot0="united parcel service inc" slot1="atlanta" />
+	<seed slot0="united nations educational , scientific and cultural organization" slot1="paris" />
+	<seed slot0="united nations" slot1="switzerland" />
+	<seed slot0="united nations" slot1="rome" />
+	<seed slot0="united nations" slot1="port  -  au  -  prince" />
+	<seed slot0="united nations" slot1="new york city" />
+	<seed slot0="united nations" slot1="afghanistan" />
+	<seed slot0="united jihad council" slot1="pakistani" />
+	<seed slot0="united farm workers" slot1="keene" />
+	<seed slot0="united daily news" slot1="taipei" />
+	<seed slot0="union carbide" slot1="us" />
+	<seed slot0="uscb" slot1="washington" />
+	<seed slot0="us pacific command" slot1="hawaii" />
+	<seed slot0="us campaign" slot1="washington" />
+	<seed slot0="us bancorp" slot1="minnesota" />
+	<seed slot0="us airways" slot1="arizona" />
+	<seed slot0="united nations" slot1="iraq" />
+	<seed slot0="unifil" slot1="naqoura" />
+	<seed slot0="unesco" slot1="paris" />
+	<seed slot0="un food and agriculture organization" slot1="rome" />
+	<seed slot0="un food and agriculture organisation" slot1="rome" />
+	<seed slot0="un" slot1="vienna" />
+	<seed slot0="un" slot1="iraqi" />
+	<seed slot0="un" slot1="geneva" />
+	<seed slot0="uiq" slot1="symbian" />
+	<seed slot0="ual corp" slot1="chicago" />
+	<seed slot0="us steel corp" slot1="pittsburgh" />
+	<seed slot0="us steel" slot1="pittsburgh" />
+	<seed slot0="us public interest research group" slot1="boston" />
+	<seed slot0="us department of housing and urban development" slot1="massachusetts" />
+	<seed slot0="us coast guard" slot1="london" />
+	<seed slot0="us asiatic fleet" slot1="manila" />
+	<seed slot0="transparency international" slot1="london" />
+	<seed slot0="transocean ltd" slot1="switzerland" />
+	<seed slot0="transocean" slot1="geneva" />
+	<seed slot0="transarms" slot1="chicago" />
+	<seed slot0="trade alert" slot1="new york" />
+	<seed slot0="tongji university" slot1="shanghai" />
+	<seed slot0="times higher education" slot1="london" />
+	<seed slot0="times higher education" slot1="london" />
+	<seed slot0="time warner" slot1="new york" />
+	<seed slot0="this day" slot1="lagos" />
+	<seed slot0="thich phap kham" slot1="hong kong" />
+	<seed slot0="the rights group" slot1="britain" />
+	<seed slot0="the peninsula" slot1="doha" />
+	<seed slot0="tenet healthcare" slot1="dallas" />
+	<seed slot0="telesur" slot1="venezuela" />
+	<seed slot0="telegraph" slot1="kolkata" />
+	<seed slot0="taser international" slot1="arizona" />
+	<seed slot0="target corp" slot1="minneapolis" />
+	<seed slot0="tamkang university" slot1="taiwan" />
+	<seed slot0="taliban" slot1="pakistani" />
+	<seed slot0="taliban" slot1="afghanistan" />
+	<seed slot0="takeda pharmaceutical co" slot1="japan" />
+	<seed slot0="toyota" slot1="toyota city" />
+	<seed slot0="sunday times" slot1="london" />
+	<seed slot0="suntrust banks inc" slot1="georgia" />
+	<seed slot0="stratfor" slot1="austin" />
+	<seed slot0="star  -  ledger" slot1="newark" />
+	<seed slot0="stanford financial group" slot1="houston" />
+	<seed slot0="standard chartered" slot1="london" />
+	<seed slot0="spring design inc" slot1="california" />
+	<seed slot0="soweto electricity crisis committee" slot1="rio de janeiro" />
+	<seed slot0="southwest airlines co" slot1="dallas" />
+	<seed slot0="southern co" slot1="atlanta" />
+	<seed slot0="sony" slot1="tokyo" />
+	<seed slot0="smith travel research inc" slot1="tenn" />
+	<seed slot0="sinovac biotech company" slot1="beijing" />
+	<seed slot0="sima international" slot1="lebanese" />
+	<seed slot0="siemens" slot1="germany" />
+	<seed slot0="sichuan tengzhong heavy industrial machinery co" slot1="chengdu" />
+	<seed slot0="seafarers assistance programme" slot1="kenyan" />
+	<seed slot0="saudi arabian" slot1="london" />
+	<seed slot0="satyam computer services" slot1="new delhi" />
+	<seed slot0="salim group" slot1="indonesian" />
+	<seed slot0="saab" slot1="swedish" />
+	<seed slot0="spd" slot1="berlin" />
+	<seed slot0="slm corp" slot1="va" />
+	<seed slot0="skype" slot1="luxembourg" />
+	<seed slot0="site intelligence" slot1="us" />
+	<seed slot0="siemens" slot1="munich" />
+	<seed slot0="royal united services institute" slot1="london" />
+	<seed slot0="robert w baird &amp;amp; co" slot1="milwaukee" />
+	<seed slot0="rio tinto group" slot1="london" />
+	<seed slot0="rio tinto" slot1="shanghai" />
+	<seed slot0="review publishing" slot1="hong kong" />
+	<seed slot0="republicans" slot1="tallahassee" />
+	<seed slot0="republican party" slot1="confederate south" />
+	<seed slot0="regions financial corp" slot1="alabama" />
+	<seed slot0="razorfish" slot1="seattle" />
+	<seed slot0="rsf" slot1="paris" />
+	<seed slot0="rim" slot1="canada" />
+	<seed slot0="rhj" slot1="brussels" />
+	<seed slot0="qimonda" slot1="dresden" />
+	<seed slot0="qatar airways" slot1="doha" />
+	<seed slot0="qadback investments ltd" slot1="hinwil" />
+	<seed slot0="punch newspaper" slot1="lagos" />
+	<seed slot0="procter &amp;amp; gamble" slot1="cincinnati" />
+	<seed slot0="press emblem campaign" slot1="geneva" />
+	<seed slot0="philippine national police" slot1="camp crame" />
+	<seed slot0="philippine coast guard" slot1="manila" />
+	<seed slot0="pew charitable trusts" slot1="philadelphia" />
+	<seed slot0="pew center on global climate change" slot1="united states" />
+	<seed slot0="peterson institute for international economics" slot1="united states" />
+	<seed slot0="peabody energy corp" slot1="st louis" />
+	<seed slot0="parliament" slot1="english" />
+	<seed slot0="palestinian center for human rights" slot1="gaza strip" />
+	<seed slot0="pttep" slot1="thai" />
+	<seed slot0="plo" slot1="tunis" />
+	<seed slot0="pga" slot1="washington" />
+	<seed slot0="oshkosh corporation" slot1="wisconsin" />
+	<seed slot0="organization of economic co - operation and development" slot1="paris" />
+	<seed slot0="organization for security and co - operation" slot1="new york" />
+	<seed slot0="organisation for economic co - operation and development" slot1="paris" />
+	<seed slot0="orascom telecom" slot1="egypt" />
+	<seed slot0="oracle" slot1="massachusetts" />
+	<seed slot0="opel" slot1="ruesselsheim" />
+	<seed slot0="office for metropolitan architecture" slot1="rotterdam" />
+	<seed slot0="opec" slot1="vienna" />
+	<seed slot0="novartis" slot1="basel" />
+	<seed slot0="northern rock shareholders &amp;apos; action group" slot1="newscastle" />
+	<seed slot0="northern rock" slot1="newcastle" />
+	<seed slot0="nomura holdings inc" slot1="tokyo" />
+	<seed slot0="nextgen healthcare information systems , inc" slot1="horsham" />
+	<seed slot0="new york times" slot1="north carolina" />
+	<seed slot0="netbank" slot1="georgia" />
+	<seed slot0="national university of defense technology" slot1="changsha" />
+	<seed slot0="national park service" slot1="pago pago" />
+	<seed slot0="national health care anti  -  fraud association" slot1="washington" />
+	<seed slot0="national council of resistance of iran" slot1="france" />
+	<seed slot0="national council of resistance" slot1="paris" />
+	<seed slot0="national coalition for child protection reform" slot1="virginia" />
+	<seed slot0="national bureau of economic research" slot1="united states" />
+	<seed slot0="nhc" slot1="miami" />
+	<seed slot0="ngos" slot1="new delhi" />
+	<seed slot0="nato" slot1="kabul" />
+	<seed slot0="motorola" slot1="us" />
+	<seed slot0="mission : readiness" slot1="pennsylvanians" />
+	<seed slot0="missile intercept" slot1="alaskan" />
+	<seed slot0="middle east report" slot1="washington" />
+	<seed slot0="microsoft" slot1="washington" />
+	<seed slot0="microsoft" slot1="washington" />
+	<seed slot0="microsoft" slot1="redmond" />
+	<seed slot0="mesirow financial inc" slot1="chicago" />
+	<seed slot0="medtronic inc" slot1="minneapolis" />
+	<seed slot0="medecins sans frontieres" slot1="paris" />
+	<seed slot0="mcclatchy newspapers" slot1="florida" />
+	<seed slot0="massmart holdings" slot1="johannesburg" />
+	<seed slot0="massachusetts institute of technology" slot1="washington" />
+	<seed slot0="marshall &amp;amp; ilsley corp" slot1="wisconsin" />
+	<seed slot0="markit economics" slot1="london" />
+	<seed slot0="macy &amp;apos;s inc" slot1="cincinnati" />
+	<seed slot0="macs" slot1="intel" />
+	<seed slot0="minustah" slot1="port au prince" />
+	<seed slot0="mda dataquick" slot1="san diego" />
+	<seed slot0="loews corporation" slot1="new york" />
+	<seed slot0="lincoln trail department of community  -  based services" slot1="hardin county dcbs" />
+	<seed slot0="liberty times" slot1="taipei" />
+	<seed slot0="liberal democratic party" slot1="tokyo" />
+	<seed slot0="lashkar  - e -  toiba" slot1="pakistani" />
+	<seed slot0="lashkar  - e -  toiba" slot1="pakistan" />
+	<seed slot0="las vegas sands" slot1="us" />
+	<seed slot0="kraft foods" slot1="us" />
+	<seed slot0="kelley blue book" slot1="calif" />
+	<seed slot0="jet propulsion loboratory" slot1="pasadena" />
+	<seed slot0="ivanhoe mines" slot1="canada" />
+	<seed slot0="islamic hamas" slot1="gaza strip" />
+	<seed slot0="investigative committee" slot1="moscow" />
+	<seed slot0="international security assistance force" slot1="kabul" />
+	<seed slot0="international rice research institute" slot1="philippines" />
+	<seed slot0="international rice research institute" slot1="manila" />
+	<seed slot0="international netherlands group" slot1="netherlands" />
+	<seed slot0="international labor organization" slot1="geneva" />
+	<seed slot0="international institute for strategic studies" slot1="london" />
+	<seed slot0="international institute for environment and development" slot1="london" />
+	<seed slot0="international federation of red cross and red crescent societies" slot1="washington" />
+	<seed slot0="international federation of red cross and red crescent societies" slot1="geneva" />
+	<seed slot0="international federation for human rights" slot1="paris" />
+	<seed slot0="international center for integrated mountain development" slot1="kathmandu" />
+	<seed slot0="international bar association" slot1="london" />
+	<seed slot0="intel corp" slot1="california" />
+	<seed slot0="intel" slot1="santa clara" />
+	<seed slot0="institute for science and international security" slot1="washington" />
+	<seed slot0="institute for science and international security" slot1="united states" />
+	<seed slot0="industry" slot1="agro" />
+	<seed slot0="interpol" slot1="lyon" />
+	<seed slot0="imf" slot1="washington" />
+	<seed slot0="icty" slot1="the hague" />
+	<seed slot0="icty" slot1="hague" />
+	<seed slot0="human rights watch" slot1="new york city" />
+	<seed slot0="human rights first" slot1="new york" />
+	<seed slot0="horizon maritime and trade" slot1="istanbul" />
+	<seed slot0="hewlett  -  packard" slot1="palo alto" />
+	<seed slot0="healthcare blue book" slot1="tenn" />
+	<seed slot0="harlequins" slot1="london" />
+	<seed slot0="halliburton co" slot1="houston" />
+	<seed slot0="graduate institute of international studies" slot1="geneva" />
+	<seed slot0="google news" slot1="california" />
+	<seed slot0="google inc" slot1="calif" />
+	<seed slot0="google earth" slot1="california" />
+	<seed slot0="goldman sachs" slot1="netherlands" />
+	<seed slot0="global humanitarian forum" slot1="geneva" />
+	<seed slot0="global fund for children" slot1="washington" />
+	<seed slot0="gerontology research group" slot1="los angeles" />
+	<seed slot0="general motors corp" slot1="california" />
+	<seed slot0="general motors" slot1="michigan" />
+	<seed slot0="genentech inc" slot1="south san francisco" />
+	<seed slot0="gee pee infotech pvt ltd" slot1="kolkata" />
+	<seed slot0="gap inc" slot1="san francisco" />
+	<seed slot0="giti tire" slot1="singapore" />
+	<seed slot0="freeport mcmoran" slot1="arizona" />
+	<seed slot0="freedom &amp;apos;s watch" slot1="buffalo" />
+	<seed slot0="free gaza movement" slot1="us" />
+	<seed slot0="formato 21 radio" slot1="mexico city" />
+	<seed slot0="ford motor co" slot1="us" />
+	<seed slot0="ford" slot1="dearborn" />
+	<seed slot0="fitch ratings" slot1="london" />
+	<seed slot0="first world immigration services" slot1="chicago" />
+	<seed slot0="first world immigration services" slot1="chicago" />
+	<seed slot0="federal statistical office" slot1="wiesbaden" />
+	<seed slot0="fedex corp" slot1="tenn" />
+	<seed slot0="fatah" slot1="gaza" />
+	<seed slot0="family pride" slot1="boston" />
+	<seed slot0="fdlr" slot1="german" />
+	<seed slot0="european union" slot1="bangkok" />
+	<seed slot0="european policy centre" slot1="brussels" />
+	<seed slot0="european medicines agency" slot1="london" />
+	<seed slot0="european court of justice" slot1="luxembourg" />
+	<seed slot0="european court" slot1="strasbourg" />
+	<seed slot0="european aeronautic defence and space company" slot1="chicago" />
+	<seed slot0="ethyl corporation" slot1="virginia" />
+	<seed slot0="environmental law institute" slot1="washington" />
+	<seed slot0="elliot associates" slot1="bermuda" />
+	<seed slot0="edgewood park defense patrol" slot1="new york" />
+	<seed slot0="ecovision" slot1="myanmar" />
+	<seed slot0="economic daily news" slot1="taipei" />
+	<seed slot0="echo park film center" slot1="los angeles" />
+	<seed slot0="east african seafarers assistance programme" slot1="nairobi" />
+	<seed slot0="east african seafarers assistance programme" slot1="kenya" />
+	<seed slot0="east african community" slot1="arusha" />
+	<seed slot0="east  -  west center" slot1="honolulu" />
+	<seed slot0="earthrights international" slot1="united states" />
+	<seed slot0="earth islands institute" slot1="san francisco" />
+	<seed slot0="emarketer inc" slot1="new york" />
+	<seed slot0="ebrd" slot1="london" />
+	<seed slot0="dyncorp international inc" slot1="va" />
+	<seed slot0="dupont" slot1="st louis" />
+	<seed slot0="digital sky technologies" slot1="moscow" />
+	<seed slot0="digital sky technologies" slot1="london" />
+	<seed slot0="delta air lines inc" slot1="atlanta" />
+	<seed slot0="defense analysis" slot1="london" />
+	<seed slot0="deere &amp;amp; co" slot1="ill" />
+	<seed slot0="council on american  -  islamic relations" slot1="washington" />
+	<seed slot0="council on american  -  islamic relations" slot1="washington" />
+	<seed slot0="conocophillips" slot1="houston" />
+	<seed slot0="conference board" slot1="new york" />
+	<seed slot0="commonwealth games federation" slot1="delhi" />
+	<seed slot0="common sense media" slot1="san francisco" />
+	<seed slot0="commercial times" slot1="taipei" />
+	<seed slot0="comerica inc" slot1="dallas" />
+	<seed slot0="comscore inc" slot1="va" />
+	<seed slot0="cisco systems" slot1="san jose" />
+	<seed slot0="chulalongkorn university" slot1="bangkok" />
+	<seed slot0="choson sinbo" slot1="japan" />
+	<seed slot0="chinese academy of governance" slot1="beijing" />
+	<seed slot0="china national petroleum corp" slot1="beijing" />
+	<seed slot0="china international fund" slot1="hong kong" />
+	<seed slot0="china financial futures exchange" slot1="shanghai" />
+	<seed slot0="china daily" slot1="beijing" />
+	<seed slot0="china construction bank" slot1="beijing" />
+	<seed slot0="chevron" slot1="united states" />
+	<seed slot0="chatham house" slot1="london" />
+	<seed slot0="champion newspaper" slot1="lagos" />
+	<seed slot0="cerberus capital management" slot1="new york" />
+	<seed slot0="central pacific hurricane center" slot1="miami" />
+	<seed slot0="central asia  -  caucasus institute" slot1="stockholm" />
+	<seed slot0="center for governmental studies" slot1="los angeles" />
+	<seed slot0="center for governmental studies" slot1="california" />
+	<seed slot0="center for global development" slot1="washington" />
+	<seed slot0="center for economic and policy research" slot1="dc" />
+	<seed slot0="center for american progress" slot1="washington" />
+	<seed slot0="center for american progress" slot1="washington" />
+	<seed slot0="catholic league" slot1="new york" />
+	<seed slot0="caterpillar" slot1="illinois" />
+	<seed slot0="carnegie institution" slot1="washington" />
+	<seed slot0="carlyle group" slot1="washington" />
+	<seed slot0="capitol records" slot1="los angeles" />
+	<seed slot0="capital one financial corp" slot1="va" />
+	<seed slot0="california nurses association" slot1="oakland" />
+	<seed slot0="comcast" slot1="philadelphia" />
+	<seed slot0="clsa" slot1="hong kong" />
+	<seed slot0="chrysler" slot1="auburn hills" />
+	<seed slot0="cda collaborative learning projects" slot1="united states" />
+	<seed slot0="cato institute" slot1="dc" />
+	<seed slot0="burlington northern santa fe" slot1="texas" />
+	<seed slot0="bureau international des expositions" slot1="paris" />
+	<seed slot0="brookings institution" slot1="washington" />
+	<seed slot0="british petroleum" slot1="london" />
+	<seed slot0="british airways" slot1="netherlands" />
+	<seed slot0="bristol  -  myers squibb co" slot1="new york" />
+	<seed slot0="brewers association" slot1="colorado" />
+	<seed slot0="borders group" slot1="ann arbor" />
+	<seed slot0="boeing company" slot1="chicago" />
+	<seed slot0="boeing co" slot1="chicago" />
+	<seed slot0="boeing" slot1="us" />
+	<seed slot0="blur" slot1="london" />
+	<seed slot0="blue cross blue shield" slot1="boston" />
+	<seed slot0="bloomberg news" slot1="new york" />
+	<seed slot0="bloomberg" slot1="new york" />
+	<seed slot0="blackrock" slot1="new york" />
+	<seed slot0="bhopal medical appeal" slot1="britain" />
+	<seed slot0="berkshire hathaway inc" slot1="nebraska" />
+	<seed slot0="bayerische motoren werke" slot1="munich" />
+	<seed slot0="basler kantonalbank" slot1="basel" />
+	<seed slot0="bank of america corp" slot1="north carolina" />
+	<seed slot0="baltic news service" slot1="lithuanian" />
+	<seed slot0="baltic exchange" slot1="london" />
+	<seed slot0="bp america" slot1="london" />
+	<seed slot0="bea" slot1="le bourget" />
+	<seed slot0="bdr" slot1="bangladeshi" />
+	<seed slot0="bbc persian" slot1="london" />
+	<seed slot0="bbc persian" slot1="london" />
+	<seed slot0="bb&amp;amp;t corp" slot1="north carolina" />
+	<seed slot0="bank drain" slot1="gurgaon" />
+	<seed slot0="autodata corp" slot1="woodcliff lake" />
+	<seed slot0="associated press" slot1="new york" />
+	<seed slot0="asia  -  pacific economic cooperation" slot1="singapore" />
+	<seed slot0="asharq al -  awsat" slot1="london" />
+	<seed slot0="applied card systems" slot1="pa" />
+	<seed slot0="apple daily" slot1="taipei" />
+	<seed slot0="annenberg foundation" slot1="st davids" />
+	<seed slot0="anheuser  -  busch inbev" slot1="belgium" />
+	<seed slot0="anadarko petroleum corp" slot1="woodlands" />
+	<seed slot0="american chamber of commerce" slot1="beijing" />
+	<seed slot0="alzheimer &amp;apos;s disease international" slot1="london" />
+	<seed slot0="aladdin knowledge systems" slot1="israeli" />
+	<seed slot0="al quaeda" slot1="afghanistan" />
+	<seed slot0="al  -  quds" slot1="jerusalem" />
+	<seed slot0="al  -  arabiya" slot1="dubai" />
+	<seed slot0="airbus sas" slot1="france" />
+	<seed slot0="air products and chemicals , inc" slot1="lehigh valley" />
+	<seed slot0="air austral" slot1="reunion" />
+	<seed slot0="afriqiyah airways" slot1="tripoli" />
+	<seed slot0="activision" slot1="california" />
+	<seed slot0="accenture" slot1="bermuda" />
+	<seed slot0="atr" slot1="toulouse" />
+	<seed slot0="asean studies centre" slot1="singapore" />
+	<seed slot0="alpa international" slot1="washington" />
+	<seed slot0="al" slot1="cairo" />
+	<seed slot0="aig" slot1="new york" />
+	<seed slot0="aig" slot1="new york" />
+	<seed slot0="afp" slot1="texas" />
+	<seed slot0="afp" slot1="houston" />
+	<seed slot0="afp" slot1="georgia" />
+	<seed slot0="afp" slot1="chicago" />
+</seeds>

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_date_of_birth" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="nurseswas" slot1="1975" />
+	<seed slot0="sam alexis" slot1="2007" />
+	<seed slot0="bermira gates" slot1="1974-01-29" />
+	<seed slot0="ahir" slot1="1928" />
+	<seed slot0="sean goldman" slot1="2000" />
+	<seed slot0="michel lotito" slot1="1950" />
+	<seed slot0="charlie axel" slot1="2007" />
+	<seed slot0="susanna" slot1="may 26" />
+	<seed slot0="maryla husyt finkelstein" slot1="1953" />
+	<seed slot0="sean" slot1="2000" />
+	<seed slot0="charlie axel" slot1="earlier this year" />
+	<seed slot0="harith al -  obaidi" slot1="1966" />
+	<seed slot0="hamid karzai" slot1="december 1957" />
+	<seed slot0="yulia tymoshenko" slot1="1960-11" />
+	<seed slot0="julian friez" slot1="1852" />
+	<seed slot0="hamid karzai" slot1="2007" />
+	<seed slot0="barack obama" slot1="1961" />
+	<seed slot0="tarik" slot1="1996" />
+	<seed slot0="lewis goodfellow" slot1="2006-08" />
+	<seed slot0="jeffrey thomas kuhner" slot1="1969-09-01" />
+	<seed slot0="ya??ar buyukanit" slot1="1940" />
+	<seed slot0="uncle mike  - lrb -  manuel jr  - rrb - " slot1="1879-11" />
+	<seed slot0="phillips" slot1="1962" />
+	<seed slot0="herta mueller" slot1="1953-08-17" />
+	<seed slot0="frank martins" slot1="1877" />
+	<seed slot0="david carradine" slot1="1936-12-08" />
+	<seed slot0="ben bernanke" slot1="1953-12-13" />
+	<seed slot0="arthur hugh clough" slot1="1819-01-01" />
+	<seed slot0="abner doubleday" slot1="1819-06-05" />
+	<seed slot0="william arthur philip louis" slot1="1984" />
+	<seed slot0="william arthur philip louis" slot1="1982" />
+	<seed slot0="vera lynn" slot1="1917-03-20" />
+	<seed slot0="selma" slot1="1993" />
+	<seed slot0="robert enke" slot1="1977" />
+	<seed slot0="raphael" slot1="xxxx-04-06" />
+	<seed slot0="pashtun" slot1="1949" />
+	<seed slot0="lazar wiesels" slot1="1913-09" />
+	<seed slot0="kurmanbek bakiyev" slot1="1949" />
+	<seed slot0="joseph goebbels" slot1="1897" />
+	<seed slot0="john wallis" slot1="xxxx-11-23" />
+	<seed slot0="henry wriothesley" slot1="xxxx-10-06" />
+	<seed slot0="henry charles albert david `` harry" slot1="1984" />
+	<seed slot0="claude levi  -  strauss" slot1="1908" />
+	<seed slot0="cass r sunstein" slot1="1954-09-21" />
+	<seed slot0="bill clinton" slot1="1946" />
+	<seed slot0="abdullah abdullah" slot1="1960" />
+	<seed slot0="wu guanzhong" slot1="1919" />
+	<seed slot0="w bush" slot1="1946" />
+	<seed slot0="thomas dawson" slot1="1762" />
+	<seed slot0="thomas carlyle" slot1="1795-12-04" />
+	<seed slot0="tanya gorbachevskaya" slot1="1971" />
+	<seed slot0="stanley armour dunham stanley dunham" slot1="1916" />
+	<seed slot0="oprah winfrey" slot1="1954" />
+	<seed slot0="nell gwin" slot1="xxxx-02-02" />
+	<seed slot0="nell gwin" slot1="february 2" />
+	<seed slot0="miyuki hatoyama" slot1="1943" />
+	<seed slot0="michael moore" slot1="1954-04-23" />
+	<seed slot0="michael mclachlan" slot1="the year 2008" />
+	<seed slot0="michael ii" slot1="2002" />
+	<seed slot0="martin john moynihan" slot1="1916-02-17" />
+	<seed slot0="madelyn lee payne dunham barack obama" slot1="1925" />
+	<seed slot0="madelyn dunham" slot1="1925" />
+	<seed slot0="lope de vega" slot1="wed november 25" />
+	<seed slot0="li peng" slot1="1928" />
+	<seed slot0="lena mary calhoun horne" slot1="1917-06-30" />
+	<seed slot0="lazar wiesels" slot1="1913" />
+	<seed slot0="kim tae  - ho" slot1="1962" />
+	<seed slot0="julian schnabel hero" slot1="1951" />
+	<seed slot0="josie sousa" slot1="1861" />
+	<seed slot0="jorg widmann" slot1="1973" />
+	<seed slot0="john wilkes booth" slot1="1839" />
+	<seed slot0="jeremiah alvesta wright" slot1="1941" />
+	<seed slot0="james ensor" slot1="april 13th 1860" />
+	<seed slot0="husain ibn ali" slot1="the fifth day of sha &apos;ba ` n in the year 38 ah4" />
+	<seed slot0="husain ibn ali" slot1="friday" />
+	<seed slot0="hedi annabi" slot1="1944" />
+	<seed slot0="harry potter" slot1="1980" />
+	<seed slot0="hans selye" slot1="1907" />
+	<seed slot0="hans ruesch" slot1="may 17 , 1913" />
+	<seed slot0="francisco ignacio souza" slot1="1865" />
+	<seed slot0="eliezer wiesel" slot1="1928" />
+	<seed slot0="douglass clifford joseph harris , jr" slot1="september 25 , 1980" />
+	<seed slot0="david livingstone" slot1="1966" />
+	<seed slot0="constance pott" slot1="january 22 , 1862" />
+	<seed slot0="constance mary thomas" slot1="march 6 , 1847" />
+	<seed slot0="chelsea" slot1="1982" />
+	<seed slot0="barack obama sr" slot1="august 4th , 1961" />
+	<seed slot0="barack hussein obama , sr" slot1="aug 4 , 1961" />
+	<seed slot0="bainqen erdini qoigyijabu" slot1="february 1990" />
+	<seed slot0="bahr al -  ansab" slot1="the year 38 ah1" />
+	<seed slot0="bahr al -  ansab" slot1="the months of the year 33" />
+	<seed slot0="bahr al -  ansab" slot1="friday" />
+	<seed slot0="antonio m fagundes" slot1="june 1851" />
+	<seed slot0="zheng minsheng" slot1="april 1968" />
+	<seed slot0="yitzhak ike aharonovitz" slot1="1923" />
+	<seed slot0="william victor biffen" slot1="november 3 , 1930" />
+	<seed slot0="william herbert" slot1="friday" />
+	<seed slot0="william herbert" slot1="april 8 , 1580 good friday" />
+	<seed slot0="tom freston" slot1="1991" />
+	<seed slot0="tai shan" slot1="july 9 , 2005" />
+	<seed slot0="stanley armour dunham stanley dunham" slot1="1918" />
+	<seed slot0="sai baba" slot1="november 23rd" />
+	<seed slot0="saad hariri" slot1="april 18 , 1970" />
+	<seed slot0="rose" slot1="1913" />
+	<seed slot0="rosa" slot1="2003" />
+	<seed slot0="roland emmerich" slot1="november 10 , 1955" />
+	<seed slot0="qiangba puncog" slot1="1947" />
+	<seed slot0="pierre nkurunziza" slot1="1963" />
+	<seed slot0="pavel romanovich popovich" slot1="1929" />
+	<seed slot0="pauline" slot1="1908" />
+	<seed slot0="patrick joseph kennedy" slot1="1965" />
+	<seed slot0="padma choling" slot1="1951" />
+	<seed slot0="palin palin palin trig palin palin palin piper palin palin palin bristol" slot1="1990" />
+	<seed slot0="omar bongo" slot1="dec 30 , 1935" />
+	<seed slot0="muslims" slot1="1951" />
+	<seed slot0="mohammed yusuf" slot1="january 29 , 1970" />
+	<seed slot0="mohammed" slot1="january 19" />
+	<seed slot0="miguel d&amp;apos;escoto brockmann" slot1="1933" />
+	<seed slot0="mei xiang" slot1="september 2006" />
+	<seed slot0="maria do rosario da rosa  -  maria do rosarrio" slot1="4 august 1852" />
+	<seed slot0="margaret patterson james mccown" slot1="1959" />
+	<seed slot0="maha" slot1="saturday" />
+	<seed slot0="louisa serpa" slot1="september 6 , 1876" />
+	<seed slot0="leonardo da vinci" slot1="april 15" />
+	<seed slot0="leona von brethorst" slot1="1923" />
+	<seed slot0="leigh hunt" slot1="october 19" />
+	<seed slot0="legqog" slot1="1944" />
+	<seed slot0="lee harvey oswald" slot1="1939" />
+	<seed slot0="kim jong  -  un" slot1="1984" />
+	<seed slot0="joseph k" slot1="1850" />
+	<seed slot0="john dmendonca" slot1="july 3 , 1860" />
+	<seed slot0="jim mccown" slot1="1913" />
+	<seed slot0="james watt" slot1="january 19" />
+	<seed slot0="james jackson kilpatrick" slot1="nov 1 , 1920" />
+	<seed slot0="herta mueller" slot1="1953" />
+	<seed slot0="henry james" slot1="april 15 , 1843" />
+	<seed slot0="harry" slot1="1980" />
+	<seed slot0="ghalib iqbal" slot1="5th of march , 1952" />
+	<seed slot0="george michael steinbrenner iii" slot1="july 4 , 1930" />
+	<seed slot0="george *whitefield*" slot1="dec 16" />
+	<seed slot0="gabriel prosser" slot1="1776" />
+	<seed slot0="frederick walter etridge" slot1="1881" />
+	<seed slot0="francisco vieira alvernaz" slot1="may 15 , 1840" />
+	<seed slot0="eva kor" slot1="september 1913" />
+	<seed slot0="eugene rwamucyo" slot1="1959" />
+	<seed slot0="euegene shelby mccown" slot1="1849" />
+	<seed slot0="david webb" slot1="april 15 , 1971" />
+	<seed slot0="daniel cole mccown" slot1="1881" />
+	<seed slot0="chulabhorn" slot1="thursday" />
+	<seed slot0="charles willson peale" slot1="april 15" />
+	<seed slot0="charles ix" slot1="june 27" />
+	<seed slot0="catherine ashton" slot1="1956" />
+	<seed slot0="betty friedan" slot1="1921" />
+	<seed slot0="angela merkel" slot1="1954" />
+	<seed slot0="ali jinnah" slot1="25th december 1876" />
+	<seed slot0="ali bongo ondimba" slot1="feb 9 , 1959" />
+	<seed slot0="aldous leonard huxley" slot1="july 26 , 1894" />
+	<seed slot0="alan ginsberg" slot1="1915" />
+	<seed slot0="aijalon mahli gomes" slot1="1979" />
+	<seed slot0="abraham lincoln" slot1="1808" />
+	<seed slot0="cheney" slot1="1941" />
+	<seed slot0="amber" slot1="june" />
+	<seed slot0="amber" slot1="1984" />
+	<seed slot0="zhou qiang" slot1="april 1960" />
+	<seed slot0="yukiya amano" slot1="may 9 , 1947" />
+	<seed slot0="york edwin sandys" slot1="2 march" />
+	<seed slot0="yevgenia khasis" slot1="1985" />
+	<seed slot0="wu&amp;apos;er kaixi" slot1="1968" />
+	<seed slot0="wu suiqing" slot1="1954" />
+	<seed slot0="william henry trotter `` bucky &amp;apos;&amp;apos; bush" slot1="july 14 , 1938" />
+	<seed slot0="william headley" slot1="1960" />
+	<seed slot0="william capers patrick iii" slot1="july 24 , 1926" />
+	<seed slot0="wang dan" slot1="1969" />
+	<seed slot0="walter breuning" slot1="september 21 , 1896" />
+	<seed slot0="vladimir  - lrb -  zeev  - rrb -  lencovski" slot1="september 15 , 1910" />
+	<seed slot0="viraja prasada" slot1="1878" />
+	<seed slot0="viktor stepanovich chernomyrdin" slot1="april 9 , 1938" />
+	<seed slot0="verity ann lambert" slot1="november 27 , 1935" />
+	<seed slot0="varada prasada" slot1="1877" />
+	<seed slot0="vang pao" slot1="1931" />
+	<seed slot0="vance nye bourjaily" slot1="sept 17 , 1922" />
+	<seed slot0="tony robert judt" slot1="jan 2 , 1948" />
+	<seed slot0="tim tebow" slot1="august 14 , 1987" />
+	<seed slot0="thomas fallowfeild" slot1="january 1682" />
+	<seed slot0="thomas edward bosley" slot1="oct 1 , 1927" />
+	<seed slot0="taube" slot1="1857" />
+	<seed slot0="takashi murakami" slot1="1962" />
+	<seed slot0="szymon  - lrb -  simon  - rrb -  wiesenthal" slot1="december 31 , 1908" />
+	<seed slot0="surya henya" slot1="1863" />
+	<seed slot0="sun yat  - sen" slot1="nov 12 , 1866" />
+	<seed slot0="sun jiadong" slot1="1929" />
+	<seed slot0="steve monfort" slot1="2005" />
+	<seed slot0="stephen ambrose brings us george mcgovern" slot1="july 19 , 1922" />
+	<seed slot0="sruel" slot1="1863" />
+	<seed slot0="srila bhaktivinoda thakura" slot1="sunday" />
+	<seed slot0="somying puangjinda" slot1="monday" />
+	<seed slot0="shu komon shu" slot1="february 16" />
+	<seed slot0="sheikh khalifa" slot1="1948" />
+	<seed slot0="shalom" slot1="1978" />
+	<seed slot0="selenographer johannes helvetius" slot1="january 28" />
+	<seed slot0="sebastian pinera" slot1="december 1949" />
+	<seed slot0="santiago zapata" slot1="30 years ago" />
+	<seed slot0="samuel strober" slot1="1940" />
+	<seed slot0="sampson mccown jr" slot1="1775" />
+	<seed slot0="sam alexis" slot1="early this year" />
+	<seed slot0="sally" slot1="1895" />
+	<seed slot0="saad hariri" slot1="april 1970" />
+	<seed slot0="susan vere" slot1="may 26" />
+	<seed slot0="rose francine rogombe" slot1="1942" />
+	<seed slot0="rose" slot1="1919" />
+	<seed slot0="robert william taylor" slot1="1954" />
+	<seed slot0="robert william feller" slot1="nov 3 , 1918" />
+	<seed slot0="robert s bennett" slot1="1939" />
+	<seed slot0="robert merritt chanock" slot1="july 8 , 1924" />
+	<seed slot0="robert carradine" slot1="december 8 , 1936" />
+	<seed slot0="richard attenborough" slot1="1923" />
+	<seed slot0="rebiya kadeer" slot1="1951" />
+	<seed slot0="robert croughton matthews" slot1="february 23 , 1850" />
+	<seed slot0="robert croughton" slot1="july 15" />
+	<seed slot0="prophet" slot1="1863" />
+	<seed slot0="pratibha devisingh patil" slot1="december 19 , 1934" />
+	<seed slot0="porfirio lobo" slot1="dec 22 , 1947" />
+	<seed slot0="pietro ratti" slot1="1934" />
+	<seed slot0="peter sallis" slot1="1921" />
+	<seed slot0="peter nicholas moore" slot1="2 march 1979" />
+	<seed slot0="peter mckeown" slot1="1836" />
+	<seed slot0="peter farey" slot1="april 25 , 1938" />
+	<seed slot0="peter  - lrb -  zvi  - rrb -  malkin" slot1="1928" />
+	<seed slot0="pauline" slot1="1888" />
+	<seed slot0="pal schmitt" slot1="may 13 , 1942" />
+	<seed slot0="pablo ruiz picasso" slot1="25th october 1881" />
+	<seed slot0="peter paul rubens" slot1="june 29" />
+	<seed slot0="paul milstein" slot1="may 12 , 1922" />
+	<seed slot0="ovid" slot1="march 20" />
+	<seed slot0="oliver laurence north" slot1="october 7 , 1943" />
+	<seed slot0="oliver cromwell" slot1="april 25" />
+	<seed slot0="noam chomsky" slot1="december 7 , 1928" />
+	<seed slot0="nikita tikhonov" slot1="1980" />
+	<seed slot0="nicholas romanov" slot1="1922" />
+	<seed slot0="nechemiah" slot1="1880" />
+	<seed slot0="nat turner" slot1="october 2" />
+	<seed slot0="naomi wolf naomi wolf" slot1="1962" />
+	<seed slot0="nancie" slot1="march 1896" />
+	<seed slot0="nan jiao" slot1="october last year" />
+	<seed slot0="nicolas carone" slot1="june 4 , 1917" />
+	<seed slot0="muttiah muralitharan" slot1="april 1972" />
+	<seed slot0="mullah abdul ghani baradar" slot1="1968" />
+	<seed slot0="mstislav rostropovich" slot1="27 march 1927" />
+	<seed slot0="mother teresa" slot1="1910" />
+	<seed slot0="mona preston" slot1="march 5 , 1966" />
+	<seed slot0="mollie" slot1="1865" />
+	<seed slot0="mitja  - lrb -  ribi??i??" slot1="1919" />
+	<seed slot0="michael crawford" slot1="1933" />
+	<seed slot0="michael antone estelita" slot1="august 1869" />
+	<seed slot0="mendel struber" slot1="1863" />
+	<seed slot0="menachem" slot1="2002" />
+	<seed slot0="maxwell roach" slot1="jan 10 , 1924" />
+	<seed slot0="maury alan chaykin" slot1="july 27 , 1949" />
+	<seed slot0="mary scrope" slot1="25 december 1553" />
+	<seed slot0="mary p lema" slot1="june 1868" />
+	<seed slot0="mary jane davis" slot1="1888" />
+	<seed slot0="mary fagundes mancebo" slot1="may 27 , 1878" />
+	<seed slot0="mary ferry" slot1="sept 1837" />
+	<seed slot0="martha gluch" slot1="1912" />
+	<seed slot0="mark" slot1="1958" />
+	<seed slot0="maria jose de freitas ramos cabeca" slot1="1850" />
+	<seed slot0="margaret reaveley" slot1="1840" />
+	<seed slot0="margaret mary mulvenna" slot1="1902" />
+	<seed slot0="margaret julia `` marlo &amp;apos;&amp;apos; *thomas*" slot1="november 21 , 1937" />
+	<seed slot0="margaret bramall" slot1="october 1 , 1916" />
+	<seed slot0="marcel marceau" slot1="march 22 , 1923" />
+	<seed slot0="manuel `` silvy" slot1="february 13 , 1862" />
+	<seed slot0="manuel martin  - lrb -  yes martin" slot1="1971" />
+	<seed slot0="maia" slot1="2003" />
+	<seed slot0="mahmud abbas" slot1="march 26 , 1935" />
+	<seed slot0="mahashweta devi" slot1="1926" />
+	<seed slot0="maghreb" slot1="2007" />
+	<seed slot0="maggie" slot1="july 1894" />
+	<seed slot0="madeleine l&amp;apos;engle camp" slot1="1948" />
+	<seed slot0="muhammad" slot1="the 20th of august" />
+	<seed slot0="mary elizabeth croughton" slot1="january 25 , 1827" />
+	<seed slot0="mary elizabeth croughton" slot1="1801" />
+	<seed slot0="manuel machado homem" slot1="1824" />
+	<seed slot0="manuel machado homem" slot1="1784" />
+	<seed slot0="lyndon johnson" slot1="1908" />
+	<seed slot0="louise bourgeois" slot1="1911" />
+	<seed slot0="lois maxwell" slot1="1927" />
+	<seed slot0="liu xiaobo" slot1="1955" />
+	<seed slot0="lilian  - lrb -  snyder" slot1="1919" />
+	<seed slot0="lewis e cearly jr" slot1="july 21 , 1923" />
+	<seed slot0="levada" slot1="1936" />
+	<seed slot0="lee jean beauchamp" slot1="aug 21 , 1939" />
+	<seed slot0="larry &amp;apos;&amp;apos; summers" slot1="november 30 , 1954" />
+	<seed slot0="lala" slot1="february 1899" />
+	<seed slot0="knt" slot1="july 1243" />
+	<seed slot0="kim il sung" slot1="april 15 , 1912" />
+	<seed slot0="khalid sheikh mohammed" slot1="april 24 , 1965" />
+	<seed slot0="kerry jayne elizabeth katona" slot1="the 6th september 1985" />
+	<seed slot0="kasim al -  raimy" slot1="1977" />
+	<seed slot0="kang rixin" slot1="1953" />
+	<seed slot0="kai wayne" slot1="november 2nd" />
+	<seed slot0="juseleeno" slot1="1960" />
+	<seed slot0="juri lina" slot1="1949" />
+	<seed slot0="joseph alletag" slot1="1885" />
+	<seed slot0="joseph a estelita" slot1="march 11 , 1838" />
+	<seed slot0="joseph a estelita" slot1="april 1866" />
+	<seed slot0="joseph" slot1="march 1874" />
+	<seed slot0="jose souza" slot1="march 1892" />
+	<seed slot0="jose dutra mendonca" slot1="february 28 , 1824" />
+	<seed slot0="jordan" slot1="94" />
+	<seed slot0="jonah" slot1="sept 18 , 1926" />
+	<seed slot0="john singleton copley" slot1="july 3" />
+	<seed slot0="john royce mathis" slot1="1935" />
+	<seed slot0="john philip william dankworth" slot1="sept 20 , 1927" />
+	<seed slot0="john p mackey" slot1="1958" />
+	<seed slot0="john keble" slot1="april 25" />
+	<seed slot0="john joseph diebboll" slot1="april 12 , 1956" />
+	<seed slot0="john george johnston" slot1="1882" />
+	<seed slot0="john cleese" slot1="1939" />
+	<seed slot0="john a allison" slot1="1958" />
+	<seed slot0="joao dutra mendonca" slot1="august 20 , 1867" />
+	<seed slot0="jewish" slot1="1818" />
+	<seed slot0="jetti" slot1="1886" />
+	<seed slot0="jesus" slot1="the year 0" />
+	<seed slot0="jerzy buzek" slot1="1940" />
+	<seed slot0="jenna jameson casino chip jenna jameson club jenna las vegas jenna jameson" slot1="april 9 1974" />
+	<seed slot0="jay dinshah" slot1="1933" />
+	<seed slot0="jaroslaw kaczynski" slot1="june 18 , 1949" />
+	<seed slot0="janet mann barrie" slot1="1897" />
+	<seed slot0="jane fonda" slot1="1937" />
+	<seed slot0="jamie forschner" slot1="1985" />
+	<seed slot0="jacob schiff" slot1="1847" />
+	<seed slot0="jacob i zakheim" slot1="1943" />
+	<seed slot0="jacob i zakheim" slot1="1910" />
+	<seed slot0="ivan turgenev" slot1="this day" />
+	<seed slot0="ilan pappe" slot1="1954" />
+	<seed slot0="hyman strober" slot1="the year" />
+	<seed slot0="hironoshin furuhashi" slot1="september 16 , 1928" />
+	<seed slot0="hercules underhill" slot1="june 6" />
+	<seed slot0="henry tudor" slot1="january 28" />
+	<seed slot0="henry fielding" slot1="april 22" />
+	<seed slot0="henry de vere stacpoole" slot1="9 april , 1863" />
+	<seed slot0="henry de vere stacpoole" slot1="1865" />
+	<seed slot0="henry arthur mcardle" slot1="1836" />
+	<seed slot0="henrik" slot1="may 4" />
+	<seed slot0="harold vernon goldstein" slot1="dec 10 , 1923" />
+	<seed slot0="halton arp" slot1="1927" />
+	<seed slot0="haha" slot1="1988" />
+	<seed slot0="gyaincain norbu" slot1="february 1990" />
+	<seed slot0="guglielmo marconi" slot1="april 25 , 1874" />
+	<seed slot0="gu chaohao" slot1="1926" />
+	<seed slot0="groinem" slot1="1856" />
+	<seed slot0="grandchild" slot1="november" />
+	<seed slot0="grace goodside" slot1="dec 11 , 1922" />
+	<seed slot0="gordon brown" slot1="1951" />
+	<seed slot0="godfrey binaisa" slot1="may 30 , 1920" />
+	<seed slot0="george washington" slot1="feb 22" />
+	<seed slot0="george soros" slot1="1930" />
+	<seed slot0="george ellery hale" slot1="june 29 , 1868" />
+	<seed slot0="geeta kamal rankoth" slot1="june 9 , 1996" />
+	<seed slot0="gary lee weinrib" slot1="1953" />
+	<seed slot0="frederic chopin" slot1="200 years ago" />
+	<seed slot0="frances helen ginsberg" slot1="march 11 , 1955" />
+	<seed slot0="florence nightingale" slot1="1820" />
+	<seed slot0="feteira" slot1="november 13" />
+	<seed slot0="fang lizhi" slot1="1936" />
+	<seed slot0="faial" slot1="november 13" />
+	<seed slot0="ezra klein" slot1="may 9 , 1984" />
+	<seed slot0="eudon burnell" slot1="1 august 1264" />
+	<seed slot0="ethyl" slot1="1880" />
+	<seed slot0="ernest john taylors" slot1="december 1950" />
+	<seed slot0="erickson" slot1="1908" />
+	<seed slot0="ely culbertson" slot1="july 22 , 1891" />
+	<seed slot0="elizaveta mukasei" slot1="1912" />
+	<seed slot0="elizabeth taylor" slot1="1932" />
+	<seed slot0="elizabeth blackburn" slot1="1948" />
+	<seed slot0="elinor ostrom" slot1="1933" />
+	<seed slot0="ehud olmert" slot1="september 30 , 1945" />
+	<seed slot0="edward moore kennedy" slot1="february 22 , 1932" />
+	<seed slot0="eddie vedder" slot1="1964" />
+	<seed slot0="eddi  -  rue mcclanahan" slot1="feb 21 , 1934" />
+	<seed slot0="earls" slot1="january 28" />
+	<seed slot0="elizabeth jane matthews" slot1="march 1 , 1852" />
+	<seed slot0="dorothy chicheley" slot1="22 may 1582" />
+	<seed slot0="donald simon kellermann" slot1="feb 6 , 1927" />
+	<seed slot0="dimitar berbatov" slot1="jan 30 , 1981" />
+	<seed slot0="derek walcott" slot1="1930" />
+	<seed slot0="delmar hawkins jr" slot1="aug 22 , 1936" />
+	<seed slot0="delia bacon" slot1="1811" />
+	<seed slot0="delfina da rosa  -  delfina" slot1="12 january 1842" />
+	<seed slot0="dedrick rolison" slot1="august 9 , 1971" />
+	<seed slot0="david key" slot1="1799" />
+	<seed slot0="david halberstam" slot1="april 10 , 1934" />
+	<seed slot0="david frank dixon jr" slot1="june 4 , 1923" />
+	<seed slot0="darren aronofsky" slot1="1969" />
+	<seed slot0="daniela" slot1="august 3rd" />
+	<seed slot0="daniel rouxel" slot1="1943" />
+	<seed slot0="dali lama" slot1="1950" />
+	<seed slot0="cui jian" slot1="1961" />
+	<seed slot0="cu  -  cu" slot1="january 8 , 1962" />
+	<seed slot0="clarence thomas" slot1="1875" />
+	<seed slot0="christopher hitchens" slot1="april 26 , 1949" />
+	<seed slot0="charlieee mickey rooney" slot1="1920" />
+	<seed slot0="charlie axel" slot1="early this year" />
+	<seed slot0="charlie" slot1="february" />
+	<seed slot0="charlie" slot1="10 months ago" />
+	<seed slot0="charles nodier" slot1="april 29" />
+	<seed slot0="charles nesbitt wilson" slot1="june 1 , 1933" />
+	<seed slot0="charles mccurdy mathias jr" slot1="july 24 , 1922" />
+	<seed slot0="charles k kao" slot1="1933" />
+	<seed slot0="charles darwin" slot1="200 years ago" />
+	<seed slot0="caroline von hannover" slot1="1957" />
+	<seed slot0="carla gugino" slot1="august 29th , 1971" />
+	<seed slot0="cappy petrash greenspan" slot1="sept 18 , 1926" />
+	<seed slot0="carlos andres perez" slot1="oct 22 , 1922" />
+	<seed slot0="bruce golding" slot1="dec 5 , 1947" />
+	<seed slot0="bronislaw komorowski" slot1="june 4 , 1952" />
+	<seed slot0="bridget vere" slot1="6 april 1584" />
+	<seed slot0="boris pokrovsky" slot1="1912" />
+	<seed slot0="bob weir" slot1="this day in 1947" />
+	<seed slot0="bill clinton" slot1="1941" />
+	<seed slot0="bertha" slot1="1893" />
+	<seed slot0="berl" slot1="1863" />
+	<seed slot0="benjamin h freedman" slot1="1890" />
+	<seed slot0="benito juarez" slot1="march 21st 1806" />
+	<seed slot0="bei shizhang" slot1="oct 10 , 1903" />
+	<seed slot0="barack obama" slot1="august 4 , 1961" />
+	<seed slot0="barack hussein obama , jr" slot1="aug 4 , 1961" />
+	<seed slot0="barack hussein obama , jr" slot1="1962" />
+	<seed slot0="barbara billingsley" slot1="dec 22 , 1915" />
+	<seed slot0="archimandrite fr johannes charles eko" slot1="the 23rd of december , 1940" />
+	<seed slot0="antonio dutra mendonca" slot1="november 13" />
+	<seed slot0="annie" slot1="feb 1899" />
+	<seed slot0="annada prasada" slot1="1860" />
+	<seed slot0="angelina jolie" slot1="june 4 , 1975" />
+	<seed slot0="angela merkel" slot1="july 17 , 1954" />
+	<seed slot0="andrew johnson" slot1="1808" />
+	<seed slot0="ana" slot1="1881" />
+	<seed slot0="alison gertrude larter" slot1="february 28 , 1976" />
+	<seed slot0="aidan william southall" slot1="11 september 1920" />
+	<seed slot0="adhir kalyan kalyan" slot1="1984" />
+	<seed slot0="adele goldberg" slot1="july 22 , 1945" />
+	<seed slot0="abu daoud" slot1="1937" />
+	<seed slot0="abraham lincoln" slot1="1839" />
+	<seed slot0="ayn rand" slot1="1905" />
+</seeds>

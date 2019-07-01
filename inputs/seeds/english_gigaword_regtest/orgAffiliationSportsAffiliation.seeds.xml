@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Sports-Affiliation" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="didier drogba" slot1="chelsea" />
+	<seed slot0="john terry" slot1="chelsea" />
+	<seed slot0="andy murray" slot1="los angeles kings" />
+	<seed slot0="latrell sprewell" slot1="new york knicks" />
+	<seed slot0="michael ballack" slot1="chelsea" />
+	<seed slot0="barry switzer" slot1="dallas cowboys" />
+	<seed slot0="jim fassel" slot1="new york giants" />
+	<seed slot0="jerry sloan" slot1="utah jazz" />
+	<seed slot0="phil jackson" slot1="team" />
+	<seed slot0="bill parcells" slot1="new york jets" />
+	<seed slot0="alan shearer" slot1="newcastle" />
+	<seed slot0="jeff van gundy" slot1="knicks" />
+	<seed slot0="mike piazza" slot1="mets" />
+	<seed slot0="patrick roy" slot1="colorado avalanche" />
+	<seed slot0="andy pettitte" slot1="new york yankees" />
+	<seed slot0="kobe bryant" slot1="los angeles lakers" />
+	<seed slot0="phil jackson" slot1="chicago bulls" />
+	<seed slot0="pat riley" slot1="miami heat" />
+	<seed slot0="dirk nowitzki" slot1="dallas mavericks" />
+	<seed slot0="bobby bowden" slot1="florida state" />
+	<seed slot0="bill belichick" slot1="patriots" />
+	<seed slot0="fabio capello" slot1="england" />
+	<seed slot0="ben roethlisberger" slot1="pittsburgh steelers" />
+	<seed slot0="gregg popovich" slot1="san antonio spurs" />
+	<seed slot0="latrell sprewell" slot1="knicks" />
+	<seed slot0="john elway" slot1="denver broncos" />
+	<seed slot0="ken hitchcock" slot1="stars" />
+	<seed slot0="paul pierce" slot1="celtics" />
+	<seed slot0="kobe bryant" slot1="lakers" />
+	<seed slot0="dan reeves" slot1="atlanta falcons" />
+	<seed slot0="phil jackson" slot1="los angeles lakers" />
+	<seed slot0="rafa benitez" slot1="liverpool" />
+	<seed slot0="rudy tomjanovich" slot1="houston rockets" />
+	<seed slot0="mike shanahan" slot1="denver broncos" />
+	<seed slot0="jim fassel" slot1="giants" />
+	<seed slot0="phil jackson" slot1="lakers" />
+	<seed slot0="peyton manning" slot1="indianapolis colts" />
+	<seed slot0="paul pierce" slot1="boston celtics" />
+	<seed slot0="dan reeves" slot1="falcons" />
+	<seed slot0="michael jordan" slot1="washington wizards" />
+	<seed slot0="bill belichick" slot1="new england patriots" />
+	<seed slot0="bill parcells" slot1="patriots" />
+	<seed slot0="rafael benitez" slot1="liverpool" />
+	<seed slot0="thierry henry" slot1="arsenal" />
+	<seed slot0="cristiano ronaldo" slot1="manchester united" />
+	<seed slot0="pete carroll" slot1="usc" />
+	<seed slot0="michael vick" slot1="atlanta falcons" />
+	<seed slot0="randy johnson" slot1="arizona diamondbacks" />
+	<seed slot0="avram grant" slot1="chelsea" />
+	<seed slot0="larry brown" slot1="detroit pistons" />
+	<seed slot0="henry bibby" slot1="usc" />
+	<seed slot0="don nelson" slot1="mavericks" />
+	<seed slot0="ottmar hitzfeld" slot1="bayern munich" />
+	<seed slot0="larry brown" slot1="philadelphia 76ers" />
+	<seed slot0="james" slot1="cleveland cavaliers" />
+	<seed slot0="mariano rivera" slot1="new york yankees" />
+	<seed slot0="don nelson" slot1="dallas mavericks" />
+	<seed slot0="peter forsberg" slot1="colorado avalanche" />
+	<seed slot0="robert pires" slot1="arsenal" />
+	<seed slot0="jeff van gundy" slot1="new york knicks" />
+	<seed slot0="chipper jones" slot1="atlanta braves" />
+	<seed slot0="jason kidd" slot1="nets" />
+	<seed slot0="joe paterno" slot1="penn state" />
+	<seed slot0="jason kidd" slot1="new jersey nets" />
+	<seed slot0="robin van persie" slot1="arsenal" />
+	<seed slot0="bill cowher" slot1="pittsburgh steelers" />
+	<seed slot0="robbie fowler" slot1="liverpool" />
+	<seed slot0="mike mussina" slot1="new york yankees" />
+	<seed slot0="mike mussina" slot1="yankees" />
+	<seed slot0="mike shanahan" slot1="broncos" />
+	<seed slot0="jose mourinho" slot1="real madrid" />
+	<seed slot0="ken hitchcock" slot1="dallas stars" />
+	<seed slot0="doc rivers" slot1="boston celtics" />
+	<seed slot0="bill parcells" slot1="new england patriots" />
+	<seed slot0="john rocker" slot1="atlanta braves" />
+	<seed slot0="tom coughlin" slot1="giants" />
+	<seed slot0="graham henry" slot1="all blacks" />
+	<seed slot0="peyton manning" slot1="colts" />
+	<seed slot0="mike piazza" slot1="new york mets" />
+	<seed slot0="carlo ancelotti" slot1="ac milan" />
+	<seed slot0="marcello lippi" slot1="juventus" />
+	<seed slot0="george karl" slot1="sonics" />
+	<seed slot0="dennis bergkamp" slot1="arsenal" />
+	<seed slot0="paul hackett" slot1="usc" />
+	<seed slot0="mike krzyzewski" slot1="duke" />
+	<seed slot0="eddie jones" slot1="wallabies" />
+	<seed slot0="mariano rivera" slot1="yankees" />
+	<seed slot0="louis van gaal" slot1="bayern munich" />
+	<seed slot0="jason varitek" slot1="red sox" />
+	<seed slot0="roberto mancini" slot1="inter milan" />
+	<seed slot0="bill parcells" slot1="cowboys" />
+	<seed slot0="eric mangini" slot1="jets" />
+	<seed slot0="steve lavin" slot1="ucla" />
+	<seed slot0="isiah thomas" slot1="knicks" />
+</seeds>

@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_place_of_residence" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="muslims" slot1="france" />
+	<seed slot0="michael ledeen" slot1="israeli" />
+	<seed slot0="liu xiaobo" slot1="chinese" />
+	<seed slot0="jewish" slot1="united states" />
+	<seed slot0="saddam hussein" slot1="baghdad" />
+	<seed slot0="barack obama" slot1="us" />
+	<seed slot0="shiite" slot1="karbala" />
+	<seed slot0="yukio hatoyama" slot1="okinawa" />
+	<seed slot0="bush" slot1="american" />
+	<seed slot0="shiite" slot1="qom" />
+	<seed slot0="moses" slot1="israel" />
+	<seed slot0="ayatollah ali khamenei" slot1="iranian" />
+	<seed slot0="asif ali zardari" slot1="pakistani" />
+	<seed slot0="wu bangguo" slot1="chinese" />
+	<seed slot0="the jew" slot1="paris" />
+	<seed slot0="ali akbar salehi" slot1="iranian" />
+	<seed slot0="mahmoud abbas" slot1="palestinian" />
+	<seed slot0="andal ampatuan jnr" slot1="maguindanao" />
+	<seed slot0="uighurs" slot1="chinese" />
+	<seed slot0="thaksin shinawatra" slot1="thailand" />
+	<seed slot0="barack obama" slot1="washington" />
+	<seed slot0="hitler" slot1="united states" />
+	<seed slot0="bill clinton" slot1="united states" />
+	<seed slot0="naoto kan" slot1="japanese" />
+	<seed slot0="george w bush" slot1="american" />
+	<seed slot0="barack obama" slot1="united states of america" />
+	<seed slot0="barack obama" slot1="chicago" />
+	<seed slot0="silvio berlusconi" slot1="italian" />
+	<seed slot0="george bush" slot1="united states" />
+	<seed slot0="john mccain" slot1="arizona" />
+	<seed slot0="radovan karadzic" slot1="sarajevo" />
+	<seed slot0="mir hossein mousavi" slot1="iranian" />
+	<seed slot0="jewish" slot1="israel" />
+	<seed slot0="barack obama" slot1="iran" />
+	<seed slot0="barack obama" slot1="iraq" />
+	<seed slot0="sankara" slot1="advaita vedanta" />
+	<seed slot0="s radhakrishnan" slot1="advaita vedanta" />
+	<seed slot0="robert mugabe" slot1="zimbabwe" />
+	<seed slot0="pervez musharraf" slot1="pakistani" />
+	<seed slot0="m hiriyanna" slot1="advaita vedanta" />
+	<seed slot0="john h hick" slot1="advaita vedanta" />
+	<seed slot0="arvind sharma" slot1="advaita vedanta" />
+	<seed slot0="stephen harper" slot1="canadian" />
+	<seed slot0="rick perry" slot1="texas" />
+	<seed slot0="pervez musharraf" slot1="pakistan" />
+	<seed slot0="medina" slot1="mecca" />
+	<seed slot0="lord" slot1="israel" />
+	<seed slot0="george walker bush" slot1="united states" />
+	<seed slot0="barack obama" slot1="iraqi" />
+	<seed slot0="barack obama" slot1="illinois" />
+	<seed slot0="xi jinping" slot1="chinese" />
+	<seed slot0="han" slot1="urumqi" />
+	<seed slot0="george herbert walker bush" slot1="united states" />
+	<seed slot0="andrew flintoff" slot1="england" />
+	<seed slot0="muslims" slot1="european" />
+	<seed slot0="kevin rudd" slot1="australian" />
+	<seed slot0="barack h obama" slot1="united states of america" />
+	<seed slot0="manmohan singh" slot1="indian" />
+	<seed slot0="benazir bhutto" slot1="pakistani" />
+	<seed slot0="abdullah" slot1="saudi arabia" />
+	<seed slot0="mahmoud ahmadinejad" slot1="iran" />
+	<seed slot0="barack obama" slot1="russian" />
+	<seed slot0="yukio hatoyama" slot1="japan" />
+	<seed slot0="mitt romney" slot1="massachusetts" />
+	<seed slot0="god" slot1="united states" />
+	<seed slot0="yang jiechi" slot1="chinese" />
+	<seed slot0="mussolini" slot1="united states" />
+	<seed slot0="barack obama" slot1="palestinian" />
+	<seed slot0="jon kyl" slot1="arizona" />
+	<seed slot0="esfandiar rahim mashaie" slot1="israeli" />
+	<seed slot0="barack obama" slot1="china" />
+	<seed slot0="john mccain" slot1="united states" />
+	<seed slot0="jews" slot1="israel" />
+	<seed slot0="gordon brown" slot1="afghanistan" />
+	<seed slot0="gilad shalit" slot1="palestinian" />
+	<seed slot0="arnold schwarzenegger" slot1="california" />
+	<seed slot0="sunni" slot1="baghdad" />
+	<seed slot0="morgan tsvangirai" slot1="zimbabwe" />
+	<seed slot0="lord" slot1="egypt" />
+	<seed slot0="john boehner" slot1="ohio" />
+	<seed slot0="goodluck jonathan" slot1="nigerian" />
+	<seed slot0="hun sen" slot1="cambodian" />
+	<seed slot0="george w bush" slot1="afghanistan" />
+	<seed slot0="aung san suu kyi" slot1="myanmar" />
+	<seed slot0="zionist" slot1="israeli" />
+	<seed slot0="yukio hatoyama" slot1="united states" />
+	<seed slot0="prince" slot1="las vegas" />
+	<seed slot0="obama" slot1="american" />
+	<seed slot0="manouchehr mottaki" slot1="iranian" />
+	<seed slot0="reagan" slot1="cambodian" />
+	<seed slot0="michael jackson" slot1="los angeles" />
+	<seed slot0="george w bush" slot1="baghdad" />
+	<seed slot0="george papandreou" slot1="greece" />
+	<seed slot0="bill richardson" slot1="new mexico" />
+	<seed slot0="barack obama" slot1="asia" />
+	<seed slot0="uighurs" slot1="xinjiang" />
+	<seed slot0="luiz inacio lula da silva" slot1="brazilian" />
+	<seed slot0="li keqiang" slot1="chinese" />
+	<seed slot0="christians" slot1="united states" />
+	<seed slot0="islamist" slot1="somalia" />
+	<seed slot0="hu jintao" slot1="macao special administrative region" />
+	<seed slot0="george bush" slot1="iraqi" />
+	<seed slot0="chui sai on" slot1="macao special administrative region" />
+	<seed slot0="roberto micheletti" slot1="honduras" />
+	<seed slot0="muslims" slot1="indian" />
+	<seed slot0="muslim" slot1="xinjiang" />
+	<seed slot0="jose manuel barroso" slot1="european union" />
+	<seed slot0="george w bush" slot1="united states" />
+	<seed slot0="barack obama" slot1="martha &amp;apos;s vineyard" />
+	<seed slot0="barack obama" slot1="america" />
+	<seed slot0="kurmanbek bakiyev" slot1="kyrgyzstan" />
+	<seed slot0="kevin alfred strom" slot1="charlottesville" />
+	<seed slot0="kenosha closed wallen" slot1="wisconsin" />
+	<seed slot0="hater grosvomit" slot1="canada" />
+	<seed slot0="bush" slot1="united states of america" />
+	<seed slot0="victoria azarenka" slot1="belarus" />
+	<seed slot0="sedb y our\e\ ver" slot1="venice" />
+	<seed slot0="robert gates" slot1="united states" />
+	<seed slot0="stanley mcchrystal" slot1="us" />
+	<seed slot0="jobs" slot1="pakistan" />
+	<seed slot0="jews" slot1="jerusalem" />
+	<seed slot0="christians" slot1="holy scripture" />
+	<seed slot0="muslims" slot1="quran" />
+	<seed slot0="stanley mcchrystal" slot1="united states" />
+	<seed slot0="ramana maharishi" slot1="maharashtra" />
+	<seed slot0="mahmoud abbas" slot1="israeli" />
+	<seed slot0="indian philosophy / harold coward" slot1="maharashtra" />
+	<seed slot0="hitler" slot1="germany" />
+	<seed slot0="thaksin shinawatra" slot1="cambodian" />
+	<seed slot0="saddam hussein" slot1="kuwait" />
+	<seed slot0="robert menendez" slot1="new jersey" />
+	<seed slot0="moses" slot1="egypt" />
+	<seed slot0="mahmoud ahmadinejad" slot1="united states" />
+	<seed slot0="k" slot1="chinese" />
+	<seed slot0="jews" slot1="united states" />
+	<seed slot0="hugo chavez" slot1="united states" />
+	<seed slot0="herman van rompuy" slot1="european union" />
+	<seed slot0="sunni" slot1="iraqi" />
+	<seed slot0="putin" slot1="united states" />
+	<seed slot0="muslim" slot1="philippines" />
+	<seed slot0="barack obama" slot1="african" />
+	<seed slot0="abdullah ii" slot1="jordanian" />
+	<seed slot0="muslims" slot1="quran" />
+	<seed slot0="muslims" slot1="israeli" />
+	<seed slot0="jobs" slot1="uae" />
+	<seed slot0="abdullah ii" slot1="jordan" />
+	<seed slot0="saddam hussein" slot1="united states" />
+	<seed slot0="recep tayyip erdogan" slot1="turkish" />
+	<seed slot0="mahmud abbas" slot1="palestinian" />
+	<seed slot0="jewish" slot1="germany" />
+	<seed slot0="david petraeus" slot1="united states" />
+	<seed slot0="george w bush" slot1="texas" />
+	<seed slot0="brian cowen" slot1="ireland" />
+	<seed slot0="nouri al -  maliki" slot1="iraqi" />
+	<seed slot0="mahmud abbas" slot1="palestinian authority" />
+	<seed slot0="hugo chavez" slot1="venezuela" />
+	<seed slot0="david allen wallen" slot1="wisconsin" />
+	<seed slot0="caroline wozniacki" slot1="denmark" />
+	<seed slot0="adolf hitler" slot1="germany" />
+	<seed slot0="stanley mcchrystal" slot1="afghanistan" />
+	<seed slot0="robin soderling" slot1="sweden" />
+	<seed slot0="muslim" slot1="chinese" />
+	<seed slot0="mohamed elbaradei" slot1="iranian" />
+	<seed slot0="david cameron" slot1="british" />
+	<seed slot0="bush" slot1="baghdad" />
+	<seed slot0="susilo bambang yudhoyono" slot1="indonesian" />
+	<seed slot0="mike" slot1="paraguay" />
+	<seed slot0="mahmoud ahmadinejad" slot1="tehran" />
+	<seed slot0="george w bush" slot1="iranian" />
+	<seed slot0="george mitchell" slot1="israeli" />
+	<seed slot0="abhisit vejjajiva" slot1="thailand" />
+	<seed slot0="sunnis" slot1="iraqi" />
+	<seed slot0="shiite" slot1="najaf" />
+	<seed slot0="roza otunbayeva" slot1="kyrgyzstan" />
+	<seed slot0="nicolas sarkozy" slot1="iranian" />
+	<seed slot0="moussa dadis camara" slot1="guinean" />
+	<seed slot0="george bush" slot1="iraq" />
+	<seed slot0="donald tsang" slot1="hong kong special administrative region" />
+	<seed slot0="clotilde reiss" slot1="isfahan" />
+	<seed slot0="baitullah mehsud" slot1="pakistani" />
+	<seed slot0="amanda knox" slot1="british" />
+	<seed slot0="mahmoud ahmadinejad" slot1="israeli" />
+	<seed slot0="ma ying  - jeou" slot1="taiwan" />
+	<seed slot0="lee myung  - bak" slot1="south korean" />
+	<seed slot0="johnny wizard" slot1="winnipeg" />
+	<seed slot0="johnny wizard" slot1="province" />
+	<seed slot0="jia qinglin" slot1="chinese" />
+	<seed slot0="jesus christ" slot1="nazareth" />
+	<seed slot0="george bush" slot1="american" />
+	<seed slot0="connacht felim mac aedh ua conchobair" slot1="united kingdom of great britain" />
+	<seed slot0="catherine ashton" slot1="european union" />
+	<seed slot0="barack obama" slot1="france" />
+	<seed slot0="susan collins" slot1="maine" />
+	<seed slot0="shiites" slot1="iraqi" />
+	<seed slot0="shiite" slot1="baghdad" />
+	<seed slot0="saad hariri" slot1="lebanese" />
+	<seed slot0="katsuya okada" slot1="japanese" />
+	<seed slot0="islamic" slot1="iranian" />
+	<seed slot0="haley barbour" slot1="mississippi" />
+	<seed slot0="rick scott" slot1="florida" />
+	<seed slot0="nancy pelosi" slot1="california" />
+	<seed slot0="hillary clinton" slot1="iranian" />
+	<seed slot0="george norry cons" slot1="united states" />
+	<seed slot0="tim pawlenty" slot1="minnesota" />
+	<seed slot0="shiite" slot1="iraqi" />
+	<seed slot0="sarah palin" slot1="alaskan" />
+	<seed slot0="salvador allende" slot1="chile" />
+	<seed slot0="ron paul" slot1="united states" />
+	<seed slot0="michael w mcconnell" slot1="united states of america" />
+	<seed slot0="margaret thatcher" slot1="european superstate" />
+	<seed slot0="joe biden" slot1="iraqi" />
+	<seed slot0="jacob zuma" slot1="south african" />
+	<seed slot0="interamicus" slot1="quebec" />
+	<seed slot0="interamicus" slot1="ontario" />
+	<seed slot0="interamicus" slot1="new brunswick" />
+	<seed slot0="interamicus" slot1="manitoba" />
+	<seed slot0="hillary rodham clinton" slot1="united states" />
+	<seed slot0="roberto micheletti" slot1="honduran" />
+	<seed slot0="padraig harrington" slot1="ireland" />
+	<seed slot0="muslim" slot1="russian" />
+	<seed slot0="moyers" slot1="united states" />
+	<seed slot0="mitch daniels" slot1="indiana" />
+	<seed slot0="mao zedong" slot1="people &amp;apos;s republic of china" />
+	<seed slot0="manmohan singh" slot1="new delhi" />
+	<seed slot0="kurmanbek bakiyev" slot1="jalalabad" />
+	<seed slot0="jim webb" slot1="myanmar" />
+	<seed slot0="imposts" slot1="united states" />
+	<seed slot0="haroun mir" slot1="afghanistan" />
+	<seed slot0="dwight d eisenhower" slot1="united states" />
+	<seed slot0="scott brown" slot1="massachusetts" />
+	<seed slot0="petraeus" slot1="united states" />
+	<seed slot0="mary weiss" slot1="minnesota" />
+	<seed slot0="malam bacai sanha" slot1="guinea" />
+	<seed slot0="marty peretz" slot1="new republic" />
+	<seed slot0="kim clijsters" slot1="belgium" />
+	<seed slot0="jewish" slot1="russian" />
+	<seed slot0="felipe calderon" slot1="mexican" />
+	<seed slot0="david c arena" slot1="new york" />
+	<seed slot0="dan markingson" slot1="minnesota" />
+	<seed slot0="andy breen" slot1="aberystwyth" />
+	<seed slot0="andry rajoelina" slot1="madagascar" />
+	<seed slot0="muslims" slot1="jerusalem" />
+	<seed slot0="kevin m" slot1="las vegas" />
+	<seed slot0="interamicus" slot1="canada" />
+	<seed slot0="dick cheney" slot1="united states" />
+	<seed slot0="barack obama" slot1="washington" />
+	<seed slot0="anders fogh rasmussen" slot1="afghanistan" />
+	<seed slot0="robert mugabe" slot1="zimbabwean" />
+	<seed slot0="nicolas sarkozy" slot1="european union" />
+	<seed slot0="muslims" slot1="united kingdom" />
+	<seed slot0="muslims" slot1="pakistan" />
+	<seed slot0="manuel zelaya" slot1="central american" />
+	<seed slot0="kurds" slot1="iraqi" />
+	<seed slot0="kuhn loeb" slot1="european" />
+	<seed slot0="jose luis rodriguez zapatero" slot1="spanish" />
+	<seed slot0="jim demint" slot1="south carolina" />
+	<seed slot0="jews" slot1="mecca" />
+	<seed slot0="hannity" slot1="united states" />
+	<seed slot0="hamid karzai" slot1="united states" />
+	<seed slot0="david `` bigdave" slot1="american" />
+	<seed slot0="corazon aquino" slot1="philippines" />
+	<seed slot0="charlie nudo" slot1="drums" />
+	<seed slot0="charles" slot1="schaumburg" />
+	<seed slot0="blaise compaore" slot1="burkina faso" />
+	<seed slot0="angela merkel" slot1="european union" />
+	<seed slot0="alvaro uribe" slot1="colombian" />
+	<seed slot0="timothy e wilens" slot1="iowa" />
+	<seed slot0="sebastian pinera" slot1="chilean" />
+	<seed slot0="robert gates" slot1="american" />
+	<seed slot0="robert gates" slot1="afghanistan" />
+	<seed slot0="rebiya kadeer" slot1="xinjiang" />
+	<seed slot0="prince" slot1="wales" />
+	<seed slot0="laurent gbagbo" slot1="cote d&amp;apos;ivoire" />
+	<seed slot0="joseph biederman" slot1="iowa" />
+	<seed slot0="hindus" slot1="indian" />
+	<seed slot0="excises" slot1="united states" />
+	<seed slot0="dai bingguo" slot1="chinese" />
+	<seed slot0="ban ki  - moon" slot1="iranian" />
+	<seed slot0="sunni" slot1="anbar" />
+	<seed slot0="muslims" slot1="pakistani" />
+	<seed slot0="muslim" slot1="mecca" />
+	<seed slot0="manuel zelaya" slot1="tegucigalpa" />
+	<seed slot0="gordon brown" slot1="european" />
+	<seed slot0="francesco cossiga" slot1="european" />
+	<seed slot0="donald graham" slot1="israeli" />
+	<seed slot0="cheney" slot1="united states" />
+	<seed slot0="catherine graham meyer" slot1="israeli" />
+	<seed slot0="ben nelson" slot1="nebraska" />
+	<seed slot0="barack obama" slot1="britain" />
+	<seed slot0="zionist" slot1="united states" />
+	<seed slot0="tony blair" slot1="iraq" />
+	<seed slot0="shimon peres" slot1="israeli" />
+	<seed slot0="saeed jalili" slot1="iranian" />
+	<seed slot0="robert mosley iii" slot1="austin" />
+	<seed slot0="prince" slot1="tyre" />
+	<seed slot0="pericles" slot1="tyre" />
+	<seed slot0="paul wolfowitz" slot1="israeli" />
+	<seed slot0="oscar arias" slot1="honduras" />
+	<seed slot0="olympia snowe" slot1="maine" />
+	<seed slot0="novak djokovic" slot1="serbia" />
+	<seed slot0="mwai kibaki" slot1="kenyan" />
+	<seed slot0="michelle obama" slot1="united states of america" />
+	<seed slot0="kim jong il" slot1="korea" />
+	<seed slot0="julia gillard" slot1="australian" />
+	<seed slot0="john mcclellan" slot1="washington" />
+	<seed slot0="jews" slot1="germany" />
+	<seed slot0="hillary clinton" slot1="phuket" />
+	<seed slot0="eric cantor" slot1="virginia" />
+	<seed slot0="bin laden" slot1="european" />
+	<seed slot0="barack obama" slot1="arizona" />
+	<seed slot0="w" slot1="united states" />
+	<seed slot0="umaru yar&amp;apos;adua" slot1="nigerian" />
+	<seed slot0="silvio berlusconi" slot1="milan" />
+	<seed slot0="ronald reagan" slot1="united states" />
+	<seed slot0="rebecca riley" slot1="hull" />
+	<seed slot0="patricia cornwell" slot1="united states" />
+	<seed slot0="osama bin laden" slot1="united states" />
+	<seed slot0="moussa dadis camara" slot1="guinea" />
+	<seed slot0="mohammed" slot1="meccans" />
+	<seed slot0="marc ravalomanana" slot1="madagascar" />
+	<seed slot0="luiz inacio lula da silva" slot1="brazil" />
+	<seed slot0="jews" slot1="european" />
+	<seed slot0="hu jintao" slot1="china" />
+	<seed slot0="gibbon" slot1="roman empire" />
+	<seed slot0="david cameron" slot1="britain" />
+	<seed slot0="condoleezza rice" slot1="united states" />
+	<seed slot0="ayatollah ali khamenei" slot1="israeli" />
+	<seed slot0="ahmet davutoglu" slot1="turkish" />
+	<seed slot0="timothy geithner" slot1="united states" />
+	<seed slot0="saddam hussein" slot1="iraq" />
+	<seed slot0="obamavs palin" slot1="alaskan" />
+	<seed slot0="muslims" slot1="iraqi" />
+	<seed slot0="muslims" slot1="american" />
+	<seed slot0="morgan tsvangirai" slot1="zimbabwean" />
+	<seed slot0="manuel zelaya" slot1="tegucigalpa" />
+	<seed slot0="kim yong nam" slot1="democratic people &amp;apos;s republic of korea" />
+	<seed slot0="john kerry" slot1="united states" />
+	<seed slot0="hillary clinton" slot1="afghanistan" />
+	<seed slot0="george w bush" slot1="israeli" />
+	<seed slot0="evo morales" slot1="bolivian" />
+	<seed slot0="bush" slot1="israeli" />
+	<seed slot0="benjamin netanyahu" slot1="jerusalem" />
+	<seed slot0="beck" slot1="nevada" />
+	<seed slot0="barack obama" slot1="hawaii" />
+	<seed slot0="ariel sharon" slot1="israeli" />
+	<seed slot0="yousuf raza gilani" slot1="pakistani" />
+	<seed slot0="tony blair" slot1="iraqi" />
+	<seed slot0="tony blair" slot1="european union" />
+	<seed slot0="theresa lamascola" slot1="bronx" />
+	<seed slot0="the jew" slot1="mecca" />
+	<seed slot0="sunnis" slot1="baghdad" />
+	<seed slot0="saddam" slot1="iraqi" />
+	<seed slot0="rahm emanuel" slot1="chicago" />
+	<seed slot0="muslim" slot1="soviet union" />
+	<seed slot0="mike huckabee" slot1="arkansas" />
+	<seed slot0="leslie raymond  - rrb -  sachs" slot1="united states courthouse" />
+	<seed slot0="jon snow" slot1="channel" />
+	<seed slot0="islamist" slot1="mogadishu" />
+	<seed slot0="islamic" slot1="united states" />
+	<seed slot0="hosni mubarak" slot1="egyptian" />
+	<seed slot0="edward de vere" slot1="oxford" />
+	<seed slot0="barack obama" slot1="indian" />
+	<seed slot0="andrea mitchell" slot1="israeli" />
+	<seed slot0="sherlock mutter onna bun mutter mutter" slot1="japanese empire" />
+	<seed slot0="wu  -  ti" slot1="taoism" />
+	<seed slot0="taro aso" slot1="japanese" />
+	<seed slot0="stanley mcchrystal" slot1="american" />
+	<seed slot0="shiite" slot1="baghdad" />
+	<seed slot0="paul wolfowitz" slot1="united states" />
+	<seed slot0="muslims" slot1="indonesian" />
+	<seed slot0="mike pence" slot1="indiana" />
+	<seed slot0="lula" slot1="brazilian" />
+	<seed slot0="liang dynasty" slot1="taoism" />
+	<seed slot0="kurdish" slot1="iraqi" />
+	<seed slot0="jewish" slot1="american" />
+	<seed slot0="jeff sessions" slot1="alabama" />
+	<seed slot0="jacob zuma" slot1="south africa" />
+	<seed slot0="hillary clinton" slot1="africa" />
+	<seed slot0="god" slot1="united states of america" />
+	<seed slot0="gloria arroyo" slot1="philippines" />
+	<seed slot0="ehud barak" slot1="israeli" />
+	<seed slot0="edward kennedy" slot1="massachusetts" />
+	<seed slot0="christ" slot1="united states" />
+	<seed slot0="bush" slot1="iranian" />
+	<seed slot0="barack obama" slot1="germany" />
+	<seed slot0="angel cabrera" slot1="argentina" />
+	<seed slot0="andal ampatuan snr" slot1="maguindanao" />
+	<seed slot0="alberto contador" slot1="astana" />
+	<seed slot0="`` lw " slot1="united states of america" />
+	<seed slot0="zionist" slot1="israel" />
+	<seed slot0="teodoro obiang nguema" slot1="equatorial guinea" />
+	<seed slot0="shiites" slot1="baghdad" />
+	<seed slot0="saddam" slot1="baghdad" />
+	<seed slot0="ron paul" slot1="texas" />
+	<seed slot0="reb nachman" slot1="breslov" />
+	<seed slot0="ray odierno" slot1="iraqi" />
+	<seed slot0="obama" slot1="afghanistan" />
+	<seed slot0="muslim" slot1="united states" />
+	<seed slot0="mohammad omar" slot1="kunduz" />
+	<seed slot0="manmohan singh" slot1="india" />
+	<seed slot0="mahmoud ahmadinejad" slot1="tehran" />
+	<seed slot0="koryu gannen" slot1="new camelot" />
+	<seed slot0="joe biden" slot1="united states" />
+	<seed slot0="islamist" slot1="mogadishu" />
+	<seed slot0="islamist" slot1="afghanistan" />
+	<seed slot0="hosur" slot1="bangalore" />
+	<seed slot0="harriet harmans" slot1="wales" />
+	<seed slot0="ehud olmert" slot1="israeli" />
+	<seed slot0="david miliband" slot1="iranian" />
+	<seed slot0="barack obama" slot1="kentucky" />
+	<seed slot0="baawa knight" slot1="heckling" />
+	<seed slot0="wizard" slot1="oz" />
+	<seed slot0="vladimir putin" slot1="soviet union" />
+	<seed slot0="silvio berlusconi" slot1="italy" />
+	<seed slot0="sarah palins" slot1="alaska mcauleysworld" />
+	<seed slot0="saddam hussein" slot1="iranian" />
+	<seed slot0="phillip garrido" slot1="san francisco" />
+	<seed slot0="patricia cornwell  -  les" slot1="united states courthouse" />
+	<seed slot0="nicholas endicott" slot1="kanawha city" />
+	<seed slot0="najib razak" slot1="malaysian" />
+	<seed slot0="muslims" slot1="mecca" />
+	<seed slot0="massud barzani" slot1="iraqi" />
+	<seed slot0="marion bartoli" slot1="france" />
+	<seed slot0="mahmoud ahmadinejad" slot1="israel" />
+	<seed slot0="jewish" slot1="east jerusalem" />
+	<seed slot0="islamic" slot1="afghanistan" />
+	<seed slot0="ian khama" slot1="botswana" />
+	<seed slot0="hugo chavez" slot1="colombian" />
+	<seed slot0="hu jintao" slot1="united states" />
+	<seed slot0="hu jintao" slot1="turkmenistan" />
+	<seed slot0="harry potter" slot1="phoenix" />
+	<seed slot0="god" slot1="israeli" />
+	<seed slot0="eric layne" slot1="kanawha city" />
+	<seed slot0="ehud olmert" slot1="jerusalem" />
+	<seed slot0="derek johnson" slot1="west virginia" />
+	<seed slot0="derek johnson" slot1="wva" />
+	<seed slot0="derek johnson" slot1="ohio" />
+	<seed slot0="derek johnson" slot1="kentucky" />
+	<seed slot0="bodhidharma" slot1="buddhism" />
+	<seed slot0="barack obama" slot1="ohio" />
+	<seed slot0="baitullah mehsud" slot1="south waziristan" />
+	<seed slot0="andrew white" slot1="kanawha city" />
+	<seed slot0="andrew w mellon" slot1="district of columbia" />
+	<seed slot0="zhongtiao shan" slot1="china " />
+	<seed slot0="yulia tymoshenko" slot1="ukrainian" />
+	<seed slot0="wen jiabao" slot1="china" />
+	<seed slot0="william kristol" slot1="israeli" />
+	<seed slot0="vladimir v putin" slot1="russian" />
+	<seed slot0="timothy geithner" slot1="chinese" />
+	<seed slot0="sarah palin" slot1="united states" />
+	<seed slot0="rudy giuliani" slot1="new york city" />
+	<seed slot0="robert peck , sr" slot1="beccles" />
+	<seed slot0="nuri al -  maliki" slot1="baghdad" />
+	<seed slot0="muslims" slot1="palestinian" />
+	<seed slot0="muslims" slot1="israel" />
+	<seed slot0="muslims" slot1="afghanistan" />
+	<seed slot0="mahmoud abbas" slot1="palestinian authority" />
+	<seed slot0="ketsana" slot1="manila" />
+	<seed slot0="kayhan" slot1="iranian" />
+	<seed slot0="julian" slot1="new testament" />
+	<seed slot0="juan martin del potro" slot1="argentina" />
+	<seed slot0="honan" slot1="china " />
+	<seed slot0="hillary clinton" slot1="american" />
+	<seed slot0="guo boxiong" slot1="chinese" />
+	<seed slot0="fidel castro" slot1="cuban" />
+	<seed slot0="dwight d eisenhower" slot1="europe" />
+	<seed slot0="david frawley" slot1="india indology" />
+	<seed slot0="david" slot1="israel" />
+	<seed slot0="chris christie" slot1="new jersey" />
+	<seed slot0="bush" slot1="america" />
+	<seed slot0="bodhidharma" slot1="conjeeveram" />
+	<seed slot0="ayatollah ruhollah khomeini" slot1="iranian" />
+	<seed slot0="agnieszka radwanska" slot1="poland" />
+	<seed slot0="abdullah gul" slot1="turkish" />
+	<seed slot0="vaclav klaus" slot1="czech republic" />
+	<seed slot0="shiites" slot1="karbala" />
+	<seed slot0="sharon commins" slot1="kutum" />
+	<seed slot0="salient features" slot1="ayurveda" />
+	<seed slot0="patricia d cornwell" slot1="united states courthouse" />
+	<seed slot0="objectivists" slot1="hpo" />
+	<seed slot0="objectivism" slot1="hpo" />
+	<seed slot0="muhammed rahoumy" slot1="meccans" />
+	<seed slot0="muhammed rahoumy" slot1="mecca" />
+	<seed slot0="michael thomas" slot1="us" />
+	<seed slot0="manuel zelaya" slot1="venezuelan" />
+	<seed slot0="lora french" slot1="nevada" />
+	<seed slot0="li changchun" slot1="chinese" />
+	<seed slot0="katrina" slot1="united states" />
+	<seed slot0="jean  -  claude juncker" slot1="luxembourg" />
+	<seed slot0="huang" slot1="china " />
+	<seed slot0="hillary rodham clinton" slot1="new york" />
+	<seed slot0="george w bush" slot1="republic of iraq" />
+	<seed slot0="george w bush" slot1="american republic senator" />
+	<seed slot0="george mitchell" slot1="palestinian" />
+	<seed slot0="george hw bush" slot1="united states" />
+	<seed slot0="george bush" slot1="afghanistan" />
+	<seed slot0="fredrik reinfeldt" slot1="sweden" />
+	<seed slot0="doc smartass" slot1="heckling" />
+	<seed slot0="dmitry medvedev" slot1="sochi" />
+	<seed slot0="de dios" slot1="israel" />
+	<seed slot0="corpcom" slot1="usa" />
+	<seed slot0="aminatou haidar" slot1="laayoune" />
+	<seed slot0="amanda knox" slot1="britain" />
+	<seed slot0="alberto contador" slot1="spain" />
+	<seed slot0="alassane ouattara" slot1="cote d&amp;apos;ivoire" />
+	<seed slot0="yunus  -  bek yevkurov" slot1="ingushetia" />
+	<seed slot0="shiite" slot1="iranian" />
+	<seed slot0="shakuntala balu" slot1="sri sathya" />
+	<seed slot0="sarah palin" slot1="wasilla" />
+	<seed slot0="richard j durbin" slot1="illinois" />
+	<seed slot0="radovan karadzic" slot1="bosnian" />
+	<seed slot0="osama bin laden" slot1="afghanistan" />
+	<seed slot0="non -  dual shaivism" slot1="kashmir saivism" />
+	<seed slot0="muslims" slot1="indonesia" />
+	<seed slot0="medina" slot1="meccans" />
+	<seed slot0="mahmud abbas" slot1="israeli" />
+	<seed slot0="kaula tantricism" slot1="kashmir saivism" />
+	<seed slot0="joseph kabila" slot1="democratic republic of congo" />
+	<seed slot0="jose manuel barroso" slot1="eu" />
+	<seed slot0="john kerry" slot1="massachusetts" />
+	<seed slot0="john cornyn" slot1="texas" />
+	<seed slot0="islamists" slot1="somalia" />
+	<seed slot0="hu jintao" slot1="russian" />
+	<seed slot0="hillary clinton" slot1="united states of america" />
+	<seed slot0="christians" slot1="iraqi" />
+	<seed slot0="chris van hollen" slot1="maryland" />
+	<seed slot0="blanche lincoln" slot1="arkansas" />
+	<seed slot0="barney frank" slot1="massachusetts" />
+	<seed slot0="barack obama" slot1="north korea" />
+	<seed slot0="barack obama" slot1="new york" />
+	<seed slot0="barack obama" slot1="egyptian" />
+	<seed slot0="ayad allawi" slot1="iraqi" />
+	<seed slot0="alaeddin boroujerdi" slot1="iranian" />
+	<seed slot0="abhinavagupta" slot1="kashmir saivism" />
+	<seed slot0="de dios y del senor jesucristo" slot1="israel" />
+	<seed slot0="yang moo  -  jin" slot1="seoul" />
+	<seed slot0="philip sidney" slot1="pembroke" />
+	<seed slot0="pharaoh" slot1="egypt" />
+	<seed slot0="obamas" slot1="united states" />
+	<seed slot0="noordin mohammed" slot1="bali" />
+	<seed slot0="muslims" slot1="iraq" />
+	<seed slot0="manuel zelaya" slot1="latin american" />
+	<seed slot0="manuel zelaya" slot1="brazilian" />
+	<seed slot0="lindsey graham" slot1="south carolina" />
+	<seed slot0="leslie  - rrb -  sachs" slot1="united states of america" />
+	<seed slot0="lawrence" slot1="arabia" />
+	<seed slot0="kurds" slot1="kirkuk" />
+	<seed slot0="juan manuel santos" slot1="colombian" />
+	<seed slot0="jimmy carter" slot1="united states" />
+	<seed slot0="jewish" slot1="state of israel" />
+	<seed slot0="jesus christ" slot1="israel" />
+	<seed slot0="jesus" slot1="israel" />
+	<seed slot0="je suis" slot1="continental european" />
+	<seed slot0="islamic" slot1="european" />
+	<seed slot0="howard whatever" slot1="middle america" />
+	<seed slot0="hindu" slot1="indian" />
+	<seed slot0="han" slot1="chinese" />
+	<seed slot0="fredrik reinfeldt" slot1="european union" />
+	<seed slot0="elizabeth blackburn" slot1="united states" />
+	<seed slot0="eisenhower" slot1="mexican" />
+	<seed slot0="dustin mcdaniel" slot1="indianapolis" />
+	<seed slot0="dustin mcdaniel" slot1="houston" />
+	<seed slot0="david cameron" slot1="england" />
+	<seed slot0="christian" slot1="holy scripture" />
+	<seed slot0="carol greider" slot1="united states" />
+	<seed slot0="bodhidharma" slot1="china " />
+	<seed slot0="bobby jindal" slot1="louisiana" />
+	<seed slot0="shiite" slot1="yemeni" />
+	<seed slot0="muslims" slot1="british" />
+	<seed slot0="muslims" slot1="britain" />
+	<seed slot0="mother teresa" slot1="calcutta" />
+	<seed slot0="mohammed vi" slot1="moroccan" />
+	<seed slot0="mohammad  -  zadeh" slot1="iranshahr" />
+	<seed slot0="michael r bloomberg" slot1="new york city" />
+	<seed slot0="marin cilic" slot1="croatia" />
+	<seed slot0="mahmoud ahmad" slot1="united states" />
+	<seed slot0="maha bodhi society" slot1="india" />
+	<seed slot0="jewish" slot1="arab" />
+	<seed slot0="jay robert inslee democratic yea wa" slot1="united states" />
+	<seed slot0="janet reno" slot1="united states" />
+	<seed slot0="hu jintao" slot1="uzbekistan" />
+	<seed slot0="hu jintao" slot1="kazakhstan" />
+	<seed slot0="hilda kawuki" slot1="kutum" />
+	<seed slot0="gingermarks" slot1="documeantnet" />
+	<seed slot0="gingermarks" slot1="clearwater" />
+	<seed slot0="george w bush" slot1="iraq" />
+	<seed slot0="earle" slot1="oxenford" />
+	<seed slot0="earl of moray" slot1="annandale" />
+	<seed slot0="earl" slot1="leicester" />
+	<seed slot0="christians" slot1="trinity" />
+	<seed slot0="barack obama" slot1="pakistani" />
+	<seed slot0="barack obama" slot1="cobb county" />
+	<seed slot0="andy murray" slot1="britain" />
+	<seed slot0="zionist federation" slot1="australia" />
+	<seed slot0="xu caihou" slot1="chinese" />
+	<seed slot0="wang qishan" slot1="chinese" />
+	<seed slot0="uighurs" slot1="palau" />
+	<seed slot0="tony blair" slot1="british" />
+	<seed slot0="steny h hoyer" slot1="maryland" />
+	<seed slot0="shia" slot1="iraqi" />
+	<seed slot0="ron paul" slot1="libertarians" />
+	<seed slot0="roman polanski" slot1="gstaad" />
+	<seed slot0="radek stepanek" slot1="czech republic" />
+	<seed slot0="pal" slot1="the israeli conquest" />
+	<seed slot0="omar al -  bashir" slot1="sudanese" />
+	<seed slot0="obama tortures our wills" slot1="north america" />
+	<seed slot0="obama" slot1="chinese" />
+	<seed slot0="natalya estemirova" slot1="grozny" />
+	<seed slot0="michele bachmann" slot1="minnesota" />
+	<seed slot0="mary landrieu" slot1="louisiana" />
+	<seed slot0="mamadou tandja" slot1="niger" />
+	<seed slot0="ma ying  - jeou" slot1="taiwanese" />
+	<seed slot0="leslie raymond  - rrb -  sachs" slot1="united states" />
+	<seed slot0="lee myung  - bak" slot1="democratic people &amp;apos;s republic of korea" />
+	<seed slot0="kevin macdonald" slot1="united states" />
+	<seed slot0="juan carlos" slot1="spain" />
+	<seed slot0="johnny taliban" slot1="united states  -  wikipedia" />
+	<seed slot0="jerry brown jr " slot1="golden states" />
+	<seed slot0="jacques chirac" slot1="paris" />
+	<seed slot0="hillary clinton" slot1="pakistani" />
+	<seed slot0="harold meyerson" slot1="american prospect" />
+	<seed slot0="god" slot1="jerusalem" />
+	<seed slot0="francesca schiavone" slot1="italy" />
+	<seed slot0="dmitry medvedev" slot1="russia" />
+	<seed slot0="clinton" slot1="united states" />
+	<seed slot0="bush" slot1="new orleans" />
+	<seed slot0="brad pitt" slot1="new york city" />
+	<seed slot0="benjamin netanyahu" slot1="united states" />
+	<seed slot0="barack obama" slot1="myanmar" />
+	<seed slot0="angela merkel" slot1="european" />
+	<seed slot0="andry rajoelina" slot1="antananarivo" />
+	<seed slot0="ali bongo" slot1="gabon" />
+	<seed slot0="*angelina jolie" slot1="new york city" />
+	<seed slot0="zaldy ampatuan" slot1="autonomous region" />
+	<seed slot0="wayne rooney" slot1="states" />
+	<seed slot0="w" slot1="iraq" />
+	<seed slot0="vera zvonareva" slot1="russian" />
+	<seed slot0="tomas berdych" slot1="czech republic" />
+	<seed slot0="taraweeh" slot1="quran" />
+	<seed slot0="sunni" slot1="mosul" />
+	<seed slot0="sergei lavrov" slot1="russian" />
+	<seed slot0="rupiah banda" slot1="zambian" />
+	<seed slot0="rebiya kadeer" slot1="chinese" />
+	<seed slot0="rand paul" slot1="kentucky" />
+	<seed slot0="rupert murdoch" slot1="israeli" />
+	<seed slot0="obama" slot1="united states of america" />
+	<seed slot0="obama" slot1="us" />
+	<seed slot0="obama" slot1="iraq" />
+	<seed slot0="mir hossein mousavi" slot1="tehran" />
+	<seed slot0="meg whitman" slot1="california" />
+	<seed slot0="mahaprabhu shri vallabhacharya" slot1="sri bhagavatam" />
+	<seed slot0="lyra" slot1="american" />
+	<seed slot0="leslie  - rrb -  sachs" slot1="united states" />
+	<seed slot0="juan martin del potro" slot1="argentina" />
+	<seed slot0="jihad" slot1="quran" />
+	<seed slot0="jewish" slot1="palestine" />
+	<seed slot0="hitler" slot1="poland" />
+	<seed slot0="henry wriothesley" slot1="southampton" />
+	<seed slot0="hamid karzai" slot1="afghanistan" />
+	<seed slot0="great seal" slot1="american" />
+	<seed slot0="fabian cancellara" slot1="switzerland" />
+	<seed slot0="david miliband" slot1="britain" />
+	<seed slot0="charles e schumer" slot1="new york" />
+	<seed slot0="bush" slot1="afghanistan" />
+	<seed slot0="barack obama" slot1="asian" />
+	<seed slot0="arlen specter" slot1="pennsylvania" />
+	<seed slot0="angela merkel" slot1="europe" />
+	<seed slot0="ali abdullah saleh" slot1="yemeni" />
+	<seed slot0="alexei miller" slot1="russian" />
+	<seed slot0="abdurrahaman wahid" slot1="indonesia" />
+	<seed slot0="wen jiabao" slot1="japan" />
+	<seed slot0="vaclav klaus" slot1="european union" />
+	<seed slot0="tony blair" slot1="britain" />
+	<seed slot0="stephen smith" slot1="australian" />
+	<seed slot0="spencer abraham" slot1="michigan" />
+	<seed slot0="shri vallabhacharyas sri subodhini" slot1="sri bhagavatam" />
+	<seed slot0="seif al -  islam" slot1="libyan" />
+	<seed slot0="rafiq hariri" slot1="lebanese" />
+	<seed slot0="rafael nadal" slot1="spain" />
+	<seed slot0="quaoar" slot1="usa" />
+	<seed slot0="nikolai makarov" slot1="russian" />
+	<seed slot0="nguyen tan dung" slot1="vietnamese" />
+	<seed slot0="muslims" slot1="nourisher" />
+	<seed slot0="muslims" slot1="iranian" />
+	<seed slot0="muslim" slot1="urumqi" />
+	<seed slot0="muslim" slot1="afghanistan" />
+	<seed slot0="musharraf" slot1="pakistan" />
+	<seed slot0="michelle obama" slot1="united states" />
+	<seed slot0="mao zedong" slot1="chinese" />
+	<seed slot0="kuhn loeb" slot1="american" />
+	<seed slot0="kim jong  -  il" slot1="north korean" />
+	<seed slot0="john tsang" slot1="hong kong special administrative region" />
+	<seed slot0="john peck=jane" slot1="beccles" />
+	<seed slot0="jews" slot1="india incs" />
+	<seed slot0="jewish" slot1="jerusalem" />
+	<seed slot0="jewish" slot1="europe" />
+	<seed slot0="james v" slot1="scotland" />
+	<seed slot0="islamic" slot1="palestinian" />
+	<seed slot0="ichiro ozawa" slot1="japanese" />
+	<seed slot0="hamlet" slot1="denmark" />
+	<seed slot0="hakimullah mehsud" slot1="pakistani" />
+	<seed slot0="god" slot1="nourisher" />
+	<seed slot0="god" slot1="egypt" />
+	<seed slot0="george norry" slot1="united states" />
+	<seed slot0="david petraeus" slot1="us" />
+	<seed slot0="david petraeus" slot1="american" />
+	<seed slot0="christians" slot1="new testament" />
+	<seed slot0="charlie crist" slot1="florida" />
+	<seed slot0="bill clinton" slot1="arkansas" />
+	<seed slot0="barbara boxer" slot1="california" />
+	<seed slot0="barack obama" slot1="russia" />
+	<seed slot0="barack obama" slot1="jerusalem" />
+	<seed slot0="barack obama" slot1="japanese" />
+	<seed slot0="barack obama" slot1="honduras" />
+	<seed slot0="bahai obscurantism" slot1="kingdom of bahai" />
+	<seed slot0="b" slot1="united states of america" />
+	<seed slot0="al gore" slot1="united states" />
+	<seed slot0="vera zvonareva" slot1="russia" />
+	<seed slot0="sunni" slot1="baghdad" />
+	<seed slot0="shiite" slot1="saada" />
+	<seed slot0="shiite" slot1="mosul" />
+	<seed slot0="shah mehmood qureshi" slot1="pakistani" />
+	<seed slot0="saddam hussain" slot1="iraqi" />
+	<seed slot0="roy bennett" slot1="zimbabwe" />
+	<seed slot0="ricky ponting" slot1="england" />
+	<seed slot0="porfirio lobo" slot1="honduras" />
+	<seed slot0="oscar arias" slot1="costa rican" />
+	<seed slot0="obama" slot1="iraqi" />
+	<seed slot0="nicolas sarkozy" slot1="united states" />
+	<seed slot0="newt / huckabee" slot1="dems" />
+	<seed slot0="nawaz sharif" slot1="pakistani" />
+	<seed slot0="muslims" slot1="united states of america" />
+	<seed slot0="muslims" slot1="europe" />
+	<seed slot0="muslim" slot1="iranian" />
+	<seed slot0="muntazer al -  zaidi" slot1="iraqi" />
+	<seed slot0="moe lester" slot1="iranian" />
+	<seed slot0="manmohan singh" slot1="china" />
+	<seed slot0="mahmoud ahmadinejad" slot1="qom" />
+	<seed slot0="mahmoud abbas" slot1="jerusalem" />
+	<seed slot0="lee chong wei" slot1="malaysia" />
+	<seed slot0="lee bollinger" slot1="iranian" />
+	<seed slot0="kurmanbek bakiyev" slot1="osh" />
+	<seed slot0="katrina" slot1="new orleans" />
+	<seed slot0="jews" slot1="palestinian" />
+	<seed slot0="jalal talabani" slot1="iraqi" />
+	<seed slot0="hillary clinton" slot1="washington" />
+	<seed slot0="george bush sr" slot1="united states" />
+	<seed slot0="evo morales" slot1="bolivia" />
+	<seed slot0="carl levin" slot1="michigan" />
+	<seed slot0="carl levin" slot1="afghanistan" />
+	<seed slot0="cadel evans" slot1="australia" />
+	<seed slot0="chris matthews" slot1="baghdad" />
+	<seed slot0="benjamin netanyahu" slot1="iranian" />
+	<seed slot0="benedict xvi" slot1="italy" />
+	<seed slot0="bella" slot1="philadelphia" />
+	<seed slot0="barack obama" slot1="new orleans" />
+	<seed slot0="barack obama" slot1="india" />
+	<seed slot0="barack obama" slot1="european union" />
+	<seed slot0="barack obama" slot1="dems" />
+	<seed slot0="barack obama" slot1="beijing" />
+	<seed slot0="anthony weiner" slot1="united states" />
+	<seed slot0="angela merkel" slot1="afghanistan" />
+	<seed slot0="akbar hashemi rafsanjani" slot1="iranian" />
+	<seed slot0="african  - " slot1="united states" />
+	<seed slot0="abdelbaset ali mohmet al -  megrahi" slot1="libyan" />
+	<seed slot0="/ thespywhobilledmecom" slot1="united states" />
+	<seed slot0="`` john f eldredge &amp;apos;&amp;apos;" slot1="alexandria" />
+	<seed slot0="`` gary spatz best acting teacher  - " slot1="los angeles" />
+	<seed slot0="`` ads4wahs groups &amp;apos;&amp;apos;" slot1="america" />
+	<seed slot0="tom coburn" slot1="oklahoma" />
+	<seed slot0="tiger woods" slot1="ireland" />
+	<seed slot0="than shwe" slot1="myanmar" />
+	<seed slot0="tamil nadu" slot1="indian" />
+	<seed slot0="shiites" slot1="lebanese" />
+	<seed slot0="shebab" slot1="somalia" />
+	<seed slot0="salam fayyad" slot1="palestinian" />
+	<seed slot0="rudy guede" slot1="ivory coast" />
+	<seed slot0="rudolph w giuliani" slot1="new york city" />
+	<seed slot0="robin bravender" slot1="americas" />
+	<seed slot0="robert dudley" slot1="leicester" />
+	<seed slot0="richard lugar" slot1="indiana" />
+	<seed slot0="ray odierno" slot1="united states" />
+	<seed slot0="qin gang" slot1="chinese" />
+	<seed slot0="prescott bush" slot1="central american" />
+	<seed slot0="peter gade" slot1="denmark" />
+	<seed slot0="obama" slot1="united states  -  wikipedia" />
+	<seed slot0="muslims" slot1="chinese" />
+	<seed slot0="mrgeorge wbush" slot1="iraqi" />
+	<seed slot0="mohammad khatami" slot1="iranian" />
+	<seed slot0="mir hossein mousavi" slot1="iran" />
+	<seed slot0="michael sinnott" slot1="philippines" />
+	<seed slot0="michael sinnott" slot1="pagadian" />
+	<seed slot0="mars venus" slot1="american" />
+	<seed slot0="mahmoud ahmad &amp;apos;&amp;apos;" slot1="humanity" />
+	<seed slot0="mahmoud ahmad" slot1="pakistan" />
+	<seed slot0="mysqlclient server" slot1="jakarta" />
+	<seed slot0="lisa murkowski" slot1="alaska" />
+	<seed slot0="kim jong il" slot1="chinese" />
+	<seed slot0="jimmy carter" slot1="israeli" />
+	<seed slot0="jews" slot1="europe" />
+	<seed slot0="jewish" slot1="european" />
+	<seed slot0="jacob" slot1="israel" />
+	<seed slot0="jack szostak" slot1="united states" />
+	<seed slot0="islamic" slot1="israeli" />
+	<seed slot0="hun sen" slot1="thailand" />
+	<seed slot0="humanity" slot1="united states" />
+	<seed slot0="huang guangyu" slot1="chinese" />
+	<seed slot0="hu jintao" slot1="people &amp;apos;s republic of china" />
+	<seed slot0="hossein ali montazeri" slot1="qom" />
+	<seed slot0="hillary clinton" slot1="new york" />
+	<seed slot0="hassan nasrallah" slot1="lebanese" />
+	<seed slot0="hashim thaci" slot1="kosovo" />
+	<seed slot0="god" slot1="israelite" />
+	<seed slot0="george papaconstantinou" slot1="greece" />
+	<seed slot0="george bush" slot1="israeli" />
+	<seed slot0="facking &amp;apos;" slot1="iranian" />
+	<seed slot0="esmael mangudadatu" slot1="maguindanao" />
+	<seed slot0="dmitry medvedev" slot1="ingushetia" />
+	<seed slot0="de gaulle" slot1="sub saharan africa" />
+	<seed slot0="david cameron" slot1="european union" />
+	<seed slot0="darrell issa" slot1="california" />
+	<seed slot0="charles kennedy" slot1="a_master scottish" />
+	<seed slot0="bush" slot1="iran" />
+	<seed slot0="bob corker" slot1="tennessee" />
+	<seed slot0="benigno aquino iii" slot1="philippines" />
+	<seed slot0="barack obama" slot1="north american" />
+	<seed slot0="barack obama" slot1="iowa" />
+	<seed slot0="barack hussein obama , sr" slot1="kenyan" />
+	<seed slot0="ban ki  - moon" slot1="afghanistan" />
+	<seed slot0="abdul qadeer khan" slot1="pakistani" />
+	<seed slot0="abdelbaset ali mohmet al -  megrahi" slot1="tripoli" />
+	<seed slot0="/ queen" slot1="irish gaels" />
+	<seed slot0="zhou yongkang" slot1="chinese" />
+	<seed slot0="yukio hatoyama" slot1="chinese" />
+	<seed slot0="thomas jefferson" slot1="united states" />
+	<seed slot0="taro aso" slot1="japan" />
+	<seed slot0="sunni" slot1="adhamiyah" />
+	<seed slot0="sharif sheikh ahmed" slot1="somalia" />
+	<seed slot0="ronald reagan" slot1="united states of america" />
+	<seed slot0="raul castro" slot1="cuban" />
+	<seed slot0="ramzan kadyrov" slot1="chechnya" />
+	<seed slot0="rafael correa" slot1="ecuador" />
+	<seed slot0="phillip chukwuma ofume" slot1="nigerian" />
+	<seed slot0="nuri al -  maliki" slot1="united states" />
+	<seed slot0="muslims" slot1="bosnian" />
+	<seed slot0="muslims" slot1="arab" />
+	<seed slot0="mikhail gorbachev" slot1="soviet union" />
+	<seed slot0="michelle" slot1="african" />
+	<seed slot0="michael bloomberg" slot1="new york city" />
+	<seed slot0="mehdi karroubi" slot1="iranian" />
+	<seed slot0="mahmoud abbas" slot1="sharm el -  sheikh" />
+	<seed slot0="mahmoud abbas" slot1="ramallah" />
+	<seed slot0="mike wallace" slot1="israeli" />
+	<seed slot0="liu yandong" slot1="chinese" />
+	<seed slot0="li na" slot1="china" />
+	<seed slot0="lance armstrong" slot1="astana" />
+	<seed slot0="kurdish" slot1="turkish" />
+	<seed slot0="judd gregg" slot1="new hampshire" />
+	<seed slot0="john mccain" slot1="united states of america" />
+	<seed slot0="john kerry" slot1="afghanistan" />
+	<seed slot0="jewish" slot1="iranian" />
+	<seed slot0="jadranka kosor" slot1="croatian" />
+	<seed slot0="imposts" slot1="united states of america" />
+	<seed slot0="hui liangyu" slot1="chinese" />
+	<seed slot0="hu jintao" slot1="canadian" />
+	<seed slot0="hosni mubarak" slot1="sharm el -  sheikh" />
+	<seed slot0="guido westerwelle" slot1="germany" />
+	<seed slot0="god" slot1="california" />
+	<seed slot0="gloria arroyo" slot1="maguindanao" />
+	<seed slot0="george washington" slot1="united states of america" />
+	<seed slot0="george norry" slot1="johnny &amp;apos;s america" />
+	<seed slot0="george hw bush" slot1="united states of america" />
+	<seed slot0="george hw bush" slot1="iraqi" />
+	<seed slot0="earl" slot1="essex" />
+	<seed slot0="dinara safina" slot1="russia" />
+	<seed slot0="david petraeus" slot1="iraqi" />
+	<seed slot0="david miliband" slot1="british" />
+	<seed slot0="danilo di luca" slot1="italian" />
+	<seed slot0="christer fuglesang" slot1="sweden" />
+	<seed slot0="boris johnson" slot1="london" />
+	<seed slot0="benjamin netanyahu" slot1="middle east" />
+	<seed slot0="benjamin netanyahu" slot1="jerusalem" />
+	<seed slot0="barack obama" slot1="tehran" />
+	<seed slot0="barack obama" slot1="south korean" />
+	<seed slot0="barack obama" slot1="new hampshire" />
+	<seed slot0="asif ali zardari" slot1="pakistan" />
+	<seed slot0="ali  -  akbar salehi" slot1="iranian" />
+	<seed slot0="ahir" slot1="buddhism" />
+</seeds>

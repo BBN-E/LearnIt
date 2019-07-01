@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_alternate_names" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abu abbas" slot1="abu mazen" />
+	<seed slot0="sting" slot1="gordon sumner" />
+	<seed slot0="stewart copeland" slot1="gordon sumner" />
+	<seed slot0="roma" slot1="gypsies" />
+	<seed slot0="kaing guek eav" slot1="duch" />
+	<seed slot0="huang guangyu" slot1="wong kwong  - yu" />
+	<seed slot0="aqeel" slot1="usman" />
+	<seed slot0="stella walsh" slot1="stanislawa walasiewicz" />
+	<seed slot0="karel" slot1="charles karel bouley" />
+	<seed slot0="huang nanhua" slot1="wong siu  - ming" />
+	<seed slot0="chornice lewis" slot1="keshia harris" />
+	<seed slot0="chornice lewis" slot1="chornice kabbelliyaa" />
+	<seed slot0="choeung sopheap" slot1="yeay phan" />
+	<seed slot0="carlos irwin estevez" slot1="charles i sheen" />
+	<seed slot0="ahmed al -  obaidi" slot1="abu suhaib" />
+	<seed slot0="abu ayyub al -  musri" slot1="abu hamza al -  muhajir" />
+	<seed slot0="abdelhamid abou zeid" slot1="abib hammadou" />
+	<seed slot0="abdelhamid  - rrb -  abou zeid" slot1="abib hammadou" />
+	<seed slot0="zulkifli bin hir" slot1="marwan" />
+	<seed slot0="xizang nan lu" slot1="tibet lu" />
+	<seed slot0="qian xuesen" slot1="tsien hsue  - shen" />
+	<seed slot0="mohammad ajmal amir iman" slot1="qasab" />
+	<seed slot0="mahou shoujo neko taruto" slot1="meow meow taruto" />
+	<seed slot0="john edwards" slot1="jon edwards" />
+	<seed slot0="joseph macchia , sr" slot1="joey" />
+	<seed slot0="carol leigh" slot1="scarlot harlot" />
+	<seed slot0="brad parker" slot1="aspiringtrainer" />
+	<seed slot0="yeuk lau" slot1="susan lau" />
+	<seed slot0="yeshua ben yosef min natzeret" slot1="jesus" />
+	<seed slot0="yassin abdullah al  -  qadi" slot1="al  -  kadi" />
+	<seed slot0="yaakov peri" slot1="jacob perry" />
+	<seed slot0="winnie  - the -  pooh" slot1="edward d johnson" />
+	<seed slot0="william cecil" slot1="lord burghley" />
+	<seed slot0="thomas" slot1="didymus" />
+	<seed slot0="salahudin" slot1="abu suhaib" />
+	<seed slot0="qur&amp;apos;an" slot1="islamic" />
+	<seed slot0="pooh de bear" slot1="edward d johnson" />
+	<seed slot0="peter  - lrb -  zvi  - rrb -  malkin" slot1="zvi malchin" />
+	<seed slot0="nur hasbi" slot1="nur said" />
+	<seed slot0="nasir ahmed" slot1="abu akasha" />
+	<seed slot0="muslim" slot1="maitatsine" />
+	<seed slot0="muhammad ahmad abdallah salih" slot1="al  -  hanashi" />
+	<seed slot0="mohammad saleh al -  zawawi" slot1="yasser shukairi" />
+	<seed slot0="mohammad saleh al -  zawawi" slot1="abu salim taha" />
+	<seed slot0="mohammad ajmal amir iman" slot1="ajmal amir kasab" />
+	<seed slot0="mohamed saied al -  omda" slot1="gharib al -  taizy" />
+	<seed slot0="maoists" slot1="naxals" />
+	<seed slot0="mahmoud abbas" slot1="ploabu mazen" />
+	<seed slot0="lillian  - rrb -  saffati" slot1="moshe tzorfati" />
+	<seed slot0="kyaw zaw lwin" slot1="nyi nyi aung" />
+	<seed slot0="karol wojtyla" slot1="john paul ii" />
+	<seed slot0="kala  -  kato" slot1="mohammed marwa maitatsine" />
+	<seed slot0="kala  -  kato" slot1="maitatsine" />
+	<seed slot0="jose garmendia" slot1="yahob" />
+	<seed slot0="john arbuthnot" slot1="alexander pope" />
+	<seed slot0="javed" slot1="abu ali" />
+	<seed slot0="jacob perry" slot1="yaakov peri" />
+	<seed slot0="jack venice" slot1="christopher jack reid" />
+	<seed slot0="ismail khan" slot1="abu ismail" />
+	<seed slot0="ilich ramirez sanchez" slot1="carlos the jackal" />
+	<seed slot0="hugh romney" slot1="wavy gravy" />
+	<seed slot0="hamid dawud muhammad khalil al -  zawi" slot1="abu umar al -  baghdadi" />
+	<seed slot0="guy d&amp;apos;auvergne" slot1="guy de daphiny" />
+	<seed slot0="gill zaphrir" slot1="gill zafrir" />
+	<seed slot0="elad yoran" slot1="naftali yoran" />
+	<seed slot0="du juan" slot1="wong kwong  - yu" />
+	<seed slot0="babar imran" slot1="abu akasha" />
+	<seed slot0="avraham shalom ben  -  dor" slot1="avrum" />
+	<seed slot0="avraham shalom ben  -  dor" slot1="avraham shalom" />
+	<seed slot0="avraham shalom ben  -  dor" slot1="abe" />
+	<seed slot0="ansar bernardino venancio" slot1="hasan venancio" />
+	<seed slot0="ahmed abdi godane" slot1="abu zubayr" />
+	<seed slot0="abu umar" slot1="abu akasha" />
+	<seed slot0="abu hamzah al -  muhajir" slot1="abu ayyub al -  masri" />
+	<seed slot0="abdullah al -  muhajir" slot1="jose padilla" />
+	<seed slot0="abdul rehman bada" slot1="abu ali" />
+	<seed slot0="abdelhamid abu zeid" slot1="abid hammadou" />
+	<seed slot0="?????????????" slot1="iveria" />
+</seeds>

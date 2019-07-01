@@ -1,0 +1,6 @@
+../inputs/extractors/Preventative-Effect/Preventative-Effect_20180317110243.json
+../inputs/extractors/Precondition-Effect/Precondition-Effect_20180317110243.json
+../inputs/extractors/Catalyst-Effect/Catalyst-Effect_20180317110243.json
+../inputs/extractors/Before-After/Before-After_20180317110243.json
+../inputs/extractors/Cause-Effect/Cause-Effect_20180317110243.json
+../inputs/extractors/MitigatingFactor-Effect/MitigatingFactor-Effect_20180317110243.json

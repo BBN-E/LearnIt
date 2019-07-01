@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This target WILL NOT WORK with neolearnit because slot 1 has no valid type-->
+<targets>
+	<target name="org_number_of_employees_members" elf_ontology_type="org_number_of_employees_members"
+          description="{0} 's number of employees or members is {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_org" elf_role="0_org"
+           mention_constraints="(acetype ORG) (min-entitylevel DESC)" />
+    <slot slotnum="1" description="?" type="value" elf_ontology_type="1_number" 
+           elf_role="1_number_of_employees_members"
+	 mention_constraints="" />
+    <slot_pair a="1" b="0" symmetric="0" must_not_corefer="1"/>
+  </target>
+</targets>

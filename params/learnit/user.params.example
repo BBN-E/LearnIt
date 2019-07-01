@@ -1,0 +1,4 @@
+learnit_root: #Set this to your akbc checkout e.g. /nfs/mercury-04/u60/DEFT/users/msrivast/akbc-v2
+serif_data: #Set this to your SERIF data checkout e.g. /nfs/mercury-04/u60/DEFT/users/msrivast/Active/Data/SERIF/
+source_root: %learnit_root%/neolearnit
+

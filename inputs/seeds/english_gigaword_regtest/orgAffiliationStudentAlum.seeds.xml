@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Student-Alum" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="mark zuckerberg" slot1="harvard university" />
+	<seed slot0="manmohan singh" slot1="oxford" />
+	<seed slot0="ma ying -jeou" slot1="harvard" />
+	<seed slot0="benazir bhutto" slot1="harvard" />
+	<seed slot0="zulfikar ali bhutto" slot1="harvard" />
+	<seed slot0="chelsea clinton" slot1="stanford university" />
+	<seed slot0="henrique salas romer" slot1="yale" />
+	<seed slot0="drew weaver" slot1="virginia tech" />
+	<seed slot0="james blake" slot1="harvard" />
+	<seed slot0="mira nair" slot1="harvard" />
+	<seed slot0="aung san suu kyi" slot1="oxford" />
+	<seed slot0="jonathan widawsky" slot1="columbia university" />
+	<seed slot0="domingo cavallo" slot1="harvard" />
+	<seed slot0="ellen johnson sirleaf" slot1="harvard" />
+	<seed slot0="simon mann" slot1="eton" />
+	<seed slot0="carlos salinas de gortari" slot1="harvard" />
+	<seed slot0="george w bush" slot1="yale university" />
+	<seed slot0="abhisit vejjajiva" slot1="oxford" />
+	<seed slot0="chelsea" slot1="stanford university" />
+	<seed slot0="benazir bhutto" slot1="oxford" />
+	<seed slot0="stephen spender" slot1="oxford university" />
+	<seed slot0="theodore j kaczynski" slot1="harvard" />
+	<seed slot0="jamil mahuad" slot1="harvard" />
+	<seed slot0="alvaro uribe" slot1="harvard" />
+	<seed slot0="david cameron" slot1="eton" />
+	<seed slot0="john kerry" slot1="yale" />
+	<seed slot0="masako owada" slot1="harvard" />
+	<seed slot0="masako" slot1="oxford" />
+	<seed slot0="eduardo montealegre" slot1="harvard" />
+	<seed slot0="masako" slot1="harvard" />
+	<seed slot0="felipe calderon" slot1="harvard" />
+	<seed slot0="mira sorvino" slot1="harvard" />
+	<seed slot0="palaniappan chidambaram" slot1="harvard" />
+	<seed slot0="zulfikar ali bhutto" slot1="oxford" />
+	<seed slot0="meredith kercher" slot1="leeds university" />
+	<seed slot0="mikhail saakashvili" slot1="columbia university" />
+	<seed slot0="thomas cholmondeley" slot1="eton" />
+	<seed slot0="lee teng -hui" slot1="cornell university" />
+	<seed slot0="john tobin" slot1="voronezh state university" />
+	<seed slot0="esha momeni" slot1="california state university" />
+	<seed slot0="mikhail saakashvili" slot1="school" />
+	<seed slot0="henrique salas" slot1="yale" />
+	<seed slot0="bill clinton" slot1="oxford university" />
+	<seed slot0="bill clinton" slot1="georgetown university" />
+	<seed slot0="kalpana chawla" slot1="punjab engineering college" />
+	<seed slot0="korn chatikavanij" slot1="oxford" />
+	<seed slot0="sebastian pinera" slot1="harvard" />
+	<seed slot0="parker spitzer" slot1="harvard law school" />
+	<seed slot0="jamil mahuad" slot1="harvard university" />
+	<seed slot0="haddad - fonda" slot1="the evergreen school" />
+	<seed slot0="john f kerry" slot1="yale" />
+	<seed slot0="nick griffin" slot1="cambridge university" />
+	<seed slot0="nidal malik hasan" slot1="virginia tech university" />
+	<seed slot0="shinaz amuri" slot1="al - najah university" />
+	<seed slot0="annette lu" slot1="harvard" />
+	<seed slot0="ernest green" slot1="central high school" />
+	<seed slot0="john f kerry" slot1="yale university" />
+	<seed slot0="bill clinton" slot1="oxford" />
+	<seed slot0="george mann" slot1="eton" />
+	<seed slot0="alvaro uribe" slot1="oxford" />
+	<seed slot0="bill lann lee" slot1="yale university" />
+	<seed slot0="mstislav rostropovich" slot1="moscow conservatory" />
+	<seed slot0="tom morello" slot1="harvard" />
+	<seed slot0="douglas d osheroff" slot1="cornell university" />
+	<seed slot0="lee teng -hui" slot1="cornell" />
+	<seed slot0="george hw bush" slot1="yale university" />
+	<seed slot0="mounir el motassadeq" slot1="technical university" />
+	<seed slot0="carlos salinas de gortari" slot1="harvard university" />
+	<seed slot0="waleed al shehri" slot1="embry - riddle aeronautical university" />
+</seeds>

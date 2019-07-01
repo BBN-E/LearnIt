@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_place_of_death" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abdul aziz al - hakim" slot1="iran" />
+	<seed slot0="abdul aziz al - hakim" slot1="tehran" />
+	<seed slot0="adam goldstein" slot1="new york" />
+	<seed slot0="adam goldstein" slot1="new york city" />
+	<seed slot0="alexander haig" slot1="baltimore" />
+	<seed slot0="alexander haig" slot1="maryland" />
+	<seed slot0="alexander haig" slot1="maryland" />
+	<seed slot0="ali akbar khan" slot1="san anselmo" />
+	<seed slot0="ali akbar khan" slot1="united states" />
+	<seed slot0="anwar chowdhry" slot1="karachi" />
+	<seed slot0="art buchwald" slot1="washington, dc" />
+	<seed slot0="benoit mandelbrot" slot1="cambridge" />
+	<seed slot0="benoit mandelbrot" slot1="massachusetts" />
+	<seed slot0="benoit mandelbrot" slot1="us" />
+	<seed slot0="beverly sills" slot1="new york" />
+	<seed slot0="beverly sills" slot1="new york city" />
+	<seed slot0="beverly sills" slot1="new_york" />
+	<seed slot0="billy mays" slot1="fla" />
+	<seed slot0="billy mays" slot1="florida" />
+	<seed slot0="billy mays" slot1="tampa" />
+	<seed slot0="billy mays" slot1="florida" />
+	<seed slot0="blake edwards" slot1="calif" />
+	<seed slot0="blake edwards" slot1="california" />
+	<seed slot0="blake edwards" slot1="santa monica" />
+	<seed slot0="bobby frankel" slot1="california" />
+	<seed slot0="bradford washburn" slot1="lexington" />
+	<seed slot0="bradford washburn" slot1="mass" />
+	<seed slot0="bradford washburn" slot1="massachusetts" />
+	<seed slot0="carolyn goodman" slot1="new york" />
+	<seed slot0="catherine roraback" slot1="conn" />
+	<seed slot0="catherine roraback" slot1="connecticut" />
+	<seed slot0="catherine roraback" slot1="salisbury" />
+	<seed slot0="claude chabrol" slot1="paris" />
+	<seed slot0="dominick dunne" slot1="new york" />
+	<seed slot0="dominick dunne" slot1="new york city" />
+	<seed slot0="don hewitt" slot1="bridgehampton" />
+	<seed slot0="don hewitt" slot1="ny" />
+	<seed slot0="don hewitt" slot1="new york" />
+	<seed slot0="don meredith" slot1="nm" />
+	<seed slot0="don meredith" slot1="new mexico" />
+	<seed slot0="don meredith" slot1="santa fe" />
+	<seed slot0="ellie greenwich" slot1="manhattan" />
+	<seed slot0="ellie greenwich" slot1="new york" />
+	<seed slot0="gilbert gude" slot1="washington dc" />
+	<seed slot0="girija prasad koirala" slot1="kathmandu" />
+	<seed slot0="girija prasad koirala" slot1="katmandu" />
+	<seed slot0="girija prasad koirala" slot1="nepal" />
+	<seed slot0="harry dent" slot1="columbia" />
+	<seed slot0="harry dent" slot1="sc" />
+	<seed slot0="harry dent" slot1="south carolina" />
+	<seed slot0="harvey pekar" slot1="cleveland" />
+	<seed slot0="harvey pekar" slot1="cleveland heights" />
+	<seed slot0="harvey pekar" slot1="ohio" />
+	<seed slot0="harvey pekar" slot1="us" />
+	<seed slot0="hwang jang - yop" slot1="seoul" />
+	<seed slot0="hwang jang - yop" slot1="south korea" />
+	<seed slot0="irene kirkaldy" slot1="gloucester" />
+	<seed slot0="irene kirkaldy" slot1="hayes" />
+	<seed slot0="irene kirkaldy" slot1="va" />
+	<seed slot0="irene kirkaldy" slot1="virginia" />
+	<seed slot0="jade goody" slot1="england" />
+	<seed slot0="jade goody" slot1="upshire" />
+	<seed slot0="john henebry" slot1="evanston" />
+	<seed slot0="john henebry" slot1="ill" />
+	<seed slot0="john henebry" slot1="illinois" />
+	<seed slot0="joseph farland" slot1="va" />
+	<seed slot0="joseph farland" slot1="virginia" />
+	<seed slot0="joseph farland" slot1="winchester" />
+	<seed slot0="keli mcgregor" slot1="salt lake city" />
+	<seed slot0="keli mcgregor" slot1="utah" />
+	<seed slot0="kurt waldheim" slot1="vienna" />
+	<seed slot0="laurent fignon" slot1="paris" />
+	<seed slot0="lorraine rothman" slot1="calif" />
+	<seed slot0="lorraine rothman" slot1="california" />
+	<seed slot0="lorraine rothman" slot1="fullerton" />
+	<seed slot0="lucille clifton" slot1="baltimore" />
+	<seed slot0="maria kaczynska" slot1="russia" />
+	<seed slot0="maria kaczynska" slot1="smolensk" />
+	<seed slot0="mary crisp" slot1="phoenix" />
+	<seed slot0="mathieu montcourt" slot1="boulogne - billancourt" />
+	<seed slot0="mathieu montcourt" slot1="paris" />
+	<seed slot0="merce cunningham" slot1="manhattan" />
+	<seed slot0="merce cunningham" slot1="new york" />
+	<seed slot0="merce cunningham" slot1="new york city" />
+	<seed slot0="michael deaver" slot1="bethesda" />
+	<seed slot0="michael deaver" slot1="maryland" />
+	<seed slot0="mike penner" slot1="los angeles" />
+	<seed slot0="mohammed oudeh" slot1="damascus" />
+	<seed slot0="mohammed sayed tantawi" slot1="riyadh" />
+	<seed slot0="mohammed sayed tantawi" slot1="saudi arabia" />
+	<seed slot0="mohammed sayed tantawi" slot1="saudi_arabia" />
+	<seed slot0="orlando zapata" slot1="havana" />
+	<seed slot0="pamela ahearn" slot1="alexandria" />
+	<seed slot0="pamela ahearn" slot1="va" />
+	<seed slot0="pamela ahearn" slot1="virginia" />
+	<seed slot0="pascal yoadimnadji" slot1="france" />
+	<seed slot0="pascal yoadimnadji" slot1="paris" />
+	<seed slot0="patricia neal" slot1="edgarton" />
+	<seed slot0="patricia neal" slot1="edgartown" />
+	<seed slot0="patricia neal" slot1="mass" />
+	<seed slot0="patricia neal" slot1="massachusetts" />
+	<seed slot0="patricia neal" slot1="us" />
+	<seed slot0="paul gray" slot1="iowa" />
+	<seed slot0="paul gray" slot1="urbandale" />
+	<seed slot0="paul gray" slot1="iowa" />
+	<seed slot0="richard nolte" slot1="hanover" />
+	<seed slot0="richard nolte" slot1="nh" />
+	<seed slot0="richard nolte" slot1="new hampshire" />
+	<seed slot0="richmond flowers" slot1="ala" />
+	<seed slot0="richmond flowers" slot1="alabama" />
+	<seed slot0="richmond flowers" slot1="dothan" />
+	<seed slot0="ronnie james dio" slot1="los angeles" />
+	<seed slot0="sparky anderson" slot1="california" />
+	<seed slot0="sparky anderson" slot1="thousand oaks" />
+	<seed slot0="theodor kollek" slot1="jerusalem" />
+	<seed slot0="thomas meskill" slot1="delray beach" />
+	<seed slot0="thomas meskill" slot1="florida" />
+	<seed slot0="vernon bellecourt" slot1="minneapolis" />
+	<seed slot0="vitaly ginzburg" slot1="moscow" />
+	<seed slot0="william verity" slot1="beaufort" />
+	<seed slot0="william verity" slot1="south carolina" />
+</seeds>

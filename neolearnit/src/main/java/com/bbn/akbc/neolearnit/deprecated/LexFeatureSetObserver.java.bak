@@ -1,0 +1,19 @@
+package com.bbn.akbc.neolearnit.deprecated;
+
+import InstanceIdentifier;
+import MatchInfo;
+import Recorder;
+import AbstractInstanceIdObserver;
+import FeatureSet;
+
+public class LexFeatureSetObserver extends AbstractInstanceIdObserver<LexFeatureSet> {
+
+	public LexFeatureSetObserver(Recorder<InstanceIdentifier, LexFeatureSet> recorder) {
+		super(recorder);
+	}
+
+	@Override
+	public void observe(MatchInfo observable) {
+		this.record(observable, new LexFeatureSet(observable));
+	}
+}

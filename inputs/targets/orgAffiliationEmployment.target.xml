@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="Org_Aff_Employment" elf_ontology_type="Org_Aff_Employment"
+          description="{0} is employee of {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person" elf_role="0_employee"
+           mention_constraints="(acetype PER) (min-entitylevel DESC)" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_org_gpe" elf_role="1_employer"
+           mention_constraints="(acetype ORG GPE) (min-entitylevel DESC)" />
+  </target>
+</targets>

@@ -1,0 +1,430 @@
+package com.bbn.akbc.neolearnit.common.targets;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+
+import com.bbn.bue.common.xml.XMLUtils;
+import LearnItConfig;
+import AtomicMentionConstraint;
+import EntityTypeConstraint;
+import EntityTypeOrValueConstraint;
+import MinEntityLevelConstraint;
+import MustCoreferConstraint;
+import MustNotCoreferConstraint;
+import ValueTypeConstraint;
+import SlotProperty;
+import TargetProperty;
+import com.google.common.base.Charsets;
+import com.google.common.collect.ImmutableList;
+import com.google.common.io.Files;
+
+public class TargetFactory {
+
+	/**
+	 * Takes as input an ambiguous string: either a relation "named string"
+	 * like "family" or a path to an old style (learnit) target definition
+	 * xml file and returns the corresonding target
+	 *
+	 * TODO: this will need to be changed when we automate the processing of
+	 * multiple targets.
+	 * @param relationNameOrPath
+	 * @return
+	 * @throws IOException
+	 */
+	public static Target fromString(String relationNameOrPath) throws IOException {
+		// if relation is specified as a valid file path, load target from xml
+		File file = new File(relationNameOrPath);
+		if (file.exists()) {
+			return TargetFactory.fromTargetXMLFile(relationNameOrPath).get(0);
+		} else {
+			File file2 = new File(LearnItConfig.get("learnit_root")+"/inputs/targets/"+relationNameOrPath+".target.xml");
+			if (file2.exists()) {
+				return TargetFactory.fromTargetXMLFile(file2.toString()).get(0);
+			} else {
+				return TargetFactory.fromNamedString(relationNameOrPath);
+			}
+		}
+	}
+
+	/**
+	 * Builds a list of Target objects from a single old style (learnit) target
+	 * definition xml file.
+	 *
+	 * Currently returns a list of targets (despite our convention of only defining
+	 * target per xml file) in case we want to (TODO) automate processing of multiple
+	 * targets.
+	 * @param file
+	 * @return
+	 * @throws IOException
+	 */
+	public static List<Target> fromTargetXMLFile(String file) throws IOException {
+		List<Target> targets = new ArrayList<Target>();
+		String contents = Files.toString(new File(file), Charsets.UTF_8);
+		final InputSource in = new InputSource(new StringReader(contents.replaceAll("[\r\n]+", " ")));
+		try {
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			factory.setNamespaceAware(true);
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			org.w3c.dom.Document xml = builder.parse(in);
+
+			final Element root = xml.getDocumentElement();
+
+			if (root.getTagName().equals("targets")) {
+				for (Node child = root.getFirstChild(); child!=null; child = child.getNextSibling()) {
+					if (child instanceof Element) {
+						targets.add(TargetFactory.fromElement((Element)child));
+					}
+				}
+
+			} else {
+				System.err.println(String.format("Don't know what to do with %s. Skipping file.",root.getTagName()));
+			}
+		} catch (ParserConfigurationException e) {
+			throw new IOException("Error parsing xml", e);
+		} catch (SAXException e) {
+			throw new IOException("Error parsing xml", e);
+		}
+
+		if (targets.size() == 0) {
+			throw new IOException("Error parsing xml: no target nodes found");
+		}
+
+		return targets;
+	}
+
+	/**
+	 * A helper function for fromTargetXMLFile: returns a single Target object
+	 * from a Target node in an old style (learnit) target definition xml file.
+	 * @param target
+	 * @return
+	 */
+	public static Target fromElement(Element target) {
+		Target.Builder builder = new Target.Builder(XMLUtils.requiredAttribute(target, "name"));
+		builder.setDescription(XMLUtils.requiredAttribute(target, "description"));
+
+
+		List<Element> slots = new ArrayList<Element>();
+		List<Element> slotPairs = new ArrayList<Element>();
+
+		// build up lists of slot xml elements and slot pairs elements
+		for (Node child = target.getFirstChild(); child!=null; child = child.getNextSibling()) {
+			if (child instanceof Element) {
+				String tag = ((Element)child).getTagName();
+				if (tag.equals("slot"))
+					slots.add((Element)child);
+				else if (tag.equals("slot_pair"))
+					slotPairs.add((Element)child);
+			}
+		}
+
+		// add slot specific constraints / properties
+		for (Element slot : slots) {
+			TargetSlotDefinition targetSlot = TargetSlotDefinition.fromElement(slot);
+			Integer slotnum = targetSlot.slotnum;
+
+			if (!targetSlot.use_best_name) {
+				builder.withAddedProperty(new SlotProperty(slotnum, SlotProperty.USE_HEAD_TEXT));
+			}
+			if (targetSlot.allow_desc_training) {
+				builder.withAddedProperty(new SlotProperty(slotnum, SlotProperty.ALLOW_DESC_TRAINING));
+			}
+
+			// TODO: make atomic mention constraint configurable
+			builder.withAddedConstraint(new AtomicMentionConstraint(slotnum));
+
+			// TODO: add new entity type constraints, currently can only handle ace types
+			List<String> types = targetSlot.getTypes();
+			if (types.size() >= 1) {
+				if (targetSlot.type.equals("mention")) {
+					builder.withAddedConstraint(new EntityTypeConstraint(slotnum, ImmutableList.copyOf(types)));
+				} else {
+					builder.withAddedConstraint(new ValueTypeConstraint(slotnum, ImmutableList.copyOf(types)));
+				}
+			}
+
+			// add min entity level constraint
+			String minEntityLevel = targetSlot.getMinEntityLevel();
+			String language = "ALL";
+			// TODO: make language configurable
+			if (!minEntityLevel.isEmpty()) {
+				builder.withAddedConstraint(new MinEntityLevelConstraint(language, slotnum, minEntityLevel));
+			}
+		}
+
+		// TODO: generalize to case where there is more than one slot pair per target
+		if (!slotPairs.isEmpty()) {
+			TargetSlotPairDefinition targetSlotPair = TargetSlotPairDefinition.fromElement(slotPairs.get(0));
+			if (targetSlotPair.symmetric) {
+				builder.withAddedProperty(new TargetProperty(TargetProperty.SYMMETRIC));
+			}
+			if (targetSlotPair.must_not_corefer) {
+				builder.withAddedConstraint(new MustNotCoreferConstraint());
+			} else if (targetSlotPair.must_corefer) {
+				builder.withAddedConstraint(new MustCoreferConstraint());
+			}
+		}
+
+		return builder.build();
+	}
+
+	public static Target fromNamedString(String name) {
+		if (name.toLowerCase().equals("all_mention_no_coref_pairs")) {
+			return makeAllEntityTypesNoCorefTarget();
+		} else if (name.toLowerCase().equals("all_mention_coref_pairs")) {
+			return makeAllEntityTypesCorefTarget();
+		} else if (name.toLowerCase().equals("all_mention_value_pairs")) {
+			return makeAllEntityValueTypesTarget();
+		} else if (name.toLowerCase().equals("everything")) {
+			return makeEverythingTarget();
+		} else if (name.toLowerCase().equals("family")) {
+			return makeFamilyTarget();
+		} else if (name.toLowerCase().equals("user")) {
+			return makeUserOwnerInventor();
+		} else if (name.toLowerCase().equals("membership")) {
+			return makeMembershipTarget();
+		} else if (name.toLowerCase().equals("geographical")) {
+			return makePartWholeGeographicalTarget();
+		} else if (name.toLowerCase().equals("org-location")) {
+			return makeOrgLocation();
+		} else if (name.equals("providesProduct")) {
+			return makeProvidesProduct();
+		} else if (name.equals("takesInProduct")) {
+			return makeReceivesProduct();
+		} else if (name.equals("providesTo")) {
+			return makeProvidesTo();
+		} else if (name.equals("agreementBetween")) {
+			return makeAgreementBetween();
+		} else {
+			throw new RuntimeException("Unknown named string "+name);
+		}
+	}
+
+//	public static Target makeSymmetryTestTarget() {
+//		return new Target.Builder("SymmetryTest")
+//			.withAddedProperty(new TargetProperty("symmetric"))
+//			.withAddedConstraint(new AtomicMentionConstraint(0))
+//			.withAddedConstraint(new AtomicMentionConstraint(1))
+//			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("PER","ORG","GPE")))
+//			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("PER","ORG","GPE")))
+//			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+//			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+//			.withAddedConstraint(new MustNotCoreferConstraint())
+//			.build();
+//	}
+//
+//	public static Target makeHeadWordTestTarget() {
+//		return new Target.Builder("HeadWordTest")
+//			.withAddedProperty(new SlotProperty(1,"use_head_text"))
+//			.withAddedConstraint(new AtomicMentionConstraint(0))
+//			.withAddedConstraint(new AtomicMentionConstraint(1))
+//			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("PER","ORG","GPE")))
+//			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("PER","ORG","GPE")))
+//			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+//			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+//			.withAddedConstraint(new MustNotCoreferConstraint())
+//			.build();
+//	}
+//
+//	public static Target makeHeadWordAndSymmetryTestTarget() {
+//		return new Target.Builder("HeadWordAndSymmetryTest")
+//			.withAddedProperty(new TargetProperty("symmetric"))
+//			.withAddedProperty(new SlotProperty(1,"use_head_text"))
+//			.withAddedConstraint(new AtomicMentionConstraint(0))
+//			.withAddedConstraint(new AtomicMentionConstraint(1))
+//			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("PER","ORG","GPE")))
+//			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("PER","ORG","GPE")))
+//			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+//			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+//			.withAddedConstraint(new MustNotCoreferConstraint())
+//			.build();
+//	}
+
+	public static Target makeEverythingTarget() {
+		List<String> allTypes = ImmutableList.of("PER","ORG","GPE","LOC","FAC","WEA","VEH");
+
+		return new Target.Builder("EVERYTHING")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,allTypes))
+			.withAddedConstraint(new EntityTypeOrValueConstraint(1,allTypes))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.build();
+	}
+
+	public static Target makeAllEntityTypesNoCorefTarget() {
+		List<String> allTypes = ImmutableList.of("PER","ORG","GPE","LOC","FAC","WEA","VEH");
+
+		return new Target.Builder("ALL_MENTION_NO_COREF_PAIRS")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,allTypes))
+			.withAddedConstraint(new EntityTypeConstraint(1,allTypes))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeAllEntityTypesCorefTarget() {
+		List<String> allTypes = ImmutableList.of("PER","ORG","GPE","LOC","FAC","WEA","VEH");
+
+		return new Target.Builder("ALL_MENTION_COREF_PAIRS")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,allTypes))
+			.withAddedConstraint(new EntityTypeConstraint(1,allTypes))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeAllEntityValueTypesTarget() {
+		List<String> allTypes = ImmutableList.of("PER","ORG","GPE","LOC","FAC","WEA","VEH");
+
+		return new Target.Builder("ALL_MENTION_VALUE_PAIRS")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,allTypes))
+			.withAddedConstraint(new ValueTypeConstraint(1,ImmutableList.of("all")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeFamilyTarget() {
+
+		return new Target.Builder("Family")
+			.withAddedProperty(TargetProperty.makeSymmetric())
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,"PER"))
+			.withAddedConstraint(new EntityTypeConstraint(1,"PER"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeUserOwnerInventor() {
+
+		return new Target.Builder("User-Owner-Inventor-Manufacturer")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("PER","ORG","GPE")))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("WEA","VEH","FAC")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeMembershipTarget() {
+
+		return new Target.Builder("Membership")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("PER","ORG","GPE")))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("ORG")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makePartWholeGeographicalTarget() {
+
+		return new Target.Builder("Geographical")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("FAC","LOC","GPE")))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("FAC","LOC","GPE")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeOrgLocation() {
+
+		return new Target.Builder("Org-Location")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,"ORG"))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("LOC", "GPE")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	/*************************************
+	 *  SEC RELATION CLASSES
+	 *************************************/
+
+	public static Target makeProvidesTo() {
+
+		return new Target.Builder("providesTo")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,"ORG"))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("ORG","GPE","PER")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"NAME"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeProvidesProduct() {
+
+		return new Target.Builder("providesProduct")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,"ORG"))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("WEA","VEH","PRN")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"NAME"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeReceivesProduct() {
+
+		return new Target.Builder("takesInProduct")
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("ORG","GPE","PER")))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("WEA","VEH","PRN")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"DESC"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"DESC"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+
+	public static Target makeAgreementBetween() {
+
+		return new Target.Builder("agreementBetween")
+			.withAddedProperty(new TargetProperty("symmetric"))
+			.withAddedConstraint(new AtomicMentionConstraint(0))
+			.withAddedConstraint(new AtomicMentionConstraint(1))
+			.withAddedConstraint(new EntityTypeConstraint(0,ImmutableList.of("ORG","GPE","PER")))
+			.withAddedConstraint(new EntityTypeConstraint(1,ImmutableList.of("ORG","GPE","PER")))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",0,"NAME"))
+			.withAddedConstraint(new MinEntityLevelConstraint("ALL",1,"NAME"))
+			.withAddedConstraint(new MustNotCoreferConstraint())
+			.build();
+	}
+}

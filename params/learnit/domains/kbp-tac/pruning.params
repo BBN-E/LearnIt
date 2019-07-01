@@ -1,0 +1,29 @@
+################################################################################
+#  Acceptance Parameters
+################################################################################
+
+pattern_confidence_threshold: 0.4
+seed_confidence_threshold: 0.4
+
+################################################################################
+#  Misc Scoring/Debug Params
+################################################################################
+
+
+################################################################################
+#  Restrictions at Pattern Pruning Time
+################################################################################
+
+OVERRIDE only_depth_1_props_at_initialization: true
+
+OVERRIDE restrict_patterns_at_pruning: true
+OVERRIDE use_slot_etype_restrictions: true
+OVERRIDE use_slot_contains_word_restrictions: true
+OVERRIDE use_before_text_for_regex: true
+OVERRIDE use_after_text_for_regex: true
+
+
+################################################################################
+#  Seed Pruning
+################################################################################
+

@@ -1,0 +1,4 @@
+INCLUDE ./default.params
+INCLUDE ../domains/coldstart_sf2012_mini.param
+
+OVERRIDE learnit_expt_suffix: coldstart_sf2012_mini

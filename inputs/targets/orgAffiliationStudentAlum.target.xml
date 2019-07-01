@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="Org_Aff_Student-Alum" elf_ontology_type="Org_Aff_Student-Alum"
+          description="{0} attended {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person" elf_role="0_alumnus"
+           mention_constraints="(acetype PER) (min-entitylevel DESC)" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_educational_org" elf_role="1_educationalOrganizationAttended"
+           mention_constraints="(acetype ORG) (min-entitylevel DESC)" />
+  </target>
+</targets>

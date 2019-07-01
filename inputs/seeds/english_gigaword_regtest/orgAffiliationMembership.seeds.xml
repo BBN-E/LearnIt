@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Membership" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="bob dole" slot1="republican" />
+	<seed slot0="barack obama" slot1="republican" />
+	<seed slot0="tom daschle" slot1="democratic" />
+	<seed slot0="al gore" slot1="democratic party" />
+	<seed slot0="turkish" slot1="nato" />
+	<seed slot0="barack obama" slot1="democratic party" />
+	<seed slot0="john kerry" slot1="democratic" />
+	<seed slot0="george w bush" slot1="republicans" />
+	<seed slot0="bob dole" slot1="republican party" />
+	<seed slot0="harry reid" slot1="democratic" />
+	<seed slot0="hillary rodham clinton" slot1="democratic" />
+	<seed slot0="bill clinton" slot1="democratic" />
+	<seed slot0="al gore" slot1="democratic" />
+	<seed slot0="hillary rodham clinton" slot1="democratic party" />
+	<seed slot0="john kerry" slot1="democratic party" />
+	<seed slot0="john mccain" slot1="republican" />
+	<seed slot0="nancy pelosi" slot1="democratic" />
+	<seed slot0="bush" slot1="gop" />
+	<seed slot0="john edwards" slot1="democratic" />
+	<seed slot0="george w bush" slot1="republican party" />
+	<seed slot0="arnold schwarzenegger" slot1="republicans" />
+	<seed slot0="john mccain" slot1="gop" />
+	<seed slot0="hillary rodham clinton" slot1="senate" />
+	<seed slot0="trent lott" slot1="republicans" />
+	<seed slot0="george w bush" slot1="republican" />
+	<seed slot0="john mccain" slot1="republican party" />
+	<seed slot0="ross perot" slot1="reform party" />
+	<seed slot0="dick gephardt" slot1="democratic" />
+	<seed slot0="poland" slot1="nato" />
+	<seed slot0="joe lieberman" slot1="democratic" />
+	<seed slot0="ralph nader" slot1="green party" />
+	<seed slot0="gennady zyuganov" slot1="communist party" />
+	<seed slot0="turkey" slot1="nato" />
+	<seed slot0="mitch mcconnell" slot1="republicans" />
+	<seed slot0="mitt romney" slot1="republican" />
+	<seed slot0="sarah palin" slot1="republicans" />
+	<seed slot0="shaquille o'neal" slot1="los angeles lakers" />
+	<seed slot0="sarah palin" slot1="republican party" />
+	<seed slot0="gray davis" slot1="democratic" />
+	<seed slot0="taiwanese" slot1="united nations" />
+	<seed slot0="george w bush" slot1="republican congress" />
+	<seed slot0="bush" slot1="republican party" />
+	<seed slot0="edward m kennedy" slot1="senate" />
+	<seed slot0="hungarian" slot1="nato" />
+	<seed slot0="chinese" slot1="world trade organization" />
+	<seed slot0="joseph lieberman" slot1="democratic" />
+	<seed slot0="sarah palin" slot1="republican" />
+	<seed slot0="john f kerry" slot1="democratic" />
+	<seed slot0="joerg haider" slot1="freedom party" />
+	<seed slot0="shimon peres" slot1="labor party" />
+	<seed slot0="tony blair" slot1="labor party" />
+	<seed slot0="taiwan" slot1="united nations" />
+	<seed slot0="howard dean" slot1="democratic" />
+	<seed slot0="arnold schwarzenegger" slot1="republican party" />
+	<seed slot0="barack obama" slot1="democrats" />
+	<seed slot0="dick cheney" slot1="republicans" />
+	<seed slot0="tom delay" slot1="republicans" />
+	<seed slot0="benjamin netanyahu" slot1="likud party" />
+	<seed slot0="mike huckabee" slot1="republicans" />
+	<seed slot0="ariel sharon" slot1="likud party" />
+	<seed slot0="bush" slot1="republican" />
+	<seed slot0="mitt romney" slot1="republican party" />
+</seeds>

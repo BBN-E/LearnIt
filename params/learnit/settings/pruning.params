@@ -1,0 +1,40 @@
+################################################################################
+#  Acceptance Parameters
+################################################################################
+
+min_num_patterns_to_freeze: 20
+max_num_patterns_to_freeze: 100
+
+min_num_seeds_to_freeze: 50
+max_num_seeds_to_freeze: 300
+
+negative_rate: 0.0
+
+# the minimum number of unique seeds a pattern has to match in order to be accepted
+#  -> this is because patterns that only match one or two kinds of things are usually bad
+min_unique_seeds: 20
+
+seed_pruning_similarity_penalty: 0.6
+pattern_pruning_similarity_penalty: 0.95
+
+similarity_pattern_max: 0.01
+
+kmeans_k: 10
+
+################################################################################
+#  Restrictions at Pattern Pruning Time
+################################################################################
+
+restrict_patterns_at_pruning: true
+use_slot_etype_restrictions: true
+use_slot_contains_word_restrictions: true
+use_before_text_for_regex: true
+use_after_text_for_regex: true
+
+# this gets too huge, so we want to cut it off at some point after sorting by a quick and dirty confidence metric
+max_before_after_restrictions_per_pattern: 10
+
+################################################################################
+#  Seed Pruning
+################################################################################
+

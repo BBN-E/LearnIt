@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_parents" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="aaa auto club south" slot1="american automobile association" />
+	<seed slot0="aba banking journal" slot1="american bankers association" />
+	<seed slot0="aba journal" slot1="american bar association" />
+	<seed slot0="aerolineas argentinas" slot1="grupo marsans" />
+	<seed slot0="aerolineas argentinas" slot1="grupo marsans of spain" />
+	<seed slot0="aerolineas argentinas" slot1="iberia" />
+	<seed slot0="aerolineas argentinas" slot1="marsans" />
+	<seed slot0="aerolineas argentinas" slot1="marsans group" />
+	<seed slot0="alcatel shanghai bell" slot1="alcatel - lucent" />
+	<seed slot0="alcatel - lucent" slot1="alcatel" />
+	<seed slot0="alcatel - lucent" slot1="alcatel sa" />
+	<seed slot0="alcatel - lucent" slot1="lucent technologies" />
+	<seed slot0="alcatel - lucent" slot1="lucent technologies inc" />
+	<seed slot0="american bankers association  &apos;s community bankers council" slot1="american bankers association" />
+	<seed slot0="american psychiatric association committee of public affairs" slot1="american psychiatric association" />
+	<seed slot0="armaris" slot1="dcns" />
+	<seed slot0="austral" slot1="aerolineas argentinas" />
+	<seed slot0="austral lineas aereas" slot1="aerolineas argentinas" />
+	<seed slot0="banking law committee" slot1="american bar association" />
+	<seed slot0="banquet" slot1="conagra foods" />
+	<seed slot0="batasuna" slot1="euskadi ta askatasuna" />
+	<seed slot0="bell labs" slot1="alcatel - lucent" />
+	<seed slot0="blackburn rovers" slot1="venky  &apos;s group" />
+	<seed slot0="board of directors" slot1="asian development bank" />
+	<seed slot0="burlington northern santa fe corp" slot1="berkshire" />
+	<seed slot0="burlington northern santa fe corp" slot1="berkshire hathaway inc" />
+	<seed slot0="canadian dictionary division" slot1="oxford university press" />
+	<seed slot0="candlewood suites" slot1="intercontinental hotels group" />
+	<seed slot0="carnival australia" slot1="carnival corp" />
+	<seed slot0="carnival cruise lines" slot1="carnival corp" />
+	<seed slot0="carnival cruise lines" slot1="carnival corporation" />
+	<seed slot0="center for regulatory compliance" slot1="american bankers association" />
+	<seed slot0="central west asia department" slot1="asian development bank" />
+	<seed slot0="children &apos;s law committee" slot1="american bar association" />
+	<seed slot0="china banking regulatory commission" slot1="china" />
+	<seed slot0="china mobile" slot1="state - owned assets supervision and administration commission" />
+	<seed slot0="chung hwa travel service" slot1="mainland affairs council" />
+	<seed slot0="committee on judicial action" slot1="american psychiatric association" />
+	<seed slot0="corporate service group gmbh" slot1="arcandor" />
+	<seed slot0="costa crociere spa" slot1="carnival corp" />
+	<seed slot0="costa cruises" slot1="carnival corp" />
+	<seed slot0="council of representatives" slot1="american psychological association" />
+	<seed slot0="crowne plaza" slot1="intercontinental hotels group" />
+	<seed slot0="cunard" slot1="carnival corp" />
+	<seed slot0="cunard line" slot1="carnival corp" />
+	<seed slot0="dcns" slot1="thales" />
+	<seed slot0="daily news" slot1="associated newspapers of zimbabwe" />
+	<seed slot0="death penalty moratorium implementation project" slot1="american bar association" />
+	<seed slot0="department of legal affairs" slot1="mainland affairs council" />
+	<seed slot0="energy, transport and water division" slot1="asian development bank" />
+	<seed slot0="foundation for traffic safety" slot1="american automobile association" />
+	<seed slot0="gatwick" slot1="global infrastructure partners" />
+	<seed slot0="hebrew national" slot1="conagra foods" />
+	<seed slot0="holiday inn" slot1="intercontinental hotels group" />
+	<seed slot0="holiday inn express" slot1="intercontinental hotels group" />
+	<seed slot0="holiday inn worldwide" slot1="intercontinental hotels group" />
+	<seed slot0="holland america" slot1="carnival corp" />
+	<seed slot0="holland america line" slot1="carnival corp" />
+	<seed slot0="hotel indigo" slot1="intercontinental hotels group" />
+	<seed slot0="house of delegates" slot1="american bar association" />
+	<seed slot0="inter - american development bank" slot1="asian development bank" />
+	<seed slot0="intercontinental" slot1="intercontinental hotels group" />
+	<seed slot0="international agency for research on cancer" slot1="world health organisation" />
+	<seed slot0="international agency for research on cancer" slot1="world health organization" />
+	<seed slot0="irkut" slot1="rosoboronexport" />
+	<seed slot0="kadewe" slot1="arcandor" />
+	<seed slot0="kardstadt" slot1="arcandor" />
+	<seed slot0="karstadt" slot1="arcandor" />
+	<seed slot0="karstadt warenhaus gmbh" slot1="arcandor" />
+	<seed slot0="lamb weston" slot1="conagra foods" />
+	<seed slot0="law practice management section" slot1="american bar association" />
+	<seed slot0="local 1005" slot1="united steelworkers of america" />
+	<seed slot0="local 1660" slot1="united steelworkers of america" />
+	<seed slot0="local 2604" slot1="united steelworkers of america" />
+	<seed slot0="local 6500" slot1="united steelworkers of america" />
+	<seed slot0="local 7 - 669" slot1="united steelworkers of america" />
+	<seed slot0="local no 6992" slot1="united steelworkers of america" />
+	<seed slot0="london city airport" slot1="global infrastructure partners" />
+	<seed slot0="lyondellbasell" slot1="access industries" />
+	<seed slot0="maine marriage initiative" slot1="focus on the family" />
+	<seed slot0="metro nashville disaster relief fund" slot1="community foundation of middle tennessee" />
+	<seed slot0="millipore corp" slot1="merck" />
+	<seed slot0="millipore corp" slot1="merck group" />
+	<seed slot0="millipore corp" slot1="merck kgaa" />
+	<seed slot0="millipore corp" slot1="merck millipore" />
+	<seed slot0="moody  &apos;s investors service" slot1="moody &apos;s corp" />
+	<seed slot0="moody &apos;s analytics" slot1="moody &apos;s corp" />
+	<seed slot0="moody &apos;s investors service" slot1="moody &apos;s corp" />
+	<seed slot0="national commission on energy policy" slot1="bipartisan policy center" />
+	<seed slot0="office of cofinancing operations" slot1="asian development bank" />
+	<seed slot0="office of regional economic integration" slot1="asian development bank" />
+	<seed slot0="operations evaluation department" slot1="asian development bank" />
+	<seed slot0="orange county register" slot1="freedom communications" />
+	<seed slot0="oxford university press usa" slot1="oxford university press" />
+	<seed slot0="pacific department" slot1="asian development bank" />
+	<seed slot0="philippines country office" slot1="asian development bank" />
+	<seed slot0="primera" slot1="escada" />
+	<seed slot0="primondo" slot1="arcandor" />
+	<seed slot0="primondo operations gmbh" slot1="arcandor" />
+	<seed slot0="princess cruises" slot1="carnival corp" />
+	<seed slot0="private sector department" slot1="asian development bank" />
+	<seed slot0="private sector operations department" slot1="asian development bank" />
+	<seed slot0="quelle" slot1="arcandor" />
+	<seed slot0="quelle deutschland" slot1="arcandor" />
+	<seed slot0="quelle gmbh" slot1="arcandor" />
+	<seed slot0="rapiscan systems" slot1="osi systems" />
+	<seed slot0="rapiscan systems" slot1="osi systems inc" />
+	<seed slot0="rapiscan systems" slot1="osi systems inc" />
+	<seed slot0="regional sustainable development department" slot1="asian development bank" />
+	<seed slot0="regional and sustainable development department" slot1="asian development bank" />
+	<seed slot0="river road asset management" slot1="aviva plc" />
+	<seed slot0="rosoboronexport" slot1="russia" />
+	<seed slot0="sef" slot1="mainland affairs council" />
+	<seed slot0="stx finland" slot1="stx" />
+	<seed slot0="stx finland" slot1="stx europe group" />
+	<seed slot0="scorpions" slot1="npa" />
+	<seed slot0="scorpions" slot1="national prosecuting authority" />
+	<seed slot0="south asia department" slot1="asian development bank" />
+	<seed slot0="south pacific subregional office" slot1="asian development bank" />
+	<seed slot0="southgobi energy resources" slot1="ivanhoe mines" />
+	<seed slot0="southeast asia department" slot1="asian development bank" />
+	<seed slot0="southeast asia regional department" slot1="asian development bank" />
+	<seed slot0="standing committee on ethics and professional responsibility" slot1="american bar association" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="cabinet" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="china" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="state council" />
+	<seed slot0="staybridge suites" slot1="intercontinental hotels group" />
+	<seed slot0="swift" slot1="conagra foods" />
+	<seed slot0="the orange county register," slot1="freedom communications" />
+	<seed slot0="the starr foundation" slot1="american international group" />
+	<seed slot0="the yachts of seabourn" slot1="carnival corp" />
+	<seed slot0="thompson advisory group, inc" slot1="alcatel - lucent" />
+	<seed slot0="top up tv" slot1="access industries" />
+	<seed slot0="usa network" slot1="ge" />
+	<seed slot0="united agri products" slot1="conagra foods" />
+	<seed slot0="values voters summit" slot1="focus on the family" />
+	<seed slot0="white collar crime committee" slot1="american bar association" />
+	<seed slot0="world justice project" slot1="american bar association" />
+	<seed slot0="zero tolerance taskforce" slot1="american psychological association" />
+	<seed slot0="zondervan publishing, inc" slot1="harpercollins" />
+	<seed slot0="academic division" slot1="oxford university press" />
+	<seed slot0="division of psychoanalysis" slot1="american psychological association" />
+	<seed slot0="psychotherapy division" slot1="american psychological association" />
+	<seed slot0="reference division" slot1="oxford university press" />
+</seeds>

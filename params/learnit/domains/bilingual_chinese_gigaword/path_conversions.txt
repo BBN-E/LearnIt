@@ -1,0 +1,9 @@
+^AFP_ENG_(......)(.*)	afp/afp_eng_$1/output/AFP_ENG_$1$2.xml
+^APW_ENG_(......)(.*)	apw/apw_eng_$1/output/APW_ENG_$1$2.xml
+^CNA_ENG_(......)(.*)	cna/cna_eng_$1/output/CNA_ENG_$1$2.xml
+^LTW_ENG_(......)(.*)	ltw/ltw_eng_$1/output/LTW_ENG_$1$2.xml
+^NYT_ENG_(......)(.*)	nyt/nyt_eng_$1/output/NYT_ENG_$1$2.xml
+^WPB_ENG_(......)(.*)	wpb/wpb_eng_$1/output/WPB_ENG_$1$2.xml
+^XIN_ENG_(......)(.*)	xin/xin_eng_$1/output/XIN_ENG_$1$2.xml
+^(...)-CMN-(......)(.*)	$1_CMN/$2/$1-CMN-$2$3.xml
+^(...)_CMN_(......)(.*)	$1_CMN/$2/$1-CMN-$2$3.xml

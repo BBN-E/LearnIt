@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_date_founded" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="a123 systems inc" slot1="2001" />
+	<seed slot0="access industries" slot1="1986" />
+	<seed slot0="american association for the advancement of science" slot1="1848" />
+	<seed slot0="arcandor" slot1="1881" />
+	<seed slot0="asian development bank" slot1="1966" />
+	<seed slot0="asian development bank" slot1="1966-12-19" />
+	<seed slot0="bank julius baer" slot1="1890" />
+	<seed slot0="barnes foundation" slot1="1922" />
+	<seed slot0="bipartisan policy center" slot1="2007" />
+	<seed slot0="blackburn rovers" slot1="1875" />
+	<seed slot0="bolivarian alternative for the americas" slot1="2004" />
+	<seed slot0="central american parliament" slot1="1986" />
+	<seed slot0="central american parliament" slot1="1991" />
+	<seed slot0="champalimaud foundation" slot1="2004" />
+	<seed slot0="focus on the family" slot1="1977" />
+	<seed slot0="focus on the family" slot1="1979" />
+	<seed slot0="galleon group" slot1="1996 " />
+	<seed slot0="lashkar - e - taiba" slot1="1989" />
+	<seed slot0="lashkar - e - taiba" slot1="20 years ago" />
+	<seed slot0="lashkar - e - taiba" slot1="the 1980s" />
+	<seed slot0="millipore corp" slot1="1954" />
+	<seed slot0="patterson - uti drilling co" slot1="2001" />
+	<seed slot0="rosoboronexport" slot1="2000-11-04" />
+	<seed slot0="safe passage" slot1="1999" />
+	<seed slot0="scorpions" slot1="1999" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="2003" />
+	<seed slot0="stockholm international peace research institute" slot1="1966" />
+</seeds>

@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_top_member_employee_of" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="bob santelli" slot1="emp artistic" />
+	<seed slot0="tony hayward" slot1="bp" />
+	<seed slot0="mohamed elbaradei" slot1="international atomic energy agency" />
+	<seed slot0="herman van rompuy" slot1="european council" />
+	<seed slot0="bdk" slot1="bdk klan" />
+	<seed slot0="osama bin laden" slot1="al  -  qaeda" />
+	<seed slot0="mahmoud abbas" slot1="palestinian national authority" />
+	<seed slot0="barack obama" slot1="us" />
+	<seed slot0="fritz henderson" slot1="general motors" />
+	<seed slot0="david cameron" slot1="conservatives" />
+	<seed slot0="george tenet" slot1="cia" />
+	<seed slot0="david cameron" slot1="conservative party" />
+	<seed slot0="baitullah mehsud" slot1="taliban" />
+	<seed slot0="mervyn king" slot1="bank of england" />
+	<seed slot0="alexei miller" slot1="gazprom" />
+	<seed slot0="rebiya kadeer" slot1="world uighur congress" />
+	<seed slot0="john boehner" slot1="house" />
+	<seed slot0="henry okah" slot1="mend" />
+	<seed slot0="thomas insel" slot1="national institute of mental health" />
+	<seed slot0="kevin alfred strom" slot1="national vanguard" />
+	<seed slot0="barack obama" slot1="republicans" />
+	<seed slot0="yukiya amano" slot1="international atomic energy agency" />
+	<seed slot0="hassan nasrallah" slot1="hezbollah" />
+	<seed slot0="mitch mcconnell" slot1="republican" />
+	<seed slot0="louis freeh" slot1="fbi" />
+	<seed slot0="jeffrey immelt" slot1="general electric" />
+	<seed slot0="leon panetta" slot1="cia" />
+	<seed slot0="steve jobs" slot1="apple inc" />
+	<seed slot0="eric schmidt" slot1="google" />
+	<seed slot0="rupert murdoch" slot1="fox tv" />
+	<seed slot0="ken" slot1="crown prosecution service" />
+	<seed slot0="datastage debugger" slot1="ascential datastage" />
+	<seed slot0="brad adams" slot1="human rights watch" />
+	<seed slot0="michel platini" slot1="uefa" />
+	<seed slot0="barack obama" slot1="democratic" />
+	<seed slot0="john boehner" slot1="republicans" />
+	<seed slot0="rupert murdoch" slot1="washington post howard stern" />
+	<seed slot0="mullah omar" slot1="taliban" />
+	<seed slot0="mizuho fukushima" slot1="social democratic party" />
+	<seed slot0="robert mueller" slot1="fbi" />
+	<seed slot0="meg whitman" slot1="ebay" />
+	<seed slot0="sonia gandhi" slot1="congress" />
+	<seed slot0="nick clegg" slot1="liberal democrats" />
+	<seed slot0="neil shapiro" slot1="nbc news" />
+	<seed slot0="masaaki shirakawa" slot1="bank of japan" />
+	<seed slot0="mahmoud abbas" slot1="palestinian authority" />
+	<seed slot0="steven s sharfstein" slot1="sheppard pratt health system" />
+	<seed slot0="ramzan kadyrov" slot1="kremlin" />
+	<seed slot0="max mosley" slot1="fia" />
+	<seed slot0="dennis leibowitz" slot1="act ii partners" />
+	<seed slot0="ali akbar salehi" slot1="atomic energy organisation" />
+	<seed slot0="yuji saito" slot1="societe generale" />
+	<seed slot0="stern hu" slot1="rio tinto" />
+	<seed slot0="john boehner" slot1="white house" />
+	<seed slot0="doug suttles" slot1="bp" />
+	<seed slot0="barack obama" slot1="senate" />
+	<seed slot0="susan resko" slot1="adolescent bipolar foundation" />
+	<seed slot0="stephen olson" slot1="u &amp;apos;s department of psychiatry" />
+	<seed slot0="steny hoyer" slot1="democratic house" />
+	<seed slot0="robert gates" slot1="cia" />
+	<seed slot0="gail berman" slot1="fox entertainment stephen spielberg" />
+	<seed slot0="abdullah ocalan" slot1="kurdistan workers &amp;apos; party" />
+	<seed slot0="willie walsh" slot1="british airways" />
+	<seed slot0="florentino perez" slot1="real madrid" />
+	<seed slot0="aung san suu kyi" slot1="myanmar" />
+	<seed slot0="ali akbar salehi" slot1="atomic energy organization" />
+	<seed slot0="kent wells" slot1="bp" />
+	<seed slot0="josette sheeran" slot1="world food program" />
+	<seed slot0="joe solmonese" slot1="human rights campaign" />
+	<seed slot0="jerzy buzek" slot1="european parliament" />
+	<seed slot0="james bullard" slot1="federal reserve bank of st louis" />
+	<seed slot0="harry reid" slot1="democratic senate" />
+	<seed slot0="taro aso" slot1="liberal democratic party" />
+	<seed slot0="steny hoyer" slot1="house" />
+	<seed slot0="mahmoud abbas" slot1="fatah" />
+	<seed slot0="liu yunshan" slot1="publicity department" />
+	<seed slot0="leon panetta" slot1="central intelligence agency" />
+	<seed slot0="gary s moak" slot1="american association for geriatric psychiatry" />
+	<seed slot0="gary j kennedy" slot1="montefiore medical center" />
+	<seed slot0="andrea koppel" slot1="nbc news" />
+	<seed slot0="ali  -  akbar salehi" slot1="atomic energy organization of iran" />
+	<seed slot0="steve ballmer" slot1="microsoft" />
+	<seed slot0="rudolph w giuliani" slot1="uniformed fire officers association" />
+	<seed slot0="juan antonio samaranch" slot1="international olympic committee" />
+	<seed slot0="khaled meshaal" slot1="hamas" />
+	<seed slot0="carter obama woodrow wilson james buchanan" slot1="house of representatives" />
+	<seed slot0="barack obama" slot1="united states" />
+	<seed slot0="peter lai" slot1="dbs vickers" />
+	<seed slot0="lawrence summers" slot1="national economic council" />
+	<seed slot0="j edgar hoover" slot1="fbi" />
+	<seed slot0="ichiro ozawa" slot1="democratic party of japan" />
+	<seed slot0="mohamed elbaradei" slot1="un" />
+	<seed slot0="kim yong nam" slot1="presidium of the supreme people &amp;apos;s assembly" />
+	<seed slot0="jose miguel insulza" slot1="organization of american states" />
+	<seed slot0="jose maria botelho de vasconcelos" slot1="organization of petroleum exporting countries" />
+	<seed slot0="glenn stevens" slot1="reserve bank of australia" />
+	<seed slot0="david petraeus" slot1="us central command" />
+	<seed slot0="david cameron" slot1="conservative" />
+	<seed slot0="robert dudley" slot1="bp" />
+	<seed slot0="jacques rogge" slot1="ioc" />
+	<seed slot0="haruhiko kuroda" slot1="asian development bank" />
+	<seed slot0="grant williamson" slot1="hamilton" />
+	<seed slot0="bob brown" slot1="greens" />
+	<seed slot0="wang yi" slot1="taiwan work office of the communist party of china  - lrb -  cpc  - rrb -  central committee" />
+	<seed slot0="texe marrs" slot1="air force" />
+	<seed slot0="porter goss" slot1="cia" />
+	<seed slot0="pol pot" slot1="khmer rouge" />
+	<seed slot0="osama bin laden" slot1="al -  qaida" />
+	<seed slot0="mark golin" slot1="creative" />
+	<seed slot0="li congjun" slot1="xinhua news agency" />
+	<seed slot0="kenneth roth" slot1="human rights watch" />
+	<seed slot0="john leahy" slot1="airbus" />
+	<seed slot0="hugo chavez" slot1="venezuelan" />
+	<seed slot0="ann wells" slot1="bureau chief for pharmacy services" />
+	<seed slot0="akio toyoda" slot1="toyota" />
+	<seed slot0="zhou xiaochuan" slot1="people &amp;apos;s bank of china" />
+	<seed slot0="zhang guobao" slot1="national energy administration" />
+	<seed slot0="obamas" slot1="republicans" />
+	<seed slot0="naoto kan" slot1="democratic party of japan" />
+	<seed slot0="nancy pelosi" slot1="democratic" />
+	<seed slot0="morgan tsvangirai" slot1="mdc" />
+	<seed slot0="jean  -  claude juncker" slot1="eurogroup" />
+	<seed slot0="carly fiorina" slot1="hewlett  -  packard" />
+	<seed slot0="benedict xvi" slot1="roman catholic church" />
+	<seed slot0="thomas insel" slot1="american psychiatric association" />
+	<seed slot0="robert b zoellick" slot1="world bank" />
+	<seed slot0="nick griffin" slot1="british national party" />
+	<seed slot0="michel sidibe" slot1="unaids" />
+	<seed slot0="michael ignatieff" slot1="liberal party" />
+	<seed slot0="matt foreman" slot1="national gay and lesbian task force" />
+	<seed slot0="ken libertoff" slot1="vermont association for mental health" />
+	<seed slot0="hakimullah mehsud" slot1="taliban" />
+	<seed slot0="francois mitterrand" slot1="socialist" />
+	<seed slot0="dan pfeiffer" slot1="white house" />
+	<seed slot0="bill clinton" slot1="democratic" />
+	<seed slot0="beth collingz" slot1="international marketing" />
+	<seed slot0="sadakazu tanigaki" slot1="liberal democratic party" />
+	<seed slot0="rupert murdoch" slot1="village voice" />
+	<seed slot0="peter orszag" slot1="white house" />
+	<seed slot0="norman augustine" slot1="lockheed martin" />
+	<seed slot0="louis j freeh" slot1="fbi" />
+	<seed slot0="chen yunlin" slot1="association for relations across" />
+	<seed slot0="chea sim" slot1="senate" />
+	<seed slot0="abraham foxman" slot1="anti  -  defamation league" />
+	<seed slot0="wang jiarui" slot1="international department" />
+	<seed slot0="rudy giuliani" slot1="uniformed fire officers association" />
+	<seed slot0="michael hayden" slot1="cia" />
+	<seed slot0="kevin connor" slot1="planco llc" />
+	<seed slot0="john lipsky" slot1="international monetary fund" />
+	<seed slot0="gordon brown" slot1="labour party" />
+	<seed slot0="giovanni bisignani" slot1="international air transport association" />
+	<seed slot0="george w bush" slot1="republican" />
+	<seed slot0="george hw bush" slot1="paramount pictures &amp;apos; motion picture group" />
+	<seed slot0="george hw bush" slot1="paramount communications" />
+	<seed slot0="george hw bush" slot1="abc news" />
+	<seed slot0="eugenie scott" slot1="national center for science | education" />
+	<seed slot0="dominique strauss -  kahn" slot1="international monetary fund" />
+	<seed slot0="david cameron" slot1="tory" />
+	<seed slot0="chen bingde" slot1="general staff of the people &amp;apos;s liberation army" />
+	<seed slot0="bob ehrlich" slot1="black republicans" />
+	<seed slot0="andrew eder" slot1="astrazeneca" />
+	<seed slot0="akio toyoda" slot1="toyota motor corp" />
+	<seed slot0="tsunesaburo makiguchi" slot1="stanford zen" />
+	<seed slot0="thomas hoenig" slot1="kansas city fed" />
+	<seed slot0="robert steinberg" slot1="it&amp;amp;s corporate enterprise" />
+	<seed slot0="robert khuzami" slot1="securities and exchange commission" />
+	<seed slot0="maurice emsellem" slot1="national employment law project" />
+	<seed slot0="marc rotenberg" slot1="electronic privacy information center" />
+	<seed slot0="louis gallois" slot1="eads" />
+	<seed slot0="li yuanchao" slot1="organization department" />
+	<seed slot0="lee bollinger" slot1="columbia university" />
+	<seed slot0="jamie dimon" slot1="jpmorgan chase" />
+	<seed slot0="haroun mir" slot1="centre for research and policy studies" />
+	<seed slot0="george w bush" slot1="republicans" />
+	<seed slot0="george hw bush" slot1="warner bros" />
+	<seed slot0="george hw bush" slot1="nbc entertainment jack myers" />
+	<seed slot0="clinton" slot1="new york reserve" />
+	<seed slot0="carter obama woodrow wilson james buchanan" slot1="republicans" />
+	<seed slot0="therese murray" slot1="senate" />
+	<seed slot0="richard wexler" slot1="national coalition for child protection reform" />
+	<seed slot0="peter dougherty" slot1="department of veterans affairs" />
+	<seed slot0="luo lin" slot1="state administration of work safety" />
+	<seed slot0="josette sheeran" slot1="world food programme" />
+	<seed slot0="haruka nishimatsu" slot1="jal" />
+	<seed slot0="elaine mcclung" slot1="pet rescue" />
+	<seed slot0="wang yi" slot1="taiwan affairs office" />
+	<seed slot0="ron gettelfinger" slot1="united auto workers" />
+	<seed slot0="rex tomb" slot1="investigative publicity" />
+	<seed slot0="pascal lamy" slot1="world trade organization" />
+	<seed slot0="nusherwan mustafa" slot1="patriotic union of kurdistan" />
+	<seed slot0="mike haridopolos" slot1="senate" />
+	<seed slot0="martin winterkorn" slot1="volkswagen" />
+	<seed slot0="kenneth lewis" slot1="bank of america" />
+	<seed slot0="john boehner" slot1="republican" />
+	<seed slot0="harry m reid" slot1="senate" />
+	<seed slot0="guido westerwelle" slot1="fdp" />
+	<seed slot0="gideon gono" slot1="reserve bank of zimbabwe" />
+	<seed slot0="george j tenet" slot1="cia" />
+	<seed slot0="gabi ashkenazi" slot1="israel defense forces" />
+	<seed slot0="david petraeus" slot1="us central command" />
+	<seed slot0="daniel nigro" slot1="fdny" />
+	<seed slot0="bush" slot1="republican" />
+	<seed slot0="beth collingz" slot1="plc international marketing networks" />
+	<seed slot0="abdullah abdullah" slot1="independent election commission" />
+	<seed slot0="yosuke hosokawa" slot1="chuo mitsui trust bank" />
+	<seed slot0="wendelin wiedeking" slot1="porsche" />
+	<seed slot0="wang shengjun" slot1="supreme people &amp;apos;s court" />
+	<seed slot0="steven sharfstein" slot1="american psychiatric association" />
+	<seed slot0="steny hoyer" slot1="white house" />
+	<seed slot0="rustam pakaya" slot1="health ministry" />
+	<seed slot0="ranil wickremesinghe" slot1="united national party" />
+	<seed slot0="rabbi wagner" slot1="kransnoyarsk" />
+	<seed slot0="jose barroso" slot1="european commission" />
+	<seed slot0="john boehner" slot1="republican house" />
+	<seed slot0="john boehner" slot1="gop" />
+	<seed slot0="jewish" slot1="fox tv" />
+	<seed slot0="jack gerrard" slot1="american petroleum institute" />
+	<seed slot0="elizabeth ii" slot1="commonwealth" />
+	<seed slot0="chris manning" slot1="primary care mental health education" />
+	<seed slot0="carl pope" slot1="sierra club" />
+	<seed slot0="bush" slot1="republicans" />
+	<seed slot0="abhisit vejjajiva" slot1="democrat party" />
+	<seed slot0="tom delay" slot1="house" />
+	<seed slot0="sergio marchionne" slot1="fiat" />
+	<seed slot0="sergei kiriyenko" slot1="rosatom" />
+	<seed slot0="robert benmosche" slot1="american international group" />
+	<seed slot0="nobuo tanaka" slot1="international energy agency" />
+	<seed slot0="nick griffin" slot1="bnp" />
+	<seed slot0="nancy pelosi" slot1="house" />
+	<seed slot0="mullah mohammad omar" slot1="taliban" />
+	<seed slot0="masaaki shirakawa" slot1="boj" />
+	<seed slot0="kevin rudd" slot1="labor party" />
+	<seed slot0="joao havelange" slot1="fifa" />
+	<seed slot0="georgette gagnon" slot1="human rights watch" />
+	<seed slot0="dmitry medvedev" slot1="kremlin" />
+	<seed slot0="david morgan" slot1="international cricket council" />
+	<seed slot0="anthony fauci" slot1="national institute of allergy and infectious diseases" />
+	<seed slot0="andry rajoelina" slot1="high transitional authority" />
+	<seed slot0="adolf hitler" slot1="nazis" />
+	<seed slot0="thomas laughren" slot1="division of psychiatry products" />
+	<seed slot0="rudolf kastner" slot1="british medical research council" />
+	<seed slot0="owen van natta" slot1="myspace" />
+	<seed slot0="osama bin laden" slot1="al qaeda" />
+	<seed slot0="manuel zelaya" slot1="un general assembly" />
+	<seed slot0="manuel zelaya" slot1="organization of american states" />
+	<seed slot0="mamadou tandja" slot1="niger" />
+	<seed slot0="ma jiantang" slot1="national bureau of statistics" />
+	<seed slot0="lee myung  - bak" slot1="rok" />
+	<seed slot0="kasim al -  raimy" slot1="al -  qaida" />
+	<seed slot0="john o&amp;apos;neill" slot1="australian rugby union" />
+	<seed slot0="john boehner" slot1="house of representatives" />
+	<seed slot0="john a boehner" slot1="republicans" />
+	<seed slot0="jewish" slot1="washington post howard stern" />
+	<seed slot0="jacob zuma" slot1="african national congress" />
+	<seed slot0="harry reid" slot1="us senate" />
+	<seed slot0="bob king" slot1="united auto workers" />
+	<seed slot0="bill frist" slot1="senate" />
+	<seed slot0="yevgeny satanovsky" slot1="russian jewish congress" />
+	<seed slot0="tony perkins" slot1="family research council" />
+	<seed slot0="tony hayward" slot1="british petroleum" />
+	<seed slot0="tom daschle" slot1="senate" />
+	<seed slot0="tin oo" slot1="nld" />
+	<seed slot0="shizuka kamei" slot1="people &amp;apos;s new party" />
+	<seed slot0="sean r schuette" slot1="meetings &amp;amp; events" />
+	<seed slot0="obama" slot1="republicans" />
+	<seed slot0="marshall bouton" slot1="chicago council on global affairs" />
+	<seed slot0="mahmoud abbas" slot1="hamas" />
+	<seed slot0="josef ackermann" slot1="deutsche bank" />
+	<seed slot0="john smith" slot1="general motors" />
+	<seed slot0="jack gerard" slot1="american petroleum institute" />
+	<seed slot0="islamists" slot1="taliban" />
+	<seed slot0="henrique meirelles" slot1="central bank" />
+	<seed slot0="george friedman" slot1="stratfors" />
+	<seed slot0="ed demarco" slot1="federal housing finance agency" />
+	<seed slot0="dominique strauss  -  kahn" slot1="imf" />
+	<seed slot0="david cameron" slot1="conservative party" />
+	<seed slot0="beth collingz - " slot1="international marketing" />
+	<seed slot0="barbara loe fisher" slot1="national vaccine information center" />
+	<seed slot0="axel weber" slot1="european central bank" />
+	<seed slot0="axel weber" slot1="bundesbank" />
+	<seed slot0="arnold schwarzenegger" slot1="republican" />
+	<seed slot0="ann m veneman" slot1="unicef" />
+	<seed slot0="ahmad jannati" slot1="guardians council" />
+	<seed slot0="walter g deeley" slot1="national security agency" />
+	<seed slot0="voltaire" slot1="fire science division calls for independent review of world trade center investigation" />
+	<seed slot0="vladimir putin" slot1="kremlin" />
+	<seed slot0="robert b zoellick" slot1="world bank group" />
+	<seed slot0="randi weingarten" slot1="american federation of teachers" />
+	<seed slot0="person" slot1="harvard law school magna cum laude" />
+	<seed slot0="paul everitt" slot1="smmt" />
+	<seed slot0="mark v hurd" slot1="hewlett  -  packard" />
+	<seed slot0="mark carney" slot1="bank of canada" />
+	<seed slot0="mahmud abbas" slot1="fatah" />
+	<seed slot0="lynn franco" slot1="conference board" />
+	<seed slot0="luca di montezemolo" slot1="ferrari" />
+	<seed slot0="lloyd blankfein" slot1="goldman sachs" />
+	<seed slot0="khaled mashaal" slot1="hamas" />
+	<seed slot0="kathy lien" slot1="global forex trading" />
+	<seed slot0="julia gillard" slot1="labor party" />
+	<seed slot0="john yiamouyiannis" slot1="national health federation" />
+	<seed slot0="bin ladens death" slot1="al -  qaeda" />
+	<seed slot0="bill donohue" slot1="catholic league" />
+	<seed slot0="barack obama" slot1="harvard law review" />
+	<seed slot0="anne schuchat" slot1="national center for immunization and respiratory diseases" />
+	<seed slot0="alan mulally" slot1="ford" />
+	<seed slot0="achim steiner" slot1="un environment program" />
+	<seed slot0="zheng lizhong" slot1="arats" />
+	<seed slot0="xi jinping" slot1="general office of the central military commission" />
+	<seed slot0="stanley fischer" slot1="bank of israel" />
+	<seed slot0="sergio marchionne" slot1="chrysler" />
+	<seed slot0="salah al -  bardaweel" slot1="hamas" />
+	<seed slot0="rick wagoner" slot1="general motors corp" />
+	<seed slot0="ray anderson" slot1="nfl" />
+	<seed slot0="rahm emanuel" slot1="white house" />
+	<seed slot0="petreaus" slot1="cia" />
+	<seed slot0="onuora amobi" slot1="nnigma inc" />
+	<seed slot0="nurse recruiter" slot1="adn / unit" />
+	<seed slot0="nestor kirchner" slot1="peronist party" />
+	<seed slot0="neil abercrombie" slot1="democratic national convention hawaii free press articles" />
+	<seed slot0="mitch mcconnell" slot1="republican party" />
+	<seed slot0="mark zuckerberg" slot1="facebook" />
+	<seed slot0="lucas papademos" slot1="european central bank" />
+	<seed slot0="kirsten nematandani" slot1="south african football association" />
+	<seed slot0="kevin hassett" slot1="american enterprise institute" />
+	<seed slot0="joseph kony" slot1="lra" />
+	<seed slot0="jeremy anwyl" slot1="edmundscom" />
+	<seed slot0="hiroyuki fukunaga" slot1="investrust" />
+	<seed slot0="harry reid" slot1="senate" />
+	<seed slot0="efraim zuroff" slot1="simon wiesenthal centre" />
+	<seed slot0="donald tsang" slot1="hksar" />
+	<seed slot0="david albright" slot1="institute for science and international security" />
+	<seed slot0="chen yunlin" slot1="arats" />
+	<seed slot0="carl  -  henric svanberg" slot1="ericsson" />
+	<seed slot0="benjamin netanyahu" slot1="likud" />
+	<seed slot0="ahmed bahar" slot1="hamas" />
+	<seed slot0="afonso dhlakama" slot1="renamo" />
+	<seed slot0="wang yi" slot1="state council taiwan affairs office" />
+	<seed slot0="thomas r frieden" slot1="cdc" />
+	<seed slot0="thomas frieden" slot1="centers for disease control and prevention" />
+	<seed slot0="thomas enders" slot1="airbus" />
+	<seed slot0="sophie richardson" slot1="human rights watch" />
+	<seed slot0="rupert murdoch" slot1="general electric" />
+	<seed slot0="peter orszag" slot1="office of management and budget" />
+	<seed slot0="michael sala" slot1="homeland security" />
+	<seed slot0="martine aubry" slot1="socialist" />
+	<seed slot0="mara keisling" slot1="national center for transgender equality" />
+	<seed slot0="liberty nick griffin" slot1="british national party" />
+	<seed slot0="ken czubay" slot1="ford" />
+	<seed slot0="john jay" slot1="hamilton" />
+	<seed slot0="john a boehner" slot1="house" />
+	<seed slot0="jeffrey katzenberg" slot1="dreamworks animation" />
+	<seed slot0="jean -  claude trichet" slot1="european central bank" />
+	<seed slot0="gordon taylor" slot1="professional footballers &amp;apos; association" />
+	<seed slot0="gordon smith" slot1="scottish football association" />
+	<seed slot0="glenn rabonza" slot1="national disaster coordinating council" />
+	<seed slot0="gerry adams" slot1="sinn fein" />
+	<seed slot0="george miller" slot1="national association of therapeutic schools and programs" />
+	<seed slot0="freeh" slot1="fbi" />
+	<seed slot0="frederic mitterrand" slot1="socialist" />
+	<seed slot0="francis collins" slot1="national institutes of health" />
+	<seed slot0="eric garcetti" slot1="city council" />
+	<seed slot0="duvvuri subbarao" slot1="reserve bank of india" />
+	<seed slot0="dick armey" slot1="house" />
+	<seed slot0="bush" slot1="democratic" />
+	<seed slot0="bright" slot1="international multimedia information services" />
+	<seed slot0="antonio maria costa" slot1="unodc" />
+	<seed slot0="andry rajoelina" slot1="highest transitional authority" />
+	<seed slot0="amit  - rrb -  yoran" slot1="riptech inc" />
+	<seed slot0="ali akbar salehi" slot1="atomic energy organization of iran" />
+	<seed slot0="alex mathews" slot1="geojit bnp paribas financial services" />
+	<seed slot0="abdullah abdullah" slot1="independent electoral commission" />
+	<seed slot0="wolfgang franz" slot1="zew" />
+	<seed slot0="vladimir voronin" slot1="communist party" />
+	<seed slot0="velupillai prabakaran" slot1="liberation tigers of tamil eelam" />
+	<seed slot0="trita parsi" slot1="national iranian american council" />
+	<seed slot0="tony blair" slot1="labour" />
+	<seed slot0="thabo mbeki" slot1="african national congress" />
+	<seed slot0="steny hoyer" slot1="house democratic" />
+	<seed slot0="shami chakrabarti" slot1="liberty" />
+	<seed slot0="sarah leah whitson" slot1="human rights watch" />
+	<seed slot0="ronald lim" slot1="pacific concord properties inc" />
+	<seed slot0="robert richer" slot1="cia" />
+	<seed slot0="rick wagoner" slot1="general motors" />
+	<seed slot0="rick perry" slot1="republican" />
+	<seed slot0="peter brown" slot1="quinnipiac university polling institute" />
+	<seed slot0="pervez musharraf" slot1="army staff" />
+	<seed slot0="paul  -  louis arslanian" slot1="bea" />
+	<seed slot0="pany yathotu" slot1="lao national assembly" />
+	<seed slot0="norman chan" slot1="hong kong monetary authority" />
+	<seed slot0="nikolai makarov" slot1="general staff" />
+	<seed slot0="nicolas sarkozy" slot1="french" />
+	<seed slot0="mitch mcconnell" slot1="democratic senate" />
+	<seed slot0="michael o&amp;apos;leary" slot1="ryanair" />
+	<seed slot0="meir dagan" slot1="mossad" />
+	<seed slot0="mark" slot1="prudential brokerage" />
+	<seed slot0="mahmoud al -  zahar" slot1="hamas" />
+	<seed slot0="leon e panetta" slot1="central intelligence agency" />
+	<seed slot0="kumi naidoo" slot1="greenpeace international" />
+	<seed slot0="kevin rudd" slot1="labor" />
+	<seed slot0="keating holland" slot1="cnn" />
+	<seed slot0="john m douglas jr" slot1="planned parenthood federation of america" />
+	<seed slot0="janet murguia" slot1="national council of la raza" />
+	<seed slot0="hiroaki kuramochi" slot1="tokai tokyo securities" />
+	<seed slot0="herman van rompuy" slot1="eu council" />
+	<seed slot0="heng samrin" slot1="national assembly" />
+	<seed slot0="gregory ramey" slot1="the children &amp;apos;s medical center" />
+	<seed slot0="george w bush" slot1="texas rangers" />
+	<seed slot0="daryl kimball" slot1="arms control association" />
+	<seed slot0="chen bingde" slot1="general staff" />
+	<seed slot0="charlie beck" slot1="los angeles police department" />
+	<seed slot0="castor pang" slot1="cinda international" />
+	<seed slot0="bob dudley" slot1="bp" />
+	<seed slot0="beth collingz" slot1="plc global marketing" />
+	<seed slot0="barack obama" slot1="senate" />
+	<seed slot0="aubrey sarvis" slot1="servicemembers legal defense network" />
+	<seed slot0="andy stern" slot1="service employees international union" />
+	<seed slot0="andrew heyward" slot1="cbs news" />
+	<seed slot0="anders fogh rasmussen" slot1="nato" />
+	<seed slot0="ali treki" slot1="un general assembly" />
+	<seed slot0="ali treki" slot1="general assembly" />
+	<seed slot0="alaeddin boroujerdi" slot1="national security and foreign policy commission" />
+	<seed slot0="achim steiner" slot1="unep" />
+	<seed slot0="abu musab al -  zarqawi" slot1="al  -  qaeda" />
+	<seed slot0="will alex jones" slot1="gcn" />
+	<seed slot0="warren buffett" slot1="berkshire hathaway inc" />
+	<seed slot0="warren buffett" slot1="berkshire hathaway" />
+	<seed slot0="trent lott" slot1="senate" />
+	<seed slot0="terry o&amp;apos;neill" slot1="now" />
+	<seed slot0="steve tew" slot1="new zealand rugby union" />
+	<seed slot0="steny hoyer" slot1="house of representatives" />
+	<seed slot0="stan soloway" slot1="professional services council" />
+	<seed slot0="spears" slot1="the firm" />
+	<seed slot0="sheikh hassan nasrallah" slot1="hezbollah media relations" />
+	<seed slot0="robert s mueller iii" slot1="fbi" />
+	<seed slot0="rajesh sharma" slot1="bu" />
+	<seed slot0="presidents" slot1="united states" />
+	<seed slot0="president" slot1="republican party platform" />
+	<seed slot0="peter storrie" slot1="portsmouth" />
+	<seed slot0="peter robinson" slot1="democratic unionist party" />
+	<seed slot0="pascal lamy" slot1="world trade organisation" />
+	<seed slot0="nick clegg" slot1="lib dems" />
+	<seed slot0="mohammed yusuf" slot1="boko haram" />
+	<seed slot0="michel aoun" slot1="free patriotic movement" />
+	<seed slot0="michael ignatieff" slot1="liberal" />
+	<seed slot0="masaaki shirakawa" slot1="boj" />
+	<seed slot0="marius kloppers" slot1="bhp billiton" />
+	<seed slot0="kim jong  -  il" slot1="communist" />
+	<seed slot0="kenichi hirano" slot1="tachibana securities" />
+	<seed slot0="ken jautz" slot1="cnn worldwide" />
+	<seed slot0="kathryn carbone" slot1="food and drug administration" />
+	<seed slot0="john boehner" slot1="senate" />
+	<seed slot0="jobsearchuniversecom" slot1="interstellar job" />
+	<seed slot0="jerrry brown" slot1="democratic" />
+	<seed slot0="jeremy hobbs" slot1="oxfam international" />
+	<seed slot0="jeffrey immelt" slot1="ge" />
+	<seed slot0="jeff atwater" slot1="senate" />
+	<seed slot0="james woolsey" slot1="cia" />
+	<seed slot0="jack layton" slot1="new democratic party" />
+	<seed slot0="hirohisa fujii" slot1="democratic party of japan" />
+	<seed slot0="greenblatt" slot1="marlin steel wire products" />
+	<seed slot0="glenn stevens" slot1="bank of australia" />
+	<seed slot0="george w bush" slot1="republican party" />
+	<seed slot0="george papandreou" slot1="pasok" />
+	<seed slot0="evan tracey" slot1="campaign media analysis group" />
+	<seed slot0="eugene meyer , jr" slot1="treasurer of the war finance corporation" />
+	<seed slot0="elliot diringer" slot1="pew center on global climate change" />
+	<seed slot0="dirk frans" slot1="international assistance mission" />
+	<seed slot0="brian moynihan" slot1="bank of america" />
+	<seed slot0="benazir bhutto" slot1="pakistan people &amp;apos;s party" />
+	<seed slot0="anthony romero" slot1="american civil liberties union" />
+	<seed slot0="anthony lake" slot1="unicef" />
+	<seed slot0="anita dunn" slot1="white house" />
+	<seed slot0="adolf eichmann" slot1="ss" />
+	<seed slot0="achim steiner" slot1="un environment programme" />
+	<seed slot0="abdulrahman al -  saleh" slot1="dubai department of finance" />
+	<seed slot0="abdullah ocalan" slot1="kurdish workers &amp;apos; party" />
+	<seed slot0="john woodman" slot1="republican party" />
+	<seed slot0="zhang ping" slot1="national development and reform commission" />
+	<seed slot0="yukio hatoyama" slot1="liberal democratic party" />
+	<seed slot0="vikram pandit" slot1="citigroup" />
+	<seed slot0="steven aftergood" slot1="project on government secrecy" />
+	<seed slot0="samir tirmizi" slot1="human resource &amp;amp; marketing exalt integral solutions private limited" />
+	<seed slot0="sam zarifi" slot1="amnesty international" />
+	<seed slot0="romano prodi" slot1="european commission" />
+	<seed slot0="robert zoellick" slot1="world bank group" />
+	<seed slot0="robert mcnamara" slot1="ford motor company" />
+	<seed slot0="robert dudley" slot1="tnk  -  bp" />
+	<seed slot0="rick holman" slot1="breckenridge police" />
+	<seed slot0="qari hussain" slot1="taliban" />
+	<seed slot0="peter oppenheimer" slot1="apple" />
+	<seed slot0="peter horrocks" slot1="bbc world service" />
+	<seed slot0="pavle" slot1="serbian orthodox church" />
+	<seed slot0="paul salem" slot1="carnegie middle east centre" />
+	<seed slot0="nancy pelosi" slot1="white house" />
+	<seed slot0="mohsen rezai" slot1="revolutionary guards" />
+	<seed slot0="mitch mcconnell" slot1="republicans" />
+	<seed slot0="michael fennell" slot1="commonwealth games federation" />
+	<seed slot0="michael brown" slot1="fema" />
+	<seed slot0="michael bromwich" slot1="bureau of ocean energy management , regulation and enforcement" />
+	<seed slot0="mervyn king" slot1="boe" />
+	<seed slot0="melanie sloan" slot1="citizens for responsibility and ethics" />
+	<seed slot0="mark sullivan" slot1="secret service" />
+	<seed slot0="marine le pen" slot1="national front" />
+	<seed slot0="mariano rajoy" slot1="popular party" />
+	<seed slot0="margaret thatcher" slot1="sunderland city council" />
+	<seed slot0="mahmoud zahar" slot1="hamas" />
+	<seed slot0="larry sabato" slot1="center for politics" />
+	<seed slot0="jose manuel barroso" slot1="european council" />
+	<seed slot0="joel simon" slot1="cpj" />
+	<seed slot0="joe biden" slot1="republicans" />
+	<seed slot0="jesus christ" slot1="church" />
+	<seed slot0="jeffrey sachs" slot1="earth institute" />
+	<seed slot0="james sutherland" slot1="ca" />
+	<seed slot0="ilir meta" slot1="movement of socialist integration" />
+	<seed slot0="gordon brown" slot1="labour" />
+	<seed slot0="george w bush" slot1="united states" />
+	<seed slot0="gary kelly" slot1="southwest airlines" />
+	<seed slot0="francis bacon" slot1="rosicrucian society" />
+	<seed slot0="ford" slot1="advanced space programs development" />
+	<seed slot0="elizabeth warren" slot1="consumer financial protection bureau" />
+	<seed slot0="elaine pearson" slot1="human rights watch" />
+	<seed slot0="david walker" slot1="pwc" />
+	<seed slot0="david gill" slot1="manchester united" />
+	<seed slot0="daud najafi" slot1="independent election commission" />
+	<seed slot0="chen haosu" slot1="chinese people &amp;apos;s association for friendship with foreign countries" />
+	<seed slot0="bush" slot1="international brotherhood of teamsters" />
+	<seed slot0="bruce riedel" slot1="cia" />
+	<seed slot0="ben kwong" slot1="kgi asia" />
+	<seed slot0="ben bernanke" slot1="fed" />
+	<seed slot0="ann veneman" slot1="unicef" />
+	<seed slot0="alan bollard" slot1="bank of new zealand" />
+	<seed slot0="al gore" slot1="senate" />
+	<seed slot0="akio toyoda" slot1="toyota motor" />
+	<seed slot0="zhang yansheng" slot1="institute of foreign trade" />
+	<seed slot0="yukiya amano" slot1="un" />
+	<seed slot0="umberto bossi" slot1="northern league" />
+	<seed slot0="tom enders" slot1="airbus" />
+	<seed slot0="tom delay" slot1="white house" />
+	<seed slot0="thomas m hoenig" slot1="federal reserve bank of kansas city" />
+	<seed slot0="thomas frieden" slot1="cdc" />
+	<seed slot0="ted haggard" slot1="national association of evangelicals" />
+	<seed slot0="siv jensen" slot1="progress party" />
+	<seed slot0="rupert murdock" slot1="fox tv" />
+	<seed slot0="rudolph kastner" slot1="british medical research council" />
+	<seed slot0="robert mueller" slot1="federal bureau of investigation" />
+	<seed slot0="rebiya kadeer" slot1="world uygur congress" />
+	<seed slot0="reagan" slot1="republican" />
+	<seed slot0="ram chandra poudel" slot1="nepali congress" />
+	<seed slot0="porter goss" slot1="central intelligence agency" />
+	<seed slot0="pos" slot1="business unit" />
+	<seed slot0="oregan hoskins" slot1="south african rugby union" />
+	<seed slot0="olivier andries" slot1="airbus centres of excellence" />
+	<seed slot0="obama" slot1="republican" />
+	<seed slot0="nolan ryan" slot1="texas rangers" />
+	<seed slot0="nick clegg" slot1="democrat" />
+	<seed slot0="nicholas elizondo" slot1="young republican federation" />
+	<seed slot0="morgan tsvangirai" slot1="movement for democratic change" />
+	<seed slot0="mohamed ould abdel aziz" slot1="tewassoul" />
+	<seed slot0="michael shifter" slot1="inter  -  american dialogue" />
+	<seed slot0="michael ratner" slot1="center for constitutional rights" />
+	<seed slot0="michael leiter" slot1="national counterterrorism center" />
+	<seed slot0="michael carpenter" slot1="gmac" />
+	<seed slot0="marc morial" slot1="national urban league" />
+	<seed slot0="malcolm turnbull" slot1="liberal party" />
+	<seed slot0="mahmud zahar" slot1="hamas" />
+	<seed slot0="marty peretz" slot1="washington post howard stern" />
+	<seed slot0="louis gallois" slot1="european aeronautic defence and space company" />
+	<seed slot0="loma linda president" slot1="millenium project http://wwwratbagscom/rsoles australian council against health fraud" />
+	<seed slot0="linda mcmahon" slot1="world wrestling entertainment" />
+	<seed slot0="leo apotheker" slot1="sap" />
+	<seed slot0="lech walesa" slot1="solidarity" />
+	<seed slot0="larry summers" slot1="national economic council" />
+	<seed slot0="larry sabato" slot1="university of virginia" />
+	<seed slot0="ken deibert" slot1="department of economic security" />
+	<seed slot0="kanayo nwanze" slot1="ifad" />
+	<seed slot0="juan ponce enrile" slot1="senate" />
+	<seed slot0="jose sarney" slot1="senate" />
+	<seed slot0="jon coupal" slot1="howard jarvis taxpayers association" />
+	<seed slot0="john teja" slot1="ciptadana securities" />
+	<seed slot0="john nelson" slot1="spy agency" />
+	<seed slot0="john mearsheimer" slot1="chicago council on global affairs" />
+	<seed slot0="jim nussle" slot1="white house" />
+	<seed slot0="james r shannon" slot1="national institute of medicine" />
+	<seed slot0="jakob kellenberger" slot1="icrc" />
+	<seed slot0="jacques diouf" slot1="food and agriculture organisation" />
+	<seed slot0="jack welch" slot1="general electric" />
+	<seed slot0="indra nooyi" slot1="pepsico" />
+	<seed slot0="ian hull" slot1="systems team" />
+	<seed slot0="herman van rompuy" slot1="european council" />
+	<seed slot0="hermain cain" slot1="cabinet" />
+	<seed slot0="graeme pearman" slot1="united nations" />
+	<seed slot0="george walker bush" slot1="shareware earth co" />
+	<seed slot0="george tenet" slot1="central intelligence agency" />
+	<seed slot0="george halvorson" slot1="kaiser" />
+	<seed slot0="george hw bush" slot1="cia" />
+	<seed slot0="george hw bush" slot1="armed forces" />
+	<seed slot0="george casey" slot1="army" />
+	<seed slot0="fidel castro" slot1="communist party" />
+	<seed slot0="erik pillet" slot1="airbus centres of excellence" />
+	<seed slot0="elizabeth birnbaum" slot1="minerals management service" />
+	<seed slot0="edward e whitacre jr" slot1="government motors" />
+	<seed slot0="david dadge" slot1="international press institute" />
+	<seed slot0="daoud ali najafi" slot1="independent election commission" />
+	<seed slot0="daniel f akerson" slot1="general motors" />
+	<seed slot0="charles dallara" slot1="institute of international finance" />
+	<seed slot0="carlos ghosn" slot1="renault" />
+	<seed slot0="carlos ghosn" slot1="nissan" />
+	<seed slot0="bush" slot1="republican party" />
+	<seed slot0="bob brown" slot1="australian greens" />
+	<seed slot0="beverly russell" slot1="oregon christian coalition" />
+	<seed slot0="beth collingz" slot1="plc international" />
+	<seed slot0="barack obama sr" slot1="democratic national convention hawaii free press articles" />
+	<seed slot0="barack obama" slot1="republican" />
+	<seed slot0="azizullah lodin" slot1="independent election commission" />
+	<seed slot0="andy schleck" slot1="saxo bank" />
+	<seed slot0="andry rajoelina" slot1="madagascan high transitional authority" />
+	<seed slot0="andrew kohut" slot1="pew research center" />
+	<seed slot0="alan joyce" slot1="qantas" />
+	<seed slot0="al gore" slot1="democratic party" />
+	<seed slot0="akira omoto" slot1="tepco" />
+	<seed slot0="adrian christy" slot1="badminton england" />
+	<seed slot0="adolf hitler" slot1="nazi" />
+	<seed slot0="abdel  -  aziz al -  rantissi" slot1="sealed hamas" />
+	<seed slot0="zhang yansheng" slot1="national development and reform commission" />
+	<seed slot0="yousef al -  masri" slot1="ittihad hospital" />
+	<seed slot0="westbrook" slot1="adn / unit" />
+	<seed slot0="wen qiang" slot1="chongqing municipal public security bureau" />
+	<seed slot0="wang jiarui" slot1="international department of the communist party of china  - lrb -  cpc  - rrb -  central committee" />
+	<seed slot0="velupillai prabhakaran" slot1="liberation tigers of tamil eelam" />
+	<seed slot0="usama bin laden" slot1="al -  qaida" />
+	<seed slot0="tracy mullin" slot1="national retail federation" />
+	<seed slot0="tommy mottola" slot1="sony music" />
+	<seed slot0="theo zwanziger" slot1="german football federation" />
+	<seed slot0="theo zwanziger" slot1="dfb" />
+	<seed slot0="than shwe" slot1="myanmar" />
+	<seed slot0="taro aso" slot1="democratic party of japan" />
+	<seed slot0="takashi ushio" slot1="marusan securities" />
+	<seed slot0="susan hall forster" slot1="division of social medicine and health inequalities" />
+	<seed slot0="steven p jobs" slot1="apple" />
+	<seed slot0="steven kull" slot1="program on international policy attitudes" />
+	<seed slot0="stephen hester" slot1="royal bank of scotland" />
+	<seed slot0="steny hoyer" slot1="democratic" />
+	<seed slot0="sergio marchionne" slot1="chrysler" />
+	<seed slot0="sean blagsvedt" slot1="monstercom" />
+	<seed slot0="sanusi lamido sanusi" slot1="central bank of nigeria  - lrb -  cbn" />
+	<seed slot0="sanjay jha" slot1="motorola" />
+	<seed slot0="sani lulu" slot1="nigeria football federation" />
+	<seed slot0="ronald pelosi" slot1="house of representatives" />
+	<seed slot0="roberto micheletti" slot1="congress" />
+	<seed slot0="robert iger" slot1="disney" />
+	<seed slot0="robert bixby" slot1="concord coalition" />
+	<seed slot0="robert baer" slot1="cia" />
+	<seed slot0="richard trumka" slot1="afl  -  cio" />
+	<seed slot0="richard helms" slot1="cia" />
+	<seed slot0="randy thomasson" slot1="campaign for children and families" />
+	<seed slot0="peter loescher" slot1="siemens" />
+	<seed slot0="osama bin laden" slot1="al -  qaeda" />
+	<seed slot0="ngozi okonjo  -  iweala" slot1="world bank" />
+	<seed slot0="najeeb jarhom" slot1="amfraser securities" />
+	<seed slot0="mohammad omar" slot1="taliban" />
+	<seed slot0="mohamed bacar" slot1="anjouan" />
+	<seed slot0="mo shaoping" slot1="afp" />
+	<seed slot0="mitch mcconnell" slot1="us senate" />
+	<seed slot0="mitch mcconnell" slot1="senate" />
+	<seed slot0="mitch mcconnell" slot1="house" />
+	<seed slot0="michelle obama" slot1="harvard law school" />
+	<seed slot0="marvin odum" slot1="shell oil co" />
+	<seed slot0="mark krikorian" slot1="center for immigration studies" />
+	<seed slot0="mario draghi" slot1="bank of italy" />
+	<seed slot0="mamadi kaba" slot1="defence of human rights" />
+	<seed slot0="mahmud abbas" slot1="palestinian authority" />
+	<seed slot0="mahmoud ahmad" slot1="isi" />
+	<seed slot0="ma xiaotian" slot1="general staff" />
+	<seed slot0="luis alberto moreno" slot1="idb" />
+	<seed slot0="louis freeh" slot1="federal bureau of investigation" />
+	<seed slot0="liu jiayi" slot1="national audit office" />
+	<seed slot0="lillian downing" slot1="child protective services" />
+	<seed slot0="lewis booth" slot1="ford" />
+	<seed slot0="leader" slot1="president / party" />
+	<seed slot0="lawrence j ellison" slot1="oracle" />
+	<seed slot0="ln hagan" slot1="dps" />
+	<seed slot0="kenneth e melson" slot1="atf" />
+	<seed slot0="karen ignagni" slot1="health insurance plans" />
+	<seed slot0="kareem abdul  -  jabbar" slot1="national basketball association" />
+	<seed slot0="kalusha bwalya" slot1="football association of zambia" />
+	<seed slot0="jukka laaksonen" slot1="finnish radiation and nuclear safety authority" />
+	<seed slot0="joseph blatter" slot1="fifa" />
+	<seed slot0="jose miguel benaran ordenana" slot1="eta" />
+	<seed slot0="john small" slot1="united states department of health and human services" />
+	<seed slot0="john small" slot1="usphs" />
+	<seed slot0="joe biden" slot1="senate" />
+	<seed slot0="jochen homann" slot1="opel task force" />
+	<seed slot0="joan laporta" slot1="barca" />
+	<seed slot0="jewish" slot1="village voice" />
+	<seed slot0="jesus" slot1="houston national cemetery" />
+	<seed slot0="jeffrey zients" slot1="office of management and budget" />
+	<seed slot0="jeffrey skilling" slot1="enron" />
+	<seed slot0="jean  -  louis gergorin" slot1="eads" />
+	<seed slot0="jacques diouf" slot1="food and agriculture organization" />
+	<seed slot0="inexperienced hack" slot1="house majority" />
+	<seed slot0="igor komarov" slot1="avtovaz" />
+	<seed slot0="ho ching" slot1="temasek holdings" />
+	<seed slot0="haroon lorgat" slot1="international cricket council" />
+	<seed slot0="guillaume soro" slot1="fn" />
+	<seed slot0="glen singleton" slot1="gcsb" />
+	<seed slot0="george w bush" slot1="pro  -  israel" />
+	<seed slot0="george hw bush" slot1="republicans" />
+	<seed slot0="fred krupp" slot1="environmental defense fund" />
+	<seed slot0="frank salzedo" slot1="civil security division" />
+	<seed slot0="duncan crary" slot1="institute for humanist studies" />
+	<seed slot0="dennis dease" slot1="university of st thomas" />
+	<seed slot0="dean richards" slot1="harlequins" />
+	<seed slot0="david westin" slot1="abc news" />
+	<seed slot0="david viniar" slot1="goldman sachs" />
+	<seed slot0="david drummond" slot1="google" />
+	<seed slot0="chris liddell" slot1="microsoft" />
+	<seed slot0="barroso" slot1="european commission" />
+	<seed slot0="barack obama" slot1="white house" />
+	<seed slot0="barack obama" slot1="selzer &amp;amp; co" />
+	<seed slot0="barack obama" slot1="house" />
+	<seed slot0="barack obama" slot1="export council" />
+	<seed slot0="barack hussein obama" slot1="republicans" />
+	<seed slot0="arun jaitley" slot1="bharatiya janata party" />
+	<seed slot0="antonio munguambe" slot1="afp" />
+	<seed slot0="anne mulcahy" slot1="xerox" />
+	<seed slot0="andy inglis" slot1="bp" />
+	<seed slot0="alvaro uribe" slot1="colombian" />
+	<seed slot0="alexander medvedev" slot1="gazprom" />
+	<seed slot0="alan johnson shadow" slot1="home department" />
+	<seed slot0="ahmad majidi" slot1="afp" />
+	<seed slot0="the stupid `` oh" slot1="brown v20 labour party" />
+	<seed slot0="`` fazloon zarook &amp;apos;&amp;apos;" slot1="cr" />
+	<seed slot0="zheng shaodong" slot1="department of public security" />
+	<seed slot0="zhao ziyang" slot1="communist party" />
+	<seed slot0="zekria barakzai" slot1="independent election commission" />
+	<seed slot0="zeid rifai" slot1="senate" />
+	<seed slot0="william t jarvis" slot1="loma linda university" />
+	<seed slot0="william dudley" slot1="federal reserve bank of new york" />
+	<seed slot0="william baker" slot1="bell laboratories" />
+	<seed slot0="wayne lapierre" slot1="national rifle association" />
+	<seed slot0="valerie plame" slot1="cia" />
+	<seed slot0="vagit alekperov" slot1="lukoil" />
+	<seed slot0="usiing pelosi" slot1="democratic" />
+	<seed slot0="tony blair" slot1="labour party" />
+	<seed slot0="tom fitton" slot1="judicial watch" />
+	<seed slot0="tim willard" slot1="world future society" />
+	<seed slot0="tim hincks" slot1="burberry" />
+	<seed slot0="thoraya ahmed obaid" slot1="united nations population fund" />
+	<seed slot0="tarisa watanagase" slot1="bank of thailand" />
+	<seed slot0="t b singh" slot1="iacp" />
+	<seed slot0="sun qin" slot1="national energy administration" />
+	<seed slot0="steve rosenthal" slot1="afl  -  cio" />
+	<seed slot0="steve bundred" slot1="audit commission" />
+	<seed slot0="staffan de mistura" slot1="world food program" />
+	<seed slot0="sri mulyani indrawati" slot1="international monetary fund" />
+	<seed slot0="sonia gandhi" slot1="congress party" />
+	<seed slot0="silvio berlusconi" slot1="parliament" />
+	<seed slot0="sheila krumholz" slot1="center for responsive politics" />
+	<seed slot0="shao qiwei" slot1="national tourism administration" />
+	<seed slot0="shain associates" slot1="technology and system services" />
+	<seed slot0="sergio marchionne" slot1="fiat spa" />
+	<seed slot0="saddam hussein" slot1="congress of south african trade unions" />
+	<seed slot0="rowan williams" slot1="anglican church" />
+	<seed slot0="ronald reagan" slot1="republican" />
+	<seed slot0="ronald fortune phd" slot1="computer curriculum corporation" />
+	<seed slot0="ron pollack" slot1="families usa" />
+	<seed slot0="rod beckstrom" slot1="icann" />
+	<seed slot0="richard scudamore" slot1="premier league" />
+	<seed slot0="rich mckay" slot1="atlanta falcons" />
+	<seed slot0="ricardo teixeira" slot1="confederation of soccer" />
+	<seed slot0="ricardo alarcon" slot1="national assembly" />
+	<seed slot0="ri yong ho" slot1="general staff" />
+	<seed slot0="rebekah brooks" slot1="news international" />
+	<seed slot0="randy phillips" slot1="aeg live" />
+	<seed slot0="rajnath singh" slot1="bharatiya janata party" />
+	<seed slot0="rajeev chandrasekhar" slot1="ficci" />
+	<seed slot0="raj thackeray" slot1="maharashtra navnirman sena" />
+	<seed slot0="rahm emanuel" slot1="democratic congressional campaign committee" />
+	<seed slot0="r clarke cooper" slot1="log cabin republicans" />
+	<seed slot0="prem tinsulanonda" slot1="privy council" />
+	<seed slot0="pichai lertsupongkit" slot1="thanachart securities" />
+	<seed slot0="peter shell" slot1="thomas merton center" />
+	<seed slot0="peter orszag" slot1="congressional budget office" />
+	<seed slot0="peter kenyon" slot1="chelsea" />
+	<seed slot0="paul s otellini" slot1="intel" />
+	<seed slot0="paul otellini" slot1="intel corp" />
+	<seed slot0="pat mcquaid" slot1="international cycling union" />
+	<seed slot0="otis w brawley" slot1="american cancer society" />
+	<seed slot0="osama bin laden" slot1="al -  qaeda" />
+	<seed slot0="osama bin laden" slot1="al qaeda" />
+	<seed slot0="ogden reid" slot1="cia" />
+	<seed slot0="obama" slot1="potus" />
+	<seed slot0="nick clegg" slot1="liberal democrat" />
+	<seed slot0="muslim" slot1="republicans" />
+	<seed slot0="mohammed moussaoui" slot1="french council for the muslim religion" />
+	<seed slot0="mohamed ibn chambas" slot1="economic community of west african states" />
+	<seed slot0="mike miller" slot1="international rugby board" />
+	<seed slot0="mick davis" slot1="xstrata" />
+	<seed slot0="michelle bachelet" slot1="united nations" />
+	<seed slot0="michael stafford" slot1="republicans for responsible reform" />
+	<seed slot0="michael chertoff" slot1="homeland security" />
+	<seed slot0="maya macguineas" slot1="committee for a responsible federal budget" />
+	<seed slot0="matthias wissmann" slot1="vda" />
+	<seed slot0="mark collett" slot1="british national party" />
+	<seed slot0="marissa mayer" slot1="google" />
+	<seed slot0="marianne ny" slot1="stockholm prosecutor &amp;apos;s office" />
+	<seed slot0="margaret chan" slot1="world health organization" />
+	<seed slot0="malcolm a smith" slot1="senate" />
+	<seed slot0="mahmoud ahmadinejad" slot1="columbia university" />
+	<seed slot0="mrcpysch phd" slot1="southern methodist university" />
+	<seed slot0="mrcpysch phd" slot1="european institute of health and medical sciences" />
+	<seed slot0="marty peretz" slot1="village voice" />
+	<seed slot0="luz patricia mejia" slot1="iachr" />
+	<seed slot0="lu wei" slot1="xinhua news agency" />
+	<seed slot0="liu yunshan" slot1="publicity department of the communist party of china  - lrb -  cpc  - rrb -  central committee" />
+	<seed slot0="li shishi" slot1="commission for legislative affairs of the npc standing committee" />
+	<seed slot0="leon degrelle" slot1="waffen  -  ss" />
+	<seed slot0="lee seong  - tae" slot1="bok" />
+	<seed slot0="lee hall" slot1="university of london union" />
+	<seed slot0="lamine diack" slot1="iaaf" />
+	<seed slot0="lamar mckay" slot1="bp america" />
+	<seed slot0="lk advani" slot1="bharatiya janata party" />
+	<seed slot0="kristin halvorsen" slot1="socialist left party" />
+	<seed slot0="kirsan ilyumzhinov" slot1="fide" />
+	<seed slot0="kim hwang  - sik" slot1="board of audit and inspection" />
+	<seed slot0="kim choong  - soo" slot1="bok" />
+	<seed slot0="keith williams" slot1="british airways" />
+	<seed slot0="keith alexander" slot1="national security agency" />
+	<seed slot0="kate martin" slot1="center for national security studies" />
+	<seed slot0="joseph tung" slot1="travel industry council of hong kong" />
+	<seed slot0="jose miguel vivanco" slot1="human rights watch" />
+	<seed slot0="john mccain" slot1="black democratic" />
+	<seed slot0="john gage" slot1="american federation of government employees" />
+	<seed slot0="john furlong" slot1="vanoc" />
+	<seed slot0="john deutch" slot1="cia" />
+	<seed slot0="john boehner" slot1="republican party" />
+	<seed slot0="john a boehner" slot1="white house" />
+	<seed slot0="john" slot1="american tobacco co" />
+	<seed slot0="joel naroff" slot1="naroff economic advisors" />
+	<seed slot0="jobcirclecom" slot1="office of communications &amp;amp; special events" />
+	<seed slot0="jerry" slot1="xyz corp" />
+	<seed slot0="jemil ould mansour" slot1="tewassoul" />
+	<seed slot0="jeffrey r immelt" slot1="general electric" />
+	<seed slot0="jeff zucker" slot1="nbc universal" />
+	<seed slot0="jean todt" slot1="fia" />
+	<seed slot0="jean  -  francois julliard" slot1="reporters without borders" />
+	<seed slot0="jatuporn prompan" slot1="udd" />
+	<seed slot0="james r shannon" slot1="national institute of health" />
+	<seed slot0="jalaluddin haqqani" slot1="taliban" />
+	<seed slot0="jacques de maio" slot1="international committee of the red cross" />
+	<seed slot0="jack warner" slot1="fifa" />
+	<seed slot0="inc" slot1="virtual outreach / social media kucinich" />
+	<seed slot0="horn" slot1="childrens bureau" />
+	<seed slot0="hedi annabi" slot1="stability mission in haiti" />
+	<seed slot0="harry reid" slot1="senate democratic" />
+	<seed slot0="harriet harman" slot1="labour party" />
+	<seed slot0="hans  -  werner sinn" slot1="ifo" />
+	<seed slot0="hamid karzai" slot1="taliban" />
+	<seed slot0="guido westerwelle" slot1="free democrats" />
+	<seed slot0="greg mccormack" slot1="petroleum extension service" />
+	<seed slot0="gerard larcher" slot1="senate" />
+	<seed slot0="george w bush" slot1="republican congress" />
+	<seed slot0="george h w bush" slot1="republican party" />
+	<seed slot0="erick mwanza" slot1="football association of zambia" />
+	<seed slot0="eric e schmidt" slot1="google" />
+	<seed slot0="eric cantor" slot1="house" />
+	<seed slot0="emil boc" slot1="democratic liberal party" />
+	<seed slot0="duane betournay" slot1="dcfs" />
+	<seed slot0="david mark" slot1="senate" />
+	<seed slot0="darrell steinberg" slot1="senate" />
+	<seed slot0="daniel akerson" slot1="general motors" />
+	<seed slot0="dan becker" slot1="safe climate campaign" />
+	<seed slot0="colm o&amp;apos;gorman" slot1="amnesty international ireland" />
+	<seed slot0="clinton" slot1="cia" />
+	<seed slot0="christopher meyer" slot1="boe" />
+	<seed slot0="chen bingde" slot1="general staff of the people &amp;apos;s liberation army of china" />
+	<seed slot0="chen bingde" slot1="chinese people &amp;apos;s liberation army" />
+	<seed slot0="cellou dalein diallo" slot1="union of democratic forces of guinea" />
+	<seed slot0="brian daniels" slot1="cchr florida" />
+	<seed slot0="boyko borisov" slot1="gerb" />
+	<seed slot0="bernard thibault" slot1="cgt" />
+	<seed slot0="bernard lapasset" slot1="international rugby board" />
+	<seed slot0="ben carliner" slot1="economic strategy institute" />
+	<seed slot0="barack obama" slot1="general motors" />
+	<seed slot0="ban ki  - moon" slot1="un" />
+	<seed slot0="azim premji" slot1="wipro industries" />
+	<seed slot0="aung san suu kyi" slot1="national league for democracy" />
+	<seed slot0="arun shourie" slot1="bharatiya janata party" />
+	<seed slot0="anthony zaffuto" slot1="humantics foundation" />
+	<seed slot0="alan mulally" slot1="ford motor co" />
+	<seed slot0="adam szubin" slot1="office of foreign assets control" />
+	<seed slot0="achim steiner" slot1="united nations environment program" />
+	<seed slot0="abraham h foxman" slot1="anti  -  defamation league" />
+	<seed slot0="aj duffy" slot1="united teachers los angeles" />
+	<seed slot0="`` veronica scrimshaw &amp;apos;&amp;apos;" slot1="corporate communications" />
+	<seed slot0="yukiya amano" slot1="un international atomic energy agency" />
+	<seed slot0="xie zhenhua" slot1="national development and reform commission" />
+	<seed slot0="wimal weerawansa" slot1="national freedom front" />
+	<seed slot0="william fallon" slot1="central command" />
+	<seed slot0="william casey" slot1="cia" />
+	<seed slot0="wen jiabao" slot1="national energy commission" />
+	<seed slot0="wang chen" slot1="state council information office" />
+	<seed slot0="wang chen" slot1="information office of the state council" />
+	<seed slot0="vladimir yakunin" slot1="russian railways" />
+	<seed slot0="vladimir putin" slot1="united russia party" />
+	<seed slot0="victor muller" slot1="spyker" />
+	<seed slot0="valerie plame wilson" slot1="cia" />
+	<seed slot0="toshihiko matsuno" slot1="smbc friend securities" />
+	<seed slot0="tony tyler" slot1="cathay pacific" />
+	<seed slot0="tom metzger" slot1="white aryan resistance" />
+	<seed slot0="tom malinowski" slot1="human rights watch" />
+	<seed slot0="tom daschle" slot1="democratic" />
+	<seed slot0="thomas mirow" slot1="ebrd" />
+	<seed slot0="thomas hoenig" slot1="federal reserve bank of kansas city" />
+	<seed slot0="thomas hoenig" slot1="federal reserve bank" />
+	<seed slot0="takatoshi kato" slot1="international monetary fund" />
+	<seed slot0="suthep thaugsuban" slot1="cres" />
+	<seed slot0="susan docherty" slot1="general motors" />
+	<seed slot0="surono" slot1="volcanology agency" />
+	<seed slot0="steven kull" slot1="university of maryland" />
+	<seed slot0="steve capus" slot1="nbc news" />
+	<seed slot0="simon doonan" slot1="barneys new york" />
+	<seed slot0="shin young  - soo" slot1="world health organization" />
+	<seed slot0="sergei chemezov" slot1="russian technologies" />
+	<seed slot0="sean o&amp;apos;keefe" slot1="eads north america" />
+	<seed slot0="scott  - rrb - " slot1="national automobile dealers association" />
+	<seed slot0="sattam farhan" slot1="baathist" />
+	<seed slot0="sarath fonseka" slot1="defense staff" />
+	<seed slot0="sanjeev gupta" slot1="tech" />
+	<seed slot0="rush limbaugh" slot1="gop" />
+	<seed slot0="rudolph w giuliani" slot1="state senate" />
+	<seed slot0="ross greenburg" slot1="hbo sports" />
+	<seed slot0="roger bouka owoko" slot1="congolese observatory for human rights  - lrb -  ocdh" />
+	<seed slot0="rick scott" slot1="tea party party" />
+	<seed slot0="richard wexler" slot1="nccpr" />
+	<seed slot0="richard j codey" slot1="senate" />
+	<seed slot0="richard dieter" slot1="death penalty information center" />
+	<seed slot0="richard cheney" slot1="central intelligence agency" />
+	<seed slot0="renato solidum" slot1="philippine institute of volcanology and seismology" />
+	<seed slot0="renato schifani" slot1="senate" />
+	<seed slot0="reagan" slot1="aipac conference" />
+	<seed slot0="ray irani" slot1="occidental petroleum" />
+	<seed slot0="ralph reed" slot1="christian coalition" />
+	<seed slot0="osama bin laden" slot1="taliban" />
+	<seed slot0="osama bin laden" slot1="al  -  qaida" />
+	<seed slot0="obama" slot1="senate" />
+	<seed slot0="norine macdonald" slot1="icos" />
+	<seed slot0="noel gayler" slot1="nsa" />
+	<seed slot0="nikolaus von bomhard" slot1="munich re" />
+	<seed slot0="nihad awad" slot1="cair" />
+	<seed slot0="nicolas sarkozy" slot1="european commission" />
+	<seed slot0="nicolas petrovic" slot1="eurostar" />
+	<seed slot0="naveed sattar" slot1="national accountability bureau" />
+	<seed slot0="nancy tessman" slot1="public library" />
+	<seed slot0="mustafa abu al -  yazid" slot1="al  -  qaeda" />
+	<seed slot0="mullah muhammad omar" slot1="taliban" />
+	<seed slot0="mullah mohammed omar" slot1="taliban" />
+	<seed slot0="mohsen rezaei" slot1="revolutionary guards" />
+	<seed slot0="mohammad al -  jasser" slot1="saudi arabian monetary agency" />
+	<seed slot0="mircea geoana" slot1="social democrat" />
+	<seed slot0="miguel d&amp;apos;escoto brockmann" slot1="un general assembly" />
+	<seed slot0="michael sata" slot1="patriotic front" />
+	<seed slot0="michael hayden" slot1="central intelligence agency" />
+	<seed slot0="michael geoghegan" slot1="hsbc" />
+	<seed slot0="meg whitman" slot1="ebay" />
+	<seed slot0="maurice `` hank &amp;apos;&amp;apos; greenberg" slot1="american international group" />
+	<seed slot0="matthew olsen" slot1="guantanamo review task force" />
+	<seed slot0="martin rees" slot1="royal society" />
+	<seed slot0="mark p lagon" slot1="state department &amp;apos;s office to monitor and combat trafficking in persons" />
+	<seed slot0="mark fields" slot1="ford" />
+	<seed slot0="mahmudur rahman" slot1="institute of epidemiology , disease control and research  - lrb -  iedcr" />
+	<seed slot0="mahmoud ahmadinejad" slot1="iranian" />
+	<seed slot0="lyudmila alexeyeva" slot1="moscow helsinki group" />
+	<seed slot0="lynn franco" slot1="conference board consumer research center" />
+	<seed slot0="luo lin" slot1="state work safety administration" />
+	<seed slot0="luis sosa" slot1="popular bloc" />
+	<seed slot0="lidia yermoshina" slot1="central election commission" />
+	<seed slot0="liddy" slot1="aig bobo" />
+	<seed slot0="li rongrong" slot1="assets supervision and administration commission" />
+	<seed slot0="li peiying" slot1="sinopec" />
+	<seed slot0="leon pennetta" slot1="cia black sites" />
+	<seed slot0="leon e panetta" slot1="cia" />
+	<seed slot0="lawrence stutzriem" slot1="us air force" />
+	<seed slot0="lawrence h summers" slot1="national economic council" />
+	<seed slot0="kim carstensen" slot1="wwf global climate initiative" />
+	<seed slot0="khieu samphan" slot1="khmer rouge" />
+	<seed slot0="karsum nyima" slot1="news department" />
+	<seed slot0="karen england" slot1="capitol resource institute" />
+	<seed slot0="justin yifu lin" slot1="world bank" />
+	<seed slot0="josip broz tito" slot1="communist" />
+	<seed slot0="joseph stiglitz" slot1="world bank" />
+	<seed slot0="jose manuel barroso" slot1="eu commission" />
+	<seed slot0="john walsh" slot1="mda dataquick" />
+	<seed slot0="john shattuck" slot1="aclu" />
+	<seed slot0="john chambers" slot1="cisco systems inc" />
+	<seed slot0="john berry" slot1="office of personnel management" />
+	<seed slot0="jimmy carter" slot1="democratic" />
+	<seed slot0="jeffrey zucker" slot1="nbc universal" />
+	<seed slot0="jeffrey immelt" slot1="republican party" />
+	<seed slot0="jeff wilpon" slot1="mets" />
+	<seed slot0="jeff bezos" slot1="amazon" />
+	<seed slot0="jatuporn prompan" slot1="red shirt" />
+	<seed slot0="jason feer" slot1="argus media" />
+	<seed slot0="janet woodcock" slot1="center for drug evaluation and research" />
+	<seed slot0="jan lambregts" slot1="rabobank global financial markets" />
+	<seed slot0="jamie dimon" slot1="jpmorgan chase &amp;amp; co" />
+	<seed slot0="james woolsey" slot1="central intelligence agency" />
+	<seed slot0="james bullard" slot1="st louis fed" />
+	<seed slot0="jacques diouf" slot1="un" />
+	<seed slot0="jacob maroga" slot1="eskom" />
+	<seed slot0="j ann selzer" slot1="selzer &amp;amp; co" />
+	<seed slot0="ismail radwan" slot1="hamas" />
+	<seed slot0="inci" slot1="resourcing i pyramid consulting" />
+	<seed slot0="ilham mahmut" slot1="japan uighur association" />
+	<seed slot0="ichiro ozawa" slot1="democratic party" />
+	<seed slot0="ian robertson" slot1="bmw" />
+	<seed slot0="huguette labelle" slot1="transparency international" />
+	<seed slot0="huang songyou" slot1="spc" />
+	<seed slot0="hector sants" slot1="financial services authority" />
+	<seed slot0="harry reid" slot1="senate judiciary committee" />
+	<seed slot0="harry reid" slot1="senate finance committee" />
+	<seed slot0="harry reid" slot1="democratic house" />
+	<seed slot0="hans schellnhuber" slot1="potsdam institute for climate impact research  - lrb -  pik" />
+	<seed slot0="guillaume soro" slot1="new forces" />
+	<seed slot0="greg mccormack" slot1="university of texas" />
+	<seed slot0="glenn becks" slot1="united american tea party" />
+	<seed slot0="gilles duceppe" slot1="bloc quebecois" />
+	<seed slot0="george w bush" slot1="white house counsel &amp;apos;s office" />
+	<seed slot0="george j tenet" slot1="government information awareness" />
+	<seed slot0="gennady zyuganov" slot1="communist party" />
+	<seed slot0="gabriel grecu" slot1="external information service" />
+	<seed slot0="fred bergsten" slot1="peterson institute for international economics" />
+	<seed slot0="francois brousse" slot1="air france" />
+	<seed slot0="ferdinand piech" slot1="volkswagen" />
+	<seed slot0="ewald nowotny" slot1="european central bank" />
+	<seed slot0="emma marcegaglia" slot1="confindustria" />
+	<seed slot0="efraim zuroff" slot1="simon wiesenthal center" />
+	<seed slot0="edwin dyer" slot1="salafist group" />
+	<seed slot0="edi rama" slot1="socialist party" />
+	<seed slot0="douglas elmendorf" slot1="congressional budget office" />
+	<seed slot0="doris leuthard" slot1="swiss confederation" />
+	<seed slot0="dmitry medvedev" slot1="gazprom" />
+	<seed slot0="dick cheney" slot1="halliburton" />
+	<seed slot0="david williams" slot1="citizens against government waste" />
+	<seed slot0="david sims" slot1="bp" />
+	<seed slot0="david naylor" slot1="business affairs" />
+	<seed slot0="david cameron" slot1="british conservative" />
+	<seed slot0="daniel cohn  -  bendit" slot1="greens" />
+	<seed slot0="dale watson" slot1="cia" />
+	<seed slot0="cristina kirchner" slot1="afp" />
+	<seed slot0="cristian parvulescu" slot1="pro democratia" />
+	<seed slot0="colin matthews" slot1="baa" />
+	<seed slot0="coas  - rrb -  rookmangud katawal" slot1="army staff" />
+	<seed slot0="clinton" slot1="paramount pictures &amp;apos; motion picture group" />
+	<seed slot0="clinton" slot1="paramount communications" />
+	<seed slot0="clinton" slot1="democratic" />
+	<seed slot0="clarke cooper" slot1="log cabin republicans" />
+	<seed slot0="christian berle" slot1="log cabin republicans" />
+	<seed slot0="chris johns" slot1="pg&amp;amp;e" />
+	<seed slot0="cheney" slot1="halliburton" />
+	<seed slot0="charles b rangel" slot1="house ways and means committee" />
+	<seed slot0="chai chidchob" slot1="parliament" />
+	<seed slot0="carol bartz" slot1="yahoo !" />
+	<seed slot0="carl  -  peter forster" slot1="general motors europe" />
+	<seed slot0="cara tracy" slot1="professional development" />
+	<seed slot0="captain junwei sun" slot1="fox" />
+	<seed slot0="bush" slot1="foreign intelligence advisory board" />
+	<seed slot0="bush" slot1="democratic national convention hawaii free press articles" />
+	<seed slot0="bob harlan" slot1="green bay packers" />
+	<seed slot0="bill gates" slot1="world bank" />
+	<seed slot0="bill frist" slot1="us senate" />
+	<seed slot0="bill clinton" slot1="republicans" />
+	<seed slot0="bergholz" slot1="church one" />
+	<seed slot0="barry" slot1="general electric" />
+	<seed slot0="barbara stocking" slot1="oxfam" />
+	<seed slot0="barack obama" slot1="council of economic advisers" />
+	<seed slot0="aziz narejo" slot1="sindhi association of north america" />
+	<seed slot0="aung san suu kyi" slot1="nld" />
+	<seed slot0="atiur rahman" slot1="bangladesh bank" />
+	<seed slot0="antonis samaras" slot1="new democracy party" />
+	<seed slot0="anthony golez" slot1="national disaster coordinating council" />
+	<seed slot0="andrew stettner" slot1="national employment law project" />
+	<seed slot0="andrew scotland" slot1="lone star state" />
+	<seed slot0="ali al -  lami" slot1="accountability and justice commission" />
+	<seed slot0="alan k simpson" slot1="republicans" />
+	<seed slot0="akhil gupta" slot1="bharti enterprises" />
+	<seed slot0="ajai sahni" slot1="institute for conflict management" />
+	<seed slot0="ahmet turk" slot1="democratic society party" />
+	<seed slot0="ahmed bin saeed al -  maktoum" slot1="supreme fiscal committee" />
+	<seed slot0="adolf eichmann" slot1="gestapo" />
+	<seed slot0="abu bakar bashir" slot1="jemaah islamiyah" />
+	<seed slot0="abdolmalek rigi" slot1="jundallah" />
+	<seed slot0="`` victoria attfield &amp;apos;&amp;apos;" slot1="education and events national center for victims of crime" />
+	<seed slot0="zhu zhiqiang" slot1="wuhan municipal bureau of land resources and housing management" />
+	<seed slot0="zhu quan" slot1="tibet autonomous regional seismological bureau" />
+	<seed slot0="zhu min" slot1="people &amp;apos;s bank of china" />
+	<seed slot0="zhang yesui" slot1="security council" />
+	<seed slot0="zhang xiaoqiang" slot1="national development and reform commission" />
+	<seed slot0="zeti akhtar aziz" slot1="bank negara malaysia" />
+	<seed slot0="yury solomonov" slot1="moscow institute of thermal technology" />
+	<seed slot0="yoshimasa kanayama" slot1="jal" />
+	<seed slot0="yadollah javani" slot1="revolutionary guards corps" />
+	<seed slot0="william hague" slot1="bnp" />
+	<seed slot0="william c weldon" slot1="johnson &amp;amp; johnson" />
+	<seed slot0="wang huning" slot1="policy research office" />
+	<seed slot0="vladimir simonko" slot1="lithuanian gay league" />
+	<seed slot0="vladimir putin" slot1="united russia" />
+	<seed slot0="vinny cerrato" slot1="washington redskins" />
+	<seed slot0="vikram pandit" slot1="citi" />
+	<seed slot0="v pirapaharan" slot1="ltte" />
+	<seed slot0="ursula burns" slot1="xerox corp" />
+	<seed slot0="trichet" slot1="ecb" />
+	<seed slot0="trent humphries" slot1="tucson tea party" />
+	<seed slot0="tony tyler" slot1="cathay pacific airways" />
+	<seed slot0="tom wheeler" slot1="cellular telephone industry association" />
+	<seed slot0="tom albanese" slot1="rio tinto" />
+	<seed slot0="toad" slot1="florida tea party" />
+	<seed slot0="timothy m warren jr" slot1="warren group" />
+	<seed slot0="thomas r frieden" slot1="centers for disease control and prevention" />
+	<seed slot0="thomas c reed" slot1="pentagon &amp;apos;s telecommunications , command and control system" />
+	<seed slot0="theofanis tsiokris" slot1="fivb sports events council" />
+	<seed slot0="tatyana lokshina" slot1="human rights watch" />
+	<seed slot0="tami overby" slot1="us chamber of commerce" />
+	<seed slot0="takero inaizumi" slot1="mizuho investors securities" />
+	<seed slot0="suzanne shell" slot1="american family advocacy center" />
+	<seed slot0="sunil gulati" slot1="us soccer federation" />
+	<seed slot0="steven y brumfield" slot1="community associations" />
+	<seed slot0="steve ellis" slot1="taxpayers for common sense" />
+	<seed slot0="steve ballmer" slot1="microsoft corp" />
+	<seed slot0="stephen anderson" slot1="world food program" />
+	<seed slot0="steny h hoyer" slot1="house" />
+	<seed slot0="simon webb" slot1="ministry of defence" />
+	<seed slot0="sheikh raed salah" slot1="islamic movement" />
+	<seed slot0="scott thompson" slot1="paypal" />
+	<seed slot0="sarah palin" slot1="university of texas school of law" />
+	<seed slot0="saleh al -  mutlaq" slot1="national dialogue front" />
+	<seed slot0="roza otunbayeva" slot1="social democratic" />
+	<seed slot0="roger o&amp;apos;connor" slot1="erc" />
+	<seed slot0="rodolphe adada" slot1="unamid" />
+	<seed slot0="roberto micheletti" slot1="organization of american states" />
+	<seed slot0="robert steinberg" slot1="radiology informatics" />
+	<seed slot0="robert mueller" slot1="fbi radical fundamentalists unit" />
+	<seed slot0="robert moffat" slot1="ibm" />
+	<seed slot0="robert m gates" slot1="central intelligence agency" />
+	<seed slot0="robert lanza" slot1="advanced cell technology" />
+	<seed slot0="robert jordan" slot1="imaging services" />
+	<seed slot0="robert groves" slot1="census bureau" />
+	<seed slot0="robert greenstein" slot1="center on budget and policy priorities" />
+	<seed slot0="robert gates" slot1="central intelligence agency" />
+	<seed slot0="robert dujarric" slot1="institute of contemporary japanese studies" />
+	<seed slot0="rick wagoner" slot1="gm" />
+	<seed slot0="rick scott" slot1="columbia / hca" />
+	<seed slot0="richard perle" slot1="isi" />
+	<seed slot0="richard nixon" slot1="republicans" />
+	<seed slot0="richard b dasher" slot1="us  -  asia technologymanagement center" />
+	<seed slot0="rich republicans" slot1="democratic party" />
+	<seed slot0="ri yong ho" slot1="korean people &amp;apos;s army" />
+	<seed slot0="rauff hakeem" slot1="slmc" />
+	<seed slot0="randi weingarten" slot1="united federation of teachers" />
+	<seed slot0="ramchandra paudel" slot1="nepali congress" />
+	<seed slot0="ram chandra poudel" slot1="parliamentary party" />
+	<seed slot0="ram chandra poudel" slot1="congress" />
+	<seed slot0="rakibur rahman" slot1="dhaka stock exchange" />
+	<seed slot0="rajiv shah" slot1="usaid" />
+	<seed slot0="rafael correa" slot1="ecuador" />
+	<seed slot0="qian weichang" slot1="shanghai university of technology" />
+	<seed slot0="prasada rao" slot1="unaids" />
+	<seed slot0="post= derrick t dortch" slot1="diversa group" />
+	<seed slot0="pierre bordry" slot1="afld" />
+	<seed slot0="pharmicists" slot1="practitioner planned parenthood" />
+	<seed slot0="phan nhu nghia" slot1="vietnamese red cross" />
+	<seed slot0="petre" slot1="veggie wheels" />
+	<seed slot0="petr necas" slot1="civic democratic party" />
+	<seed slot0="peter voser" slot1="royal dutch shell" />
+	<seed slot0="peter sands" slot1="standard chartered" />
+	<seed slot0="peter pitts" slot1="center for medicine in the public interest" />
+	<seed slot0="peter orszag" slot1="omb" />
+	<seed slot0="paul tillich" slot1="mills college" />
+	<seed slot0="paul s appelbaum" slot1="columbia" />
+	<seed slot0="paul  -  louis arslanian" slot1="investigation and analysis bureau" />
+	<seed slot0="patrick clawson" slot1="washington institute for near east policy" />
+	<seed slot0="papal infallibility" slot1="christ &amp;apos;s church" />
+	<seed slot0="oliver sacks" slot1="student council" />
+	<seed slot0="obama" slot1="new jersey progressive caucus  -  communications" />
+	<seed slot0="obama" slot1="agriculture" />
+	<seed slot0="norbert reithofer" slot1="bmw" />
+	<seed slot0="nonoy espina" slot1="national union of journalists of the philippines" />
+	<seed slot0="noam chomsky" slot1="sds / new left" />
+	<seed slot0="nigger" slot1="towel" />
+	<seed slot0="nick reilly" slot1="general motors" />
+	<seed slot0="nick reilly" slot1="gm europe" />
+	<seed slot0="nick griffins" slot1="bnp" />
+	<seed slot0="nicholas phillips" slot1="supreme court" />
+	<seed slot0="natthawut saikua" slot1="udd" />
+	<seed slot0="narseal batiste" slot1="al  -  qaeda" />
+	<seed slot0="naomi benyowitz" slot1="finance" />
+	<seed slot0="nan roman" slot1="national alliance to end homelessness" />
+	<seed slot0="nam sung  -  wook" slot1="institute for national security strategy" />
+	<seed slot0="mullah bahador" slot1="taliban" />
+	<seed slot0="motonobu miyazaki" slot1="yamada corp" />
+	<seed slot0="mohtarma benazir bhutto" slot1="ppp decries use of force against media" />
+	<seed slot0="mohsen rezai" slot1="revolutionary guards corps" />
+	<seed slot0="mohanadas ramasamy" slot1="rhb bank" />
+	<seed slot0="mohanadas ramasamy" slot1="mahsa college" />
+	<seed slot0="mohanadas ramasamy" slot1="finance monash university" />
+	<seed slot0="mohammed al -  sumairi" slot1="yemenia" />
+	<seed slot0="mohammed yusuf" slot1="taliban" />
+	<seed slot0="mohamed mahdi akef" slot1="muslim brotherhood" />
+	<seed slot0="mohamed el  -  erian" slot1="pacific investment management co" />
+	<seed slot0="modesto `` mitch &amp;apos;&amp;apos; maidique" slot1="florida international university" />
+	<seed slot0="mitt romney" slot1="republicans" />
+	<seed slot0="mitch mcconnell" slot1="senate judiciary committee" />
+	<seed slot0="mike mcconnell" slot1="national intelligence" />
+	<seed slot0="mike fennell" slot1="commonwealth games federation" />
+	<seed slot0="mike davis" slot1="us golf association" />
+	<seed slot0="miguel d&amp;apos;escoto brockmann" slot1="un general assembly  - lrb -  ga" />
+	<seed slot0="melvin goodman" slot1="office of soviet affairs" />
+	<seed slot0="melvin goodman" slot1="division" />
+	<seed slot0="mediamatters" slot1="first lady" />
+	<seed slot0="mccain" slot1="republican" />
+	<seed slot0="max warburg" slot1="british secret service" />
+	<seed slot0="massud barzani" slot1="patriotic union of kurdistan" />
+	<seed slot0="martine aubry" slot1="socialist party" />
+	<seed slot0="martin schulz" slot1="socialists" />
+	<seed slot0="mark rutte" slot1="vvd" />
+	<seed slot0="mark laneve" slot1="general motors" />
+	<seed slot0="mark fields" slot1="ford motor co" />
+	<seed slot0="marjorie cohn" slot1="national lawyers guild" />
+	<seed slot0="margaret chan" slot1="world health organisation" />
+	<seed slot0="mara keisling" slot1="ncte" />
+	<seed slot0="manuela ferreira leite" slot1="psd" />
+	<seed slot0="mangal bagh" slot1="lashkar  - e -  islam" />
+	<seed slot0="malcolm speed" slot1="international cricket council" />
+	<seed slot0="ma ying  - jeou" slot1="kuomintang" />
+	<seed slot0="ma ying  - jeou" slot1="kmt" />
+	<seed slot0="louis farrakhan" slot1="nation of islam" />
+	<seed slot0="lin boqiang" slot1="xiamen university" />
+	<seed slot0="lillian koller" slot1="department of human services" />
+	<seed slot0="liang baohua" slot1="communist party" />
+	<seed slot0="li yang" slot1="chinese academy of social sciences" />
+	<seed slot0="li congjun" slot1="china xinhua news network corporation" />
+	<seed slot0="li cheng" slot1="china construction bank" />
+	<seed slot0="leo gerard" slot1="united steelworkers" />
+	<seed slot0="leif johansson" slot1="volvo group" />
+	<seed slot0="lee hunt" slot1="international association of drilling contractors" />
+	<seed slot0="larry ellison" slot1="oracle" />
+	<seed slot0="lakshman achuthan" slot1="economic cycle research institute" />
+	<seed slot0="koji endo" slot1="advanced research japan" />
+	<seed slot0="klaus shwab" slot1="world economic forum" />
+	<seed slot0="kim choong  - soo" slot1="bank of korea" />
+	<seed slot0="kieran suckling" slot1="center for biological diversity" />
+	<seed slot0="keone kealoha" slot1="malama kaua&amp;apos;i" />
+	<seed slot0="ken pruitt" slot1="senate" />
+	<seed slot0="ken dulaney" slot1="gartner" />
+	<seed slot0="ken deibert" slot1="arizona department of economic security" />
+	<seed slot0="ken czubay" slot1="ford motor co" />
+	<seed slot0="katsuya okada" slot1="democratic party of japan" />
+	<seed slot0="kanayo nwanze" slot1="international fund for agricultural development" />
+	<seed slot0="kai eide" slot1="united nations" />
+	<seed slot0="julio grondona" slot1="argentine football association" />
+	<seed slot0="julia eileen gillard" slot1="australian labor party" />
+	<seed slot0="joseph kabila" slot1="economic community of central african states" />
+	<seed slot0="joseph farah" slot1="worldnetdaily" />
+	<seed slot0="joseph farah" slot1="arab american news" />
+	<seed slot0="jose sergio gabrielli" slot1="petrobras" />
+	<seed slot0="john sawers" slot1="secret intelligence service" />
+	<seed slot0="john paul ii" slot1="church of england" />
+	<seed slot0="john kilduff" slot1="mf global" />
+	<seed slot0="john engler" slot1="national association of manufacturers" />
+	<seed slot0="john dayal &amp;apos;&amp;apos;" slot1="all india catholic union" />
+	<seed slot0="john a boehner" slot1="senate" />
+	<seed slot0="johannes zutt" slot1="world bank" />
+	<seed slot0="joe ellis" slot1="denver broncos" />
+	<seed slot0="joan claybrook" slot1="public citizen" />
+	<seed slot0="joachim prinz" slot1="american jewish congress" />
+	<seed slot0="jimmy carter" slot1="hamas" />
+	<seed slot0="jim zogby" slot1="arab -  american institute" />
+	<seed slot0="jim albaugh" slot1="boeing commercial airplanes" />
+	<seed slot0="jessica yellin" slot1="republicans" />
+	<seed slot0="jerry m woodall" slot1="lightspin technologies , inc" />
+	<seed slot0="jeff schuster" slot1="jd power &amp;amp; associates" />
+	<seed slot0="jean  -  claude trichet" slot1="ecb" />
+	<seed slot0="jan fischer" slot1="european commission" />
+	<seed slot0="james zogby" slot1="arab american institute" />
+	<seed slot0="james lockhart" slot1="federal housing finance agency" />
+	<seed slot0="james lee" slot1="first nz capital" />
+	<seed slot0="jakob kellenberger" slot1="international committee of the red cross" />
+	<seed slot0="jadranka kosor" slot1="hdz" />
+	<seed slot0="jackson janes" slot1="american institute for contemporary german studies" />
+	<seed slot0="jack welsh" slot1="ge" />
+	<seed slot0="j d roy atchison" slot1="gulf breeze sports association" />
+	<seed slot0="ismail haniya" slot1="hamas" />
+	<seed slot0="ismael ahmed" slot1="arab community center for economic and social services" />
+	<seed slot0="irina bokova" slot1="unesco" />
+	<seed slot0="irene rosenfeld" slot1="kraft foods" />
+	<seed slot0="ira rheingold" slot1="national association of consumer advocates" />
+	<seed slot0="ira forman" slot1="democratic congressional campaign committee" />
+	<seed slot0="ilena rosenthal" slot1="humantics foundation for women" />
+	<seed slot0="ian ritchie" slot1="england club" />
+	<seed slot0="ian ritchie" slot1="all england lawn tennis and croquet club" />
+	<seed slot0="huang songyou" slot1="supreme people &amp;apos;s court" />
+	<seed slot0="hu xiaolian" slot1="pboc" />
+	<seed slot0="howard stringer" slot1="sony" />
+	<seed slot0="howard schmidt" slot1="microsoft" />
+	<seed slot0="holger schmieding" slot1="bank of america merrill lynch" />
+	<seed slot0="hisashi owada" slot1="international court of justice" />
+	<seed slot0="hillary rodham clinton" slot1="palestinian authority" />
+	<seed slot0="henry paulson" slot1="goldman sachs" />
+	<seed slot0="heng samrin" slot1="cambodian national assembly" />
+	<seed slot0="hemant karkare" slot1="ats team" />
+	<seed slot0="heather eves" slot1="bushmeat crisis task force" />
+	<seed slot0="hasan nasrallah" slot1="republican party" />
+	<seed slot0="harry reid" slot1="senate armed services committee" />
+	<seed slot0="harriet harman" slot1="labour" />
+	<seed slot0="harold schaitberger" slot1="international association of fire fighters" />
+	<seed slot0="hans pandeya" slot1="global gaming factory" />
+	<seed slot0="hans heinrich driftmann" slot1="chamber of commerce and industry" />
+	<seed slot0="hannity" slot1="alaska state personnel board" />
+	<seed slot0="hamid karzai" slot1="taliban" />
+	<seed slot0="hala maksoud" slot1="adc" />
+	<seed slot0="hh" slot1="republican opponent" />
+	<seed slot0="guruji" slot1="all india trinamool congress" />
+	<seed slot0="gordon brown" slot1="liberal democrats" />
+	<seed slot0="gordon brown" slot1="labor party" />
+	<seed slot0="gerald m levin" slot1="time warner" />
+	<seed slot0="george walker bush" slot1="enron" />
+	<seed slot0="george w bush" slot1="senate" />
+	<seed slot0="george w bush" slot1="saar foundation" />
+	<seed slot0="george w bush" slot1="council on american  -  islamic relations" />
+	<seed slot0="george w bush" slot1="arab  -  american political action committee" />
+	<seed slot0="george papandreou" slot1="pasok" />
+	<seed slot0="geoffrey lambert" slot1="intel" />
+	<seed slot0="gene healy" slot1="cato institute" />
+	<seed slot0="geert wilders" slot1="freedom party" />
+	<seed slot0="gary johnson" slot1="texas department of criminal justice" />
+	<seed slot0="gary hooser" slot1="state senate" />
+	<seed slot0="gary haugen" slot1="international justice mission" />
+	<seed slot0="gao jinghong" slot1="ministry of public security" />
+	<seed slot0="franz beckenbauer" slot1="bayern munich" />
+	<seed slot0="frank o&amp;apos;donnell" slot1="clean air watch" />
+	<seed slot0="flavio briatore" slot1="renault" />
+	<seed slot0="faruq hosni" slot1="united nations educational , scientific and cultural organisation" />
+	<seed slot0="ethan nadelmann" slot1="drug policy alliance" />
+	<seed slot0="eric tayag" slot1="national epidemiology center" />
+	<seed slot0="eric schwaab" slot1="national marine fisheries service" />
+	<seed slot0="eric cantor" slot1="white house" />
+	<seed slot0="edward yingling" slot1="american bankers association" />
+	<seed slot0="edward demarco" slot1="federal housing finance agency" />
+	<seed slot0="edward cassidy" slot1="holy see &amp;apos;s commission for religious relations" />
+	<seed slot0="edgar bronfman , jr" slot1="time warner communications" />
+	<seed slot0="edgar bronfman" slot1="time warner" />
+	<seed slot0="ed whitacre" slot1="general motors" />
+	<seed slot0="ed cummings" slot1="haverford township police" />
+	<seed slot0="eoe" slot1="adn / unit" />
+	<seed slot0="e gordon gee" slot1="michigan state" />
+	<seed slot0="douglas holtz" slot1="congressional budget office" />
+	<seed slot0="donald barrett" slot1="itv ventures" />
+	<seed slot0="don l blankenship" slot1="massey energy" />
+	<seed slot0="don johnson" slot1="general motors" />
+	<seed slot0="don blankenship" slot1="massey energy" />
+	<seed slot0="dmitry medvedev" slot1="russian strategic rocket forces" />
+	<seed slot0="ding zhijie" slot1="university of international business and economics" />
+	<seed slot0="dimitra ioannou" slot1="european union election observation mission to afghanistan" />
+	<seed slot0="dieter zetsche" slot1="daimler" />
+	<seed slot0="dick cheney" slot1="senate" />
+	<seed slot0="dick armey" slot1="house republican conference" />
+	<seed slot0="devra davis" slot1="center for environmental oncology" />
+	<seed slot0="dennis blair" slot1="national intelligence" />
+	<seed slot0="daw aung san suu kyi" slot1="myanmar" />
+	<seed slot0="david walker" slot1="gao" />
+	<seed slot0="david rosen" slot1="american jewish committee" />
+	<seed slot0="david petraeus" slot1="central command" />
+	<seed slot0="david okeyo" slot1="local organising committee" />
+	<seed slot0="david mark" slot1="senate" />
+	<seed slot0="david mack" slot1="middle east institute" />
+	<seed slot0="daud ali najafi" slot1="independent election commission" />
+	<seed slot0="darrell steinberg" slot1="democratic" />
+	<seed slot0="daniel shapiro" slot1="national security council" />
+	<seed slot0="daniel seaman" slot1="israeli government press office" />
+	<seed slot0="daniel davis" slot1="norad tac" />
+	<seed slot0="dale watson" slot1="fbi radical fundamentalists unit" />
+	<seed slot0="curtis gans" slot1="center for the study of the american electorate" />
+	<seed slot0="curtis gans" slot1="american university" />
+	<seed slot0="corazon aquino" slot1="roman catholic church" />
+	<seed slot0="christopher viehbacher" slot1="genzyme" />
+	<seed slot0="christoph franz" slot1="lufthansa" />
+	<seed slot0="christina romer" slot1="council of economic advisers" />
+	<seed slot0="christianity" slot1="viacom" />
+	<seed slot0="chris oynes" slot1="offshore energy and minerals management at the service" />
+	<seed slot0="chen zhili" slot1="all  -  china women &amp;apos;s federation" />
+	<seed slot0="chen haosu" slot1="cpaffc" />
+	<seed slot0="chea chanto" slot1="national bank of cambodia" />
+	<seed slot0="charles bolden" slot1="nasa" />
+	<seed slot0="cecile richards" slot1="planned parenthood federation of america" />
+	<seed slot0="catholic" slot1="european commission" />
+	<seed slot0="carlos ghosn" slot1="renault  -  nissan" />
+	<seed slot0="calvin pace" slot1="afc" />
+	<seed slot0="bush" slot1="us senate" />
+	<seed slot0="bruce buchanan" slot1="jetstar" />
+	<seed slot0="britt beemer" slot1="america &amp;apos;s research group" />
+	<seed slot0="brett favre" slot1="nfl" />
+	<seed slot0="boris gryzlov" slot1="united russia" />
+	<seed slot0="bobby stumbo" slot1="republican county board" />
+	<seed slot0="bob mckerrow" slot1="international federation of red cross and red crescent societies" />
+	<seed slot0="bob furnad" slot1="cnn international" />
+	<seed slot0="bob dole" slot1="senate" />
+	<seed slot0="bob abbey" slot1="bureau of land management" />
+	<seed slot0="binyamin netanyahu" slot1="likud" />
+	<seed slot0="bill oreillys" slot1="dnc caucus" />
+	<seed slot0="bill goold" slot1="congressional progressive caucus" />
+	<seed slot0="bill bernstein" slot1="mosaic family services" />
+	<seed slot0="beverly russell" slot1="christian coalition" />
+	<seed slot0="barack obama" slot1="republican party" />
+	<seed slot0="barack obama" slot1="nato" />
+	<seed slot0="barack obama" slot1="economic recovery advisory board" />
+	<seed slot0="barack obama" slot1="al  -  qaeda" />
+	<seed slot0="aung san suu kyi" slot1="afp" />
+	<seed slot0="arthur kroeber" slot1="dragonomics" />
+	<seed slot0="ari vatanen" slot1="fia" />
+	<seed slot0="anura kumara dissanayake" slot1="jvp" />
+	<seed slot0="antonio guterres" slot1="unhcr" />
+	<seed slot0="anthony lake" slot1="un children &amp;apos;s fund" />
+	<seed slot0="anthony d romero" slot1="american civil liberties union" />
+	<seed slot0="angelica salas" slot1="coalition for humane immigrant rights of los angeles" />
+	<seed slot0="aneurin bevan" slot1="british labor party" />
+	<seed slot0="andy lipow" slot1="lipow oil associates" />
+	<seed slot0="andrew mwangura" slot1="east african seafarers assistance programme" />
+	<seed slot0="amit  - rrb -  yoran" slot1="port authority" />
+	<seed slot0="amar ubadah al -  waili" slot1="al -  qaida" />
+	<seed slot0="amando m tetangco jr" slot1="central bank" />
+	<seed slot0="alixandria lapp" slot1="house majority pac" />
+	<seed slot0="ali osman mohamed taha" slot1="vice - " />
+	<seed slot0="ali  -  akbar salehi" slot1="atomic energy organization" />
+	<seed slot0="alexander bortnikov" slot1="federal security service" />
+	<seed slot0="albert foer" slot1="american antitrust institute" />
+	<seed slot0="albader parad" slot1="abu sayyaf" />
+	<seed slot0="alan k simpson" slot1="senate" />
+	<seed slot0="alan dupont" slot1="university of sydney" />
+	<seed slot0="alan dupont" slot1="centre for international security studies" />
+	<seed slot0="alan b lancz" slot1="alan b lancz &amp;amp; associates" />
+	<seed slot0="aladdin ayesh" slot1="centre of vibro  -  acoustics and fatigue , department of process and systems engineering , school of engineering cranfield university" />
+	<seed slot0="akio toyoda" slot1="toyoda motor sales" />
+	<seed slot0="akio toyoda" slot1="toyota" />
+	<seed slot0="adrian brody" slot1="nazis" />
+	<seed slot0="achmat dangor" slot1="nelson mandela foundation" />
+	<seed slot0="achim steiner" slot1="united nations environment programme" />
+	<seed slot0="abu omer al -  baghdadi" slot1="islamic state of iraq" />
+	<seed slot0="abraham foxman" slot1="adl" />
+	<seed slot0="aaron ringera" slot1="kacc" />
+	<seed slot0="aamir khawaja" slot1="toronto community housing" />
+</seeds>

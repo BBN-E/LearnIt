@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+	<target name="org_website" elf_ontology_type="org_website"
+          description="{1} is the website of {0}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_org" elf_role="0_org"
+           mention_constraints="(acetype ORG) (min-entitylevel DESC)" />
+    <slot slotnum="1" description="?" type="value" elf_ontology_type="1_url" elf_role="1_url"
+           mention_constraints="(type Contact-Info.URL)" />
+    <slot_pair a="1" b="0" symmetric="0" must_not_corefer="1"/>
+  </target>
+</targets>

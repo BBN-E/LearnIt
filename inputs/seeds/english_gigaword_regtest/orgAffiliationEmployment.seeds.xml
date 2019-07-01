@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Employment" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="pervez musharraf" slot1="pakistani" />
+	<seed slot0="parnaz azima" slot1="radio farda" />
+	<seed slot0="robert gibbs" slot1="white house" />
+	<seed slot0="robert rubin" slot1="treasury" />
+	<seed slot0="paul o'neill" slot1="treasury" />
+	<seed slot0="alan mulally" slot1="ford motor co" />
+	<seed slot0="hiroyuki hosoda" slot1="cabinet" />
+	<seed slot0="yasser arafat" slot1="plo" />
+	<seed slot0="diego maradona" slot1="argentinian" />
+	<seed slot0="lloyd bentsen" slot1="treasury" />
+	<seed slot0="mahmoud zahar" slot1="hamas" />
+	<seed slot0="robert levinson" slot1="fbi" />
+	<seed slot0="hans tietmeyer" slot1="bundesbank" />
+	<seed slot0="jill carroll" slot1="christian science monitor" />
+	<seed slot0="luiz inacio lula da silva" slot1="brazilian" />
+	<seed slot0="ari fleischer" slot1="white house" />
+	<seed slot0="yasser arafat" slot1="palestinian authority" />
+	<seed slot0="michel platini" slot1="uefa" />
+	<seed slot0="carol bartz" slot1="yahoo inc" />
+	<seed slot0="hugo chavez" slot1="venezuelan" />
+	<seed slot0="alexander nikitin" slot1="bellona" />
+	<seed slot0="valerie plame" slot1="cia" />
+	<seed slot0="bob dole" slot1="senate" />
+	<seed slot0="hein verbruggen" slot1="uci" />
+	<seed slot0="yasser arafat" slot1="palestinian" />
+	<seed slot0="mike mccurry" slot1="white house" />
+	<seed slot0="mark hurd" slot1="oracle corp" />
+	<seed slot0="yasser arafat" slot1="palestine liberation organization" />
+	<seed slot0="margaret hassan" slot1="care international" />
+	<seed slot0="evo morales" slot1="bolivian" />
+	<seed slot0="mahmoud ahmadinejad" slot1="iranian" />
+	<seed slot0="gerry adams" slot1="sinn fein" />
+	<seed slot0="paul wolfowitz" slot1="world bank" />
+	<seed slot0="ron gettelfinger" slot1="united auto workers" />
+	<seed slot0="florence aubenas" slot1="liberation" />
+	<seed slot0="jonas savimbi" slot1="unita" />
+	<seed slot0="umberto bossi" slot1="northern league" />
+	<seed slot0="yohei kono" slot1="liberal democratic party" />
+	<seed slot0="yasser arafat" slot1="palestine liberation organisation" />
+	<seed slot0="primo nebiolo" slot1="international amateur athletic federation" />
+	<seed slot0="jim nicholson" slot1="va" />
+	<seed slot0="ken whisenhunt" slot1="arizona cardinals" />
+	<seed slot0="robert zoellick" slot1="world bank" />
+	<seed slot0="sitaram kesri" slot1="congress party" />
+	<seed slot0="jim zorn" slot1="washington redskins" />
+	<seed slot0="jim leyland" slot1="pittsburgh pirates" />
+	<seed slot0="jonas savimbi" slot1="national union for the total independence of angola" />
+	<seed slot0="carol bartz" slot1="yahoo" />
+	<seed slot0="andrei babitsky" slot1="radio liberty" />
+	<seed slot0="kojo annan" slot1="cotecna inspection sa" />
+	<seed slot0="jerry west" slot1="los angeles lakers" />
+	<seed slot0="carol bartz" slot1="yahoo !" />
+	<seed slot0="barry alvarez" slot1="badgers" />
+	<seed slot0="hank paulson" slot1="treasury" />
+	<seed slot0="robert iger" slot1="walt disney co" />
+	<seed slot0="bernd schuster" slot1="madrid" />
+	<seed slot0="andrew meldrum" slot1="the guardian" />
+	<seed slot0="michael laudrup" slot1="getafe" />
+	<seed slot0="bruno megret" slot1="national front" />
+	<seed slot0="john snow" slot1="treasury" />
+	<seed slot0="timothy geithner" slot1="treasury" />
+	<seed slot0="bob boone" slot1="cincinnati reds" />
+	<seed slot0="shoko asahara" slot1="aum supreme truth" />
+	<seed slot0="jacques delors" slot1="european commission" />
+</seeds>

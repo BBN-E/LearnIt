@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_other_family" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="george herbert walker bush" slot1="prescott bush" />
+	<seed slot0="george bush" slot1="john walker" />
+	<seed slot0="mohammed" slot1="imam hussein" />
+	<seed slot0="sarah" slot1="sarah palin" />
+	<seed slot0="ferdinand porsche" slot1="ferdinand piech" />
+	<seed slot0="felix warburg" slot1="paul moritz warburg" />
+	<seed slot0="barack obama sr" slot1="grandma" />
+	<seed slot0="quentin davies" slot1="jessica davies" />
+	<seed slot0="george w bush" slot1="prescott bush" />
+	<seed slot0="warren strober" slot1="hyman strober" />
+	<seed slot0="prophet" slot1="abu talib" />
+	<seed slot0="mir hossein mousavi" slot1="seyed ali mousavi" />
+	<seed slot0="tiger woods" slot1="cheyenne woods" />
+	<seed slot0="prophet" slot1="abbas" />
+	<seed slot0="mir hossein mousavi" slot1="seyed ali" />
+	<seed slot0="dwight d eisenhower" slot1="l ron hubbard" />
+	<seed slot0="ali jassim mohammed" slot1="mohammed abdul hussein" />
+	<seed slot0="tariq ramadan" slot1="hassan al -  bannas" />
+	<seed slot0="richard wagner" slot1="wolfgang wagner" />
+	<seed slot0="mohammed vi" slot1="moulay ismail" />
+	<seed slot0="mohammed" slot1="mir hossein mousavi" />
+	<seed slot0="mohammed" slot1="hussein" />
+	<seed slot0="baron wriothesley" slot1="henry wriothesley" />
+	<seed slot0="akmal shaikh" slot1="soohail" />
+	<seed slot0="stanley tollman" slot1="gavin tollman" />
+	<seed slot0="robert peck , sr" slot1="elder" />
+	<seed slot0="priest vicar of santos reis magos" slot1="violante henriqueta" />
+	<seed slot0="michael chertoff" slot1="benjamin chertoff" />
+	<seed slot0="maria dos santos" slot1="violante henriqueta" />
+	<seed slot0="madelyn lee payne dunham barack obama" slot1="stanley armour dunham stanley dunham" />
+	<seed slot0="jose joaquim de paiva" slot1="violante henriqueta" />
+	<seed slot0="jose botelho ambar" slot1="violante henriqueta" />
+	<seed slot0="george hw bush" slot1="benjamin chertoff" />
+	<seed slot0="gavriel holtzberg" slot1="yeshaya spielman" />
+	<seed slot0="francois mitterrand" slot1="frederic mitterrand" />
+	<seed slot0="ferdinand piech" slot1="wolfgang porsche" />
+	<seed slot0="caster semenya" slot1="maphuthi sekgala" />
+	<seed slot0="bruce rawnsley" slot1="carolyn lawrence" />
+	<seed slot0="barack obama" slot1="charlie payne" />
+	<seed slot0="antonio jose da costa" slot1="violante henriqueta" />
+	<seed slot0="aminah" slot1="abu talib" />
+	<seed slot0="umm zina" slot1="saddam khudhier abbas" />
+	<seed slot0="tamaihya moore" slot1="tamekca walker" />
+	<seed slot0="tamaihya moore" slot1="patrice moore" />
+	<seed slot0="snow" slot1="storybrooke henry" />
+	<seed slot0="rod" slot1="de" />
+	<seed slot0="roger  - rrb - " slot1="*burs*" />
+	<seed slot0="obama" slot1="grandmother" />
+	<seed slot0="muhammad" slot1="imam hussein" />
+	<seed slot0="mohammad khatami" slot1="imam hussein" />
+	<seed slot0="mir hossein mousavi" slot1="seyed reza mousavi" />
+	<seed slot0="martin luther king jr" slot1="alveda king" />
+	<seed slot0="kelly kwalik" slot1="yosepha alomang" />
+	<seed slot0="jigorou inokuma" slot1="yawara inokuma" />
+	<seed slot0="jesus christ" slot1="mary magdalene" />
+	<seed slot0="jessica davies" slot1="quentin davies" />
+	<seed slot0="jaycee lee dugard" slot1="tina dugard" />
+	<seed slot0="hillary rodham clinton kissed arafat" slot1="yasser arafat" />
+	<seed slot0="george w bush" slot1="prescott bush" />
+	<seed slot0="george hw bush" slot1="prescott bush" />
+	<seed slot0="george" slot1="francis *knollys*" />
+	<seed slot0="francois mitterrand" slot1="nicolas sarkozy" />
+	<seed slot0="duce" slot1="alessandra mussolini" />
+	<seed slot0="dubya" slot1="prescott bush" />
+	<seed slot0="delight hopson" slot1="matthew wallace" />
+	<seed slot0="darwin ohman" slot1="olof ohman" />
+	<seed slot0="billy clinton" slot1="ashley stevens" />
+	<seed slot0="bashir makhtal" slot1="said makhtal" />
+	<seed slot0="barack hussein obama ii" slot1="jerome corsi" />
+	<seed slot0="antti herlin" slot1="minna nurminen" />
+	<seed slot0="amanda knox" slot1="janet huff" />
+	<seed slot0="spat 30 - year  - old accountancy student" slot1="ruth esperance" />
+	<seed slot0="yukio hatoyama" slot1="ichiro hatoyama" />
+	<seed slot0="william f buckley" slot1="l brent bozell , jr" />
+	<seed slot0="william" slot1="elizabeth ii" />
+	<seed slot0="will carter" slot1="john skaggs" />
+	<seed slot0="warren strober" slot1="stanley strober" />
+	<seed slot0="warren strober" slot1="schmeel hirsch strober" />
+	<seed slot0="warren strober" slot1="hyman" />
+	<seed slot0="thomas dudley" slot1="elizabeth dudley" />
+	<seed slot0="theodore roosevelt" slot1="kermit roosevelt" />
+	<seed slot0="thaksin shinawatra" slot1="chaisit shinawatra" />
+	<seed slot0="taro aso" slot1="shigeru yoshida" />
+	<seed slot0="stanley grant phanor" slot1="narseal batiste" />
+	<seed slot0="sri kedaranatha datta" slot1="kasiprasada ghosh mahasaya thakur" />
+	<seed slot0="sirajuddin haqqani" slot1="mohammed haqqani" />
+	<seed slot0="sherry" slot1="bryan" />
+	<seed slot0="shakespeare" slot1="elizabeth hall" />
+	<seed slot0="scrooge" slot1="fred" />
+	<seed slot0="schmeel hirsch strober" slot1="warren strober" />
+	<seed slot0="sm nanda" slot1="sanjeev nanda" />
+	<seed slot0="ruth fischer" slot1="ryan" />
+	<seed slot0="robert peck + helen babbs" slot1="robert peck , sr" />
+	<seed slot0="prophet  - lcb -  pbuh  - rcb - " slot1="muhammad yousuf ludhiyanvi" />
+	<seed slot0="prophet" slot1="hamzah" />
+	<seed slot0="prince william" slot1="elizabeth" />
+	<seed slot0="prescott sheldon bush" slot1="william henry trotter `` bucky &amp;apos;&amp;apos; bush" />
+	<seed slot0="prescott bush" slot1="nazi grandfather_" />
+	<seed slot0="omar s thornton" slot1="wilbert holliday" />
+	<seed slot0="noah" slot1="nimrod" />
+	<seed slot0="niobe" slot1="zeus" />
+	<seed slot0="nidal malik hasan" slot1="nader hasan" />
+	<seed slot0="nathaniel bacon" slot1="frances howard" />
+	<seed slot0="niv josiah" slot1="manasseh" />
+	<seed slot0="mullah rashid ghazi" slot1="mullah amir siddiqi" />
+	<seed slot0="moses" slot1="anai" />
+	<seed slot0="mohandas k `` mahatma &amp;apos;&amp;apos; gandhi" slot1="mahatma gandhi" />
+	<seed slot0="mohandas k `` mahatma &amp;apos;&amp;apos; gandhi" slot1="arun gandhi" />
+	<seed slot0="mohammad" slot1="imam hussain" />
+	<seed slot0="mikki" slot1="rori" />
+	<seed slot0="mike" slot1="sidney" />
+	<seed slot0="michael chertoffthats" slot1="benjamin chertoff" />
+	<seed slot0="maulana ikram  - ud -  din" slot1="iqbal mehsud" />
+	<seed slot0="malky grunwald" slot1="evelyn haies" />
+	<seed slot0="leon m&amp;apos;ba" slot1="jean eyeghe ndong" />
+	<seed slot0="laura gerrero" slot1="elaine ford" />
+	<seed slot0="kone" slot1="minna nurminen" />
+	<seed slot0="john f kennedy" slot1="john fitzgerland" />
+	<seed slot0="joanne mercier" slot1="violante henriqueta" />
+	<seed slot0="jeffrey schnur" slot1="erin sullivan" />
+	<seed slot0="jamie" slot1="reagan stephenson" />
+	<seed slot0="isabel de stafford" slot1="ralph de stafford" />
+	<seed slot0="infanta dona sancha" slot1="countess aldonza rodriguez" />
+	<seed slot0="hitler himmler" slot1="geli raubal" />
+	<seed slot0="henry glover" slot1="rebecca glover" />
+	<seed slot0="harry potter fanfiction" slot1="lucy potter" />
+	<seed slot0="geoff" slot1="richard cobb" />
+	<seed slot0="florencio avalos" slot1="omar reygadas" />
+	<seed slot0="ella peterson" slot1="sue summers" />
+	<seed slot0="elizabeth" slot1="william windsor" />
+	<seed slot0="elizabeth" slot1="george vi" />
+	<seed slot0="edward kennedy" slot1="maria shriver" />
+	<seed slot0="edward kennedy" slot1="joseph kennedy" />
+	<seed slot0="duke ellington" slot1="art fixture aristedes duval" />
+	<seed slot0="dorothy allingham" slot1="ronald cator" />
+	<seed slot0="dona joanna" slot1="violante henriqueta" />
+	<seed slot0="deonte rawlings" slot1="carolyn rawlings" />
+	<seed slot0="dale earnhardt jr" slot1="robert gee" />
+	<seed slot0="cyrus kar" slot1="parvin modarress" />
+	<seed slot0="corazon aquino" slot1="gilberto teodoro" />
+	<seed slot0="cheops" slot1="hemon" />
+	<seed slot0="charla" slot1="haley" />
+	<seed slot0="chan" slot1="wen jiabao" />
+	<seed slot0="caster semenya" slot1="maphuthi sekgale" />
+	<seed slot0="bruno" slot1="eliza silva samudio" />
+	<seed slot0="bob" slot1="mary medico of hanford" />
+	<seed slot0="bhima" slot1="babreek" />
+	<seed slot0="benito mussolinio" slot1="alessandra mussolini" />
+	<seed slot0="barrack hussein obama junior" slot1="raila odinga" />
+	<seed slot0="barack obama" slot1="madelyn dunham" />
+	<seed slot0="barack hussein obama , jr" slot1="grandmother" />
+	<seed slot0="bachir gemayel" slot1="maria abou nader" />
+	<seed slot0="arnold m kanarek" slot1="rivka kanarek" />
+	<seed slot0="amine" slot1="maria abou nader" />
+	<seed slot0="ali jassim mohammed" slot1="imam hussein" />
+	<seed slot0="alexander pantages" slot1="vancouverite" />
+	<seed slot0="akmal shaikh" slot1="seema khan" />
+	<seed slot0="ahmed chalabi" slot1="chalabi niece" />
+	<seed slot0="adam pearlman" slot1="carl pearlman" />
+	<seed slot0="abu zar" slot1="sher mohammad qasab" />
+</seeds>

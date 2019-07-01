@@ -1,0 +1,21 @@
+################################################
+## Configuration circa end of August 2013
+##   Contains, java/jlearnit changes
+##                         mshafir
+################################################
+
+INCLUDE ../master.params
+
+do_initialization: true
+do_post_pruning: true
+# the number of instances taken per-pattern from each target level mapping
+post_pruning_instances: 1
+
+# OVERRIDE stop_iteration: 15
+OVERRIDE stop_iteration: 30
+
+
+OVERRIDE do_evaluation: true
+
+use_seeds_to_initialize: true
+use_patterns_to_initialize: false

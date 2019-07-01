@@ -1,0 +1,42 @@
+INCLUDE ./english_gigaword/proposing.params
+INCLUDE ./english_gigaword/pruning.params
+
+# core data dir
+learnit_data_dir: /nfs/mercury-04/u41/EnglishGigawordV5/data
+
+# a directory of lists of serifxml files, one per line
+corpus_dir: %learnit_data_dir%/source_lists/serifxml_lists_small
+
+# where the mappings go
+mappings_dir: %learnit_data_dir%/source_mappings_small
+mappings_lists_dir: %learnit_data_dir%/source_mappings_small_lists
+mappings_list_batches: 400
+target_batches: 40
+
+bilingual: false
+languages: English
+
+path_conversions: %learnit_root%/params/domains/english_gigaword/path_conversions.txt
+source_dir: /nfs/mercury-04/u10/GigawordV5/serif-english
+
+# A file containing a list of stopwords.  These are used to rule out
+# search queries and patterns that would overgenerate.
+stopwords: %learnit_root%/inputs/resources/stopwords/english_gigaword_df.txt
+
+# General Domain Parameters
+corpus_name: english_gigaword_mini
+learnit_expt_suffix: english_gigaword
+
+#######################################################
+#    For Evaluation
+#######################################################
+
+# whether to automatically do evaluation after each iteration
+do_evaluation: true
+use_gold_coreference: true
+
+eval_dir: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace
+test_set_serifxmls: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace/dev_and_train_set_gold_xml.txt
+test_set_apfs: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace/dev_and_train_set_gold.txt
+
+use_char_offsets_for_apf: false

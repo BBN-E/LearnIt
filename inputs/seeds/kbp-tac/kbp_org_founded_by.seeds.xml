@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_founded_by" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="access industries" slot1="len blavatnik" />
+	<seed slot0="awami league" slot1="sheikh mujibur rahman" />
+	<seed slot0="bank julius baer" slot1="julius baer" />
+	<seed slot0="barnes foundation" slot1="albert barnes" />
+	<seed slot0="barnes foundation" slot1="albert c barnes" />
+	<seed slot0="barnes foundation" slot1="albert coombs barnes" />
+	<seed slot0="bipartisan policy center" slot1="bob dole" />
+	<seed slot0="bipartisan policy center" slot1="george mitchell" />
+	<seed slot0="bipartisan policy center" slot1="howard baker" />
+	<seed slot0="bipartisan policy center" slot1="jason grumet" />
+	<seed slot0="bipartisan policy center" slot1="tom daschle" />
+	<seed slot0="bolivarian alternative for the americas" slot1="cuba" />
+	<seed slot0="bolivarian alternative for the americas" slot1="fidel castro" />
+	<seed slot0="bolivarian alternative for the americas" slot1="hugo chavez" />
+	<seed slot0="bolivarian alternative for the americas" slot1="venezuela" />
+	<seed slot0="carnival corp" slot1="ted arison" />
+	<seed slot0="carnival cruise lines" slot1="ted arison" />
+	<seed slot0="champalimaud foundation" slot1="antonio de sommer champalimaud" />
+	<seed slot0="country music association" slot1="ken nelson" />
+	<seed slot0="economic cooperation organization" slot1="iran" />
+	<seed slot0="economic cooperation organization" slot1="pakistan" />
+	<seed slot0="economic cooperation organization" slot1="turkey" />
+	<seed slot0="escada" slot1="wolfgang ley" />
+	<seed slot0="focus on the family" slot1="james c dobson" />
+	<seed slot0="focus on the family" slot1="james dobson" />
+	<seed slot0="freedom communications" slot1="rc hoiles" />
+	<seed slot0="galleon group" slot1="gary rosenbach" />
+	<seed slot0="galleon group" slot1="raj rajaratnam" />
+	<seed slot0="justice and equality movement" slot1="khalil ibrahim" />
+	<seed slot0="justice and equality movement" slot1="mohammed masood azhar alvi" />
+	<seed slot0="lashkar - e - taiba" slot1="hafiz mohammad saeed" />
+	<seed slot0="lashkar - e - taiba" slot1="hafiz muhammad saeed" />
+	<seed slot0="lashkar - e - taiba" slot1="hafiz saeed" />
+	<seed slot0="lashkar - e - taiba" slot1="osama bin laden" />
+	<seed slot0="lashkar - e - taiba" slot1="zafar iqbal" />
+	<seed slot0="moody &apos;s corp" slot1="john moody" />
+	<seed slot0="rosoboronexport" slot1="vladimir putin" />
+	<seed slot0="safe passage" slot1="hanley denning" />
+	<seed slot0="scorpions" slot1="thabo mbeki" />
+	<seed slot0="united national congress" slot1="basdeo panday" />
+</seeds>

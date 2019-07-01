@@ -1,0 +1,2 @@
+^(...)-CMN-(......)(.*)	english/$1_CMN/$2/$1-CMN-$2$3.alignment
+^(...)_CMN_(......)(.*)	english/$1_CMN/$2/$1-CMN-$2$3.alignment

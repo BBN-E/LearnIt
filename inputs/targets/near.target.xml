@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="near" elf_ontology_type="near"
+          description="near">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_PER" elf_role="0_PER"
+            mention_constraints="(acetype PER) (min-entitylevel DESC)" />
+     <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_GPE_FAC_LOC" elf_role="1_GPE_FAC_LOC"
+            mention_constraints="(acetype GPE FAC LOC) (min-entitylevel DESC)" />
+     <slot_pair a="1" b="0" symmetric="1" must_not_corefer="1"/>
+   </target>
+</targets>

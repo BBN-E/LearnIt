@@ -1,0 +1,4 @@
+To connect a Java and a Tensorflow program follow the following steps:
+
+1. Create a class with a "decode" method which takes a single JSON object as a parameter and returns whatever JSON the server should return. It should also have a shutdown method where you release any resources which need releasing
+2. On the Java side, instantiate a TensorFlowDecoderWrapper according to the guidance in its Javadoc

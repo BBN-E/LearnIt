@@ -1,0 +1,55 @@
+INCLUDE ./bilingual_spanish_gigaword/proposing.params
+INCLUDE ./bilingual_spanish_gigaword/pruning.params
+
+OVERRIDE learnit_root: /nfs/ld100/u10/bmin/repositories/akbc-readonly/akbc-v2/
+
+# Pointers to the data
+learnit_data_dir: /nfs/mercury-04/u35/SpanishGigaword_test/data
+
+corpus_dir: %learnit_data_dir%/source_lists/bidoc_source_lists
+
+mappings_dir: %learnit_data_dir%/source_mappings_full
+mappings_lists_dir: %learnit_data_dir%/source_mappings_full_lists
+mappings_list_batches: 500
+target_batches: 50
+
+bilingual: true
+languages: spanish,english
+alignments_dir: %learnit_data_dir%/alignments
+
+path_conversions: %learnit_root%/params/learnit/domains/bilingual_spanish_gigaword/path_conversions.txt
+alignment_path_conversions: %learnit_root%/params/learnit/domains/bilingual_spanish_gigaword/alignment_path_conversions.txt
+source_dir: /nfs/mercury-04/u35/SpanishGigaword_test/data/serifxml/+language+
+
+# A file containing a list of stopwords.  These are used to rule out
+# search queries and patterns that would overgenerate.
+# Here even for Spanish, we keep the English stopwords
+stopwords: %learnit_root%/inputs/resources/stopwords/english_gigaword_df.txt 
+
+# General Domain Parameters
+corpus_name: bilingual_spanish_gigaword
+learnit_expt_suffix: bilingual_spanish_gigaword
+
+# the minimum amount of alignment to allow between the spannings in the source
+# language and the target language. Less overlap means the spanning is considered
+# invalid.
+min_alignment_overlap: 0.5
+
+# list of language:variant:combined name
+language_variants: English:source:english, Chinese:source:spanish
+
+# list of 'source langauge' : 'source variant' = 'target language' : 'target variant' 'alignment location'
+variant_alignments: Chinese:source=English:source english
+
+#######################################################
+#    For Evaluation
+#######################################################
+
+# whether to automatically do evaluation after each iteration
+use_gold_coreference: true
+OVERRIDE partial_match_allowance: 1
+
+eval_dir: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/spanish_ace
+rawtext_dir: %eval_dir%/rawtext
+test_set_serifxmls: %eval_dir%/dev_and_train_set.txt
+test_set_apfs: %eval_dir%/dev_and_train_set_gold.txt

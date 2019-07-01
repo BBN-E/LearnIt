@@ -1,0 +1,8 @@
+INCLUDE ./default.params
+INCLUDE ../domains/bilingual_mt_10docs.params
+
+
+sent_builder_dbg_info: false
+enable_exception_contradictory_answers: false
+
+OVERRIDE learnit_expt_suffix: bilingual_mt_10docs

@@ -1,0 +1,330 @@
+<html>
+<head>
+    <title>LearnIt Server</title>
+
+    <link type="text/css" href="/css/jquery-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/layout-default-latest.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/colorbrewer/colorbrewer.css" rel="stylesheet">
+    <link type="text/css" href="/css/tipsy.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/typeahead.css" rel="stylesheet">
+    <link type="text/css" href="/css/nv.d3.css" rel="stylesheet">
+    <link type="text/css" href="/css/main.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery.layout-latest.min.js"></script>
+    <script type="text/javascript" src="/css/colorbrewer/colorbrewer.js"></script>
+    <script type="text/javascript" src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/typeahead.bundle.js"></script>
+    <script type="text/javascript" src="/scripts/lib/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/d3.v2.js"></script>
+    <script type="text/javascript" src="/scripts/lib/nv.d3.js"></script>
+
+    <script type="text/javascript" src="/scripts/util.js"></script>
+
+    <script type="text/javascript" src="/scripts/objects/Answer.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Match.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Pattern.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Seed.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Target.js"></script>
+
+    <script type="text/javascript" src="/scripts/evaluation/EvalReport.js"></script>
+    <!--<script type="text/javascript" src="/scripts/evaluation/loader.js"></script>-->
+    <script type="text/javascript" src="/scripts/evaluation/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/evaluation/evaluation.js"></script>
+</head>
+
+<script type="text/html" id="pattern-set-template">
+    <div class="bar" >
+        <div class="title" data-bind="event: {click: toggleShow}">
+            <h4>Patterns (<span data-bind="text: count"></span>)</h4>
+        </div>
+
+        <div data-bind="if: show">
+            <button data-bind="click: sortIter">Sort by iteration</button>
+            <button data-bind="click: sortCorrect">Sort by number correct</button>
+            <button data-bind="click: sortIncorrect">Sort by number incorrect</button>
+            <button data-bind="click: sortCount">Sort by count</button>
+
+            Show Patterns that didn't match in test
+            <input type="checkbox" data-bind="checked: showZero">
+
+            <div data-bind="template: { name: 'pattern-template', foreach: patterns }"></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="seed-set-template">
+    <div class="bar" >
+        <div class="title" data-bind="event: {click: toggleShow}">
+            <h4>Seeds (<span data-bind="text: count"></span>)</h4>
+        </div>
+
+        <div data-bind="if: show">
+
+            <div data-bind="foreach: seeds">
+                <div class="bar title" data-bind="event: {click: click}">
+                    <span data-bind="text: display"></span>
+                    <span style="float:right" data-bind="html: iterText"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="pattern-template">
+    <div class="bar" data-bind="visible: visible">
+        <div class="title" style="font-weight: bolder; height: 40px;" data-bind="event: {click: click}">
+            <span data-bind="text: display"></span>
+
+            <span style="left: 700px;position:absolute;">
+                <span data-bind="text: correct"></span> of <span data-bind="text: total"></span> answers correct
+            </span>
+
+            <span style="left: 900px;position:absolute" data-bind="if: score">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                iteration: <span data-bind="text: score.iteration"></span>
+            </span>
+
+            <span data-bind="if: total > 0">
+                <button class="btn" style="left: 1100px;position:absolute"
+                        data-bind="click: toggleCounted, clickBubble: false,
+                            css: {'btn-danger': counted, 'btn-success': !counted()},
+                            text: buttonDisplay">
+
+                </button>
+            </span>
+        </div>
+
+        <div data-bind="if: showAnswers">
+
+
+            <div data-bind="template: { name: 'answer-template', foreach: answers }"></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="answer-template">
+    <div class="bar" data-bind="css: {correct: correct, incorrect: !correct}">
+        <div class="title" data-bind="event: {click: toggleShowMatches}">
+            <span data-bind="text: correct"></span>: <span data-bind="text: display"></span>
+        </div>
+
+        <div data-bind="if: showMatches">
+            <b>APF Matches:</b>
+            <div data-bind="foreach: matchedAnnotations">
+                <span data-bind="text: $data"></span>
+            </div>
+            <br />
+        </div>
+
+        <div data-bind="if: showMatches">
+            <b>Matching Patterns:</b>
+
+            <div data-bind="foreach: matches">
+                <div data-bind="html: html"></div>
+                <div data-bind="template: { name: 'pattern-template', foreach: matchingPatterns}"></div>
+                <hr />
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="miss-set-template">
+    <div class="bar" >
+        <div class="title" data-bind="event: {click: toggleShow}">
+            <h4>Misses (<span data-bind="text: count"></span>)</h4>
+        </div>
+
+        <div data-bind="if: show">
+            <div data-bind="template: { name: 'answer-template', foreach: answers }"></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="pattern-detail-template">
+    <h3>
+        <button class="btn btn-default" data-bind="click: $root.analysisGoBack">Go Back</button>
+        Pattern: <span data-bind="text: display"></span>
+    </h3>
+
+    <hr/>
+    <div>
+        <div class="leftBlock">
+            <div data-bind="if: known">
+                <b>First proposed at </b><span data-bind="text: score.startIteration"></span><br />
+                <span data-bind="if: score.iteration == -1">Not yet accepted</span>
+                <span data-bind="if: score.startIteration == 0"><b>INITIAL PATTERN</b></span>
+                <span data-bind="if: score.iteration > 0 && score.startIteration > 0">
+                    <b>Accepted at </b><span data-bind="text: score.iteration"></span>
+                </span><br />
+                <b>Estimated Precision: </b><span data-bind="text: score.precision"></span><br/>
+                <b>Estimated Confidence: </b><span data-bind="text: score.confidence"></span><br/>
+                <b>Confidence Analysis Display: </b><span data-bind="text: score.confidenceAnalysisDisplay"></span><br/>
+                <b>Number of instances at acceptance time: </b><span data-bind="text: score.frequency"></span><br/>
+                <b>Number of known instances at acceptance time: </b><span data-bind="text: score.knownFrequency"></span><br/>
+                <b>Number of known matched seeds at acceptance time: </b><span data-bind="text: score.knownSeedFrequency"></span><br/>
+            </div>
+            <div data-bind="if: !known">
+                This pattern was never proposed during the bootstrap learning process<br />
+                <b>Estimated Confidence: </b><span data-bind="text: estimatedConfidenceDisplay"></span><br/>
+                * Note that this confidence doesn't consider instance confidence which has to do with the mention types
+                involved in the particular instance.
+            </div>
+
+            <hr/>
+            <div data-bind="foreach: score.instances">
+                <div data-bind="html: $data"></div><br/>
+            </div>
+        </div>
+
+        <div class="rightBlock">
+            <div data-bind="if: seeds">
+                <b>Matched Seeds:</b>
+				<button data-bind="visible: score.stop(), click: getMatches" class="btn btn-default">Start</button>
+                <button data-bind="visible: !score.stop(), click: score.setStop" class="btn btn-default">Stop</button>
+                <span data-bind="if: !score.stop()">
+                    <img src="/css/circleloader.gif" />&nbsp;Loading <span data-bind="text: $root.currentList"></span>
+                </span>
+                <div data-bind="foreach: seeds">
+                    <button class="btn btn-link" data-bind="text: display, click: click"></button>
+                    Similarity: <span data-bind="text: simScore"></span>&nbsp;
+                    Count: <span data-bind="text: count"></span>&nbsp;
+                    <span data-bind="html: iterText"></span>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="seed-detail-template">
+    <h3>
+        <button class="btn btn-default" data-bind="click: $root.analysisGoBack">Go Back</button>
+        Seed: <span data-bind="text: display"></span>
+    </h3>
+
+    <hr/>
+    <div>
+        <div class="leftBlock">
+            <div data-bind="if: known">
+                <b>First proposed at </b><span data-bind="text: score.startIteration"></span><br />
+                <span data-bind="if: score.iteration == -1">Not yet accepted</span>
+                <span data-bind="if: score.startIteration == 0"><b>INITIAL SEED</b></span>
+                <span data-bind="if: score.iteration > 0 && score.startIteration > 0">
+                    <b>Accepted at </b><span data-bind="text: score.iteration"></span>
+                </span><br />
+                <b>Estimated Score: </b><span data-bind="text: score.score"></span><br/>
+                <b>Similarity Score: </b><span data-bind="text: simScore"></span><br/>
+                <b>Estimated Confidence: </b><span data-bind="text: score.confidence"></span><br/>
+                <b>Confidence Analysis Display: </b><span data-bind="text: score.confidenceAnalysisDisplay"></span><br/>
+                <b>Number of instances at acceptance time: </b><span data-bind="text: score.frequency"></span><br/>
+                <b>Number of known instances at acceptance time: </b><span data-bind="text: score.knownFrequency"></span><br/>
+
+            </div>
+            <div data-bind="if: !known">
+                This seed was never proposed during the bootstrap learning process<br/>
+                <b>Similarity Score: </b><span data-bind="text: simScore"></span><br/>
+            </div>
+
+            <hr/>
+            <div data-bind="foreach: score.instances">
+                <div data-bind="html: $data"></div><br/>
+            </div>
+        </div>
+
+        <div class="rightBlock">
+            <div data-bind="if: patterns">
+                <b>Matched Patterns:</b>
+				<button data-bind="visible: score.stop(), click: getMatches" class="btn btn-default">Start</button>
+                <button data-bind="visible: !score.stop(), click: score.setStop" class="btn btn-default">Stop</button>
+                <span data-bind="if: !score.stop()">
+                    <img src="/css/circleloader.gif" />&nbsp;Loading <span data-bind="text: $root.currentList"></span>
+                </span>
+                <div data-bind="foreach: patterns">
+                    <button class="btn btn-link" data-bind="text: display, click: click"></button>
+                    Count: <span data-bind="text: count"></span>&nbsp;
+                    <span data-bind="html: iterText"></span>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</script>
+
+<body>
+
+    <div id="loading">
+        <div style="width: 100%; margin-top: 400px; text-align: center;">
+            <h1><span id="loadStage">Loading...</span></h1>
+        </div>
+    </div>
+
+
+    <div id="content">
+
+        <div class="ui-layout-center">
+            <h1><span data-bind="text: relation"></span> Evaluation</h1>
+
+            <div>
+                <div class="box">
+                    Precision Threshold: <input step="0.05" min="0" max="1" type="range" style="width: 200px; display: inline"
+                                                data-bind="value: precisionLimit, valueUpdate: 'input'" /><span data-bind="text: precisionLimit"></span>
+                </div>
+                <div class="box">
+                    Confidence Threshold: <input step="0.005" min="0" max="1" type="range" style="width: 200px; display: inline"
+                                                 data-bind="value: confidenceLimit, valueUpdate: 'input'" /><span data-bind="text: confidenceLimit"></span>
+                </div>
+                <div class="box">
+                    Only Frozen: <input type="checkbox" data-bind="checked: onlyFrozen" /><br />
+                </div>
+            </div>
+
+            <button data-bind="click: reloadData">Reload Scores</button>
+
+            <div id="iterationChart" style="height: 500px;">
+                <svg></svg>
+            </div>
+            <div>
+                <p>The penultimate iteration adds scores of patterns in the set that were proposed but not accepted during learning</p>
+                <p>The final iteration adds scores of patterns in the set that were never seen during learning</p>
+                <p>Similarity scores not working? Refresh the eval report cache on the main page.</p>
+                <h3>Scores</h3>
+                <p>p = <span data-bind="text: precision().toFixed(3)"></span> (<span data-bind="text: correct"></span>/<span data-bind="text: totalSystem"></span>)</p>
+                <p>r = <span data-bind="text: recall().toFixed(3)"></span> (<span data-bind="text: correct"></span>/<span data-bind="text: totalCorrect"></span>)</p>
+                <p>f1 = <span data-bind="text: f1().toFixed(3)"></span></p>
+            </div>
+
+            <div data-bind="template: { name: 'pattern-set-template', data: patternSet }"></div>
+            <div data-bind="template: { name: 'seed-set-template', data: seedSet }"></div>
+            <div data-bind="template: { name: 'miss-set-template', data: missSet }"></div>
+            <div data-bind="if: params">
+                <div class="bar">
+                    <div class="title" data-bind="event: {click: toggleShowParams}">
+                        <h4>Parameters</h4>
+                    </div>
+                    <div data-bind="if: showParams">
+                        <div data-bind="html: paramText"></div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <b>ORACLE:</b>
+            <div data-bind="template: { name: 'pattern-set-template', data: missedPatterns }"></div>
+
+        </div>
+
+        <div class="ui-layout-south">
+            <div data-bind="if: analysis">
+                <div data-bind="template: { name: analysis().template, data: analysis }"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

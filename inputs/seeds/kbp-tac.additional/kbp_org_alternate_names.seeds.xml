@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_alternate_names" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="atlantic richfield" slot1="arco" />
+	<seed slot0="putonghua" slot1="mandarin" />
+	<seed slot0="manila electric co" slot1="meralco" />
+	<seed slot0="flying tigers" slot1="american volunteer group" />
+	<seed slot0="association of islamic charitable projects" slot1="al  -  ahbash" />
+</seeds>

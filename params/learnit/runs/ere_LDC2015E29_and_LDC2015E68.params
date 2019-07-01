@@ -1,0 +1,8 @@
+INCLUDE ./default.params
+INCLUDE ../domains/ere_LDC2015E29_and_LDC2015E68.param
+
+OVERRIDE learnit_expt_suffix: generate_source_mappings_ere_LDC2015E29_and_LDC2015E68
+
+running_test_set: true
+
+mappings_list_batches: 2

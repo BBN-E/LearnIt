@@ -1,0 +1,779 @@
+package com.bbn.akbc.neolearnit.evaluation.offsets;
+
+import com.bbn.akbc.common.Pair;
+import com.bbn.serif.io.SerifXMLLoader;
+import com.bbn.serif.theories.DocTheory;
+import com.bbn.serif.theories.SentenceTheory;
+
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableSet;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class SentOffSetBuilder {
+	private final String encoding = "UTF-8";
+
+	private final int MT_SEGMENT_SENTENCE_RAW_PREFIX_LEN = 0; // old value: 6
+	private final int MT_SEGMENT_SENTENCE_RAW_SUFFIX_LEN = 0; // old value: 13
+
+	private final boolean isDebug = false;
+
+	String docName;
+
+	public String textForApf;
+
+	List<Pair<Integer, Integer>> listSentOffset; // sentence offset maps
+	List<Map<Pair<Integer, Integer>, Pair<Integer, Integer>>> listOfMapTokenized2raw; // token offset maps
+
+	Map<Integer, Integer> mapRawCharOffset2TokenizedCharOffset = new HashMap<Integer, Integer>();
+
+	Map<Integer, Integer> textOffset2charOffset;
+
+	List<Pair<String, String>> listPairSents4dbg = new ArrayList<Pair<String, String>>();
+
+	int getSentOffsetStart(int sid) {
+		return listSentOffset.get(sid).getFirst();
+	}
+
+	int getSentOffsetEnd(int sid) {
+		return listSentOffset.get(sid).getSecond();
+	}
+
+
+	public String getDebugString(int sentIdx, List<String> listSegmentSerifTokens) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("SentStart:" + getSentOffsetStart(sentIdx) + "\n");
+
+		String textRawSgm = "";
+		try {
+			textRawSgm = eraseXMLRaw(readSgm(this.docName));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} // for testing
+
+		for(Pair<Integer, Integer> p : listSentOffset) {
+			sb.append("<" + p.getFirst() + ", " + p.getSecond() + ">\t" + textRawSgm.substring(p.getFirst(), p.getSecond()+1) + "\n");
+		}
+
+		sb.append("=====\n");
+
+		for(Pair<String, String> p : listPairSents4dbg) {
+			sb.append(p.getFirst() + "\n-\n" + p.getSecond() + "\n-----\n");
+		}
+		sb.append("=====\n");
+
+		for(int tokenIdx=0; tokenIdx<listOfMapTokenized2raw.get(sentIdx).keySet().size()+2; tokenIdx++) {
+			Pair<Integer, Integer> pairRaw = null;
+
+			for(Pair<Integer, Integer> pairToken : listOfMapTokenized2raw.get(sentIdx).keySet()) {
+				if (pairToken.getFirst() <= tokenIdx &&
+						 pairToken.getSecond() >= tokenIdx) {
+					pairRaw = listOfMapTokenized2raw.get(sentIdx).get(pairToken);
+					break;
+				}
+			}
+
+			if(pairRaw!=null && listSegmentSerifTokens.size()>tokenIdx)
+				sb.append(tokenIdx + "\t" + "(" + pairRaw.getFirst() + ", " + pairRaw.getSecond() + ")" + "\t" + "(" + (pairRaw.getFirst()+ getSentOffsetStart(sentIdx)) + ", " + (pairRaw.getSecond()+getSentOffsetStart(sentIdx)) + ")" + "\t" + listSegmentSerifTokens.get(tokenIdx) + "\n");
+		}
+
+		return sb.toString();
+	}
+
+	private Pair<Integer,Integer> getTokenOffsetPair(int sentidx, int tokenidx) {
+		@SuppressWarnings("unused")
+		int sentStartOffset = listSentOffset.get(sentidx).getFirst();
+		for(Pair<Integer, Integer> pairToken : listOfMapTokenized2raw.get(sentidx).keySet()) {
+			if (pairToken.getFirst() <= tokenidx &&
+					 pairToken.getSecond() >= tokenidx) {
+				Pair<Integer, Integer> pairRaw = listOfMapTokenized2raw.get(sentidx).get(pairToken);
+
+				if(isDebug) {
+//					System.out.println("== " + docName + "\t" + sentidx + "\t" + tokenidx + "\t->\t" + sentStartOffset + pairRaw.getFirst());
+				}
+
+				return pairRaw;
+			}
+		}
+		throw new RuntimeException("Could not get offset for token "+tokenidx+" of sentence "+sentidx+
+				" in document "+docName+". Offsets: "+listOfMapTokenized2raw.get(sentidx).keySet());
+	}
+
+	public int getTokenStartOffset(int sentidx, int tokenidx) {
+		int sentStartOffset = listSentOffset.get(sentidx).getFirst();
+		return sentStartOffset + getTokenOffsetPair(sentidx,tokenidx).getFirst();
+	}
+
+	public int getTokenEndOffset(int sentidx, int tokenidx) {
+		int sentStartOffset = listSentOffset.get(sentidx).getFirst();
+		return sentStartOffset + getTokenOffsetPair(sentidx,tokenidx).getSecond();
+	}
+
+	public int getTokenizedCharOffsetFromRawCharOffset(int offset) {
+		if(mapRawCharOffset2TokenizedCharOffset.containsKey(offset))
+			return mapRawCharOffset2TokenizedCharOffset.get(offset);
+		else
+			return -1;
+	}
+
+	public void smoothMap(int rawOffsetStart, int rawOffsetEnd) {
+		List<PairOfInt> listPair = new ArrayList<PairOfInt>();
+		for(int rawOffset : mapRawCharOffset2TokenizedCharOffset.keySet()) {
+			int tokenizedOffset = mapRawCharOffset2TokenizedCharOffset.get(rawOffset);
+			listPair.add(new PairOfInt(rawOffset, tokenizedOffset));
+
+		}
+		Collections.sort(listPair);
+
+		for(int rawOffset=rawOffsetStart; rawOffset<rawOffsetEnd; rawOffset++) {
+			if(!mapRawCharOffset2TokenizedCharOffset.containsKey(rawOffset)) {
+				Pair<Integer, Integer> boundary = findTokenOffsetGapBoundary(listPair, rawOffset);
+				if(boundary.getSecond()>boundary.getFirst() && boundary.getSecond()>0)
+					mapRawCharOffset2TokenizedCharOffset.put(rawOffset, boundary.getSecond()-1);
+			}
+		}
+	}
+
+	public Pair<Integer, Integer> findTokenOffsetGapBoundary(List<PairOfInt> listSortedPair, int rawOffset) {
+		// Pair<Integer, Integer> tokenOffsetGapBoundary = new Pair<Integer, Integer>();
+		if(listSortedPair.get(0).first>rawOffset) {
+			int right = listSortedPair.get(0).second-1>0?listSortedPair.get(0).second-1:0;
+			return new Pair<Integer, Integer>(-1, right);
+		}
+
+		for(int i=1; i<listSortedPair.size(); i++) {
+			PairOfInt curPair=listSortedPair.get(i);
+			PairOfInt prevPair=listSortedPair.get(i-1);
+
+			if(curPair.first>rawOffset && prevPair.first<rawOffset)
+				return new Pair<Integer, Integer>(prevPair.second, curPair.second);
+		}
+		return new Pair<Integer, Integer>(-1, -1);
+	}
+
+	Map<Pair<Integer, Integer>, Pair<Integer, Integer>> parseAlignment(String strAlignment) {
+		Map<Pair<Integer, Integer>, Pair<Integer, Integer>> mapTokenized2raw = new HashMap<Pair<Integer, Integer>, Pair<Integer, Integer>>();
+
+		// example: 0:1:0:0 2:4:1:1 ...
+		String [] items = strAlignment.split(" ");
+		for(String item : items) {
+			String [] offsets = item.split(":");
+			//System.out.println("item: " + item);
+			mapTokenized2raw.put(new Pair<Integer, Integer>(Integer.parseInt(offsets[2]), Integer.parseInt(offsets[3])),
+					new Pair<Integer, Integer>(Integer.parseInt(offsets[0]), Integer.parseInt(offsets[1])));
+		}
+
+		return mapTokenized2raw;
+	}
+
+	// textRawSgm.substring(textOffset2charOffset.get(sentStart), textOffset2charOffset.get(sentEnd)
+	public Map<Integer, Integer> generateMapRawSentInMT2RawSentInSgm(String RawSentInMT, String RawSentInSgm) {
+		Map<Integer, Integer> mapRawSentInMT2RawSentInSgm = new HashMap<Integer, Integer>();
+
+		mapRawSentInMT2RawSentInSgm.put(0, 0);
+
+		for(int src=1, dst=1; dst<RawSentInSgm.length(); src++, dst++) {
+			char cur = RawSentInSgm.charAt(dst);
+			char prev = RawSentInSgm.charAt(dst-1);
+
+//			mapRawSentInMT2RawSentInSgm.put(src, dst);
+			if((cur==' ' && prev=='\n') ||
+					(cur=='\n' && prev==' ')) {
+				src--;
+			}
+			mapRawSentInMT2RawSentInSgm.put(src, dst);
+
+//			System.out.println(RawSentInMT.charAt(src) + "|" + src + "\t" + RawSentInSgm.charAt(dst) + "|" + dst);
+
+//			mapRawSentInMT2RawSentInSgm.put(src, dst);
+		}
+
+		return mapRawSentInMT2RawSentInSgm;
+	}
+
+	@SuppressWarnings("unused")
+	private static final Set<String> setMonths =
+			ImmutableSet.of("january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december");
+
+	public boolean isValidDateOfMonth(String strDate) {
+		if (!strDate.matches("[0-9]+") || strDate.length()>2)
+			return false;
+
+		int date = Integer.parseInt(strDate);
+		if(date>=1 && date<=31)
+			return true;
+		else
+			return false;
+	}
+
+	public List<String> getListMTtokens(String sentTokenized) {
+		List<String> listMTtokens = new ArrayList<String>();
+		String [] items = sentTokenized.split("\\s+"); // tokenize
+
+		for(int i=0; i<items.length; i++) {
+			String item = items[i];
+
+			item = item.replace("&quot;", "\"").replace("&apos;", "'").replace("&amp;", "&").replace("......", "……");
+					// .replace("@", "");
+/*
+			if(item.equals("&quot;"))
+				item = "\"";
+			else if(item.contains("&apos;"))
+				item = item.replace("&apos;", "'");
+			else if(item.contains("&amp;"))
+				item = item.replace("&amp;", "&");
+			else if(item.equals("&amp;"))
+				item = "&";
+*/
+			/*
+			// fix date ("december 29" is treated as one token, not two)
+			if(i<items.length-1) {
+				if(setMonths.contains(items[i]) && isValidDateOfMonth(items[i+1])) {
+					item = items[i] + " " + items[i+1];
+					i++;
+				}
+			}
+			*/
+
+			listMTtokens.add(item);
+		}
+
+		return listMTtokens;
+	}
+
+	public SentOffSetBuilder(String fileSgm, String fileSegment) throws IOException {
+		listSentOffset = new ArrayList<Pair<Integer, Integer>>();
+		listOfMapTokenized2raw = new ArrayList<Map<Pair<Integer, Integer>, Pair<Integer, Integer>>>();
+
+//		List<Map<Integer, Integer>> ListOfMapRawCharOffset2TokenizedCharOffset = new ArrayList<Map<Integer, Integer>>();
+
+		docName = fileSgm;
+
+		textForApf = eraseXMLRaw(readSgm(fileSgm));
+		String textSgm = eraseXML(readSgm(fileSgm)).replace("\n ", " ").replace(" \n", " ").replaceAll("\\n+", " ");
+
+		String textRawSgm = eraseXMLRaw(readSgm(fileSgm)); // for testing
+
+		String textRaw = textSgm;
+		// List<Pair<String, String>> listPairOfSent = readFileSegment(fileSegment);
+		List<Pair<Pair<String, String>, String>> listPairOfSent = readFileSegment(fileSegment);
+
+		int curOffSet = 0;
+//		for (Pair<String, String> pair : listPairOfSent) {
+
+		int curTokenStartOffset = 0;
+
+		for(int i=0; i<listPairOfSent.size(); i++) {
+			curTokenStartOffset+=MT_SEGMENT_SENTENCE_RAW_PREFIX_LEN;
+
+			Pair<Pair<String, String>, String> pair = listPairOfSent.get(i);
+		// for (Pair<Pair<String, String>, String> pair : listPairOfSent) {
+
+			// The convertion rules are somehow ad hoc, e.g, ” -> " some times, but the reverse happens too.
+			String sentRaw = pair.getFirst().getFirst().replace("&quot;", "\"").replace("&amp;amp;", "&amp;").replace("楊", "杨").replace("１１月２３日", "11月23日"); // .replace("２０", "20")
+
+//			sentRaw = sentRaw.replace("” “配", "”   “配").replace("： “", "：   “").replace("&amp;", "&").replace("（完 ）", "（完　 ） ");
+			sentRaw = sentRaw.replace("” “配", "”   “配").replace("： “", "：   “").replace("（完 ）", "（完　 ） ");
+
+					// .replace("１０月３日", "10月3日").replace("１１月３日", "11月3日").replace("３", "3").replace("２０", "20").replace("１１月１５日", "11月15日").replace("１０年", "10年").replace("3８０多亿", "380多亿");
+
+			sentRaw = sentRaw.replace("&amp;#", "&#");
+//			sentRaw = sentRaw.replace("11月23日", "１１月２３日");
+//			if(!fileSgm.contains("XIN20001003.0200.0001") && !fileSgm.contains("XIN20001114.0200.0017") && !fileSgm.contains("XIN20001124.2000.0148.sgm"))
+
+			if(!fileSgm.contains("XIN20001019.0800.0071")&&!fileSgm.contains("XIN20001125.0800.0032")&&
+					!fileSgm.contains("XIN20001224.2000.0076")&&!fileSgm.contains("XIN20001002.0200.0004")&&
+					!fileSgm.contains("XIN20001012.0800.0081")&&!fileSgm.contains("CNR20001008.1700.1195")&&
+					!fileSgm.contains("XIN20001002.0800.0038")&&!fileSgm.contains("XIN20001012.0800.0084")&&
+					!fileSgm.contains("XIN20001124.1400.0090")&&!fileSgm.contains("XIN20001209.2000.0082")&&
+					!fileSgm.contains("XIN20001221.1400.0139")&&!fileSgm.contains("XIN20001130.0800.0091")&&
+					!fileSgm.contains("XIN20001218.0800.0088")&&!fileSgm.contains("XIN20001221.1400.0143")&&
+					!fileSgm.contains("XIN20001007.0200.0014")&&!fileSgm.contains("XIN20001122.1400.0074")&&
+					!fileSgm.contains("XIN20001212.0200.0015")&&!fileSgm.contains("CTV20001011.1330.0522")&&
+					!fileSgm.contains("XIN20001224.0800.0044")&&!fileSgm.contains("CTV20001011.1330.1247")&&
+					!fileSgm.contains("XIN20001207.1400.0076")&&!fileSgm.contains("XIN20001213.0800.0063")&&
+					!fileSgm.contains("XIN20001216.1400.0069")&&!fileSgm.contains("XIN20001202.0800.0050")&&
+					!fileSgm.contains("XIN20001227.2000.0137")&&!fileSgm.contains("XIN20001215.0200.0037")&&
+					!fileSgm.contains("XIN20001201.2000.0146")&&!fileSgm.contains("XIN20001114.0200.0012")&&
+					!fileSgm.contains("XIN20001101.1400.0137")&&!fileSgm.contains("XIN20001017.1400.0130")&&
+					!fileSgm.contains("XIN20001126.2000.0101")&&!fileSgm.contains("XIN20001108.0200.0029")&&
+					!fileSgm.contains("XIN20001224.1400.0066")&&!fileSgm.contains("XIN20001126.1400.0081")&&
+					!fileSgm.contains("XIN20001224.0800.0046")&&!fileSgm.contains("XIN20001107.2000.0150")&&
+					!fileSgm.contains("XIN20001207.0800.0071")&&!fileSgm.contains("XIN20001107.0200.0005")&&
+					!fileSgm.contains("LIUYIFENG_20050128.0841")&&!fileSgm.contains("XIN20001224.0800.0043")&&
+					!fileSgm.contains("XIN20001231.0200.0020")&&!fileSgm.contains("XIN20001104.2000.0121")&&
+					!fileSgm.contains("XIN20001224.0200.0016")&&!fileSgm.contains("XIN20001003.0200.0013")&&
+					!fileSgm.contains("XIN20001216.1400.0068")&&!fileSgm.contains("XIN20001114.1400.0092")&&
+					!fileSgm.contains("XIN20001103.0800.0078")&&!fileSgm.contains("XIN20001009.0200.0005")&&
+					!fileSgm.contains("XIN20001003.0200.0001")&&!fileSgm.contains("XIN20001215.2000.0158")&&
+					!fileSgm.contains("XIN20001124.1400.0105")&&!fileSgm.contains("XIN20001017.2000.0178")&&
+					!fileSgm.contains("XIN20001008.1400.0061")&&!fileSgm.contains("XIN20001002.2000.0101")&&
+					!fileSgm.contains("XIN20001227.1400.0101")&&!fileSgm.contains("XIN20001215.0200.0008")&&
+					!fileSgm.contains("XIN20001101.1400.0121"))
+				sentRaw = sentRaw.replace("０", "0").replace("１", "1").replace("２", "2").replace("３", "3").replace("４", "4").replace("５", "5").replace("６", "6").replace("７", "7").replace("８", "8").replace("９", "9");
+
+			sentRaw = sentRaw.replace("工人失业 这些", "工人失业　 这些").replace("“最佳餐饮”奖。 这些", "“最佳餐饮”奖。 　这些").replace("亚太经合组织第8次领导人", "亚太经合组织第８次领导人");
+
+			// get MT tokenization results
+			String sentTokenized = pair.getFirst().getSecond();
+			List<String> listMTtokens = getListMTtokens(sentTokenized);
+
+			int sentStart = curOffSet + textRaw.indexOf(sentRaw); // inclusive
+			if(textRaw.indexOf(sentRaw)==-1) {
+				listPairSents4dbg.add(new Pair<String, String>(sentRaw, textRaw));
+			}
+
+			int sentEnd = sentStart + sentRaw.length()-1; // exclusive
+			if(sentStart<0)
+				listSentOffset.add(new Pair<Integer, Integer>(-1, -1));
+			else {
+				System.out.println("sent: <" + sentStart + ", " + sentEnd + "> --> <" + textOffset2charOffset.get(sentStart) + ", " + textOffset2charOffset.get(sentEnd) + ">");
+				listSentOffset.add(new Pair<Integer, Integer>(textOffset2charOffset.get(sentStart), textOffset2charOffset.get(sentEnd)));
+			}
+			// alignment map
+			String strAlignment = pair.getSecond().trim();
+			Map<Pair<Integer, Integer>, Pair<Integer, Integer>> mapTokenized2raw = parseAlignment(strAlignment);
+
+			String RawSentInSgm = "";
+			if(!textOffset2charOffset.containsKey(sentEnd))
+				RawSentInSgm = textRawSgm.substring(textOffset2charOffset.get(sentStart), textOffset2charOffset.get(sentStart)+sentRaw.length());
+			else
+				RawSentInSgm = textRawSgm.substring(textOffset2charOffset.get(sentStart), textOffset2charOffset.get(sentEnd)+1);
+
+			listOfMapTokenized2raw.add(mapTokenized2raw);
+
+			// character level offset map
+			List<PairOfInt> listPair = new ArrayList<PairOfInt>();
+			for(Pair<Integer, Integer> tokenizedIndexPair : mapTokenized2raw.keySet()) {
+				listPair.add(new PairOfInt(tokenizedIndexPair.getFirst(), tokenizedIndexPair.getSecond()));
+			}
+			Collections.sort(listPair);
+
+			int sid = i;
+			int sentStartOffset = listSentOffset.get(sid).getFirst();
+
+			for(PairOfInt pairOfInt : listPair) {
+				Pair<Integer, Integer> tokenizedIndexPair = new Pair<Integer, Integer>(pairOfInt.first, pairOfInt.second);
+				Pair<Integer, Integer> rawOffsetPair = mapTokenized2raw.get(tokenizedIndexPair);
+
+				// one to multiple tokens
+//				String tokenText = textRawSgm.substring(sentStartOffset+rawOffsetPair.getFirst(), sentStartOffset+rawOffsetPair.getSecond()+1);
+				String tokenTextNormalized = "";
+				for(int idxToken=tokenizedIndexPair.getFirst(); idxToken<=tokenizedIndexPair.getSecond(); idxToken++)
+					tokenTextNormalized += " " + listMTtokens.get(idxToken);
+				if(tokenTextNormalized.startsWith(" "))
+					tokenTextNormalized = tokenTextNormalized.substring(1);
+
+				int tokenLength = tokenTextNormalized.length();
+
+				int offsetTokenized = curTokenStartOffset-1;
+				for(int offsetRaw=rawOffsetPair.getFirst(); offsetRaw<=rawOffsetPair.getSecond(); offsetRaw++) {
+					int offsetRawChar = sentStartOffset+offsetRaw;
+					char curChar = textRawSgm.charAt(offsetRawChar);
+
+					if(curChar=='\n') {
+						mapRawCharOffset2TokenizedCharOffset.put(offsetRawChar, offsetTokenized);
+					}
+					else if(curChar!='\n') {
+
+						offsetTokenized++;
+						mapRawCharOffset2TokenizedCharOffset.put(offsetRawChar, offsetTokenized);
+					}
+				}
+
+				if(tokenLength>(rawOffsetPair.getSecond()-rawOffsetPair.getFirst()+1)) {
+					mapRawCharOffset2TokenizedCharOffset.put(sentStartOffset+rawOffsetPair.getSecond(), curTokenStartOffset+tokenLength);
+					//System.out.println("=\t" + (sentStartOffset+rawOffsetPair.getSecond()) + ", " + (curTokenStartOffset+tokenLength-1));
+				}
+				curTokenStartOffset+=tokenLength+1;
+
+//				idxToken++;
+			}
+
+			curTokenStartOffset+=MT_SEGMENT_SENTENCE_RAW_SUFFIX_LEN;
+
+			curTokenStartOffset--;
+
+			curOffSet += textRaw.indexOf(sentRaw) + sentRaw.length();
+
+			if(i<listPairOfSent.size()-1) {
+				textRaw = textRaw.substring(textRaw.indexOf(sentRaw) + sentRaw.length());
+			}
+
+			if (isDebug) {
+				//System.out.println(sentRaw);
+
+				System.out.println(textSgm.length() + ", " + sentStart + ", " + sentEnd + ", " + textOffset2charOffset.get(sentStart) + ", " + textOffset2charOffset.get(sentEnd));
+				if(sentStart==-1) {
+					System.out.println(textSgm.substring(0, sentEnd));
+					System.out.println(textRawSgm.substring(0, textOffset2charOffset.get(sentEnd)));
+				}
+				else {
+					System.out.println(textSgm.substring(sentStart, sentEnd));
+					System.out.println(textRawSgm.substring(textOffset2charOffset.get(sentStart), textOffset2charOffset.get(sentEnd)));
+				}
+
+				//System.out.println();
+			}
+		}
+
+		if (isDebug) {
+			for(int i=0; i<textOffset2charOffset.keySet().size(); i++) {
+				if(i>textSgm.length()-1)
+					break;
+
+				System.out.println(i + "\t" + textOffset2charOffset.get(i) + "\t" + textSgm.charAt(i) + "\t" + textRawSgm.charAt(textOffset2charOffset.get(i)));
+			}
+		}
+
+		// smooth map
+		smoothMap(0, textRawSgm.length());
+
+//		writer.close();
+	}
+
+	StringBuffer readSgm(String fileName) throws IOException {
+		File file = new File(fileName);
+		String line;
+		BufferedReader reader = new BufferedReader(new InputStreamReader(
+				new FileInputStream(file), encoding));
+		StringBuffer fileText = new StringBuffer();
+		while ((line = reader.readLine()) != null)
+			fileText.append(line + "\n");
+
+		reader.close();
+		return fileText;
+	}
+
+	private static final List<String> goodTags =
+			ImmutableList.of("DOC","BODY","HEADLINE","TEXT","POST","TURN");
+
+	String eraseXML(StringBuffer fileTextWithXML) {
+		textOffset2charOffset = new HashMap<Integer, Integer>();
+
+		int maxTextOffset = 0;
+//		int maxCharOffset = 0;
+
+		boolean inTag = false;
+		boolean inLeftTag = false;
+		boolean inTextTag = false;
+
+		String tag = "";
+
+		int length = fileTextWithXML.length();
+		StringBuffer fileText = new StringBuffer();
+
+		int charOffset = -1;
+		int textOffset = -1;
+
+		for (int i = 0; i < length; i++) {
+			boolean isNextLeftTag = false;
+
+			char c = fileTextWithXML.charAt(i);
+
+			if(i<length-1) {
+				if(fileTextWithXML.charAt(i+1)=='<')
+					isNextLeftTag = true;
+			}
+
+			if (c == '<') {
+				// update position of last char
+//				maxCharOffset = charOffset;
+
+				inTag = true;
+				if(fileTextWithXML.charAt(i+1) != '/') {
+					tag = "";
+					inLeftTag = true;
+					continue;
+				}
+			}
+
+			if (!inTag) {
+				fileText.append(c);
+
+				charOffset++;
+
+				if(fileText.length()==1)
+					textOffset++;
+				else if(fileText.length()>=2) {
+//					if(!(c=='\n' && fileText.charAt(fileText.length()-2)=='\n')) {
+
+					// not the best fix
+					if(!((c=='\n') && fileText.charAt(fileText.length()-2)=='\n') &&
+							!((!isNextLeftTag && inTextTag && (c==' ') && fileText.charAt(fileText.length()-2)=='\n')) &&
+							!((!isNextLeftTag && inTextTag && (c=='\n') && fileText.charAt(fileText.length()-2)==' '))) {
+						textOffset++;
+					}
+				}
+
+				textOffset2charOffset.put(textOffset, charOffset);
+				if(textOffset>maxTextOffset)
+					maxTextOffset=textOffset;
+			}
+
+			if (c == '>') {
+				inTag = false;
+
+				if(inLeftTag && !goodTags.contains(tag)) {
+					String rightTag = "</"+tag+">";
+
+					charOffset += fileTextWithXML.indexOf(rightTag, i)-i-1;
+					i = fileTextWithXML.indexOf(rightTag, i) + rightTag.length()-1;
+				}
+
+				inLeftTag = false;
+
+				if(tag.equals("TEXT"))
+					inTextTag = true;
+
+				continue;
+			}
+
+			if(inLeftTag) {
+				if(c != ' ') // example: <DOCTYPE SOURCE="newswire">
+					tag += c;
+				else
+					inLeftTag = false;
+			}
+		}
+
+		// complete the last one
+		int lastTextOffset = maxTextOffset+1;
+		int lastCharOffset = charOffset;
+		for(int i=maxTextOffset+1; i>0; i--)
+			textOffset2charOffset.put(lastTextOffset, lastCharOffset);
+
+		return fileText.toString();
+	}
+
+	String eraseXMLRaw(StringBuffer fileTextWithXML) {
+		boolean inTag = false;
+		int length = fileTextWithXML.length();
+		StringBuffer fileText = new StringBuffer();
+		for (int i = 0; i < length; i++) {
+			char c = fileTextWithXML.charAt(i);
+			if (c == '<')
+				inTag = true;
+			if (!inTag)
+				fileText.append(c);
+			if (c == '>')
+				inTag = false;
+		}
+		return fileText.toString();
+	}
+
+	List<Pair<Pair<String, String>, String>> readFileSegment(String fileSegment)
+			throws IOException {
+		List<Pair<Pair<String, String>, String>> listPairOfSent = new ArrayList<Pair<Pair<String, String>, String>>();
+
+		List<String> listSent = new ArrayList<String>();
+
+		String line;
+		BufferedReader reader = new BufferedReader(new InputStreamReader(
+				new FileInputStream(fileSegment), encoding));
+		while ((line = reader.readLine()) != null) {
+			line = line.trim();
+			if (line.startsWith("<RAW_SOURCE>")) {
+				line = line.replace("<RAW_SOURCE>", "").replace(
+						"</RAW_SOURCE>", "");
+				listSent.add(line);
+			} else if (line.startsWith("<TOKENIZED_SOURCE>")) {
+				line = line.replace("<TOKENIZED_SOURCE>", "").replace(
+						"</TOKENIZED_SOURCE>", "");
+				listSent.add(line);
+			} else if (line.startsWith("<RAW_SOURCE_TO_TOKENIZED_SOURCE_ALIGNMENT>")) {
+				line = line.replace("<RAW_SOURCE_TO_TOKENIZED_SOURCE_ALIGNMENT>", "").replace(
+						"</RAW_SOURCE_TO_TOKENIZED_SOURCE_ALIGNMENT>", "");
+				listSent.add(line);
+			}
+		}
+
+		reader.close();
+
+		for (int i = 0; i < listSent.size(); i += 3) {
+			listPairOfSent.add(new Pair<Pair<String, String>, String>(new Pair<String, String>(listSent.get(i), listSent.get(i+2)),
+					listSent.get(i+1)));
+		}
+
+		return listPairOfSent;
+	}
+
+
+	public boolean sanityCheck(String fileSgm, String fileSerifXml) throws IOException {
+
+		SerifXMLLoader fromXML = SerifXMLLoader.fromStandardACETypes();
+		DocTheory dt = fromXML.loadFrom(new File(fileSerifXml));
+
+		//String textRawSgm = eraseXMLRaw(readSgm(fileSgm));
+
+		int sid=0, i=0;
+
+		for(SentenceTheory sentTheory : dt.sentenceTheories()) {
+
+			for(i=0; i<sentTheory.tokenSequence().size(); i++) {
+				//com.bbn.serif.theories.Token t = sentTheory.tokenSequence().token(i);
+				//String tokenTextTest = textRawSgm.substring(getTokenStartOffset(sid, i), getTokenEndOffset(sid, i)+1);
+				//System.out.println("[token]: " + t.text() + "\t" + t.startCharOffset().value() + ", " + t.endCharOffset().value() + "\t"
+				//		+ getTokenStartOffset(sid, i) + ", " + getTokenEndOffset(sid, i) + "\t" + tokenTextTest + "\t"
+				//		+ getTokenizedCharOffsetFromRawCharOffset(getTokenStartOffset(sid, i)) + ", " + getTokenizedCharOffsetFromRawCharOffset(getTokenEndOffset(sid, i)));
+			}
+
+			sid++;
+		}
+
+		// only check the last one
+		SentenceTheory lastSentTheory = dt.sentenceTheories().get(dt.sentenceTheories().size()-1);
+		com.bbn.serif.theories.Token lastToken = lastSentTheory.tokenSequence().token(lastSentTheory.tokenSequence().size()-1);
+		if(lastToken.startCharOffset().value()!=getTokenizedCharOffsetFromRawCharOffset(getTokenStartOffset(sid-1, i-1)) ||
+				lastToken.endCharOffset().value()!=getTokenizedCharOffsetFromRawCharOffset(getTokenEndOffset(sid-1, i-1)))
+			return false;
+		else
+			return true;
+	}
+
+	public static void main(String[] argv) throws IOException {
+		/*
+		// all problematic docs in Chinese ACE05 corpus
+//		List<String> listDocs = new ArrayList<String>();
+		listDocs.add("XIN20001114.0200.0017");
+//		listDocs.add("CTV20001106.1330.1457");
+//		listDocs.add("CTV20001003.1330.0000");
+		listDocs.add("XIN20001202.0800.0050");
+		listDocs.add("CTS20001011.1800.1546");
+		listDocs.add("CTV20001005.1330.0595");
+		listDocs.add("DAVYZW_20050110.1403");
+		listDocs.add("XIN20001003.0200.0001");
+		listDocs.add("XIN20001003.0200.0015");
+		listDocs.add("XIN20001104.1400.0093");
+		listDocs.add("XIN20001114.0200.0017");
+		listDocs.add("XIN20001115.0800.0077");
+		listDocs.add("XIN20001124.2000.0148");
+		listDocs.add("ZBN20001120.0400.0006");
+		listDocs.add("ZBN20001205.0400.0017");
+		*/
+
+		String strDocList = "\\\\mercury-04\\u42\\bmin\\source\\Active\\Projects\\neolearnit\\dbg\\list_sgms";
+
+		String line;
+		int lineNo=0;
+		BufferedReader reader = new BufferedReader(new InputStreamReader(
+				new FileInputStream(new File(strDocList)), "utf-8"));
+		while ((line = reader.readLine()) != null) {
+			System.out.println("==line: " + ++lineNo);
+			String docid = line.trim().replace(".sgm", "");
+
+			String fileSgm = "\\\\mercury-04\\u42\\bmin\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\rawtext\\" + docid + ".sgm";
+			String fileSegment = "\\\\mercury-04\\u42\\bmin\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\segments\\" + docid + ".segment";
+
+	//		String fileSgm = "\\\\mercury-04\\u42\\bmin\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\rawtext\\CTS20001213.1300.0503.sgm";
+	//		String fileSegment = "\\\\mercury-04\\u42\\bmin\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\segments\\CTS20001213.1300.0503.segment";
+
+			SentOffSetBuilder builder = new SentOffSetBuilder(fileSgm, fileSegment);
+
+	//		for(int sentIdx=0; sentIdx<10; sentIdx++) {
+
+			/*
+			int sentIdx = 1;
+			System.out.println("sent: " + builder.listSentOffset.get(1).getFirst() + ", " + builder.listSentOffset.get(1).getSecond());
+			for(int tokenIdx=0; tokenIdx<23; tokenIdx++) {
+				System.out.println("sentIdx: " + sentIdx + ", tokenIdx: " + tokenIdx + ", start: " +  builder.getTokenStartOffset(sentIdx, tokenIdx) + ", end: " + builder.getTokenEndOffset(sentIdx, tokenIdx));
+			}
+			*/
+	//		}
+		}
+		reader.close();
+
+//		if(!builder.sanityCheck(fileSgm, fileSerifXml))
+//			System.out.println("== sanity check fail : " + fileSgm);
+
+
+//		String fileSgm = "\\\\mercury-04\\u41\\ChineseACE\\rawtext\\CTS20001122.1300.0271.sgm";
+		//String fileSgm = "/nfs/mercury-04/u41/ChineseACE/rawtext/CTS20001122.1300.0271.sgm";
+//		String fileSegment = "\\\\mercury-04\\u42\\bmin\\tmp\\CTS20001122.1300.0271.segment";
+		// String fileSegment = "/nfs/mercury-04/u42/bmin/tmp/CTS20001122.1300.0271.segment";
+//		String fileSerifXml = "\\\\mercury-04\\u18\\mshafir\\source\\trunk\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\serifxml\\chinese\\CTS20001122.1300.0271.segment.xml";
+		// String fileSerifXml = "/nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/chinese_ace/serifxml/chinese/CTS20001122.1300.0271.segment.xml";
+
+
+		//String fileSgm = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\rawtext\\CTS20001106.1300.0423.sgm";
+		// String fileSegment = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\segments\\CTS20001106.1300.0423.segment";
+		// String fileSerifXml = "\\\\mercury-04\\u18\\mshafir\\source\\trunk\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\serifxml\\chinese\\CTS20001106.1300.0423.segment.xml";
+
+		// String fileSgm = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\rawtext\\VOM20001028.1800.1997.sgm";
+		// String fileSegment = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\segments\\VOM20001028.1800.1997.segment";
+		// String fileSerifXml = "\\\\mercury-04\\u18\\mshafir\\source\\trunk\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\serifxml\\chinese\\VOM20001028.1800.1997.segment.xml";
+
+//		String fileSgm = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\rawtext\\XIN20001229.1400.0101.sgm";
+//		String fileSegment = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\segments\\XIN20001229.1400.0101.segment";
+//		String fileSerifXml = "\\\\mercury-04\\u18\\mshafir\\source\\trunk\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\serifxml\\chinese\\XIN20001229.1400.0101.segment.xml";
+
+//		String fileSgm = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\rawtext\\CBS20001030.1000.0617.sgm";
+//		String fileSegment = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\segments\\CBS20001030.1000.0617.segment";
+//		String fileSerifXml = "\\\\mercury-04\\u18\\mshafir\\source\\trunk\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\serifxml\\chinese\\CBS20001030.1000.0617.segment.xml";
+
+//		String docId = "CBS20001203.1000.0378";
+//		String docId = "CBS20001214.1000.1127";
+//		String docId = "CNR20001122.1700.0091";
+//		String docId = "CTS20001025.1300.1022";
+//		String docId = "CTS20001031.1300.1129";
+//		String docId = "CTS20001127.1300.1328";
+//		String docId = "CTS20001223.1300.0006";
+		String docId = argv[0];
+
+		/*
+		 * note: special check on:
+		 * 1. DAVYZW_20050124.1833 (URL fail in last token)
+		 * 2. CNR20001218.1700.1337 (...... fail in last token)
+		 */
+		/*
+		XIN20001009.0800.0048
+DAVYZW_20050125.1704
+DAVYZW_20050124.1833
+CNR20001218.1700.1337
+CBS20001214.1000.1127
+VOM20001024.1800.1241
+DAVYZW_20050127.1720
+DAVYZW_20050201.1538
+CBS20001124.0800.0927
+VOM20001115.0700.0140
+DAVYZW_20050118.1319
+DAVYZW_20050111.1514
+CTS20001027.1300.1372
+XIN20001223.2000.0095
+VOM20001008.1800.0011
+DAVYZW_20041230.1024
+DAVYZW_20050114.0855
+DAVYZW_20050121.1237
+DAVYZW_20050125.1321
+DAVYZW_20050124.1829
+ZBN20001119.1300.0039
+
+		 */
+
+		/*
+		String fileSgm = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\rawtext\\" + docId + ".sgm";
+		String fileSegment = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\segments\\" + docId + ".segment";
+		String fileSerifXml = "\\\\mercury-04\\u18\\mshafir\\source\\trunk\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\serifxml\\chinese\\" + docId + ".segment.xml";
+
+
+//		String fileSgm = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\rawtext\\CTS20001225.1300.0585.sgm";
+//		String fileSegment = "\\\\mercury-04\\u42\\bmin\\data\\chinese_ace\\segments\\CTS20001225.1300.0585.segment";
+//		String fileSerifXml = "\\\\mercury-04\\u18\\mshafir\\source\\trunk\\Active\\Projects\\learnit\\evaluation\\chinese_ace\\serifxml\\chinese\\CTS20001225.1300.0585.segment.xml";
+
+		SentOffSetBuilder builder = new SentOffSetBuilder(fileSgm, fileSegment);
+		if(!builder.sanityCheck(fileSgm, fileSerifXml))
+			System.out.println("== sanity check fail : " + fileSgm);
+		*/
+	}
+}

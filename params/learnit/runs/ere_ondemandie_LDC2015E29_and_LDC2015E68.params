@@ -1,0 +1,19 @@
+INCLUDE ./default.params
+INCLUDE ../domains/ere_LDC2015E29_and_LDC2015E68.param
+
+OVERRIDE learnit_expt_suffix: ere_LDC2015E29_and_LDC2015E68
+
+mappings_list_batches: 2
+
+OVERRIDE do_initialization: false
+OVERRIDE do_post_pruning: false
+
+OVERRIDE do_evaluation: true
+
+regtest_confidence_cutoff: .01
+
+transliterationFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.validTranslations
+chiEngNameMappingFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.normalizedTranslations
+
+sent_builder_dbg_info: false
+enable_exception_contradictory_answers: false

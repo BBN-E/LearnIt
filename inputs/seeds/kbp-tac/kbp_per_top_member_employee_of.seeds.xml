@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_top_member_employee_of" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abdel aziz nur al - ashr" slot1="justice and equality movement" />
+	<seed slot0="abdel aziz ushar" slot1="justice and equality movement" />
+	<seed slot0="abdelaziz ushar" slot1="justice and equality movement" />
+	<seed slot0="abdelaziz el - nur ashr" slot1="justice and equality movement" />
+	<seed slot0="abdul jalil" slot1="awami league" />
+	<seed slot0="abdul rahman akhund" slot1="awami national party" />
+	<seed slot0="abdullahi el - tom" slot1="justice and equality movement" />
+	<seed slot0="abu zumam" slot1="justice and equality movement" />
+	<seed slot0="abul maal abdul muhit" slot1="awami league" />
+	<seed slot0="abul mal abdul muhit" slot1="awami league" />
+	<seed slot0="afrasiab khattak" slot1="awami national party" />
+	<seed slot0="ahmad zia rafaat" slot1="election complaints commission" />
+	<seed slot0="ahmad zia rafat" slot1="election complaints commission" />
+	<seed slot0="aitzol etxaburu" slot1="euskadi ta askatasuna" />
+	<seed slot0="alain deletroz" slot1="international crisis group" />
+	<seed slot0="alan f schatzberg" slot1="american psychiatric association" />
+	<seed slot0="alan f schatzburg" slot1="american psychiatric association" />
+	<seed slot0="alan i leshner" slot1="american association for the advancement of science" />
+	<seed slot0="alan kazdin" slot1="american psychological association" />
+	<seed slot0="alan leshner" slot1="american association for the advancement of science" />
+	<seed slot0="alex flint" slot1="nuclear energy institute" />
+	<seed slot0="alexander mikheyev" slot1="rosoboronexport" />
+	<seed slot0="alexey ledyaev" slot1="focus on the family" />
+	<seed slot0="alice rivlin" slot1="bipartisan policy center" />
+	<seed slot0="aman tajali" slot1="election complaints commission" />
+	<seed slot0="amin khattak" slot1="awami national party" />
+	<seed slot0="amir hossain amu" slot1="awami league" />
+	<seed slot0="anatoli isaikin" slot1="rosoboronexport" />
+	<seed slot0="anatoly isaikin" slot1="rosoboronexport" />
+	<seed slot0="anatoly isaykin" slot1="rosoboronexport" />
+	<seed slot0="anders berntell" slot1="stockholm international water institute" />
+	<seed slot0="anders bertil" slot1="stockholm international water institute" />
+	<seed slot0="andre hawaux" slot1="conagra foods" />
+	<seed slot0="andrew beck" slot1="river road asset management" />
+	<seed slot0="andrew cosslett" slot1="intercontinental hotels group" />
+	<seed slot0="andy kunz" slot1="us high speed rail association" />
+	<seed slot0="anuradha desai" slot1="blackburn rovers" />
+	<seed slot0="arkaitz aguirregabiria del barrio" slot1="euskadi ta askatasuna" />
+	<seed slot0="armond morris" slot1="georgia peanut commission" />
+	<seed slot0="arnaud mares" slot1="moody &apos;s corp" />
+	<seed slot0="asfandyar wali" slot1="awami national party" />
+	<seed slot0="asfandyar wali khan" slot1="awami national party" />
+	<seed slot0="basdeo panday" slot1="united national congress" />
+	<seed slot0="bashir ahmed bilour" slot1="awami national party" />
+	<seed slot0="bates gill" slot1="stockholm international peace research institute" />
+	<seed slot0="ben verwaayen" slot1="alcatel - lucent" />
+	<seed slot0="bernard clarke" slot1="council of mortgage lenders" />
+	<seed slot0="bill maier" slot1="focus on the family" />
+	<seed slot0="bill neukom" slot1="american bar association" />
+	<seed slot0="bindu lohani" slot1="asian development bank" />
+	<seed slot0="bindu n lohani" slot1="asian development bank" />
+	<seed slot0="blavatnik" slot1="access industries" />
+	<seed slot0="bob davis" slot1="american bankers association" />
+	<seed slot0="bob dickinson" slot1="carnival cruise lines" />
+	<seed slot0="bob pannell" slot1="council of mortgage lenders" />
+	<seed slot0="bob seiwert" slot1="american bankers association" />
+	<seed slot0="bonnie hammer" slot1="usa network" />
+	<seed slot0="boris collardi" slot1="bank julius baer" />
+	<seed slot0="bruno saelzer" slot1="escada" />
+	<seed slot0="bulelani ngcuka" slot1="scorpions" />
+	<seed slot0="burl osborne" slot1="freedom communications" />
+	<seed slot0="c lawrence greenwood" slot1="asian development bank" />
+	<seed slot0="cai esheng" slot1="china banking regulatory commission" />
+	<seed slot0="carol bernstein" slot1="american psychiatric association" />
+	<seed slot0="caroline sanfilippo" slot1="intercontinental hotels group" />
+	<seed slot0="carolyn robinowitz" slot1="american psychiatric association" />
+	<seed slot0="cesare geronzi" slot1="capitalia spa" />
+	<seed slot0="cesc fabregas" slot1="arsenal football club" />
+	<seed slot0="chang chun - hsun" slot1="mainland affairs council" />
+	<seed slot0="chang liang - jen" slot1="mainland affairs council" />
+	<seed slot0="chao chein - min" slot1="mainland affairs council" />
+	<seed slot0="chao chien - min" slot1="mainland affairs council" />
+	<seed slot0="charles konigsberg" slot1="bipartisan policy center" />
+	<seed slot0="chen ming -  tong" slot1="mainland affairs council" />
+	<seed slot0="chen ming - tong" slot1="mainland affairs council" />
+	<seed slot0="chen ming - tung" slot1="mainland affairs council" />
+	<seed slot0="christopher wild" slot1="international agency for research on cancer" />
+	<seed slot0="chuck johnson" slot1="national council for adoption" />
+	<seed slot0="chung - hwa hong" slot1="new york immigration coalition" />
+	<seed slot0="chung - wha hong" slot1="new york immigration coalition" />
+	<seed slot0="claude - alain margelisch" slot1="swiss bankers association" />
+	<seed slot0="colin chartres" slot1="international water management institute" />
+	<seed slot0="craig stevens" slot1="american beverage association" />
+	<seed slot0="ds greenberg" slot1="american association for the advancement of science" />
+	<seed slot0="dan humiston" slot1="indoor tanning association" />
+	<seed slot0="david bernstein" slot1="carnival corp" />
+	<seed slot0="david dein" slot1="arsenal football club" />
+	<seed slot0="david huang" slot1="mainland affairs council" />
+	<seed slot0="david molden" slot1="international water management institute" />
+	<seed slot0="david vieau" slot1="a123 systems inc" />
+	<seed slot0="derek a gillman," slot1="barnes foundation" />
+	<seed slot0="deshpande" slot1="a123 systems inc" />
+	<seed slot0="don berg" slot1="intercontinental hotels group" />
+	<seed slot0="don koehler" slot1="georgia peanut commission" />
+	<seed slot0="don mcgough" slot1="georgia peanut commission" />
+	<seed slot0="dr khalil" slot1="justice and equality movement" />
+	<seed slot0="dr paul fink" slot1="american psychiatric association" />
+	<seed slot0="dr james h scully jr" slot1="american psychiatric association" />
+	<seed slot0="ed yingling" slot1="american bankers association" />
+	<seed slot0="edward l yingling" slot1="american bankers association" />
+	<seed slot0="edward yingling" slot1="american bankers association" />
+	<seed slot0="edward yingling" slot1="american beverage association" />
+	<seed slot0="eileen mcmenamin" slot1="bipartisan policy center" />
+	<seed slot0="emilio quincy daddario" slot1="american association for the advancement of science" />
+	<seed slot0="eric kolchinsky" slot1="moody &apos;s corp" />
+	<seed slot0="etienne fouques" slot1="alcatel - lucent" />
+	<seed slot0="evan schnittman" slot1="oxford university press" />
+	<seed slot0="ewen cameron" slot1="american psychiatric association" />
+	<seed slot0="fazalur rehman atakhel" slot1="awami national party" />
+	<seed slot0="flanders" slot1="freedom communications" />
+	<seed slot0="florence a davis" slot1="the starr foundation" />
+	<seed slot0="franciso javier lopez pena" slot1="euskadi ta askatasuna" />
+	<seed slot0="frank farley" slot1="american psychological association" />
+	<seed slot0="frank gut" slot1="bank julius baer" />
+	<seed slot0="fu don - cheng" slot1="mainland affairs council" />
+	<seed slot0="fu don - cheng" slot1="mainland affairs council" />
+	<seed slot0="fu dong - cheng" slot1="mainland affairs council" />
+	<seed slot0="fu tung - cheng" slot1="mainland affairs council" />
+	<seed slot0="gardner lindzey" slot1="american psychological association" />
+	<seed slot0="gareth evans" slot1="international crisis group" />
+	<seed slot0="gary m rodkin" slot1="conagra foods" />
+	<seed slot0="gary rodkin" slot1="conagra foods" />
+	<seed slot0="geert van der linden" slot1="asian development bank" />
+	<seed slot0="geoff taylor" slot1="a123 systems inc" />
+	<seed slot0="george drakopoulos" slot1="association of greek tourism enterprises" />
+	<seed slot0="george mitchell" slot1="bipartisan policy center" />
+	<seed slot0="gerald cahill" slot1="carnival corp" />
+	<seed slot0="gerald cahill" slot1="carnival cruise lines" />
+	<seed slot0="gerald koocher" slot1="american psychological association" />
+	<seed slot0="gerald p koocher" slot1="american psychological association" />
+	<seed slot0="gerrie nel" slot1="scorpions" />
+	<seed slot0="gerry cahill" slot1="carnival corp" />
+	<seed slot0="gerry cahill" slot1="carnival cruise lines" />
+	<seed slot0="gerry mcginn" slot1="irish nationwide building society" />
+	<seed slot0="gerry nel" slot1="scorpions" />
+	<seed slot0="grant kippen" slot1="election complaints commission" />
+	<seed slot0="h thomas wells" slot1="american bar association" />
+	<seed slot0="h thomas wells jr" slot1="american bar association" />
+	<seed slot0="hafiz mohammad saeed" slot1="lashkar - e - taiba" />
+	<seed slot0="hafiz mohammed saeed" slot1="lashkar - e - taiba" />
+	<seed slot0="hafiz muhammad saeed" slot1="lashkar - e - taiba" />
+	<seed slot0="hafiz ringim" slot1="nigeria police force" />
+	<seed slot0="haji adeel" slot1="awami national party" />
+	<seed slot0="harold varmus" slot1="public library of science" />
+	<seed slot0="haruhiko kuroda" slot1="asian development bank" />
+	<seed slot0="haruhito kuroda" slot1="asian development bank" />
+	<seed slot0="hasina" slot1="awami league" />
+	<seed slot0="hasina wajed" slot1="awami league" />
+	<seed slot0="henry f white jr" slot1="american bar association" />
+	<seed slot0="henry schacht" slot1="alcatel - lucent" />
+	<seed slot0="hossain chowdhury" slot1="awami league" />
+	<seed slot0="howard baker" slot1="bipartisan policy center" />
+	<seed slot0="howard frank" slot1="carnival corp" />
+	<seed slot0="huang danhua" slot1="state - owned assets supervision and administration commission" />
+	<seed slot0="huang kun -  huei" slot1="mainland affairs council" />
+	<seed slot0="huang shuhe" slot1="state - owned assets supervision and administration commission" />
+	<seed slot0="hubert de pesquidoux" slot1="alcatel - lucent" />
+	<seed slot0="hubert de pesquidoux" slot1="alcatel - lucent" />
+	<seed slot0="hugo chavez" slot1="bolivarian alternative for the americas" />
+	<seed slot0="hussain shaheed suhrawardy" slot1="awami league" />
+	<seed slot0="ibon gogeascoechea arronategui" slot1="euskadi ta askatasuna" />
+	<seed slot0="imam yasin abu bakr" slot1="jamaat - al - muslimeen" />
+	<seed slot0="ivan gazidis" slot1="arsenal football club" />
+	<seed slot0="jacinto suarez espinoza" slot1="central american parliament" />
+	<seed slot0="james ballantine" slot1="american bankers association" />
+	<seed slot0="james c dobson" slot1="focus on the family" />
+	<seed slot0="james chessen" slot1="american bankers association" />
+	<seed slot0="james dobson" slot1="focus on the family" />
+	<seed slot0="jane lubchenco" slot1="american association for the advancement of science" />
+	<seed slot0="jason forcier" slot1="a123 systems inc" />
+	<seed slot0="jason grumet" slot1="bipartisan policy center" />
+	<seed slot0="jason s grumet" slot1="bipartisan policy center" />
+	<seed slot0="javier lopez pena" slot1="euskadi ta askatasuna" />
+	<seed slot0="jean - francois tremblay" slot1="moody &apos;s corp" />
+	<seed slot0="jean - pascal beaufret" slot1="alcatel - lucent" />
+	<seed slot0="jia kang" slot1="china banking regulatory commission" />
+	<seed slot0="jiang dingzhi" slot1="china banking regulatory commission" />
+	<seed slot0="jim chessen" slot1="american bankers association" />
+	<seed slot0="jim daly" slot1="focus on the family" />
+	<seed slot0="jin liqun" slot1="asian development bank" />
+	<seed slot0="john overstreet" slot1="indoor tanning association" />
+	<seed slot0="john p holdren" slot1="american association for the advancement of science" />
+	<seed slot0="john williams" slot1="blackburn rovers" />
+	<seed slot0="johnnason liu" slot1="mainland affairs council" />
+	<seed slot0="jose miguel benaran ordenana" slot1="euskadi ta askatasuna" />
+	<seed slot0="joseph wu" slot1="mainland affairs council" />
+	<seed slot0="judith thorman" slot1="american beverage association" />
+	<seed slot0="juha heikinheimo" slot1="stx finland" />
+	<seed slot0="julio alak" slot1="aerolineas argentinas" />
+	<seed slot0="kamal ibrahim" slot1="justice and equality movement" />
+	<seed slot0="kamla persad -  bissessar" slot1="united national congress" />
+	<seed slot0="kamla persad - bissessar" slot1="united national congress" />
+	<seed slot0="kao charng" slot1="mainland affairs council" />
+	<seed slot0="karen j mathis" slot1="american bar association" />
+	<seed slot0="karen mathis" slot1="american bar association" />
+	<seed slot0="karl - gerhard eick" slot1="arcandor" />
+	<seed slot0="kathrin muehlbronner" slot1="moody &apos;s corp" />
+	<seed slot0="kay stafford" slot1="country music association" />
+	<seed slot0="keith edelman" slot1="arsenal football club" />
+	<seed slot0="keith leggett" slot1="american bankers association" />
+	<seed slot0="ken chan" slot1="moody &apos;s corp" />
+	<seed slot0="ken clayton" slot1="american bankers association" />
+	<seed slot0="kenneth clayton" slot1="american bankers association" />
+	<seed slot0="kenneth f nelson" slot1="country music association" />
+	<seed slot0="kenneth feinberg" slot1="washington national opera" />
+	<seed slot0="kenneth r feinberg" slot1="washington national opera" />
+	<seed slot0="kevin keane" slot1="american beverage association" />
+	<seed slot0="khaleda khanam" slot1="awami league" />
+	<seed slot0="khalil ibrahim" slot1="justice and equality movement" />
+	<seed slot0="khempheng pholsena" slot1="asian development bank" />
+	<seed slot0="lai hsing - yuan" slot1="mainland affairs council" />
+	<seed slot0="lai shin - yuan" slot1="mainland affairs council" />
+	<seed slot0="lawrence greenwood" slot1="asian development bank" />
+	<seed slot0="len blavatnik" slot1="access industries" />
+	<seed slot0="leo gerard" slot1="united steelworkers of america" />
+	<seed slot0="leonard mccarthy" slot1="scorpions" />
+	<seed slot0="leonor beleza" slot1="champalimaud foundation" />
+	<seed slot0="li fuan" slot1="china banking regulatory commission" />
+	<seed slot0="li rongrong" slot1="state - owned assets supervision and administration commission" />
+	<seed slot0="li wei" slot1="state - owned assets supervision and administration commission" />
+	<seed slot0="liqun jin" slot1="asian development bank" />
+	<seed slot0="liu" slot1="china banking regulatory commission" />
+	<seed slot0="liu mingkang" slot1="china banking regulatory commission" />
+	<seed slot0="liu minkang" slot1="china banking regulatory commission" />
+	<seed slot0="liu te - hsun" slot1="mainland affairs council" />
+	<seed slot0="liu te - shun" slot1="mainland affairs council" />
+	<seed slot0="liu teh - hsun" slot1="mainland affairs council" />
+	<seed slot0="liu teh - shun" slot1="mainland affairs council" />
+	<seed slot0="louise arbour" slot1="international crisis group" />
+	<seed slot0="martha barnett" slot1="american bar association" />
+	<seed slot0="mahgul yamam" slot1="election complaints commission" />
+	<seed slot0="mahmudur rahman manna" slot1="awami league" />
+	<seed slot0="marcia kraft goin" slot1="american psychiatric association" />
+	<seed slot0="mark hughes" slot1="blackburn rovers" />
+	<seed slot0="mark j weinstein" slot1="washington national opera" />
+	<seed slot0="mark l schneider" slot1="international crisis group" />
+	<seed slot0="mark schneider" slot1="international crisis group" />
+	<seed slot0="mark tenhundfeld" slot1="american bankers association" />
+	<seed slot0="martin d madaus" slot1="millipore corp" />
+	<seed slot0="martin d madaus" slot1="millipore corp" />
+	<seed slot0="martin ep seligman" slot1="american psychological association" />
+	<seed slot0="martin landtman" slot1="stx finland" />
+	<seed slot0="martin seligman" slot1="american psychological association" />
+	<seed slot0="marvin fertel" slot1="nuclear energy institute" />
+	<seed slot0="mary f robinson" slot1="national council for adoption" />
+	<seed slot0="mary good" slot1="american association for the advancement of science" />
+	<seed slot0="mary robinson" slot1="national council for adoption" />
+	<seed slot0="matt rose" slot1="burlington northern santa fe corp" />
+	<seed slot0="matteo arpe" slot1="capitalia spa" />
+	<seed slot0="maurice greenberg" slot1="the starr foundation" />
+	<seed slot0="maurice r &quot;hank&quot; greenberg" slot1="the starr foundation" />
+	<seed slot0="maurice r greenberg" slot1="the starr foundation" />
+	<seed slot0="mawlana fazal rahman" slot1="awami national party" />
+	<seed slot0="megha mittal" slot1="escada" />
+	<seed slot0="michael coogan" slot1="council of mortgage lenders" />
+	<seed slot0="michael fingleton" slot1="irish nationwide building society" />
+	<seed slot0="michael greco" slot1="american bar association" />
+	<seed slot0="michael locascio" slot1="conagra foods" />
+	<seed slot0="michelle riba" slot1="american psychiatric association" />
+	<seed slot0="micky arison" slot1="carnival corp" />
+	<seed slot0="mike okiro" slot1="nigeria police force" />
+	<seed slot0="mike quigley" slot1="alcatel - lucent" />
+	<seed slot0="mikel albizu iriarte" slot1="euskadi ta askatasuna" />
+	<seed slot0="mikel antza" slot1="euskadi ta askatasuna" />
+	<seed slot0="mikel kabikoitz carrera sarobe" slot1="euskadi ta askatasuna" />
+	<seed slot0="mikel karrera sarobe" slot1="euskadi ta askatasuna" />
+	<seed slot0="mikel de garikoitz aspiazu" slot1="euskadi ta askatasuna" />
+	<seed slot0="mohamed abdallah" slot1="justice and equality movement" />
+	<seed slot0="mohammad adeel" slot1="awami national party" />
+	<seed slot0="mohammad afzal khan" slot1="awami national party" />
+	<seed slot0="mohammad yousuf dar" slot1="awami league" />
+	<seed slot0="mohammed bahr hamdeen" slot1="justice and equality movement" />
+	<seed slot0="mohammed masood azhar alvi" slot1="justice and equality movement" />
+	<seed slot0="mujibur rahman" slot1="awami league" />
+	<seed slot0="nada l stotland" slot1="american psychiatric association" />
+	<seed slot0="nada stotland" slot1="american psychiatric association" />
+	<seed slot0="nicholas a cummings" slot1="american psychological association" />
+	<seed slot0="nick grono" slot1="international crisis group" />
+	<seed slot0="nigel portwood" slot1="oxford university press" />
+	<seed slot0="nikos aggelopoulos" slot1="association of greek tourism enterprises" />
+	<seed slot0="nisar ali khan" slot1="awami national party" />
+	<seed slot0="ogbonnaya onovo" slot1="nigeria police force" />
+	<seed slot0="osborne" slot1="freedom communications" />
+	<seed slot0="paolo savona" slot1="capitalia spa" />
+	<seed slot0="patricia f russo" slot1="alcatel - lucent" />
+	<seed slot0="patricia russo" slot1="alcatel - lucent" />
+	<seed slot0="patrick boissier" slot1="dcns" />
+	<seed slot0="patrick odier" slot1="swiss bankers association" />
+	<seed slot0="paul bledsoe" slot1="bipartisan policy center" />
+	<seed slot0="paul fink" slot1="american psychiatric association" />
+	<seed slot0="paul ince" slot1="blackburn rovers" />
+	<seed slot0="paul j caminiti" slot1="zondervan publishing, inc" />
+	<seed slot0="paul tufano" slot1="alcatel - lucent" />
+	<seed slot0="pete domenici" slot1="bipartisan policy center" />
+	<seed slot0="peter agre" slot1="american association for the advancement of science" />
+	<seed slot0="peter boyle" slot1="international agency for research on cancer" />
+	<seed slot0="peter c agre" slot1="american association for the advancement of science" />
+	<seed slot0="peter hill - wood" slot1="arsenal football club" />
+	<seed slot0="peter kant" slot1="rapiscan systems" />
+	<seed slot0="peter raven" slot1="american association for the advancement of science" />
+	<seed slot0="philip g zimbardo" slot1="american psychological association" />
+	<seed slot0="philippe camus" slot1="alcatel - lucent" />
+	<seed slot0="philippe dumont" slot1="alcatel - lucent" />
+	<seed slot0="pierre mirabaud" slot1="swiss bankers association" />
+	<seed slot0="pl cido domingo" slot1="washington national opera" />
+	<seed slot0="placido domingo" slot1="washington national opera" />
+	<seed slot0="qari abdul wahid kashmiri" slot1="lashkar - e - taiba" />
+	<seed slot0="raj rajaratnam" slot1="galleon group" />
+	<seed slot0="rajat nag" slot1="asian development bank" />
+	<seed slot0="raymond j baer" slot1="bank julius baer" />
+	<seed slot0="raymond mcdaniel" slot1="moody &apos;s corp" />
+	<seed slot0="raymond w mcdaniel jr" slot1="moody &apos;s corp" />
+	<seed slot0="raymond w mcdaniel jr" slot1="moody &apos;s corp" />
+	<seed slot0="richard myers" slot1="nuclear energy institute" />
+	<seed slot0="richard thompson" slot1="thomas more law center" />
+	<seed slot0="robert c seiwert" slot1="american bankers association" />
+	<seed slot0="robert d krebs" slot1="burlington northern santa fe corp" />
+	<seed slot0="robert d krebs" slot1="burlington northern santa fe corp" />
+	<seed slot0="robert darbelnet" slot1="american automobile association" />
+	<seed slot0="robert dickinson" slot1="carnival cruise lines" />
+	<seed slot0="robert dobias" slot1="asian development bank" />
+	<seed slot0="robert e hirshon" slot1="american bar association" />
+	<seed slot0="robert l darbelnet" slot1="american automobile association" />
+	<seed slot0="saad hariri" slot1="saudi oger" />
+	<seed slot0="saber hossain chowdhury" slot1="awami league" />
+	<seed slot0="sam allardyce" slot1="blackburn rovers" />
+	<seed slot0="sandy d  &apos; alemberte" slot1="american bar association" />
+	<seed slot0="sandy d &apos;alemberte" slot1="american bar association" />
+	<seed slot0="sarah carlson" slot1="moody &apos;s corp" />
+	<seed slot0="scott bolinder" slot1="zondervan publishing, inc" />
+	<seed slot0="scott flanders" slot1="freedom communications" />
+	<seed slot0="scott n flanders" slot1="freedom communications" />
+	<seed slot0="serge tchuruk" slot1="alcatel - lucent" />
+	<seed slot0="sergei chemezov" slot1="rosoboronexport" />
+	<seed slot0="sergey chemezov" slot1="rosoboronexport" />
+	<seed slot0="serguei ladiguin" slot1="rosoboronexport" />
+	<seed slot0="shahabuddin kiron" slot1="awami league" />
+	<seed slot0="shahi syed" slot1="awami national party" />
+	<seed slot0="shao ning" slot1="state - owned assets supervision and administration commission" />
+	<seed slot0="sharon brehm" slot1="american psychological association" />
+	<seed slot0="sheik hasina wajed" slot1="awami league" />
+	<seed slot0="sheikh hasian" slot1="awami league" />
+	<seed slot0="sheikh hasina" slot1="awami league" />
+	<seed slot0="sheikh hasina wajed" slot1="awami league" />
+	<seed slot0="sheikh mujibur rahman" slot1="awami league" />
+	<seed slot0="shiekh hasina" slot1="awami league" />
+	<seed slot0="slobodan medic" slot1="scorpions" />
+	<seed slot0="steve kean" slot1="blackburn rovers" />
+	<seed slot0="steven s sharfstein" slot1="american psychiatric association" />
+	<seed slot0="steven sharfstein" slot1="american psychiatric association" />
+	<seed slot0="su chi" slot1="mainland affairs council" />
+	<seed slot0="suleiman sandal" slot1="justice and equality movement" />
+	<seed slot0="suranjit sengupta" slot1="awami league" />
+	<seed slot0="susan feely" slot1="american beverage association" />
+	<seed slot0="susan k neely" slot1="american beverage association" />
+	<seed slot0="susan neely" slot1="american beverage association" />
+	<seed slot0="tadao chino" slot1="asian development bank" />
+	<seed slot0="tadashi usui" slot1="moody &apos;s corp" />
+	<seed slot0="takeshi watanabe" slot1="asian development bank" />
+	<seed slot0="talbot &quot;sandy&quot; d &apos;alemberte" slot1="american bar association" />
+	<seed slot0="talbot `` sandy  &apos; &apos; d &apos;alemberte" slot1="american bar association" />
+	<seed slot0="tammy genovese" slot1="country music association" />
+	<seed slot0="terry whittock" slot1="rapiscan systems" />
+	<seed slot0="thomas a hart" slot1="us high speed rail association" />
+	<seed slot0="thomas atwood" slot1="national council for adoption" />
+	<seed slot0="thomas difilipo" slot1="joint council on international children &apos;s services" />
+	<seed slot0="thomas middelhoff" slot1="arcandor" />
+	<seed slot0="thomas middlehoff" slot1="arcandor" />
+	<seed slot0="thomas pickering" slot1="international crisis group" />
+	<seed slot0="tom daschle" slot1="bipartisan policy center" />
+	<seed slot0="tom defilipo" slot1="joint council on international children &apos;s services" />
+	<seed slot0="tom difilipo" slot1="joint council on international children &apos;s services" />
+	<seed slot0="tom difilipo" slot1="joint council on international children &apos;s services" />
+	<seed slot0="tom doyle" slot1="american basketball association" />
+	<seed slot0="torbjorn digernes" slot1="norwegian university of science and technology" />
+	<seed slot0="tung chen - yuan" slot1="mainland affairs council" />
+	<seed slot0="tung cheng - yuan" slot1="mainland affairs council" />
+	<seed slot0="urs p roth" slot1="swiss bankers association" />
+	<seed slot0="urs roth" slot1="swiss bankers association" />
+	<seed slot0="ursula schaefer - preuss" slot1="asian development bank" />
+	<seed slot0="valeri varlamov" slot1="rosoboronexport" />
+	<seed slot0="vincent cogliano" slot1="international agency for research on cancer" />
+	<seed slot0="vusi pikoli" slot1="scorpions" />
+	<seed slot0="wang yong" slot1="state - owned assets supervision and administration commission" />
+	<seed slot0="wang zhaoxing" slot1="china banking regulatory commission" />
+	<seed slot0="wayne abernathy" slot1="american bankers association" />
+	<seed slot0="wayne ranick" slot1="united steelworkers of america" />
+	<seed slot0="william black" slot1="moody &apos;s corp" />
+	<seed slot0="william h neukom" slot1="american bar association" />
+	<seed slot0="william neukom" slot1="american bar association" />
+	<seed slot0="winston dookeran" slot1="united national congress" />
+	<seed slot0="yan qingmin" slot1="china banking regulatory commission" />
+	<seed slot0="yang xilun" slot1="china banking regulatory commission" />
+	<seed slot0="yasin abu bakr" slot1="jamaat - al - muslimeen" />
+	<seed slot0="you ying - long" slot1="mainland affairs council" />
+	<seed slot0="yusuf muzammil" slot1="lashkar - e - taiba" />
+	<seed slot0="zaki - ur - rehman lakhvi" slot1="lashkar - e - taiba" />
+	<seed slot0="zhao xiaoyu" slot1="asian development bank" />
+	<seed slot0="zillur rahman" slot1="awami league" />
+</seeds>

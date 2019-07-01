@@ -1,0 +1,32 @@
+INCLUDE ./default.params
+INCLUDE ../domains/wm_m6_demo.param
+
+OVERRIDE learnit_expt_suffix: wm_m6_demo.v1
+
+mappings_list_batches: 2
+
+OVERRIDE do_initialization: false
+OVERRIDE do_post_pruning: false
+
+# following three params are optional and are used by InstanceExtractor
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 1
+load_serifxml_with_sloppy_offsets: false
+# following param is used by seed-extractor/printer for similarity calculation
+honor_slot_ordering_for_seed_extraction: false
+
+OVERRIDE do_evaluation: true
+
+regtest_confidence_cutoff: .01
+
+#seeds_dir: /tmp/seeds_dir/
+#patterns_dir: /tmp/patterns_dir/
+#seed_similarity_dir: /tmp/seed_similarity_dir/
+#pattern_similarity_dir: /tmp/pattern_similarity_dir/
+#source_lists: /nfs/mercury-04/u41/learnit/WM_m6.demo/source_lists/
+
+transliterationFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.validTranslations
+chiEngNameMappingFile: /nfs/mercury-04/u22/Active/Projects/neolearnit/temp/coref.normalizedTranslations
+
+sent_builder_dbg_info: false
+enable_exception_contradictory_answers: false

@@ -1,0 +1,4 @@
+INCLUDE ./default.params
+INCLUDE ../domains/kbp-tac_discussion_forum.params
+
+OVERRIDE learnit_expt_suffix: kbp-tac-discussion-forums

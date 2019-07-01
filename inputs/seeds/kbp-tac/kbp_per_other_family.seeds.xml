@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_other_family" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="adam gadahn" slot1="agnes branch" />
+	<seed slot0="adam gadahn" slot1="carl pearlman" />
+	<seed slot0="ali akbar khan" slot1="ravi shankar" />
+	<seed slot0="andre carson" slot1="julia carson" />
+	<seed slot0="anthony marshall" slot1="vincent astor" />
+	<seed slot0="augustus hawkins" slot1="susan jefferson" />
+	<seed slot0="carolyn goodman" slot1="jane mark" />
+	<seed slot0="carolyn goodman" slot1="kalman goodman" />
+	<seed slot0="catherine roraback" slot1="andrew roraback" />
+	<seed slot0="dominick dunne" slot1="hannah" />
+	<seed slot0="dominick dunne" slot1="joan didion" />
+	<seed slot0="ellie greenwich" slot1="jessica weiner" />
+	<seed slot0="girija prasad koirala" slot1="shashanka koirala" />
+	<seed slot0="irene kirkaldy" slot1="aleah bacquie vaughn" />
+	<seed slot0="irene kirkaldy" slot1="janine bacquie" />
+	<seed slot0="maria kaczynska" slot1="jaroslaw kaczynski" />
+	<seed slot0="nancy kissel" slot1="andrew kissel" />
+	<seed slot0="nancy kissel" slot1="jane kissel clayton" />
+	<seed slot0="parren mitchell" slot1="clarence mitchell iii" />
+	<seed slot0="parren mitchell" slot1="juanita jackson mitchell" />
+	<seed slot0="parren mitchell" slot1="michael mitchell" />
+	<seed slot0="patricia neal" slot1="sophie dahl" />
+	<seed slot0="richmond flowers" slot1="richmond iii" />
+	<seed slot0="ronnie james dio" slot1="david feinstein" />
+	<seed slot0="ronnie james dio" slot1="joey" />
+	<seed slot0="ronnie james dio" slot1="julie" />
+	<seed slot0="vernon bellecourt" slot1="peggy bellecourt" />
+	<seed slot0="yolanda king" slot1="isaac newton farris" />
+	<seed slot0="yolanda king" slot1="isaac newton farris jr" />
+	<seed slot0="yolanda king" slot1="martin luther king sr" />
+</seeds>

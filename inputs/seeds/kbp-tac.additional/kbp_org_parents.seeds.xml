@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_parents" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="xml" slot1="xslt" />
+	<seed slot0="tnt" slot1="ups" />
+	<seed slot0="library" slot1="everyman" />
+	<seed slot0="cox news service" slot1="denver post" />
+	<seed slot0="jsp" slot1="ejb" />
+	<seed slot0="dhtml" slot1="css" />
+	<seed slot0="jdbc" slot1="jndi" />
+	<seed slot0="ejb" slot1="jdbc" />
+	<seed slot0="comex division" slot1="new york mercantile exchange" />
+	<seed slot0="eastern technology council &amp;apos;s growth company" slot1="new jersey technology council &amp;apos;s growth company" />
+	<seed slot0="international security assistance force" slot1="nato" />
+	<seed slot0="ems" slot1="tnt" />
+	<seed slot0="sql server dts" slot1="oracle warehouse builder" />
+	<seed slot0="network &amp;amp; operations unit" slot1="manchester computing" />
+	<seed slot0="conservative party" slot1="general election" />
+	<seed slot0="usenet" slot1="mi5" />
+	<seed slot0="republicans" slot1="senate" />
+	<seed slot0="erp" slot1="commerce" />
+	<seed slot0="servlet" slot1="jsp" />
+	<seed slot0="jsp" slot1="xml" />
+	<seed slot0="british secret police" slot1="mi5" />
+	<seed slot0="people , commerce" slot1="industries and resources / ed" />
+	<seed slot0="al quds" slot1="al  -  kuffar" />
+	<seed slot0="houston aeros" slot1="tci" />
+	<seed slot0="uml" slot1="ooad" />
+	<seed slot0="jsp , transaction" slot1="mdb" />
+	<seed slot0="entity bean / session bean" slot1="jsp , transaction" />
+	<seed slot0="iis" slot1="sun one" />
+	<seed slot0="javascript" slot1="css" />
+	<seed slot0="css" slot1="perl" />
+	<seed slot0="bea" slot1="ibm" />
+	<seed slot0="bi" slot1="eai" />
+	<seed slot0="iis" slot1="ibm" />
+	<seed slot0="student financial aid office" slot1="cental library" />
+	<seed slot0="student financial aid office" slot1="bahauddin zakariya university" />
+	<seed slot0="security service" slot1="bbc newscasters lie &amp;amp; deny" />
+	<seed slot0="ale" slot1="edi" />
+	<seed slot0="sigma" slot1="plc" />
+	<seed slot0="jndi" slot1="struts" />
+	<seed slot0="ms  -  access" slot1="ms  -  office" />
+	<seed slot0="democratic" slot1="senate" />
+	<seed slot0="mi5 secret police" slot1="met" />
+	<seed slot0="javascript" slot1="vbscript" />
+	<seed slot0="jsp , transaction" slot1="jdbc" />
+	<seed slot0="wap" slot1="networks and custom programming solutions" />
+	<seed slot0="commerce" slot1="wap" />
+	<seed slot0="jsp" slot1="jdbc" />
+	<seed slot0="jdbc" slot1="ejb" />
+	<seed slot0="security services" slot1="bbcs information" />
+	<seed slot0="xsl" slot1="xslt" />
+	<seed slot0="pvcs" slot1="cvs" />
+	<seed slot0="google" slot1="yahoo" />
+	<seed slot0="oracle" slot1="sql server" />
+	<seed slot0="sql server dts" slot1="visual source safe" />
+	<seed slot0="pharmaceuticals" slot1="healthcare" />
+	<seed slot0="versace" slot1="burberry" />
+	<seed slot0="ups" slot1="sodiex" />
+	<seed slot0="sql server" slot1="ms  -  office" />
+	<seed slot0="fendi" slot1="versace" />
+	<seed slot0="contract manufacturing" slot1="pharmaceuticals" />
+	<seed slot0="burberry" slot1="miumiu" />
+	<seed slot0="sax" slot1="dom" />
+	<seed slot0="opel" slot1="general motors" />
+	<seed slot0="premier partner" slot1="microsoft" />
+	<seed slot0="portal development" slot1="operational support serviceswe" />
+	<seed slot0="electronic document management" slot1="operational support serviceswe" />
+	<seed slot0="electronic document management" slot1="automated workflow processing , enterprise application software development" />
+	<seed slot0="automated workflow processing , enterprise application software development" slot1="operational support serviceswe" />
+	<seed slot0="agriculture" slot1="chemical" />
+	<seed slot0="ups" slot1="ems" />
+	<seed slot0="bma group" slot1="inc" />
+	<seed slot0="jdbc" slot1="rational rose" />
+	<seed slot0="vyakarna" slot1="tantra , modern linguistics and artificial intelligence" />
+	<seed slot0="jboss" slot1="apache" />
+	<seed slot0="jaxb" slot1="rational rose" />
+	<seed slot0="chanel" slot1="g  -  star" />
+	<seed slot0="seven" slot1="evisu" />
+	<seed slot0="nwo" slot1="skull" />
+	<seed slot0="evisu" slot1="levi" />
+	<seed slot0="dom" slot1="sax" />
+	<seed slot0="oracle" slot1="sql" />
+	<seed slot0="css" slot1="javascript" />
+	<seed slot0="pl / sql developer" slot1="ms  -  office" />
+	<seed slot0="democrats" slot1="senate" />
+	<seed slot0="jefferson park brookville passion parties" slot1="fort lauderdale passion party" />
+	<seed slot0="uml" slot1="rup" />
+	<seed slot0="java beans" slot1="jdbc" />
+	<seed slot0="envox" slot1="brooksoft" />
+	<seed slot0="brooksoft" slot1="rdbms" />
+	<seed slot0="finra" slot1="amex" />
+	<seed slot0="srs" slot1="sdd" />
+	<seed slot0="rabjam &amp;amp; abbot" slot1="rumtek monastery / trans" />
+	<seed slot0="department of statistics" slot1="purdue university" />
+	<seed slot0="ejb" slot1="mdb" />
+	<seed slot0="cookbook -  vegetarian recipes" slot1="monk" />
+	<seed slot0="aix" slot1="hp" />
+	<seed slot0="universal history" slot1="religious rites" />
+	<seed slot0="mm" slot1="pp" />
+	<seed slot0="tnt" slot1="dhl" />
+	<seed slot0="dhl" slot1="ups" />
+	<seed slot0="xml" slot1="xsl" />
+	<seed slot0="lv" slot1="chanel" />
+	<seed slot0="c#" slot1="javascript" />
+	<seed slot0="struts" slot1="ejb" />
+	<seed slot0="permanence / stability and alternative foundation of ontology" slot1="saluva narasimha" />
+	<seed slot0="epi" slot1="qtta" />
+	<seed slot0="jdbc" slot1="jsp" />
+	<seed slot0="home depot" slot1="circuit city" />
+	<seed slot0="ejb" slot1="jsp" />
+	<seed slot0="cca" slot1="purch" />
+	<seed slot0="software development life cycle" slot1="rational tools" />
+	<seed slot0="rational rose" slot1="requisitepro" />
+	<seed slot0="iterative software development life cycle process" slot1="rational tools" />
+	<seed slot0="financial accounting" slot1="transfer agency" />
+	<seed slot0="financial accounting" slot1="mutual fund administration" />
+	<seed slot0="excel" slot1="microsoft" />
+	<seed slot0="eclipse" slot1="ibm" />
+	<seed slot0="core java" slot1="jdbc" />
+	<seed slot0="tomcat" slot1="bea weblogic" />
+	<seed slot0="mssql" slot1="ms accessoracle forms" />
+	<seed slot0="mbs" slot1="student loan" />
+	<seed slot0="mbs" slot1="mortgage loan servicing , loan origination" />
+	<seed slot0="weblogic workshop" slot1="unix shell programming" />
+	<seed slot0="visual basic" slot1="vbnet" />
+	<seed slot0="vista home premium" slot1="intel viiv" />
+	<seed slot0="servlets" slot1="jsp" />
+	<seed slot0="sql loadersqr" slot1="crystal reports" />
+	<seed slot0="sed" slot1="unix shell programming" />
+	<seed slot0="rup" slot1="javascript" />
+	<seed slot0="purva mimansa sutra of jaimini / ganganath" slot1="vyakarna" />
+	<seed slot0="oracle warehouse builder" slot1="informix" />
+	<seed slot0="oracle warehouse builder" slot1="esri mapobjects" />
+	<seed slot0="fortran" slot1="matlaboracle" />
+	<seed slot0="erp -  sap" slot1="oracle warehouse builder" />
+	<seed slot0="crystal reports" slot1="ps queryoracle" />
+	<seed slot0="css" slot1="bea weblogic" />
+	<seed slot0="business objects" slot1="erp -  sap" />
+	<seed slot0="bea weblogic" slot1="ibm" />
+	<seed slot0="awk" slot1="unix shell programming" />
+	<seed slot0="at&amp;amp;t" slot1="sprint" />
+	<seed slot0="aix" slot1="red hat" />
+	<seed slot0="11th ed" slot1="bozer &amp;amp; tanchoco  - rrb -  facilities planning and design  - lrb -  alberto garcia  -  diaz &amp;amp; j macgregor smith" />
+	<seed slot0="micro strategy" slot1="pl / sql developer" />
+	<seed slot0="sql server dts" slot1="xml schema" />
+	<seed slot0="mvc" slot1="jsp internationalization" />
+	<seed slot0="uml" slot1="rational rose" />
+	<seed slot0="hp service desk" slot1="acms" />
+	<seed slot0="winsql" slot1="ms  -  office" />
+	<seed slot0="teradata" slot1="ms  -  office" />
+	<seed slot0="shell scripting" slot1="ms  -  office" />
+	<seed slot0="php" slot1="ms  -  office" />
+	<seed slot0="dbase" slot1="ms  -  office" />
+	<seed slot0="upgrade , &amp;amp; migration" slot1="jdbc" />
+	<seed slot0="ms  -  dos" slot1="ms  -  office" />
+	<seed slot0="visual interdev" slot1="ide" />
+	<seed slot0="visual basic" slot1="ide" />
+	<seed slot0="teradata" slot1="oracle" />
+	<seed slot0="sql server dts" slot1="sap" />
+	<seed slot0="power mart" slot1="sap" />
+	<seed slot0="postdoctoral research fellow" slot1="philosophy university of queensland" />
+	<seed slot0="oracle warehouse builder" slot1="sql server dts" />
+	<seed slot0="oracle warehouse builder" slot1="sap" />
+	<seed slot0="oracle warehouse builder" slot1="power mart" />
+	<seed slot0="oracle warehouse builder" slot1="dhtml" />
+	<seed slot0="ms  -  office" slot1="microsoft" />
+	<seed slot0="ms  -  office" slot1="lotus notes" />
+	<seed slot0="matlaboracle" slot1="informix" />
+	<seed slot0="jcl" slot1="cics" />
+	<seed slot0="informix" slot1="sql server dts" />
+	<seed slot0="dhtml" slot1="sap" />
+	<seed slot0="ms  -  access" slot1="dbase" />
+	<seed slot0="jsp" slot1="jsf" />
+	<seed slot0="nba" slot1="t - " />
+	<seed slot0="democratic" slot1="house" />
+	<seed slot0="xpath" slot1="xslt" />
+	<seed slot0="rational clear quest" slot1="vision ice" />
+	<seed slot0="rational clear quest" slot1="rational unified process" />
+	<seed slot0="rational clear quest" slot1="rational clearcase" />
+	<seed slot0="duhs university" slot1="dow" />
+	<seed slot0="winsql" slot1="oracle" />
+	<seed slot0="oracle" slot1="ms" />
+	<seed slot0="jsp" slot1="servlets" />
+	<seed slot0="rmi" slot1="java mail" />
+	<seed slot0="micro strategy" slot1="winsql" />
+	<seed slot0="micro strategy" slot1="teradata" />
+	<seed slot0="micro strategy" slot1="ms  -  dos" />
+	<seed slot0="ms  -  access" slot1="oracle" />
+	<seed slot0="jndi" slot1="jdbc" />
+	<seed slot0="ejb" slot1="jndi" />
+	<seed slot0="costco" slot1="blockbuster" />
+	<seed slot0="adobe photoshop" slot1="om" />
+	<seed slot0="2nd ed" slot1="haeussler , paul &amp;amp; wood  - rrb -  finite mathematics for business , economics , life sciences and social sciences" />
+	<seed slot0="oracle" slot1="ms  -  office" />
+	<seed slot0="general motors" slot1="general foods" />
+	<seed slot0="dhtml" slot1="xml" />
+	<seed slot0="overture" slot1="msn" />
+	<seed slot0="oracle" slot1="sybase" />
+	<seed slot0="micro strategy" slot1="ms  -  access" />
+	<seed slot0="??? study" slot1="murdoch university" />
+	<seed slot0="united nations security council" slot1="un" />
+	<seed slot0="heinz foods" slot1="chase national bank" />
+	<seed slot0="bapi" slot1="sap crm marketing" />
+	<seed slot0="struts" slot1="enterprise java beans" />
+	<seed slot0="jsp" slot1="xsl" />
+	<seed slot0="enterprise java beans" slot1="hibernate" />
+	<seed slot0="unix shell scripting" slot1="ms  -  office" />
+	<seed slot0="ps" slot1="odm" />
+	<seed slot0="pl / sql developer" slot1="oracle" />
+	<seed slot0="micro strategy" slot1="unix shell scripting" />
+	<seed slot0="mm / sd" slot1="tr" />
+	<seed slot0="inc" slot1="deloitte &amp;amp; touche" />
+	<seed slot0="wsad" slot1="eclipse" />
+	<seed slot0="rational clear quest" slot1="bugzilla" />
+	<seed slot0="php" slot1="vbnet" />
+	<seed slot0="com" slot1="oracle" />
+	<seed slot0="ms  -  dos" slot1="oracle" />
+	<seed slot0="cbc" slot1="cnn" />
+	<seed slot0="11th ed" slot1="haeussler , paul &amp;amp; wood  - rrb -  finite mathematics for business , economics , life sciences and social sciences" />
+	<seed slot0="wsad" slot1="myeclipse" />
+	<seed slot0="ut" slot1="vt" />
+	<seed slot0="us citizen" slot1="gc holder" />
+	<seed slot0="mssql" slot1="ms accesspeoplecode" />
+	<seed slot0="ms accesspeoplecode" slot1="pl / sqloracle" />
+	<seed slot0="css" slot1="xml" />
+	<seed slot0="adams consulting group" slot1="llc" />
+	<seed slot0="adams consulting group" slot1="acg resource contact" />
+	<seed slot0="vt" slot1="vi" />
+	<seed slot0="vbnet" slot1="oracle" />
+	<seed slot0="independent consultant" slot1="ny" />
+	<seed slot0="aspnet" slot1="c#" />
+	<seed slot0="xslt" slot1="dom" />
+	<seed slot0="xslt" slot1="css" />
+	<seed slot0="sql server" slot1="ms  -  access" />
+	<seed slot0="ms access" slot1="esri mapobjects" />
+	<seed slot0="intelligence server" slot1="microstrategy 801 report services" />
+	<seed slot0="dss" slot1="microstrategy 801 report services" />
+	<seed slot0="cobol" slot1="jcl" />
+	<seed slot0="cnn" slot1="foxnews" />
+	<seed slot0="javascript" slot1="vbscript" />
+	<seed slot0="jdbc" slot1="jaxb" />
+	<seed slot0="c#" slot1="aspnet" />
+	<seed slot0="vbnet" slot1="ms  -  office" />
+	<seed slot0="cvs" slot1="autosys" />
+	<seed slot0="ap &amp;amp; gl" slot1="itm" />
+	<seed slot0="unix shell scripting" slot1="oracle" />
+	<seed slot0="uml" slot1="wsdl" />
+	<seed slot0="sql server" slot1="oracle" />
+	<seed slot0="pl / sql developer" slot1="uml" />
+	<seed slot0="mdb" slot1="jndi" />
+	<seed slot0="business administration" slot1="higher education commission" />
+	<seed slot0="2nd ed" slot1="bozer &amp;amp; tanchoco  - rrb -  facilities planning and design  - lrb -  alberto garcia  -  diaz &amp;amp; j macgregor smith" />
+	<seed slot0="sql server" slot1="unix shell scripting" />
+	<seed slot0="sql server" slot1="linux" />
+	<seed slot0="10th ed" slot1="haeussler , paul &amp;amp; wood  - rrb -  finite mathematics for business , economics , life sciences and social sciences" />
+	<seed slot0="http://wwwilmkidunyacom/edunews/show_newsasp?newsid=1752 *the institute of business administration" slot1="higher education commission" />
+	<seed slot0="standing committee of the political bureau" slot1="cpc central committee" />
+	<seed slot0="developing solutions scholarship fund" slot1="the university" />
+	<seed slot0="wsdl" slot1="uddi" />
+	<seed slot0="ms  -  office" slot1="sap" />
+	<seed slot0="mac" slot1="sdlc" />
+	<seed slot0="jcl" slot1="tso ispf" />
+	<seed slot0="hbp" slot1="dh" />
+	<seed slot0="democratic" slot1="white house" />
+	<seed slot0="aix" slot1="mac" />
+	<seed slot0="rational rose" slot1="cvs" />
+	<seed slot0="modules  -  sd" slot1="fi" />
+	<seed slot0="jobster" slot1="aol" />
+	<seed slot0="pl sql" slot1="compuware" />
+	<seed slot0="oracle warehouse builder" slot1="ms  -  olap services" />
+	<seed slot0="ms visual studionet" slot1="ms -  front" />
+	<seed slot0="ide" slot1="ms visual studionet" />
+	<seed slot0="hp  -  ux" slot1="aix" />
+	<seed slot0="rational rose" slot1="visual source safe" />
+	<seed slot0="iis" slot1="asp" />
+	<seed slot0="deloitte consulting llp" slot1="deloitte financial advisory services llp" />
+	<seed slot0="clear case" slot1="visual source safe" />
+	<seed slot0="xslt" slot1="cascading style sheets" />
+	<seed slot0="rational unified process" slot1="software development life cycle" />
+	<seed slot0="oracle" slot1="sql server" />
+	<seed slot0="nazis" slot1="lord rama" />
+	<seed slot0="jsp" slot1="rational rose" />
+	<seed slot0="jndi" slot1="uml" />
+	<seed slot0="xslt" slot1="xsd" />
+	<seed slot0="xslt" slot1="rational rose" />
+	<seed slot0="xhtml" slot1="css" />
+	<seed slot0="sql" slot1="sybase" />
+	<seed slot0="rational rose" slot1="clear case" />
+	<seed slot0="jni" slot1="jndi" />
+	<seed slot0="dso" slot1="infospoke" />
+	<seed slot0="xslt" slot1="xml schema" />
+	<seed slot0="xpath" slot1="xslt" />
+	<seed slot0="xpath" slot1="rational rose" />
+	<seed slot0="xml / xsl" slot1="xpath" />
+	<seed slot0="xml / xsl" slot1="rational rose" />
+	<seed slot0="ups" slot1="dhl" />
+	<seed slot0="tomcat" slot1="rational rose" />
+	<seed slot0="tomcat" slot1="jrun" />
+	<seed slot0="struts" slot1="rational rose" />
+	<seed slot0="seattle election information" slot1="wa virginia mason medical center" />
+	<seed slot0="rational rose" slot1="sos" />
+	<seed slot0="rmi" slot1="rational rose" />
+	<seed slot0="oracle applications" slot1="sql" />
+	<seed slot0="java mail" slot1="rational rose" />
+	<seed slot0="java mail" slot1="jdbc" />
+	<seed slot0="jrun" slot1="rational rose" />
+	<seed slot0="jrun" slot1="rmi" />
+	<seed slot0="jni" slot1="rational rose" />
+	<seed slot0="jndi" slot1="rational rose" />
+	<seed slot0="jboss" slot1="rational rose" />
+	<seed slot0="jaxb" slot1="xml / xsl" />
+	<seed slot0="gq magazine , stuff magazine" slot1="ny post" />
+	<seed slot0="dom" slot1="rational rose" />
+	<seed slot0="client server technologies for finance" slot1="hcm" />
+	<seed slot0="bea weblogic" slot1="rational rose" />
+	<seed slot0="bea weblogic" slot1="jboss" />
+	<seed slot0="armani" slot1="replay" />
+	<seed slot0="apache" slot1="tomcat" />
+	<seed slot0="apache" slot1="rational rose" />
+	<seed slot0="xslt" slot1="visual source safe" />
+	<seed slot0="sql server" slot1="oracle" />
+	<seed slot0="sax" slot1="rational rose" />
+	<seed slot0="sax" slot1="jni" />
+	<seed slot0="micro strategy" slot1="sql server" />
+	<seed slot0="tomcat" slot1="oracle" />
+	<seed slot0="wsad" slot1="netbeans" />
+	<seed slot0="oracle" slot1="pl / sql" />
+	<seed slot0="jsp" slot1="java mail" />
+	<seed slot0="enterprise java beans" slot1="java mail" />
+	<seed slot0="ejb" slot1="hibernate" />
+	<seed slot0="asp" slot1="aspnet" />
+	<seed slot0="qtta" slot1="fb" />
+	<seed slot0="pa" slot1="usa owned" />
+	<seed slot0="oem" slot1="sql*net" />
+	<seed slot0="ms access" slot1="ms  -  office" />
+	<seed slot0="hp  -  ux" slot1="micro strategy" />
+	<seed slot0="commerce" slot1="networks and custom programming solutions" />
+	<seed slot0="cics" slot1="vsam" />
+	<seed slot0="asp" slot1="dhtml" />
+	<seed slot0="tso" slot1="ispf" />
+	<seed slot0="prug" slot1="klug" />
+	<seed slot0="tnt" slot1="dhl" />
+	<seed slot0="sql" slot1="oracle" />
+	<seed slot0="phd" slot1="frsh" />
+	<seed slot0="interface process" slot1="caching and configuration management application blocks" />
+	<seed slot0="alibabaunion co" slot1="ems" />
+	<seed slot0="aspnet" slot1="servlet" />
+	<seed slot0="aspnet" slot1="rmi" />
+	<seed slot0="aspnet" slot1="odbc" />
+	<seed slot0="aspnet" slot1="networking technology" />
+	<seed slot0="aspnet" slot1="mts" />
+	<seed slot0="wall street journal" slot1="afp" />
+	<seed slot0="times of india" slot1="afp" />
+	<seed slot0="jsp" slot1="jta" />
+	<seed slot0="house" slot1="clark county court" />
+	<seed slot0="navy" slot1="air force" />
+	<seed slot0="ms access" slot1="visual source safe" />
+	<seed slot0="mcts  -  vista" slot1="mcitp  -  vista" />
+	<seed slot0="mcp" slot1="mcts  -  vista" />
+	<seed slot0="international monetary fund" slot1="world bank" />
+	<seed slot0="hbp" slot1="qtta" />
+	<seed slot0="excel" slot1="word" />
+	<seed slot0="aspnet" slot1="asp" />
+	<seed slot0="asp" slot1="c#" />
+	<seed slot0="word" slot1="excel" />
+	<seed slot0="com" slot1="dcom" />
+	<seed slot0="security council" slot1="un general assembly" />
+	<seed slot0="jsp" slot1="asp" />
+	<seed slot0="cics" slot1="jcl" />
+	<seed slot0="asp" slot1="vbscript" />
+	<seed slot0="metropolitan police" slot1="met" />
+	<seed slot0="intergovernmental panel on climate change" slot1="un" />
+	<seed slot0="democrats" slot1="house" />
+	<seed slot0="champion" slot1="memories of mortality" />
+	<seed slot0="ap" slot1="po &amp;amp; inv" />
+	<seed slot0="uml" slot1="xml" />
+	<seed slot0="dhtml" slot1="cascading style sheets" />
+	<seed slot0="wsad" slot1="ms projects" />
+	<seed slot0="wsad" slot1="cvs" />
+	<seed slot0="product studio" slot1="source depot" />
+	<seed slot0="oracle" slot1="lotus notes" />
+	<seed slot0="lotus notes" slot1="peoplesoft" />
+	<seed slot0="kuala lumpur international war crimes tribunal" slot1="international citizen" />
+	<seed slot0="at&amp;amp;t" slot1="verizon" />
+	<seed slot0="non  -  conforming" slot1="fha" />
+	<seed slot0="government accountability office" slot1="congress" />
+	<seed slot0="ejb" slot1="jsf" />
+	<seed slot0="taiwan affairs office" slot1="state council" />
+	<seed slot0="ms access" slot1="oracle" />
+	<seed slot0="atp" slot1="wta" />
+	<seed slot0="verbal communication" slot1="presentation" />
+	<seed slot0="pr" slot1="ri" />
+	<seed slot0="jsp , transaction" slot1="enterprise java beans" />
+	<seed slot0="edi" slot1="ale" />
+	<seed slot0="dtd" slot1="sax" />
+	<seed slot0="dom" slot1="xsl" />
+	<seed slot0="cml" slot1="powershell scripts" />
+	<seed slot0="aix" slot1="hp  -  ux" />
+	<seed slot0="visual interdev" slot1="eclipse java" />
+	<seed slot0="visual basic" slot1="eclipse java" />
+	<seed slot0="telon" slot1="earl" />
+	<seed slot0="perl" slot1="shell scripting" />
+	<seed slot0="ldap" slot1="dns" />
+	<seed slot0="gaozhou normal" slot1="prchina" />
+	<seed slot0="excel" slot1="powerpoint" />
+	<seed slot0="eclipse java" slot1="netbeans" />
+	<seed slot0="ejb" slot1="servlets" />
+	<seed slot0="east rutherford" slot1="nj " />
+	<seed slot0="earl" slot1="jcl" />
+	<seed slot0="dhtml" slot1="xhtml &amp;amp; css" />
+	<seed slot0="dhtml" slot1="microsoft front" />
+	<seed slot0="customer online" slot1="marketing online" />
+	<seed slot0="css" slot1="dhtml" />
+	<seed slot0="cics" slot1="telon" />
+	<seed slot0="??? study" slot1="bradford college" />
+	<seed slot0="white house" slot1="democratic" />
+	<seed slot0="sql server" slot1="appworx" />
+	<seed slot0="macromedia flex" slot1="sql server" />
+	<seed slot0="jsp" slot1="rmi /" />
+	<seed slot0="jsp" slot1="iiop" />
+	<seed slot0="jdbc" slot1="xml" />
+	<seed slot0="iis" slot1="apache" />
+	<seed slot0="http, ftp" slot1="wireless" />
+	<seed slot0="dns" slot1="samba" />
+	<seed slot0="dhl" slot1="ups" />
+	<seed slot0="atg dynamo" slot1="oracle" />
+	<seed slot0="ups" slot1="ems" />
+	<seed slot0="ups" slot1="dhl" />
+	<seed slot0="xml schema" slot1="visual source safe" />
+	<seed slot0="xml schema" slot1="jdk" />
+	<seed slot0="xml parsers" slot1="visual source safe" />
+	<seed slot0="visual interdev" slot1="edit plus , eclipse" />
+	<seed slot0="visual basic" slot1="edit plus , eclipse" />
+	<seed slot0="sql server dts" slot1="xslt" />
+	<seed slot0="sql server dts" slot1="clear case" />
+	<seed slot0="sax" slot1="visual source safe" />
+	<seed slot0="sax" slot1="bea weblogic" />
+	<seed slot0="rmi  -  iiop" slot1="visual source safe" />
+	<seed slot0="peoplesoft technical consultant peoplesoft" slot1="enterprise resource planning" />
+	<seed slot0="mvc" slot1="visual source safe" />
+	<seed slot0="mvc" slot1="tag libraries" />
+	<seed slot0="mvc" slot1="oracle warehouse builder" />
+	<seed slot0="mvc" slot1="java beans" />
+	<seed slot0="mvc" slot1="jndi" />
+	<seed slot0="mvc" slot1="jdbc" />
+	<seed slot0="mvc" slot1="ejb" />
+	<seed slot0="mvc" slot1="clear case" />
+	<seed slot0="ms access" slot1="oracle warehouse builder" />
+	<seed slot0="ms access" slot1="clear case" />
+	<seed slot0="jet propulsion laboratory" slot1="nasa" />
+	<seed slot0="java mail" slot1="visual source safe" />
+	<seed slot0="java mail" slot1="rmi  -  iiop" />
+	<seed slot0="jsp internationalization" slot1="ejb" />
+	<seed slot0="jdk" slot1="visual source safe" />
+	<seed slot0="jdbc" slot1="xml parsers" />
+	<seed slot0="jdbc" slot1="visual source safe" />
+	<seed slot0="jaxp" slot1="visual source safe" />
+	<seed slot0="jaxp" slot1="dom" />
+	<seed slot0="gcp" slot1="glp" />
+	<seed slot0="edit plus , eclipse" slot1="visual source safe" />
+	<seed slot0="edit plus , eclipse" slot1="oracle warehouse builder" />
+	<seed slot0="edit plus , eclipse" slot1="netbeans" />
+	<seed slot0="edit plus , eclipse" slot1="clear case" />
+	<seed slot0="dom" slot1="visual source safe" />
+	<seed slot0="css" slot1="xml schema" />
+	<seed slot0="css" slot1="visual source safe" />
+	<seed slot0="tso" slot1="jcl" />
+	<seed slot0="css" slot1="xsl" />
+	<seed slot0="aix" slot1="sun one" />
+	<seed slot0="vols" slot1="i -  mantras" />
+	<seed slot0="vii  -  preparation for puja" slot1="viii  -  mudras" />
+	<seed slot0="smartforms / adobe forms" slot1="gts adobe forms" />
+	<seed slot0="ri" slot1="sc" />
+	<seed slot0="perl" slot1="cgi" />
+	<seed slot0="gts adobe forms" slot1="edi" />
+	<seed slot0="basis" slot1="abap workbench" />
+	<seed slot0="at&amp;amp;t" slot1="t  -  mobile" />
+	<seed slot0="aspnet" slot1="jsp" />
+	<seed slot0="ale" slot1="basis" />
+	<seed slot0="sql" slot1="pl / sql" />
+	<seed slot0="puma" slot1="timberland" />
+	<seed slot0="puma" slot1="gucci" />
+	<seed slot0="philippine skyscraper forums" slot1="plc international marketing networks" />
+	<seed slot0="perl" slot1="ws operating systems" />
+	<seed slot0="perl" slot1="dec unix" />
+	<seed slot0="oracle warehouse builder" slot1="sql  -  advantage" />
+	<seed slot0="jdbc" slot1="*jndi" />
+	<seed slot0="fannie mae" slot1="freddie mac" />
+	<seed slot0="cam" slot1="cae" />
+	<seed slot0="cad" slot1="cam" />
+	<seed slot0="bangkok emergency medical service center" slot1="erawan" />
+	<seed slot0="ofa" slot1="osa &amp;amp; informatica power" />
+	<seed slot0="oci" slot1="sybase" />
+	<seed slot0="nbu" slot1="sun ldap" />
+	<seed slot0="javascript" slot1="ejb" />
+	<seed slot0="jdbc" slot1="java mail" />
+	<seed slot0="informatica powercenter" slot1="owb" />
+	<seed slot0="ibm aix" slot1="sun sparc" />
+	<seed slot0="creedence clearwater revival" slot1="charlie daniels band" />
+	<seed slot0="cognos" slot1="oracle sales analyzer &amp;amp; financial analyzer" />
+	<seed slot0="climate change conference" slot1="un" />
+	<seed slot0="bapi" slot1="pdk" />
+	<seed slot0="asp" slot1="ejb" />
+	<seed slot0="rasheed wallace air force" slot1="nike shop &amp;amp; nike" />
+	<seed slot0="rasheed wallace air force" slot1="nike shox lv" />
+	<seed slot0="rasheed wallace air force" slot1="nike shox burberry" />
+	<seed slot0="xslt" slot1="dhtml" />
+	<seed slot0="things remembered" slot1="office max , office depot" />
+	<seed slot0="pp" slot1="modules  -  sd" />
+	<seed slot0="office max , office depot" slot1="bestbuys" />
+	<seed slot0="java beans" slot1="http, jdbc" />
+	<seed slot0="idoc" slot1="rfc" />
+	<seed slot0="http, jdbc" slot1="rmi /" />
+	<seed slot0="gourmet foods" slot1="plantmakers" />
+	<seed slot0="democratic" slot1="congress" />
+	<seed slot0="css" slot1="javascript" />
+	<seed slot0="business service" slot1="messaging" />
+	<seed slot0="bestbuys" slot1="comp usa" />
+	<seed slot0="ae" slot1="aa" />
+	<seed slot0="aa" slot1="ae" />
+	<seed slot0="servlets / jsp" slot1="xml" />
+	<seed slot0="ms access" slot1="ms" />
+	<seed slot0="c#" slot1="aspnet" />
+	<seed slot0="bape star" slot1="timberland" />
+	<seed slot0="win cvs" slot1="visual studio" />
+	<seed slot0="wipro" slot1="l &amp;amp; t" />
+	<seed slot0="vsti" slot1="yamaha vocaloid" />
+	<seed slot0="vst" slot1="vsti" />
+	<seed slot0="the post" slot1="immigration and customs enforcement agency" />
+	<seed slot0="sybase" slot1="oracle" />
+	<seed slot0="security council resolution 1701" slot1="un" />
+	<seed slot0="saab" slot1="general motors" />
+	<seed slot0="spufi" slot1="qmf" />
+	<seed slot0="sld" slot1="idoc" />
+	<seed slot0="rfc" slot1="http, jdbc" />
+	<seed slot0="pl / sql" slot1="uml" />
+	<seed slot0="marketdelta" slot1="elwave" />
+	<seed slot0="msn" slot1="ask" />
+	<seed slot0="kurzweil" slot1="m  -  audio pro sessions" />
+	<seed slot0="immigration and customs enforcement agency" slot1="department of homeland security" />
+	<seed slot0="hyperion foundation" slot1="hyperion performance suite" />
+	<seed slot0="hcl" slot1="wipro" />
+	<seed slot0="cube" slot1="viol" />
+	<seed slot0="cobol" slot1="cics" />
+	<seed slot0="yamaha vocaloid" slot1="cbt nuggets" />
+	<seed slot0="world food program" slot1="un" />
+	<seed slot0="trillium" slot1="business objects" />
+	<seed slot0="sql" slot1="xml" />
+	<seed slot0="slox &amp;amp; ox" slot1="pt" />
+	<seed slot0="pt" slot1="pe" />
+	<seed slot0="php" slot1="aspnet" />
+	<seed slot0="oracle applications" slot1="pl / sql" />
+	<seed slot0="jsp" slot1="hibernate" />
+	<seed slot0="jazz" slot1="kurzweil" />
+	<seed slot0="hp" slot1="ibm" />
+	<seed slot0="css" slot1="xslt" />
+	<seed slot0="cbt nuggets" slot1="cisco" />
+	<seed slot0="bdc" slot1="lsmw" />
+	<seed slot0="at&amp;amp;t worldnet services att mediacom communications corp" slot1="mediacom communications corp mediacomcc" />
+	<seed slot0="asp" slot1="visualbasic" />
+	<seed slot0="asp" slot1="jndi" />
+	<seed slot0="asp" slot1="jdbc" />
+	<seed slot0="akai , band" slot1="brass" />
+	<seed slot0="web services" slot1="jstl" />
+	<seed slot0="wsdl" slot1="jaxb" />
+	<seed slot0="vbscript" slot1="sql" />
+	<seed slot0="sql" slot1="dream" />
+	<seed slot0="rmi /" slot1="ejb" />
+	<seed slot0="professional tradeadvisor" slot1="elwave" />
+	<seed slot0="php" slot1="shell" />
+	<seed slot0="php" slot1="asp" />
+	<seed slot0="pdk" slot1="abap" />
+	<seed slot0="nyse" slot1="finra" />
+	<seed slot0="java mail" slot1="struts" />
+	<seed slot0="jstl" slot1="*sax*" />
+	<seed slot0="jsp" slot1="rmi" />
+	<seed slot0="jndi" slot1="web services" />
+	<seed slot0="jaxp" slot1="jaas" />
+	<seed slot0="informatica power center" slot1="oracle" />
+	<seed slot0="http, jdbc" slot1="jaxp" />
+	<seed slot0="glade" slot1="dbx" />
+	<seed slot0="flextronics" slot1="electronics manufacturing services" />
+	<seed slot0="dbx" slot1="ibm" />
+	<seed slot0="access group" slot1="inc" />
+	<seed slot0="af" slot1="scl" />
+	<seed slot0="adonet" slot1="ado" />
+	<seed slot0="*sax*" slot1="dom" />
+	<seed slot0="xsl" slot1="xml schema" />
+	<seed slot0="xsd" slot1="jaxb" />
+	<seed slot0="sun solaris" slot1="red hat linux methodologies" />
+	<seed slot0="smarttest" slot1="xpeditor" />
+	<seed slot0="row house" slot1="industrial land , agricultural land" />
+	<seed slot0="row house" slot1="duplex" />
+	<seed slot0="quality inspection" slot1="handling units" />
+	<seed slot0="pp fi / co" slot1="sld" />
+	<seed slot0="national committee" slot1="chinese people &amp;apos;s political consultative conference" />
+	<seed slot0="mysql" slot1="ms access" />
+	<seed slot0="jts" slot1="jaas" />
+	<seed slot0="jaas" slot1="jta" />
+	<seed slot0="ims" slot1="spufi" />
+	<seed slot0="im" slot1="wm" />
+	<seed slot0="duplex" slot1="industrial land , agricultural land" />
+	<seed slot0="changeman" slot1="smarttest" />
+	<seed slot0="ajax" slot1="css" />
+	<seed slot0="abap" slot1="oracle business intelligence" />
+	<seed slot0="xslt" slot1="jaxb" />
+	<seed slot0="time warner" slot1="ford motor company" />
+	<seed slot0="thermalito california sex toy parties host" slot1="hallendale north miami passion party miami beach party passion party" />
+	<seed slot0="sd &amp;amp; mm" slot1="wm" />
+	<seed slot0="sd &amp;amp; mm" slot1="pp fi / co" />
+	<seed slot0="rational rose" slot1="uml" />
+	<seed slot0="prada americas" slot1="timberland boots" />
+	<seed slot0="oracle" slot1="ibm" />
+	<seed slot0="ny daily news" slot1="us news &amp;amp; world report" />
+	<seed slot0="nt" slot1="ms" />
+	<seed slot0="microsoft visio" slot1="robodemo" />
+	<seed slot0="marintek usfos" slot1="dnv" />
+	<seed slot0="dom" slot1="xsd" />
+	<seed slot0="adonet" slot1="xml" />
+	<seed slot0="xsl" slot1="visual source safe" />
+	<seed slot0="walt disney" slot1="abc  -  capitol cities" />
+	<seed slot0="sybase" slot1="ms" />
+	<seed slot0="standing committee" slot1="cpc central committee political bureau" />
+	<seed slot0="ms project" slot1="ms office" />
+	<seed slot0="hp  -  ux" slot1="ibm" />
+	<seed slot0="asp" slot1="iis" />
+	<seed slot0="adonet" slot1="javascript" />
+	<seed slot0="abc  -  capitol cities" slot1="abc news" />
+	<seed slot0="*jndi" slot1="java mail" />
+	<seed slot0="world food program" slot1="united nations" />
+	<seed slot0="pi sheets" slot1="quality inspection" />
+	<seed slot0="oracle / sql" slot1="shell" />
+	<seed slot0="oracle / sql" slot1="php" />
+	<seed slot0="northern ohio amateur radio society , northern ohio dx association" slot1="n4aa &amp;amp; qrz dx" />
+	<seed slot0="nakheel" slot1="dubai world" />
+	<seed slot0="lacoste shoes for women , buy lacoste trainers online" slot1="lacoste sneakers" />
+	<seed slot0="korn shell" slot1="perl" />
+	<seed slot0="international department" slot1="cpc central committee" />
+	<seed slot0="gdb" slot1="dbx" />
+	<seed slot0="gcc" slot1="gdb" />
+	<seed slot0="dunk" slot1="jordan xi basketball shoes review in basketball shoes" />
+	<seed slot0="department of theology" slot1="loyola university of chicago" />
+	<seed slot0="columbia alberta sex toy parties host" slot1="green bay packers passion party" />
+	<seed slot0="cobol" slot1="ms accessoracle forms" />
+	<seed slot0="boston globe norman ornstein" slot1="american enterprise inst" />
+	<seed slot0="berkeley sockets" slot1="ipc" />
+	<seed slot0="bea weblogic" slot1="ibm" />
+	<seed slot0="alliance for human research protection" slot1="harvard medical school" />
+	<seed slot0="al  -  qaeda" slot1="taliban" />
+	<seed slot0="air force" slot1="dunk" />
+	<seed slot0="aspnet" slot1="microsoft technologies" />
+	<seed slot0="adonet" slot1="xslt" />
+	<seed slot0="adonet" slot1="vbscript" />
+	<seed slot0="adonet" slot1="dcom" />
+	<seed slot0="adonet" slot1="activex" />
+	<seed slot0="adonet" slot1="asp" />
+	<seed slot0="*aspnet*" slot1="uml" />
+	<seed slot0="rasheed wallace air force" slot1="nike dunks sb" />
+	<seed slot0="world food programme" slot1="un" />
+	<seed slot0="struts" slot1="servlets" />
+	<seed slot0="sql server developer" slot1="ms  -  office" />
+	<seed slot0="rose garden" slot1="white house" />
+	<seed slot0="r" slot1="republicans" />
+	<seed slot0="pp" slot1="mes" />
+	<seed slot0="nike basketball shoes" slot1="nike discount shoes" />
+	<seed slot0="nbc entertainment jack myers" slot1="nbc news" />
+	<seed slot0="msde" slot1="sql express" />
+	<seed slot0="ms word" slot1="excel" />
+	<seed slot0="jsf" slot1="struts" />
+	<seed slot0="dh" slot1="qtta" />
+	<seed slot0="customized" slot1="we import&amp;amp;export&amp;amp;trading&amp;amp;retail&amp;amp;sell&amp;amp;buy&amp;amp;distribution&amp;amp; wholesale nike" />
+	<seed slot0="cobol" slot1="ms tml" />
+	<seed slot0="bdc" slot1="idoc" />
+	<seed slot0="bdc" slot1="edi" />
+	<seed slot0="bdc" slot1="ale" />
+	<seed slot0="winrunner" slot1="mercury interactive" />
+	<seed slot0="wta" slot1="stanford" />
+	<seed slot0="visual sourcesafe and star team" slot1="ibm" />
+	<seed slot0="tivoli" slot1="aix" />
+	<seed slot0="struts" slot1="servlets / jsp" />
+	<seed slot0="stax" slot1="jaxb" />
+	<seed slot0="sax" slot1="stax" />
+	<seed slot0="pp" slot1="im" />
+	<seed slot0="mysql" slot1="ajax" />
+	<seed slot0="linux" slot1="tivoli" />
+	<seed slot0="jdbc" slot1="hybernate" />
+	<seed slot0="jcl" slot1="mvs" />
+	<seed slot0="international budget project" slot1="international human rights internship program" />
+	<seed slot0="general ledger" slot1="cash management and federal financials" />
+	<seed slot0="ftp" slot1="http," />
+	<seed slot0="endevor" slot1="changeman" />
+	<seed slot0="ejb" slot1="hybernate" />
+	<seed slot0="democrats" slot1="republicans" />
+	<seed slot0="dcom" slot1="com+" />
+	<seed slot0="chrysler" slot1="general motors" />
+	<seed slot0="cvs" slot1="win cvs" />
+	<seed slot0="c#net" slot1="aspnet" />
+	<seed slot0="business daily" slot1="investor" />
+	<seed slot0="breitling" slot1="bvlgari" />
+	<seed slot0="bteq" slot1="fastload / multiload" />
+	<seed slot0="ajax" slot1="jsp" />
+	<seed slot0="xsl" slot1="jsp" />
+	<seed slot0="xml" slot1="xsd" />
+	<seed slot0="unix administration" slot1="novell netware" />
+	<seed slot0="unix administration" slot1="computer technical support" />
+	<seed slot0="the wall street journal" slot1="ralph j &amp;amp; brian roberts" />
+	<seed slot0="teamsite" slot1="interwoven" />
+	<seed slot0="sql" slot1="unix shell scripts" />
+	<seed slot0="ralph j &amp;amp; brian roberts" slot1="comcast" />
+	<seed slot0="ralph j &amp;amp; brian roberts" slot1="att cable tv" />
+	<seed slot0="political bureau" slot1="cpc central committee" />
+	<seed slot0="novell netware" slot1="quality assurance" />
+	<seed slot0="jsp" slot1="oracle" />
+	<seed slot0="jcl" slot1="tso" />
+	<seed slot0="ims  -  dc" slot1="sql" />
+	<seed slot0="google groups" slot1="msn groups" />
+	<seed slot0="computer technical support" slot1="quality assurance" />
+	<seed slot0="citrix" slot1="oracle" />
+	<seed slot0="accounts payables &amp;amp; receivables" slot1="unix administration" />
+	<seed slot0="abap" slot1="sap modules crm" />
+	<seed slot0="visual basic" slot1="microsoft vsnet" />
+	<seed slot0="struts" slot1="tiles" />
+	<seed slot0="sql" slot1="ms office" />
+	<seed slot0="sql" slot1="compuware" />
+	<seed slot0="sql" slot1="asp" />
+	<seed slot0="phd program" slot1="the life science zurich graduate school" />
+	<seed slot0="nis" slot1="nfs" />
+	<seed slot0="microsoft vsnet" slot1="microsoft" />
+	<seed slot0="ms access" slot1="sql" />
+	<seed slot0="leland t blank &amp;amp;" slot1="fundamentals of forensic science  - lrb -  max houck &amp;amp; jay siegel  - rrb -  project management for business and engineering" />
+	<seed slot0="iiop" slot1="ejb" />
+	<seed slot0="hermes" slot1="prada" />
+	<seed slot0="fake high school diplomas" slot1="fake university degrees , technical certificates" />
+	<seed slot0="education program" slot1="usaid" />
+	<seed slot0="ejb" slot1="http, jdbc" />
+	<seed slot0="cmc" slot1="desktop intelligence" />
+	<seed slot0="cmc" slot1="cms" />
+	<seed slot0="cics" slot1="mvs" />
+	<seed slot0="cbs" slot1="nbc" />
+	<seed slot0="c#" slot1="*aspnet*" />
+	<seed slot0="aspnet" slot1="iis" />
+	<seed slot0="xsd" slot1="xslt" />
+	<seed slot0="wm" slot1="lo" />
+	<seed slot0="wan technologies" slot1="system / network administration , user management" />
+	<seed slot0="tsq" slot1="tdq" />
+	<seed slot0="tdq" slot1="dclgen" />
+	<seed slot0="servlets / jsp" slot1="jsp" />
+	<seed slot0="sdsf" slot1="idcams" />
+	<seed slot0="qmf" slot1="tsq" />
+	<seed slot0="qmf" slot1="spufi" />
+	<seed slot0="oral communication" slot1="audio / video" />
+	<seed slot0="oracle / sql" slot1="struts" />
+	<seed slot0="ncst" slot1="technical contact" />
+	<seed slot0="mm" slot1="sd" />
+	<seed slot0="international atomic energy agency" slot1="un" />
+	<seed slot0="iebgener" slot1="jhs" />
+	<seed slot0="idcams" slot1="iebgener" />
+	<seed slot0="house" slot1="senate" />
+	<seed slot0="epi" slot1="jkr" />
+	<seed slot0="dallas cowboys" slot1="america" />
+	<seed slot0="combined data stream" slot1="actuate foundation" />
+	<seed slot0="cmc" slot1="bca scheduler" />
+	<seed slot0="asp" slot1="c#net" />
+	<seed slot0="abc" slot1="cbs" />
+	<seed slot0="xpediter" slot1="sdsf" />
+	<seed slot0="visionplus" slot1="mvs" />
+	<seed slot0="ut" slot1="al" />
+	<seed slot0="tso ispf" slot1="visionplus" />
+	<seed slot0="sun ultra sparc" slot1="ibm" />
+	<seed slot0="sun ultra sparc" slot1="dec" />
+	<seed slot0="sql" slot1="oem" />
+	<seed slot0="shell script" slot1="quality center , star team" />
+	<seed slot0="rational rose" slot1="rational rup" />
+	<seed slot0="quality center , star team" slot1="clear quest" />
+	<seed slot0="ms project" slot1="ms" />
+	<seed slot0="leland t blank &amp;amp;" slot1="2nd ed" />
+	<seed slot0="excel" slot1="outlook" />
+	<seed slot0="com+" slot1="mts" />
+	<seed slot0="bushido" slot1="ninjitsu" />
+	<seed slot0="11th ed" slot1="turban" />
+	<seed slot0="youtube" slot1="google" />
+	<seed slot0="vbnet web technologies" slot1="mts" />
+	<seed slot0="tso ispf" slot1="mvs" />
+	<seed slot0="steppenwolf" slot1="creedence clearwater revival" />
+	<seed slot0="sts" slot1="ca  - 7" />
+	<seed slot0="servlet" slot1="mts" />
+	<seed slot0="sdlp" slot1="snp" />
+	<seed slot0="republican" slot1="congress" />
+	<seed slot0="rmi" slot1="mts" />
+	<seed slot0="rmi" slot1="ejb" />
+	<seed slot0="power point" slot1="outlook forms" />
+	<seed slot0="oracle" slot1="ms access" />
+	<seed slot0="odbc" slot1="mts" />
+	<seed slot0="networking technology" slot1="mts" />
+	<seed slot0="key business solutions" slot1="inc" />
+	<seed slot0="kofax driver" slot1="filenet process" />
+	<seed slot0="jsp" slot1="jstl" />
+	<seed slot0="hbp" slot1="dh" />
+	<seed slot0="filenet isra" slot1="filenet process" />
+	<seed slot0="dos" slot1="mts" />
+	<seed slot0="creedence clearwater revival" slot1="jefferson airplane" />
+	<seed slot0="cvs" slot1="vss" />
+	<seed slot0="com / dcom" slot1="mts" />
+	<seed slot0="com / dcom" slot1="com+" />
+	<seed slot0="cnn" slot1="bbc" />
+	<seed slot0="brio" slot1="business intelligence" />
+	<seed slot0="ba" slot1="ma" />
+	<seed slot0="xml" slot1="struts" />
+	<seed slot0="perl" slot1="shell" />
+	<seed slot0="pl / sql" slot1="unix utilities" />
+	<seed slot0="organization department" slot1="cpc central committee" />
+	<seed slot0="oracle warehouse builder" slot1="ms accessoracle forms" />
+	<seed slot0="nikko &amp;apos;s school of nichiren buddhism" slot1="soka kyoiku gakkai" />
+	<seed slot0="nbc" slot1="cbs" />
+	<seed slot0="ms accessoracle forms" slot1="ms -  front" />
+	<seed slot0="leland t blank &amp;amp;" slot1="chan park  - rrb -  fundamentals of engineering economics" />
+	<seed slot0="jcl" slot1="vsam" />
+	<seed slot0="ide" slot1="ms accessoracle forms" />
+	<seed slot0="data mart" slot1="oltp" />
+	<seed slot0="css" slot1="photoshop" />
+	<seed slot0="css" slot1="ajax" />
+	<seed slot0="sony" slot1="acer" />
+	<seed slot0="apple" slot1="sony" />
+	<seed slot0="adidas" slot1="puma" />
+	<seed slot0="xml*" slot1="*xsl" />
+	<seed slot0="wpa" slot1="aes" />
+	<seed slot0="wep" slot1="wpa" />
+	<seed slot0="visio" slot1="macromedia frameworks" />
+	<seed slot0="vhdl" slot1="tcl" />
+	<seed slot0="tektronix signal generators" slot1="spectrum analyzers , network analyzers" />
+	<seed slot0="rational rose" slot1="vesio" />
+	<seed slot0="rational  -  reqpro" slot1="ms" />
+	<seed slot0="quality center" slot1="vesio" />
+	<seed slot0="pl / sql" slot1="sql*plus" />
+	<seed slot0="oracle ebusiness suite roles / responsibilities" slot1="oracle identity management suite" />
+	<seed slot0="monetary policy committee" slot1="bank of england" />
+	<seed slot0="jta" slot1="jaxp" />
+	<seed slot0="jsp" slot1="sql" />
+	<seed slot0="jsp" slot1="java beans" />
+	<seed slot0="jsp" slot1="c#" />
+	<seed slot0="intermediate" slot1="senior" />
+	<seed slot0="html" slot1="css" />
+	<seed slot0="ford" slot1="gm" />
+	<seed slot0="fatah" slot1="hamas" />
+	<seed slot0="clear quest" slot1="ms" />
+	<seed slot0="cadence" slot1="ms" />
+	<seed slot0="auth@googlecom" slot1="youtube service" />
+	<seed slot0="airbus" slot1="eads" />
+	<seed slot0="ads" slot1="rational  -  reqpro" />
+	<seed slot0="ads" slot1="ms project" />
+	<seed slot0="ads" slot1="clear quest" />
+	<seed slot0="ads" slot1="cadence" />
+</seeds>

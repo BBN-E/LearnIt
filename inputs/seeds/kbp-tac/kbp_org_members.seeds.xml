@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_members" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="american bankers association" slot1="american bankers association" />
+	<seed slot0="american basketball association" slot1="anaheim amigos" />
+	<seed slot0="american basketball association" slot1="beijing aoshen olympian" />
+	<seed slot0="american basketball association" slot1="beijing aoshen olympians" />
+	<seed slot0="american basketball association" slot1="carolina cougars" />
+	<seed slot0="american basketball association" slot1="indiana (pacers)" />
+	<seed slot0="american basketball association" slot1="kentucky colonels" />
+	<seed slot0="american basketball association" slot1="los angeles (stars)" />
+	<seed slot0="american basketball association" slot1="maryland nighthawks" />
+	<seed slot0="american basketball association" slot1="miami (floridians)" />
+	<seed slot0="american basketball association" slot1="minnesota (muskies)" />
+	<seed slot0="american basketball association" slot1="new jersey americans" />
+	<seed slot0="american basketball association" slot1="new orleans (buccaneers)" />
+	<seed slot0="american basketball association" slot1="oakland oaks" />
+	<seed slot0="american basketball association" slot1="san antonio spurs" />
+	<seed slot0="american basketball association" slot1="spirits of st louis" />
+	<seed slot0="american basketball association" slot1="utah (stars)" />
+	<seed slot0="american basketball association" slot1="washington (capitols)" />
+	<seed slot0="american beverage association" slot1="susan neely" />
+	<seed slot0="asian development bank" slot1="afghanistan" />
+	<seed slot0="asian development bank" slot1="azerbaijan" />
+	<seed slot0="asian development bank" slot1="bangladesh" />
+	<seed slot0="asian development bank" slot1="britain" />
+	<seed slot0="asian development bank" slot1="china" />
+	<seed slot0="asian development bank" slot1="georgia" />
+	<seed slot0="asian development bank" slot1="indonesia" />
+	<seed slot0="asian development bank" slot1="kazakhstan" />
+	<seed slot0="asian development bank" slot1="kyrgyz republic" />
+	<seed slot0="asian development bank" slot1="maldives" />
+	<seed slot0="asian development bank" slot1="pakistan" />
+	<seed slot0="asian development bank" slot1="tajikistan" />
+	<seed slot0="asian development bank" slot1="turkmenistan" />
+	<seed slot0="asian development bank" slot1="united states" />
+	<seed slot0="asian development bank" slot1="uzbekistan" />
+	<seed slot0="bolivarian alternative for the americas" slot1="antigua and barbuda" />
+	<seed slot0="bolivarian alternative for the americas" slot1="bolivia" />
+	<seed slot0="bolivarian alternative for the americas" slot1="cuba" />
+	<seed slot0="bolivarian alternative for the americas" slot1="dominica" />
+	<seed slot0="bolivarian alternative for the americas" slot1="ecuador" />
+	<seed slot0="bolivarian alternative for the americas" slot1="honduras" />
+	<seed slot0="bolivarian alternative for the americas" slot1="nicaragua" />
+	<seed slot0="bolivarian alternative for the americas" slot1="saint vincent and the grenadines" />
+	<seed slot0="bolivarian alternative for the americas" slot1="venezuela" />
+	<seed slot0="central american parliament" slot1="dominican republic" />
+	<seed slot0="central american parliament" slot1="el salvador" />
+	<seed slot0="central american parliament" slot1="guatemala" />
+	<seed slot0="central american parliament" slot1="honduras" />
+	<seed slot0="central american parliament" slot1="nicaragua" />
+	<seed slot0="central american parliament" slot1="panama" />
+	<seed slot0="consultative group on international agricultural research" slot1="international water management institute" />
+	<seed slot0="economic cooperation organization" slot1="afghanistan" />
+	<seed slot0="economic cooperation organization" slot1="azerbaijan" />
+	<seed slot0="economic cooperation organization" slot1="iran" />
+	<seed slot0="economic cooperation organization" slot1="kazakhstan" />
+	<seed slot0="economic cooperation organization" slot1="kyrgyzstan" />
+	<seed slot0="economic cooperation organization" slot1="pakistan" />
+	<seed slot0="economic cooperation organization" slot1="tajikistan" />
+	<seed slot0="economic cooperation organization" slot1="turkey" />
+	<seed slot0="economic cooperation organization" slot1="turkmenistan" />
+	<seed slot0="economic cooperation organization" slot1="uzbekistan" />
+	<seed slot0="football league" slot1="blackburn rovers" />
+	<seed slot0="grocery manufacturers association" slot1="conagra foods" />
+	<seed slot0="intercontinental hotels group" slot1="crowne plaza" />
+	<seed slot0="intercontinental hotels group" slot1="holiday inn" />
+	<seed slot0="markaz ud - daoua wal - irshad" slot1="lashkar - e - taiba" />
+	<seed slot0="moody &apos;s corp" slot1="moody &apos;s analytics" />
+	<seed slot0="national directorate of public prosecutions" slot1="scorpions" />
+	<seed slot0="national prosecuting authority" slot1="scorpions" />
+	<seed slot0="pakistan  &apos;s coalition government" slot1="awami national party" />
+	<seed slot0="premier league" slot1="blackburn rovers" />
+	<seed slot0="russian" slot1="rosoboronexport" />
+	<seed slot0="stx" slot1="stx finland" />
+	<seed slot0="stx europe group" slot1="stx finland" />
+	<seed slot0="union internationale des avocats" slot1="american bar association" />
+	<seed slot0="world health organisation" slot1="international agency for research on cancer" />
+	<seed slot0="world health organization" slot1="international agency for research on cancer" />
+</seeds>

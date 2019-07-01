@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Part_Whole_Subsidiary" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="nbc" slot1="general electric co" language="" />
+	<seed slot0="20th century fox" slot1="news corp" language="" />
+	<seed slot0="jaguar" slot1="ford motor co" language="" />
+	<seed slot0="american airlines" slot1="amr corp" language="" />
+	<seed slot0="abc" slot1="walt disney co" language="" />
+	<seed slot0="miramax" slot1="walt disney co" language="" />
+	<seed slot0="chrysler group" slot1="daimlerchrysler ag" language="" />
+	<seed slot0="saab automobile" slot1="general motors" language="" />
+	<seed slot0="warner bros" slot1="time warner inc" language="" />
+	<seed slot0="airbus" slot1="eads" language="" />
+	<seed slot0="espn" slot1="walt disney co" language="" />
+	<seed slot0="volkswagen" slot1="porsche" language="" />
+	<seed slot0="chrysler group" slot1="daimlerchrysler" language="" />
+	<seed slot0="cbs" slot1="viacom" language="" />
+	<seed slot0="fox" slot1="news corp" language="" />
+	<seed slot0="cbs inc" slot1="westinghouse electric corp" language="" />
+	<seed slot0="mtv" slot1="viacom inc" language="" />
+	<seed slot0="audi" slot1="volkswagen" language="" />
+	<seed slot0="dow jones &amp; co" slot1="news corp" language="" />
+	<seed slot0="youtube" slot1="google inc" language="" />
+	<seed slot0="nbc universal" slot1="general electric" language="" />
+	<seed slot0="american airlines" slot1="amr" language="" />
+	<seed slot0="miramax films" slot1="walt disney co" language="" />
+	<seed slot0="delphi automotive systems" slot1="general motors corp" language="" />
+	<seed slot0="delphi corp" slot1="general motors corp" language="" />
+	<seed slot0="mcdonnell douglas corp" slot1="boeing co" language="" />
+	<seed slot0="jaguar and land rover" slot1="ford motor co" language="" />
+	<seed slot0="baa" slot1="grupo ferrovial" language="" />
+	<seed slot0="rainbow media holdings" slot1="cablevision systems corp" language="" />
+	<seed slot0="paramount pictures" slot1="viacom inc" language="" />
+	<seed slot0="nbc" slot1="general electric" language="" />
+	<seed slot0="saab" slot1="general motors" language="" />
+	<seed slot0="kbr" slot1="halliburton" language="" />
+	<seed slot0="chrysler" slot1="daimlerchrysler" language="" />
+	<seed slot0="opel" slot1="general motors" language="" />
+	<seed slot0="mtv" slot1="viacom" language="" />
+	<seed slot0="saab" slot1="general motors corp" language="" />
+	<seed slot0="the wall street journal" slot1="dow jones &amp; co" language="" />
+	<seed slot0="hang seng index -lrb- hsi -rrb- services limited" slot1="hang seng bank" language="" />
+	<seed slot0="miramax" slot1="disney" language="" />
+	<seed slot0="mci communications corp" slot1="worldcom inc" language="" />
+	<seed slot0="nbc universal" slot1="general electric co" language="" />
+	<seed slot0="airbus" slot1="european aeronautic defence and space company" language="" />
+	<seed slot0="united airlines" slot1="ual corp" language="" />
+	<seed slot0="delphi" slot1="general motors" language="" />
+	<seed slot0="financial times" slot1="pearson plc" language="" />
+	<seed slot0="nickelodeon" slot1="viacom inc" language="" />
+	<seed slot0="cbs" slot1="viacom inc" language="" />
+	<seed slot0="bbdo worldwide" slot1="omnicom group" language="" />
+	<seed slot0="merrill lynch &amp; co" slot1="bank of america corp" language="" />
+	<seed slot0="baa plc" slot1="grupo ferrovial sa" language="" />
+	<seed slot0="wall street journal" slot1="dow jones &amp; co" language="" />
+	<seed slot0="espn" slot1="disney" language="" />
+	<seed slot0="fox broadcasting" slot1="news corp" language="" />
+	<seed slot0="volkswagen ag" slot1="porsche" language="" />
+	<seed slot0="kbr" slot1="halliburton co" language="" />
+	<seed slot0="endesa" slot1="enel" language="" />
+	<seed slot0="myspace" slot1="news corp" language="" />
+	<seed slot0="paramount vantage" slot1="viacom inc" language="" />
+	<seed slot0="simon &amp; schuster" slot1="viacom inc" language="" />
+	<seed slot0="mcdonnell douglas" slot1="boeing co" language="" />
+	<seed slot0="orange" slot1="france telecom" language="" />
+	<seed slot0="fox news channel" slot1="news corp" language="" />
+	<seed slot0="saab automobile ab" slot1="general motors corp" language="" />
+	<seed slot0="jaguar" slot1="ford" language="" />
+	<seed slot0="paramount" slot1="viacom inc" language="" />
+	<seed slot0="youtube" slot1="google" language="" />
+	<seed slot0="the wall street journal" slot1="news corp" language="" />
+	<seed slot0="mci" slot1="worldcom inc" language="" />
+	<seed slot0="delphi corp" slot1="general motors" language="" />
+	<seed slot0="cbs corp" slot1="viacom inc" language="" />
+	<seed slot0="rolls - royce" slot1="bmw" language="" />
+	<seed slot0="compuserve corp" slot1="h&amp;r block inc" language="" />
+	<seed slot0="paramount pictures" slot1="viacom" language="" />
+	<seed slot0="hsi service limited" slot1="hang seng bank" language="" />
+	<seed slot0="baa" slot1="ferrovial" language="" />
+	<seed slot0="los angeles times" slot1="tribune co" language="" />
+	<seed slot0="mercedes - benz" slot1="daimler - benz ag" language="" />
+	<seed slot0="cnn" slot1="time warner" language="" />
+	<seed slot0="chrysler" slot1="daimlerchrysler ag" language="" />
+	<seed slot0="directv" slot1="hughes electronics" language="" />
+	<seed slot0="comair" slot1="delta air lines" language="" />
+	<seed slot0="wyeth" slot1="pfizer inc" language="" />
+	<seed slot0="harpercollins" slot1="news corp" language="" />
+</seeds>

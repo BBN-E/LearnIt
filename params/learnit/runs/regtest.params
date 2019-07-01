@@ -1,0 +1,18 @@
+################################################
+## Configuration circa end of May 2014
+##   Contains, java/jlearnit changes
+##                         mshafir
+################################################
+
+INCLUDE ../master.params
+
+do_initialization: false
+do_post_pruning: false
+
+regression_test: true
+regtest_evaluate_nonfrozen: false
+regtest_confidence_cutoff: 0.01
+
+OVERRIDE stop_iteration: 10
+
+OVERRIDE do_evaluation: true

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_date_of_death" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abdul aziz al-hakim" slot1="2009-08-26" />
+	<seed slot0="adam goldstein" slot1="2009-08-28" />
+	<seed slot0="adam goldstein" slot1="2009-08" />
+	<seed slot0="alexander haig" slot1="2010-02-20" />
+	<seed slot0="ali akbar khan" slot1="2009-06-18" />
+	<seed slot0="ali akbar khan" slot1="2009-06-19" />
+	<seed slot0="ali akbar khan" slot1="6/19/2009" />
+	<seed slot0="benoit mandelbrot" slot1="2010-10-14" />
+	<seed slot0="beverly sills" slot1="2007-07-02" />
+	<seed slot0="billy mays" slot1="2009-06-28" />
+	<seed slot0="billy mays" slot1="2009-06" />
+	<seed slot0="blake edwards" slot1="2010-12-15" />
+	<seed slot0="bobby frankel" slot1="2009-11-16" />
+	<seed slot0="bradford washburn" slot1="2007-01-10" />
+	<seed slot0="carolyn goodman" slot1="2007-08" />
+	<seed slot0="carolyn goodman" slot1="2007-08-17" />
+	<seed slot0="catherine roraback" slot1="2007-10-17" />
+	<seed slot0="charles gwathmey" slot1="2009-08-03" />
+	<seed slot0="charles gwathmey" slot1="2009-08-10" />
+	<seed slot0="charles gwathmey" slot1="2009-08" />
+	<seed slot0="claude chabrol" slot1="2010-09-12" />
+	<seed slot0="dominick dunne" slot1="2009-08-26" />
+	<seed slot0="don hewitt" slot1="2009-08-19" />
+	<seed slot0="don meredith" slot1="2010-12-05" />
+	<seed slot0="don meredith" slot1="december 5" />
+	<seed slot0="dudu topaz" slot1="2009-08-20" />
+	<seed slot0="ellie greenwich" slot1="2009-08-26" />
+	<seed slot0="gilbert gude" slot1="2007-06-07" />
+	<seed slot0="girija prasad koirala" slot1="2010-03-20" />
+	<seed slot0="harry dent" slot1="2007-09-28" />
+	<seed slot0="harvey pekar" slot1="2010-07-12" />
+	<seed slot0="hwang jang-yop" slot1="2010-10-10" />
+	<seed slot0="irene kirkaldy" slot1="2007-08-10" />
+	<seed slot0="jade goody" slot1="2009-03-22" />
+	<seed slot0="jade goody" slot1="2009-03" />
+	<seed slot0="jane bolin" slot1="2007-01-08" />
+	<seed slot0="john henebry" slot1="2007-09-30" />
+	<seed slot0="joseph farland" slot1="2007-01-27" />
+	<seed slot0="joseph farland" slot1="2007-01-28" />
+	<seed slot0="keli mcgregor" slot1="2010-04-20" />
+	<seed slot0="ko yong-hi" slot1="2004" />
+	<seed slot0="laurent fignon" slot1="2010-08-31" />
+	<seed slot0="lorraine rothman" slot1="2007-09-25" />
+	<seed slot0="lucille clifton" slot1="2/13/2010" />
+	<seed slot0="lucille clifton" slot1="2010-02-13" />
+	<seed slot0="lucille clifton" slot1="2010-02" />
+	<seed slot0="maria kaczynska" slot1="2010-04-10" />
+	<seed slot0="mary crisp" slot1="2007-03-24" />
+	<seed slot0="mathieu montcourt" slot1="2009-07-06" />
+	<seed slot0="merce cunningham" slot1="2009-07-26" />
+	<seed slot0="merce cunningham" slot1="xxxx-07-26" />
+	<seed slot0="michael deaver" slot1="2007-08-18" />
+	<seed slot0="mike penner" slot1="2009-11-27" />
+	<seed slot0="mohammed oudeh" slot1="2010-07-02" />
+	<seed slot0="mohammed oudeh" slot1="2010-07-03" />
+	<seed slot0="mohammed oudeh" slot1="2010-07" />
+	<seed slot0="mohammed oudeh" slot1="7/3/2010" />
+	<seed slot0="mohammed oudeh" slot1="friday" />
+	<seed slot0="mohammed oudeh" slot1="saturday" />
+	<seed slot0="mohammed sayed tantawi" slot1="2010-03-10" />
+	<seed slot0="mohammed sayed tantawi" slot1="2012-03-10" />
+	<seed slot0="orlando zapata" slot1="2010-02-23" />
+	<seed slot0="orlando zapata" slot1="2010-02" />
+	<seed slot0="orlando zapata" slot1="2010" />
+	<seed slot0="orlando zapata" slot1="2012-02" />
+	<seed slot0="pamela ahearn" slot1="2007-03-26" />
+	<seed slot0="pascal yoadimnadji" slot1="2007-02-23" />
+	<seed slot0="patricia neal" slot1="2010-08-08" />
+	<seed slot0="paul gray" slot1="2010-05-24" />
+	<seed slot0="randall forsberg" slot1="2007-10-19" />
+	<seed slot0="richmond flowers" slot1="2007-08-09" />
+	<seed slot0="ronnie james dio" slot1="2010-05-16" />
+	<seed slot0="sparky anderson" slot1="2010-11-04" />
+	<seed slot0="sparky anderson" slot1="2010-11" />
+	<seed slot0="sparky anderson" slot1="nov 4 , 2010" />
+	<seed slot0="sparky anderson" slot1="thursday" />
+	<seed slot0="sparky anderson" slot1="xxxx-11" />
+	<seed slot0="theodor kollek" slot1="2007-01-02" />
+	<seed slot0="thomas meskill" slot1="2007-10-29" />
+	<seed slot0="vernon bellecourt" slot1="2007-10-13" />
+	<seed slot0="vitaly ginzburg" slot1="2009-11-08" />
+	<seed slot0="wayman tisdale" slot1="2009-05" />
+	<seed slot0="william verity" slot1="2007-01-03" />
+</seeds>

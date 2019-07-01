@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>LearnIt Manual Post Pruning</title>
+
+    <link type="text/css" href="/css/jquery-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/layout-default-latest.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/colorbrewer/colorbrewer.css" rel="stylesheet">
+    <link type="text/css" href="/css/tipsy.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/typeahead.css" rel="stylesheet">
+    <link type="text/css" href="/css/nv.d3.css" rel="stylesheet">
+    <link type="text/css" href="/css/main.css" rel="stylesheet">
+    <link type="text/css" href="/css/initialization.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery.layout-latest.min.js"></script>
+    <script type="text/javascript" src="/css/colorbrewer/colorbrewer.js"></script>
+    <script type="text/javascript" src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/typeahead.bundle.js"></script>
+    <script type="text/javascript" src="/scripts/lib/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/d3.v2.js"></script>
+    <script type="text/javascript" src="/scripts/lib/nv.d3.js"></script>
+
+    <script type="text/javascript" src="/scripts/util.js"></script>
+
+    <script type="text/javascript" src="/scripts/objects/Answer.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Match.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Pattern.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Seed.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Target.js"></script>
+
+    <script type="text/javascript" src="/scripts/pruning/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/pruning/pruning.js"></script>
+</head>
+
+<script type="text/html" id="pattern-template">
+
+    <button class="btn btn-default" style="position:absolute; left: 5px;"
+            title="Accept/Unaccept this pattern"
+            data-bind="click: toggleAccept">
+            <span class="glyphicon"
+                  data-bind="css: {'glyphicon-plus': !frozen(), 'glyphicon-minus': frozen()}"></span>
+    </button>
+
+    <button class="btn btn-default colorGreen" style="position:absolute; left: 45px;"
+            title="Accept this pattern and everything above it"
+            data-bind="click: acceptUp">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+    </button>
+
+    <button class="btn btn-default colorRed" style="position:absolute; left: 85px;"
+            title="Reject this pattern and everything below it"
+            data-bind="click: rejectDown">
+        <span class="glyphicon glyphicon-arrow-down"></span>
+    </button>
+
+    <div class="bar" style="position: relative; left: 125px; margin-bottom: 10px;">
+        <div class="title" style="font-weight: bolder;"
+             data-bind="event: {click: click},
+                css: {colorGreen: frozen, colorRed: !frozen()}">
+            <span data-bind="text: pattern"></span>
+
+            <span style="left: 450px;position:absolute" data-bind="if: score">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                iteration: <span data-bind="text: score().iteration"></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                confidence: <span data-bind="text: score().confidence"></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                count: <span data-bind="text: score().frequency"></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                precision: <span data-bind="text: score().precision"></span>
+            </span>
+        </div>
+
+        <div data-bind="if: showMatches">
+
+            <div data-bind="foreach: matches">
+                <br/><div data-bind="html: $data"></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">LearnIt Post Pruning</a>
+            </div>
+
+            <div class="navbar-header" style="font-weight: bolder;">
+                <a class="navbar-brand" href="#"><span data-bind="text: relation"></span></a>
+            </div>
+
+            <div class="navbar-form navbar-left">
+                Sort:
+                <button type="button" class="btn btn-default" onclick="pruningVM.resort(pruningVM.confidenceSorter)">Confidence</button>
+                <button type="button" class="btn btn-default" onclick="pruningVM.resort(pruningVM.iterationSorter)">Iteration</button>
+                <button type="button" class="btn btn-default" onclick="pruningVM.resort(pruningVM.frequencySorter)">Frequency</button>
+                <button type="button" class="btn btn-default" onclick="pruningVM.resort(pruningVM.scoreSorter)">Precision</button>
+            </div>
+
+            <div class="navbar-form navbar-right">
+                <button type="button" class="btn btn-default" onclick="pruningVM.shutdown()">Shutdown Server</button>
+            </div>
+
+            <div class="navbar-form navbar-right">
+                    <span data-bind="visible: isTiming">
+                        <button type="button" class="btn btn-default"
+                                data-bind="click: stopTimer"><span class="glyphicon glyphicon-pause"></span></button>
+                    </span>
+                    <span data-bind="visible: !isTiming()">
+                        <button type="button" class="btn btn-default"
+                                data-bind="click: startTimer"><span class="glyphicon glyphicon-play"></span></button>
+                    </span>
+            </div>
+
+            <div class="navbar-header navbar-right" style="font-weight: bolder; margin-right: 20px;">
+                <a class="navbar-brand" href="#"><span style="color: black;" data-bind="text: timeDisplay"></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+        <div data-bind="template: { name: 'pattern-template', foreach: patterns }"></div>
+    </div>
+
+</body>
+</html>

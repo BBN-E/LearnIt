@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_place_of_birth" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="anwar al -  awlaki" slot1="united states" />
+	<seed slot0="mickey ben  -  tovim" slot1="israeli" />
+	<seed slot0="benedict xvi" slot1="german" />
+	<seed slot0="george miller" slot1="palestinian authority" />
+	<seed slot0="faisal shahzad" slot1="pakistani" />
+	<seed slot0="thierry dusautoir" slot1="ivory coast" />
+	<seed slot0="noordin mohammed" slot1="malaysian" />
+	<seed slot0="maziar bahari" slot1="iranian" />
+	<seed slot0="binyam mohamed" slot1="ethiopian" />
+	<seed slot0="tahawwur hussain rana" slot1="pakistani" />
+	<seed slot0="tariq ali profile" slot1="pakistani" />
+	<seed slot0="shukrijumah" slot1="saudi" />
+	<seed slot0="roland emmerich" slot1="german" />
+	<seed slot0="maher arar" slot1="syrian" />
+	<seed slot0="kenenisa bekele" slot1="kenyan" />
+	<seed slot0="jose mourinho" slot1="brazilian" />
+	<seed slot0="jagdish bhagwati" slot1="indian" />
+	<seed slot0="herta mueller" slot1="romanian" />
+	<seed slot0="emanuel zeltser" slot1="russian" />
+	<seed slot0="daniella issa helayel" slot1="brazilian" />
+	<seed slot0="bernard tschumi" slot1="swiss" />
+	<seed slot0="benedict xvi" slot1="polish" />
+	<seed slot0="anwar al -  awlaqi" slot1="united states" />
+	<seed slot0="anwar al -  awlaki" slot1="united arab emirates" />
+	<seed slot0="zahra kazemi" slot1="iranian" />
+	<seed slot0="wassan al -  khudhairi" slot1="iraqi" />
+	<seed slot0="warren gatland" slot1="new zealand" />
+	<seed slot0="tomas rojas" slot1="armenian" />
+	<seed slot0="tiger woods" slot1="asian" />
+	<seed slot0="szymon  - lrb -  simon  - rrb -  wiesenthal" slot1="poland" />
+	<seed slot0="souhair khatib" slot1="lebanese" />
+	<seed slot0="simon levay" slot1="british" />
+	<seed slot0="sanya richards" slot1="jamaican" />
+	<seed slot0="samuel doe" slot1="liberian" />
+	<seed slot0="saddam hussein" slot1="iran" />
+	<seed slot0="roxana saberi" slot1="us" />
+	<seed slot0="peter marzinkowski" slot1="germany" />
+	<seed slot0="osama bin laden" slot1="saudi arabia" />
+	<seed slot0="omar bakri mohammed" slot1="syrian" />
+	<seed slot0="nicky diaz santillan" slot1="mexican" />
+	<seed slot0="moshe katsav" slot1="iranian" />
+	<seed slot0="mohamed al fayed" slot1="egyptian" />
+	<seed slot0="marcos senna" slot1="brazilian" />
+	<seed slot0="lakshmi n mittal" slot1="indian" />
+	<seed slot0="kevin pietersen" slot1="south african" />
+	<seed slot0="jonathan trott" slot1="south african" />
+	<seed slot0="jonathan pollard" slot1="american" />
+	<seed slot0="johann peter salomon" slot1="german" />
+	<seed slot0="jimmy takter" slot1="swedish" />
+	<seed slot0="jesse levine" slot1="canadian" />
+	<seed slot0="jean todt" slot1="malaysian" />
+	<seed slot0="jean  -  moise delva" slot1="haitian" />
+	<seed slot0="iskra stoycheva" slot1="bulgarian" />
+	<seed slot0="greece &amp;apos;s new socialist prime minister george papandreou" slot1="us" />
+	<seed slot0="george macpherson docherty" slot1="scottish" />
+	<seed slot0="flemming rose" slot1="ukrainian" />
+	<seed slot0="eun jeong" slot1="korean" />
+	<seed slot0="erich segal" slot1="us" />
+	<seed slot0="deepak chopra" slot1="indian" />
+	<seed slot0="bobby williamson" slot1="scottish" />
+	<seed slot0="bikram choudhury" slot1="indian" />
+	<seed slot0="bernard lagat" slot1="kenyan" />
+	<seed slot0="benedict xvi" slot1="germany" />
+	<seed slot0="ayaan hirsi ali" slot1="somali" />
+	<seed slot0="anwar al -  awlaki" slot1="american" />
+	<seed slot0="anwar al -  aulaqi" slot1="united states" />
+	<seed slot0="anh dao traxel" slot1="vietnamese" />
+	<seed slot0="angelina guedes" slot1="brazilian" />
+	<seed slot0="alexander goldstein" slot1="russian" />
+	<seed slot0="alejandro amenabar" slot1="chilean" />
+	<seed slot0="ahmed said khadr" slot1="egyptian" />
+	<seed slot0="abdul farouk abdulmutallab" slot1="british" />
+</seeds>

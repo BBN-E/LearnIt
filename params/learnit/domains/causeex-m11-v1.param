@@ -1,0 +1,70 @@
+INCLUDE ./kbp-tac/proposing.params
+INCLUDE ./kbp-tac/pruning.params
+
+# core data dir
+learnit_data_dir: /nfs/mercury-04/u41/learnit/CauseEx-M11-V1/
+
+# a directory of lists of serifxml files, one per line
+corpus_dir: %learnit_data_dir%/source_lists
+# learnit_root: /nfs/mercury-04/u42/bmin/repositories/git/local/akbc/
+source_lists: %learnit_data_dir%/source_lists
+
+# where the mappings go
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+
+## similarity related params
+# follwing embeddings files are word-embeddings files
+#embeddings_file_for_seeds: /nfs/raid87/u15/learnit_similarity_data/glove_6B_50d_embeddings/glove.6B.50d.p
+#embeddings_file_for_patterns: /nfs/raid87/u15/learnit_similarity_data/glove_6B_50d_embeddings/glove.6B.50d.p 
+# following embeddings files are learned using TransE model on gigaword event-event pairs
+embeddings_file_for_seeds: /home/hqiu/runjob/expts/RNN_TransE_sequence/output/learnit_textgraph/75d_emb_adagrad/ents_phr_embs.p
+embeddings_file_for_patterns: /home/hqiu/runjob/expts/RNN_TransE_sequence/output/learnit_textgraph/75d_emb_adagrad/rels_phr_embs.p
+# directory where similarity output is written or read from
+similarity_data_dir: %learnit_data_dir%/learnit_similarity_data
+# directory where similarity output is written or read from
+seeds_dir: %similarity_data_dir%/seeds_from_mappings
+seeds_lists_dir: %similarity_data_dir%/seeds_lists
+patterns_dir: %similarity_data_dir%/patterns_from_mappings
+patterns_lists_dir: %similarity_data_dir%/patterns_lists
+seed_vectors_dir: %similarity_data_dir%/seed_vectors
+#seed_vector_lists_dir: %similarity_data_dir%/seed_vector_lists
+pattern_vectors_dir: %similarity_data_dir%/pattern_vectors
+#pattern_vector_lists_dir: %similarity_data_dir%/pattern_vector_lists
+seed_similarity_threshold: 0.1
+pattern_similarity_threshold: 0.1
+seed_similarity_dir: %similarity_data_dir%/seed_similarity_dir
+seed_similarity_lists_dir: %similarity_data_dir%/seed_similarity_lists_dir
+pattern_similarity_dir: %similarity_data_dir%/pattern_similarity_dir
+pattern_similarity_lists_dir: %similarity_data_dir%/pattern_similarity_lists_dir
+## 
+
+#event-event decoding/scoring output directory
+scoring_output_dir: %learnit_data_dir%/scoring_output/
+
+bilingual: false
+languages: English
+
+path_conversions: %learnit_root%/params/learnit/domains/path_conversions.txt
+source_dir: %learnit_data_dir%/serifxml
+
+# A file containing a list of stopwords.  These are used to rule out
+# patterns that would overgenerate or pattern restrictions that would be meaningless.
+stopwords: %learnit_root%/inputs/resources/stopwords/english_gigaword_df.txt
+
+# General Domain Parameters
+corpus_name: causeex_m11_v1
+
+#######################################################
+#    For Evaluation
+#######################################################
+
+# whether to automatically do evaluation after each iteration
+OVERRIDE do_evaluation: false
+#use_gold_coreference: true
+
+#eval_dir: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace
+#test_set_serifxmls: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace/dev_and_train_set_gold_xml.txt
+#test_set_apfs: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace/dev_and_train_set_gold.txt
+
+#use_char_offsets_for_apf: false

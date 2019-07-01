@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Physical_Near" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="potocari" slot1="srebrenica" language="English" />
+	<seed slot0="manger square" slot1="church of the nativity" language="English" />
+	<seed slot0="windsor castle" slot1="london" language="English" />
+	<seed slot0="panjshir valley" slot1="kabul" language="English" />
+	<seed slot0="gori" slot1="tbilisi" language="English" />
+	<seed slot0="ilijas" slot1="sarajevo" language="English" />
+	<seed slot0="qalqilya" slot1="tulkarem" language="English" />
+	<seed slot0="putrajaya" slot1="kuala lumpur" language="English" />
+	<seed slot0="kiseljak" slot1="sarajevo" language="English" />
+	<seed slot0="nanterre" slot1="paris" language="English" />
+	<seed slot0="podujevo" slot1="pristina" language="English" />
+	<seed slot0="subic bay" slot1="manila" language="English" />
+	<seed slot0="khankala" slot1="grozny" language="English" />
+	<seed slot0="mount igman" slot1="sarajevo" language="English" />
+	<seed slot0="incheon" slot1="seoul" language="English" />
+	<seed slot0="blue mountains" slot1="sydney" language="English" />
+	<seed slot0="versailles" slot1="paris" language="English" />
+	<seed slot0="ventura county" slot1="los angeles" language="English" />
+	<seed slot0="zarqa" slot1="amman" language="English" />
+	<seed slot0="bratunac" slot1="srebrenica" language="English" />
+	<seed slot0="tangerang" slot1="jakarta" language="English" />
+	<seed slot0="dura" slot1="hebron" language="English" />
+	<seed slot0="bamiyan" slot1="kabul" language="English" />
+	<seed slot0="balata refugee camp" slot1="nablus" language="English" />
+	<seed slot0="beit sahour" slot1="bethlehem" language="English" />
+	<seed slot0="ramallah" slot1="east jerusalem" language="English" />
+	<seed slot0="danube river" slot1="passau" language="English" />
+	<seed slot0="le bourget" slot1="paris" language="English" />
+	<seed slot0="espoo" slot1="helsinki" language="English" />
+	<seed slot0="kosovo polje" slot1="pristina" language="English" />
+	<seed slot0="tangshan" slot1="beijing" language="English" />
+	<seed slot0="jabaliya" slot1="gaza city" language="English" />
+	<seed slot0="bekasi" slot1="jakarta" language="English" />
+</seeds>

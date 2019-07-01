@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_shareholders" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="knutsford guardian" slot1="john major" />
+	<seed slot0="porsche" slot1="ferdinand piech" />
+	<seed slot0="yahoo !" slot1="august icahn" />
+	<seed slot0="international security assistance force" slot1="afghanistan" />
+	<seed slot0="haliburton" slot1="ahmad = al qaida" />
+	<seed slot0="government motors" slot1="barack obama" />
+	<seed slot0="chrysler" slot1="barack obama" />
+	<seed slot0="arsenal" slot1="stan kroenke" />
+	<seed slot0="haliburton" slot1="a_real_win@hotmailcom" />
+	<seed slot0="haliburton" slot1="humanity" />
+	<seed slot0="beijing centergate technologies" slot1="huang guangyu" />
+	<seed slot0="byd" slot1="wang chuanfu" />
+	<seed slot0="alfa bank" slot1="mikhail fridman" />
+	<seed slot0="yahoo japan" slot1="masayoshi son" />
+	<seed slot0="rio tinto" slot1="chinalco" />
+	<seed slot0="meidu real estate company" slot1="que jingde" />
+	<seed slot0="kraft foods" slot1="warren buffett" />
+	<seed slot0="imclone systems" slot1="martha stewart" />
+	<seed slot0="halliburton watch" slot1="dick cheney" />
+	<seed slot0="deutsche bank ag" slot1="sal oppenheim jr&amp;amp; ciesca" />
+	<seed slot0="daimler ag" slot1="ross brawn" />
+	<seed slot0="berkshire hathaway inc" slot1="warren buffett" />
+	<seed slot0="bt" slot1="ian livingston" />
+	<seed slot0="arsenal" slot1="alisher usmanov" />
+	<seed slot0="senate" slot1="kerry" />
+	<seed slot0="yukos" slot1="alexei pichugin" />
+	<seed slot0="yomiuri shimbun" slot1="yasuko" />
+	<seed slot0="xinhua" slot1="warren buffett" />
+	<seed slot0="wall street journal" slot1="murdoch" />
+	<seed slot0="viacom , inc" slot1="ted turner" />
+	<seed slot0="uc rusal" slot1="oleg deripaska" />
+	<seed slot0="the sun" slot1="james  -  murdoch" />
+	<seed slot0="solyndra" slot1="anup jacob" />
+	<seed slot0="sitnasuak native corp" slot1="paul ongtooguk" />
+	<seed slot0="siemens" slot1="kaeser says" />
+	<seed slot0="senate" slot1="roy blunt" />
+	<seed slot0="senate" slot1="christopher dodd" />
+	<seed slot0="senate" slot1="dan coats" />
+	<seed slot0="rusal" slot1="oleg deripaska" />
+	<seed slot0="rio tinto" slot1="xiong weiping" />
+	<seed slot0="reuters" slot1="warren buffett" />
+	<seed slot0="reliancepower limited am" slot1="anil ambani" />
+	<seed slot0="reliance public utility private limited" slot1="rel" />
+	<seed slot0="regency television" slot1="rupert murdoch" />
+	<seed slot0="rhj international" slot1="timothy collin" />
+	<seed slot0="queens park rangers" slot1="flavio briatore" />
+	<seed slot0="quadrangle group" slot1="steven l rattner" />
+	<seed slot0="prosper marketplace inc" slot1="dodd" />
+	<seed slot0="parliament" slot1="silvio berlusconi" />
+	<seed slot0="parliament" slot1="khaw boon wan" />
+	<seed slot0="opel" slot1="carl  -  peter forster" />
+	<seed slot0="opel" slot1="angela merkel" />
+	<seed slot0="news corp" slot1="rupert murdoch" />
+	<seed slot0="nationalist socialists" slot1="jews" />
+	<seed slot0="ny stock exchange" slot1="spitzer releases email addresses" />
+	<seed slot0="nba" slot1="kenny huang jianhua" />
+	<seed slot0="mammacom inc" slot1="mark" />
+	<seed slot0="macarthur coal ltd" slot1="ricardo leiman" />
+	<seed slot0="mazda" slot1="chase manhattan" />
+	<seed slot0="lionsgate" slot1="carl icahn" />
+	<seed slot0="lions gate entertainment corp" slot1="carl icahn" />
+	<seed slot0="liberty bonds" slot1="mayme" />
+	<seed slot0="kraft foods inc" slot1="warren buffett" />
+	<seed slot0="kabul bank" slot1="mahmoud karzai" />
+	<seed slot0="kabul bank" slot1="khalilullah fruzi" />
+	<seed slot0="international monetary fund" slot1="gl peiris" />
+	<seed slot0="ins" slot1="rush" />
+	<seed slot0="haliburton" slot1="be_ameri@hotmailcom" />
+	<seed slot0="green dot public schools" slot1="latinos" />
+	<seed slot0="gordon brothers group" slot1="carlos slim helu" />
+	<seed slot0="fatah" slot1="anan soboh" />
+	<seed slot0="embattled kabul bank" slot1="hamid karzai" />
+	<seed slot0="eli lilly &amp;amp; co" slot1="john lechleiter" />
+	<seed slot0="disney" slot1="sheryl sandberg" />
+	<seed slot0="democratic party of japan" slot1="ichiro ozawa" />
+	<seed slot0="deere &amp;amp; co" slot1="ralph whitworth" />
+	<seed slot0="country gardens" slot1="yang huiyan" />
+	<seed slot0="continental" slot1="karl  -  thomas neumann" />
+	<seed slot0="commodities corporation" slot1="amos hostettor" />
+	<seed slot0="citigroup" slot1="stanley lerner" />
+	<seed slot0="christian democratic union" slot1="christian repulbican" />
+	<seed slot0="cabinet" slot1="ed miliband" />
+	<seed slot0="booker school" slot1="laura bush" />
+	<seed slot0="barnes &amp;amp; nobles" slot1="leonard riggio" />
+	<seed slot0="ar arsenal" slot1="stan kroenke" />
+	<seed slot0="apple daily" slot1="jimmy lai" />
+	<seed slot0="alibaba group" slot1="masayoshi son" />
+	<seed slot0="afp" slot1="stan kroenke" />
+</seeds>

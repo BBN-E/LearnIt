@@ -1,0 +1,51 @@
+[{
+    "language": "english",
+    "slot0": {
+        "@class": ".Slot",
+        "text": ["attack"]
+    },
+    "slot1": {
+        "@class": ".Slot",
+        "text": ["death"]
+    }
+}, {
+    "language": "english",
+    "slot0": {
+        "@class": ".Slot",
+        "text": ["attacks"]
+    },
+    "slot1": {
+        "@class": ".Slot",
+        "text": ["deaths"]
+    }
+}, {
+    "language": "english",
+    "slot0": {
+        "@class": ".Slot",
+        "text": ["attacks"]
+    },
+    "slot1": {
+        "@class": ".Slot",
+        "text": ["death"]
+    }
+}, {
+    "language": "english",
+    "slot0": {
+        "@class": ".Slot",
+        "text": ["attack"]
+    },
+    "slot1": {
+        "@class": ".Slot",
+        "text": ["deaths"]
+    }
+}, {
+    "language": "english",
+    "slot0": {
+        "@class": ".Slot",
+        "text": ["attacked"]
+    },
+    "slot1": {
+        "@class": ".Slot",
+        "text": ["death"]
+    }
+}]

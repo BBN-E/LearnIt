@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+	<target name="Gen_Aff_Citizen-Resident-Religion-Ethnicity" elf_ontology_type="Gen_Aff_Citizen-Resident-Religion-Ethnicity"
+          description="{0} is a citizen or resident of, or religiously or ethnically related to {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person" elf_role="0_person"
+           mention_constraints="(acetype PER) (min-entitylevel DESC)" allow_desc_training="1" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_group_loc_gpe_or_org" elf_role="1_group_loc_gpe_or_org"
+           mention_constraints="(acetype PER LOC GPE ORG) (min-entitylevel DESC)" />
+    <slot_pair a="1" b="0" must_not_corefer="1"/>
+  </target>
+</targets>

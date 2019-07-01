@@ -1,0 +1,13 @@
+---
+- Binary-Entity:
+  - _id: "Binary-Entity_001"
+  - _source: []
+  - _description: "NA"
+  - _examples: []
+  - _alternative_id: null
+  - Is family member of:
+    - _id: "Is family member of_001"
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null

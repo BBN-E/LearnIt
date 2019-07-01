@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="unary_per_statement"
+          description="{0} makes a statement">
+    <slot slotnum="0" description="?" type="mention"
+           mention_constraints="(acetype PER) (min-entitylevel DESC)" />
+  </target>
+</targets>

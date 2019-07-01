@@ -1,0 +1,6 @@
+INCLUDE ./default.params
+INCLUDE ../domains/ace.param
+
+OVERRIDE learnit_expt_suffix: generate_source_mappings_ace
+
+mappings_list_batches: 2

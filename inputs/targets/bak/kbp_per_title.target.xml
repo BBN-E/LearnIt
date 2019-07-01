@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="per_title" elf_ontology_type="per_title"
+          description="{0} has the title of {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person" elf_role="0_person"
+           mention_constraints="(acetype PER) (min-entitylevel NAME)" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_title" elf_role="1_title"
+           mention_constraints="(acetype PER) (mentiontype desc name)" use_head_text="1" allow_desc_training="1"/>
+    <slot_pair a="1" b="0" symmetric="0" must_corefer="0" no_overlap="whole"/>
+  </target>
+</targets>

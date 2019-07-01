@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="org_parents" elf_ontology_type="org_parents"
+          description="{0} is part of or owned by {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_org" elf_role="0_subsidiary"
+           mention_constraints="(acetype ORG) (min-entitylevel DESC)" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_org_gpe" elf_role="1_owner_parent"
+           mention_constraints="(acetype ORG GPE) (min-entitylevel DESC)" />
+    <slot_pair a="1" b="0" symmetric="0" must_not_corefer="1"/>
+  </target>
+</targets>

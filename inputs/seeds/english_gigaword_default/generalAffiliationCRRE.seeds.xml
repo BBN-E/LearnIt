@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Gen_Aff_Citizen-Resident-Religion-Ethnicity" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="tony blair" slot1="british" />
+	<seed slot0="pervez musharraf" slot1="pakistani" />
+	<seed slot0="george w bush" slot1="american" />
+	<seed slot0="hu jintao" slot1="chinese" />
+	<seed slot0="ehud olmert" slot1="israeli" />
+	<seed slot0="saddam hussein" slot1="iraqi" />
+	<seed slot0="shimon peres" slot1="israeli" />
+	<seed slot0="jiang zemin" slot1="chinese" />
+	<seed slot0="fidel castro" slot1="cuban" />
+	<seed slot0="thaksin shinawatra" slot1="thailand" />
+	<seed slot0="slobodan milosevic" slot1="serbian" />
+	<seed slot0="mahmoud abbas" slot1="palestinian" />
+	<seed slot0="slobodan milosevic" slot1="yugoslavia" />
+	<seed slot0="george w bush" slot1="us" />
+	<seed slot0="tony blair" slot1="britain" />
+	<seed slot0="gerhard schroeder" slot1="germany" />
+	<seed slot0="madeleine albright" slot1="united states" />
+	<seed slot0="boris yeltsin" slot1="russian" />
+	<seed slot0="hamid karzai" slot1="afghanistan" />
+	<seed slot0="barack obama" slot1="american" />
+	<seed slot0="jacques chirac" slot1="french" />
+	<seed slot0="wen jiabao" slot1="chinese" />
+	<seed slot0="yasser arafat" slot1="palestinian authority" />
+	<seed slot0="osama bin laden" slot1="afghanistan" />
+	<seed slot0="hugo chavez" slot1="venezuelan" />
+	<seed slot0="barack obama" slot1="united states" />
+	<seed slot0="yasser arafat" slot1="palestinian" />
+	<seed slot0="vladimir putin" slot1="russian" />
+	<seed slot0="hosni mubarak" slot1="egyptian" />
+	<seed slot0="ehud barak" slot1="israeli" />
+	<seed slot0="junichiro koizumi" slot1="japanese" />
+	<seed slot0="barack obama" slot1="washington" />
+	<seed slot0="robert gates" slot1="united states" />
+	<seed slot0="george w bush" slot1="texas" />
+	<seed slot0="mahmud abbas" slot1="palestinian" />
+	<seed slot0="benjamin netanyahu" slot1="israeli" />
+	<seed slot0="george w bush" slot1="united states" />
+	<seed slot0="mahmoud ahmadinejad" slot1="iranian" />
+	<seed slot0="bill clinton" slot1="united states" />
+	<seed slot0="silvio berlusconi" slot1="italian" />
+	<seed slot0="radovan karadzic" slot1="serbian" />
+	<seed slot0="george w bush" slot1="washington" />
+	<seed slot0="nicolas sarkozy" slot1="french" />
+	<seed slot0="jacques chirac" slot1="france" />
+	<seed slot0="ariel sharon" slot1="israeli" />
+	<seed slot0="dmitry medvedev" slot1="russian" />
+	<seed slot0="radovan karadzic" slot1="bosnian serb" />
+	<seed slot0="bush" slot1="united states" />
+	<seed slot0="colin powell" slot1="united states" />
+	<seed slot0="li zhaoxing" slot1="chinese" />
+	<seed slot0="gilad shalit" slot1="israeli" />
+	<seed slot0="thabo mbeki" slot1="south african" />
+	<seed slot0="yitzhak rabin" slot1="israeli" />
+	<seed slot0="sergei ivanov" slot1="russian" />
+	<seed slot0="john howard" slot1="australian" />
+	<seed slot0="bill clinton" slot1="washington" />
+	<seed slot0="suharto" slot1="indonesian" />
+	<seed slot0="donald rumsfeld" slot1="united states" />
+	<seed slot0="gordon brown" slot1="british" />
+	<seed slot0="john mccain" slot1="arizona" />
+	<seed slot0="zhu rongji" slot1="chinese" />
+	<seed slot0="barack obama" slot1="us" />
+	<seed slot0="ehud olmert" slot1="jerusalem" />
+	<seed slot0="alberto fujimori" slot1="peruvian" />
+	<seed slot0="ryutaro hashimoto" slot1="japanese" />
+	<seed slot0="radovan karadzic" slot1="bosnian" />
+	<seed slot0="saddam hussein" slot1="baghdad" />
+	<seed slot0="angela merkel" slot1="germany" />
+	<seed slot0="laurent kabila" slot1="congolese" />
+	<seed slot0="radovan karadzic" slot1="serb" />
+	<seed slot0="javier solana" slot1="european union" />
+	<seed slot0="pervez musharraf" slot1="pakistan" />
+	<seed slot0="alexander downer" slot1="australian" />
+	<seed slot0="ratko mladic" slot1="bosnian serb" />
+	<seed slot0="franjo tudjman" slot1="croatian" />
+	<seed slot0="john major" slot1="british" />
+	<seed slot0="moammar gadhafi" slot1="libyan" />
+	<seed slot0="robert mugabe" slot1="zimbabwean" />
+	<seed slot0="benazir bhutto" slot1="pakistani" />
+	<seed slot0="hillary rodham clinton" slot1="united states" />
+	<seed slot0="yoweri museveni" slot1="ugandan" />
+	<seed slot0="stephen harper" slot1="canadian" />
+	<seed slot0="saeb erekat" slot1="palestinian" />
+	<seed slot0="romano prodi" slot1="italian" />
+	<seed slot0="bill clinton" slot1="us" />
+	<seed slot0="tony blair" slot1="united states" />
+	<seed slot0="nicolas sarkozy" slot1="france" />
+	<seed slot0="jack straw" slot1="british" />
+	<seed slot0="bill clinton" slot1="american" />
+	<seed slot0="jack straw" slot1="britain" />
+	<seed slot0="sarah palin" slot1="alaska" />
+	<seed slot0="nuri al- maliki" slot1="iraqi" />
+	<seed slot0="radovan karadzic" slot1="serbs" />
+	<seed slot0="shaul mofaz" slot1="israeli" />
+	<seed slot0="bertie ahern" slot1="ireland" />
+	<seed slot0="rafik hariri" slot1="lebanese" />
+</seeds>

@@ -1,0 +1,5 @@
+INCLUDE ./default.params
+INCLUDE ../domains/coldstart_cs2012_mini.param
+
+OVERRIDE learnit_expt_suffix: generate_source_mappings_cs2012_mini
+

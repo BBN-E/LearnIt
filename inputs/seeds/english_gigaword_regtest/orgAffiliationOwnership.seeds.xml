@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Ownership" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="george w bush" slot1="texas rangers" />
+	<seed slot0="lucio tan" slot1="pal" />
+	<seed slot0="mario lemieux" slot1="pittsburgh penguins" />
+	<seed slot0="peter angelos" slot1="baltimore orioles" />
+	<seed slot0="rupert murdoch" slot1="new york post" />
+	<seed slot0="bud selig" slot1="milwaukee brewers" />
+	<seed slot0="ted turner" slot1="cnn" />
+	<seed slot0="roman abramovich" slot1="chelsea" />
+	<seed slot0="fred wilpon" slot1="mets" />
+	<seed slot0="john spano" slot1="new york islanders" />
+	<seed slot0="leon hess" slot1="new york jets" />
+	<seed slot0="paul allen" slot1="seattle seahawks" />
+	<seed slot0="jerry colangelo" slot1="arizona diamondbacks" />
+	<seed slot0="larry ellison" slot1="oracle corp" />
+	<seed slot0="bob kraft" slot1="patriots" />
+	<seed slot0="robert kraft" slot1="new england patriots" />
+	<seed slot0="tom hicks" slot1="texas rangers" />
+	<seed slot0="rupert murdoch" slot1="fox" />
+	<seed slot0="jerry reinsdorf" slot1="chicago white sox" />
+	<seed slot0="silvio berlusconi" slot1="ac milan" />
+	<seed slot0="george steinbrenner" slot1="yankees" />
+	<seed slot0="massimo moratti" slot1="inter milan" />
+	<seed slot0="jerry jones" slot1="dallas cowboys" />
+	<seed slot0="tom hicks" slot1="rangers" />
+	<seed slot0="mikhail khodorkovsky" slot1="company" />
+	<seed slot0="dan rooney" slot1="pittsburgh steelers" />
+	<seed slot0="edgar bronfman jr" slot1="seagram co" />
+	<seed slot0="daniel snyder" slot1="washington redskins" />
+	<seed slot0="al davis" slot1="oakland raiders" />
+	<seed slot0="john henry" slot1="boston red sox" />
+	<seed slot0="art modell" slot1="cleveland browns" />
+	<seed slot0="george steinbrenner" slot1="new york yankees" />
+	<seed slot0="jerry reinsdorf" slot1="chicago bulls" />
+	<seed slot0="larry ellison" slot1="oracle" />
+	<seed slot0="jeffrey loria" slot1="florida marlins" />
+	<seed slot0="jerry colangelo" slot1="phoenix suns" />
+	<seed slot0="tom hicks" slot1="liverpool" />
+	<seed slot0="al davis" slot1="raiders" />
+	<seed slot0="jerry jones" slot1="cowboys" />
+	<seed slot0="peter o'malley" slot1="los angeles dodgers" />
+	<seed slot0="louis gallois" slot1="airbus" />
+	<seed slot0="pat bowlen" slot1="denver broncos" />
+	<seed slot0="mikhail khodorkovsky" slot1="yukos" />
+	<seed slot0="jerry buss" slot1="los angeles lakers" />
+	<seed slot0="rupert murdoch" slot1="wall street journal" />
+	<seed slot0="bob kraft" slot1="new england patriots" />
+	<seed slot0="peter magowan" slot1="san francisco giants" />
+	<seed slot0="tom hicks" slot1="dallas stars" />
+	<seed slot0="jerry buss" slot1="lakers" />
+	<seed slot0="rupert murdoch" slot1="fox news channel" />
+	<seed slot0="malcolm glazer" slot1="tampa bay buccaneers" />
+	<seed slot0="dan snyder" slot1="washington redskins" />
+	<seed slot0="art modell" slot1="baltimore ravens" />
+	<seed slot0="alice waters" slot1="chez panisse" />
+	<seed slot0="rupert murdoch" slot1="the wall street journal" />
+	<seed slot0="vladimir gusinsky" slot1="media - most" />
+	<seed slot0="robert johnson" slot1="black entertainment television" />
+	<seed slot0="wayne huizenga" slot1="florida marlins" />
+	<seed slot0="frank mccourt" slot1="los angeles dodgers" />
+	<seed slot0="ted turner" slot1="atlanta braves" />
+	<seed slot0="victor conte" slot1="balco" />
+	<seed slot0="richard branson" slot1="virgin blue" />
+	<seed slot0="dan gilbert" slot1="cleveland cavaliers" />
+	<seed slot0="ted turner" slot1="cable news network" />
+	<seed slot0="wayne huizenga" slot1="miami dolphins" />
+	<seed slot0="arthur blank" slot1="falcons" />
+	<seed slot0="rupert murdoch" slot1="los angeles dodgers" />
+	<seed slot0="jerry colangelo" slot1="suns" />
+	<seed slot0="tom benson" slot1="new orleans saints" />
+	<seed slot0="arthur blank" slot1="atlanta falcons" />
+	<seed slot0="abe pollin" slot1="washington wizards" />
+	<seed slot0="george gillett jr" slot1="liverpool" />
+	<seed slot0="ken behring" slot1="seattle seahawks" />
+	<seed slot0="john harrington" slot1="boston red sox" />
+	<seed slot0="pat bowlen" slot1="broncos" />
+	<seed slot0="mohamed al fayed" slot1="harrods" />
+	<seed slot0="roman abramovich" slot1="sibneft" />
+	<seed slot0="odai" slot1="babil" />
+	<seed slot0="frank mccourt" slot1="dodgers" />
+	<seed slot0="jeffrey loria" slot1="montreal expos" />
+	<seed slot0="robert kraft" slot1="patriots" />
+	<seed slot0="marge schott" slot1="cincinnati reds" />
+	<seed slot0="john henry" slot1="florida marlins" />
+	<seed slot0="ralph wilson" slot1="buffalo bills" />
+	<seed slot0="al davis" slot1="los angeles raiders" />
+</seeds>

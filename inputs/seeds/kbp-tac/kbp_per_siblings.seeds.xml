@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_siblings" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abdul aziz al - hakim" slot1="ayatollah mohammed baqir al - hakim" />
+	<seed slot0="abdul aziz al - hakim" slot1="ayatollah mohammed baqr al" />
+	<seed slot0="abdul aziz al - hakim" slot1="mohammed bakr al - hakim" />
+	<seed slot0="abdul aziz al - hakim" slot1="mohammed baqir al - hakim" />
+	<seed slot0="abdul aziz al - hakim" slot1="mohammed baqir al - hakim" />
+	<seed slot0="abdul aziz al - hakim" slot1="mohammed baqr" />
+	<seed slot0="alexander haig" slot1="francis r haig" />
+	<seed slot0="ali akbar khan" slot1="annapurna devi" />
+	<seed slot0="art buchwald" slot1="doris kahme" />
+	<seed slot0="art buchwald" slot1="edith jaffe" />
+	<seed slot0="beverly sills" slot1="sidney" />
+	<seed slot0="beverly sills" slot1="stanley" />
+	<seed slot0="catherine roraback" slot1="elizabeth schmidt" />
+	<seed slot0="dominick dunne" slot1="john gregory dunne" />
+	<seed slot0="dominick dunne" slot1="stephen" />
+	<seed slot0="don meredith" slot1="jack" />
+	<seed slot0="ellie greenwich" slot1="laura weiner" />
+	<seed slot0="irene kirkaldy" slot1="james ethel laforest" />
+	<seed slot0="irene kirkaldy" slot1="justine walker" />
+	<seed slot0="lorraine rothman" slot1="sally bloom" />
+	<seed slot0="lucille clifton" slot1="elaine philip" />
+	<seed slot0="mary crisp" slot1="jesse dent cook" />
+	<seed slot0="mary crisp" slot1="richard dent" />
+	<seed slot0="merce cunningham" slot1="jack cunningham" />
+	<seed slot0="michael deaver" slot1="bill deaver" />
+	<seed slot0="michael deaver" slot1="susan wiggins" />
+	<seed slot0="mike penner" slot1="john" />
+	<seed slot0="nancy kissel" slot1="brooks keeshin" />
+	<seed slot0="oscar peterson" slot1="daisy" />
+	<seed slot0="pamela ahearn" slot1="james gardner" />
+	<seed slot0="parren mitchell" slot1="clarence mitchell jr" />
+	<seed slot0="patricia neal" slot1="margaret ann vandenoord" />
+	<seed slot0="randall forsberg" slot1="celia seupel" />
+	<seed slot0="richard nolte" slot1="charles" />
+	<seed slot0="richard nolte" slot1="charles nolte" />
+	<seed slot0="richard nolte" slot1="jacqueline jones" />
+	<seed slot0="richard nolte" slot1="mimi krebs" />
+	<seed slot0="thomas meskill" slot1="laura marie" />
+	<seed slot0="thomas meskill" slot1="ruth prior" />
+	<seed slot0="vernon bellecourt" slot1="clyde" />
+	<seed slot0="vernon bellecourt" slot1="clyde bellecourt" />
+	<seed slot0="william verity" slot1="betsy verity blakey" />
+	<seed slot0="william verity" slot1="jean verity woodhull" />
+	<seed slot0="yolanda king" slot1="bernice" />
+	<seed slot0="yolanda king" slot1="bernice a king" />
+	<seed slot0="yolanda king" slot1="bernice king" />
+	<seed slot0="yolanda king" slot1="dexter" />
+	<seed slot0="yolanda king" slot1="dexter king" />
+	<seed slot0="yolanda king" slot1="dexter scott king" />
+	<seed slot0="yolanda king" slot1="martin iii" />
+	<seed slot0="yolanda king" slot1="martin luther king iii" />
+	<seed slot0="yolanda king" slot1="martin_luther_king_iii" />
+</seeds>

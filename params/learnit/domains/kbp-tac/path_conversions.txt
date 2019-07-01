@@ -1,0 +1,3 @@
+^bolt-eng-DF-(\d\d\d)(.*)	discussion_forums/bolt-eng-DF-$1/bolt-eng-DF-$1$2.sgm.xml
+^eng-(\w\w)-(\d\d)-(\d\d\d\d)(.*)	web/eng-$1-$2-$3/eng-$1-$2-$3$4.sgm.xml
+^(\w\w\w)_ENG_(\d\d\d\d\d\d)(.*)	newswire/$1_ENG_$2/$1_ENG_$2$3.sgm.xml

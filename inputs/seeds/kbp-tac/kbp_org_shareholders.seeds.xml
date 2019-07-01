@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_shareholders" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="access industries" slot1="len blavatnik" />
+	<seed slot0="aerolineas argentinas" slot1="grupo marsans" />
+	<seed slot0="aerolineas argentinas" slot1="marsans" />
+	<seed slot0="arcandor" slot1="karl - gerhard eick" />
+	<seed slot0="arcandor" slot1="madeleine schickedanz" />
+	<seed slot0="arcandor" slot1="sal oppenheim" />
+	<seed slot0="arsenal football club" slot1="alisher usmanov" />
+	<seed slot0="arsenal football club" slot1="arsenal supporters &apos; trust" />
+	<seed slot0="arsenal football club" slot1="daniel fiszman" />
+	<seed slot0="arsenal football club" slot1="david dein" />
+	<seed slot0="arsenal football club" slot1="nigel phillips" />
+	<seed slot0="arsenal football club" slot1="nina bracewell - smith" />
+	<seed slot0="arsenal football club" slot1="red and white holdings" />
+	<seed slot0="arsenal football club" slot1="red and white holdings limited" />
+	<seed slot0="arsenal football club" slot1="richard carr" />
+	<seed slot0="arsenal football club" slot1="stan kroenke" />
+	<seed slot0="asian development bank" slot1="japan" />
+	<seed slot0="asian development bank" slot1="us" />
+	<seed slot0="burlington northern santa fe corp" slot1="berkshire hathaway" />
+	<seed slot0="burlington northern santa fe corp" slot1="berkshire hathaway inc" />
+	<seed slot0="burlington northern santa fe corp" slot1="warren buffett" />
+	<seed slot0="capitalia spa" slot1="abn amro holding nv" />
+	<seed slot0="dcns" slot1="thales" />
+	<seed slot0="escada" slot1="megha mittal" />
+	<seed slot0="freedom communications" slot1="blackstone group" />
+	<seed slot0="galleon group" slot1="raj rajaratnam" />
+	<seed slot0="global infrastructure partners" slot1="credit suisse" />
+	<seed slot0="moody &apos;s corp" slot1="berkshire hathaway inc" />
+	<seed slot0="moody &apos;s corp" slot1="warren buffett" />
+	<seed slot0="moody &apos;s corp" slot1="warren e buffett" />
+	<seed slot0="rapiscan systems" slot1="osi systems inc" />
+	<seed slot0="saudi oger" slot1="rafiq hariri" />
+	<seed slot0="southgobi energy resources" slot1="china investment corp" />
+	<seed slot0="southgobi energy resources" slot1="ivanhoe mines ltd" />
+</seeds>

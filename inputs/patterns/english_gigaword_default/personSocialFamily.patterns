@@ -1,0 +1,2 @@
+n mother,father,son,daughter,brother,sister 0:ref 1:of
+v married 0:sub 1:obj

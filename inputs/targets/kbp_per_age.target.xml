@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+<!--This target will have very poor performance with neolearnit because SERIF does not generally tag ages as values. Most end up as descriptor mentions of type 'OTH'-->
+	<target name="per_age" elf_ontology_type="per_age"
+          description="{0} is {1} year old">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person" elf_role="0_person"
+           mention_constraints="(acetype PER) (min-entitylevel NONE)" allow_desc_training="1" />
+    <slot slotnum="1" description="?" type="value" elf_ontology_type="1_number" elf_role="1_age"
+           mention_constraints="(type Numeric)"/>
+    <slot_pair a="1" b="0" symmetric="0" must_not_corefer="1"/>
+  </target>
+</targets>

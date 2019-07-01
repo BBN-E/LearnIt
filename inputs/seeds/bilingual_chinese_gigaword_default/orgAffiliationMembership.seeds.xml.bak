@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Org_Aff_Membership" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="bob dole" slot1="republican" language="English" />
+	<seed slot0="barack obama" slot1="republican" language="English" />
+	<seed slot0="tom daschle" slot1="democratic" language="English" />
+	<seed slot0="al gore" slot1="democratic party" language="English" />
+	<seed slot0="turkish" slot1="nato" language="English" />
+	<seed slot0="barack obama" slot1="democratic party" language="English" />
+	<seed slot0="john kerry" slot1="democratic" language="English" />
+	<seed slot0="george w bush" slot1="republicans" language="English" />
+	<seed slot0="bob dole" slot1="republican party" language="English" />
+	<seed slot0="harry reid" slot1="democratic" language="English" />
+	<seed slot0="hillary rodham clinton" slot1="democratic" language="English" />
+	<seed slot0="bill clinton" slot1="democratic" language="English" />
+	<seed slot0="al gore" slot1="democratic" language="English" />
+	<seed slot0="hillary rodham clinton" slot1="democratic party" language="English" />
+	<seed slot0="john kerry" slot1="democratic party" language="English" />
+	<seed slot0="john mccain" slot1="republican" language="English" />
+	<seed slot0="nancy pelosi" slot1="democratic" language="English" />
+	<seed slot0="bush" slot1="gop" language="English" />
+	<seed slot0="john edwards" slot1="democratic" language="English" />
+	<seed slot0="george w bush" slot1="republican party" language="English" />
+	<seed slot0="arnold schwarzenegger" slot1="republicans" language="English" />
+	<seed slot0="john mccain" slot1="gop" language="English" />
+	<seed slot0="hillary rodham clinton" slot1="senate" language="English" />
+	<seed slot0="trent lott" slot1="republicans" language="English" />
+	<seed slot0="george w bush" slot1="republican" language="English" />
+	<seed slot0="john mccain" slot1="republican party" language="English" />
+	<seed slot0="ross perot" slot1="reform party" language="English" />
+	<seed slot0="dick gephardt" slot1="democratic" language="English" />
+	<seed slot0="poland" slot1="nato" language="English" />
+	<seed slot0="joe lieberman" slot1="democratic" language="English" />
+	<seed slot0="ralph nader" slot1="green party" language="English" />
+	<seed slot0="gennady zyuganov" slot1="communist party" language="English" />
+	<seed slot0="turkey" slot1="nato" language="English" />
+	<seed slot0="mitch mcconnell" slot1="republicans" language="English" />
+	<seed slot0="mitt romney" slot1="republican" language="English" />
+	<seed slot0="sarah palin" slot1="republicans" language="English" />
+	<seed slot0="shaquille o'neal" slot1="los angeles lakers" language="English" />
+	<seed slot0="sarah palin" slot1="republican party" language="English" />
+	<seed slot0="gray davis" slot1="democratic" language="English" />
+	<seed slot0="taiwanese" slot1="united nations" language="English" />
+	<seed slot0="george w bush" slot1="republican congress" language="English" />
+	<seed slot0="bush" slot1="republican party" language="English" />
+	<seed slot0="edward m kennedy" slot1="senate" language="English" />
+	<seed slot0="hungarian" slot1="nato" language="English" />
+	<seed slot0="chinese" slot1="world trade organization" language="English" />
+	<seed slot0="joseph lieberman" slot1="democratic" language="English" />
+	<seed slot0="sarah palin" slot1="republican" language="English" />
+	<seed slot0="john f kerry" slot1="democratic" language="English" />
+	<seed slot0="joerg haider" slot1="freedom party" language="English" />
+	<seed slot0="shimon peres" slot1="labor party" language="English" />
+	<seed slot0="tony blair" slot1="labor party" language="English" />
+	<seed slot0="taiwan" slot1="united nations" language="English" />
+	<seed slot0="howard dean" slot1="democratic" language="English" />
+	<seed slot0="arnold schwarzenegger" slot1="republican party" language="English" />
+	<seed slot0="barack obama" slot1="democrats" language="English" />
+	<seed slot0="dick cheney" slot1="republicans" language="English" />
+	<seed slot0="tom delay" slot1="republicans" language="English" />
+	<seed slot0="benjamin netanyahu" slot1="likud party" language="English" />
+	<seed slot0="mike huckabee" slot1="republicans" language="English" />
+	<seed slot0="ariel sharon" slot1="likud party" language="English" />
+	<seed slot0="bush" slot1="republican" language="English" />
+	<seed slot0="mitt romney" slot1="republican party" language="English" />
+	<seed slot0="索拉纳" slot1="欧盟" language="Chinese" />
+	<seed slot0="缅甸" slot1="东南亚 国家 协会" language="Chinese" />
+	<seed slot0="连战" slot1="国民党" language="Chinese" />
+	<seed slot0="吴伯雄" slot1="国民党" language="Chinese" />
+	<seed slot0="法国" slot1="北大西洋公约组织" language="Chinese" />
+	<seed slot0="蔡英文" slot1="民进党" language="Chinese" />
+	<seed slot0="中国" slot1="世界贸易组织" language="Chinese" />
+	<seed slot0="希 拉 蕊" slot1="民主党" language="Chinese" />
+	<seed slot0="马英九" slot1="国民党" language="Chinese" />
+	<seed slot0="索拉纳" slot1="欧洲联盟" language="Chinese" />
+	<seed slot0="阿拉法特" slot1="巴解组织" language="Chinese" />
+	<seed slot0="许信良" slot1="民主进步党" language="Chinese" />
+	<seed slot0="越南" slot1="世界贸易组织" language="Chinese" />
+	<seed slot0="许 水 德" slot1="国民党" language="Chinese" />
+	<seed slot0="谢长廷" slot1="民进党" language="Chinese" />
+	<seed slot0="杜 尔" slot1="共和党" language="Chinese" />
+	<seed slot0="朱 立 伦" slot1="国民党" language="Chinese" />
+	<seed slot0="欧 萨 玛 宾 拉登" slot1="盖达 组织" language="Chinese" />
+	<seed slot0="欧 萨 玛 宾 拉登" slot1="塔利班" language="Chinese" />
+	<seed slot0="宋楚瑜" slot1="国民党" language="Chinese" />
+	<seed slot0="苏 贞昌" slot1="民进党" language="Chinese" />
+	<seed slot0="郝柏村" slot1="国民党" language="Chinese" />
+	<seed slot0="捷克" slot1="北约" language="Chinese" />
+	<seed slot0="瑞 德" slot1="民主党" language="Chinese" />
+	<seed slot0="夏 隆" slot1="联合 党" language="Chinese" />
+	<seed slot0="挪威" slot1="欧洲联盟" language="Chinese" />
+	<seed slot0="张荣恭" slot1="国民党" language="Chinese" />
+	<seed slot0="中国" slot1="世界 贸易 组织" language="Chinese" />
+	<seed slot0="陈菊" slot1="民进党" language="Chinese" />
+	<seed slot0="张俊雄" slot1="民进党" language="Chinese" />
+	<seed slot0="裴 瑞 斯" slot1="劳工 党" language="Chinese" />
+	<seed slot0="施明德" slot1="民进党" language="Chinese" />
+	<seed slot0="布 德 列 齐" slot1="卡 塔 自由党" language="Chinese" />
+	<seed slot0="苏 贞昌" slot1="民主进步党" language="Chinese" />
+	<seed slot0="保加利亚" slot1="欧洲联盟" language="Chinese" />
+	<seed slot0="缅甸" slot1="东盟" language="Chinese" />
+	<seed slot0="杜 尔" slot1="共和 党" language="Chinese" />
+	<seed slot0="拉登" slot1="盖达 恐怖 组织" language="Chinese" />
+	<seed slot0="台湾" slot1="亚太 经济 合作 会议" language="Chinese" />
+	<seed slot0="连战" slot1="中国 国民党" language="Chinese" />
+	<seed slot0="潘 孟 安" slot1="民进党" language="Chinese" />
+	<seed slot0="马 夏 艾" slot1="哈玛斯 组织" language="Chinese" />
+	<seed slot0="拉宾" slot1="劳工 党" language="Chinese" />
+	<seed slot0="詹 春 柏" slot1="国民党" language="Chinese" />
+	<seed slot0="越南" slot1="东盟" language="Chinese" />
+	<seed slot0="沙乌地阿拉伯" slot1="opec" language="Chinese" />
+	<seed slot0="尼 坦 雅 胡" slot1="自由党" language="Chinese" />
+	<seed slot0="海德" slot1="自由党" language="Chinese" />
+	<seed slot0="智利" slot1="亚太 经济 合作 会议" language="Chinese" />
+	<seed slot0="罗 特" slot1="共和党" language="Chinese" />
+	<seed slot0="拉巴尼" slot1="北方 联盟" language="Chinese" />
+	<seed slot0="越南" slot1="东协" language="Chinese" />
+	<seed slot0="缅甸" slot1="东协" language="Chinese" />
+	<seed slot0="马来西亚" slot1="东协" language="Chinese" />
+	<seed slot0="老挝" slot1="东盟" language="Chinese" />
+	<seed slot0="吕秀莲" slot1="民主进步党" language="Chinese" />
+	<seed slot0="陆 克 文" slot1="劳工 党" language="Chinese" />
+	<seed slot0="林义雄" slot1="民进党" language="Chinese" />
+	<seed slot0="china" slot1="united nations" language="English" />
+	<seed slot0="美国" slot1="联合国" language="Chinese" />
+	<seed slot0="书记处" slot1="中共中央" language="Chinese" />
+	<seed slot0="连战" slot1="国民党" language="Chinese" />
+	<seed slot0="吴伯雄" slot1="国民党" language="Chinese" />
+	<seed slot0="胡锦涛" slot1="中央军委" language="Chinese" />
+	<seed slot0="宋楚瑜" slot1="亲民党" language="Chinese" />
+	<seed slot0="江泽民" slot1="中央军委" language="Chinese" />
+	<seed slot0="辜振甫" slot1="海基会" language="Chinese" />
+	<seed slot0="贾庆林" slot1="全国政协" language="Chinese" />
+	<seed slot0="马英九" slot1="国民党" language="Chinese" />
+	<seed slot0="kofi annan" slot1="united nations" language="English" />
+	</seeds>

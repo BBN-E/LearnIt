@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Per_Social_Business" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="terry nichols" slot1="timothy mcveigh" />
+	<seed slot0="marcello dell'utri" slot1="silvio berlusconi" />
+	<seed slot0="fidel ramos" slot1="ruben torres" />
+	<seed slot0="aleksander kwasniewski" slot1="waldemar pawlak" />
+	<seed slot0="aung san suu kyi" slot1="aye win" />
+	<seed slot0="jacques chirac" slot1="michel roussin" />
+	<seed slot0="franjo tudjman" slot1="hrvoje sarinic" />
+	<seed slot0="arie luyendyk" slot1="scott brayton" />
+	<seed slot0="john tembo" slot1="kamuzu banda" />
+	<seed slot0="boris yeltsin" slot1="georgy satarov" />
+	<seed slot0="jean tigana" slot1="michel platini" />
+	<seed slot0="andrzej zakrzewski" slot1="lech walesa" />
+	<seed slot0="boris yeltsin" slot1="oleg lobov" />
+	<seed slot0="hastings kamuzu banda" slot1="john tembo" />
+	<seed slot0="norodom ranariddh" slot1="sam rainsy" />
+	<seed slot0="benazir bhutto" slot1="farooq ahmed leghari" />
+	<seed slot0="waqar younis" slot1="wasim akram" />
+	<seed slot0="edgar tekere" slot1="robert mugabe" />
+	<seed slot0="pol pot" slot1="ta mok" />
+	<seed slot0="hitler" slot1="rudolf hess" />
+	<seed slot0="chandrika kumaratunga" slot1="mangala samaraweera" />
+	<seed slot0="chaudhry shujaat hussain" slot1="nawaz sharif" />
+	<seed slot0="dennis lillee" slot1="jeff thomson" />
+	<seed slot0="drew nieporent" slot1="robert de niro" />
+	<seed slot0="kamuzu banda" slot1="tembo" />
+	<seed slot0="gaurav natekar" slot1="leander paes" />
+	<seed slot0="fred eno" slot1="moshood abiola" />
+	<seed slot0="adolf hitler" slot1="rudolf hess" />
+	<seed slot0="bill hayden" slot1="elizabeth ii" />
+	<seed slot0="nhiek tioulong" slot1="norodom sihanouk" />
+	<seed slot0="hastings kamuzu banda" slot1="hetherwick ntaba" />
+	<seed slot0="istvan gyarmati" slot1="laszlo kovacs" />
+	<seed slot0="nabil abu rodeina" slot1="yasser arafat" />
+	<seed slot0="sar moline" slot1="sin song" />
+	<seed slot0="shane warne" slot1="stuart williams" />
+</seeds>

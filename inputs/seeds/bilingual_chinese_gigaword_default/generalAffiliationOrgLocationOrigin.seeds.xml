@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Gen_Aff_Org-Location" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="fbi" slot1="washington" language="English" />
+	<seed slot0="baath party" slot1="baghdad" language="English" />
+	<seed slot0="xinhua news agency" slot1="beijing" language="English" />
+	<seed slot0="international atomic energy agency" slot1="vienna" language="English" />
+	<seed slot0="xinhua news agency" slot1="chinese" language="English" />
+	<seed slot0="nato" slot1="europe" language="English" />
+	<seed slot0="plo" slot1="jerusalem" language="English" />
+	<seed slot0="boeing co" slot1="seattle" language="English" />
+	<seed slot0="revolutionary armed forces of colombia" slot1="colombian" language="English" />
+	<seed slot0="world trade organisation" slot1="geneva" language="English" />
+	<seed slot0="al - qaeda" slot1="afghanistan" language="English" />
+	<seed slot0="north atlantic treaty organization" slot1="brussels" language="English" />
+	<seed slot0="un" slot1="geneva" language="English" />
+	<seed slot0="world trade organization" slot1="geneva" language="English" />
+	<seed slot0="al - qaeda" slot1="yemeni" language="English" />
+	<seed slot0="al - qaeda" slot1="iraqi" language="English" />
+	<seed slot0="united nations" slot1="geneva" language="English" />
+	<seed slot0="jemaah islamiyah" slot1="southeast asia" language="English" />
+	<seed slot0="nasa" slot1="washington" language="English" />
+	<seed slot0="moro islamic liberation front" slot1="philippines" language="English" />
+	<seed slot0="la stampa" slot1="turin" language="English" />
+	<seed slot0="al - qaeda" slot1="yemen" language="English" />
+	<seed slot0="google" slot1="mountain view" language="English" />
+	<seed slot0="chatham house" slot1="london" language="English" />
+	<seed slot0="yankee group" slot1="boston" language="English" />
+	<seed slot0="organization for security and cooperation" slot1="europe" language="English" />
+	<seed slot0="unhcr" slot1="geneva" language="English" />
+	<seed slot0="federal bureau of investigation" slot1="washington" language="English" />
+	<seed slot0="heritage foundation" slot1="washington" language="English" />
+	<seed slot0="moro national liberation front" slot1="philippines" language="English" />
+	<seed slot0="boeing" slot1="seattle" language="English" />
+	<seed slot0="verizon wireless" slot1="united states" language="English" />
+	<seed slot0="plo" slot1="east jerusalem" language="English" />
+	<seed slot0="google inc" slot1="mountain view" language="English" />
+	<seed slot0="5th fleet" slot1="bahrain" language="English" />
+	<seed slot0="联合国" slot1="纽约" language="Chinese" />
+	<seed slot0="联合国总部" slot1="纽约" language="Chinese" />
+	<seed slot0="北大西洋公约组织" slot1="布鲁塞尔" language="Chinese" />
+	<seed slot0="世界贸易组织" slot1="日内瓦" language="Chinese" />
+	<seed slot0="国际奥委会" slot1="洛桑" language="Chinese" />
+	<seed slot0="亚洲开发银行" slot1="马尼拉" language="Chinese" />
+	<seed slot0="联合国 武器 核查 小组" slot1="伊拉克" language="Chinese" />
+	<seed slot0="欧盟委员会" slot1="布鲁塞尔" language="Chinese" />
+	<seed slot0="北约 组织" slot1="布鲁塞尔" language="Chinese" />
+	<seed slot0="国际足联" slot1="苏黎世" language="Chinese" />
+	<seed slot0="international atomic energy agency" slot1="vienna" language="English" />
+	<seed slot0="hezbollah" slot1="beirut" language="English" />
+	<seed slot0="united nations" slot1="new york" language="English" />
+	<seed slot0="world trade organization" slot1="geneva" language="English" />
+	<seed slot0="xinhua news agency" slot1="baghdad" language="English" />
+	<seed slot0="un" slot1="new york" language="English" />
+	<seed slot0="nato" slot1="brussels" language="English" />
+	<seed slot0="european parliament" slot1="strasbourg" language="English" />
+	<seed slot0="european central bank" slot1="frankfurt" language="English" />
+	<seed slot0="al @-@ jazeera" slot1="qatar" language="English" />
+	<seed slot0="international olympic committee" slot1="lausanne" language="English" />
+	<seed slot0="arab league" slot1="cairo" language="English" />
+	<seed slot0="asian development bank" slot1="manila" language="English" />
+	<seed slot0="american institute" slot1="taiwan" language="English" />
+	<seed slot0="european commission" slot1="brussels" language="English" />
+	<seed slot0="亚洲开发银行" slot1="马尼拉" language="Chinese" />
+	<seed slot0="联合国大会" slot1="纽约" language="Chinese" />
+	<seed slot0="民主进步党" slot1="高雄县" language="Chinese" />
+	<seed slot0="联合国 武器 检查 小组" slot1="伊拉克" language="Chinese" />
+	<seed slot0="美洲国家组织" slot1="华盛顿" language="Chinese" />
+	<seed slot0="联合国 国际 原子能 总署" slot1="维也纳" language="Chinese" />
+	<seed slot0="北约 总部" slot1="布鲁塞尔" language="Chinese" />
+	<seed slot0="联合国总部" slot1="纽约市" language="Chinese" />
+	<seed slot0="国际货币基金组织" slot1="华盛顿" language="Chinese" />
+	<seed slot0="联合国安理会" slot1="纽约" language="Chinese" />
+	<seed slot0="世贸组织" slot1="日内瓦" language="Chinese" />
+	<seed slot0="中央情报局" slot1="维吉尼亚州" language="Chinese" />
+	<seed slot0="世界银行" slot1="华府" language="Chinese" />
+	<seed slot0="联合 国" slot1="纽约" language="Chinese" />
+	<seed slot0="哈马斯 组织" slot1="加沙" language="Chinese" />
+	<seed slot0="国际 原子能 总署 理事会" slot1="维也纳" language="Chinese" />
+	<seed slot0="联合国总部" slot1="日内瓦" language="Chinese" />
+	<seed slot0="塔利班 叛军" slot1="巴基斯坦" language="Chinese" />
+	<seed slot0="北大西洋公约组织 理事会" slot1="布鲁塞尔" language="Chinese" />
+	<seed slot0="国民党" slot1="加拿大" language="Chinese" />
+	<seed slot0="联合国 武器 核查 小组" slot1="巴格达" language="Chinese" />
+	<seed slot0="国际 奥林匹克 委员会" slot1="洛桑" language="Chinese" />
+	<seed slot0="联合国 核武器 核查 小组" slot1="伊拉克" language="Chinese" />
+	<seed slot0="世界 贸易 组织" slot1="日内瓦" language="Chinese" />
+	<seed slot0="联合国 警察部队" slot1="伊拉克" language="Chinese" />
+	<seed slot0="民主进步党" slot1="高雄市" language="Chinese" />
+	<seed slot0="汇丰银行" slot1="伊斯坦堡" language="Chinese" />
+	<seed slot0="世界银行" slot1="华盛顿" language="Chinese" />
+	<seed slot0="达 利 银行" slot1="新加坡" language="Chinese" />
+	<seed slot0="联合国 核查 小组" slot1="伊拉克" language="Chinese" />
+	<seed slot0="外务省" slot1="日本" language="Chinese" />
+	<seed slot0="众议院" slot1="美国" language="Chinese" />
+	<seed slot0="白宫" slot1="美国" language="Chinese" />
+	<seed slot0="哈佛大学" slot1="美国" language="Chinese" />
+	<seed slot0="white house" slot1="united states" language="English" />
+	<seed slot0="联邦调查局" slot1="美国" language="Chinese" />
+	<seed slot0="中央情报局" slot1="美国" language="Chinese" />
+	<seed slot0="共同 社" slot1="日本" language="Chinese" />
+	<seed slot0="自民党" slot1="日本" language="Chinese" />
+	<seed slot0="有线电视新闻 网" slot1="美国" language="Chinese" />
+	<seed slot0="联邦政府" slot1="美国" language="Chinese" />
+	<seed slot0="house of representatives" slot1="united states" language="English" />
+	<seed slot0="纽约时报" slot1="美国" language="Chinese" />
+	<seed slot0="民主党" slot1="美国" language="Chinese" />
+	<seed slot0="自卫队" slot1="日本" language="Chinese" />
+	<seed slot0="金融管理局" slot1="香港" language="Chinese" />
+	<seed slot0="kyodo news agency" slot1="japan" language="English" />
+	<seed slot0="每日电讯报" slot1="英国" language="Chinese" />
+	<seed slot0="哥伦比亚 大学" slot1="美国" language="Chinese" />
+	<seed slot0="加州大学" slot1="美国" language="Chinese" />
+	<seed slot0="共和党" slot1="美国" language="Chinese" />
+	<seed slot0="联合 早报" slot1="新加坡" language="Chinese" />
+	<seed slot0="华盛顿邮报" slot1="美国" language="Chinese" />
+	<seed slot0="剑桥 大学" slot1="英国" language="Chinese" />
+	<seed slot0="xinhua news agency" slot1="beijing" language="English" />
+	<seed slot0="波音公司" slot1="美国" language="Chinese" />
+	<seed slot0="牛津 大学" slot1="英国" language="Chinese" />
+	<seed slot0="华尔街日报" slot1="美国" language="Chinese" />
+	<seed slot0="麻省理工 学院" slot1="美国" language="Chinese" />
+	<seed slot0="真主党" slot1="黎巴嫩" language="Chinese" />
+	<seed slot0="new york times" slot1="united states" language="English" />
+	<seed slot0="微软公司" slot1="美国" language="Chinese" />
+	<seed slot0="哥伦比亚广播公司" slot1="美国" language="Chinese" />
+	<seed slot0="通用 汽车公司" slot1="美国" language="Chinese" />
+<seed slot0="白宫" slot1="美国" language="Chinese" />
+<seed slot0="哈佛大学" slot1="美国" language="Chinese" />
+<seed slot0="white house" slot1="united states" language="English" />
+<seed slot0="联邦调查局" slot1="美国" language="Chinese" />
+<seed slot0="中央情报局" slot1="美国" language="Chinese" />
+<seed slot0="共同 社" slot1="日本" language="Chinese" />
+<seed slot0="自民党" slot1="日本" language="Chinese" />
+<seed slot0="司法部" slot1="美国" language="Chinese" />
+<seed slot0="有线电视新闻 网" slot1="美国" language="Chinese" />
+<seed slot0="联邦政府" slot1="美国" language="Chinese" />
+<seed slot0="house of representatives" slot1="united states" language="English" />
+<seed slot0="陆军" slot1="美国" language="Chinese" />
+<seed slot0="纽约时报" slot1="美国" language="Chinese" />
+<seed slot0="民主党" slot1="美国" language="Chinese" />
+<seed slot0="自卫队" slot1="日本" language="Chinese" />
+<seed slot0="金融管理局" slot1="香港" language="Chinese" />
+<seed slot0="国会" slot1="日本" language="Chinese" />
+<seed slot0="kyodo news agency" slot1="japan" language="English" />
+<seed slot0="每日电讯报" slot1="英国" language="Chinese" />
+<seed slot0="哥伦比亚 大学" slot1="美国" language="Chinese" />
+<seed slot0="加州大学" slot1="美国" language="Chinese" />
+<seed slot0="kmt" slot1="chinese" language="English" />
+<seed slot0="联合 早报" slot1="新加坡" language="Chinese" />
+<seed slot0="海军陆战队" slot1="美国" language="Chinese" />
+<seed slot0="white house" slot1="u.s." language="English" />
+<seed slot0="华盛顿邮报" slot1="美国" language="Chinese" />
+<seed slot0="剑桥 大学" slot1="英国" language="Chinese" />
+<seed slot0="xinhua news agency" slot1="beijing" language="English" />
+<seed slot0="nationalist party" slot1="chinese" language="English" />
+<seed slot0="气象 厅" slot1="日本" language="Chinese" />
+<seed slot0="波音公司" slot1="美国" language="Chinese" />
+<seed slot0="牛津 大学" slot1="英国" language="Chinese" />
+<seed slot0="众议院" slot1="美国国会" language="Chinese" />
+<seed slot0="kmt" slot1="china" language="English" />
+<seed slot0="海上 自卫队" slot1="日本" language="Chinese" />
+<seed slot0="委" slot1="上海市" language="Chinese" />
+<seed slot0="新华社" slot1="北京" language="Chinese" />
+<seed slot0="华尔街日报" slot1="美国" language="Chinese" />
+<seed slot0="麻省理工 学院" slot1="美国" language="Chinese" />
+<seed slot0="真主党" slot1="黎巴嫩" language="Chinese" />
+<seed slot0="塔利班" slot1="阿富汗" language="Chinese" />
+<seed slot0="复旦大学" slot1="上海" language="Chinese" />
+<seed slot0="国家 科学院" slot1="美国" language="Chinese" />
+<seed slot0="文 汇报" slot1="香港" language="Chinese" />
+<seed slot0="taliban" slot1="afghanistan" language="English" />
+<seed slot0="new york times" slot1="united states" language="English" />
+<seed slot0="民主党" slot1="日本" language="Chinese" />
+<seed slot0="众议院" slot1="日本" language="Chinese" />
+<seed slot0="united nations" slot1="united states" language="English" />
+<seed slot0="微软公司" slot1="美国" language="Chinese" />
+<seed slot0="最高法院" slot1="美国" language="Chinese" />
+<seed slot0="政法 大学" slot1="中国" language="Chinese" />
+<seed slot0="哥伦比亚广播公司" slot1="美国" language="Chinese" />
+<seed slot0="通用 汽车公司" slot1="美国" language="Chinese" />
+<seed slot0="立法会" slot1="香港" language="Chinese" />
+<seed slot0="全国人大常委会" slot1="中国" language="Chinese" />
+<seed slot0="央行" slot1="日本" language="Chinese" />
+<seed slot0="联合国" slot1="美国" language="Chinese" />
+<seed slot0="中央银行" slot1="日本" language="Chinese" />
+<seed slot0="nationalist party" slot1="china" language="English" />
+<seed slot0="参议院" slot1="日本" language="Chinese" />
+<seed slot0="地检署" slot1="台北" language="Chinese" />
+<seed slot0="hezbollah" slot1="lebanon" language="English" />
+<seed slot0="全国政协" slot1="中国" language="Chinese" />
+<seed slot0="工党" slot1="英国" language="Chinese" />
+<seed slot0="南方 航空公司" slot1="中国" language="Chinese" />
+<seed slot0="kmt" slot1="taiwan" language="English" />
+<seed slot0="星岛日报" slot1="香港" language="Chinese" />
+<seed slot0="贸易发展局" slot1="香港" language="Chinese" />
+<seed slot0="气象 局" slot1="中国" language="Chinese" />
+<seed slot0="委" slot1="北京市" language="Chinese" />
+<seed slot0="国立 大学" slot1="新加坡" language="Chinese" />
+<seed slot0="天文台" slot1="香港" language="Chinese" />
+<seed slot0="耶鲁 大学" slot1="美国" language="Chinese" />
+<seed slot0="政府" slot1="印尼" language="Chinese" />
+<seed slot0="地院" slot1="台北" language="Chinese" />
+<seed slot0="防卫厅" slot1="日本" language="Chinese" />
+<seed slot0="卫生部" slot1="中国" language="Chinese" />
+<seed slot0="中央电视台" slot1="中国" language="Chinese" />
+<seed slot0="东京 大学" slot1="日本" language="Chinese" />
+<seed slot0="white house" slot1="united states" language="English" />
+<seed slot0="国家 旅游局" slot1="中国" language="Chinese" />
+<seed slot0="清华大学" slot1="北京" language="Chinese" />
+<seed slot0="国民党" slot1="台湾" language="Chinese" />
+<seed slot0="democratic progressive party" slot1="taiwan" language="English" />
+<seed slot0="ministry of foreign affairs and trade" slot1="south korean" language="English" />
+<seed slot0="公安部" slot1="中国" language="Chinese" />
+<seed slot0="harvard university" slot1="united states" language="English" />
+<seed slot0="republican" slot1="u.s." language="English" />
+<seed slot0="科技 大学" slot1="香港" language="Chinese" />
+<seed slot0="行政院" slot1="台湾" language="Chinese" />
+<seed slot0="nba" slot1="美国" language="Chinese" />
+<seed slot0="地检署" slot1="台北" language="Chinese" />
+<seed slot0="商务部" slot1="中国" language="Chinese" />
+<seed slot0="保守党" slot1="英国" language="Chinese" />
+<seed slot0="国家统计局" slot1="中国" language="Chinese" />
+<seed slot0="西门子 公司" slot1="德国" language="Chinese" />
+<seed slot0="联合国" slot1="日内瓦" language="Chinese" />
+<seed slot0="国家广播公司" slot1="美国" language="Chinese" />
+<seed slot0="house of representatives" slot1="u.s." language="English" />
+<seed slot0="国际贸易 委员会" slot1="美国" language="Chinese" />
+<seed slot0="pentagon" slot1="united states" language="English" />
+<seed slot0="联邦政府" slot1="德国" language="Chinese" />
+<seed slot0="国民党" slot1="中国" language="Chinese" />
+<seed slot0="贸促会" slot1="中国" language="Chinese" />
+<seed slot0="普林斯顿 大学" slot1="美国" language="Chinese" />
+<seed slot0="故宫博物院" slot1="台北" language="Chinese" />
+<seed slot0="联邦 储备 委员会" slot1="美国" language="Chinese" />
+<seed slot0="明报" slot1="香港" language="Chinese" />
+<seed slot0="财务 省" slot1="日本" language="Chinese" />
+<seed slot0="民进党" slot1="台湾" language="Chinese" />
+<seed slot0="财政司" slot1="香港" language="Chinese" />
+<seed slot0="民进党" slot1="高雄市" language="Chinese" />
+<seed slot0="democratic party" slot1="united states" language="English" />
+<seed slot0="厚生 劳动 省" slot1="日本" language="Chinese" />
+<seed slot0="mainland affairs council" slot1="taiwan" language="English" />
+<seed slot0="自治政府" slot1="巴勒斯坦" language="Chinese" />
+<seed slot0="交易所" slot1="香港" language="Chinese" />
+<seed slot0="丰田" slot1="日本" language="Chinese" />
+<seed slot0="interfax" slot1="russian" language="English" />
+<seed slot0="世博会" slot1="上海" language="Chinese" />
+<seed slot0="央行" slot1="中国" language="Chinese" />
+<seed slot0="全国人大" slot1="中国" language="Chinese" />
+<seed slot0="新华社" slot1="中国" language="Chinese" />
+<seed slot0="washington post" slot1="united states" language="English" />
+<seed slot0="太空 总署" slot1="美国" language="Chinese" />
+<seed slot0="警察 厅" slot1="日本" language="Chinese" />
+<seed slot0="state council" slot1="china" language="English" />
+<seed slot0="铁道部" slot1="中国" language="Chinese" />
+<seed slot0="外交 通商 部" slot1="韩国" language="Chinese" />
+<seed slot0="消费者 协会" slot1="中国" language="Chinese" />
+<seed slot0="columbia university" slot1="united states" language="English" />
+<seed slot0="asean" slot1="china" language="English" />
+<seed slot0="宇航 局" slot1="美国" language="Chinese" />
+<seed slot0="圆山 饭店" slot1="台北" language="Chinese" />
+<seed slot0="democratic progressive party" slot1="kaohsiung" language="English" />
+<seed slot0="联合国" slot1="纽约" language="Chinese" />
+<seed slot0="中央政府" slot1="中国" language="Chinese" />
+<seed slot0="花旗银行" slot1="美国" language="Chinese" />
+<seed slot0="united nations" slot1="new york" language="English" />
+<seed slot0="联邦 统计局" slot1="德国" language="Chinese" />
+<seed slot0="立法院" slot1="台湾" language="Chinese" />
+<seed slot0="中华总商会" slot1="香港" language="Chinese" />
+<seed slot0="东方日报" slot1="香港" language="Chinese" />
+<seed slot0="liberal democratic party" slot1="japan" language="English" />
+<seed slot0="xinhua news agency" slot1="china" language="English" />
+<seed slot0="民进党" slot1="台北市" language="Chinese" />
+<seed slot0="liberal democratic party" slot1="japan" language="English" />
+<seed slot0="海关总署" slot1="中国" language="Chinese" />
+<seed slot0="国土 安全部" slot1="美国" language="Chinese" />
+<seed slot0="企业 研究所" slot1="美国" language="Chinese" />
+<seed slot0="京都 大学" slot1="日本" language="Chinese" />
+<seed slot0="东方 航空公司" slot1="中国" language="Chinese" />
+<seed slot0="费加罗报" slot1="法国" language="Chinese" />
+<seed slot0="海基会" slot1="台湾" language="Chinese" />
+<seed slot0="联合 交易所" slot1="香港" language="Chinese" />
+<seed slot0="全国 广播 公司" slot1="美国" language="Chinese" />
+<seed slot0="赛马会" slot1="香港" language="Chinese" />
+<seed slot0="海关" slot1="香港" language="Chinese" />
+<seed slot0="五角大楼" slot1="美国" language="Chinese" />
+<seed slot0="太阳 报" slot1="英国" language="Chinese" />
+<seed slot0="三菱" slot1="日本" language="Chinese" />
+<seed slot0="kmt" slot1="china" language="English" />
+<seed slot0="进出口 银行" slot1="中国" language="Chinese" />
+<seed slot0="国家统计局" slot1="英国" language="Chinese" />
+<seed slot0="丰田 汽车公司" slot1="日本" language="Chinese" />
+<seed slot0="ministry of foreign affairs" slot1="south korean" language="English" />
+<seed slot0="福特 汽车公司" slot1="美国" language="Chinese" />
+<seed slot0="国会" slot1="泰国" language="Chinese" />
+<seed slot0="nhk 电视台" slot1="日本" language="Chinese" />
+<seed slot0="美军" slot1="阿富汗" language="Chinese" />
+<seed slot0="农林 水产 省" slot1="日本" language="Chinese" />
+<seed slot0="总务 省" slot1="日本" language="Chinese" />
+<seed slot0="经济部" slot1="台湾" language="Chinese" />
+<seed slot0="华盛顿 大学" slot1="美国" language="Chinese" />
+<seed slot0="ming pao daily news" slot1="hong kong" language="English" />
+<seed slot0="警务处" slot1="香港" language="Chinese" />
+<seed slot0="新华社" slot1="北京" language="Chinese" />
+<seed slot0="廉政 公署" slot1="香港" language="Chinese" />
+<seed slot0="上海 汇丰银行" slot1="香港" language="Chinese" />
+<seed slot0="凤凰 卫视" slot1="香港" language="Chinese" />
+<seed slot0="金融管理局" slot1="新加坡" language="Chinese" />
+<seed slot0="贸发局" slot1="香港" language="Chinese" />
+</seeds>

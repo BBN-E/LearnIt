@@ -1,0 +1,55 @@
+INCLUDE ./sec/proposing.params
+INCLUDE ./sec/pruning.params
+
+# Pointers to the data
+learnit_data_dir: /nfs/mercury-04/u41/SECFilings
+learnit_test_dir: /nfs/mercury-04/u41/SECFilings
+
+# A file containing a list of stopwords.  These are used to rule out
+# search queries and patterns that would overgenerate.
+stopwords: %learnit_data_dir%/stopwords.txt
+expanded_stopwords: %learnit_data_dir%/stopwords_medium.txt
+overlap_seed_match_filter_word_list: /nfs/mercury-04/u41/SECFilings/stopwords_large.txt
+ignore_stopword_slots: true
+
+path_conversions: ./sec/path_conversions.txt
+
+# Regarding InstanceFinder
+distill_docs_dir: %learnit_data_dir%/serifxml/training
+source_dir: %learnit_data_dir%/serifxml/training
+search_results_dir: %source_dir%
+indri_corpus_dir: %learnit_data_dir%/learnitdocs
+directory_prefix_length: 0
+distill_doc_extension: txt.xml
+instance_finder_allow_best_name_overlap: true
+
+test_distill_docs_dir: %learnit_test_dir%/serifxml/heldout
+test_source_dir: %learnit_test_dir%/serifxml/heldout
+test_search_results_dir: %test_source_dir%
+
+# Regarding Indri
+indri_corpus_name: SEC
+indri_indices: /nfs/mercury-04/u41/SECFilings/indri_index/SEC
+test_indri_indices: /nfs/mercury-04/u41/SECFilings/indri_index/SEC_test
+filter_indri_stopwords: true
+
+# General Domain Parameters
+corpus_name: sec
+learnit_expt_suffix: sec
+
+languages: English
+
+remove_redundant_sentences: true
+only_match_best_name: true
+unordered_window_size_for_props: 10
+
+#test_set_file_list: %learnit_test_dir%/serifxml/all_test_files.txt
+test_set_file_list: %learnit_root%/evaluation/sec/sample_double_list_2.txt
+test_set_relation_templates: %learnit_root%/lib/inputs/english/sec/test_set_creation/test_set_question_templates.txt
+
+use_seed_groups: true
+
+
+precision_eval_results_dir: %learnit_root%/evaluation/sec
+
+total_evaluation_questions: 100

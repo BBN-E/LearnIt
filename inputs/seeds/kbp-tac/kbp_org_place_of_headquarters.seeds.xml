@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="org_place_of_headquarters" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="a123 systems inc" slot1="ma" />
+	<seed slot0="a123 systems inc" slot1="massachusetts" />
+	<seed slot0="a123 systems inc" slot1="watertown" />
+	<seed slot0="access industries" slot1="new york" />
+	<seed slot0="access industries" slot1="new york" />
+	<seed slot0="alcatel - lucent" slot1="nj" />
+	<seed slot0="alcatel - lucent" slot1="new jersey" />
+	<seed slot0="american association for the advancement of science" slot1="america" />
+	<seed slot0="american association for the advancement of science" slot1="united states" />
+	<seed slot0="american association for the advancement of science" slot1="washington" />
+	<seed slot0="american association for the advancement of science" slot1="united states" />
+	<seed slot0="american automobile association" slot1="united states" />
+	<seed slot0="american bankers association" slot1="america" />
+	<seed slot0="american bankers association" slot1="us" />
+	<seed slot0="american bankers association" slot1="washington, dc" />
+	<seed slot0="american bar association" slot1="united states" />
+	<seed slot0="american beverage association" slot1="america" />
+	<seed slot0="american beverage association" slot1="united states" />
+	<seed slot0="american beverage association" slot1="washington" />
+	<seed slot0="american psychiatric association" slot1="america" />
+	<seed slot0="american psychiatric association" slot1="arlington" />
+	<seed slot0="american psychiatric association" slot1="united states" />
+	<seed slot0="american psychiatric association" slot1="virginia" />
+	<seed slot0="arcandor" slot1="essen" />
+	<seed slot0="arcandor" slot1="germany" />
+	<seed slot0="arsenal football club" slot1="britain" />
+	<seed slot0="arsenal football club" slot1="united kingdom" />
+	<seed slot0="asian development bank" slot1="manila" />
+	<seed slot0="asian development bank" slot1="philippines" />
+	<seed slot0="association of greek tourism enterprises" slot1="greece" />
+	<seed slot0="attenti holdings" slot1="israel" />
+	<seed slot0="attenti holdings" slot1="israeli" />
+	<seed slot0="attenti holdings" slot1="tel aviv" />
+	<seed slot0="awami league" slot1="bangladesh" />
+	<seed slot0="awami national party" slot1="north west frontier" />
+	<seed slot0="awami national party" slot1="north - west frontier province" />
+	<seed slot0="bank julius baer" slot1="basel" />
+	<seed slot0="bank julius baer" slot1="swiss" />
+	<seed slot0="bank julius baer" slot1="switzerland" />
+	<seed slot0="bank julius baer" slot1="zurich" />
+	<seed slot0="barnes foundation" slot1="merion" />
+	<seed slot0="barnes foundation" slot1="pa" />
+	<seed slot0="barnes foundation" slot1="pennsylvania" />
+	<seed slot0="barnes foundation" slot1="philadelphia" />
+	<seed slot0="barnes foundation" slot1="united states" />
+	<seed slot0="benedictine sisters of virginia" slot1="bristow" />
+	<seed slot0="benedictine sisters of virginia" slot1="virginia" />
+	<seed slot0="blackburn rovers" slot1="blackburn" />
+	<seed slot0="blackburn rovers" slot1="england" />
+	<seed slot0="blackburn rovers" slot1="lancashire" />
+	<seed slot0="burlington northern santa fe corp" slot1="fort worth" />
+	<seed slot0="burlington northern santa fe corp" slot1="texas" />
+	<seed slot0="burlington northern santa fe corp" slot1="us" />
+	<seed slot0="burlington northern santa fe corp" slot1="us" />
+	<seed slot0="burlington northern santa fe corp" slot1="united states" />
+	<seed slot0="capitalia spa" slot1="italy" />
+	<seed slot0="capitalia spa" slot1="rome" />
+	<seed slot0="carnival corp" slot1="florida" />
+	<seed slot0="central american parliament" slot1="guatemala" />
+	<seed slot0="central american parliament" slot1="guatemala city" />
+	<seed slot0="champalimaud foundation" slot1="portugal" />
+	<seed slot0="china banking regulatory commission" slot1="beijing" />
+	<seed slot0="china banking regulatory commission" slot1="china" />
+	<seed slot0="china banking regulatory commission" slot1="chinese" />
+	<seed slot0="community foundation of middle tennessee" slot1="nashville" />
+	<seed slot0="community foundation of middle tennessee" slot1="tennessee" />
+	<seed slot0="conagra foods" slot1="us" />
+	<seed slot0="conagra foods" slot1="united states" />
+	<seed slot0="conagra foods" slot1="united states of america" />
+	<seed slot0="council of mortgage lenders" slot1="britain" />
+	<seed slot0="country music association" slot1="nashville" />
+	<seed slot0="country music association" slot1="united states" />
+	<seed slot0="dcns" slot1="france" />
+	<seed slot0="dcns" slot1="french" />
+	<seed slot0="dcns" slot1="paris" />
+	<seed slot0="daily news" slot1="zimbabwe" />
+	<seed slot0="election complaints commission" slot1="afghanistan" />
+	<seed slot0="euskadi ta askatasuna" slot1="spain" />
+	<seed slot0="focus on the family" slot1="california" />
+	<seed slot0="focus on the family" slot1="colo " />
+	<seed slot0="focus on the family" slot1="colorado" />
+	<seed slot0="focus on the family" slot1="colorado springs" />
+	<seed slot0="focus on the family" slot1="united states" />
+	<seed slot0="freedom communications" slot1="california" />
+	<seed slot0="freedom communications" slot1="irvine" />
+	<seed slot0="freedom communications" slot1="united states" />
+	<seed slot0="galleon group" slot1="new york" />
+	<seed slot0="galleon group" slot1="us" />
+	<seed slot0="georgia peanut commission" slot1="georgia" />
+	<seed slot0="global infrastructure partners" slot1="new york" />
+	<seed slot0="global infrastructure partners" slot1="us" />
+	<seed slot0="indoor tanning association" slot1="washington" />
+	<seed slot0="international agency for research on cancer" slot1="france" />
+	<seed slot0="international agency for research on cancer" slot1="lyon" />
+	<seed slot0="international crisis group" slot1="belgium" />
+	<seed slot0="international crisis group" slot1="brussels" />
+	<seed slot0="international crisis group" slot1="washington" />
+	<seed slot0="international water management institute" slot1="sri lanka" />
+	<seed slot0="irish nationwide building society" slot1="dublin" />
+	<seed slot0="irish nationwide building society" slot1="ireland" />
+	<seed slot0="irish nationwide building society" slot1="irish" />
+	<seed slot0="jamaat - al - muslimeen" slot1="republic of trinidad and tobago" />
+	<seed slot0="justice and equality movement" slot1="north darfur" />
+	<seed slot0="justice and equality movement" slot1="sudan" />
+	<seed slot0="justice and equality movement" slot1="western darfur" />
+	<seed slot0="lashkar - e - taiba" slot1="muridke" />
+	<seed slot0="lashkar - e - taiba" slot1="pakistan" />
+	<seed slot0="mtc technologies" slot1="dayton" />
+	<seed slot0="mtc technologies" slot1="ohio" />
+	<seed slot0="mtc technologies" slot1="united states" />
+	<seed slot0="mainland affairs council" slot1="taipei city" />
+	<seed slot0="mainland affairs council" slot1="taiwan" />
+	<seed slot0="millipore corp" slot1="billerica" />
+	<seed slot0="millipore corp" slot1="mass" />
+	<seed slot0="millipore corp" slot1="massachusetts" />
+	<seed slot0="millipore corp" slot1="us" />
+	<seed slot0="millipore corp" slot1="us" />
+	<seed slot0="moody &apos;s corp" slot1="new york" />
+	<seed slot0="national council for adoption" slot1="alexandria" />
+	<seed slot0="national council for adoption" slot1="us" />
+	<seed slot0="national council for adoption" slot1="united states" />
+	<seed slot0="national council for adoption" slot1="virginia" />
+	<seed slot0="new york immigration coalition" slot1="new york" />
+	<seed slot0="nigeria police force" slot1="nigeria" />
+	<seed slot0="nuclear energy institute" slot1="us" />
+	<seed slot0="nuclear energy institute" slot1="washington" />
+	<seed slot0="oxford university press" slot1="new york" />
+	<seed slot0="public library of science" slot1="san francisco" />
+	<seed slot0="public library of science" slot1="us" />
+	<seed slot0="rapiscan systems" slot1="calif" />
+	<seed slot0="rapiscan systems" slot1="california" />
+	<seed slot0="rapiscan systems" slot1="torrance" />
+	<seed slot0="rapiscan systems" slot1="us" />
+	<seed slot0="river road asset management" slot1="kentucky" />
+	<seed slot0="river road asset management" slot1="louisville" />
+	<seed slot0="rosoboronexport" slot1="russia" />
+	<seed slot0="rosoboronexport" slot1="russian" />
+	<seed slot0="rosoboronexport" slot1="russian federation" />
+	<seed slot0="stx finland" slot1="finland" />
+	<seed slot0="stx finland" slot1="finnish" />
+	<seed slot0="saudi oger" slot1="saudi arabia" />
+	<seed slot0="scorpions" slot1="south africa" />
+	<seed slot0="southgobi energy resources" slot1="canada" />
+	<seed slot0="state - owned assets supervision and administration commission" slot1="china" />
+	<seed slot0="stockholm international peace research institute" slot1="stockholm" />
+	<seed slot0="stockholm international peace research institute" slot1="stockholm" />
+	<seed slot0="stockholm international peace research institute" slot1="sweden" />
+	<seed slot0="stockholm international water institute" slot1="stockholm" />
+	<seed slot0="swiss bankers association" slot1="basel" />
+	<seed slot0="swiss bankers association" slot1="switzerland" />
+	<seed slot0="thomas more law center" slot1="ann arbor" />
+	<seed slot0="thomas more law center" slot1="mich" />
+	<seed slot0="thomas more law center" slot1="michigan" />
+	<seed slot0="us high speed rail association" slot1="us" />
+	<seed slot0="us high speed rail association" slot1="united states" />
+	<seed slot0="us high speed rail association" slot1="washington" />
+	<seed slot0="united national congress" slot1="trinidad and tobago" />
+	<seed slot0="united steelworkers of america" slot1="america" />
+	<seed slot0="united steelworkers of america" slot1="us" />
+	<seed slot0="united steelworkers of america" slot1="united states" />
+	<seed slot0="washington national opera" slot1="united states" />
+</seeds>

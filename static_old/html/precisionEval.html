@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>LearnIt Server</title>
+
+    <link type="text/css" href="/css/jquery-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/layout-default-latest.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/colorbrewer/colorbrewer.css" rel="stylesheet">
+    <link type="text/css" href="/css/tipsy.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/typeahead.css" rel="stylesheet">
+    <link type="text/css" href="/css/nv.d3.css" rel="stylesheet">
+    <link type="text/css" href="/css/main.css" rel="stylesheet">
+    <link type="text/css" href="/css/graph.css" rel="stylesheet">
+    <link type="text/css" href="/css/precision.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery.layout-latest.min.js"></script>
+    <script type="text/javascript" src="/css/colorbrewer/colorbrewer.js"></script>
+    <script type="text/javascript" src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/typeahead.bundle.js"></script>
+    <script type="text/javascript" src="/scripts/lib/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/d3.v2.js"></script>
+    <script type="text/javascript" src="/scripts/lib/nv.d3.js"></script>
+
+    <script type="text/javascript" src="/scripts/util.js"></script>
+
+    <script type="text/javascript" src="/scripts/graph/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/graph/node.js"></script>
+    <script type="text/javascript" src="/scripts/graph/edge.js"></script>
+    <script type="text/javascript" src="/scripts/graph/graph.js"></script>
+
+    <script type="text/javascript" src="/scripts/objects/Answer.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Match.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Pattern.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Seed.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Target.js"></script>
+
+    <script type="text/javascript" src="/scripts/precision/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/precision/precisionEval.js"></script>
+</head>
+
+<script type="text/html" id="instance-set-template">
+    <div class="listElement" style="margin-bottom: 18px"
+            data-bind="css: {listElementSelectedGreen: good, listElementSelectedRed: bad}">
+        <div><span data-bind="html: $data.matchDisplay.primaryLanguageHtml"></span></div>
+        <div style="margin-top: 5px"><button class="btn btn-default" style="position:absolute; left: 5px;"
+                data-bind="click: setGood, clickBubble: false, visible: !good() && !bad()"
+                title="Add this instance as good">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+        <button class="btn btn-default" style="position:absolute; left: 50px;"
+                data-bind="click: setBad, clickBubble: false, visible: !good() && !bad()"
+                title="Add this instance as bad">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button class="btn btn-default" style="position:absolute; left: 5px;"
+                data-bind="click: unset, clickBubble: false, visible: good() || bad()"
+                title="Remove this keyword">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button></div>
+    </div>
+</script>
+
+<body>
+
+    <!--NAVIGATION BAR-->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">LearnIt KB Builder</a>
+            </div>
+
+            <div class="navbar-form navbar-left">
+                <!--<button type="button" class="btn btn-default" onclick="vm.clearUnknown()">Clear Unaccepted</button>
+                <button type="button" class="btn btn-default" onclick="vm.clearAll()">Clear All Instances</button>
+                <button type="button" class="btn btn-default" onclick="vm.refresh()">Refresh</button>-->
+            </div>
+
+            <div class="navbar-form navbar-right">
+                <button type="button" class="btn btn-default" onclick="vm.shutdown()">Shutdown Server &amp; Save</button>
+            </div>
+
+            <div class="navbar-form navbar-right">
+                <span data-bind="visible: isTiming">
+                    <button type="button" class="btn btn-default"
+                            data-bind="click: stopTimer"><span class="glyphicon glyphicon-pause"></span></button>
+                </span>
+                <span data-bind="visible: !isTiming()">
+                    <button type="button" class="btn btn-default"
+                            data-bind="click: startTimer"><span class="glyphicon glyphicon-play"></span></button>
+                </span>
+            </div>
+
+            <div class="navbar-header navbar-right" style="font-weight: bolder; margin-right: 20px;">
+                <a class="navbar-brand" href="#"><span style="color: #e38d13;" data-bind="text: loadingMessage"></span></a>
+                <a class="navbar-brand" href="#"><span style="color: black;" data-bind="text: timeDisplay"></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+
+        <!--TARGET TOP SIDEBAR*-->
+
+        <div class="ui-layout-north">
+
+            <div class="sideList">
+                <span style="font-size: 25px; display:inline-block;float:left;
+                    margin-left:10px; margin-right:10px">Precision Evaluation: <span data-bind="text: target"></span></span>
+            </div>
+        </div>
+
+        <!-- INSTANCE RIGHT SIDEBAR -->
+
+        <div class="ui-layout-center" style="position:relative;">
+
+            <h4>Instances</h4>
+            <div class="list" style="position:absolute;top:40px;bottom:60px;left:0px;right:0px;overflow:auto;">
+                <!--<div data-bind="template: {name: 'instance-set-template', foreach: instances}"></div>-->
+                <div data-bind="template: {name: 'instance-set-template', foreach: instances}"></div>
+            </div>
+
+            <div style="position:absolute; bottom: 10px; height: 50px;">
+                <button class="btn btn-primary" data-bind="click: save"
+                        title="Save current instance judgments and load more">Save</button>
+                <!--<button class="btn btn-primary" data-bind="click: getInstances"
+                        title="Get more instances to judge">Get More</button>-->
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

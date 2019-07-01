@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="org_alternate_names" elf_ontology_type="org_alternate_names"
+          description="{1} is an alternate name for {0}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_org" elf_role="0_org"
+           mention_constraints="(acetype ORG) (mentiontype NAME)" use_head_text="1" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_org" elf_role="1_org"
+           mention_constraints="(acetype ORG) (mentiontype NAME)" use_head_text="1" />
+    <slot_pair a="1" b="0" symmetric="1" must_corefer="0" no_overlap="equal"/>
+  </target>
+</targets>

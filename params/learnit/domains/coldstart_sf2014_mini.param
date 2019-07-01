@@ -1,0 +1,41 @@
+INCLUDE ./kbp-tac/proposing.params
+INCLUDE ./kbp-tac/pruning.params
+
+# core data dir
+learnit_data_dir: /nfs/mercury-04/u10/KBP_ColdStart/SF_resources/2014/processed/mini_corpus/data_for_learnit/
+
+# a directory of lists of serifxml files, one per line
+corpus_dir: %learnit_data_dir%/source_lists
+
+# where the mappings go
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+
+bilingual: false
+languages: English
+
+path_conversions: %learnit_root%/params/domains/coldstart_sf2014_mini/path_conversions.txt
+source_dir: %learnit_data_dir%/serifxml
+
+# A file containing a list of stopwords.  These are used to rule out
+# patterns that would overgenerate or pattern restrictions that would be meaningless.
+stopwords: %learnit_root%/inputs/resources/stopwords/english_gigaword_df.txt
+
+# General Domain Parameters
+corpus_name: coldstart_sf2014_mini
+
+#######################################################
+#    For Evaluation
+#######################################################
+
+# whether to automatically do evaluation after each iteration
+OVERRIDE do_evaluation: false
+#use_gold_coreference: true
+
+#eval_dir: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace
+#test_set_serifxmls: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace/dev_and_train_set_gold_xml.txt
+#test_set_apfs: /nfs/mercury-04/u18/mshafir/source/trunk/Active/Projects/learnit/evaluation/english_ace/dev_and_train_set_gold.txt
+
+#use_char_offsets_for_apf: false
+
+mappings_list_batches: 2

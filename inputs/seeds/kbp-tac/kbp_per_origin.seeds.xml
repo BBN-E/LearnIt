@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_origin" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abdul aziz al - hakim" slot1="iraq" />
+	<seed slot0="abdul aziz al - hakim" slot1="iraqi" />
+	<seed slot0="adam gadahn" slot1="american" />
+	<seed slot0="adam gadahn" slot1="us" />
+	<seed slot0="adam gadahn" slot1="us" />
+	<seed slot0="alexander haig" slot1="american" />
+	<seed slot0="alexander haig" slot1="us" />
+	<seed slot0="alexander haig" slot1="us" />
+	<seed slot0="alexander haig" slot1="united states" />
+	<seed slot0="ali akbar khan" slot1="indian" />
+	<seed slot0="andre carson" slot1="african" />
+	<seed slot0="andre carson" slot1="american" />
+	<seed slot0="anthony marshall" slot1="us" />
+	<seed slot0="anthony marshall" slot1="united states" />
+	<seed slot0="anwar chowdhry" slot1="pakistan" />
+	<seed slot0="art buchwald" slot1="american" />
+	<seed slot0="augustus hawkins" slot1="african american" />
+	<seed slot0="augustus hawkins" slot1="american" />
+	<seed slot0="benoit mandelbrot" slot1="french" />
+	<seed slot0="benoit mandelbrot" slot1="lithuanian" />
+	<seed slot0="benoit mandelbrot" slot1="poland" />
+	<seed slot0="beverly sills" slot1="american" />
+	<seed slot0="billy mays" slot1="american" />
+	<seed slot0="claude chabrol" slot1="france" />
+	<seed slot0="claude chabrol" slot1="french" />
+	<seed slot0="dominick dunne" slot1="irish" />
+	<seed slot0="dudu topaz" slot1="israel" />
+	<seed slot0="dudu topaz" slot1="israeli" />
+	<seed slot0="ellie greenwich" slot1="american" />
+	<seed slot0="harvey pekar" slot1="american" />
+	<seed slot0="henry olonga" slot1="zimbabwe" />
+	<seed slot0="henry olonga" slot1="zimbabwean" />
+	<seed slot0="hwang jang - yop" slot1="north korean" />
+	<seed slot0="jade goody" slot1="british" />
+	<seed slot0="jane bolin" slot1="american" />
+	<seed slot0="jennifer dunn" slot1="american" />
+	<seed slot0="jennifer dunn" slot1="us" />
+	<seed slot0="joseph farland" slot1="american" />
+	<seed slot0="juanita millender - mcdonald" slot1="african american" />
+	<seed slot0="juanita millender - mcdonald" slot1="american" />
+	<seed slot0="juanita millender - mcdonald" slot1="us" />
+	<seed slot0="keli mcgregor" slot1="american" />
+	<seed slot0="laurent fignon" slot1="france" />
+	<seed slot0="laurent fignon" slot1="french" />
+	<seed slot0="laurent fignon" slot1="frenchman" />
+	<seed slot0="lucille clifton" slot1="african" />
+	<seed slot0="lucille clifton" slot1="american" />
+	<seed slot0="marc bolland" slot1="dutchman" />
+	<seed slot0="marc bolland" slot1="netherlands" />
+	<seed slot0="maria kaczynska" slot1="polish" />
+	<seed slot0="mathieu montcourt" slot1="france" />
+	<seed slot0="mathieu montcourt" slot1="french" />
+	<seed slot0="merce cunningham" slot1="american" />
+	<seed slot0="merce cunningham" slot1="us" />
+	<seed slot0="mikel karrera sarobe" slot1="spanish" />
+	<seed slot0="mohammed oudeh" slot1="palestine" />
+	<seed slot0="mohammed oudeh" slot1="palestinian" />
+	<seed slot0="mohammed sayed tantawi" slot1="egypt" />
+	<seed slot0="mohammed sayed tantawi" slot1="egyptian" />
+	<seed slot0="nancy kissel" slot1="american" />
+	<seed slot0="orlando zapata" slot1="cuba" />
+	<seed slot0="orlando zapata" slot1="cuban" />
+	<seed slot0="oscar peterson" slot1="canada" />
+	<seed slot0="oscar peterson" slot1="canadian" />
+	<seed slot0="parren mitchell" slot1="american" />
+	<seed slot0="pascal yoadimnadji" slot1="chadian" />
+	<seed slot0="patricia neal" slot1="us" />
+	<seed slot0="patricia neal" slot1="us" />
+	<seed slot0="philip kaiser" slot1="american" />
+	<seed slot0="ramazan bashardost" slot1="afghan" />
+	<seed slot0="ramazan bashardost" slot1="afghanistan" />
+	<seed slot0="ramazan bashardost" slot1="hazara" />
+	<seed slot0="randall forsberg" slot1="american" />
+	<seed slot0="richard nolte" slot1="american" />
+	<seed slot0="ronnie james dio" slot1="american" />
+	<seed slot0="silvestre herrera" slot1="mexican" />
+	<seed slot0="steven derounian" slot1="armenian" />
+	<seed slot0="steven derounian" slot1="bulgarian" />
+	<seed slot0="stuart rose" slot1="britain" />
+	<seed slot0="stuart rose" slot1="british" />
+	<seed slot0="stuart rose" slot1="briton" />
+	<seed slot0="tahawwur hussain rana" slot1="canada" />
+	<seed slot0="tahawwur hussain rana" slot1="canadian" />
+	<seed slot0="tahawwur hussain rana" slot1="pakistan" />
+	<seed slot0="tahawwur hussain rana" slot1="us" />
+	<seed slot0="theodor kollek" slot1="austrian" />
+	<seed slot0="theodor kollek" slot1="hungarian" />
+	<seed slot0="theodor kollek" slot1="israeli" />
+	<seed slot0="vernon bellecourt" slot1="american indian" />
+	<seed slot0="vernon bellecourt" slot1="indian" />
+	<seed slot0="vernon bellecourt" slot1="lakota" />
+	<seed slot0="vernon bellecourt" slot1="ojibwa" />
+	<seed slot0="vernon bellecourt" slot1="ojibwa indian" />
+	<seed slot0="vitaly ginzburg" slot1="russia" />
+	<seed slot0="vitaly ginzburg" slot1="russian" />
+	<seed slot0="william verity" slot1="american" />
+</seeds>

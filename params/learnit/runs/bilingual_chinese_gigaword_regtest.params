@@ -1,0 +1,4 @@
+INCLUDE ./regtest.params
+INCLUDE ../domains/bilingual_chinese_gigaword.params
+
+OVERRIDE learnit_expt_suffix: bilingual_chinese_gigaword_regtest

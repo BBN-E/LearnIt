@@ -1,0 +1,260 @@
+<html>
+<head>
+    <title>LearnIt Server</title>
+
+    <link type="text/css" href="/css/jquery-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/layout-default-latest.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/colorbrewer/colorbrewer.css" rel="stylesheet">
+    <link type="text/css" href="/css/tipsy.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/typeahead.css" rel="stylesheet">
+    <link type="text/css" href="/css/nv.d3.css" rel="stylesheet">
+    <link type="text/css" href="/css/main.css" rel="stylesheet">
+    <link type="text/css" href="/css/graph.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/lib/jquery.layout-latest.min.js"></script>
+    <script type="text/javascript" src="/css/colorbrewer/colorbrewer.js"></script>
+    <script type="text/javascript" src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/typeahead.bundle.js"></script>
+    <script type="text/javascript" src="/scripts/lib/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="/scripts/lib/d3.v2.js"></script>
+    <script type="text/javascript" src="/scripts/lib/nv.d3.js"></script>
+
+    <script type="text/javascript" src="/scripts/util.js"></script>
+
+    <script type="text/javascript" src="/scripts/graph/viewmodel.js"></script>
+    <script type="text/javascript" src="/scripts/graph/node.js"></script>
+    <script type="text/javascript" src="/scripts/graph/edge.js"></script>
+    <script type="text/javascript" src="/scripts/graph/graph.js"></script>
+
+    <script type="text/javascript" src="/scripts/objects/Answer.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Match.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Pattern.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Seed.js"></script>
+    <script type="text/javascript" src="/scripts/objects/Target.js"></script>
+
+    <script type="text/javascript" src="/scripts/demo/demo.js"></script>
+</head>
+
+<body style="padding-top: 70px;">
+
+	<div data-bind="visible: !(showGraph()||showEntities())"> <!--Start Table visualizalization-->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" name="navbar">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand">LearnIt Results</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a class="navbar-brand">Page <span data-bind="text:pageOffset()+1">$data</span></a></li>
+						<li><a href="" data-bind="event:{click:firstPage}">&laquo;First</a></li>
+						<li><a href="" data-bind="event:{click:prevPage}">&lsaquo;Prev</a></li>
+						<li><a href="" data-bind="event:{click:nextPage}">Next&rsaquo;</a></li>
+						<li><a href="" data-bind="event:{click:lastPage}">Last&raquo;</a></li>
+						
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">Relations <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu" data-bind="foreach:relations">
+								<li>
+									<a href="" data-bind='text:$data.name(),
+																				event:{click:demoViewModel.search.bind($data,$data.name(),"relation")}'>
+									</a>
+								</li>
+							</ul>
+						</li>					
+					</ul>
+					
+					<form class="navbar-form navbar-left" role="search" data-bind="submit:searchFromForm">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					
+					<button class="btn btn-default navbar-btn" data-bind="click:clearFilter">Show All</button>
+					
+					<button class="btn btn-default navbar-btn" data-bind="click:sortByFrequency">Freq. Sort</button>
+					<button class="btn btn-default navbar-btn" data-bind="click:sortByConfidence">Confidence Sort</button>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><button class="btn btn-default navbar-btn" data-bind="click:toggleEntities">Entity Profiles</button></li>
+						<li><button class="btn btn-default navbar-btn" data-bind="click:drawGraph">Relation Graph</button></li>
+					</ul>
+					
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>
+						<span data-bind="event:{click:sortByDocId}" class="clickableHeader">Document</span>
+						<span class="glyphicon glyphicon-chevron-down" data-bind="visible:docIdSortOrder()==1"></span>
+						<span class="glyphicon glyphicon-chevron-up" data-bind="visible:docIdSortOrder()==-1"></span>
+					</th>
+					<th>
+						<span data-bind="event:{click:sortByTarget}" class="clickableHeader">Relation</span>
+						<span class="glyphicon glyphicon-chevron-down" data-bind="visible:targetSortOrder()==1"></span>
+						<span class="glyphicon glyphicon-chevron-up" data-bind="visible:targetSortOrder()==-1"></span>
+					</th>
+					<th class="col-sm-1">
+						<span data-bind="event:{click:sortBySlot0}" class="clickableHeader">Slot 0</span>
+						<span class="glyphicon glyphicon-chevron-down" data-bind="visible:slot0SortOrder()==1"></span>
+						<span class="glyphicon glyphicon-chevron-up" data-bind="visible:slot0SortOrder()==-1"></span>
+					</th>
+					<th class="col-sm-1">
+						<span data-bind="event:{click:sortBySlot1}" class="clickableHeader">Slot 1</span>
+						<span class="glyphicon glyphicon-chevron-down" data-bind="visible:slot1SortOrder()==1"></span>
+						<span class="glyphicon glyphicon-chevron-up" data-bind="visible:slot1SortOrder()==-1"></span>
+					</th>
+					<th class="col-sm-3"> Sentence </th>
+					<th> Matching Patterns </th>
+					<!--<th> Max Confidence </th>-->
+				</tr>
+			</thead>
+			<tbody data-bind="foreach:keysToDisplay">
+				<tr>
+					<td data-bind="text:docId"></td>
+					<td data-bind="text:target.name"></td>
+					<td data-bind="html:slot0ExtraString"></td>
+					<td data-bind="html:slot1ExtraString"></td>
+					<td data-bind="html:noLinkHtml"></td>
+					<td data-bind="foreach:demoViewModel.multimap.get($data)">
+						&bull;<span data-bind="text:$data.toString()"></span><br/>
+					</td>
+					<!--<td data-bind="text:demoViewModel.maxConfs[$data]"></td>-->
+				</tr>
+			</tbody>
+		</table>
+	</div> <!--End Table visualizalization-->
+	
+	<div data-bind="visible: showGraph()"> <!--Start graph visualizalization-->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" name="navbar">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand">LearnIt Results</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a class="navbar-brand">Relation Graph</a></li>
+						
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">Relations <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu" data-bind="foreach:relations">
+								<li>
+									<a href="" data-bind='text:$data.name(),
+																				event:{click:demoViewModel.search.bind($data.name(),$data.name(),"relation")}'>
+									</a>
+								</li>
+							</ul>
+						</li>					
+					</ul>
+					
+					<form class="navbar-form navbar-left" role="search" data-bind="submit:searchFromForm">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					
+					<button class="btn btn-default navbar-btn" data-bind="click:clearFilter">Show All</button>
+
+					<!--<button class="btn btn-default navbar-btn" data-bind="click:sortByFrequency, click:drawGraph">Sort by Seed Frequency</button>
+					<button class="btn btn-default navbar-btn" data-bind="click:sortByConfidence">Sort by Pattern Confidence</button>-->
+					
+					<button class="btn btn-default navbar-btn" data-bind="click:toggleInstanceDisplay">Toggle Instance Panel</button>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><button class="btn btn-default navbar-btn" data-bind="click:toggleGraph">Return to Table</button></li>
+					</ul>
+					
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		<!--Graph macro placeholder-->
+		<div class="ui-layout-center">
+			<div id="graph">
+			</div>
+		</div>
+		
+		<!--Legend-->
+		<div id="legend" style="position: absolute; top: 10px; right: 5px; width: 300px; height: 220px; bottom: 0px; overflow-y: auto;">
+			<div class="panel panel-default hoverOpaque">
+				<div class="panel-heading hoverPanelHeading">Relation Types</div>
+				<div class="panel-body">
+					<div data-bind="foreach: relations">
+						<div class="legendEntry">
+							<span class="legendEntryBox" data-bind="style: {'background-color': color}"></span>&nbsp;
+							<span data-bind='text: name, event:{click:demoViewModel.search.bind($data.name(),$data.name(),"relation")}'></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Instance View-->
+		<div 	data-bind="visible:showInstancesOnGraph" 
+					style="position: absolute; height: 200px; bottom: 0px; left:0px; right: 0px; padding: 5px; overflow-y: auto; margin-bottom: 0px; border-top: 1px solid #ddd; background-color: white">
+			<div class="panel-body">
+				<div data-bind="foreach: instancesToDisplay">
+					<div data-bind="html: $data"></div><br />
+				</div>	
+			</div>			
+		</div>
+		
+	</div> <!--End Graph visualizalization-->
+
+	<div data-bind="visible: showEntities()"> <!--Start entity visualizalization-->
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" name="navbar">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand">LearnIt Results</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a class="navbar-brand">Entity Profiles</a></li>				
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><button class="btn btn-default navbar-btn" data-bind="click:toggleEntities">Return to Table</button></li>
+					</ul>
+					
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div data-bind="foreach: allEntities()" class="row">
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading" data-bind="text: $data"></div>
+					<div class="panel-body" data-bind="html: demoViewModel.entityProfileStrings[$data]"></div>
+				</div>
+			</div>
+		</div>
+	</div> <!--End entity visualizalization-->
+	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="Physical_Located" source="human" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="general david petraeus" slot1="afghanistan" language="English" />
+	<seed slot0="j michael luttig" slot1="virginia" language="English" />
+	<seed slot0="alan clayton - matthews" slot1="boston" language="English" />
+	<seed slot0="surayud chulanont" slot1="malaysian" language="English" />
+	<seed slot0="peter kessler" slot1="zagreb" language="English" />
+	<seed slot0="herve de charette" slot1="jerusalem" language="English" />
+	<seed slot0="david hurd" slot1="chilean" language="English" />
+	<seed slot0="william cohen" slot1="kuwait" language="English" />
+	<seed slot0="salman rushdie" slot1="copenhagen" language="English" />
+	<seed slot0="gen david h petraeus" slot1="iraq" language="English" />
+	<seed slot0="mahmoud ahmadinejad" slot1="kabul" language="English" />
+	<seed slot0="james wolfensohn" slot1="middle east" language="English" />
+	<seed slot0="boutros boutros - ghali" slot1="paris" language="English" />
+	<seed slot0="asif ali zardari" slot1="dubai" language="English" />
+	<seed slot0="suharto" slot1="malaysian" language="English" />
+	<seed slot0="stephen hadley" slot1="baghdad" language="English" />
+	<seed slot0="benedict xvi" slot1="st patrick 's cathedral" language="English" />
+	<seed slot0="stephen bosworth" slot1="beijing" language="English" />
+	<seed slot0="keith mitchell" slot1="cuban" language="English" />
+	<seed slot0="gen david petraeus" slot1="baghdad" language="English" />
+	<seed slot0="louise bamfield" slot1="london" language="English" />
+	<seed slot0="chen shui -bian" slot1="denmark" language="English" />
+	<seed slot0="marc grossman" slot1="ankara" language="English" />
+	<seed slot0="robin cook" slot1="paris" language="English" />
+	<seed slot0="lien chan" slot1="malaysian" language="English" />
+	<seed slot0="william" slot1="africa" language="English" />
+	<seed slot0="sami abu zuhri" slot1="gaza city" language="English" />
+	<seed slot0="lieutenant general ricardo sanchez" slot1="iraqi" language="English" />
+	<seed slot0="ehud barak" slot1="united states" language="English" />
+	<seed slot0="gen ray odierno" slot1="iraqi" language="English" />
+	<seed slot0="pervez musharraf" slot1="nepalese" language="English" />
+	<seed slot0="vincent siew" slot1="indonesia" language="English" />
+	<seed slot0="simon schorno" slot1="washington" language="English" />
+</seeds>

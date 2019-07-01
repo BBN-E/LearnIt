@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seeds target="per_employee_or_member_of" source="slot-filling" iteration="0" score="1" confidence="1" active="True">
+	<seed slot0="abdul aziz al - hakim" slot1="badr organisation" />
+	<seed slot0="abdul aziz al - hakim" slot1="badr organization" />
+	<seed slot0="abdul aziz al - hakim" slot1="isci" />
+	<seed slot0="abdul aziz al - hakim" slot1="iraqi governing council" />
+	<seed slot0="abdul aziz al - hakim" slot1="islamic supreme council of iraq" />
+	<seed slot0="abdul aziz al - hakim" slot1="sciri" />
+	<seed slot0="abdul aziz al - hakim" slot1="siic" />
+	<seed slot0="abdul aziz al - hakim" slot1="supreme council" />
+	<seed slot0="abdul aziz al - hakim" slot1="supreme council for islamic revolution" />
+	<seed slot0="abdul aziz al - hakim" slot1="supreme iraqi islamic council" />
+	<seed slot0="abdul aziz al - hakim" slot1="supreme islamic iraq council" />
+	<seed slot0="abdul aziz al - hakim" slot1="supreme islamic iraqi council" />
+	<seed slot0="adam gadahn" slot1="al - qaeda" />
+	<seed slot0="adam gadahn" slot1="qaida" />
+	<seed slot0="adam gadahn" slot1="al - qaida" />
+	<seed slot0="adam goldstein" slot1="mtv" />
+	<seed slot0="alexander haig" slot1="army" />
+	<seed slot0="alexander haig" slot1="nato" />
+	<seed slot0="alexander haig" slot1="national security council" />
+	<seed slot0="alexander haig" slot1="north atlantic treaty organization" />
+	<seed slot0="alexander haig" slot1="pentagon" />
+	<seed slot0="alexander haig" slot1="us" />
+	<seed slot0="alexander haig" slot1="united states" />
+	<seed slot0="alexander haig" slot1="united technologies" />
+	<seed slot0="alexander haig" slot1="white house" />
+	<seed slot0="alexander haig" slot1="worldwide associates" />
+	<seed slot0="alexander haig" slot1="the pentagon" />
+	<seed slot0="ali akbar khan" slot1="ali akbar college of music" />
+	<seed slot0="ali akbar khan" slot1="all - india radio" />
+	<seed slot0="andre carson" slot1="city - county council" />
+	<seed slot0="andre carson" slot1="congress" />
+	<seed slot0="andre carson" slot1="democratic party" />
+	<seed slot0="andre carson" slot1="house" />
+	<seed slot0="andre carson" slot1="indiana" />
+	<seed slot0="andre carson" slot1="indiana department of homeland security" />
+	<seed slot0="andre carson" slot1="indianapolis &amp;nbsp;city - county council" />
+	<seed slot0="andre carson" slot1="indianapolis city - county council" />
+	<seed slot0="andre carson" slot1="united states" />
+	<seed slot0="anthony marshall" slot1="marine" />
+	<seed slot0="anthony marshall" slot1="marine corps" />
+	<seed slot0="anthony marshall" slot1="marines" />
+	<seed slot0="anthony marshall" slot1="us" />
+	<seed slot0="anwar chowdhry" slot1="aiba" />
+	<seed slot0="anwar chowdhry" slot1="international amateur boxing association" />
+	<seed slot0="anwar chowdhry" slot1="international boxing association" />
+	<seed slot0="anwar chowdhry" slot1="international_amateur_boxing_association" />
+	<seed slot0="anwar chowdhry" slot1="pakistan boxing federation" />
+	<seed slot0="anwar chowdhry" slot1="the pakistan boxing federation" />
+	<seed slot0="art buchwald" slot1="herald tribune" />
+	<seed slot0="art buchwald" slot1="marine corps" />
+	<seed slot0="art buchwald" slot1="marines" />
+	<seed slot0="art buchwald" slot1="new york herald tribune" />
+	<seed slot0="art buchwald" slot1="variety magazine" />
+	<seed slot0="augustus hawkins" slot1="congress" />
+	<seed slot0="benoit mandelbrot" slot1="centre national de la recherche scientifique" />
+	<seed slot0="benoit mandelbrot" slot1="ibm" />
+	<seed slot0="benoit mandelbrot" slot1="mandelbrot foundation for fractals" />
+	<seed slot0="benoit mandelbrot" slot1="yale university" />
+	<seed slot0="beverly sills" slot1="boston symphony" />
+	<seed slot0="beverly sills" slot1="city opera" />
+	<seed slot0="beverly sills" slot1="lincoln center" />
+	<seed slot0="beverly sills" slot1="lincoln center for the performing arts" />
+	<seed slot0="beverly sills" slot1="metropolitan opera" />
+	<seed slot0="beverly sills" slot1="new york city opera" />
+	<seed slot0="beverly sills" slot1="new_york_city_opera" />
+	<seed slot0="beverly sills" slot1="the met" />
+	<seed slot0="billy mays" slot1="church &amp; dwight" />
+	<seed slot0="billy mays" slot1="discovery channel" />
+	<seed slot0="billy mays" slot1="mays promotions inc" />
+	<seed slot0="billy mays" slot1="mays promotions inc" />
+	<seed slot0="billy mays" slot1="media enterprise" />
+	<seed slot0="billy mays" slot1="media enterprises" />
+	<seed slot0="blake edwards" slot1="20th century fox" />
+	<seed slot0="blake edwards" slot1="coast guard" />
+	<seed slot0="bobby frankel" slot1="hall of fame" />
+	<seed slot0="bobby frankel" slot1="racing hall of fame" />
+	<seed slot0="bradford washburn" slot1="boston museum of science" />
+	<seed slot0="bradford washburn" slot1="new england museum of natural history" />
+	<seed slot0="carolyn goodman" slot1="albert einstein college of medicine" />
+	<seed slot0="carolyn goodman" slot1="bronx psychiatric center" />
+	<seed slot0="catherine roraback" slot1="connecticut women &apos;s hall of fame" />
+	<seed slot0="cathleen p black" slot1="coca - cola" />
+	<seed slot0="cathleen p black" slot1="hearst magazines" />
+	<seed slot0="cathleen p black" slot1="holiday magazine" />
+	<seed slot0="cathleen p black" slot1="ibm" />
+	<seed slot0="cathleen p black" slot1="ms magazine" />
+	<seed slot0="cathleen p black" slot1="new york magazine" />
+	<seed slot0="cathleen p black" slot1="newspaper association of america" />
+	<seed slot0="cathleen p black" slot1="usa today" />
+	<seed slot0="charles gwathmey" slot1="new york five" />
+	<seed slot0="charles gwathmey" slot1="new york school" />
+	<seed slot0="claude chabrol" slot1="cahiers du cinema" />
+	<seed slot0="david gutierrez" slot1="maintenance operations squadron" />
+	<seed slot0="dominick dunne" slot1="abc" />
+	<seed slot0="dominick dunne" slot1="army" />
+	<seed slot0="dominick dunne" slot1="cbs" />
+	<seed slot0="dominick dunne" slot1="vanity fair" />
+	<seed slot0="don hewitt" slot1="acme newspictures" />
+	<seed slot0="don hewitt" slot1="cbs" />
+	<seed slot0="don hewitt" slot1="cbs news" />
+	<seed slot0="don hewitt" slot1="merchant marines" />
+	<seed slot0="don hewitt" slot1="new york herald tribune" />
+	<seed slot0="don meredith" slot1="abc" />
+	<seed slot0="don meredith" slot1="dallas cowboys" />
+	<seed slot0="don meredith" slot1="lipton" />
+	<seed slot0="don meredith" slot1="nfl" />
+	<seed slot0="don meredith" slot1="smu" />
+	<seed slot0="douglas flint" slot1="audit committee" />
+	<seed slot0="douglas flint" slot1="bp" />
+	<seed slot0="douglas flint" slot1="bp  &apos;s audit committee" />
+	<seed slot0="douglas flint" slot1="bp &apos;s audit committee" />
+	<seed slot0="douglas flint" slot1="hsbc" />
+	<seed slot0="ellie greenwich" slot1="songwriters hall of fame" />
+	<seed slot0="ellie greenwich" slot1="the jivettes" />
+	<seed slot0="gilbert gude" slot1="army medical corps" />
+	<seed slot0="gilbert gude" slot1="army_medical_corps" />
+	<seed slot0="gilbert gude" slot1="house of representatives" />
+	<seed slot0="gilbert gude" slot1="maryland" />
+	<seed slot0="gilbert gude" slot1="maryland house of delegates" />
+	<seed slot0="gilbert gude" slot1="republican" />
+	<seed slot0="gilbert gude" slot1="republican party" />
+	<seed slot0="gilbert gude" slot1="united states" />
+	<seed slot0="gilbert gude" slot1="united states of america" />
+	<seed slot0="girija prasad koirala" slot1="hlpm" />
+	<seed slot0="girija prasad koirala" slot1="nc" />
+	<seed slot0="girija prasad koirala" slot1="nepalese congress" />
+	<seed slot0="girija prasad koirala" slot1="nepali congress" />
+	<seed slot0="girija prasad koirala" slot1="nepali congress party" />
+	<seed slot0="girija prasad koirala" slot1="the nepali congress party" />
+	<seed slot0="harry dent" slot1="army" />
+	<seed slot0="harry dent" slot1="george hw bush &apos;s campaign" />
+	<seed slot0="harry dent" slot1="gerald ford &apos;s presidential campaign" />
+	<seed slot0="harry dent" slot1="nixon campaign" />
+	<seed slot0="harry dent" slot1="republican" />
+	<seed slot0="harry dent" slot1="republican national committee" />
+	<seed slot0="harry dent" slot1="south carolina republican party" />
+	<seed slot0="harry dent" slot1="white house" />
+	<seed slot0="harvey pekar" slot1="jazz review" />
+	<seed slot0="harvey pekar" slot1="navy" />
+	<seed slot0="harvey pekar" slot1="smith magazine" />
+	<seed slot0="harvey pekar" slot1="veterans administration" />
+	<seed slot0="henry olonga" slot1="lashings world xi" />
+	<seed slot0="henry olonga" slot1="zimbabwe" />
+	<seed slot0="hwang jang - yop" slot1="national defense commission" />
+	<seed slot0="hwang jang - yop" slot1="north korea" />
+	<seed slot0="hwang jang - yop" slot1="north korean workers &apos; party" />
+	<seed slot0="hwang jang - yop" slot1="supreme people &apos;s assembly" />
+	<seed slot0="hwang jang - yop" slot1="worker &apos; party" />
+	<seed slot0="hwang jang - yop" slot1="workers  &apos; party" />
+	<seed slot0="hwang jang - yop" slot1="workers party" />
+	<seed slot0="hwang jang - yop" slot1="workers &apos; party" />
+	<seed slot0="hwang jang - yop" slot1="communist party" />
+	<seed slot0="jane bolin" slot1="domestic relations court" />
+	<seed slot0="jane bolin" slot1="family court" />
+	<seed slot0="jane bolin" slot1="new york city bar association" />
+	<seed slot0="jane bolin" slot1="regents review committee" />
+	<seed slot0="jefferson deblanc" slot1="marine corps reserve" />
+	<seed slot0="jefferson deblanc" slot1="marine fighting squadron" />
+	<seed slot0="jefferson deblanc" slot1="marine fightingsquadron" />
+	<seed slot0="jefferson deblanc" slot1="usnr" />
+	<seed slot0="jennifer dunn" slot1="congress" />
+	<seed slot0="jennifer dunn" slot1="dla piper" />
+	<seed slot0="jennifer dunn" slot1="house" />
+	<seed slot0="jennifer dunn" slot1="house republican conference" />
+	<seed slot0="jennifer dunn" slot1="house of representatives" />
+	<seed slot0="jennifer dunn" slot1="ibm" />
+	<seed slot0="jennifer dunn" slot1="joint economic committee" />
+	<seed slot0="jennifer dunn" slot1="republican caucus" />
+	<seed slot0="jennifer dunn" slot1="united states" />
+	<seed slot0="jennifer dunn" slot1="washington state republican party" />
+	<seed slot0="jennifer dunn" slot1="ways and means committee" />
+	<seed slot0="jennifer dunn" slot1="women for mitt" />
+	<seed slot0="jo ann davis" slot1="armed services committee" />
+	<seed slot0="jo ann davis" slot1="congress" />
+	<seed slot0="jo ann davis" slot1="foreign affairs committee" />
+	<seed slot0="jo ann davis" slot1="house armed services committee" />
+	<seed slot0="jo ann davis" slot1="house of delegates" />
+	<seed slot0="jo ann davis" slot1="house of representatives" />
+	<seed slot0="jo ann davis" slot1="united states" />
+	<seed slot0="jo ann davis" slot1="virginia_house_of_delegates" />
+	<seed slot0="john henebry" slot1="air force reserve" />
+	<seed slot0="john henebry" slot1="army air force" />
+	<seed slot0="joseph farland" slot1="center for strategic and international studies" />
+	<seed slot0="joseph farland" slot1="fbi" />
+	<seed slot0="joseph farland" slot1="navy" />
+	<seed slot0="joseph farland" slot1="united states" />
+	<seed slot0="juanita millender - mcdonald" slot1="california state assembly" />
+	<seed slot0="juanita millender - mcdonald" slot1="carson city council" />
+	<seed slot0="juanita millender - mcdonald" slot1="committee on house administration" />
+	<seed slot0="juanita millender - mcdonald" slot1="congress" />
+	<seed slot0="juanita millender - mcdonald" slot1="house administration committee" />
+	<seed slot0="juanita millender - mcdonald" slot1="house committee on house administration" />
+	<seed slot0="juanita millender - mcdonald" slot1="house of representatives" />
+	<seed slot0="juanita millender - mcdonald" slot1="los angeles unified school district" />
+	<seed slot0="juanita millender - mcdonald" slot1="national commission on teaching and america &apos;s future" />
+	<seed slot0="juanita millender - mcdonald" slot1="united states" />
+	<seed slot0="juanita millender - mcdonald" slot1="congress" />
+	<seed slot0="keli mcgregor" slot1="all - century team" />
+	<seed slot0="keli mcgregor" slot1="broncos" />
+	<seed slot0="keli mcgregor" slot1="colorado rockies" />
+	<seed slot0="keli mcgregor" slot1="colorado state" />
+	<seed slot0="keli mcgregor" slot1="colorado state hall of fame" />
+	<seed slot0="keli mcgregor" slot1="colorado state university" />
+	<seed slot0="keli mcgregor" slot1="denver broncos" />
+	<seed slot0="keli mcgregor" slot1="indianapolis colts" />
+	<seed slot0="keli mcgregor" slot1="national football league" />
+	<seed slot0="keli mcgregor" slot1="rockies" />
+	<seed slot0="keli mcgregor" slot1="rockies" />
+	<seed slot0="keli mcgregor" slot1="seattle seahawks" />
+	<seed slot0="keli mcgregor" slot1="university of arkansas" />
+	<seed slot0="keli mcgregor" slot1="the denver broncos" />
+	<seed slot0="keli mcgregor" slot1="the rockies" />
+	<seed slot0="kurt waldheim" slot1="army" />
+	<seed slot0="kurt waldheim" slot1="nazi army" />
+	<seed slot0="kurt waldheim" slot1="sa" />
+	<seed slot0="kurt waldheim" slot1="sturm -  abteilung" />
+	<seed slot0="kurt waldheim" slot1="un general assembly" />
+	<seed slot0="laurent fignon" slot1="army" />
+	<seed slot0="laurent fignon" slot1="france 2" />
+	<seed slot0="laurent fignon" slot1="france 2 network" />
+	<seed slot0="laurent fignon" slot1="france television" />
+	<seed slot0="laurent fignon" slot1="renault" />
+	<seed slot0="lorraine rothman" slot1="national organization for women" />
+	<seed slot0="lucille clifton" slot1="coppin state college" />
+	<seed slot0="lucille clifton" slot1="office of education" />
+	<seed slot0="lucille clifton" slot1="st mary &apos;s college of maryland" />
+	<seed slot0="lucille clifton" slot1="us office of education" />
+	<seed slot0="lucille clifton" slot1="university of california" />
+	<seed slot0="lucille clifton" slot1="university of california, santa cruz" />
+	<seed slot0="lucille clifton" slot1="the university of california at santa cruz" />
+	<seed slot0="marc bolland" slot1="heineken" />
+	<seed slot0="marc bolland" slot1="marks &amp; spencer" />
+	<seed slot0="marc bolland" slot1="marks &amp; spencer group plc" />
+	<seed slot0="marc bolland" slot1="morrison" />
+	<seed slot0="marc bolland" slot1="morrison supermarkets" />
+	<seed slot0="marc bolland" slot1="morrison supermarkets plc" />
+	<seed slot0="marc bolland" slot1="morrisons" />
+	<seed slot0="marc bolland" slot1="morrisons plc" />
+	<seed slot0="mary crisp" slot1="republican national coalition for choice" />
+	<seed slot0="mary crisp" slot1="republican party" />
+	<seed slot0="mary crisp" slot1="gop" />
+	<seed slot0="michael deaver" slot1="clean and sober streets" />
+	<seed slot0="michael deaver" slot1="edelman international" />
+	<seed slot0="michael deaver" slot1="edelman public relations" />
+	<seed slot0="michael deaver" slot1="republican party" />
+	<seed slot0="mike penner" slot1="anaheim bulletin" />
+	<seed slot0="mike penner" slot1="la times" />
+	<seed slot0="mike penner" slot1="los angeles times" />
+	<seed slot0="mike penner" slot1="the los angeles times" />
+	<seed slot0="mike penner" slot1="the times" />
+	<seed slot0="mike penner" slot1="times" />
+	<seed slot0="mikel karrera sarobe" slot1="eta" />
+	<seed slot0="mohammed oudeh" slot1="black september" />
+	<seed slot0="mohammed oudeh" slot1="fatah revolutionary council" />
+	<seed slot0="mohammed oudeh" slot1="plo" />
+	<seed slot0="mohammed oudeh" slot1="palestine liberation organization" />
+	<seed slot0="mohammed sayed tantawi" slot1="al - azhar" />
+	<seed slot0="mohammed sayed tantawi" slot1="al - azhar university" />
+	<seed slot0="mohammed sayed tantawi" slot1="egypt" />
+	<seed slot0="oscar peterson" slot1="johnny holmes orchestra" />
+	<seed slot0="pamela ahearn" slot1="house of representatives" />
+	<seed slot0="pamela ahearn" slot1="republican party" />
+	<seed slot0="pamela ahearn" slot1="us house" />
+	<seed slot0="pamela ahearn" slot1="us information agency" />
+	<seed slot0="pamela ahearn" slot1="united states information service" />
+	<seed slot0="parren mitchell" slot1="army" />
+	<seed slot0="parren mitchell" slot1="banking, finance and urban affairs committee" />
+	<seed slot0="parren mitchell" slot1="congress" />
+	<seed slot0="parren mitchell" slot1="congressional black caucus" />
+	<seed slot0="parren mitchell" slot1="house small business committee" />
+	<seed slot0="parren mitchell" slot1="house of representatives" />
+	<seed slot0="parren mitchell" slot1="minority business enterprise legal defense and education fund" />
+	<seed slot0="parren mitchell" slot1="morgan state" />
+	<seed slot0="parren mitchell" slot1="united states" />
+	<seed slot0="pascal yoadimnadji" slot1="chad" />
+	<seed slot0="pascal yoadimnadji" slot1="independent national electoral commission" />
+	<seed slot0="pascal yoadimnadji" slot1="republic of chad" />
+	<seed slot0="patricia neal" slot1="bbc" />
+	<seed slot0="patricia neal" slot1="warner bros" />
+	<seed slot0="paul gillmor" slot1="air force" />
+	<seed slot0="paul gillmor" slot1="congress" />
+	<seed slot0="paul gillmor" slot1="house finance committee" />
+	<seed slot0="paul gillmor" slot1="house of representatives" />
+	<seed slot0="paul gillmor" slot1="ohio state senate" />
+	<seed slot0="paul gillmor" slot1="republican national committee" />
+	<seed slot0="paul gillmor" slot1="united states" />
+	<seed slot0="paul gray" slot1="slipknot" />
+	<seed slot0="ramazan bashardost" slot1="afghan embassy" />
+	<seed slot0="ramazan bashardost" slot1="afghanistan" />
+	<seed slot0="ramazan bashardost" slot1="cabinet" />
+	<seed slot0="ramazan bashardost" slot1="european affairs department" />
+	<seed slot0="ramazan bashardost" slot1="foreign ministry" />
+	<seed slot0="ramazan bashardost" slot1="cabinet" />
+	<seed slot0="ramazan bashardost" slot1="parliament" />
+	<seed slot0="randall forsberg" slot1="city college of new york" />
+	<seed slot0="randall forsberg" slot1="director &apos;s advisory committee" />
+	<seed slot0="randall forsberg" slot1="institute for defense and disarmament studies" />
+	<seed slot0="randall forsberg" slot1="stockholm international peace research institute" />
+	<seed slot0="richard nolte" slot1="alicia patterson foundation" />
+	<seed slot0="richard nolte" slot1="american geographical society" />
+	<seed slot0="richard nolte" slot1="arctic institute of north america" />
+	<seed slot0="richard nolte" slot1="council on foreign relations" />
+	<seed slot0="richard nolte" slot1="dartmouth college" />
+	<seed slot0="richard nolte" slot1="institute of current world" />
+	<seed slot0="richard nolte" slot1="institute of current world affairs" />
+	<seed slot0="richard nolte" slot1="national aphasia association" />
+	<seed slot0="richard nolte" slot1="national geographic society" />
+	<seed slot0="richard nolte" slot1="navy" />
+	<seed slot0="richard nolte" slot1="near east foundation" />
+	<seed slot0="richard nolte" slot1="world academy of art and science" />
+	<seed slot0="richmond flowers" slot1="alabama" />
+	<seed slot0="richmond flowers" slot1="army" />
+	<seed slot0="robert mcnair" slot1="national democratic governors conference" />
+	<seed slot0="robert mcnair" slot1="southern governors conference" />
+	<seed slot0="ronnie james dio" slot1="black sabbath" />
+	<seed slot0="ronnie james dio" slot1="dio" />
+	<seed slot0="ronnie james dio" slot1="elf" />
+	<seed slot0="ronnie james dio" slot1="heaven and hell" />
+	<seed slot0="ronnie james dio" slot1="rainbow" />
+	<seed slot0="sheila dixon" slot1="baltimore" />
+	<seed slot0="sheila dixon" slot1="city council" />
+	<seed slot0="sheila dixon" slot1="democratic party" />
+	<seed slot0="sparky anderson" slot1="big red machine" />
+	<seed slot0="sparky anderson" slot1="cincinnati reds" />
+	<seed slot0="sparky anderson" slot1="detroit tigers" />
+	<seed slot0="sparky anderson" slot1="hall of fame" />
+	<seed slot0="sparky anderson" slot1="philadelphia phillies" />
+	<seed slot0="sparky anderson" slot1="reds" />
+	<seed slot0="sparky anderson" slot1="san diego padres" />
+	<seed slot0="sparky anderson" slot1="st louis cardinals" />
+	<seed slot0="sparky anderson" slot1="tigers" />
+	<seed slot0="sparky anderson" slot1="triple - a toronto" />
+	<seed slot0="steven derounian" slot1="fordham law review" />
+	<seed slot0="steven derounian" slot1="house ways and means committee" />
+	<seed slot0="steven derounian" slot1="new york state supreme court" />
+	<seed slot0="steven derounian" slot1="us" />
+	<seed slot0="steven derounian" slot1="university of texas at austin" />
+	<seed slot0="stuart rose" slot1="m&amp;s" />
+	<seed slot0="stuart rose" slot1="marks &amp; spencer" />
+	<seed slot0="stuart rose" slot1="marks &amp;amp; spencer" />
+	<seed slot0="tahawwur hussain rana" slot1="first world immigration services" />
+	<seed slot0="tahawwur hussain rana" slot1="iqbal society" />
+	<seed slot0="theodor kollek" slot1="haganah" />
+	<seed slot0="theodor kollek" slot1="jerusalem" />
+	<seed slot0="theodor kollek" slot1="jerusalem foundation" />
+	<seed slot0="theodor kollek" slot1="jewish agency" />
+	<seed slot0="theodor kollek" slot1="labor party" />
+	<seed slot0="theodor kollek" slot1="laborparty" />
+	<seed slot0="thomas meskill" slot1="air force" />
+	<seed slot0="thomas meskill" slot1="congress" />
+	<seed slot0="thomas meskill" slot1="connecticut" />
+	<seed slot0="thomas meskill" slot1="republican party" />
+	<seed slot0="thomas meskill" slot1="us circuit court of appeals" />
+	<seed slot0="thomas meskill" slot1="federal appeals court" />
+	<seed slot0="vernon bellecourt" slot1="aim" />
+	<seed slot0="vernon bellecourt" slot1="aim grand governing council" />
+	<seed slot0="vernon bellecourt" slot1="american indian movement" />
+	<seed slot0="vernon bellecourt" slot1="international indian treaty council" />
+	<seed slot0="vernon bellecourt" slot1="national coalition on racism in sports and media" />
+	<seed slot0="vernon bellecourt" slot1="white earth" />
+	<seed slot0="vitaly ginzburg" slot1="communist party" />
+	<seed slot0="vitaly ginzburg" slot1="department of theoretical physics" />
+	<seed slot0="vitaly ginzburg" slot1="fian" />
+	<seed slot0="vitaly ginzburg" slot1="lebedev physical institute" />
+	<seed slot0="vitaly ginzburg" slot1="lebedev physical institute of russian academy of science" />
+	<seed slot0="vitaly ginzburg" slot1="lebedev physics institute" />
+	<seed slot0="vitaly ginzburg" slot1="soviet academy of sciences" />
+	<seed slot0="william anderson" slot1="congress" />
+	<seed slot0="william anderson" slot1="navy" />
+	<seed slot0="william anderson" slot1="us" />
+	<seed slot0="william verity" slot1="armco steel" />
+	<seed slot0="william verity" slot1="chamber of commerce" />
+	<seed slot0="william verity" slot1="ford &apos;s theatre" />
+	<seed slot0="william verity" slot1="joint chiefs of staff" />
+	<seed slot0="william verity" slot1="navy" />
+	<seed slot0="william verity" slot1="president &apos;s task force on private sector initiatives" />
+	<seed slot0="william verity" slot1="us chamber of commerce" />
+	<seed slot0="william verity" slot1="us navy" />
+	<seed slot0="william verity" slot1="us - soviet trade and economic council" />
+	<seed slot0="yolanda king" slot1="american stroke association" />
+	<seed slot0="yolanda king" slot1="national association for the advancement of colored people" />
+	<seed slot0="yolanda king" slot1="southern christian leadership conference" />
+</seeds>

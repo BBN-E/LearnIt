@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targets>
+  <target name="per-org-gpe_holds_shares_in" elf_ontology_type="per-org-gpe_holds_shares_in"
+          description="{0} holds shares in {1}">
+    <slot slotnum="0" description="?" type="mention" elf_ontology_type="0_person_org_or_gpe" elf_role="0_shareholder"
+           mention_constraints="(acetype PER ORG GPE) (min-entitylevel NONE)" allow_desc_training="1" />
+    <slot slotnum="1" description="?" type="mention" elf_ontology_type="1_org" elf_role="1_org"
+           mention_constraints="(acetype ORG) (min-entitylevel NONE)" allow_desc_training="1" />
+    <slot_pair a="1" b="0" symmetric="0" must_not_corefer="1"/>
+  </target>
+</targets>

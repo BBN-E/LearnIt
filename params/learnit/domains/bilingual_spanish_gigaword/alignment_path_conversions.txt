@@ -1,0 +1,2 @@
+^(...)-SPA-(......)(.*)	english/$1_SPA/$2/$1-SPA-$2$3.alignment
+^(...)_SPA_(......)(.*)	english/$1_SPA/$2/$1_SPA_$2$3.alignment
