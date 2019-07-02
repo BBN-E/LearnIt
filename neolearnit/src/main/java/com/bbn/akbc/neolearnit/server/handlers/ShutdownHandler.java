@@ -12,7 +12,8 @@ public class ShutdownHandler extends SimpleJSONHandler {
 
   @JettyMethod("/shutdown")
   public void shutdown() {
-    server.setGracefulShutdown(10000);
+    // TODO: @hqiu: According to `https://bugs.eclipse.org/bugs/show_bug.cgi?id=420142`, `setGracefulShutdown` or `setStopTimeout`. Change to `StatisticsHandler` when possible!
+    server.setStopTimeout(10000);
     try {
       new Thread() {
         @Override

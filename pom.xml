@@ -9,7 +9,9 @@
     <properties>
         <guava.version>19.0</guava.version>
         <guice.version>4.1.0</guice.version>
-        <jackson.version>2.7.5</jackson.version>
+        <jackson.version>2.9.9</jackson.version>
+        <apache.log4j.version>2.12.0</apache.log4j.version>
+        <jetty.version>9.4.19.v20190610</jetty.version>
         <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
         <maven.javadoc.plugin.version>2.10.3</maven.javadoc.plugin.version>
         <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
@@ -66,7 +68,6 @@
             <artifactId>nlp-core-open</artifactId>
             <version>${buecommon.open.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.bbn.serif</groupId>
             <artifactId>serif</artifactId>
@@ -103,6 +104,22 @@
             <artifactId>jackson-datatype-guava</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-csv</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
     </dependencies>
 
 
