@@ -1,0 +1,1398 @@
+---
+- Factor:
+  - _source:
+    - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Factor"
+  - _description: null
+  - _examples: []
+  - _alternative_id: null
+  - Economic:
+    - _source:
+      - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Economic"
+    - _description: null
+    - _examples: []
+    - _alternative_id: null
+    - Consumption:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Consumption"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - ForeignInvestment:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ForeignInvestment"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - IndustrialResourceAvailability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#IndustrialResourceAvailability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - ProvisionOfAidOrSupport:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ProvisionOfAidOrSupport"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - ForeignAid:
+          - _source:
+            - "ICM.deprecated: http://ontology.causeex.com/ontology/odps/ICM#ForeignAid"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+    - Distribution:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Distribution"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - InternationalTrade:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#InternationalTrade"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - DomesticMarketHealth:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DomesticMarketHealth"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - EmploymentLevel:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EmploymentLevel"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - Informal:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Informal"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - HumanTrafficking:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#HumanTrafficking"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - IllicitTrade:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#IllicitTrade"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - InformalCulturalFinancialTransactionInfluence:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#InformalCulturalFinancialTransactionInfluence"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - TerrorismFinancing:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#TerrorismFinancing"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - UnregulatedLabor:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#UnregulatedLabor"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Production:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Production"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - EconomicCapability:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - EconomicAgriculturalCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EconomicAgriculturalCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - EconomicIndustrialCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EconomicIndustrialCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - EconomicServicesCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EconomicServicesCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - EconomicProduction:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EconomicProduction"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - NationalEconomicModelInfluence:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NationalEconomicModelInfluence"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Sanctions:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Sanctions"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+  - Information:
+    - _source:
+      - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Information"
+    - _description: null
+    - _examples: []
+    - _alternative_id: null
+    - DefenseInformation:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DefenseInformation"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - DefenseNationalCommunications:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DefenseNationalCommunications"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - DefenseRegionalCommunications:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DefenseRegionalCommunications"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - DefenseStrategicCommunications:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DefenseStrategicCommunications"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - GlobalInformation:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GlobalInformation"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - InformationAvailability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#InformationAvailability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - NationalInformation:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NationalInformation"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - CommunicationRestrictions:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#CommunicationRestrictions"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - InformationOperation:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - FactualInformationOperation:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#FactualInformationOperation"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MisinformationOperation:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MisinformationOperation"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+          - DisinformationOperation:
+            - _source:
+              - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DisinformationOperation"
+            - _description: null
+            - _examples: []
+            - _alternative_id: null
+        - NationalOrganizationInfoOps:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NationalOrganizationInfoOps"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - Propaganda:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Propaganda"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - MassCommunication:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MassCommunication"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - OrgCommunicationResilience:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#OrgCommunicationResilience"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - SocialMediaCommunications:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SocialMediaCommunications"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+  - Infrastructure:
+    - _source:
+      - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Infrastructure"
+    - _description: null
+    - _examples: []
+    - _alternative_id: null
+    - Industry:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Industry"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - AgriculturalIndustry:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AgriculturalIndustry"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - AlternativeEnergyIndustry:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AlternativeEnergyIndustry"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - ManufacturingIndustry:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ManufacturingIndustry"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MiningIndustry:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MiningIndustry"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - NuclearIndustry:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NuclearIndustry"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PetroleumIndustry:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PetroleumIndustry"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - ServicesIndustry:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ServicesIndustry"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - PublicFacilities:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PublicFacilities"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - EmergencyFacilityAvailability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EmergencyFacilityAvailability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - GovernmentBuildings:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GovernmentBuildings"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - InfrastructureDamage:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#InfrastructureDamage"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - NonGovernmentBuildings:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NonGovernmentBuildings"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PlacesOfWorship:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PlacesOfWorship"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PublicGatheringPlaces:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PublicGatheringPlaces"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Transportation:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Transportation"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - AirTransportation:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AirTransportation"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - GroundTransportation:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GroundTransportation"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - TransportationInfrastructure:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#TransportationInfrastructure"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - WaterTransportation:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#WaterTransportation"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Utilities:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Utilities"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - GasAvailability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GasAvailability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PowerAvailability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PowerAvailability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - UtilitiesInfrastructure:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#UtilitiesInfrastructure"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - WasteServices:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#WasteServices"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+  - Military:
+    - _source:
+      - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Military"
+    - _description: null
+    - _examples: []
+    - _alternative_id: null
+    - AggressiveActions:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AggressiveActions"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - ArmedForces:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ArmedForces"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - MilitaryActivity:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryActivity"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - MilitaryAirActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryAirActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryCyberActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryCyberActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryGroundActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryGroundActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryInformationEnvironmentActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryInformationEnvironmentActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryJointOperation:
+          - _source: []
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryMaritimeActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryMaritimeActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+          - MilitaryNavalActivity:
+            - _source:
+              - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryNavalActivity"
+            - _description: null
+            - _examples: []
+            - _alternative_id: null
+        - MilitarySOFActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitarySOFActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitarySpaceActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitarySpaceActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryWMDActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryWMDActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - MilitaryCapability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryCapability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - MilitaryAirCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryAirCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryCBRNECapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryCBRNECapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryCyberCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryCyberCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryGroundCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryGroundCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryLogisticsCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryLogisticsCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryNavalCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryNavalCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitarySOFCapability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitarySOFCapability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - MilitaryDeployment:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryDeployment"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MilitaryReadiness:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryReadiness"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - MilitaryAirReadiness:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryAirReadiness"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryCBRNEReadiness:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryCBRNEReadiness"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryCyberReadiness:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryCyberReadiness"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryGroundReadiness:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryGroundReadiness"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitaryNavalReadiness:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryNavalReadiness"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - MilitarySOFReadiness:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitarySOFReadiness"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - PopulaceSupportForMilitary:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PopulaceSupportForMilitary"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - InternalSecurity:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#InternalSecurity"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - InfluenceOnMilitary:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - NationalBorderPoliceInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NationalBorderPoliceInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - NationalPoliceInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NationalPoliceInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - ParamilitaryInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ParamilitaryInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - MilitaryIntelligence:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryIntelligence"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MilitaryLawEnforcement:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryLawEnforcement"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PeacekeepingActivity:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PeacekeepingActivity"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PopulaceSupportForPolice:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PopulaceSupportForPolice"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - WMDActivity:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DefenseAgainstWMDActivity"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Leadership:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Leadership"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - MilitaryCoercionOrIntimidation:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryCoercionOrIntimidation"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MilitaryInfluenceOnGovernment:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryInfluenceOnGovernment"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MilitaryLeadershipStrength:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryLeadershipStrength"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - RealAndPotentialThreatsInfluence:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#RealAndPotentialThreatsInfluence"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - MilitaryConflict:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryConflict"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - MilitaryIndustrialComplex:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Military-IndustrialBase"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - ForeignArmsTrade:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ForeignArmsTrade"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MilitaryResearchAndDevelopment:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryResearchAndDevelopment"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - NationalArmsProduction:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NationalArmsProduction"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - WMDCapabilityPursuit:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#WMDCapabilityPursuit"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - MilitarySpending:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitarySpending"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - Sustainment:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Sustainment"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - LogisticsReadiness:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#LogisticsReadiness"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MilitaryRecruitment:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryRecruitment"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - MilitaryTraining:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MilitaryTraining"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+  - PhysicalEnvironment:
+    - _source:
+      - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PhysicalEnvironment"
+    - _description: null
+    - _examples: []
+    - _alternative_id: null
+    - Climate:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Climate"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - ClimatologicalEffectOnOperations:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ClimatologicalEffectOnOperations"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - ClimatologicalEffectOnPopulace:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ClimatalogicalEffectOnPopulace"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Geography:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Geography"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - Habitable:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Habitable"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - NavigableWaterways:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NavigableWaterways"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - TraversableDismounted:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#TraversableDismounted"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - TraversableMounted:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#TraversableMounted"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Habitability:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Habitability"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - AirPollutionLevels:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AirPollutionLevels"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - SoilContaminationLevels:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SoilContaminationLevels"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - WaterPollutionLevels:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#WaterPollutionLevels"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - ManMadeStructures:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ManMadeStructures"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - Commercial:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Commercial"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - CommercialSocioEconomicLevel:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#CommercialSocioEconomicLevel"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - EnvironmentalShaping:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EnvironmentalShaping"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - Gatherings:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - PoliticalGathering:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PoliticalGathering"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - RecreationalSocialGathering:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#RecreationalSocialGathering"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - ReligiousGathering:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ReligiousGathering"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - Industrial:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Industrial"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - InfrastructureSupport:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#InfrastructureSupport"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - Residential:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Residential"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - ResidentialSocioEconomicLevel:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ResidentialSocioEconomicLevel"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - Weather:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Weather"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - SeasonalEffectOnOperations:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SeasonalEffectonOperations"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - SeasonalEffectOnPopulace:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SeasonalEffectonPopulace"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+  - Political:
+    - _source:
+      - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Political"
+    - _description: null
+    - _examples: []
+    - _alternative_id: null
+    - CentralOrLocalGovernment:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#CentralOrLocalGovernment"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - Corruption:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Corruption"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - ExtraJudicialActivity:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ExtraJudicialActivity"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - GovernmentActivity:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - ExecutiveGovernmentActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ExecutiveGovernmentActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - JudicialActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#JudicialActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - LegislativeActivity:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#LegislativeActivity"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - GovernmentInfluence:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - BusinessAndIndustryInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#BusinessAndIndustryInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - GovernmentInfluenceOnMilitary:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GovernmentInfluenceOnMilitary"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - GovernmentInfluenceOnPolice:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GovernmentInfluenceOnPolice"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - GovernmentPerformance:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GovernmentPerformance"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - GovernmentSeparationOfPowers:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GovernmentSeparationOfPowers"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - GovernmentStability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GovernmentStability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - GovernmentTransparency:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GovernmentTransparency"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PopulaceSupportForGovernment:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PopulaceSupportForGovernment"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - PoliticalFrictionOrTension:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PoliticalFrictionOrTension"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - PoliticalOrganizations:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PoliticalOrganizations"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - GroupInfluenceInGovt:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - EthnicInfluenceInGovt:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EthnicInfluenceinGovt"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - ReligiousInfluenceInGovt:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ReligiousInfluenceInGovt"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - SecurityElementInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SecurityElementInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - GroupPresenceInGovt:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - EthnicGroupsInGovt:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EthnicGroupsinGovt"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - ReligiousGroupsInGovt:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ReligiousGroupsInGovt"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - GroupTensionsInGovt:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - EthnicTensionsInGovt:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EthnicTensionsinGovt"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - ReligiousTensionsInGovt:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ReligiousTensionsInGovt"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+    - RegionalOrInternational:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#RegionalOrInternational"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - InternationalDefenseAlliance:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - DefenseAllianceInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DefenseAllianceInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - DefenseAllianceStrength:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DefenseAllianceStrength"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - InternationalPoliticalAlliance:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - PoliticalAllianceParticipation:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PoliticalAllianceParticipation"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - PoliticalAllianceStrength:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PoliticalAllianceStrength"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - MultiNationalCorporationInfluence:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#MultiNationalCorporationInfluence"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+  - Social:
+    - _source:
+      - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Social"
+    - _description: null
+    - _examples: []
+    - _alternative_id: null
+    - AffinityGroups:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AffinityGroups"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - DiasporaInfluence:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DiasporaInfluence"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - DisplacedPersons:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#DisplacedPersons"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - Refugees:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Refugees"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - GangsOrCriminalOrganizationsActivities:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#GangsOrCriminalOrganizationsActivities"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - InsurgentsOrSeparatistsActivities:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#InsurgentsOrSeparatistsActivities"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - TerroristActivities:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#TerroristActivities"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - UnionInfluence:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#UnionInfluence"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+    - BasicNeeds:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#BasicNeeds"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - AbilityToAddressBasicNeeds:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AbilityToAddressBasicNeeds"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - AbilityToAddressIdentityBasedBasicNeeds:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#AbilityToAddressIdentityBasedBasicNeeds"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - SanitaryConditions:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SanitaryConditions"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - ShelterAvailability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ShelterAvailability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - SustenanceManagement:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SustenanceManagement"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+          - FoodAndNutritionLevel:
+            - _source:
+              - "ICM: http://ontology.causeex.com/ontology/odps/ICM#FoodAndNutritionLevel"
+            - _description: null
+            - _examples: []
+            - _alternative_id: null
+          - WaterAvailability:
+            - _source:
+              - "ICM: http://ontology.causeex.com/ontology/odps/ICM#WaterAvailability"
+            - _description: null
+            - _examples: []
+            - _alternative_id: null
+      - CriminalActivities:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#CriminalActivities"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - CriticalResources:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#CriticalResources"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - NaturalResourcesAvailability:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NaturalResourcesAvailability"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - EnvironmentConditions:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EnvironmentConditions"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - NaturalDisaster:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NaturalDisaster"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - FreedomOfExpression:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#FreedomOfExpression"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - FreedomOfCulturalExpression:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#FreedomOfCulturalExpression"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - FreedomOfReligiousExpression:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#FreedomOfReligiousExpression"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+      - SecuritySafetyLevel:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SecuritySafetyLevel"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - SocioeconomicTendencies:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#SocioeconomicTendencies"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - EconomicEquality:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EconomicEquality"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+    - EthnicRelations:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EthnicRelations"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - HumanitarianCrisis:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#HumanitarianCrisis"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+    - Institutions:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#Institutions"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - EducationAvailability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#EducationAvailability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - HealthcareAvailability:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#HealthcareAvailability"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - LeisureActivities:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#LeisureActivities"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PopulaceEducationLevel:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PopulaceEducationLevel"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - ReligiousOrgSuppression:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ReligiousOrgSuppression"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - SocialInfluenceByInstitutions:
+        - _source: []
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+        - CBOInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#CBOInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - NGOInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#NGOInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - PVOInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PVOInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+        - ReligiousOrgInfluence:
+          - _source:
+            - "ICM: http://ontology.causeex.com/ontology/odps/ICM#ReligiousOrgInfluence"
+          - _description: null
+          - _examples: []
+          - _alternative_id: null
+    - PopulaceMood:
+      - _source:
+        - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PopulaceMood"
+      - _description: null
+      - _examples: []
+      - _alternative_id: null
+      - PopulaceMorale:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PopulaceMorale"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null
+      - PopulaceMotivation:
+        - _source:
+          - "ICM: http://ontology.causeex.com/ontology/odps/ICM#PopulaceMotivation"
+        - _description: null
+        - _examples: []
+        - _alternative_id: null

@@ -5,6 +5,7 @@ import com.bbn.akbc.neolearnit.common.Annotation;
 import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
 import com.bbn.akbc.neolearnit.common.util.SourceListsReader;
+import com.bbn.akbc.neolearnit.loaders.LoaderUtils;
 import com.bbn.akbc.neolearnit.observations.label.LabelPattern;
 import com.bbn.akbc.neolearnit.util.GeneralUtils;
 import com.bbn.serif.io.SerifXMLLoader;
@@ -62,7 +63,7 @@ public class OldUIDumpJsonLabeler {
             File docFile = new File(SourceListsReader.getFullPath(docId));
             tasks.add(new ConvertSpanToInstanceIdentifier(docFile, UIAnnotations.get(docId)));
         }
-        GeneralUtils.GeneralDocBasedWorkerScheduler(tasks);
+        LoaderUtils.runThreaded(tasks);
         Annotation.InMemoryAnnotationStorage inMemoryAnnotationStorage = new Annotation.InMemoryAnnotationStorage();
         int aligned = 0;
         int partiallyAligned = 0;

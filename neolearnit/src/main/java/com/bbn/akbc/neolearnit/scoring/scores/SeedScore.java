@@ -9,7 +9,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
 public class SeedScore extends AbstractBootstrappedScore<Seed> {
@@ -43,9 +44,6 @@ public class SeedScore extends AbstractBootstrappedScore<Seed> {
 		return EfficientMultisetDataStore.fromMultiset(sources);
 	}
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-	public Map<String,Double> scoreForFrontendRanking;
-
 	@JsonCreator
 	private SeedScore(
 			@JsonProperty("score") double score,
@@ -67,19 +65,6 @@ public class SeedScore extends AbstractBootstrappedScore<Seed> {
 		this.confidenceNumerator = confidenceNumerator;
 		this.confidenceDenominator = confidenceDenominator;
 		this.sources = sources.makeMultiset();
-		Random r = new Random();
-		Map<String, Double> sortingKeyToValue = new HashMap<>();
-
-		// frequency
-
-		sortingKeyToValue.put("byFrequencyAscend",(double)this.frequency);
-		sortingKeyToValue.put("byFrequencyDescend",0.0-this.frequency);
-
-		// recall
-		sortingKeyToValue.put("byConfidenceAscend", this.confidence);
-		sortingKeyToValue.put("byConfidenceDescend", 0-this.confidence);
-
-		this.scoreForFrontendRanking = sortingKeyToValue;
 	}
 
 	public SeedScore(int iteration) {
@@ -91,19 +76,6 @@ public class SeedScore extends AbstractBootstrappedScore<Seed> {
 		this.confidenceDenominator = 1D;
 		this.confidence = 0D;
 		this.sources = HashMultiset.create();
-		Random r = new Random();
-		Map<String, Double> sortingKeyToValue = new HashMap<>();
-
-		// frequency
-
-		sortingKeyToValue.put("byFrequencyAscend",(double)this.frequency);
-		sortingKeyToValue.put("byFrequencyDescend",0.0-this.frequency);
-
-		// recall
-		sortingKeyToValue.put("byConfidenceAscend", this.confidence);
-		sortingKeyToValue.put("byConfidenceDescend", 0-this.confidence);
-
-		this.scoreForFrontendRanking = sortingKeyToValue;
 	}
 
     public void setIdenticalTo(SeedScore s) {
@@ -169,7 +141,6 @@ public class SeedScore extends AbstractBootstrappedScore<Seed> {
 	}
 
 	public void setFrequency(Integer frequency) {
-		checkNotFrozen();
 		this.frequency = frequency;
 	}
 

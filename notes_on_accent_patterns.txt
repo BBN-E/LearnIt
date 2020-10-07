@@ -1,0 +1,157 @@
+1. Path to ICEWS event patterns:
+/nfs/mercury-07/u36/copied_from_mercury-04/u42/bmin/repositories/svn/source/Active/Projects/W-ICEWS
+
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 01
+drwxr-xr-x 3 bmin d4m 4.0K Jan 10  2018 02
+drwxr-xr-x 3 bmin d4m 4.0K Jan 10  2018 03
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 04
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 05
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 06
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 07
+drwxr-xr-x 3 bmin d4m 4.0K Jan 10  2018 08
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 09
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 10
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 11
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 12
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 13
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 14
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 15
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 16
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 17
+drwxr-xr-x 3 bmin d4m 4.0K Jan 10  2018 18_19
+-rw-r--r-- 1 bmin d4m 1.9K Jan 10  2018 ACT_AGAINST.model
+-rwxr-xr-x 1 bmin d4m  37K Jan 10  2018 AID.model
+-rw-r--r-- 1 bmin d4m 5.0K Jan 10  2018 AID-toplevel.model
+-rwxr-xr-x 1 bmin d4m  11K Jan 10  2018 basic.model
+-rw-r--r-- 1 bmin d4m 1.6K Jan 10  2018 block_contingent_event.model
+-rw-r--r-- 1 bmin d4m 3.4K Jan 10  2018 block_event_location.model
+-rw-r--r-- 1 bmin d4m  44K Jan 10  2018 block_event.model
+-rw-r--r-- 1 bmin d4m   65 Jan 10  2018 block_event_models.list
+-rw-r--r-- 1 bmin d4m  22K Jan 10  2018 block_event_shortcuts.txt
+-rw-r--r-- 1 bmin d4m  23K Jan 10  2018 COERCE.model
+-rwxr-xr-x 1 bmin d4m  24K Jan 10  2018 COOPERATION.model
+-rwxr-xr-x 1 bmin d4m  18K Jan 10  2018 CRITICIZE.model
+-rw-r--r-- 1 bmin d4m  26K Jan 10  2018 DIPLOMATIC_COOPERATION.model
+-rw-r--r-- 1 bmin d4m 7.8K Jan 10  2018 event_location.model
+-rw-r--r-- 1 bmin d4m 2.5K Jan 10  2018 event_tense.model
+-rwxr-xr-x 1 bmin d4m 4.9K Jan 10  2018 icews_required.model
+-rw-r--r-- 1 bmin d4m 2.6K Jan 10  2018 INTL_INVOLVEMENT.model
+-rwxr-xr-x 1 bmin d4m  18K Jan 10  2018 INVESTIGATE.model
+-rw-r--r-- 1 bmin d4m  18K Jan 10  2018 MEET_NEGOTIATE.model
+-rwxr-xr-x 1 bmin d4m  12K Jan 10  2018 POLITICAL_CHANGE.model
+-rwxr-xr-x 1 bmin d4m 7.8K Jan 10  2018 PRAISE.model
+-rw-r--r-- 1 bmin d4m 1.8K Jan 10  2018 propagate_event_actor_label.model
+-rw-r--r-- 1 bmin d4m  55K Jan 10  2018 PROTEST.model
+-rw-r--r-- 1 bmin d4m 9.6K Jan 10  2018 replace_event.model
+-rw-r--r-- 1 bmin d4m 4.8K Jan 10  2018 SANCTIONS.model
+-rwxr-xr-x 1 bmin d4m  12K Jan 10  2018 SENTIMENT.model
+-rwxr-xr-x 1 bmin d4m 1.1K Jan 10  2018 SENTIMENT-toplevel.model
+-rw-r--r-- 1 bmin d4m  14K Jan 10  2018 source-target.model
+drwxr-xr-x 3 bmin d4m 2.0K Jan 10  2018 standalone
+-rw-r--r-- 1 bmin d4m 5.4K Jan 10  2018 VERBAL.model
+-rwxr-xr-x 1 bmin d4m  45K Jan 10  2018 YIELD.model
+
+
+
+
+AID
+	HUMANITARIAN_AID
+	MILITARY_AID
+	...
+
+AID_FOR_TARGET
+	HUMANITARIAN_AID_FOR_TARGET
+	...
+
+AID_FROM_GIVER
+	HUMANITARIAN_AID_FROM_GIVER
+	...
+
+AID_GOAL
+	MILITARY_AID_GOAL
+	ECONOMIC_AID_GOAL
+
+AID_GOAL_IN_TARGET
+	MILITARY_AID_GOAL_IN_TARGET
+
+wordsets
+	014_CONSIDER consider* debat* discuss* draft* examin* mull* ponder* reconsider* reexamin* re-examin* review* study* studi*
+	ACCUSATION accusation* allegation* charge* condemnation* criticism*
+	010_VERB argu* affirm* assert* assur* broadcast* clarif* convey* describ* disclos* explain* reaffirm* reiterat* repeat* restat* signal*
+	AVOID avoid* declin* delay* dodg* evad* refus* skirt*
+	(NEGATIVE_FUTURE_FEELING_NOUN anxiet* apprehension* caution* concern* despair discouragement doubt* fear* impatience misgiving* pessimism question questions reluctance reservation* skepticism worry worries)
+	(NEGATIVE_FUTURE_FEELING_ADJ alarmed anxious concerned despairing discouraged doubtful fearful impatient negative pessimistic reluctant skeptical suspicious troubled uneasy wary worried)
+	(NEGATIVE_ADJ abject abominable abusive alienating atrocious awful bad befouled blameworthy calamitous complicated crummy
+              damaged dangerous defective deplorable depraved destructive diabolical dirty disastrous distressing distressful disturbing doomed dreadful
+              egregious erroneous exasperating excrable
+              fallacious false filthy flagrant foul fouled frivolous fruitless glaring gloomy grevious grim
+              harsh heinous hideous horrible horrific horrid
+              inadequate immoral impossible inauspicious incompetent inferior infernal infuriating inhumane insidious
+              lamentable maddening malodorous mediocre messy miserable monstrous nasty nefarious offensive
+              painful pathetic pernicious perturbing perverse perverted pitiful poor reprehensible risky
+              sad second-rate shoddy sickly sordid squalid stagnant stinky suspicious
+              tawdry terrible third-rate trashy troubling
+              unacceptable uncool uncontrollable undependable unethical unfit unfriendly ungrateful unfortunate unhappy unhealthy unholy
+              unlikeable unlikable unmanageable unreliable unsavory unsavoury unsound unsuitable unspeakable
+              vexing vicious villainous
+              wicked woeful worrying worrisome worst wretched)
+	(POSITIVE_FUTURE_FEELING_NOUN confidence encouragement goodwill hope* optimism)
+	(POSITIVE_FUTURE_FEELING_ADJ confident encouraged encouraging hopeful optimistic positive)
+	(POSITIVE_ADJ admirable attractive beautiful brilliant charming desired effective encouraging excellent
+              fabulous fantabulous fantastic feasible first-class fruitful good healthy honorable ideal idyllic marvelous marvellous
+              peaceful perfect pleasant prestigious promising positive ready respectable
+              splendid successful superb terrific unsurpassable virtuous wonderful wondrous worthy)
+
+
+any -of {props}
+
+(vprop (id 010-verb-that) (predicate inform* maintain*)
+               (args SOURCE_SUB (argument (role that <obj> <iobj>) SENTIMENT_TARGET_VERB)))
+
+(all-of (psm allow:negative allow:unreliable allow:future) (members ...
+(any-of (psm require:future allow:modal allow:unreliable require:negative) (members POSITIVE_PROP_WITH_TARGET))
+
+
+(regex (id 011-strange-parse) (re SOURCE_RAW_MENT (text (string "declined to comment"))))
+
+
+(argument (shortcut STARGET_NOUN_SUB) (role <sub>) SENTIMENT_TARGET_NOUN)
+(argument (shortcut STARGET_NOUN_OBJ) (role <obj> <iobj>) SENTIMENT_TARGET_NOUN)
+
+
+
+Define shortcut for 
+(1) wordsets (lexicons)
+- predicate
+- discriptors: (GOVT_BUILDING embassy consulate parliament legislature)
+- adj/block_adj: (BAD_STRIKE_ADJ air aircraft aerial armed artillery ...
+ - (nprop (id 14-modified-march) (adj peaceful street student unauthorized WORKER GOOD_STRIKE_ADJ) (predicate march) (args TRIGGER_REF))
+- adverb: (vprop (predicate protest*) (adverb_or_particle outside))
+- (mprop (predicate insincere behind dangerous) (args (argument (role <ref>) RESTRICTED_PROTEST_TARGET)))
+
+(2) argument pattern
+(3) prop pattern (vprop, nprop, mprop, sprop)
+(4) all-of/any-of/none-of props, etc
+(5) block a pattern
+(6) regex patterns
+        (regex (re (text (string "turned (bloody|deadly|violent)"))))
+(7) (argument (shortcut OUTSIDE_TARGET_PLACE_FT) (allow_fall_through <iobj> <obj>) (role outside inside) TARGET_PLACE)
+(8) (union (id 144-combined-actions) GREEDY (shortcut 144_EVENT) (members
+        (intersection (members 144_VPROP_SOURCE_ACTION GENERIC_PROTEST_AGAINST_TARGET))
+(9) (mention (acetype FAC LOC GPE) (min-entitylevel NAME)) 
+(10) (union (shortcut REGEX_INNOCENT) (members (regex (re (text (string PLEAD "not guilty")))) (regex (re (text (string PLEAD "innocent")))))))
+(11) (NUMBERS_WORDSET
+        1* 2* 3* 4* 5* 6* 7* 8* 9*
+        one* two* three* four* five* six* seven* eight* nine* ten*
+        eleven* twelve* thirteen* fifteen*
+        twenty* thirty* forty* fifty* hundred*
+        thousand* million* billion*)
+(12) attributes
+  (any-of (shortcut NOUN_REQUESTED_OF_TARGET) GREEDY (psm allow:future allow:unreliable allow:negative) (members
+
+
+
+
+
+
+

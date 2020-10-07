@@ -1,0 +1,2490 @@
+---
+- Event:
+  - _source:
+    - "HUME: /event"
+    - "WM: /wm/concept/causal_factor"
+  - _description: "NA"
+  - _examples: []
+  - _alternative_id: null
+  - Environmental:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/environmental"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - Environment:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/environmental/environment"
+        - "HUME: /event/environment"
+      - _description: "Environment-related factors."
+      - _examples: []
+      - _alternative_id: null
+    - Pollution:
+      - _source:
+        - "WM: /wm/concept/causal_factor/environmental/pollution"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - ClimateChange:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/pollution/climate_change"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - LandPollution:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/pollution/land_pollution"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - AirPollution:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/pollution/air_pollution"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - Meteorologic:
+      - _source:
+        - "WM: /wm/concept/causal_factor/environmental/meteorologic"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - Temperature:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/meteorologic/temperature"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Climate:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/meteorologic/climate"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Weather:
+        - _source:
+          - "NN"
+          - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/weather"
+          - "HUME: /event/weather"
+          - "WM: /wm/concept/causal_factor/environmental/meteorologic/weather"
+        - _description: "Any environmental condition related to atmospheric conditions\
+            \ in an area. Weather includes temperature, wind, clouds/precipitation,\
+            \ etc. and their effects."
+        - _examples: []
+        - _alternative_id: null
+        - Precipitation:
+          - _source:
+            - "NN"
+            - "HUME_INDICATOR: /indicator/Rainfall"
+            - "WM: /wm/concept/causal_factor/environmental/meteorologic/precipitation"
+            - "HUME: /event/weather/precipitation"
+            - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/weather/rainfall"
+          - _description: "Rain, snow, sleet, or hail that falls to the ground."
+          - _examples: []
+          - _alternative_id: null
+        - Rainfall:
+          - _source:
+            - "NN"
+            - "HUME: /event/weather/rainfall"
+            - "WM: /wm/concept/causal_factor/environmental/meteorologic/precipitation/rainfall"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Flooding:
+          - _source:
+            - "NN"
+            - "HUME: /event/weather/flooding"
+            - "HUME_INDICATOR: /indicator/Rainfall"
+            - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/weather/rainfall"
+            - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster/flooding"
+          - _description: "The covering or submerging of normally dry land with a\
+              \ large amount of water. Cover or submerge (a place or area) with water."
+          - _examples: []
+          - _alternative_id: null
+        - Drought:
+          - _source:
+            - "NN"
+            - "HUME: /event/weather/drought"
+            - "HUME_INDICATOR: /indicator/Rainfall"
+            - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster/drought"
+            - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/weather/rainfall"
+          - _description: "A prolonged period of abnormally low rainfall, leading\
+              \ to a shortage of water."
+          - _examples: []
+          - _alternative_id: null
+        - Storm:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/environmental/meteorologic/precipitation/storm"
+            - "HUME: /event/weather/storm"
+          - _description: "A violent disturbance of the atmosphere with strong winds\
+              \ and usually rain, thunder, lightning, or snow."
+          - _examples: []
+          - _alternative_id: null
+    - NaturalResources:
+      - _source:
+        - "WM: /wm/concept/causal_factor/environmental/natural_resources"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - Soil:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/natural_resources/soil"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FossilFuels:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/natural_resources/fossil_fuels"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WaterBodies:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/natural_resources/water_bodies"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Land:
+        - _source:
+          - "WM: /wm/concept/causal_factor/environmental/natural_resources/land"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - ResourceManagement:
+      - _source:
+        - "WM: /wm/concept/causal_factor/environmental/resource_management"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Forestry:
+      - _source:
+        - "WM: /wm/concept/causal_factor/environmental/forestry"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - ClimateChangeMitigation:
+      - _source:
+        - "WM: /wm/concept/causal_factor/environmental/climate_change_mitigation"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+  - Factor:
+    - _source:
+      - "NN"
+      - "HUME: /event/factor"
+      - "WM: /wm/concept/causal_factor"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Agriculture:
+    - _source:
+      - "WM: /wm/concept/causal_factor/agriculture"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - AnimalDisease:
+      - _source:
+        - "NN"
+        - "HUME: /event/healthcare/animal disease"
+        - "WM: /wm/concept/causal_factor/agriculture/livestock_disease"
+      - _description: "Animal disease."
+      - _examples: []
+      - _alternative_id: null
+    - PlantDisease:
+      - _source:
+        - "NN"
+        - "HUME: /event/healthcare/plant disease"
+        - "WM: /wm/concept/causal_factor/agriculture/plant_disease"
+      - _description: "Plant disease."
+      - _examples: []
+      - _alternative_id: null
+      - PestInfestation:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/agriculture/plant_disease/pest_infestation"
+          - "HUME: /event/healthcare/pest infestation"
+        - _description: "Pest infestation."
+        - _examples: []
+        - _alternative_id: null
+    - Pesticide:
+      - _source:
+        - "WM: /wm/concept/causal_factor/agriculture/pesticide"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - CropStorage:
+      - _source:
+        - "WM: /wm/concept/causal_factor/agriculture/crop_storage"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Planting:
+      - _source:
+        - "WM: /wm/concept/causal_factor/agriculture/planting"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+  - SocialAndPolitical:
+    - _source:
+      - "WM: /wm/concept/causal_factor/social_and_political"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - Disarmament:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/threat/disarmament"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - PhysicalInsecurity:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/threat/physical_insecurity"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Government:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/government"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - Census:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/government/census"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - Educational:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/educational"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - EducationalMaterials:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/educational/educational_materials"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - PopulationGroup:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/population_group"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - Overcrowding:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/population_group/overcrowding"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Depopulation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/population_group/de-population"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - PopulationDensity:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/population_group/population_density"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - BasicServices:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/basic_services"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Political:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/political"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - Independence:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/political/independence"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Corruption:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/political/corruption"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - PoliticalInstability:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/political/political_instability"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - Personal:
+      - _source:
+        - "NN"
+        - "HUME: /event/personal"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - MarriageOrDivorce:
+        - _source:
+          - "NN"
+          - "HUME: /event/personal/marriage or divorce"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+  - Conflict:
+    - _source:
+      - "NN"
+      - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/conflict/population\
+        \ displacement"
+      - "WM: /wm/concept/causal_factor/social_and_political/conflict"
+      - "HUME_INDICATOR: /indicator/Conflict/Population Displacement"
+      - "HUME: /event/conflict"
+    - _description: "A serious disagreement or argument, typically a protracted one.\
+        \ For example, a prolonged armed struggle, or a condition in which a person\
+        \ experiences a clash of opposing wishes or needs."
+    - _examples: []
+    - _alternative_id: null
+    - LivestockRaid:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict/livestock_raid"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Hostility:
+      - _source:
+        - "NN"
+        - "HUME: /event/conflict/hostility"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict/hostility"
+      - _description: "Hostile behavior; unfriendliness or opposition."
+      - _examples: []
+      - _alternative_id: null
+    - Demonstrate:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict/demonstrate"
+        - "HUME: /event/conflict/demostrate"
+      - _description: "A public meeting or march protesting against something or expressing\
+          \ views on a political issue."
+      - _examples: []
+      - _alternative_id: null
+    - War:
+      - _source:
+        - "NN"
+        - "HUME: /event/conflict/war"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict/war"
+      - _description: "A state of armed conflict between different nations or states\
+          \ or different groups within a nation or state."
+      - _examples: []
+      - _alternative_id: null
+    - Attack:
+      - _source:
+        - "NN"
+        - "HUME_INDICATOR: /indicator/Conflict/Population Displacement"
+        - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/conflict/population\
+          \ displacement"
+        - "HUME: /event/conflict/attack"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict/attack"
+      - _description: "Take aggressive action against (a place or enemy forces) with\
+          \ weapons or armed force, typically in a battle or war. An aggressive and\
+          \ violent action against a person or place."
+      - _examples: []
+      - _alternative_id: null
+    - Terrorism:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict/terrorism"
+        - "HUME: /event/conflict/terrorism"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Sabotage:
+      - _source:
+        - "NN"
+        - "HUME: /event/conflict/sabotage"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Strike:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict/strike"
+        - "HUME: /event/conflict/strike"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+  - Death:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/health_and_life/death"
+      - "HUME: /event/death"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Offense:
+    - _source:
+      - "NN"
+      - "HUME: /event/offense"
+      - "WM: /wm/concept/causal_factor/social_and_political/criminal"
+      - "WM: /wm/concept/causal_factor/social_and_political/threat"
+      - "WM: /wm/concept/causal_factor/social_and_political/conflict/attack"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - Criminal:
+      - _source:
+        - "WM: /wm/concept/causal_factor/social_and_political/criminal"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - Crime:
+        - _source:
+          - "NN"
+          - "HUME: /event/offense/crime"
+          - "WM: /wm/concept/causal_factor/social_and_political/criminal/crime"
+        - _description: "An action or omission that constitutes an offense that may\
+            \ be prosecuted by the state and is punishable by law."
+        - _examples: []
+        - _alternative_id: null
+      - Abduction:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/criminal/abduction"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - Exploitation:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/social_and_political/threat/exploitation"
+        - "HUME: /event/offense/exploitation"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+  - Healthcare:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/health_and_life"
+      - "HUME: /event/healthcare"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - BasicNeeds:
+      - _source:
+        - "WM: /wm/concept/causal_factor/health_and_life/basic_needs"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Birth:
+      - _source:
+        - "WM: /wm/concept/causal_factor/health_and_life/birth"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Biometrics:
+      - _source:
+        - "WM: /wm/concept/causal_factor/health_and_life/biometrics"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Nutrition:
+      - _source:
+        - "WM: /wm/concept/causal_factor/health_and_life/nutrition"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - BreastFeeding:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/nutrition/breast_feeding"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Malnutrition:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/nutrition/malnutrition"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodDiversity:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/nutrition/food_diversity"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodIntake:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/nutrition/food_intake"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - LivingCondition:
+      - _source:
+        - "WM: /wm/concept/causal_factor/health_and_life/living_condition"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - SanitationAndHygiene:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/living_condition/sanitation_and_hygiene"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WaterSafety:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/living_condition/water_safety"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodSafety:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/living_condition/food_safety"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - Famine:
+      - _source:
+        - "NN"
+        - "HUME_INDICATOR: /indicator/Health/Global Acute Malnutrition (GAM) rate"
+        - "WM: /wm/concept/causal_factor/condition/famine"
+        - "HUME: /event/healthcare/famine"
+      - _description: "Extreme scarcity of food."
+      - _examples: []
+      - _alternative_id: null
+    - Disease:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/health_and_life/disease"
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - AlcoholDrugAndSubstanceAbuse:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/disease/alcohol_drug_and_substance_abuse"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HumanDisease:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/health_and_life/disease/human_disease"
+          - "HUME: /event/healthcare/human disease"
+        - _description: "Human disease."
+        - _examples: []
+        - _alternative_id: null
+    - Treatment:
+      - _source:
+        - "NN"
+        - "HUME: /event/healthcare/treatment"
+        - "WM: /wm/concept/causal_factor/health_and_life/treatment"
+      - _description: "Medical care given to a patient for an illness or injury."
+      - _examples: []
+      - _alternative_id: null
+      - HealthTreatment:
+        - _source:
+          - "WM: /wm/concept/causal_factor/health_and_life/treatment/health_treatment"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - Injury:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/health_and_life/injury"
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+  - Movement:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/movement"
+      - "HUME: /event/movement"
+    - _description: "An act of changing physical location or position or of having\
+        \ this changed."
+    - _examples: []
+    - _alternative_id: null
+    - AnimalMigration:
+      - _source:
+        - "WM: /wm/concept/causal_factor/movement/animal_migration"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Migration:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/social_and_political/migration"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - RefugeePopulation:
+        - _source:
+          - "NN"
+          - "HUME: /event/refugee population"
+          - "WM: /wm/concept/causal_factor/social_and_political/migration/human_migration"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - SeasonalMigration:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/migration/seasonal_migration"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - MigrationReturnees:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/migration/migration_returnees"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Immigration:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/migration/immigration"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Emigration:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/migration/emigration"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HostingIDPs:
+        - _source:
+          - "WM: /wm/concept/causal_factor/social_and_political/migration/hosting_idps"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HumanDisplacement:
+        - _source:
+          - "NN"
+          - "HUME: /event/movement/human displacement"
+          - "HUME_INDICATOR: /indicator/Conflict/Population Displacement"
+          - "WM: /wm/concept/causal_factor/social_and_political/migration"
+          - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/conflict/population\
+            \ displacement"
+        - _description: "The forced movement of people from their home, or country\
+            \ of origin."
+        - _examples: []
+        - _alternative_id: null
+    - Transport:
+      - _source:
+        - "NN"
+        - "HUME: /event/movement/transport"
+        - "WM: /wm/concept/causal_factor/movement/transport"
+      - _description: "Take or carry (people or goods) from one place to another by\
+          \ means of a vehicle, aircraft, or ship."
+      - _examples: []
+      - _alternative_id: null
+    - EvacuateHumanitarianWorkers:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/movement/evacuate_humanitarian_workers"
+        - "HUME: /event/movement/evacuate humanitarian workers"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+  - EconomicAndCommerce:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/economic_and_commerce"
+    - _description: "Should be a parent class of EconomicActivity"
+    - _examples: []
+    - _alternative_id: null
+    - Poverty:
+      - _source:
+        - "NN"
+        - "HUME: /event/condition/poverty"
+        - "WM: /wm/concept/causal_factor/economic_and_commerce/poverty"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - EconomicActivity:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity"
+        - "HUME: /event/economic activity"
+      - _description: "Economic activities."
+      - _examples: []
+      - _alternative_id: null
+      - Currency:
+        - _source:
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/currency"
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - Livelihood:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/livelihood"
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+        - Foraging:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/livelihood/foraging"
+          - _description: ""
+          - _examples: []
+          - _alternative_id: null
+        - Hunting:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/livelihood/hunting"
+          - _description: ""
+          - _examples: []
+          - _alternative_id: null
+        - Farming:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/livelihood/farming"
+          - _description: ""
+          - _examples: []
+          - _alternative_id: null
+      - CrossBorderTrade:
+        - _source:
+          - "NN"
+          - "HUME: /event/economic activity/cross border trade"
+          - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/commerce/Cross\
+            \ Border Trade"
+          - "HUME_INDICATOR: /indicator/Commerce/Cross Border Trade"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/cross_border_trade"
+        - _description: "Cross-border trade."
+        - _examples: []
+        - _alternative_id: null
+        - Import:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/cross_border_trade/import"
+            - "HUME: /event/economic activity/cross border trade/import"
+            - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/commerce/Cross\
+              \ Border Trade"
+            - "HUME_INDICATOR: /indicator/Commerce/Cross Border Trade"
+          - _description: "Bring (goods or services) into a country from abroad for\
+              \ sale."
+          - _examples: []
+          - _alternative_id: null
+          - FoodImport:
+            - _source:
+              - "NN"
+              - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/commerce/Cross\
+                \ Border Trade"
+              - "HUME_INDICATOR: /indicator/Commerce/Cross Border Trade"
+              - "HUME: /event/economic activity/cross border trade/import/food import"
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/cross_border_trade/import/food_import"
+            - _description: "Import of food."
+            - _examples: []
+            - _alternative_id: null
+        - Export:
+          - _source:
+            - "NN"
+            - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/commerce/Cross\
+              \ Border Trade"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/cross_border_trade/export"
+            - "HUME: /event/economic activity/cross border trade/export"
+            - "HUME_INDICATOR: /indicator/Commerce/Cross Border Trade"
+          - _description: "Send (goods or services) to another country for sale."
+          - _examples: []
+          - _alternative_id: null
+          - FoodExport:
+            - _source:
+              - "NN"
+              - "WM_INDICATOR: /wm/concept/indicator_and_reported_property/commerce/Cross\
+                \ Border Trade"
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/cross_border_trade/export/food_export"
+              - "HUME: /event/economic activity/cross border trade/export/food export"
+              - "HUME_INDICATOR: /indicator/Commerce/Cross Border Trade"
+            - _description: "Export of food."
+            - _examples: []
+            - _alternative_id: null
+      - Production:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity"
+          - "HUME: /event/economic activity/production"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - AgricultureProduction:
+          - _source:
+            - "NN"
+            - "HUME: /event/economic activity/production/agriculture production"
+            - "WM: /wm/concept/causal_factor/agriculture"
+          - _description: "Agriculture production."
+          - _examples: []
+          - _alternative_id: null
+          - LandAvailability:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/environmental/natural_resources/land_availability"
+            - _description: "Availability of land."
+            - _examples: []
+            - _alternative_id: null
+          - Pasture:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/environmental/natural_resources/pasture"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+          - Irrigation:
+            - _source:
+              - "NN"
+              - "HUME: /event/economic activity/production/agriculture production/irrigation"
+              - "WM: /wm/concept/causal_factor/agriculture/irrigation"
+            - _description: "The supply of water to land or crops to help growth,\
+                \ typically by means of channels."
+            - _examples: []
+            - _alternative_id: null
+          - Fertilization:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/agriculture/fertilization"
+              - "HUME: /event/economic activity/production/agriculture production/fertilization"
+            - _description: "The action or process of applying a fertilizer to soil\
+                \ or land."
+            - _examples: []
+            - _alternative_id: null
+          - CropProduction:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/agriculture/crop_production"
+              - "HUME: /event/economic activity/production/agriculture production/crop\
+                \ production"
+            - _description: "Crop production."
+            - _examples: []
+            - _alternative_id: null
+          - LivestockProduction:
+            - _source:
+              - "NN"
+              - "HUME_INDICATOR: /indicator/Agriculture/Livestock Production"
+              - "WM: /wm/concept/causal_factor/agriculture/livestock_production"
+              - "HUME: /event/economic activity/production/agriculture production/livestock\
+                \ production"
+            - _description: "Livestock production."
+            - _examples: []
+            - _alternative_id: null
+        - OilProduction:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/fuel"
+            - "HUME: /event/economic activity/production/oil production"
+          - _description: "Oil production."
+          - _examples: []
+          - _alternative_id: null
+      - Market:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market"
+          - "HUME: /event/economic activity/market"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - Employment:
+          - _source:
+            - "NN"
+            - "HUME: /wm/concept/causal_factor/economic_and_commerce/economic activity/market/labor_market"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/labor_market"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Budget:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/budget"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Assets:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/assets"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Revenue:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/revenue"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+          - FarmerIncome:
+            - _source:
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/revenue/farmer_income"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+          - HouseholdIncome:
+            - _source:
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/revenue/household_income"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+        - FoodStocks:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/food_stocks"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Depreciation:
+          - _source:
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/depreciation"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Supply:
+          - _source:
+            - "NN"
+            - "HUME: /event/economic activity/market/supply"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/supply"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+          - FoodSupply:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/supply/food_supply"
+              - "HUME: /event/economic activity/market/supply/food supply"
+            - _description: "Food supply."
+            - _examples: []
+            - _alternative_id: null
+        - Transaction:
+          - _source:
+            - "NN"
+            - "HUME: /event/economic activity/market/transaction"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/transaction"
+          - _description: "An instance of buying or selling something; a business\
+              \ deal."
+          - _examples: []
+          - _alternative_id: null
+          - OilTransaction:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/transaction/oil_transaction"
+              - "HUME: /event/economic activity/market/transaction/oil transaction"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+          - FoodPurchase:
+            - _source:
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/transaction/food_purchase"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+        - Inflation:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/inflation"
+            - "HUME: /event/economic activity/market/inflation"
+          - _description: "A general increase in prices and fall in the purchasing\
+              \ value of money."
+          - _examples: []
+          - _alternative_id: null
+        - CurrencyDevaluation:
+          - _source:
+            - "NN"
+            - "HUME: /event/economic activity/market/currency devaluation"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/currency_devaluation"
+          - _description: "A deliberate downward adjustment of the value of a country\
+              \ currency against another currency."
+          - _examples: []
+          - _alternative_id: null
+        - Price:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost"
+            - "HUME: /event/economic activity/market/price"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+          - FoodPrice:
+            - _source:
+              - "NN"
+              - "HUME: /event/economic activity/market/price/food price"
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost/food_price"
+            - _description: "Food price."
+            - _examples: []
+            - _alternative_id: null
+          - CropPrice:
+            - _source:
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost/crop_price"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+          - OilPrice:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost/oil_price"
+              - "HUME: /event/economic activity/market/price/oil price"
+            - _description: "Oil price."
+            - _examples: []
+            - _alternative_id: null
+      - Consumption:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity"
+          - "HUME: /event/economic activity/consumption"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - FoodConsumption:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/condition/food_security/food_utilization"
+            - "HUME: /event/economic activity/consumption/food consumption"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - Competition:
+        - _source:
+          - "NN"
+          - "HUME: /event/economic activity/competition"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/competition"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Development:
+        - _source:
+          - "NN"
+          - "HUME: /event/economic activity/development"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/development"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Demand:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/demand"
+          - "HUME: /event/economic activity/demand"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - FoodDemand:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/demand/food_demand"
+            - "HUME: /event/economic activity/demand/food demand"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - Business:
+        - _source:
+          - "NN"
+          - "HUME: /event/economic activity/business"
+          - "WM: /wm/concept/causal_factor/economic_and_commerce"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+  - Personnel:
+    - _source:
+      - "NN"
+      - "HUME: /event/personnel"
+      - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/livelihood"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Access:
+    - _source:
+      - "NN"
+      - "HUME: /event/access"
+      - "WM: /wm/concept/causal_factor/access"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - MarketAccess:
+      - _source:
+        - "WM: /wm/concept/causal_factor/access/market_access"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - WaterSupply:
+      - _source:
+        - "WM: /wm/concept/causal_factor/access/water_supply"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - WaterAccess:
+      - _source:
+        - "WM: /wm/concept/causal_factor/access/water_access"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - WaterCommodity:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/water_access/water_commodity"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WaterSecurity:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/water_access/water_security"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WaterManagement:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/water_access/water_management"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WaterShortage:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/access/water_access/water_insecurity"
+          - "HUME: /event/access/shortage/water shortage"
+        - _description: "Shortage of water."
+        - _examples: []
+        - _alternative_id: null
+    - InfrastructureAccess:
+      - _source:
+        - "WM: /wm/concept/causal_factor/access/infrastructure_access"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - ConstructionMaterials:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/infrastructure_access/construction_materials"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Bridge:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/infrastructure_access/bridge"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - RoadAccess:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/infrastructure_access/road_access"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Waste:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/infrastructure_access/waste"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Electrical:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/infrastructure_access/electrical"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - Medical:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/infrastructure_access/medical"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - MedicalFacility:
+          - _source:
+            - "WM: /wm/concept/causal_factor/access/infrastructure_access/medical/medical_facility"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Ambulances:
+          - _source:
+            - "WM: /wm/concept/causal_factor/access/infrastructure_access/medical/ambulances"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - Transportation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/access/infrastructure_access/transportation"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - Shipping:
+          - _source:
+            - "WM: /wm/concept/causal_factor/access/infrastructure_access/transportation/shipping"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - Travel:
+          - _source:
+            - "WM: /wm/concept/causal_factor/access/infrastructure_access/transportation/travel"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+    - Shortage:
+      - _source:
+        - "NN"
+        - "HUME: /event/access/shortage"
+        - "WM: /wm/concept/causal_factor/access"
+      - _description: "A state or situation in which something needed cannot be obtained\
+          \ in sufficient amounts."
+      - _examples: []
+      - _alternative_id: null
+  - Intervention:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/interventions"
+      - "HUME: /event/intervention"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - TeachingTrainingAndPublicAwareness:
+      - _source:
+        - "WM: /wm/concept/causal_factor/interventions/teaching,_training_and_public_awareness"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - TrainingCommunitySourcedTemporaryTeachers:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/teaching,_training_and_public_awareness/training_of_community_sourced_emergency_or_temporary_teachers"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - TrainingFarmersOnPlantingTimes:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/teaching,_training_and_public_awareness/training_of_farmers_on_planting_times"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - TrainingFarmersOnCropSpacing:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/teaching,_training_and_public_awareness/training_of_farmers_on_crop_spacing"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - TrainingFarmersOnWeedControl:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/teaching,_training_and_public_awareness/training_of_farmers_on_weed_control"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - TrainPlanting:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - TrainFinancialManagement:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - TrainEducationSystems:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - TrainPublicSafetyCampaigns:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - TrainEmergencyPreparednessTraining:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+    - PeaceKeepingAndSecurity:
+      - _source:
+        - "WM: /wm/concept/causal_factor/interventions/peacekeeping_and_security"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - DisarmamentDemobilizationAndReintegration:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/peacekeeping_and_security/disarmament_demobilization_and_reintegration"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ConflictMediationAndPoliticalDialogue:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/peacekeeping_and_security/conflict_mediation_and_political_dialogue"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - CommunityLevelConflictResolution:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/peacekeeping_and_security/community_level_conflict_resolution"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - BorderPatrols:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/peacekeeping_and_security/border_patrols"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - SecureNaturalResources:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+    - ProvisionOfGoodsAndServices:
+      - _source:
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - TraumaInjuryAndPostOperativeRehabilitation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/trauma_injury_and_post_operative_rehabilitation"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HumanRightsMonitoringInvestigationAndReporting:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/human_rights_monitoring_investigation_and_reporting"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HousingProvisionLeasingOrRentalServices:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/housing_provision_leasing_or_rental_services"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - DesludgingOfToiletsSepticTanksAndExcretaContainers:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/desludging_of_toilets_septic_tanks_and_excreta_containers"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WaterTrucking:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/water_trucking"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WaterTreatmentOfPipedWaterSupply:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/water_treatment_of_piped_water_supply"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - VectorControl:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/vector control"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/vector_control"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - TraumaAndSurgicalCare:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/trauma_and_surgical_care"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - TherapeuticFeedingOrTreating:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/therapeutic feeding or treating"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/therapeutic_feeding"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - SupplementaryFeeding:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/supplementary_feeding"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - SchoolFeeding:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/school feeding"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/school_feeding"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - RehabilitationOfChildSoldiers:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/rehabilitation_of_child_soldiers"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - PublicInformationCampaignsOnExplosiveHazards:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/public_information_campaigns_on_explosive_hazards"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - PublicHealthInformationCampaign:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/public_health_information_campaign"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - PsychologicalSupport:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/psychological support"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/psychological_support"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvisionOfWaterForLivestock:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_water_for_livestock"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvisionOfNonFormalEducation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_non_formal_education"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvisionOfInsecticideTreatedBednets:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_insecticide_treated_bednets"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvisionOfCreditAndTrainingForIncomeGeneration:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_credit_and_training_for_income_generation"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - PointOfUseWaterTreatmentAtHouseholdLevel:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/point_of_use_water_treatment_at_household_level"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - OperationOfMobileClinics:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/operation_of_mobile_clinics"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - NewbornAndChildhoodEssentialHealthCareServices:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/newborn_and_childhood_essential_health_care_services"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - MicroNutrientSupplementation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/micro_nutrient_supplementation"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - MassVaccinationCampaign:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/mass_vaccination_campaign"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - MalnutritionScreening:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/malnutrition\
+            \ screening"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/malnutrition_screening"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - LocustControlOperation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/locust_control_operation"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - LivestockShelterAndSettlement:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/livestock_shelter_and_settlement"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - LivestockRestocking:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/livestock_restocking"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - LivestockDestocking:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/livestock_destocking"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - LegalAidForDisplacedPersons:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/legal_aid_for_displaced_persons"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - InfantAndYoungChildFeedingSupport:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/infant_and_young_child_feeding_support"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HygienePromotionCampaigns:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/hygiene_promotion_campaigns"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HouseholdSolidWasteManagement:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/household solid waste management"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/household_solid_waste_management"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HouseholdReliefNonFoodItemPackage:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/household_relief_non_food_item_package"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodVouchers:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/food_vouchers"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodFortification:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/food_fortification"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodForWork:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/food_for_work"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodForTraining:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/food_for_training"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodForAssets:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/food_for_assets"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FirstAidBasicMedicalCare:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/first aid basic\
+            \ medical care"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/first_aid_and_and_basic_medical_care"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - EpidemiologicalSurveillanceSystem:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/epidemiological surveillance system"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/epidemiological_surveillance_system"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - DebrisRemoval:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/debris_removal"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - DiseaseOutbreakControl:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/disease outbreak control"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/communicable_disease_outbreak_control"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - SexualViolenceManagement:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/sexual violence management"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/clinical_management_of_sexual_violence"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ChildFriendlyLearningSpaces:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/child friendly learning spaces"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/child_friendly_learning_spaces"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - AssessmentAndTriageOfHealthFacilities:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/assessment_and_triage_of_health_facilities"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - AntiRetroviralTreatment:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/anti-retroviral treatment"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/anti_retroviral_treatment"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FertilizerSubsidy:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/fertilizer_subsidy"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideSurveillanceSystem:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideNationalSurvey:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideNutritionSupport:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideShelter:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideLivelihoodAssets:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideVaccine:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideMedicalTreatment:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvidePrevention:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ivestockShelterAndSettlement:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+    - InformationServices:
+      - _source:
+        - "WM: /wm/concept/causal_factor/interventions/information_services"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - FoodSecurityOrFamineEarlyWarningSystem:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/information_services/food_security_or_famine_early_warning_system"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - InstitutionalSupport:
+      - _source:
+        - "WM: /wm/concept/causal_factor/interventions/institutional_support"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - CapacityBuildingHumanRights:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/interventions/institutional_support/capacity_building_of_national_authorities_on_human_rights"
+          - "HUME: /event/intervention/capacity building human rights"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - CapacityBuildingOfMedicalStaff:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/institutional_support/capacity_building_of_medical_staff"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - PrisonSystemReform:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/institutional_support/prison_system_reform"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvidingEducationalMaterials:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/institutional_support/providing_educational_materials"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - SupportToHealthFacilities:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/institutional_support/support_to_health_facilities"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - SupportToVeterinaryServices:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/institutional_support/support_to_veterinary_services"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - ConstructionOfInfrastructure:
+      - _source:
+        - "WM: /wm/concept/causal_factor/interventions/construction_of_infrastructure"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - RoadRehabilitation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/construction_of_infrastructure/road_rehabilitation"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - BuildingTemporaryRoads:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/construction_of_infrastructure/building_temporary_roads"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - BuildingRailwayLines:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/construction_of_infrastructure/building_railway_lines"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - BuildingLongTermRoads:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/construction_of_infrastructure/building_long_term_roads"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - BridgeRepair:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/construction_of_infrastructure/bridge_repair"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - BoreholeRepair:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/construction_of_infrastructure/borehole_repair"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - BuildingConstruction:
+      - _source:
+        - "WM: /wm/concept/causal_factor/interventions/building_construction"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - ConstructionOfPrefabricatedBuildings:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/construction of prefabricated buildings"
+          - "WM: /wm/concept/causal_factor/interventions/building_construction/construction_of_prefabricated_buildings"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - CreationOfTemporaryWaterPoints:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/building_construction/creation_of_temporary_water_points"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - DeploymentOfFieldHospitals:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/building_construction/deployment_of_field_hospitals"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - LatrineConstruction:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/building_construction/latrine_construction"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - RehabilitationOfIrrigationSchemes:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/building_construction/rehabilitation_of_irrigation_schemes"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - RehabilitationOfSchools:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/building_construction/rehabilitation_of_schools"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - TemporaryCommunalSettlement:
+        - _source:
+          - "WM: /wm/concept/causal_factor/interventions/building_construction/temporary_communal_settlement"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - BuildIrrigationInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildExtensionOffices:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildGreenhouse:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildPostHarvest:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildTradeInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildEducationalInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildShelter:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildWASHInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildMedicalInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildTransportationInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildCommunicationInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - BuildEnergyInfrastructure:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+    - RentalSubsidies:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/rental subsidies"
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/housing_provision_leasing_or_rental_services"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - PolicingServices:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/policing services"
+        - "WM: /wm/concept/causal_factor/interventions/peacekeeping_and_security/temporary_policing_services"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - CommunalWashingAndBathing:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/communal washing and bathing"
+        - "WM: /wm/concept/causal_factor/interventions/building_construction/communal_washing_and_bathing_facilities"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - SanitationServices:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/sanitation services"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - ChildRights:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/child rights"
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/reporting_and_verification_of_child_rights_violations"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - MineRiskEducation:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/mine risk education"
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/mine_clearance"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - FamilyReunification:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/family reunification"
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/family_reunification_of_separated_children"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - LegalAid:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/legal aid"
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/legal_aid_for_displaced_persons"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - ProvideHumanitarianResources:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services"
+        - "HUME: /event/intervention/provide humanitarian resources"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - ObstetricNewbornCare:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/obstetric newborn\
+            \ care"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/obstetric_and_newborn_care"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideHygieneTool:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/basic_minimum_household_hygiene_item_package"
+          - "HUME: /event/intervention/provide humanitarian resources/provide hygiene\
+            \ tool"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideDeliveryKit:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide delivery\
+            \ kit"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideFarmingTool:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide farming\
+            \ tool"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_farm_tools"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideSeed:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide seed"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_seeds"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideLivestockFeed:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide livestock\
+            \ feed"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_livestock_feed"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideVeterinaryService:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_veterinary_services"
+          - "HUME: /event/intervention/provide humanitarian resources/provide veterinary\
+            \ service"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideStationary:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide stationary"
+          - "WM: /wm/concept/causal_factor/interventions/institutional_support/providing_educational_materials"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideFishingTool:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide fishing\
+            \ tool"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_fishing_nets_and_boats"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideCash:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide cash"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/cash_transfer"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - OnceOffCashTransferToFacilitateReturn:
+          - _source:
+            - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/once_off_cash_transfer_to_facilitate_return"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - CashForWork:
+          - _source:
+            - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/cash_for_work"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - CashForAssets:
+          - _source:
+            - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/cash_for_assets"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - ProvideFood:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide food"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/free_food_distribution"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideTentShelter:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/provide humanitarian resources/provide tent\
+            \ shelter"
+          - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services/provision_of_family_tents_and_shelter_kits"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ProvideWater:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideFinancialAssistance:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideFertilizer:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideWaterSource:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvidePumps:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideFieldIrrigation:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideBiologicalControl:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideChemicalControl:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - ProvideWarehousing:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+    - ProvideMovingOfHouseholds:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/provide moving of houseHolds"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Tax:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/tax"
+        - "WM: /wm/concept/causal_factor/social_and_political/government/tax_duty"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Education:
+      - _source:
+        - "NN"
+        - "HUME: /event/intervention/education"
+        - "WM: /wm/concept/causal_factor/social_and_political/educational/education"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Assistance:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/interventions/provision_of_goods_and_services"
+        - "HUME: /event/intervention/assistance"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Sanction:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/social_and_political/political/sanction"
+        - "HUME: /event/intervention/sanction"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - MilitaryOperation:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/social_and_political/conflict"
+        - "HUME: /event/intervention/military operation"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - CounterTerrorismOperation:
+        - _source:
+          - "NN"
+          - "HUME: /event/intervention/military operation/counter terrorism operation"
+          - "WM: /wm/concept/causal_factor/social_and_political/conflict/attack"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+  - CrisisAndDisaster:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/crisis_and_disaster"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - Crisis:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/crisis_and_disaster/crisis"
+        - "HUME: /event/crisis"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Economic:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/crisis_and_disaster/economic"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - EconomicCrisis:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/crisis_and_disaster/economic/economic_crisis"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - EnvironmentalDisasters:
+      - _source:
+        - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - Disaster:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster"
+          - "HUME: /event/crisis/disaster"
+        - _description: "A sudden event, such as an accident or a natural catastrophe,\
+            \ that causes great damage or loss of life."
+        - _examples: []
+        - _alternative_id: null
+        - NaturalDisaster:
+          - _source:
+            - "NN"
+            - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster"
+          - _description: "A sudden event, such as an accident or a natural catastrophe,\
+              \ that causes great damage or loss of life."
+          - _examples: []
+          - _alternative_id: null
+          - Earthquake:
+            - _source:
+              - "NN"
+              - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster/earthquake"
+              - "HUME: /event/crisis/disaster/earthquake"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+          - VolcanicEruption:
+            - _source:
+              - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster/volcanic_eruption"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+          - Wildfire:
+            - _source:
+              - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster/wildfire"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+          - Avalanche:
+            - _source:
+              - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/natural_disaster/avalanche"
+            - _description: "NA"
+            - _examples: []
+            - _alternative_id: null
+      - Fire:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/fire"
+          - "HUME: /event/crisis/fire"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WeatherIssue:
+        - _source:
+          - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/weather_issue"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - ColdTemperature:
+          - _source:
+            - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/weather_issue/cold_temperature"
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - InsectInfestation:
+        - _source:
+          - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/insect_infestation"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+  - Trend:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/condition/trend"
+      - "HUME: /event/trend"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Forecast:
+    - _source:
+      - "NN"
+      - "HUME: /event/forecast"
+      - "WM: /wm/concept/causal_factor"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - Risk:
+      - _source:
+        - "NN"
+        - "HUME: /event/forecast/risk"
+        - "WM: /wm/concept/causal_factor"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - Likelihood:
+      - _source:
+        - "NN"
+        - "HUME: /event/forecast/likelihood"
+        - "WM: /wm/concept/causal_factor"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+  - Tension:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/condition/tension"
+      - "HUME: /event/tension"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Emotion:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor"
+      - "HUME: /event/emotion"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - CognitiveProcess:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor"
+      - "HUME: /event/cognitive process"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Communication:
+    - _source:
+      - "NN"
+      - "HUME: /event/communication"
+      - "WM: /wm/concept/causal_factor"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Legal:
+    - _source:
+      - "NN"
+      - "HUME: /event/legal"
+      - "WM: /wm/concept/causal_factor/social_and_political/government/regulation"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Defensive:
+    - _source:
+      - "NN"
+      - "HUME: /event/defensive"
+      - "WM: /wm/concept/causal_factor/social_and_political/conflict"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Condition:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/condition"
+      - "HUME: /event/condition"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - FoodSecurity:
+      - _source:
+        - "WM: /wm/concept/causal_factor/condition/food_security"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - FoodStability:
+        - _source:
+          - "WM: /wm/concept/causal_factor/condition/food_security/food_stability"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodAccess:
+        - _source:
+          - "WM: /wm/concept/causal_factor/condition/food_security/food_access"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodUtilization:
+        - _source:
+          - "WM: /wm/concept/causal_factor/condition/food_security/food_utilization"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodAvailability:
+        - _source:
+          - "WM: /wm/concept/causal_factor/condition/food_security/food_availability"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - FoodInsecurity:
+      - _source:
+        - "WM: /wm/concept/causal_factor/condition/food_insecurity"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - FoodInstability:
+        - _source:
+          - "WM: /wm/concept/causal_factor/condition/food_insecurity/food_instability"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodNonaccess:
+        - _source:
+          - "WM: /wm/concept/causal_factor/condition/food_insecurity/food_nonaccess"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodNonutilization:
+        - _source:
+          - "WM: /wm/concept/causal_factor/condition/food_insecurity/food_nonutilization"
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FoodShortage:
+        - _source:
+          - "NN"
+          - "WM: /wm/concept/causal_factor/condition/food_insecurity/food_unavailability"
+          - "HUME: /event/access/shortage/food shortage"
+        - _description: "Shortage of food."
+        - _examples: []
+        - _alternative_id: null
+  - LeanSeason:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/time/temporal/season"
+      - "HUME: /event/lean season"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - PeaceTreaty:
+    - _source:
+      - "NN"
+      - "HUME: /event/peace treaty"
+      - "WM: /wm/concept/causal_factor/interventions/peacekeeping_and_security"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - DestroyCrops:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/crisis_and_disaster/environmental_disasters/crop_failure"
+      - "HUME: /event/destroy crops"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Cost:
+    - _source:
+      - "NN"
+      - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost"
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - CostOfLiving:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost/cost_of_living"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - CostOfTransportation:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost/cost_of_transportation"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - CostOfFood:
+      - _source:
+        - "NN"
+        - "WM: /wm/concept/causal_factor/economic_and_commerce/economic_activity/market/price_or_cost/food_price"
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+  - Provide:
+    - _source: []
+    - _description: ""
+    - _examples: []
+    - _alternative_id: null

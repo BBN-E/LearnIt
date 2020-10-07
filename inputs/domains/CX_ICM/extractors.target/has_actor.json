@@ -1,0 +1,38 @@
+[ "com.bbn.akbc.neolearnit.common.targets.Target", {
+  "name" : "has_actor",
+  "description" : "",
+  "constraints" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.common.targets.constraints.impl.SpanningTypeConstraint", {
+    "slot" : 0,
+    "allowedSpanningType" : [ "java.util.HashSet", [ "EventMention" ] ]
+  } ], [ "com.bbn.akbc.neolearnit.common.targets.constraints.impl.AtomicMentionConstraint", {
+    "slot" : 1,
+    "language" : "",
+    "canBeEmptySlot" : false
+  } ], [ "com.bbn.akbc.neolearnit.common.targets.constraints.impl.EntityTypeOrValueConstraint", {
+    "slot" : 1,
+    "entityTypes" : [ "java.util.HashSet", [ "" ] ],
+    "language" : "",
+    "canBeEmptySlot" : false,
+    "validTypes" : [ "java.util.HashSet", [ "" ] ]
+  } ], [ "com.bbn.akbc.neolearnit.common.targets.constraints.impl.MinEntityLevelConstraint", {
+    "language" : "All",
+    "slot" : 1,
+    "entityLevel" : "DESC"
+  } ], [ "com.bbn.akbc.neolearnit.common.targets.constraints.impl.SpanningTypeConstraint", {
+    "slot" : 1,
+    "allowedSpanningType" : [ "java.util.HashSet", [ "Mention" ] ]
+  } ] ] ],
+  "properties" : [ "java.util.HashMap", { } ],
+  "slots" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.common.targets.TargetSlot", {
+    "slotNum" : 0,
+    "type" : "all",
+    "constraints" : [ "java.util.ArrayList", [ ] ],
+    "properties" : [ "java.util.HashMap", { } ]
+  } ], [ "com.bbn.akbc.neolearnit.common.targets.TargetSlot", {
+    "slotNum" : 1,
+    "type" : "all",
+    "constraints" : [ "java.util.ArrayList", [ ] ],
+    "properties" : [ "java.util.HashMap", { } ]
+  } ] ] ],
+  "patternConfidence" : 0.0
+} ]

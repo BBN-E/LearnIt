@@ -76,7 +76,7 @@ public class PrintDebugInfoForMappings {
 
     static void addDebugSectionToMap(InstanceIdentifier instanceIdentifier,
                                      Collection<LearnitPattern> learnitPatterns,
-                                     Target target) {
+                                     Target target) throws IOException {
         MatchInfo matchInfo = instanceIdentifier.reconstructMatchInfo(target);
 
         Spanning spanning0 = matchInfo.getPrimaryLanguageMatch().getSlot0().get();

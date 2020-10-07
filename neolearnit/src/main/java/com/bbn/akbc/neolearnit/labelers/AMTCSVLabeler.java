@@ -12,7 +12,7 @@ import org.apache.commons.csv.CSVRecord;
 import java.io.FileReader;
 
 @Deprecated
-public class AMTCSVLabeler implements MappingLabeler {
+public class AMTCSVLabeler implements MappingsLabeler {
     final String strInputCsvFile;
 
     AMTCSVLabeler(String strInputCsvFile) {
@@ -20,7 +20,7 @@ public class AMTCSVLabeler implements MappingLabeler {
     }
 
     @Override
-    public Mappings LabelMappings(Mappings original) throws Exception {
+    public Annotation.InMemoryAnnotationStorage LabelMappings(Mappings original, Annotation.InMemoryAnnotationStorage labeledMappings) throws Exception {
         // TODO: Implement this for current CSV version
         // Please implement a CSV parser here
         // Please support CSV in batch mode as in python
@@ -64,6 +64,6 @@ public class AMTCSVLabeler implements MappingLabeler {
                     false);
             inMemoryAnnotationStorage.addAnnotation(originalInstanceIdentifier, new LabelPattern("Has_Causal_Relation", Annotation.FrozenState.FROZEN_GOOD));
         }
-        return inMemoryAnnotationStorage.convertToMappings();
+        return inMemoryAnnotationStorage;
     }
 }

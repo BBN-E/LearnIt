@@ -1,0 +1,165 @@
+[ "com.bbn.akbc.neolearnit.scoring.TargetAndScoreTables", {
+  "startDate" : [ "java.util.Date", 1573761367863 ],
+  "seedScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.SeedScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 325
+  } ],
+  "patternScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.PatternScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword agreement) (regex (regex (re (text (string \"trade\"))))))",
+        "toPrettyString" : " trade agreement[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword agreements) (regex (regex (re (text (string \"trade\"))))))",
+        "toPrettyString" : " trade agreements[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword trade) (regex (regex (re (text (string \"cross-border\"))))))",
+        "toPrettyString" : " cross-border trade[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(nprop (return slot0) (predicate intensity) (args (argument (role of) (mention (headword trade) (acetype OTH)))))",
+        "toPrettyString" : " [ [n]intensity[0] of trade[OTH] ]"
+      } ] ] ],
+      "valList" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 18.0,
+        "confidenceDenominator" : 18.0,
+        "frequency" : 18,
+        "knownFrequency" : 17,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 17.099999999999998,
+        "fp" : 0.9000000000000008,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 109,
+        "frozenIteration" : 303,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 31.0,
+        "confidenceDenominator" : 31.0,
+        "frequency" : 31,
+        "knownFrequency" : 29,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 29.45,
+        "fp" : 1.5500000000000014,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 109,
+        "frozenIteration" : 303,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 17.0,
+        "confidenceDenominator" : 17.0,
+        "frequency" : 17,
+        "knownFrequency" : 16,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 16.15,
+        "fp" : 0.8500000000000008,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 109,
+        "frozenIteration" : 303,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 20.0,
+        "confidenceDenominator" : 20.0,
+        "frequency" : 20,
+        "knownFrequency" : 19,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 19.0,
+        "fp" : 1.0000000000000009,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 109,
+        "frozenIteration" : 303,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ] ] ],
+      "entries" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 0,
+        "value" : 0
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 1,
+        "value" : 1
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 2,
+        "value" : 2
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 3,
+        "value" : 3
+      } ] ] ]
+    } ],
+    "iteration" : 131
+  } ],
+  "tripleScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.TripleScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 0
+  } ],
+  "iteration" : 325,
+  "goodSeedPrior" : "Infinity",
+  "totalConfidenceDenominator" : 0.0,
+  "stage" : "initial",
+  "params" : null,
+  "experimentName" : "default"
+} ]

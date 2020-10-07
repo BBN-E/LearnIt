@@ -1,13 +1,14 @@
 package com.bbn.akbc.neolearnit.observations.label;
 
-import com.bbn.akbc.neolearnit.observations.pattern.LearnitPattern;
 import com.bbn.akbc.neolearnit.common.Annotation.FrozenState;
+import com.bbn.akbc.neolearnit.observations.pattern.LearnitPattern;
 import com.bbn.bue.common.symbols.Symbol;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @JsonTypeInfo(use=JsonTypeInfo.Id.MINIMAL_CLASS, include=JsonTypeInfo.As.PROPERTY, property="@class")
 public class LabelPattern extends LearnitPattern {
@@ -19,6 +20,7 @@ public class LabelPattern extends LearnitPattern {
 
     final private String patternIDString(){return this.toIDString();}
     @Override
+    @JsonProperty
     public String toPrettyString() {
         return this.toIDString();
     }
@@ -31,7 +33,7 @@ public class LabelPattern extends LearnitPattern {
     @JsonProperty
     public String toIDString() {
 //        return "[LabelPattern]\tlearnitPattern: " + learnitPattern.toString() + "\trelationType" + relationType.toString();
-        return "[LabelPattern]\trelationType" + relationType.toString() + "\tfrozenstate:" + frozenState.toString();
+        return "[LabelPattern]\trelationType: " + relationType.toString() + "\tfrozenstate: " + frozenState.toString();
     }
 
 
@@ -64,6 +66,11 @@ public class LabelPattern extends LearnitPattern {
         if(!(obj instanceof LabelPattern))return false;
         LabelPattern that = (LabelPattern)obj;
         return this.matchesPattern(that);
+    }
+
+    @Override
+    public String toString() {
+        return this.toIDString();
     }
 
     @JsonCreator

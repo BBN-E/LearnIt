@@ -5,9 +5,8 @@ import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfo;
 import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfo.LanguageMatchInfo;
 import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfoDisplay;
 import com.bbn.akbc.neolearnit.common.targets.Target;
-import com.bbn.akbc.neolearnit.common.util.PathConverter;
-import com.bbn.akbc.neolearnit.common.util.SourceListsReader;
-import com.bbn.bue.common.parameters.exceptions.MissingRequiredParameter;
+import com.bbn.akbc.neolearnit.util.GeneralUtils;
+import com.bbn.bue.common.exceptions.NotImplementedException;
 import com.bbn.serif.io.SerifXMLLoader;
 import com.bbn.serif.theories.*;
 import com.bbn.serif.theories.TokenSequence.Span;
@@ -20,13 +19,13 @@ import com.google.common.collect.ImmutableList;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutionException;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonTypeInfo(use=JsonTypeInfo.Id.MINIMAL_CLASS, include=JsonTypeInfo.As.PROPERTY, property="@class")
-public class InstanceIdentifier {
+@JsonTypeInfo(use = JsonTypeInfo.Id.MINIMAL_CLASS, include = JsonTypeInfo.As.PROPERTY, property = "@class")
+public class InstanceIdentifier implements Comparable<InstanceIdentifier> {
 
 
     private static Map<String, DocTheory> cachedDocTheories = new ConcurrentHashMap<String, DocTheory>();
@@ -51,18 +50,22 @@ public class InstanceIdentifier {
     private final String slot0EntityType;
     @JsonProperty("s1EType")
     private final String slot1EntityType;
+
     @JsonProperty("s0MType")
     private int slot0MentionType() {
         return mTypeToInt(slot0MentionType);
     }
+
     @JsonProperty("s1MType")
     private int slot1MentionType() {
         return mTypeToInt(slot1MentionType);
     }
+
     @JsonProperty("s0BestName")
     private int isSlot0BestNameTypeName() {
         return isSlotBestNameTypeName.get(0) ? 1 : 0;
     }
+
     @JsonProperty("s1BestName")
     private int isSlot1BestNameTypeName() {
         return isSlotBestNameTypeName.get(1) ? 1 : 0;
@@ -88,18 +91,18 @@ public class InstanceIdentifier {
             @JsonProperty("s1BestName") int isSlot1BestNameTypeName,
             @JsonProperty("slot0SpanningType") SpanningType slot0SpanningType,
             @JsonProperty("slot1SpanningType") SpanningType slot1SpanningType
-            ) {
+    ) {
         boolean isSlot0BestNameTypeNameb = (isSlot0BestNameTypeName == 1);
         boolean isSlot1BestNameTypeNameb = (isSlot1BestNameTypeName == 1);
         return new InstanceIdentifier(docid, sentid,
-                slot0Start, slot0End,slot0SpanningType, intToMType(slot0MentionType), slot0EntityType, isSlot0BestNameTypeNameb,
-                slot1Start, slot1End,slot1SpanningType, intToMType(slot1MentionType), slot1EntityType, isSlot1BestNameTypeNameb);
+                slot0Start, slot0End, slot0SpanningType, intToMType(slot0MentionType), slot0EntityType, isSlot0BestNameTypeNameb,
+                slot1Start, slot1End, slot1SpanningType, intToMType(slot1MentionType), slot1EntityType, isSlot1BestNameTypeNameb);
     }
 
     public InstanceIdentifier(String docid, int sentid,
-                              int slot0Start, int slot0End, SpanningType slot0SpanningType,Optional<Mention.Type> slot0MentionType,
+                              int slot0Start, int slot0End, SpanningType slot0SpanningType, Optional<Mention.Type> slot0MentionType,
                               String slot0EntityType, boolean isSlot0BestNameTypeName,
-                              int slot1Start, int slot1End,SpanningType slot1SpanningType ,Optional<Mention.Type> slot1MentionType,
+                              int slot1Start, int slot1End, SpanningType slot1SpanningType, Optional<Mention.Type> slot1MentionType,
                               String slot1EntityType, boolean isSlot1BestNameTypeName) {
         this.docid = docid;
         this.sentid = sentid;
@@ -162,17 +165,21 @@ public class InstanceIdentifier {
         return InstanceIdentifier.from(primary, match.getTarget().isSymmetric());
     }
 
-    public static String entityType(Spanning span) {
-        if (span instanceof Mention) {
-            return ((Mention) span).entityType().toString();
-        } else if (span instanceof ValueMention) {
-            return ((ValueMention) span).fullType().toString();
-        } else if (span instanceof SynNode) {
-            return "SynNode";
-        } else if (span instanceof EventMention) {// augment for event
-            return ((EventMention) span).type().asString();
+    public static String entityType(Spanning span, boolean isUnary) {
+        if (isUnary) {
+            return span.getClass().getSimpleName();
         } else {
-            throw new RuntimeException("Don't know how to build instance out of " + span.getClass());
+            if (span instanceof Mention) {
+                return ((Mention) span).entityType().toString();
+            } else if (span instanceof ValueMention) {
+                return ((ValueMention) span).fullType().toString();
+            } else if (span instanceof SynNode) {
+                return "SynNode";
+            } else if (span instanceof EventMention) {// augment for event
+                return ((EventMention) span).type().asString();
+            } else {
+                throw new RuntimeException("Don't know how to build instance out of " + span.getClass());
+            }
         }
     }
 
@@ -195,10 +202,10 @@ public class InstanceIdentifier {
             isSlot0BestNameTypeName = false;
         }
         // hack to get unary mention
-        if(!match.getSlot1().isPresent()) {
+        if (!match.getSlot1().isPresent()) {
             return new InstanceIdentifier(
-                match.getDocTheory().docid().toString(), match.getSentTheory().index(),
-                span0.startToken().index(), span0.endToken().index(), SpanningType.valueOf(spanning0.getClass().getSimpleName()),s0Type, entityType(spanning0), isSlot0BestNameTypeName,
+                    match.getDocTheory().docid().toString(), match.getSentTheory().index(),
+                    span0.startToken().index(), span0.endToken().index(), SpanningType.valueOf(spanning0.getClass().getSimpleName()), s0Type, entityType(spanning0, true), isSlot0BestNameTypeName,
                     -1, -1, SpanningType.Empty, Optional.absent(), "NA", false);
         }
 
@@ -238,8 +245,8 @@ public class InstanceIdentifier {
         }
         return new InstanceIdentifier(
                 match.getDocTheory().docid().toString(), match.getSentTheory().index(),
-                span0.startToken().index(), span0.endToken().index(),SpanningType.valueOf(spanning0.getClass().getSimpleName()), s0Type, entityType(spanning0), isSlot0BestNameTypeName,
-                span1.startToken().index(), span1.endToken().index(),SpanningType.valueOf(spanning1.getClass().getSimpleName()), s1Type, entityType(spanning1), isSlot1BestNameTypeName);
+                span0.startToken().index(), span0.endToken().index(), SpanningType.valueOf(spanning0.getClass().getSimpleName()), s0Type, entityType(spanning0, false), isSlot0BestNameTypeName,
+                span1.startToken().index(), span1.endToken().index(), SpanningType.valueOf(spanning1.getClass().getSimpleName()), s1Type, entityType(spanning1, false), isSlot1BestNameTypeName);
     }
 
     public String getDocid() {
@@ -293,6 +300,105 @@ public class InstanceIdentifier {
         }
     }
 
+    // Ordering here is important, we should try align to most specific
+    // concept first (in case there is an event and an mention with the same span)
+
+    public static List<Spanning> getSpannings(SentenceTheory st, int start, int end, SpanningType spanningType) {
+        List<Spanning> ret = new ArrayList<>();
+        if (st == null) return ret;
+        switch (spanningType) {
+            case EventMention:
+                for (EventMention eventMention : st.eventMentions()) {
+                    if (eventMention.span().startToken().index() == start && eventMention.span().endToken().index() == end) {
+                        ret.add(eventMention);
+                    }
+                }
+                break;
+            case Mention:
+                for (Mention m : st.mentions()) {
+                    if (m.span().startToken().index() == start && m.span().endToken().index() == end) {
+                        ret.add(m);
+                    }
+                }
+                break;
+            case ValueMention:
+                for (ValueMention vm : st.valueMentions()) {
+                    if (vm.span().startToken().index() == start && vm.span().endToken().index() == end) {
+                        ret.add(vm);
+                    }
+                }
+                break;
+            case Empty:
+                break;
+            default:
+                throw new NotImplementedException();
+        }
+        return ret;
+    }
+
+    public static Optional<Spanning> getSpanning(SentenceTheory st, int start, int end, SpanningType spanningType) {
+        if (st == null) return Optional.absent();
+        switch (spanningType) {
+            case EventMention:
+                for (EventMention eventMention : st.eventMentions()) {
+                    if (eventMention.span().startToken().index() == start && eventMention.span().endToken().index() == end) {
+                        return Optional.of(eventMention);
+                    }
+                }
+                break;
+            case Mention:
+                for (Mention m : st.mentions()) {
+                    if (m.span().startToken().index() == start && m.span().endToken().index() == end) {
+                        return Optional.of(m);
+                    }
+                }
+                break;
+            case ValueMention:
+                for (ValueMention vm : st.valueMentions()) {
+                    if (vm.span().startToken().index() == start && vm.span().endToken().index() == end) {
+                        return Optional.of(vm);
+                    }
+                }
+                break;
+            case Empty:
+                return Optional.absent();
+            default:
+                throw new NotImplementedException();
+        }
+        return Optional.absent();
+    }
+
+    public static List<SynNode> getNode(Spanning span, DocTheory dt) {
+        if (span instanceof Mention) {
+            return ImmutableList.of(((Mention) span).node());
+        } else if (span instanceof ValueMention) {
+            Optional<SynNode> synNodeOptional = ValueMention.node(dt, ((ValueMention) span));
+            if (synNodeOptional.isPresent())
+                return ImmutableList.of(synNodeOptional.get());
+            else
+                return ImmutableList.of();
+        } else if (span instanceof SynNode) {
+            return ImmutableList.of(((SynNode) span));
+        } else if (span instanceof EventMention) {
+            Set<SynNode> possibleLeftSynNodes = new HashSet<>();
+            EventMention em = (EventMention) span;
+            if (em.anchorNode() != null) possibleLeftSynNodes.add(em.anchorNode());
+            for (EventMention.Anchor anchor : em.anchors()) {
+                if (anchor.anchorNode() != null) possibleLeftSynNodes.add(anchor.anchorNode());
+            }
+            return ImmutableList.copyOf(possibleLeftSynNodes);
+        } else if (span instanceof SentenceTheory) {
+            final SentenceTheory sentence = (SentenceTheory) span;
+
+            if (!sentence.parse().isAbsent())
+                return ImmutableList.of(sentence.parse().root().get());
+            else
+                return ImmutableList.of();
+        } else {
+            throw new RuntimeException("Unhandled span type: " + span);
+        }
+    }
+
     public Optional<Mention.Type> getSlotMentionType(int slot) {
         if (slot == 0) {
             return slot0MentionType;
@@ -317,35 +423,70 @@ public class InstanceIdentifier {
         return (getConfidence(slot0MentionType) + getConfidence(slot1MentionType)) / 2.0;
     }
 
-    // Ordering here is important, we should try align to most specific
-    // concept first (in case there is an event and an mention with the same span)
-    public static Optional<Spanning> getSpanning(SentenceTheory st, int start, int end, String slotType) {
-        for (EventMention vm : st.eventMentions()) {
-            if (vm.span().startToken().index() == start && vm.span().endToken().index() == end) {
-                if (slotType.equals(entityType(vm))) {
-                    return Optional.of(vm);
-                }
-            }
+    public boolean isSlotValueMention(int slot) {
+        if (slot == 0) {
+            return this.getSlot0SpanningType().equals(SpanningType.ValueMention);
+        } else {
+            return this.getSlot1SpanningType().equals(SpanningType.ValueMention);
         }
-        for (Mention m : st.mentions()) {
-            if (m.span().startToken().index() == start && m.span().endToken().index() == end) {
-                return Optional.of(m);
-            }
-        }
-        for (ValueMention vm : st.valueMentions()) {
-            if (vm.span().startToken().index() == start && vm.span().endToken().index() == end) {
-                return Optional.of(vm);
-            }
-        }
-        return Optional.absent();
     }
 
     // must be called after calling reconstructMatchInfo()
-    public Optional<DocTheory> getDocTheoryFromDocID(String docID) {
+    public static Optional<DocTheory> getDocTheoryFromDocID(String docID) {
         if (cachedDocTheories.containsKey(docID))
             return Optional.of(cachedDocTheories.get(docID));
         else
             return Optional.absent();
+    }
+
+    public static Optional<BilingualDocTheory> getBiDocTheoryFromDocId(String docid) {
+        if (cachedBiDocTheories.containsKey(docid)) {
+            return Optional.of(cachedBiDocTheories.get(docid));
+        } else
+            return Optional.absent();
+    }
+
+    public static void putDocTheory(DocTheory docTheory) {
+        cachedDocTheories.put(docTheory.docid().asString(), docTheory);
+    }
+
+    public static void putBiDocTheory(BilingualDocTheory bilingualDocTheory) {
+        cachedBiDocTheories.put(bilingualDocTheory.getSourceDoc().docid().asString(), bilingualDocTheory);
+    }
+
+    public static void preLoadDocThoery(Collection<InstanceIdentifier> instanceIdentifiers) throws IOException, InterruptedException, ExecutionException {
+        // TODO: Restore its functionality for bilingual also
+        if (LearnItConfig.optionalParamTrue("bilingual")) {
+            Set<InstanceIdentifier> pendingSet = new HashSet<>();
+            for (InstanceIdentifier instanceIdentifier : instanceIdentifiers) {
+                String docId = instanceIdentifier.getDocid();
+                if (!cachedBiDocTheories.containsKey(docId)) {
+                    pendingSet.add(instanceIdentifier);
+                }
+            }
+            Set<BilingualDocTheory> result = GeneralUtils.resolvedBiDocTheoryFromInstanceIdentifier(pendingSet);
+            for (BilingualDocTheory bilingualDocTheory : result) {
+                putBiDocTheory(bilingualDocTheory);
+            }
+        } else {
+            Set<InstanceIdentifier> pendingSet = new HashSet<>();
+            for (InstanceIdentifier instanceIdentifier : instanceIdentifiers) {
+                String docId = instanceIdentifier.getDocid();
+                if (!cachedDocTheories.containsKey(docId)) {
+                    pendingSet.add(instanceIdentifier);
+                }
+            }
+            Set<DocTheory> result = GeneralUtils.resolvedDocTheoryFromInstanceIdentifier(pendingSet);
+            for (DocTheory docTheory : result) {
+                putDocTheory(docTheory);
+            }
+        }
+
+    }
+
+    public static void clearDocTheoryCache() {
+        cachedDocTheories.clear();
+        cachedBiDocTheories.clear();
     }
 
     /**
@@ -359,272 +500,56 @@ public class InstanceIdentifier {
      * @return
      * @throws IOException
      */
-    public MatchInfo reconstructMatchInfo(Target target) {
-
-//		System.out.println("Reconstructing match info for "+this.toShortString()+"...");
-        try {
-            // special handling for using 2016 chn cs mappings under bilingual gigaword parama
-            if ((new File("/nfs/mercury-04/u10/resources/KBP/CS/2016/corpus_chinese_mini/serifxmls/" // by default, 2016cs chinese mini corpus
-                    + docid + ".xml")).exists()) {
-                File docFile = new File(
-                        "/nfs/mercury-04/u10/resources/KBP/CS/2016/corpus_chinese_mini/serifxmls/"
-                                + docid + ".xml");
-
-                SerifXMLLoader loader = SerifXMLLoader.createFrom(
-                        LearnItConfig.params());
-
-                DocTheory newDT = loader.loadFrom(docFile);
-                cachedDocTheories.put(docid, newDT);
-
-                DocTheory dt = cachedDocTheories.get(docid);
-                SentenceTheory st = dt.sentenceTheory(sentid);
-                Optional<Spanning> slot0 = getSpanning(st, slot0Start, slot0End, slot0EntityType);
-                Optional<Spanning> slot1 = getSpanning(st, slot1Start, slot1End, slot1EntityType);
-
-                if(slot1.isPresent()){
-                    return MatchInfo.from(target, dt, st, slot0.get(), slot1.get());
-                }
-                else{
-                    return MatchInfo.from(target,dt,st,slot0.get());
-                }
-
+    public MatchInfo reconstructMatchInfo(Target target) throws IOException {
+        if (LearnItConfig.optionalParamTrue("bilingual")) {
+            if (!cachedBiDocTheories.containsKey(docid)) {
+                Map<String, String> biEntries = DocPathResolver.Bilingual.getPath(docid);
+                BilingualDocTheory newDT = BilingualDocTheory.fromTabularPathLists(docid, biEntries);
+                cachedBiDocTheories.put(docid, newDT);
             }
-            ////
-
-
-            if (LearnItConfig.optionalParamTrue("bilingual")) {
-
-                if (!cachedBiDocTheories.containsKey(docid)) {
-                    List<File> docFiles = PathConverter.getFiles(docid);
-                    String lang1 = LearnItConfig.getList("languages").get(0);
-                    String lang2 = LearnItConfig.getList("languages").get(1);
-
-                    System.out.println("PathConverter.getAlignmentPath(docid): " + PathConverter
-                            .getAlignmentPath(docid));
-                    BilingualDocTheory newDT = BilingualDocTheory.fromPaths(
-                            lang1, docFiles.get(0).toString(),
-                            lang2, docFiles.get(1).toString(),
-                            PathConverter.getAlignmentPath(docid));
-
-                    System.out.println("lang1: " + lang1);
-                    System.out.println("lang2: " + lang2);
-                    System.out.println("docFiles.get(0).toString(): " + docFiles.get(0).toString());
-                    System.out.println("docFiles.get(1).toString(): " + docFiles.get(1).toString());
-                    System.out.println("PathConverter.getAlignmentPath(docid): " + PathConverter.getAlignmentPath(docid));
-
-                    cachedBiDocTheories.put(docid, newDT);
-                }
-
-                BilingualDocTheory dt = cachedBiDocTheories.get(docid);
-                SentenceTheory st = dt.getSourceDoc().sentenceTheory(sentid);
-                Optional<Spanning> slot0 = getSpanning(st, slot0Start, slot0End, slot0EntityType);
-                Optional<Spanning> slot1 = getSpanning(st, slot1Start, slot1End, slot1EntityType);
-
-                if(slot1.isPresent()){
-                    return MatchInfo.from(target, dt, st, slot0.get(), slot1.get());
-                }
-                else{
-                    return MatchInfo.from(target,dt,st,slot0.get());
-                }
-
+            BilingualDocTheory dt = cachedBiDocTheories.get(docid);
+            SentenceTheory st = dt.getSourceDoc().sentenceTheory(sentid);
+            Optional<Spanning> slot0 = getSpanning(st, slot0Start, slot0End, slot0SpanningType);
+            Optional<Spanning> slot1 = getSpanning(st, slot1Start, slot1End, slot1SpanningType);
+            if (slot1.isPresent()) {
+                return MatchInfo.from(target, dt, st, slot0.get(), slot1.get());
             } else {
-
-                if (!cachedDocTheories.containsKey(docid)) {
-
-                    System.out.println("== try loading serifxml for " + docid);
-                    File docFile = getDocFileUsingCorpusName().orNull();
-                     if(docFile==null){
-                        try {
-                            docFile = PathConverter.getFile(docid);
-                        } catch (Exception e) {
-                            //if everything fails, try reading path to the serifxml from source_lists param
-                            docFile = new File(SourceListsReader.getFullPath(docid));
-                        }
-                     }
-                    System.out.println("docid:\t" + docid + "\tpath:\t" + docFile.getAbsolutePath());
-
-                    SerifXMLLoader loader = null;
-                    boolean loadSerifXMLWithSloppyOffsets =
-                            LearnItConfig.params().getOptionalBoolean("load_serifxml_with_sloppy_offsets").or(false);
-                    if (loadSerifXMLWithSloppyOffsets){
-                        loader = new SerifXMLLoader.Builder().allowSloppyOffsets().build();
-                     }else {
-                        // loader = SerifXMLLoader.createFrom(
-                        //    LearnItConfig.params());
-                        loader = SerifXMLLoader.builderWithDynamicTypes().allowSloppyOffsets().build();
-                    }
-                    DocTheory newDT = loader.loadFrom(docFile);
-                    cachedDocTheories.put(docid, newDT);
-                }
-
-                DocTheory dt = cachedDocTheories.get(docid);
-                SentenceTheory st = dt.sentenceTheory(sentid);
-                Optional<Spanning> slot0 = getSpanning(st, slot0Start, slot0End, slot0EntityType);
-                Optional<Spanning> slot1 = getSpanning(st, slot1Start, slot1End, slot1EntityType);
-
-                if(slot1.isPresent()){
-                    return MatchInfo.from(target, dt, st, slot0.get(), slot1.get());
-                }
-                else{
-                    return MatchInfo.from(target,dt,st,slot0.get());
-                }
+                return MatchInfo.from(target, dt, st, slot0.get());
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null; // TODO: bad fix
-    }
-
-    public MatchInfo ReConstructMatchInfoWithDocTheory(Target target,DocTheory newDT){
-        cachedDocTheories.put(docid, newDT);
-        DocTheory dt = cachedDocTheories.get(docid);
-        SentenceTheory st = dt.sentenceTheory(sentid);
-        Optional<Spanning> slot0 = getSpanning(st, slot0Start, slot0End, slot0EntityType);
-        Optional<Spanning> slot1 = getSpanning(st, slot1Start, slot1End, slot1EntityType);
-
-        if(slot1.isPresent()){
-            return MatchInfo.from(target, dt, st, slot0.get(), slot1.get());
-        }
-        else{
-            return MatchInfo.from(target,dt,st,slot0.get());
+        } else {
+            if (!cachedDocTheories.containsKey(docid)) {
+                String docPath = DocPathResolver.Monolingual.getPath(docid);
+                SerifXMLLoader serifXMLLoader = SerifXMLLoader.builder().build();
+                DocTheory newDT = serifXMLLoader.loadFrom(new File(docPath));
+                cachedDocTheories.put(docid, newDT);
+            }
+            DocTheory dt = cachedDocTheories.get(docid);
+            SentenceTheory st = dt.sentenceTheory(sentid);
+            Optional<Spanning> slot0 = getSpanning(st, slot0Start, slot0End, slot0SpanningType);
+            Optional<Spanning> slot1 = getSpanning(st, slot1Start, slot1End, slot1SpanningType);
+            if (slot1.isPresent()) {
+                return MatchInfo.from(target, dt, st, slot0.get(), slot1.get());
+            } else {
+                return MatchInfo.from(target, dt, st, slot0.get());
+            }
         }
     }
 
-    public Optional<File> getDocFileUsingCorpusName(){
-        File docFile = null;
-        String corpusName = null;
-        try{
-            corpusName = LearnItConfig.get("corpus_name");
-        }catch (MissingRequiredParameter e){
-            return Optional.absent();
-        }
-        if (corpusName.equals("coldstart_cs2016_chinese_mini")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u10/resources/KBP/CS/2016/corpus_chinese_mini/serifxmls/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("coldstart_cs2015")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u42/bmin/runjobs2/expts/experiments/2015CS_trail.v1.no_indoc_split.statRE/serifxml/"
-                            + docid + ".xml");
-            if (!docFile.exists())
-                docFile = new File(
-                        "/nfs/mercury-04/u42/bmin/runjobs2/expts/experiments/2015CS_trail.v1.no_indoc_split.statRE/serifxml/"
-                                + docid + ".sgm.xml");
-        } else if (corpusName.equals("coldstart_cs2015_mini")) {
-            docFile = new File("/nfs/mercury-04/u42/bmin/runjobs2/expts/scripts/2015CS_test_for_2016.bbn2.v1.no_indoc_split.megaDefender.v12.serif20160706_mgCoref.new_actorDB.e2e.with_empty_namelist.df_bolt_parser/serifxml/"
-                    + docid + ".mpdf.serifxml.xml");
-            if (!docFile.exists()) {
-                docFile = new File("/nfs/mercury-04/u42/bmin/runjobs2/expts/scripts/2015CS_test_for_2016.bbn2.v1.no_indoc_split.megaDefender.v12.serif20160706_mgCoref.new_actorDB.e2e.with_empty_namelist.df_bolt_parser/serifxml/"
-                        + docid + ".serifxml.xml");
-            }
-        } else if (corpusName.equals("coldstart_cs2014_mini")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u10/resources/KBP/CS/2014/corpus/mini_corpus/data_for_learnit/serifxml/"
-                            + docid + ".xml");
-            if (!docFile.exists())
-                docFile = new File(
-                        "/nfs/mercury-04/u10/resources/KBP/CS/2014/corpus/mini_corpus/data_for_learnit/serifxml/"
-                                + docid + ".sgm.xml");
-            if (!docFile.exists())
-                docFile = new File(
-                        "/nfs/mercury-04/u10/resources/KBP/CS/2014/corpus/mini_corpus/data_for_learnit/serifxml/"
-                                + docid + ".sgm.xml");
-        } else if (corpusName.equals("coldstart_sf2014_mini")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u10/resources/KBP/SF/2014/mini_corpus/data_for_learnit/serifxml/"
-                            + docid + ".sgm.xml");
-        } else if (corpusName.equals("coldstart_cs2013_mini")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u10/resources/KBP/CS/2013/corpus/mini_corpus/data_for_learnit/serifxml/"
-                            + docid + ".xml");
-        }else if (corpusName.equals("coldstart_sf2013_mini")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u10/resources/KBP/SF/2013/mini_corpus/data_for_learnit/serifxml/"
-                            + docid + ".sgm.xml");
-        } else if (corpusName.equals("coldstart_sf2012_mini")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u10/resources/KBP/SF/2012/mini_corpus/data_for_learnit/serifxml/"
-                            + docid + ".sgm.xml");
-        } else if (corpusName.equals("ere_LDC2015E29_and_LDC2015E68")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/ERE/serifxml/"
-                            + docid + ".xml");
-            if (!docFile.exists())
-                docFile = new File(
-                        "/nfs/mercury-04/u41/learnit/ERE/serifxml/"
-                                + docid + ".mpdf.xml");
-            if (!docFile.exists())
-                docFile = new File(
-                        "/nfs/mercury-04/u41/learnit/ERE/serifxml/"
-                                + docid + ".cmp.txt.xml");
-        } else if (corpusName.equals("ere_event_test_LDC2015E29_and_LDC2015E68")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/ERE.withVerbsAsEventMentions/serifxml/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("ere_LDC2015E29_DEFT_Rich_ERE_English_Training_Annotation_V1")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u42/bmin/everything/projects/ere/data_learnit/serifxml/"
-                            + docid + ".xml");
-            if (!docFile.exists())
-                docFile = new File(
-                        "/nfs/mercury-04/u42/bmin/everything/projects/ere/data_learnit/serifxml/"
-                                + docid + ".mpdf.xml");
-        } else if (corpusName.equals("pdtb_v2")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/pdtb_v2/serifxml/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("pdtb_v2.withVerbsAsEventMentions")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/pdtb_v2.withVerbsAsEventMentions/serifxml/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("red.eventFromAnnotation")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/RED.eventFromAnnotation/serifxml/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("wm_starter")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/WM_starter/serifxml/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("causeex-m5")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/CauseEx-M5/serifxml/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("causeex-m5-pos")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/CauseEx-M5.add_verbs_and_nouns/serifxml/"
-                            + docid + ".xml");
-        } else if (corpusName.equals("wm_m6")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u41/learnit/WM_m6/serifxml/"
-                            + docid + ".serifxml");
-        } else if (LearnItConfig.get("corpus_name")
-                .equals("causeex-m9")) {
-            docFile = new File(
-                    "/nfs/mercury-04/u42/bmin/projects/CauseEx/M9_assessment/relations/learnit/causeex_m9.add_verbs_nouns/serifxml/"
-                            + docid + ".serifxml");
-            if(!docFile.exists()) {
-                docFile = new File(
-                        "/nfs/mercury-04/u42/bmin/projects/CauseEx/M9_assessment/relations/learnit/causeex_m9.add_verbs_nouns/serifxml/"
-                                + docid + ".xml");
-            }
-        }
-        return Optional.fromNullable(docFile);
-    }
 
-    public MatchInfoDisplay reconstructMatchInfoDisplay(Target target) {
+    public MatchInfoDisplay reconstructMatchInfoDisplay(Target target) throws IOException {
         return MatchInfoDisplay.fromMatchInfo(reconstructMatchInfo(target), Optional.absent());
     }
 
     public InstanceIdentifier reversed() {
         return new InstanceIdentifier(docid, sentid,
-                slot1Start, slot1End,slot1SpanningType, slot1MentionType, slot1EntityType, isSlotBestNameTypeName.get(1),
-                slot0Start, slot0End,slot0SpanningType ,slot0MentionType, slot0EntityType, isSlotBestNameTypeName.get(0));
+                slot1Start, slot1End, slot1SpanningType, slot1MentionType, slot1EntityType, isSlotBestNameTypeName.get(1),
+                slot0Start, slot0End, slot0SpanningType, slot0MentionType, slot0EntityType, isSlotBestNameTypeName.get(0));
     }
 
     public InstanceIdentifier getCopy() {
         return new InstanceIdentifier(docid, sentid,
-                slot0Start, slot0End,slot0SpanningType, slot0MentionType, slot0EntityType, isSlotBestNameTypeName.get(0),
-                slot1Start, slot1End,slot1SpanningType, slot1MentionType, slot1EntityType, isSlotBestNameTypeName.get(1));
+                slot0Start, slot0End, slot0SpanningType, slot0MentionType, slot0EntityType, isSlotBestNameTypeName.get(0),
+                slot1Start, slot1End, slot1SpanningType, slot1MentionType, slot1EntityType, isSlotBestNameTypeName.get(1));
     }
 
     @Override
@@ -651,7 +576,8 @@ public class InstanceIdentifier {
 
     @Override
     public int hashCode() {
-        int result = docid.hashCode();
+        int result = 0;
+        result = 31 * result + docid.hashCode();
         result = 31 * result + sentid;
         result = 31 * result + slot0Start;
         result = 31 * result + slot0End;
@@ -664,6 +590,7 @@ public class InstanceIdentifier {
         result = 31 * result + isSlotBestNameTypeName.hashCode();
         result = 31 * result + slot0SpanningType.hashCode();
         result = 31 * result + slot1SpanningType.hashCode();
+
         return result;
     }
 
@@ -692,11 +619,58 @@ public class InstanceIdentifier {
                 + ", slot1End=" + slot1End + "]";
     }
 
+    @Override
+    public int compareTo(InstanceIdentifier that) {
+        return Integer.compare(this.hashCode(), that.hashCode());
+    }
+
     public enum SpanningType {
         EventMention,
         Mention,
         ValueMention,
         Empty,
         Unknown
+    }
+
+    public InstanceIdentifier getLowerRankInstanceIdentifierLeft() {
+        return new InstanceIdentifier(
+                this.getDocid(),
+                this.getSentid(),
+                this.getSlot0Start(),
+                this.getSlot0End(),
+                this.getSlot0SpanningType(),
+                this.getSlotMentionType(0),
+                this.getSlot0SpanningType().name(),
+                this.isSlotBestNameTypeName(0),
+                -1,
+                -1,
+                InstanceIdentifier.SpanningType.Empty,
+                Optional.absent(),
+                "NA",
+                false
+        );
+    }
+
+    public InstanceIdentifier getLowerRankInstanceIdentifierRight() {
+        return new InstanceIdentifier(
+                this.getDocid(),
+                this.getSentid(),
+                this.getSlot1Start(),
+                this.getSlot1End(),
+                this.getSlot1SpanningType(),
+                this.getSlotMentionType(1),
+                this.getSlot1SpanningType().name(),
+                this.isSlotBestNameTypeName(1),
+                -1,
+                -1,
+                InstanceIdentifier.SpanningType.Empty,
+                Optional.absent(),
+                "NA",
+                false
+        );
+    }
+
+    public boolean isUnaryInstanceIdentifier() {
+        return this.getSlot1SpanningType().equals(SpanningType.Empty);
     }
 }

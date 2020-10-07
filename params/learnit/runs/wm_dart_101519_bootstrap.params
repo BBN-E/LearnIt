@@ -1,0 +1,44 @@
+# Template file for learnit params
+INCLUDE ../user.params
+
+# learnit_root: /home/hqiu/ld100/learnit
+
+# learnit_root: /nfs/raid87/u15/users/jcai/hume_repos/other-learnit/learnit
+learnit_data_dir: /nfs/raid88/u10/users/hqiu/learnit_data/wm_dart_101519_vexpt1
+source_lists: %learnit_data_dir%/source_lists
+corpus_dir: %source_lists%
+corpus_name: wm_dart_101519_vexpt1
+
+domain_root: %learnit_root%/inputs/domains/WM_DEMO
+
+languages:English
+max_prop_depth:2
+max_regexp_pattern_words:5
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 2
+max_unary_prop_depth:1
+max_binary_prop_depth:2
+
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+linux_queue: nongale-sl6
+mappings_list_batches: 1
+
+
+## similarity related params
+similarities_dir: %learnit_data_dir%/learnit_similarity_data
+##
+
+
+#stages_to_run:mappings-only,unary_event_decoding,binary_event_event_decoding
+stages_to_run:mappings-only
+use_human_label: false
+bert_npz_list:/home/hqiu/ld100/Hume_pipeline_int/Hume/expts/wm_dart_bert.060520/bert/bert_npz.list
+
+aggregated_frequency_filter_pattern_max: -1
+aggregated_frequency_filter_pattern_min: 50
+
+debug_extraction: false

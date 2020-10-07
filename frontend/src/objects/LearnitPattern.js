@@ -3,8 +3,7 @@ import LearnItObservation from '@/objects/LearnItObservation.js';
 class normalizedPattern extends LearnItObservation {
 	constructor(originalObjJson, originalScoreTable) {
 		const key = JSON.stringify(originalObjJson);
-		const displayableStr = originalObjJson.toIDString;
-		super(key, originalObjJson, displayableStr, originalScoreTable);
+		super(key, originalObjJson, originalObjJson.toIDString, originalObjJson.toPrettyString.replace("[OTH]",""), originalScoreTable);
 	}
 	static fromJson(originalObjJson, originalScoreTable) {
 		return new normalizedPattern(originalObjJson, originalScoreTable);

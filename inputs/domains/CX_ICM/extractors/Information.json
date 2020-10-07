@@ -1,0 +1,1287 @@
+[ "com.bbn.akbc.neolearnit.scoring.TargetAndScoreTables", {
+  "startDate" : [ "java.util.Date", 1573761368686 ],
+  "seedScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.SeedScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 325
+  } ],
+  "patternScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.PatternScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate hacked) (args (argument (role <obj>) (mention (headword emails) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]hacked[0] <obj> emails[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate compiled) (args (argument (role <obj>) (mention (headword dossier) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]compiled[0] <obj> dossier[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate releasing) (args (argument (role <obj>) (mention (headword emails) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]releasing[0] <obj> emails[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate collect) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]collect[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate provided) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]provided[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate gather) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]gather[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate spread) (args (argument (role <sub>) (mention (headword media) (acetype ORG)))))",
+        "toPrettyString" : " [ media[ORG] <sub> [v]spread[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate leak) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]leak[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword contact) (regex (regex (re (text (string \"further information\"))))))",
+        "toPrettyString" : " further information contact[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate disclosing) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]disclosing[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate declassify) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]declassify[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate discrediting) (args (argument (role <obj>) (mention (acetype PER)))))",
+        "toPrettyString" : " [ [v]discrediting[0] <obj> [PER] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate divulged) (args (argument (role <sub>) (mention (acetype PER)))))",
+        "toPrettyString" : " [ [PER] <sub> [v]divulged[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword warfare) (regex (regex (re (text (string \"information\"))))))",
+        "toPrettyString" : " information warfare[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate discredit) (args (argument (role <obj>) (mention (acetype GPE)))))",
+        "toPrettyString" : " [ [v]discredit[0] <obj> [GPE] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate obtaining) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]obtaining[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate leaking) (args (argument (role <sub>) (mention (acetype PER)))))",
+        "toPrettyString" : " [ [PER] <sub> [v]leaking[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(nprop (return slot0) (predicate dissemination) (args (argument (role of) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [n]dissemination[0] of information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate disseminating) (args (argument (role <sub>) (mention (acetype PER)))))",
+        "toPrettyString" : " [ [PER] <sub> [v]disseminating[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate revealed) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]revealed[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate receive) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]receive[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate gathering) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]gathering[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate stolen) (args (argument (role <obj>) (mention (headword emails) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]stolen[0] <obj> emails[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate disseminate) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]disseminate[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate researching) (args (argument (role <sub>) (mention (acetype PER)))))",
+        "toPrettyString" : " [ [PER] <sub> [v]researching[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword information))",
+        "toPrettyString" : " information[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate divulge) (args (argument (role <sub>) (mention (acetype PER)))))",
+        "toPrettyString" : " [ [PER] <sub> [v]divulge[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword collection) (regex (regex (re (text (string \"intelligence\"))))))",
+        "toPrettyString" : " intelligence collection[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate hacking) (args (argument (role <sub>) (mention (headword russians) (acetype PER)))))",
+        "toPrettyString" : " [ russians[PER] <sub> [v]hacking[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword declassification))",
+        "toPrettyString" : " declassification[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate hack) (args (argument (role <sub>) (mention (acetype GPE)))))",
+        "toPrettyString" : " [ [GPE] <sub> [v]hack[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate obtain) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]obtain[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate compromising) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]compromising[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate writing) (args (argument (role <obj>) (mention (acetype OTH)))))",
+        "toPrettyString" : " [ [v]writing[0] <obj> [OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate compiling) (args (argument (role <sub>) (mention (acetype PER)))))",
+        "toPrettyString" : " [ [PER] <sub> [v]compiling[0] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate spreading) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]spreading[0] <obj> information[OTH] ]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword leaks))",
+        "toPrettyString" : " leaks[0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(vprop (return slot0) (predicate leaked) (args (argument (role <obj>) (mention (headword information) (acetype OTH)))))",
+        "toPrettyString" : " [ [v]leaked[0] <obj> information[OTH] ]"
+      } ] ] ],
+      "valList" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 56.0,
+        "confidenceDenominator" : 56.0,
+        "frequency" : 56,
+        "knownFrequency" : 53,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 53.199999999999996,
+        "fp" : 2.8000000000000025,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 24.0,
+        "confidenceDenominator" : 24.0,
+        "frequency" : 24,
+        "knownFrequency" : 23,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 22.799999999999997,
+        "fp" : 1.200000000000001,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 11.0,
+        "confidenceDenominator" : 11.0,
+        "frequency" : 11,
+        "knownFrequency" : 10,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 10.45,
+        "fp" : 0.5500000000000005,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 26.0,
+        "confidenceDenominator" : 26.0,
+        "frequency" : 26,
+        "knownFrequency" : 25,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 24.7,
+        "fp" : 1.3000000000000012,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 59.0,
+        "confidenceDenominator" : 59.0,
+        "frequency" : 59,
+        "knownFrequency" : 56,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 56.05,
+        "fp" : 2.950000000000003,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 12.0,
+        "confidenceDenominator" : 12.0,
+        "frequency" : 12,
+        "knownFrequency" : 11,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 11.399999999999999,
+        "fp" : 0.6000000000000005,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 3.0,
+        "confidenceDenominator" : 3.0,
+        "frequency" : 3,
+        "knownFrequency" : 3,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 2.8499999999999996,
+        "fp" : 0.15000000000000013,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 21.0,
+        "confidenceDenominator" : 21.0,
+        "frequency" : 21,
+        "knownFrequency" : 20,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 19.95,
+        "fp" : 1.050000000000001,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.05,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 0.0,
+        "confidenceDenominator" : 0.0,
+        "frequency" : 97,
+        "knownFrequency" : 0,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 0.0,
+        "fp" : 0.0,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 0,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 48.0,
+        "confidenceDenominator" : 48.0,
+        "frequency" : 48,
+        "knownFrequency" : 46,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 45.599999999999994,
+        "fp" : 2.400000000000002,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 13.0,
+        "confidenceDenominator" : 13.0,
+        "frequency" : 13,
+        "knownFrequency" : 12,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 12.35,
+        "fp" : 0.6500000000000006,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 98.0,
+        "confidenceDenominator" : 98.0,
+        "frequency" : 98,
+        "knownFrequency" : 93,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 93.1,
+        "fp" : 4.900000000000004,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 10.0,
+        "confidenceDenominator" : 10.0,
+        "frequency" : 10,
+        "knownFrequency" : 10,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 9.5,
+        "fp" : 0.5000000000000004,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 64.0,
+        "confidenceDenominator" : 64.0,
+        "frequency" : 64,
+        "knownFrequency" : 61,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 60.8,
+        "fp" : 3.200000000000003,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 55.0,
+        "confidenceDenominator" : 55.0,
+        "frequency" : 55,
+        "knownFrequency" : 52,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 52.25,
+        "fp" : 2.7500000000000027,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 22.0,
+        "confidenceDenominator" : 22.0,
+        "frequency" : 22,
+        "knownFrequency" : 21,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 20.9,
+        "fp" : 1.100000000000001,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 318.0,
+        "confidenceDenominator" : 318.0,
+        "frequency" : 318,
+        "knownFrequency" : 302,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 302.09999999999997,
+        "fp" : 15.900000000000015,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 77.0,
+        "confidenceDenominator" : 77.0,
+        "frequency" : 77,
+        "knownFrequency" : 73,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 73.14999999999999,
+        "fp" : 3.850000000000003,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 37.0,
+        "confidenceDenominator" : 37.0,
+        "frequency" : 37,
+        "knownFrequency" : 35,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 35.15,
+        "fp" : 1.8500000000000016,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 2.0,
+        "confidenceDenominator" : 2.0,
+        "frequency" : 2,
+        "knownFrequency" : 2,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 1.9,
+        "fp" : 0.10000000000000009,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 11.0,
+        "confidenceDenominator" : 11.0,
+        "frequency" : 11,
+        "knownFrequency" : 10,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 10.45,
+        "fp" : 0.5500000000000005,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 94.0,
+        "confidenceDenominator" : 94.0,
+        "frequency" : 94,
+        "knownFrequency" : 89,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 89.3,
+        "fp" : 4.700000000000005,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 10.0,
+        "confidenceDenominator" : 10.0,
+        "frequency" : 10,
+        "knownFrequency" : 10,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 9.5,
+        "fp" : 0.5000000000000004,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 73.0,
+        "confidenceDenominator" : 73.0,
+        "frequency" : 73,
+        "knownFrequency" : 69,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 69.35,
+        "fp" : 3.650000000000003,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 102.0,
+        "confidenceDenominator" : 102.0,
+        "frequency" : 102,
+        "knownFrequency" : 97,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 96.89999999999999,
+        "fp" : 5.100000000000005,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 0.0,
+        "confidenceDenominator" : 0.0,
+        "frequency" : 0,
+        "knownFrequency" : 0,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 0.0,
+        "fp" : 0.0,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 0,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 51.0,
+        "confidenceDenominator" : 51.0,
+        "frequency" : 51,
+        "knownFrequency" : 48,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 48.449999999999996,
+        "fp" : 2.5500000000000025,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 6.0,
+        "confidenceDenominator" : 6.0,
+        "frequency" : 6,
+        "knownFrequency" : 6,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 5.699999999999999,
+        "fp" : 0.30000000000000027,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 18.0,
+        "confidenceDenominator" : 18.0,
+        "frequency" : 18,
+        "knownFrequency" : 17,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 17.099999999999998,
+        "fp" : 0.9000000000000008,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 85.0,
+        "confidenceDenominator" : 85.0,
+        "frequency" : 85,
+        "knownFrequency" : 81,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 80.75,
+        "fp" : 4.2500000000000036,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 79.0,
+        "confidenceDenominator" : 79.0,
+        "frequency" : 79,
+        "knownFrequency" : 75,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 75.05,
+        "fp" : 3.9500000000000037,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 26.0,
+        "confidenceDenominator" : 26.0,
+        "frequency" : 26,
+        "knownFrequency" : 25,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 24.7,
+        "fp" : 1.3000000000000012,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 0.0,
+        "confidenceDenominator" : 0.0,
+        "frequency" : 72,
+        "knownFrequency" : 0,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 0.0,
+        "fp" : 0.0,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 0,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 145.0,
+        "confidenceDenominator" : 145.0,
+        "frequency" : 145,
+        "knownFrequency" : 138,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 137.75,
+        "fp" : 7.250000000000006,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 39.0,
+        "confidenceDenominator" : 39.0,
+        "frequency" : 39,
+        "knownFrequency" : 37,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 37.05,
+        "fp" : 1.9500000000000017,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 10.0,
+        "confidenceDenominator" : 10.0,
+        "frequency" : 10,
+        "knownFrequency" : 10,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 9.5,
+        "fp" : 0.5000000000000004,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 73.0,
+        "confidenceDenominator" : 73.0,
+        "frequency" : 73,
+        "knownFrequency" : 69,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 69.35,
+        "fp" : 3.650000000000003,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 34,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 52.0,
+        "confidenceDenominator" : 52.0,
+        "frequency" : 52,
+        "knownFrequency" : 49,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 49.4,
+        "fp" : 2.6000000000000023,
+        "fn" : "NaN",
+        "tn" : "NaN",
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 228,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ] ] ],
+      "entries" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 0,
+        "value" : 0
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 1,
+        "value" : 1
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 2,
+        "value" : 2
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 3,
+        "value" : 3
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 4,
+        "value" : 4
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 5,
+        "value" : 5
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 6,
+        "value" : 6
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 7,
+        "value" : 7
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 8,
+        "value" : 8
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 9,
+        "value" : 9
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 10,
+        "value" : 10
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 11,
+        "value" : 11
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 12,
+        "value" : 12
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 13,
+        "value" : 13
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 14,
+        "value" : 14
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 15,
+        "value" : 15
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 16,
+        "value" : 16
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 17,
+        "value" : 17
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 18,
+        "value" : 18
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 19,
+        "value" : 19
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 20,
+        "value" : 20
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 21,
+        "value" : 21
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 22,
+        "value" : 22
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 23,
+        "value" : 23
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 24,
+        "value" : 24
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 25,
+        "value" : 25
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 26,
+        "value" : 26
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 27,
+        "value" : 27
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 28,
+        "value" : 28
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 29,
+        "value" : 29
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 30,
+        "value" : 30
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 31,
+        "value" : 31
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 32,
+        "value" : 32
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 33,
+        "value" : 33
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 34,
+        "value" : 34
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 35,
+        "value" : 35
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 36,
+        "value" : 36
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 37,
+        "value" : 37
+      } ] ] ]
+    } ],
+    "iteration" : 131
+  } ],
+  "tripleScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.TripleScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 0
+  } ],
+  "iteration" : 325,
+  "goodSeedPrior" : "Infinity",
+  "totalConfidenceDenominator" : 0.0,
+  "stage" : "initial",
+  "params" : null,
+  "experimentName" : "default"
+} ]

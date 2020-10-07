@@ -29,7 +29,7 @@ public class HTMLVisualizationObserver extends ExternalAnnotationBuilder {
         this.outputHtmlPath = outputHtmlPath;
     }
 
-    public String getSpanningType(SentenceTheory st, int start, int end, String slotType) {
+    public String getSpanningType(SentenceTheory st, int start, int end, InstanceIdentifier.SpanningType slotType) {
         if (this.labeledSpanTypes.getOrDefault(st, new HashMap<>()).containsKey(new Pair<>(start, end))) {
             return String.join(",", this.labeledSpanTypes.get(st).get(new Pair<>(start, end)));
         } else {
@@ -75,14 +75,14 @@ public class HTMLVisualizationObserver extends ExternalAnnotationBuilder {
             if (instanceIdentifier.getSlot1Start() != -1 && instanceIdentifier.getSlot1End() != -1) {
                 final SentenceTheory sentenceTheory = instanceIdentifierSentenceTheoryMap.get(instanceIdentifier);
                 final TokenSequence tokenSequence = sentenceTheory.tokenSequence();
-                final EventMention leftEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlotEntityType(0)).get();
-                final EventMention rightEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlotEntityType(1)).get();
+                final EventMention leftEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType()).get();
+                final EventMention rightEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlot1SpanningType()).get();
 
                 final int leftHeadWordTokenIdx = leftEventMention.anchorNode().head().tokenSpan().endTokenIndexInclusive();
                 final int rightHeadWordTokenIdx = rightEventMention.anchorNode().head().tokenSpan().endTokenIndexInclusive();
 
-                final String leftType = this.getSpanningType(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlotEntityType(0));
-                final String rightType = this.getSpanningType(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlotEntityType(1));
+                final String leftType = this.getSpanningType(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType());
+                final String rightType = this.getSpanningType(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlot1SpanningType());
                 for (LabelPattern labelPattern : this.inMemoryAnnotationStorage.lookupInstanceIdentifierAnnotation(instanceIdentifier)) {
                     Token leftHead = tokenSequence.token(leftHeadWordTokenIdx);
                     Token rightHead = tokenSequence.token(rightHeadWordTokenIdx);

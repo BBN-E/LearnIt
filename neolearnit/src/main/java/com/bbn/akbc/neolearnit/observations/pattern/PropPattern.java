@@ -1,16 +1,18 @@
 package com.bbn.akbc.neolearnit.observations.pattern;
 
-import com.bbn.bue.common.StringUtils;
-import com.bbn.bue.common.symbols.Symbol;
 import com.bbn.akbc.neolearnit.common.Clusters;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
 import com.bbn.akbc.neolearnit.common.targets.Target;
 import com.bbn.akbc.neolearnit.observations.pattern.restriction.Restriction;
+import com.bbn.bue.common.StringUtils;
+import com.bbn.bue.common.symbols.Symbol;
+import com.bbn.bue.sexp.Sexp;
 import com.bbn.serif.patterns.ArgumentPattern;
+import com.bbn.serif.patterns.LabelPatternReturn;
 import com.bbn.serif.patterns.Pattern;
+import com.bbn.serif.patterns.PatternReturn;
 import com.bbn.serif.theories.Proposition;
 import com.bbn.serif.theories.Proposition.PredicateType;
-import com.bbn.serif.theories.SynNode;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -21,11 +23,7 @@ import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Ordering;
 import com.google.common.collect.Sets;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @JsonTypeInfo(use=JsonTypeInfo.Id.MINIMAL_CLASS, include=JsonTypeInfo.As.PROPERTY, property="@class")
 public class PropPattern extends MonolingualPattern implements BrandyablePattern {
@@ -63,6 +61,17 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 			@JsonProperty("args") List<PropArgObservation> args) {
 		final ImmutableList<PropArgObservation> orderedArgs = Ordering.natural().onResultOf(PropArgObservation.ByRole).immutableSortedCopy( args );
 		return new PropPattern(language, PredicateType.from(Symbol.from(predicateType)), predicates, orderedArgs);
+	}
+
+	public static PropPattern from(com.bbn.serif.patterns.PropPattern brandyPropPattern) {
+		ArrayList<PropArgObservation> learnitArgs = new ArrayList<>();
+		for (ArgumentPattern argPattern : brandyPropPattern.getArgs()) {
+			learnitArgs.add(PropArgObservation.from(argPattern));
+		}
+		return from("en",
+				brandyPropPattern.getPredicateType().toString(),
+				brandyPropPattern.getPredicates(),
+				learnitArgs);
 	}
 
 	public ImmutableSet<Symbol> getPredicates() {
@@ -152,7 +161,7 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 	@Override
 	public Optional<? extends LearnitPattern> getInitializationVersion() {
 		if (LearnItConfig.optionalParamTrue("only_depth_1_props_at_initialization") && this.depth() > 1) {
-			return Optional.<LearnitPattern>absent();
+			return Optional.absent();
 		} else {
 			return Optional.of(this);
 		}
@@ -210,7 +219,8 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 	@Override
 	public Set<Symbol> getLexicalItems() {
 		final ImmutableSet.Builder<Symbol> ret = ImmutableSet.builder();
-
+		// @hqiu Took this off for not interfering overlap in search
+//		ret.add(Symbol.from(this.predType.name().asString()));
 		ret.addAll(this.getPredicates());
 		for (final PropArgObservation arg : this.getArgs()) {
 			ret.addAll(arg.getLexicalItems());
@@ -282,6 +292,80 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 
 	}
 
+	// TODO : why am I doing a fuzzy match on the predicates?
+	public boolean matchesPattern(final LearnitPattern p) {
+		if (!(p instanceof PropPattern))
+			return false;
+
+		final PropPattern prop = (PropPattern) p;
+
+		//if (!prop.getPredicateType().toString().startsWith(this.getPredicates().toString()))
+		//    return false;
+		// TODO : I believe the above is a bug, hence I replaced with the following
+		if (!prop.getPredicateType().toString().equals(this.getPredicateType().toString())) {
+			return false;
+		}
+
+		for (Symbol predicate : prop.getPredicates()) {
+			if (!predicates.contains(predicate) && !hasOverlappingWildcardPred(predicate))
+				return false;
+		}
+
+		//Try to match up the args. If symmetric, try reversing the args and matching
+		// TODO : there is no checking of symmetric yet. Is this necessary?
+		return matchesArgs(prop.getArgs(), this.getArgs());
+	}
+
+	// if the incoming 'predicate' starts with any of my predicates
+	private boolean hasOverlappingWildcardPred(final Symbol predicate) {
+		for (Symbol wildcardPred : this.getPredicates()) {
+			if (predicate.toString().startsWith(wildcardPred.toString()))
+				return true;
+		}
+		return false;
+	}
+
+	private boolean matchesArgs(final List<PropPattern.PropArgObservation> args1, final List<PropPattern.PropArgObservation> args2) {
+		final ImmutableSet<PropArgObservation> set1 = ImmutableSet.copyOf(args1);
+		final ImmutableSet<PropArgObservation> set2 = ImmutableSet.copyOf(args2);
+
+		return (set1.size() == set2.size()) && set1.containsAll(set2);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (getClass() != obj.getClass())
+			return false;
+		PropPattern other = (PropPattern) obj;
+		if (args == null) {
+			if (other.args != null)
+				return false;
+		} else if (!args.equals(other.args))
+			return false;
+		if (predType == null) {
+			if (other.predType != null)
+				return false;
+		} else if (!predType.equals(other.predType))
+			return false;
+		if (predicates == null) {
+			return other.predicates == null;
+		} else return predicates.equals(other.predicates);
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result;
+		result = ((args == null) ? 0 : args.hashCode());
+		result = prime * result
+				+ ((predType == null) ? 0 : predType.hashCode());
+		result = prime * result
+				+ ((predicates == null) ? 0 : predicates.hashCode());
+		return result;
+	}
+
 	public static class PropArgObservation {
 		private final Symbol role;
 		private final Optional<PropPattern> prop;	// is present when this arg is itself a Proposition
@@ -342,6 +426,47 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 				@JsonProperty("slot") Integer slot,
 				@JsonProperty("prop") PropPattern prop) {
 			return new PropArgObservation(role, slot, prop);
+		}
+
+		private static PropArgObservation from(ArgumentPattern argumentPattern) {
+			if (argumentPattern.getRoles().size() != 1) {
+				throw new NonConvertibleException(
+						"Brandy ArgumentPatterns being converted into LearnIt PropArgObservations must have exactly one role");
+			}
+			Pattern brandyPattern = argumentPattern.getPattern();
+			PropPattern propPattern;
+			if (brandyPattern == null) {
+				// This is just an empty argument pattern which does translate well
+				// into PropArgObservation
+				propPattern = null;
+			} else if (brandyPattern instanceof com.bbn.serif.patterns.PropPattern) {
+				// Create LearnIt prop pattern from Brandy PropPattern
+				propPattern = PropPattern.from(
+						(com.bbn.serif.patterns.PropPattern)brandyPattern);
+			} else {
+				throw new NonConvertibleException(
+						"Brandy ArgumentPatterns being converted into LearnIt PropArgObservations must point to only Brandy PropPatterns");
+			}
+
+			Integer slot = null;
+			PatternReturn patternReturn = argumentPattern.getPatternReturn();
+			if (patternReturn != null && !(patternReturn instanceof LabelPatternReturn)) {
+				throw new NonConvertibleException(
+						"Brandy ArgumentPatterns being converted into LearnIt PropArgObservations must only have simple return values e.g. (return slot1)");
+			}
+			if (patternReturn != null) {
+				LabelPatternReturn lpr = (LabelPatternReturn) patternReturn;
+				Symbol label = lpr.getLabel();
+				if (label.equalTo(Symbol.from("slot1")))
+					slot = 1;
+				else if (label.equalTo(Symbol.from("slot2")))
+					slot = 2;
+				else
+					throw new NonConvertibleException(
+							"Brandy ArgumentPatterns being converted into LearnIt PropArgObservations must only have return labels 'slot1' or 'slot2'");
+			}
+
+			return from(argumentPattern.getRoles().get(0), slot, propPattern);
 		}
 
 		public Optional<PropPattern> getProp() {
@@ -448,9 +573,13 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
         // - the Predicates of the Proposition
         // - roles of the Proposition's args which are not enclosed in < .. >
 		public Set<Symbol> getLexicalItems() {
-			Set<Symbol> result = new HashSet<Symbol>();
-            if (!this.getRole().toString().startsWith("<"))
-			    result.add(this.getRole());
+			Set<Symbol> result = new HashSet<>();
+			String roleString = this.getRole().asString();
+			for(String token :roleString.split(" ")){
+				if (!token.startsWith("<") && !token.equals("trigger")) {
+					result.add(Symbol.from(token));
+				}
+			}
 			if (this.getProp().isPresent()) {
 				result.addAll(this.getProp().get().getLexicalItems());
 			}
@@ -494,11 +623,8 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 			} else if (!role.equals(other.role))
 				return false;
 			if (slot == null) {
-				if (other.slot != null)
-					return false;
-			} else if (!slot.equals(other.slot))
-				return false;
-			return true;
+				return other.slot == null;
+			} else return slot.equals(other.slot);
 		}
 
 		@Override
@@ -551,85 +677,6 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 		}
 	}	// end of PropArgObservation class
 
-	// if the incoming 'predicate' starts with any of my predicates
-    private boolean hasOverlappingWildcardPred(final Symbol predicate) {
-        for (Symbol wildcardPred : this.getPredicates()) {
-            if (predicate.toString().startsWith(wildcardPred.toString()))
-                return true;
-        }
-        return false;
-    }
-
-    private boolean matchesArgs(final List<PropPattern.PropArgObservation> args1, final List<PropPattern.PropArgObservation> args2) {
-    	final ImmutableSet<PropArgObservation> set1 = ImmutableSet.copyOf(args1);
-    	final ImmutableSet<PropArgObservation> set2 = ImmutableSet.copyOf(args2);
-
-    	return (set1.size() == set2.size()) && set1.containsAll(set2);
-    }
-
-    // TODO : why am I doing a fuzzy match on the predicates?
-    public boolean matchesPattern(final LearnitPattern p) {
-        if (!(p instanceof PropPattern))
-            return false;
-
-        final PropPattern prop = (PropPattern)p;
-
-        //if (!prop.getPredicateType().toString().startsWith(this.getPredicates().toString()))
-        //    return false;
-        // TODO : I believe the above is a bug, hence I replaced with the following
-        if(!prop.getPredicateType().toString().equals(this.getPredicateType().toString())) {
-        	return false;
-        }
-
-        for (Symbol predicate : prop.getPredicates()) {
-            if (!predicates.contains(predicate) && !hasOverlappingWildcardPred(predicate))
-                return false;
-        }
-
-        //Try to match up the args. If symmetric, try reversing the args and matching
-        // TODO : there is no checking of symmetric yet. Is this necessary?
-        if (!matchesArgs(prop.getArgs(), this.getArgs())) return false;
-
-        return true;
-    }
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result;
-		result = ((args == null) ? 0 : args.hashCode());
-		result = prime * result
-				+ ((predType == null) ? 0 : predType.hashCode());
-		result = prime * result
-				+ ((predicates == null) ? 0 : predicates.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (getClass() != obj.getClass())
-			return false;
-		PropPattern other = (PropPattern) obj;
-		if (args == null) {
-			if (other.args != null)
-				return false;
-		} else if (!args.equals(other.args))
-			return false;
-		if (predType == null) {
-			if (other.predType != null)
-				return false;
-		} else if (!predType.equals(other.predType))
-			return false;
-		if (predicates == null) {
-			if (other.predicates != null)
-				return false;
-		} else if (!predicates.equals(other.predicates))
-			return false;
-		return true;
-	}
-
 	@Override
 	public String toString() {
 		return "PropObservation [language=" + language + " predType=" + predType + ", predicates="
@@ -637,6 +684,7 @@ public class PropPattern extends MonolingualPattern implements BrandyablePattern
 	}
 
 	@Override
+	@JsonProperty
 	public String toPrettyString() {
 		return toPrettyString(0);
 	}

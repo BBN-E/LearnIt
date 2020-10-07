@@ -13,6 +13,10 @@ import com.bbn.akbc.neolearnit.observers.instance.matchinfo.MatchInfoDisplayObse
 import com.bbn.akbc.neolearnit.observers.instance.pattern.Binary.PropObserver;
 import com.bbn.akbc.neolearnit.observers.instance.pattern.Binary.TextBeforeAfterSlotsObserver;
 import com.bbn.akbc.neolearnit.observers.instance.pattern.Binary.TextEntityTypeBetweenSlotsObserver;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.SerifPatternObserver;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.EventMentionNounPhraseObserver;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.UnaryHeadWordPOSTagObsever;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.UnaryPropObserver;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
@@ -50,6 +54,8 @@ public class BilingualExtractionModule {
 			UnaryObsBuilder.withObserver(new MatchInfoDisplayObserver(matchDisplayRecorder));
 		}
 
+		binaryObservers = binaryObsBuilder.build();
+		/*
 		binaryObservers = binaryObsBuilder
 			.withObserver(new SeedObserver(seedRecorder))
 			.withObserver(new PropObserver(observationRecorder, primaryLanguage, LearnItConfig.getInt("max_prop_depth")))
@@ -60,7 +66,18 @@ public class BilingualExtractionModule {
 			.withObserver(new TextEntityTypeBetweenSlotsObserver(observationRecorder, secondaryLanguage, LearnItConfig.getInt("max_regexp_pattern_words")))
 			.withObserver(new TextBeforeAfterSlotsObserver(observationRecorder, secondaryLanguage, LearnItConfig.getInt("max_regexp_pattern_words")))
 			.build();
-		unaryObservers = UnaryObsBuilder.build();
+			*/
+
+		unaryObservers = UnaryObsBuilder
+				.withObserver(new SeedObserver(seedRecorder))
+				.withObserver(new UnaryHeadWordPOSTagObsever(observationRecorder, primaryLanguage))
+				//.withObserver(new UnaryPropObserver(observationRecorder, primaryLanguage))
+				//.withObserver(new EventMentionNounPhraseObserver(observationRecorder,primaryLanguage))
+				.withObserver(new UnaryHeadWordPOSTagObsever(observationRecorder, secondaryLanguage)) // for foreign lang
+				//.withObserver(new UnaryPropObserver(observationRecorder, secondaryLanguage)) // for foreign lang
+				//.withObserver(new EventMentionNounPhraseObserver(observationRecorder,secondaryLanguage)) // for foreign lang
+				.withObserver(new SerifPatternObserver(observationRecorder,primaryLanguage,LearnItConfig.getInt("max_unary_prop_depth"),LearnItConfig.getInt("max_binary_prop_depth"),LearnItConfig.getInt("max_regexp_pattern_words")))
+				.build();
 	}
 
 	public BilingualDocTheoryInstanceLoader getDocTheoryLoader(Target target) {

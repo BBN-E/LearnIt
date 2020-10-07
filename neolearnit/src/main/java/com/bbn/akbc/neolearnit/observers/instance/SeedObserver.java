@@ -15,12 +15,10 @@ public class SeedObserver extends AbstractInstanceIdObserver<Seed> {
 	@Override
 	public void observe(MatchInfo match) {
 		for (String language : match.getAvailableLanguages()) {
-			this.record(match, Seed.from(match.getLanguageMatch(language), match.getTarget().isSymmetric()));
+			Seed seed = Seed.from(match.getLanguageMatch(language), match.getTarget().isSymmetric());
+//			System.out.println("Seed:\t" + seed.toIDString());
 
-			/* for debug only */
-//			Seed seed = Seed.from(match.getLanguageMatch(language), match.getTarget().isSymmetric());
-//			System.out.println("observed seed: " + seed.toIDString());
-			//
+			this.record(match, seed);
 		}
 	}
 

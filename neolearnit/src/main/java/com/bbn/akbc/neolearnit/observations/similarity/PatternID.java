@@ -65,11 +65,13 @@ public class PatternID extends LearnItObservation{
     }
 
     @Override
+    @JsonProperty
     public String toIDString(){
         return this.getPatternIDString();
     }
 
     @Override
+    @JsonProperty
     public String toPrettyString(){
         return this.getNormalizedString();
     }

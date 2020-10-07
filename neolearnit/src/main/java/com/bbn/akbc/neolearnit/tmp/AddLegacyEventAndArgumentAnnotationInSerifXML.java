@@ -3,8 +3,6 @@ package com.bbn.akbc.neolearnit.tmp;
 import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
 import com.bbn.akbc.neolearnit.common.util.SourceListsReader;
-import com.bbn.akbc.neolearnit.storage.StorageUtils;
-import com.bbn.akbc.neolearnit.util.AddEventMentionFromInstanceIdentifier;
 import com.bbn.serif.io.SerifXMLLoader;
 import com.bbn.serif.theories.DocTheory;
 import com.bbn.serif.theories.SentenceTheory;
@@ -18,7 +16,7 @@ import com.google.common.base.Optional;
 import com.google.common.io.Files;
 
 import java.io.File;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -59,6 +57,30 @@ public class AddLegacyEventAndArgumentAnnotationInSerifXML {
         }
     }
 
+    public static void main(String[] args) throws Exception {
+        LearnItConfig.loadParams(new File("/home/hqiu/ld100/learnit/params/learnit/runs/cx_m5_wm_m6_wm_m6_isi_cx_m9_cx_m12_wm_m12_all_verbs_and_nouns.params"));
+        ObjectMapper objectMapper = new ObjectMapper(new JsonFactory());
+        Map<String, List<LegacyArgumentEntry>> docIdToEntries = new HashMap<>();
+        for (String line : Files.readLines(new File("/nfs/raid88/u10/users/hqiu/annotation/nlplingo/argument/before_053019/aligned.ljson"), StandardCharsets.UTF_8)) {
+            LegacyArgumentEntry legacyArgumentEntry = objectMapper.readValue(line, LegacyArgumentEntry.class);
+            List<LegacyArgumentEntry> buf = docIdToEntries.getOrDefault(legacyArgumentEntry.doc_id, new ArrayList<>());
+            buf.add(legacyArgumentEntry);
+            docIdToEntries.put(legacyArgumentEntry.doc_id, buf);
+        }
+        List<Callable<Boolean>> tasks = new ArrayList<>();
+        for (String docId : docIdToEntries.keySet()) {
+            String docPath = new File(SourceListsReader.getFullPath(docId)).getAbsolutePath();
+            tasks.add(new SingleDocumentWorker(docPath, docIdToEntries.get(docId)));
+        }
+        int CONCURRENCY = 12;
+        ExecutorService service = Executors.newFixedThreadPool(CONCURRENCY);
+        Collection<Future<Boolean>> results = service.invokeAll(tasks);
+        for (Future<Boolean> result : results) {
+            result.get();
+        }
+        service.shutdown();
+    }
+
     public static class SingleDocumentWorker implements Callable<Boolean> {
         String docPath;
         List<LegacyArgumentEntry> legacyArgumentEntryList;
@@ -73,7 +95,6 @@ public class AddLegacyEventAndArgumentAnnotationInSerifXML {
             for(LegacyArgumentEntry legacyArgumentEntry: this.legacyArgumentEntryList){
                 // Left is event and right is argument
                 // @hqiu: Although the rest system is Event instead of Generic, we have a huge amount of legacy annotation data which highly rely on Generic
-                String eventType = "Generic";
                 String docId = legacyArgumentEntry.doc_id;
                 int sentId = legacyArgumentEntry.sent_idx;
                 int triggerStart = legacyArgumentEntry.trig_start;
@@ -82,8 +103,8 @@ public class AddLegacyEventAndArgumentAnnotationInSerifXML {
                 int argumentEnd = legacyArgumentEntry.arg_end;
                 String argType = legacyArgumentEntry.arg_type;
                 SentenceTheory sentenceTheory = docTheory.sentenceTheory(sentId);
-                Optional<Spanning> leftSpan = InstanceIdentifier.getSpanning(sentenceTheory,triggerStart,triggerEnd,eventType);
-                Optional<Spanning> rightSpan = InstanceIdentifier.getSpanning(sentenceTheory,argumentStart,argumentEnd,"DUMMY");
+                Optional<Spanning> leftSpan = InstanceIdentifier.getSpanning(sentenceTheory, triggerStart, triggerEnd, InstanceIdentifier.SpanningType.EventMention);
+                Optional<Spanning> rightSpan = InstanceIdentifier.getSpanning(sentenceTheory, argumentStart, argumentEnd, InstanceIdentifier.SpanningType.Empty);
                 if(!rightSpan.isPresent()){
                     System.out.println("[NO]We cannot find Mention/ValueMention for "+docId+", "+sentId+", "+argumentStart+", "+argumentEnd);
                 }
@@ -93,29 +114,5 @@ public class AddLegacyEventAndArgumentAnnotationInSerifXML {
             }
             return true;
         }
-    }
-
-    public static void main(String[] args) throws Exception{
-        LearnItConfig.loadParams(new File("/home/hqiu/ld100/learnit/params/learnit/runs/cx_m5_wm_m6_wm_m6_isi_cx_m9_cx_m12_wm_m12_all_verbs_and_nouns.params"));
-        ObjectMapper objectMapper = new ObjectMapper(new JsonFactory());
-        Map<String,List<LegacyArgumentEntry>> docIdToEntries = new HashMap<>();
-        for(String line: Files.readLines(new File("/nfs/raid88/u10/users/hqiu/annotation/nlplingo/argument/before_053019/aligned.ljson"), Charset.forName("utf-8"))){
-            LegacyArgumentEntry legacyArgumentEntry = objectMapper.readValue(line,LegacyArgumentEntry.class);
-            List<LegacyArgumentEntry> buf = docIdToEntries.getOrDefault(legacyArgumentEntry.doc_id,new ArrayList<>());
-            buf.add(legacyArgumentEntry);
-            docIdToEntries.put(legacyArgumentEntry.doc_id,buf);
-        }
-        List<Callable<Boolean>> tasks = new ArrayList<>();
-        for(String docId:docIdToEntries.keySet()){
-            String docPath = new File(SourceListsReader.getFullPath(docId)).getAbsolutePath();
-            tasks.add(new SingleDocumentWorker(docPath, docIdToEntries.get(docId)));
-        }
-        int CONCURRENCY = 12;
-        ExecutorService service = Executors.newFixedThreadPool(CONCURRENCY);
-        Collection<Future<Boolean>> results = service.invokeAll(tasks);
-        for (Future<Boolean> result : results) {
-            result.get();
-        }
-        service.shutdown();
     }
 }

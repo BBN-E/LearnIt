@@ -4,7 +4,9 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
+import router from './router'
 import App from './App.vue'
+
 
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
@@ -15,6 +17,7 @@ Vue.use(Vuetify, {
 Vue.config.productionTip = false
 
 const app = new Vue({
+	router,
 	render: h => h(App),
 });
 

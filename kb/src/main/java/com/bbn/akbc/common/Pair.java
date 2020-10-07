@@ -1,10 +1,20 @@
 package com.bbn.akbc.common;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonTypeInfo(use=JsonTypeInfo.Id.MINIMAL_CLASS, include=JsonTypeInfo.As.PROPERTY, property="@class")
 public class Pair<A, B> {
+	@JsonProperty("first")
     private A first;
+	@JsonProperty("second")
     private B second;
 
-    public Pair(A first, B second) {
+	@JsonCreator
+    public Pair(@JsonProperty("first") A first,@JsonProperty("second") B second) {
     	this.first = first;
     	this.second = second;
     }
@@ -22,13 +32,13 @@ public class Pair<A, B> {
 	public boolean equals(Object other) {
     	if (other instanceof Pair) {
     		Pair otherPair = (Pair) other;
-    		return
-    		((  this.first == otherPair.first ||
-    			( this.first != null && otherPair.first != null &&
-    			  this.first.equals(otherPair.first))) &&
-    		 (	this.second == otherPair.second ||
-    			( this.second != null && otherPair.second != null &&
-    			  this.second.equals(otherPair.second))) );
+            return this.first.equals(otherPair.first) && this.second.equals(otherPair.second);
+//    		((  this.first == otherPair.first ||
+//    			( this.first != null && otherPair.first != null &&
+//    			  this.first.equals(otherPair.first))) &&
+//    		 (	this.second == otherPair.second ||
+//    			( this.second != null && otherPair.second != null &&
+//    			  this.second.equals(otherPair.second))) );
     	}
 
     	return false;

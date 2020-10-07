@@ -1,7 +1,5 @@
 package com.bbn.akbc.neolearnit.common.targets.constraints;
 
-import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
-import com.bbn.akbc.neolearnit.observations.seed.Seed;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.ImmutableSet;
 
@@ -30,10 +28,6 @@ public abstract class ValidTypeConstraint extends AbstractSlotMatchConstraint {
 		return false;
 	}
 
-	@Override
-	public boolean valid(InstanceIdentifier instanceId, Seed seed) {
-		return validTypes.contains(instanceId.getSlotEntityType(slot));
-	}
 
 	public Set<String> getValidTypeSet() {
 		return validTypes;
@@ -58,11 +52,8 @@ public abstract class ValidTypeConstraint extends AbstractSlotMatchConstraint {
 			return false;
 		ValidTypeConstraint other = (ValidTypeConstraint) obj;
 		if (validTypes == null) {
-			if (other.validTypes != null)
-				return false;
-		} else if (!validTypes.equals(other.validTypes))
-			return false;
-		return true;
-	}
+            return other.validTypes == null;
+        } else return validTypes.equals(other.validTypes);
+    }
 
 }

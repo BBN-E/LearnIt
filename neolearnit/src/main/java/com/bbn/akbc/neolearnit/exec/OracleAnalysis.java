@@ -76,7 +76,7 @@ public class OracleAnalysis {
 		Parameters params = Parameters.loadSerifStyle(new File(paramFile));
 
 
-		Target target = TargetFactory.fromString(targetName);
+		Target target = TargetFactory.fromXMLPathString(targetName);
 		String targetPathRel  = String.format("inputs/targets/json/%s.json",targetName);
 
 		if (LearnItConfig.optionalParamTrue("bilingual")) {

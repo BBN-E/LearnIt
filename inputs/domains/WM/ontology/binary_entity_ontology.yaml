@@ -1,0 +1,11 @@
+---
+- Binary-Entity:
+  - _source: []
+  - _description: "NA"
+  - _examples: []
+  - _alternative_id: null
+  - Is family member of:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null

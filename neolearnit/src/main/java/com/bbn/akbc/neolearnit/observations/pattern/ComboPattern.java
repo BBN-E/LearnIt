@@ -145,6 +145,7 @@ public class ComboPattern extends LearnitPattern implements BrandyablePattern {
 	}
 
 	@Override
+	@JsonProperty
 	public String toPrettyString() {
 		return String.format("CombinationPattern[%s][%s]",pat1.toPrettyString(),pat2.toPrettyString());
 	}

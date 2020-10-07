@@ -91,6 +91,14 @@ public class Seed extends LearnItObservation {
 		return new Seed(language,new Slot(Symbol.from(slot0)), new Slot(Symbol.from(slot1)));
 	}
 
+	public static String getEventMentionText(EventMention eventMention, DocTheory docTheory) {
+		if(eventMention.semanticPhraseStart().isPresent() && eventMention.semanticPhraseEnd().isPresent()) {
+			return eventMention.sentenceTheory(docTheory).tokenSequence()
+					.span(eventMention.semanticPhraseStart().get(),eventMention.semanticPhraseEnd().get()).tokenizedText().utf16CodeUnits(); // TODO: check if the span indices are inclusive
+		} else
+			return eventMention.anchorNode().head().span().tokenizedText().utf16CodeUnits();
+	}
+
 	public static synchronized Seed from(LanguageMatchInfo match, boolean symmetric) {
 		// GET Best Names (TODO: this should be configurable)
 		List<String> slot0Fillers = new ArrayList<String>();
@@ -140,7 +148,9 @@ public class Seed extends LearnItObservation {
 //				else
 //					slot0Fillers.add(eventMention.anchorNode().span()
 //							.originalText().content().utf16CodeUnits());
-				slot0Fillers.add(eventMention.anchorNode().head().span().tokenizedText().utf16CodeUnits());
+
+				// slot0Fillers.add(eventMention.anchorNode().head().span().tokenizedText().utf16CodeUnits());
+				slot0Fillers.add(getEventMentionText(eventMention, match.docTheory()));
 
 			/*
 			if(eventMention.anchorNode().span().originalText().content().isPresent())
@@ -197,7 +207,9 @@ public class Seed extends LearnItObservation {
 //					slot1Fillers.add(eventMention.anchorNode().span()
 //							.originalText().content().utf16CodeUnits());
 
-				slot1Fillers.add(eventMention.anchorNode().head().span().tokenizedText().utf16CodeUnits());
+				// slot1Fillers.add(eventMention.anchorNode().head().span().tokenizedText().utf16CodeUnits());
+				slot1Fillers.add(getEventMentionText(eventMention, match.docTheory()));
+
 			/*
 			if(eventMention.anchorNode().span().originalText().isPresent())
 				slot1Fillers.add(eventMention.anchorNode().span().originalText().get().text());
@@ -295,8 +307,13 @@ public class Seed extends LearnItObservation {
 	}
 
 	public Seed withProperText(boolean slot0UseBestName, boolean slot1UseBestName) {
-		return new Seed(language, ImmutableList.of(Slot.from(slots.get(0), slot0UseBestName),
-								  				   Slot.from(slots.get(1), slot1UseBestName)));
+		if(slots.size()<2){
+			return new Seed(language, ImmutableList.of(Slot.from(slots.get(0), slot0UseBestName)));
+		}
+		else{
+			return new Seed(language, ImmutableList.of(Slot.from(slots.get(0), slot0UseBestName),
+					Slot.from(slots.get(1), slot1UseBestName)));
+		}
 	}
 
 	@Override

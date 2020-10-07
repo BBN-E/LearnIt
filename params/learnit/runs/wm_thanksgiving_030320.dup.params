@@ -1,0 +1,31 @@
+# Template file for learnit params
+
+INCLUDE ../user.params
+learnit_data_dir: /nfs/raid88/u10/users/hqiu/learnit_data/wm_thanksgiving.030420.v2
+source_lists: %learnit_data_dir%/source_lists
+corpus_dir: %source_lists%
+corpus_name: wm_thanksgiving.030420.v2
+ontology_root: %learnit_root%/inputs/ontologies/wm/hume/internal_ontology
+
+queue_priority: 5
+languages:English
+max_prop_depth:2
+max_regexp_pattern_words:5
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 2
+mappings_list_batches: 20
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+linux_queue: nongale-sl6
+aggregated_frequency_filter_pattern_min: 50
+
+
+debug_extraction: false
+#stages_to_run: mappings-only
+bert_npz_list: /nfs/raid88/u10/users/hqiu/runjob/expts/Hume/wm_thanksgiving.121019.121019/bert/bert_npz.list
+#stages_to_run: extract-learnitpattern-bert-emb
+stages_to_run: similarities-only
+similarities_dir: /nfs/raid88/u10/users/hqiu/learnit_data/wm_thanksgiving.030420.v2/learnit_similarity_data

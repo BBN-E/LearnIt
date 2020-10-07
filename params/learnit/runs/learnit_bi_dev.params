@@ -1,0 +1,80 @@
+# Template file for learnit params
+
+INCLUDE ../user.params
+learnit_data_dir: /nfs/raid88/u10/users/hqiu/learnit_data/learnit_bi_dev.010719
+source_lists: %learnit_data_dir%/source_lists
+corpus_dir: %source_lists%
+corpus_name: learnit_bi_dev.010720
+ontology_root: %learnit_root%/inputs/ontologies/cx/bae_icm/internal_ontology
+
+max_prop_depth:3
+max_regexp_pattern_words:5
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+
+path_conversions: /nfs/raid88/u10/users/bmin/projects/d2d/serifxmls/path_conversions.txt
+alignment_path_conversions: /nfs/raid88/u10/users/bmin/projects/d2d/serifxmls/alignment_path_conversions.txt
+#source_dir: /nfs/raid88/u10/users/bmin/projects/d2d/serifxmls/+language+
+
+bilingual: true
+languages: english,arabic
+min_alignment_overlap: 0.5
+
+
+#### This section is for run_learnit.pl mappings only
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 1
+linux_queue: nongale-sl6
+mappings_list_batches: 1
+#### End section
+
+
+## similarity related params
+# follwing embeddings files are word-embeddings files
+embeddings_file_for_seeds: /nfs/raid88/u10/users/hqiu/archive/glove.6B.50d.py3.p
+# embeddings_file_for_patterns: /nfs/raid88/u10/users/hqiu/archive/glove.6B.50d.p
+# following embeddings files are learned using TransE model on gigaword event-event pairs
+#embeddings_file_for_seeds: /nfs/raid87/u12/hqiu/runjob/expts/RNN_TransE_sequence/output/learnit_textgraph/75d_emb_adagrad/ents_phr_embs.p
+embeddings_file_for_patterns: /nfs/raid88/u10/users/hqiu/learnit_data/causeex_collab2_generic_no_whitelist.batch_500/pattern_emb.p
+embeddings_file_glove: /nfs/raid88/u10/users/hqiu/archive/glove.6B.50d.py3.p
+# directory where similarity output is written or read from
+similarity_data_dir: %learnit_data_dir%/learnit_similarity_data
+# directory where similarity output is written or read from
+seeds_dir: %similarity_data_dir%/seeds_from_mappings
+seeds_lists_dir: %similarity_data_dir%/seeds_lists
+patterns_dir: %similarity_data_dir%/patterns_from_mappings
+patterns_lists_dir: %similarity_data_dir%/patterns_lists
+seed_vectors_dir: %similarity_data_dir%/seed_vectors
+#seed_vector_lists_dir: %similarity_data_dir%/seed_vector_lists
+pattern_vectors_dir: %similarity_data_dir%/pattern_vectors
+#pattern_vector_lists_dir: %similarity_data_dir%/pattern_vector_lists
+seed_similarity_threshold: 0.1
+pattern_similarity_threshold: 0.1
+seed_similarity_dir: %similarity_data_dir%/seed_similarity_dir
+seed_similarity_lists_dir: %similarity_data_dir%/seed_similarity_lists_dir
+pattern_similarity_dir: %similarity_data_dir%/pattern_similarity_dir
+pattern_similarity_lists_dir: %similarity_data_dir%/pattern_similarity_lists_dir
+##
+
+#### For serif
+input_sgm_list: /nfs/raid88/u10/users/hqiu/sgm_corpus/wm/wm_dart_101119.separate/sgms.list.small
+awake_db: /nfs/raid87/u10/shared/Hume/common/serif/wm_eval_before_060119.sqlite
+hume_repo_root: /home/hqiu/ld100/Hume_pipeline/Hume
+serif_cause_effect_patterns_dir: %hume_repo_root%/resource/serif_cause_effect_patterns
+project_specific_serif_par: %hume_repo_root%/templates/serif_wm.par
+project_specific_serif_data_root: %hume_repo_root%/resource/serif_data_wm
+serif_output_dir: %learnit_data_dir%/serif_output
+corpus_dir_serif: %learnit_data_dir%/source_lists_serif
+#### End for serif
+
+#### For decoding
+extractor_dir: /home/hqiu/ld100/Hume_pipeline/Hume/resource/learnit_patterns/event_and_event_arg
+serialization_dir: %learnit_data_dir%/serialization_output
+#### end for decoding
+
+
+
+stages_to_run: mappings-only

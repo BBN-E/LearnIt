@@ -1,0 +1,38 @@
+# Template file for learnit params
+
+INCLUDE ../user.params
+learnit_data_dir: /nfs/raid88/u10/users/hqiu/learnit_data/cord19
+source_lists: %learnit_data_dir%/source_lists
+corpus_dir: %source_lists%
+corpus_name: cord19.052020
+
+domain_root: %learnit_root%/inputs/domains/BBN
+
+queue_priority: 5
+languages:English
+max_prop_depth:2
+max_regexp_pattern_words:5
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 2
+mappings_list_batches: 20
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+linux_queue: nongale-sl6
+aggregated_frequency_filter_pattern_min: 2
+max_unary_prop_depth:1
+max_binary_prop_depth:2
+
+## similarity related params
+similarities_dir: %learnit_data_dir%/learnit_similarity_data
+##
+
+debug_extraction: false
+
+bert_npz_list: /d4m/ears/expts/46889_cord_19_bert/expts/hume_test.041420.cx.v1/bert/bert_npz.list
+stages_to_run: similarities-only
+#stages_to_run: generic_event,unary_event_decoding,binary_event_event_decoding
+generic_event_noun_whitelist: /home/hqiu/ld100/Hume_pipeline_int/Hume/resource/generic_events/generic_event.whitelist.wn-fn.variants
+generic_event_blacklist: /home/hqiu/ld100/Hume_pipeline_int/Hume/resource/generic_events/modal_aux.verbs.list

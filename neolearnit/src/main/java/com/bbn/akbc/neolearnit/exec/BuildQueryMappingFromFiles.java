@@ -69,7 +69,7 @@ public class BuildQueryMappingFromFiles {
         LearnItConfig.loadParams(new File(args[0]));
 		String output = args[1]+".sjson";
 
-        Target target = TargetFactory.fromString(args[2]);
+        Target target = TargetFactory.fromXMLPathString(args[2]);
 
         ImmutableList<File> files = FileUtils.loadFileList(new File(args[3]));
 

@@ -111,6 +111,7 @@ public class SlotContainsWordRestriction extends SlotRestriction
 	}
 
 	@Override
+	@JsonProperty
 	public String toPrettyString() {
 		return toString();
 	}

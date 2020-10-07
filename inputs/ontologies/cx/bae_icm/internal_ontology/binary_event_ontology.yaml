@@ -1,0 +1,36 @@
+---
+- Binary-Event:
+  - _source: []
+  - _description: "NA"
+  - _examples: []
+  - _alternative_id: null
+  - Cause-Effect:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Before-After:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Catalyst-Effect:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - MitigatingFactor-Effect:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Precondition-Effect:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+  - Preventative-Effect:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null

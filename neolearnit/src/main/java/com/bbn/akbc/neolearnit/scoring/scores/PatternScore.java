@@ -8,7 +8,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class PatternScore extends AbstractBootstrappedScore<LearnitPattern> {
 
@@ -52,8 +53,6 @@ public class PatternScore extends AbstractBootstrappedScore<LearnitPattern> {
     @JsonProperty
     private double patternFrequency = 0D;
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-	public Map<String,Double> scoreForFrontendRanking;
 
 	private Multiset<Seed> sources;
 	@JsonProperty
@@ -101,51 +100,13 @@ public class PatternScore extends AbstractBootstrappedScore<LearnitPattern> {
 		this.fn = fn;
 		this.tn = tn;
 		this.sources = sources.makeMultiset();
-        Random r = new Random();
-        Map<String, Double> sortingKeyToValue = new HashMap<>();
 
-		// precision
-		sortingKeyToValue.put("byPrecisionAscend", this.precision);
-		sortingKeyToValue.put("byPrecisionDescend", 0-this.precision);
-
-		// recall
-		sortingKeyToValue.put("byRecallAscend", this.recall);
-		sortingKeyToValue.put("byRecalldescend", 0-this.recall);
-
-		// confidence
-		sortingKeyToValue.put("byConfidenceAscend", this.confidence);
-		sortingKeyToValue.put("byConfidenceDescend", 0-this.confidence);
-
-        // frequency
-        sortingKeyToValue.put("byFrequencyAscend", (double)this.frequency);
-        sortingKeyToValue.put("byFrequencyDescend", 0.0-this.frequency);
-
-		this.scoreForFrontendRanking = sortingKeyToValue;
 	}
 
 	public PatternScore(int iteration) {
 		super(false,true,iteration, -1);
         this.sources = HashMultiset.create();
-        Random r = new Random();
-        Map<String, Double> sortingKeyToValue = new HashMap<>();
 
-        // precision
-        sortingKeyToValue.put("byPrecisionAscend", this.precision);
-        sortingKeyToValue.put("byPrecisionDescend", 0-this.precision);
-
-        // recall
-        sortingKeyToValue.put("byRecallAscend", this.recall);
-        sortingKeyToValue.put("byRecalldescend", 0-this.recall);
-
-        // confidence
-        sortingKeyToValue.put("byConfidenceAscend", this.confidence);
-        sortingKeyToValue.put("byConfidenceDescend", 0-this.confidence);
-
-        // frequency
-        sortingKeyToValue.put("byFrequencyAscend", (double)this.frequency);
-        sortingKeyToValue.put("byFrequencyDescend", 0.0-this.frequency);
-
-        this.scoreForFrontendRanking = sortingKeyToValue;
 	}
 
 	public Double getPrecision() {

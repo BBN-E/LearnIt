@@ -1,0 +1,31 @@
+{
+  "runjobs_config": {
+
+  },
+  "feature_extractors": [
+
+  ],
+  "indexing_features": [
+
+  ],
+  "queries": [
+    {
+      "id": "query_1",
+      "name": "BUILD_PAIRWISE_CACHE",
+      "args": {
+        "query_feature_list": "+query_feature_list+",
+        "key_getter_mapping": [
+          {
+            "index": "aveBERTEmb",
+            "query": "aveBERTEmb"
+          }
+        ],
+        "threshold": 100,
+        "cutoff": 100,
+        "input_cache_list": "+input_cache_list+",
+        "output_path": "+output_path+"
+      }
+    }
+  ],
+  "dumpers": []
+}

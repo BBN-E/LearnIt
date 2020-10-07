@@ -34,7 +34,7 @@ public class NFGECEventObserver extends ExternalAnnotationBuilder {
         List<NFGECEvent.NFGECReconstructionEntry> nfgecReconstructionEntries = new ArrayList<>();
         for (InstanceIdentifier instanceIdentifier : this.inMemoryAnnotationStorage.getAllInstanceIdentifier()) {
             final SentenceTheory sentenceTheory = instanceIdentifierSentenceTheoryMap.get(instanceIdentifier);
-            final EventMention eventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlotEntityType(0)).get();
+            final EventMention eventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType()).get();
             final Symbol sentenceText = Symbol.from(sentenceTheory.span().tokenizedText().utf16CodeUnits());
             final Symbol triggerHeadText = Symbol.from(eventMention.anchorNode().head().span().tokenizedText().utf16CodeUnits());
             List<String> eventTypes = new ArrayList<>();

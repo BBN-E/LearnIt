@@ -1,0 +1,122 @@
+[ "com.bbn.akbc.neolearnit.scoring.TargetAndScoreTables", {
+  "startDate" : [ "java.util.Date", 1583519783546 ],
+  "seedScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.SeedScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 66
+  } ],
+  "patternScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.PatternScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword subsidy) (acetype OTH) (regex (regex (re (text (string \"fertilizer\"))))))",
+        "toPrettyString" : " fertilizer subsidy[OTH][0]"
+      } ], [ "com.bbn.akbc.neolearnit.observations.pattern.SerifPattern", {
+        "toIDString" : "(mention (return slot0) (headword subsidies) (acetype OTH) (regex (regex (re (text (string \"fertilizer\"))))))",
+        "toPrettyString" : " fertilizer subsidies[OTH][0]"
+      } ] ] ],
+      "valList" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 0.0,
+        "confidenceDenominator" : 0.0,
+        "frequency" : 0,
+        "knownFrequency" : 0,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 0.0,
+        "fp" : 0.0,
+        "fn" : 0.0,
+        "tn" : 0.0,
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 0,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ], [ "com.bbn.akbc.neolearnit.scoring.scores.PatternScore", {
+        "precision" : 0.95,
+        "recall" : 0.01,
+        "confidence" : 1.0,
+        "confidenceFromSimilarity" : 0.0,
+        "confidenceNumerator" : 0.0,
+        "confidenceDenominator" : 0.0,
+        "frequency" : 0,
+        "knownFrequency" : 0,
+        "seedFrequency" : 0,
+        "knownSeedFrequency" : 0,
+        "frozenPatternInstanceCount" : 0,
+        "tp" : 0.0,
+        "fp" : 0.0,
+        "fn" : 0.0,
+        "tn" : 0.0,
+        "frozen" : true,
+        "proposed" : false,
+        "iteration" : 0,
+        "frozenIteration" : 0,
+        "sources" : [ "com.bbn.akbc.neolearnit.storage.EfficientMultisetDataStore", {
+          "keyList" : [ "java.util.ArrayList", [ ] ],
+          "entries" : [ "java.util.ArrayList", [ ] ]
+        } ],
+        "patternWeightedPrecision" : 0.0,
+        "patternPrecision" : 0.0,
+        "patternFrequency" : 0.0
+      } ] ] ],
+      "entries" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 0,
+        "value" : 0
+      } ], [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore$MappedEntry", {
+        "key" : 1,
+        "value" : 1
+      } ] ] ]
+    } ],
+    "iteration" : 32
+  } ],
+  "tripleScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.TripleScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 0
+  } ],
+  "iteration" : 66,
+  "goodSeedPrior" : 0.06,
+  "totalConfidenceDenominator" : 1000.0,
+  "stage" : "initial",
+  "params" : [ "java.util.HashMap", {
+    "aggregated_frequency_filter_pattern_min" : "-1",
+    "max_unary_prop_depth" : "1",
+    "languages" : "English",
+    "linux_queue" : "nongale-sl6",
+    "serif_data" : "#Set this to your SERIF data checkout e.g. /nfs/mercury-04/u60/DEFT/users/msrivast/Active/Data/SERIF/",
+    "bootstrap_serifxml_list" : "/d4m/ears/expts/47893.082620.v1/expts/hume_test.040120.wm.v1/nlplingo_only/1doc.list",
+    "corpus_name" : "wm_4_sentences.082720",
+    "loader_concurrency" : "5",
+    "domain_root" : "/home/hqiu/ld100/learnit_wm_entity/inputs/domains/WM",
+    "aggregated_frequency_filter_pattern_max" : "-1",
+    "max_regexp_pattern_words" : "5",
+    "learnit_expt_suffix" : "default",
+    "use_human_label" : "false",
+    "source_root" : "/home/hqiu/ld100/learnit_wm_entity/neolearnit",
+    "min_seed_frequency_per_batch" : "1",
+    "learnit_data_root" : "/nfs/raid88/u10/users/hqiu/learnit_data/wm_4_sentences.082720",
+    "max_binary_prop_depth" : "2",
+    "learnit_root" : "/home/hqiu/ld100/learnit_wm_entity",
+    "queue_priority" : "5",
+    "min_pattern_frequency_per_batch" : "1",
+    "max_prop_depth" : "2",
+    "stopwords" : "/home/hqiu/ld100/learnit_wm_entity/inputs/resources/stopwords/english_causal_relationships.txt"
+  } ],
+  "experimentName" : "default"
+} ]

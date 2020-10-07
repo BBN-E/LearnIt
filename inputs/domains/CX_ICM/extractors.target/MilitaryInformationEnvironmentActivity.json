@@ -1,0 +1,24 @@
+[ "com.bbn.akbc.neolearnit.common.targets.Target", {
+  "name" : "MilitaryInformationEnvironmentActivity",
+  "description" : "",
+  "constraints" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.common.targets.constraints.impl.SpanningTypeConstraint", {
+    "slot" : 0,
+    "allowedSpanningType" : [ "java.util.HashSet", [ "EventMention" ] ]
+  } ], [ "com.bbn.akbc.neolearnit.common.targets.constraints.impl.SpanningTypeConstraint", {
+    "slot" : 1,
+    "allowedSpanningType" : [ "java.util.HashSet", [ "Empty" ] ]
+  } ] ] ],
+  "properties" : [ "java.util.HashMap", { } ],
+  "slots" : [ "java.util.ArrayList", [ [ "com.bbn.akbc.neolearnit.common.targets.TargetSlot", {
+    "slotNum" : 0,
+    "type" : "all",
+    "constraints" : [ "java.util.ArrayList", [ ] ],
+    "properties" : [ "java.util.HashMap", { } ]
+  } ], [ "com.bbn.akbc.neolearnit.common.targets.TargetSlot", {
+    "slotNum" : 1,
+    "type" : "all",
+    "constraints" : [ "java.util.ArrayList", [ ] ],
+    "properties" : [ "java.util.HashMap", { } ]
+  } ] ] ],
+  "patternConfidence" : 0.0
+} ]

@@ -1,16 +1,18 @@
 package com.bbn.akbc.neolearnit.common.bilingual;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.ImmutableCollection;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.ImmutableSet;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 public class TokenAlignmentTable {
-	private final ImmutableMap<String,ImmutableMap<String,ImmutableMultimap<Integer,Integer>>> table;
+    @JsonProperty
+    private final ImmutableMap<String,ImmutableMap<String,ImmutableMultimap<Integer,Integer>>> table;
 
 	private TokenAlignmentTable(ImmutableMap<String,ImmutableMap<String,ImmutableMultimap<Integer,Integer>>> table) {
 		this.table = ImmutableMap.copyOf(table);

@@ -34,7 +34,7 @@ public class RelationTrainingExampleSerializer {
         for(LearnitPattern learnitPattern : patternSet){
             if(LabelPattern.class.isInstance(learnitPattern)){
                 // This filter is for de-duplicate
-                Set<InstanceIdentifier> instanceIdentifierSet = InstanceIdentifierFilterForAnnotation.makeFiltered(mappings.getInstancesForPattern(learnitPattern));
+                Set<InstanceIdentifier> instanceIdentifierSet = new HashSet<>(InstanceIdentifierFilterForAnnotation.makeFiltered(mappings.getInstancesForPattern(learnitPattern)));
                 for(InstanceIdentifier instanceIdentifier: instanceIdentifierSet){
                     Pair<InstanceIdentifier,LabelPattern> key = new Pair<>(instanceIdentifier,(LabelPattern)learnitPattern);
                     if(key.getSecond().getFrozenState().equals(FrozenState.FROZEN_GOOD)){

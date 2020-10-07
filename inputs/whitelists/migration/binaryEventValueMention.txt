@@ -1,0 +1,28 @@
+0	crossing
+0	deserting
+0	displace
+0	displaced
+0	displacement
+0	refuge
+0	asylum
+0	flee
+0	fled
+0	fleeing
+0	uproot
+0	uprooted
+0	influx
+0	outflux
+0	outflow
+0	outflows
+0	migration
+0	movement
+0	movements
+0	arrive
+0	arrived
+0	arriving
+0	departing
+0	transiting
+0	return
+0	returns
+1	*	*
+01  *	*

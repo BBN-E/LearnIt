@@ -2,17 +2,14 @@ package com.bbn.akbc.neolearnit.common.matchinfo;
 
 import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
+import com.bbn.akbc.neolearnit.common.bilingual.TokenAlignmentTable;
 import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfo.LanguageMatchInfo;
 import com.bbn.akbc.neolearnit.common.targets.Target;
-import com.bbn.akbc.neolearnit.common.targets.TargetFactory;
 import com.bbn.akbc.neolearnit.observations.seed.Seed;
 import com.bbn.bue.common.StringUtils;
 import com.bbn.bue.common.symbols.Symbol;
-import com.bbn.serif.theories.Event;
-import com.bbn.serif.theories.EventMention;
 import com.bbn.serif.theories.Mention;
 import com.bbn.serif.theories.Token;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -20,11 +17,7 @@ import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MatchInfoDisplay {
 
@@ -35,6 +28,14 @@ public class MatchInfoDisplay {
 	@JsonProperty
 	private final Map<String,LanguageMatchInfoDisplay> langDisplays;
 
+    @JsonProperty
+    private final TokenAlignmentTable tokenAlignmentTable;
+
+    @JsonProperty
+	private final String id(){
+    	return "MatchInfoDisplay_" + Integer.toString(this.hashCode());
+	}
+
 	private final boolean isValidTransliteration;	// defaults to true
 
 	private static final ImmutableSet<String> capitalizeExclusions;
@@ -44,38 +45,24 @@ public class MatchInfoDisplay {
 	}
 
 	@JsonCreator
-	private MatchInfoDisplay(@JsonProperty("target")Target target,
-			@JsonProperty("primaryLanguage") String primaryLanguage,
-			@JsonProperty("langDisplays") Map<String, LanguageMatchInfoDisplay> langDisplays,
-			@JsonProperty("isValidTransliteration") int isValidTransliteration) {
+	private MatchInfoDisplay(
+			@JsonProperty("target")Target target,
+                             @JsonProperty("primaryLanguage") String primaryLanguage,
+                             @JsonProperty("langDisplays") Map<String, LanguageMatchInfoDisplay> langDisplays,
+                             @JsonProperty("isValidTransliteration") int isValidTransliteration,
+                             @JsonProperty("tokenAlignmentTable") TokenAlignmentTable tokenAlignmentTable
+    ) {
 		this.target = target;
 		this.primaryLanguage = primaryLanguage;
 		this.langDisplays = langDisplays;
-		if(isValidTransliteration==1) {
-        	this.isValidTransliteration = true;
-        }
-        else {
-        	this.isValidTransliteration = false;
-        }
+        this.tokenAlignmentTable = tokenAlignmentTable;
+        this.isValidTransliteration = isValidTransliteration == 1;
 	}
 
 	@JsonProperty
     public int isValidTransliteration() {		// we do integer as JSON might have a hard time with serializing boolean
     	return isValidTransliteration ? 1 : 0;
     }
-
-	public String getPrimaryLanguage() {
-		return primaryLanguage;
-	}
-
-	public LanguageMatchInfoDisplay getPrimaryLanguageMatch() {
-		return langDisplays.get(primaryLanguage);
-	}
-
-
-	public MatchInfoDisplay copyWithTransliteration(int validTransliteration) {
-		return new MatchInfoDisplay(target, primaryLanguage, langDisplays, validTransliteration);
-	}
 
 	public static MatchInfoDisplay fromMatchInfo(MatchInfo info, Optional<Map<Symbol, Symbol>> chiEngNameMapping) {
 	  try {
@@ -135,7 +122,7 @@ public class MatchInfoDisplay {
 	      }
 
 	      return new MatchInfoDisplay(info.getTarget(), info.getPrimaryLanguage(), langDisplays,
-		  1);
+                  1, info.getAlignments());
 
 	    } else {
 
@@ -147,7 +134,7 @@ public class MatchInfoDisplay {
 		    .fromMonolingualLanguageMatchInfo(info.getLanguageMatch(language)));
 	      }
 	      return new MatchInfoDisplay(info.getTarget(), info.getPrimaryLanguage(), langDisplays,
-		  1);
+                  1, info.getAlignments());
 
 	    }
 	  } catch (Exception e) {
@@ -156,6 +143,19 @@ public class MatchInfoDisplay {
 
 	  return null; // TODO: bad fix
 	}
+
+    public LanguageMatchInfoDisplay getPrimaryLanguageMatch() {
+        return langDisplays.get(primaryLanguage);
+    }
+
+    @JsonProperty
+    public String getPrimaryLanguage() {
+        return primaryLanguage;
+    }
+
+    public MatchInfoDisplay copyWithTransliteration(int validTransliteration) {
+        return new MatchInfoDisplay(target, primaryLanguage, langDisplays, validTransliteration, tokenAlignmentTable);
+    }
 
 	public static String sanitize(String input) {
 		return input.replace("&", "&amp;").replace(">", "&gt;").replace("<", "&lt;").replace("\n", "<br />").replace("\t", "&nbsp;&nbsp;&nbsp;")
@@ -205,6 +205,8 @@ public class MatchInfoDisplay {
 		private final String language;
 		@JsonProperty
 		private final String docId;
+        @JsonProperty
+        private final int sentId;
 		@JsonProperty
 		private final String visualizationLink;
 		@JsonProperty
@@ -231,6 +233,7 @@ public class MatchInfoDisplay {
 		private LanguageMatchInfoDisplay(
 				@JsonProperty("language") String language,
 				@JsonProperty("docId") String docId,
+				@JsonProperty("sentId") int sentId,
 				@JsonProperty("visualizationLink") String visualizationLink,
 				@JsonProperty("sentenceTokens") List<String> sentenceTokens,
 				@JsonProperty("instance") InstanceIdentifier instance,
@@ -238,19 +241,20 @@ public class MatchInfoDisplay {
 				@JsonProperty("canonicalSeed") Seed canonicalSeed) {
 			this.language = language;
 			this.docId = docId;
+			this.sentId = sentId;
 			this.visualizationLink = visualizationLink;
 			this.sentenceTokens = sentenceTokens;
-			this.instance = instance == null ? Optional.<InstanceIdentifier>absent() : Optional.of(instance);
+            this.instance = instance == null ? Optional.absent() : Optional.of(instance);
 
             if (seed == null) {
                 this.seed = Optional.absent();
             } else {
 				Seed newSeed;
             	if(seed.getStringSlots().size()<2){
-					newSeed = Seed.from(seed.getLanguage(),sanitize(seed.getStringSlots().get(0)),"");
+					newSeed = Seed.from(seed.getLanguage(),seed.getStringSlots().get(0),"");
 				}
 				else{
-					newSeed = Seed.from(seed.getLanguage(), sanitize(seed.getStringSlots().get(0)), sanitize(seed.getStringSlots().get(1)));
+					newSeed = Seed.from(seed.getLanguage(), seed.getStringSlots().get(0), seed.getStringSlots().get(1));
 
 				}
 				this.seed = Optional.of(newSeed);
@@ -261,19 +265,20 @@ public class MatchInfoDisplay {
             } else {
 				Seed newSeed;
 				if(canonicalSeed.getStringSlots().size()<2){
-					newSeed = Seed.from(canonicalSeed.getLanguage(),sanitize(canonicalSeed.getStringSlots().get(0)),"");
+					newSeed = Seed.from(canonicalSeed.getLanguage(),canonicalSeed.getStringSlots().get(0),"");
 				}
 				else{
-					newSeed = Seed.from(canonicalSeed.getLanguage(), sanitize(canonicalSeed.getStringSlots().get(0)), sanitize(canonicalSeed.getStringSlots().get(1)));
+					newSeed = Seed.from(canonicalSeed.getLanguage(), canonicalSeed.getStringSlots().get(0), canonicalSeed.getStringSlots().get(1));
 
 				}
                 this.canonicalSeed = Optional.of(newSeed);
             }
 		}
 
-        private LanguageMatchInfoDisplay(String language, String docId, String visualizationLink, List<String> sentenceTokens) {
+        private LanguageMatchInfoDisplay(String language, String docId,int sentId, String visualizationLink, List<String> sentenceTokens) {
             this.language = language;
             this.docId = docId;
+            this.sentId = sentId;
             this.visualizationLink = visualizationLink;
             this.sentenceTokens = sentenceTokens;
             this.instance = Optional.absent();
@@ -283,16 +288,16 @@ public class MatchInfoDisplay {
 
         public LanguageMatchInfoDisplay copyWithCanonicalSeed(final Seed canonicalSeed) {
         	if(!instance.isPresent() && !seed.isPresent()) {
-        		return new LanguageMatchInfoDisplay(language, docId, visualizationLink, sentenceTokens, null, null, canonicalSeed);
+        		return new LanguageMatchInfoDisplay(language, docId, sentId , visualizationLink, sentenceTokens, null, null, canonicalSeed);
         	}
         	else if(!instance.isPresent()) {
-        		return new LanguageMatchInfoDisplay(language, docId, visualizationLink, sentenceTokens, null, seed.get(), canonicalSeed);
+        		return new LanguageMatchInfoDisplay(language, docId,sentId, visualizationLink, sentenceTokens, null, seed.get(), canonicalSeed);
         	}
         	else if(!seed.isPresent()) {
-        		return new LanguageMatchInfoDisplay(language, docId, visualizationLink, sentenceTokens, instance.get(), null, canonicalSeed);
+        		return new LanguageMatchInfoDisplay(language, docId,sentId, visualizationLink, sentenceTokens, instance.get(), null, canonicalSeed);
         	}
         	else {
-        		return new LanguageMatchInfoDisplay(language, docId, visualizationLink, sentenceTokens, instance.get(), seed.get(), canonicalSeed);
+        		return new LanguageMatchInfoDisplay(language, docId,sentId, visualizationLink, sentenceTokens, instance.get(), seed.get(), canonicalSeed);
         	}
         }
 
@@ -380,9 +385,9 @@ public class MatchInfoDisplay {
                 InstanceIdentifier id = InstanceIdentifier.from(mi, false);
                 Seed seed = Seed.from(mi, false);
 
-                return new LanguageMatchInfoDisplay(mi.getLanguage(), docId, link, tokens, id, seed, null);
+                return new LanguageMatchInfoDisplay(mi.getLanguage(), docId,mi.getSentTheory().sentenceNumber(), link, tokens, id, seed, null);
             } else {
-                return new LanguageMatchInfoDisplay(mi.getLanguage(), docId, link, tokens);
+                return new LanguageMatchInfoDisplay(mi.getLanguage(), docId,mi.getSentTheory().sentenceNumber(), link, tokens);
             }
 		}
 
@@ -390,9 +395,14 @@ public class MatchInfoDisplay {
 
 			final String docId = mi.getDocTheory().docid().toString();
 
-			String link = LearnItConfig.get("eval_dir")+"/serifxml_vis/" +
-					mi.getLanguage()+"/all/"+docId+
-					".xml-sent-"+mi.getSentTheory().index()+"-details.html";
+			String link;
+			if (LearnItConfig.defined("eval_dir")) {
+				link = LearnItConfig.get("eval_dir")+"/serifxml_vis_sent/" +
+						docId+
+						".xml-sent-"+mi.getSentTheory().index()+"-details.html";
+			} else {
+				link = "";
+			}
 
 			List<String> tokens = new ArrayList<String>();
 			for (Token t : mi.getSentTheory().tokenSequence()) {
@@ -405,15 +415,16 @@ public class MatchInfoDisplay {
 
                 // capitalize english seed if it is of some particular entity type
                 if(mi.getLanguage().compareTo("english")==0) {
-                	final ImmutableList<Symbol> newSlots = capitalizeSlots(id, seed);
-                	final Seed newSeed = Seed.from(seed.getLanguage(), newSlots.get(0).toString(), newSlots.get(1).toString());
-                	return new LanguageMatchInfoDisplay(mi.getLanguage(), docId, link, tokens, id, newSeed, null);
+//                	final ImmutableList<Symbol> newSlots = capitalizeSlots(id, seed);
+//                	final Seed newSeed = Seed.from(seed.getLanguage(), newSlots.get(0).toString(), newSlots.get(1).toString());
+                	final Seed newSeed = seed;
+					return new LanguageMatchInfoDisplay(mi.getLanguage(), docId,mi.getSentTheory().sentenceNumber(), link, tokens, id, newSeed, null);
                 }
                 else {
-                	return new LanguageMatchInfoDisplay(mi.getLanguage(), docId, link, tokens, id, seed, null);
+                	return new LanguageMatchInfoDisplay(mi.getLanguage(), docId,mi.getSentTheory().sentenceNumber(), link, tokens, id, seed, null);
                 }
             } else {
-                return new LanguageMatchInfoDisplay(mi.getLanguage(), docId, link, tokens);
+                return new LanguageMatchInfoDisplay(mi.getLanguage(), docId,mi.getSentTheory().sentenceNumber(), link, tokens);
             }
 		}
 
@@ -441,7 +452,7 @@ public class MatchInfoDisplay {
 		}
 
 		private static String capitalize(final String s, final ImmutableSet<String> exclusions) {
-			StringBuffer buffer = new StringBuffer("");
+            StringBuffer buffer = new StringBuffer();
 			final String[] tokens = s.split(" ");
 			for(int i=0; i<tokens.length; i++) {
 				if(i>0) {
@@ -468,6 +479,7 @@ public class MatchInfoDisplay {
 			StringBuilder builder = new StringBuilder();
 			boolean capitalize = false;
 			for (int i=0;i<sentenceTokens.size();i++) {
+			    builder.append("<span class=\"token\">");
                 if (hasInstance()) {
                     //Special case if the slots have the same start point
                     if (i == instance.get().getSlot0Start() && i == instance.get().getSlot1Start()) {
@@ -513,7 +525,7 @@ public class MatchInfoDisplay {
                 	builder.append(capitalize(sentenceTokens.get(i), capitalizeExclusions));
                 }
                 else if(i==0) {
-                	builder.append(capitalize(sentenceTokens.get(i), ImmutableSet.<String>of()));
+                    builder.append(capitalize(sentenceTokens.get(i), ImmutableSet.of()));
                 }
                 else {
                 	builder.append(sentenceTokens.get(i));
@@ -528,6 +540,7 @@ public class MatchInfoDisplay {
                         capitalize = false;
                     }
                 }
+                builder.append("</span>");
                 builder.append(" ");
 			}
             if (hasInstance()) {
@@ -535,18 +548,6 @@ public class MatchInfoDisplay {
                 builder.append(String.format("(<span class=\"slot0\">%s</span>, <span class=\"slot1\">%s</span>)",
                         seed.get().getSlot(0), seed.get().getSlot(1)));
             }
-            // @hqiu Temporary for generating argument info
-//			builder.append("<br/>");
-//			EventMention left = (EventMention) instance.get().reconstructMatchInfo(TargetFactory.makeBinaryEventEventTarget()).getPrimaryLanguageMatch().getSlot0().get();
-//			EventMention right = (EventMention) instance.get().reconstructMatchInfo(TargetFactory.makeBinaryEventEventTarget()).getPrimaryLanguageMatch().getSlot1().get();
-//			for(EventMention.Argument argument : left.arguments()){
-//				builder.append(argument.role().toString() + ":" + argument.span().tokenizedText().utf16CodeUnits() + ", ");
-//			}
-//			builder.append("<br/>");
-//			for(EventMention.Argument argument : right.arguments()){
-//				builder.append(argument.role().toString() + ":" + argument.span().tokenizedText().utf16CodeUnits() + ", ");
-//			}
-			// @hqiu Temporary for generating argument info
 
             final String s = builder.toString();
             return s;
@@ -554,7 +555,7 @@ public class MatchInfoDisplay {
 		}
 
 		public String toString() {
-			StringBuilder sb = new StringBuilder("");
+            StringBuilder sb = new StringBuilder();
 
 			sb.append("LanguageMatchInfoDisplay {\n");
 			sb.append("  language:" + language + "\n");

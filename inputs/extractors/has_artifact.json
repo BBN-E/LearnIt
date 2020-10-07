@@ -1,0 +1,68 @@
+[ "com.bbn.akbc.neolearnit.scoring.TargetAndScoreTables", {
+  "startDate" : [ "java.util.Date", 1567552396792 ],
+  "targetPath" : "has_artifact",
+  "seedScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.SeedScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 349
+  } ],
+  "patternScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.PatternScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 116
+  } ],
+  "tripleScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.TripleScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 0
+  } ],
+  "iteration" : 349,
+  "goodSeedPrior" : 0.001,
+  "totalConfidenceDenominator" : 0.0,
+  "stage" : "initial",
+  "params" : [ "java.util.HashMap", {
+    "serif_data" : "/nfs/mercury-04/u60/DEFT/users/msrivast/Active/Data/SERIF/",
+    "binary_entity_entity_ontology" : "/home/hqiu/ld100/learnit/inputs/ontologies/bbn/cord19/binary_entity_ontology.yaml",
+    "corpus_name" : "cord19.052020",
+    "loader_concurrency" : "5",
+    "max_regexp_pattern_words" : "5",
+    "unary_event_ontology" : "/home/hqiu/ld100/learnit/inputs/ontologies/bbn/cord19/unary_event_ontology.yaml",
+    "unary_entity_ontology" : "/home/hqiu/ld100/learnit/inputs/ontologies/bbn/cord19/unary_entity_ontology.yaml",
+    "binary_event_event_ontology" : "/home/hqiu/ld100/learnit/inputs/ontologies/bbn/cord19/binary_event_ontology.yaml",
+    "mappings_lists_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cord19/source_mappings_lists",
+    "human_label_mappings_prefix" : "/home/hqiu/ld100/learnit/inputs/relation_annotation_by_learnit_ui/cord19.052020",
+    "max_binary_prop_depth" : "2",
+    "binary_event_entity_or_value_mention_ontology" : "/home/hqiu/ld100/learnit/inputs/ontologies/bbn/cord19/binary_event_entity_or_value_mention.yaml",
+    "mappings_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cord19/source_mappings",
+    "queue_priority" : "5",
+    "mappings_list_batches" : "20",
+    "min_pattern_frequency_per_batch" : "2",
+    "source_lists" : "/nfs/raid88/u10/users/hqiu/learnit_data/cord19/source_lists",
+    "max_prop_depth" : "2",
+    "stopwords" : "/home/hqiu/ld100/learnit/inputs/resources/stopwords/english_causal_relationships.txt",
+    "aggregated_frequency_filter_pattern_min" : "2",
+    "max_unary_prop_depth" : "1",
+    "languages" : "English",
+    "bert_npz_list" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/bert_npz.list",
+    "linux_queue" : "nongale-sl6",
+    "debug_extraction" : "false",
+    "corpus_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cord19/source_lists",
+    "similarities_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cord19/learnit_similarity_data",
+    "stages_to_run" : "mappings-only",
+    "learnit_expt_suffix" : "default",
+    "source_root" : "/home/hqiu/ld100/learnit/neolearnit",
+    "min_seed_frequency_per_batch" : "1",
+    "learnit_root" : "/home/hqiu/ld100/learnit",
+    "learnit_data_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cord19"
+  } ],
+  "experimentName" : "default"
+} ]

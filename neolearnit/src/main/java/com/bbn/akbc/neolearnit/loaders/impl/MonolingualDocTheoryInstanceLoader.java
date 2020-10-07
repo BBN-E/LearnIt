@@ -1,9 +1,13 @@
 package com.bbn.akbc.neolearnit.loaders.impl;
 
+import com.bbn.akbc.neolearnit.common.LearnItConfig;
 import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfo;
 import com.bbn.akbc.neolearnit.common.targets.Target;
 import com.bbn.akbc.neolearnit.loaders.AbstractInstanceLoader;
 import com.bbn.akbc.neolearnit.observers.InstanceObservers;
+import com.bbn.akbc.neolearnit.observers.Observer;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.SerifPatternObserver;
+import com.bbn.serif.patterns.PatternGenerator;
 import com.bbn.serif.theories.*;
 
 import com.fasterxml.jackson.databind.deser.DataFormatReaders;
@@ -31,54 +35,22 @@ public class MonolingualDocTheoryInstanceLoader extends AbstractInstanceLoader<D
 		Preconditions.checkNotNull(target);
 	}
 
+
 	@Override
 	public void load(DocTheory doc) {
 		if (evaluating) docTheoryCache.put(doc.docid().toString(), doc);
 
 		for (SentenceTheory st : doc.nonEmptySentenceTheories()) {
-			List<Spanning> allSpans = new ArrayList<Spanning>();
-			for(Spanning spanning : st.mentions().asList()){
-				try{
-					Mention mention = (Mention)spanning;
-					TokenSequence.Span dummy = mention.span();
-				}
-				catch(IllegalArgumentException e){
-					// @hqiu: Implement cross sentence span in serif
-					System.out.println("Exception: You have a cross sentence span which jserif cannot handle");
+			if(LearnItConfig.defined("max_number_of_tokens_per_sentence")){
+				int maxNumberOfTokensPerSentence = LearnItConfig.getInt("max_number_of_tokens_per_sentence");
+				if(st.tokenSequence().size() > maxNumberOfTokensPerSentence){
 					continue;
 				}
-				allSpans.add(spanning);
 			}
-
-			for(Spanning spanning : st.valueMentions().asList()){
-				try{
-					ValueMention valueMention = (ValueMention) spanning;
-					TokenSequence.Span dummy = valueMention.span();
-				}
-				catch(IllegalArgumentException e){
-					// @hqiu: Implement cross sentence span in serif
-					System.out.println("Exception: You have a cross sentence span which jserif cannot handle");
-					continue;
-				}
-				allSpans.add(spanning);
-			}
-
-
-			//			Iterable<Class<? extends Spanning>> allSpans = Iterables.concat(st.mentions(), st.valueMentions());
-
-			for(Spanning spanning : st.eventMentions().asList()){
-				try{
-					EventMention eventMention = (EventMention) spanning;
-					TokenSequence.Span dummy = eventMention.span();
-				}
-				catch(IllegalArgumentException e){
-					// @hqiu: Implement cross sentence span in serif
-					System.out.println("Exception: You have a cross sentence span which jserif cannot handle");
-					continue;
-				}
-				allSpans.add(spanning);
-			}
-
+			List<Spanning> allSpans = new ArrayList<>();
+			allSpans.addAll(st.mentions().mentions());
+			allSpans.addAll(st.valueMentions().valueMentions());
+			allSpans.addAll(st.eventMentions().eventMentions());
 
 			// mentions as unary relations
 			for (Spanning slot0 : allSpans) {
@@ -93,7 +65,7 @@ public class MonolingualDocTheoryInstanceLoader extends AbstractInstanceLoader<D
 				for (Spanning slot1 : allSpans) {
 
 					// Same slot
-					if(slot0 == slot1)
+					if(slot0.equals(slot1))
 					 	continue;
 
 					// Identical spans
@@ -113,15 +85,13 @@ public class MonolingualDocTheoryInstanceLoader extends AbstractInstanceLoader<D
 
 					// for debugging
 					// should be disabled before running on a large corpus
-					/*
-					if(slot0 instanceof EventMention && slot1 instanceof EventMention) {
-						EventMention e0 = (EventMention) slot0;
-						EventMention e1 = (EventMention) slot1;
-
-						System.out.println("[Event Pair] slot0: " + e0.anchorNode().tokenSpan().originalText().get().text()
-						 + ", slot1: " + e1.anchorNode().tokenSpan().originalText().get().text());
-					}
-					*/
+//					if(slot0 instanceof EventMention && slot1 instanceof EventMention) {
+//						EventMention e0 = (EventMention) slot0;
+//						EventMention e1 = (EventMention) slot1;
+//
+//						System.out.println("[Event Pair] slot0: " + e0.anchorNode().tokenSpan().originalText().get().text()
+//						 + ", slot1: " + e1.anchorNode().tokenSpan().originalText().get().text());
+//					}
 
 					if (target.validMatch(match, this.isEvaluating())) {
 //						System.out.println("<Slot0,Slot1>:\t" + getInfoForSpanning(slot0).replace(":", "\t") + "\t" + getInfoForSpanning(slot1).replace(":", "\t")

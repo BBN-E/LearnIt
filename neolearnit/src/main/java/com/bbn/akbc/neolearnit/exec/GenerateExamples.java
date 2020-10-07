@@ -43,7 +43,7 @@ import java.util.Set;
 
 public class GenerateExamples {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         final String paramsFile = args[0];
 
         LearnItConfig.loadParams(new File(paramsFile));                             // load params file

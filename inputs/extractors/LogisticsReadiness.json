@@ -1,0 +1,63 @@
+[ "com.bbn.akbc.neolearnit.scoring.TargetAndScoreTables", {
+  "startDate" : [ "java.util.Date", 1573761367834 ],
+  "targetPath" : "LogisticsReadiness",
+  "seedScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.SeedScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 303
+  } ],
+  "patternScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.PatternScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 109
+  } ],
+  "tripleScores" : [ "com.bbn.akbc.neolearnit.scoring.tables.TripleScoreTable", {
+    "data" : [ "com.bbn.akbc.neolearnit.storage.EfficientMapDataStore", {
+      "keyList" : [ "java.util.ArrayList", [ ] ],
+      "valList" : [ "java.util.ArrayList", [ ] ],
+      "entries" : [ "java.util.ArrayList", [ ] ]
+    } ],
+    "iteration" : 0
+  } ],
+  "iteration" : 303,
+  "goodSeedPrior" : "Infinity",
+  "totalConfidenceDenominator" : 0.0,
+  "stage" : "initial",
+  "params" : [ "java.util.HashMap", {
+    "serif_data" : "/home/criley/repos/TextGroup/Active/Data/SERIF/",
+    "corpus_name" : "cx_estonia_baltic.040920",
+    "loader_concurrency" : "5",
+    "max_regexp_pattern_words" : "5",
+    "mappings_lists_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/source_mappings_lists",
+    "max_binary_prop_depth" : "2",
+    "mappings_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/source_mappings",
+    "queue_priority" : "5",
+    "mappings_list_batches" : "20",
+    "min_pattern_frequency_per_batch" : "2",
+    "source_lists" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/source_lists",
+    "max_prop_depth" : "2",
+    "stopwords" : "/home/criley/repos/learnit/inputs/resources/stopwords/english_causal_relationships.txt",
+    "aggregated_frequency_filter_pattern_min" : "10",
+    "max_unary_prop_depth" : "1",
+    "languages" : "English",
+    "bert_npz_list" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/bert_npz.list",
+    "linux_queue" : "nongale-sl6",
+    "debug_extraction" : "false",
+    "corpus_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/source_lists",
+    "similarities_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/learnit_similarity_data",
+    "stages_to_run" : "similarities-only",
+    "learnit_expt_suffix" : "default",
+    "source_root" : "/home/criley/repos/learnit/neolearnit",
+    "min_seed_frequency_per_batch" : "1",
+    "learnit_root" : "/home/criley/repos/learnit",
+    "ontology_root" : "/home/criley/repos/learnit/inputs/ontologies/cx/bae_icm/internal_ontology",
+    "learnit_data_dir" : "/nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920"
+  } ],
+  "experimentName" : "default"
+} ]

@@ -1,9 +1,11 @@
 package com.bbn.akbc.neolearnit.serializers.binary_event;
 
 import com.bbn.akbc.common.Pair;
+import com.bbn.akbc.neolearnit.common.Annotation;
 import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.targets.Target;
 import com.bbn.akbc.neolearnit.common.targets.TargetFactory;
+import com.bbn.akbc.neolearnit.observations.label.LabelPattern;
 import com.bbn.akbc.neolearnit.serializers.ExternalAnnotationBuilder;
 import com.bbn.bue.common.files.FileUtils;
 import com.bbn.serif.theories.DocTheory;
@@ -25,6 +27,13 @@ public class BratAnnotationObserver extends ExternalAnnotationBuilder {
     final Set<Pair<MentionIdentifier, MentionIdentifier>> relationMentionSet;
     final Map<String, Map<String, List<String>>> relationBuffer;
 
+    public String unaryTypeStrGetterWithFallback(String docId, int sentId, int startIdx, int endIdx, UnaryInstanceTypeGetter unaryInstanceTypeGetter){
+        String type = unaryInstanceTypeGetter.getLabel(docId,sentId,startIdx,endIdx);
+        if(type == null){
+            return "MISSING_IN_MAPPINGS";
+        }
+        else return type;
+    }
 
     public BratAnnotationObserver(String outputDir) {
         this.outputDir = new File(outputDir);
@@ -81,19 +90,20 @@ public class BratAnnotationObserver extends ExternalAnnotationBuilder {
         }
     }
 
-    public void WriteAllEventMention(Collection<DocTheory> docTheoryCollection) {
-        for (DocTheory docTheory : docTheoryCollection) {
-            for (SentenceTheory sentenceTheory : docTheory.sentenceTheories()) {
-                for (EventMention eventMention : sentenceTheory.eventMentions()) {
-                    WriteEventMention(new MentionIdentifier(docTheory.docid().asString(),
-                            sentenceTheory.sentenceNumber(),
-                            eventMention.anchorNode().head().tokenSpan().startCharOffset().asInt(),
-                            eventMention.anchorNode().head().tokenSpan().endCharOffset().asInt(),
-                            eventMention.anchorNode().head().tokenSpan().originalText().content().utf16CodeUnits().replace('\n', ' ')), docTheory);
-                }
-            }
-        }
-    }
+//    public void WriteAllEventMention(Collection<DocTheory> docTheoryCollection) {
+//        for (DocTheory docTheory : docTheoryCollection) {
+//            for (SentenceTheory sentenceTheory : docTheory.sentenceTheories()) {
+//                for (EventMention eventMention : sentenceTheory.eventMentions()) {
+//                    WriteNodes(new MentionIdentifier(docTheory.docid().asString(),
+//                            sentenceTheory.sentenceNumber(),
+//                            eventMention.anchorNode().head().tokenSpan().startCharOffset().asInt(),
+//                            eventMention.anchorNode().head().tokenSpan().endCharOffset().asInt(),
+//                            "Event",
+//                            eventMention.anchorNode().head().tokenSpan().originalText().content().utf16CodeUnits().replace('\n', ' ')), docTheory);
+//                }
+//            }
+//        }
+//    }
 
     private void WriteRelationMention(MentionIdentifier left, MentionIdentifier right) {
         if (this.relationMentionSet.contains(new Pair<>(left, right))) return;
@@ -130,7 +140,7 @@ public class BratAnnotationObserver extends ExternalAnnotationBuilder {
         }
     }
 
-    private void WriteEventMention(MentionIdentifier mentionIdentifier, DocTheory docTheory) {
+    private void WriteNodes(MentionIdentifier mentionIdentifier, DocTheory docTheory) {
         if (eventMentionMapping.get(mentionIdentifier) != null) {
             return;
         }
@@ -197,28 +207,52 @@ public class BratAnnotationObserver extends ExternalAnnotationBuilder {
     @Override
     public void build() throws Exception {
         Map<InstanceIdentifier, DocTheory> instanceIdentifierDocTheoryMapTheoryMap = this.resolveDocTheory();
+        UnaryInstanceTypeGetter unaryInstanceTypeGetter = new UnaryInstanceTypeGetter();
+        for(InstanceIdentifier instanceIdentifier:this.inMemoryAnnotationStorage.getAllInstanceIdentifier()){
+            if(instanceIdentifier.getSlot1SpanningType().equals(InstanceIdentifier.SpanningType.Empty)){
+                List<String> possibleTypes = new ArrayList<>();
+                for(LabelPattern labelPattern: this.inMemoryAnnotationStorage.lookupInstanceIdentifierAnnotation(instanceIdentifier)){
+                    String frozenString;
+                    if (labelPattern.getFrozenState().equals(Annotation.FrozenState.FROZEN_GOOD)) {
+                        frozenString = "+";
+                    } else if (labelPattern.getFrozenState().equals(Annotation.FrozenState.FROZEN_BAD)) {
+                        frozenString = "-";
+                    } else {
+                        frozenString = "N";
+                    }
+                    possibleTypes.add(labelPattern.getLabel()+"/"+frozenString);
+                }
+                if(possibleTypes.size()<1){
+                    possibleTypes.add("NO_LABEL");
+                }
+                unaryInstanceTypeGetter.putLabel(instanceIdentifier.getDocid(),instanceIdentifier.getSentid(),instanceIdentifier.getSlot0Start(),instanceIdentifier.getSlot0End(),String.join(",",possibleTypes));
+            }
+        }
+
         for (InstanceIdentifier instanceIdentifier : this.inMemoryAnnotationStorage.getAllInstanceIdentifier()) {
             final DocTheory docTheory = instanceIdentifierDocTheoryMapTheoryMap.get(instanceIdentifier);
             final SentenceTheory sentenceTheory = instanceIdentifierDocTheoryMapTheoryMap.get(instanceIdentifier).sentenceTheory(instanceIdentifier.getSentid());
 
             String docId = instanceIdentifier.getDocid();
             WriteSGM(docTheory);
-            EventMention leftEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlotEntityType(0)).get();
-            EventMention rightEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlotEntityType(1)).get();
+            EventMention leftEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType()).get();
+            EventMention rightEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlot1SpanningType()).get();
             MentionIdentifier left = new MentionIdentifier(
                     docTheory.docid().asString(),
                     sentenceTheory.sentenceNumber(),
                     leftEventMention.anchorNode().head().tokenSpan().startCharOffset().asInt(),
                     leftEventMention.anchorNode().head().tokenSpan().endCharOffset().asInt(),
+                    unaryTypeStrGetterWithFallback(docTheory.docid().asString(), sentenceTheory.sentenceNumber(), instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), unaryInstanceTypeGetter),
                     leftEventMention.anchorNode().head().tokenSpan().originalText().content().utf16CodeUnits().replace('\n', ' '));
             MentionIdentifier right = new MentionIdentifier(
                     docTheory.docid().asString(),
                     sentenceTheory.sentenceNumber(),
                     rightEventMention.anchorNode().head().tokenSpan().startCharOffset().asInt(),
                     rightEventMention.anchorNode().head().tokenSpan().endCharOffset().asInt(),
+                    unaryTypeStrGetterWithFallback(docTheory.docid().asString(), sentenceTheory.sentenceNumber(), instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), unaryInstanceTypeGetter),
                     rightEventMention.anchorNode().head().tokenSpan().originalText().content().utf16CodeUnits().replace('\n', ' '));
-            WriteEventMention(left, docTheory);
-            WriteEventMention(right, docTheory);
+            WriteNodes(left, docTheory);
+            WriteNodes(right, docTheory);
             WriteRelationMention(left, right);
         }
 
@@ -226,19 +260,66 @@ public class BratAnnotationObserver extends ExternalAnnotationBuilder {
         flushEventBuffer();
     }
 
+    private class UnaryInstanceTypeGetter{
+        private class UnaryInstanceIdentifier{
+            String docId;
+            int sentId;
+            int startIdx;
+            int endIdx;
+            UnaryInstanceIdentifier(String docId,int sentId,int startIdx,int endIdx){
+                this.docId = docId;
+                this.sentId = sentId;
+                this.startIdx = startIdx;
+                this.endIdx = endIdx;
+            }
+            @Override
+            public boolean equals(Object o){
+                if(!(o instanceof UnaryInstanceIdentifier))return false;
+                UnaryInstanceIdentifier that = (UnaryInstanceIdentifier)o;
+                return this.docId.equals(that.docId) && this.sentId == that.sentId && this.startIdx == that.startIdx && this.endIdx == that.endIdx;
+            }
+
+            @Override
+            public int hashCode(){
+                int prime = 31;
+                int ret = docId.hashCode();
+                ret = ret * prime + this.sentId;
+                ret = ret * prime + this.startIdx;
+                ret = ret * prime + this.endIdx;
+                return ret;
+            }
+        }
+
+        final Map<UnaryInstanceIdentifier,String> unaryInstanceIdToLabel = new HashMap<>();
+
+        public UnaryInstanceTypeGetter(){
+        }
+
+        String getLabel(String docId,int sentId,int startIdx,int endIdx){
+            return unaryInstanceIdToLabel.get(new UnaryInstanceIdentifier(docId,sentId,startIdx,endIdx));
+        }
+
+        void putLabel(String docId,int sentId,int startIdx,int endIdx,String label){
+            unaryInstanceIdToLabel.put(new UnaryInstanceIdentifier(docId,sentId,startIdx,endIdx),label);
+        }
+
+    }
+
     private class MentionIdentifier {
         final String docId;
         final int sentId;
         final int startCharOffset;
         final int endCharOffset;
+        final String eventType;
         final String utf16CodeUnits;
 
-        MentionIdentifier(String docId, int sentId, int startCharOffset, int endCharOffset, String utf16CodeUnits) {
+        MentionIdentifier(String docId, int sentId, int startCharOffset, int endCharOffset,String eventType, String utf16CodeUnits) {
             this.docId = docId;
             this.sentId = sentId;
             this.startCharOffset = startCharOffset;
             this.endCharOffset = endCharOffset;
             this.utf16CodeUnits = utf16CodeUnits;
+            this.eventType = eventType;
         }
 
         @Override
@@ -249,7 +330,7 @@ public class BratAnnotationObserver extends ExternalAnnotationBuilder {
                     that.sentId == this.sentId &&
                     that.startCharOffset == this.startCharOffset &&
                     that.endCharOffset == this.endCharOffset &&
-                    that.utf16CodeUnits.equals(this.utf16CodeUnits);
+                    that.eventType.equals(this.eventType);
         }
 
         @Override
@@ -279,6 +360,10 @@ public class BratAnnotationObserver extends ExternalAnnotationBuilder {
 
         public String getUtf16CodeUnits() {
             return this.utf16CodeUnits;
+        }
+
+        public String getEventType(){
+            return this.eventType;
         }
     }
 }

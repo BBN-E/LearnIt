@@ -75,7 +75,7 @@ public class Initialize {
 			initialSeeds = new ArrayList<Seed>();
 		}
 
-		Target target = TargetFactory.fromString(relation);
+		Target target = TargetFactory.fromXMLPathString(relation);
 
 		File patternFile = new File(patternFilename);
 		Set<LearnitPattern> initialPatterns = new HashSet<LearnitPattern>();

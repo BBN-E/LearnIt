@@ -118,8 +118,8 @@
                             <name>InstanceExtractor</name>
                         </program>
                         <program>
-                            <mainClass>com.bbn.akbc.neolearnit.exec.LabelExtractor</mainClass>
-                            <name>LabelExtractor</name>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.RunPrintBilingualInstances</mainClass>
+                            <name>RunPrintBilingualInstances</name>
                         </program>
                         <program>
                             <mainClass>com.bbn.akbc.neolearnit.util.MergeExtractors</mainClass>
@@ -237,21 +237,8 @@
                             <name>EventMentionLabelItSelfLabeler</name>
                         </program>
                         <program>
-                            <mainClass>com.bbn.akbc.neolearnit.tmp.ConvertOldAMTCSVToNew</mainClass>
-                            <name>ConvertOldAMTCSVToNew</name>
-                        </program>
-                        <program>
-                            <mainClass>com.bbn.akbc.neolearnit.tmp.CheckAlignmentRateAndGenerateLabeledMappings
-                            </mainClass>
-                            <name>CheckAlignmentRateAndGenerateLabeledMappings</name>
-                        </program>
-                        <program>
                             <mainClass>com.bbn.akbc.neolearnit.labelers.DifferenceLabeler</mainClass>
                             <name>DifferenceLabeler</name>
-                        </program>
-                        <program>
-                            <mainClass>com.bbn.akbc.neolearnit.labelers.ElimateSymmetricInstanceIdentifier</mainClass>
-                            <name>ElimateSymmetricInstanceIdentifier</name>
                         </program>
                         <program>
                             <mainClass>com.bbn.akbc.neolearnit.exec.SerializeLabeledMappingsToNLPLingo</mainClass>
@@ -264,11 +251,6 @@
                         <program>
                             <mainClass>com.bbn.akbc.neolearnit.exec.BinaryEventRelationHTMLDecoder</mainClass>
                             <name>BinaryEventRelationHTMLDecoder</name>
-                        </program>
-                        <program>
-                            <mainClass>com.bbn.akbc.neolearnit.labelers.TargetAndScoreTableGoodSeedAndPatternLabeler
-                            </mainClass>
-                            <name>TargetAndScoreTableGoodSeedAndPatternLabeler</name>
                         </program>
                         <program>
                             <name>ExamplerToTargetAndScoreTable</name>
@@ -284,16 +266,6 @@
                             <name>EnlargeTargetAndScoreTableBasedOnSimilarity</name>
                         </program>
                         <program>
-                            <mainClass>com.bbn.akbc.neolearnit.util.ConvertMappingsToTriplesForRelationalGraph
-                            </mainClass>
-                            <name>ConvertMappingsToTriplesForRelationalGraph</name>
-                        </program>
-                        <program>
-                            <mainClass>com.bbn.akbc.neolearnit.bootstrapping.GenerateTrainingDataForRelationTriple
-                            </mainClass>
-                            <name>GenerateTrainingDataForRelationTriple</name>
-                        </program>
-                        <program>
                             <mainClass>com.bbn.akbc.neolearnit.labelers.OldUIDumpJsonLabeler</mainClass>
                             <name>OldUIDumpJsonLabeler</name>
                         </program>
@@ -306,7 +278,7 @@
                             <name>SerializeLabeledMappingsToOpenNRE</name>
                         </program>
                         <program>
-                            <mainClass>com.bbn.akbc.neolearnit.exec.MergeLabeledMappings</mainClass>
+                            <mainClass>com.bbn.akbc.neolearnit.labelers.MergeLabeledMappingsFromShell</mainClass>
                             <name>MergeLabeledMappings</name>
                         </program>
                         <program>
@@ -322,15 +294,184 @@
                             <name>AddLegacyEventAndArgumentAnnotationInSerifXML</name>
                         </program>
                         <program>
-                            <mainClass>com.bbn.akbc.neolearnit.exec.CountLabelToNumOfInstancePerLabelInLabelMappings</mainClass>
-                            <name>CountLabelToNumOfInstance</name>
-                        </program>
-                        <program>
                             <mainClass>com.bbn.akbc.neolearnit.util.AddEventMentionFromMappings</mainClass>
                             <name>AddEventMentionFromMappings</name>
                         </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.LabelerFactory</mainClass>
+                            <name>LabelerFactory</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.labelers.MergeLabeledMappingsFromList</mainClass>
+                            <name>MergeLabeledMappingsFromList</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.serializers.SerifAnnotationDataObserver</mainClass>
+                            <name>SerifAnnotationDataObserver</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.AttachLowerRankPatternAtHigherRankTarget</mainClass>
+                            <name>AttachLowerRankPatternAtHigherRankTarget</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.serializers.SerifXMLSerializer</mainClass>
+                            <name>SerifXMLSerializer</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.AttachEventArgBasedOnGuessing</mainClass>
+                            <name>AttachEventArgBasedOnGuessing</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.labelers.TargetAndScoreTableLabeler</mainClass>
+                            <name>TargetAndScoreTableLabeler</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.CreateTargetBasedOnYAMLs</mainClass>
+                            <name>CreateTargetBasedOnYAMLs</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.ExportLatestTargetAndScoreTableBasedOnYAML</mainClass>
+                            <name>ExportLatestTargetAndScoreTableBasedOnYAML</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.AddOpenNREAnnotationToLabeledMappings</mainClass>
+                            <name>AddOpenNREAnnotationToLabeledMappings</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.DumpPatternWithLexicalTerms</mainClass>
+                            <name>DumpPatternWithLexicalTerms</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.AnnotationStatistics</mainClass>
+                            <name>AnnotationStatistics</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.SerializeLabeledMappingsToSharableEventAnnotation
+                            </mainClass>
+                            <name>SerializeLabeledMappingsToSharableEventAnnotation</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.ProjectAllEventsToSecondLanguage</mainClass>
+                            <name>ProjectAllEventsToSecondLanguage</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.PatternConverterTester</mainClass>
+                            <name>PatternConverterTester</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.tmp.FindLearnitPatternFromLabeledInstances</mainClass>
+                            <name>FindLearnitPatternFromLabeledInstances</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.labelers.LabelByPreExistingSerifEventMentionType</mainClass>
+                            <name>LabelByPreExistingSerifEventMentionType</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.labelers.TabularPatternListLabeler</mainClass>
+                            <name>TabularPatternListLabeler</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.GenericEventTimeDetector</mainClass>
+                            <name>GenericEventTimeDetector</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.DumpLearnItObversationWithSelectedInstances</mainClass>
+                            <name>DumpLearnItObversationWithSelectedInstances</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.DumpSimilarPattern</mainClass>
+                            <name>DumpSimilarPattern</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.FindLowerRankPatternGivenHighRankInstanceIdentifier</mainClass>
+                            <name>FindLowerRankPatternGivenHighRankInstanceIdentifier</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.UseYAMLAndLatestExtractorForLabelingMappings</mainClass>
+                            <name>UseYAMLAndLatestExtractorForLabelingMappings</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.PrintOutAllSubsOfProposition</mainClass>
+                            <name>PrintOutAllSubsOfProposition</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.FilterMappingsThatDontHaveCertainEntityMentionInInstances</mainClass>
+                            <name>FilterMappingsThatDontHaveCertainEntityMentionInInstances</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.PrintAllPatterns</mainClass>
+                            <name>PrintAllPatterns</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.ConvertOldExtractorIntoNewExtractor</mainClass>
+                            <name>ConvertOldExtractorIntoNewExtractor</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.mappings.filters.BadSerifPatternFilter</mainClass>
+                            <name>BadSerifPatternFilter</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.LearnItDecoder</mainClass>
+                            <name>LearnItDecoder</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.EERNASampler</mainClass>
+                            <name>EERNASampler</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.AlignOldPatternToNewPattern</mainClass>
+                            <name>AlignOldPatternToNewPattern</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.exec.GenerateTrainingDataForNN</mainClass>
+                            <name>GenerateTrainingDataForNN</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.GenerateDocListForMappings</mainClass>
+                            <name>GenerateDocListForMappings</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.GenericEventDetector</mainClass>
+                            <name>GenericEventDetector</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.labelers.EERGraphLabeler</mainClass>
+                            <name>EERGraphLabeler</name>
+                        </program>
+                        <program>
+                            <mainClass>com.bbn.akbc.neolearnit.util.MergeMappingsForDemo</mainClass>
+                            <name>MergeMappingsForDemo</name>
+                        </program>
                     </programs>
                 </configuration>
+            </plugin>
+
+            <!-- Maven Assembly Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <!-- get all project dependencies -->
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <!-- MainClass in mainfest make a executable jar -->
+                    <archive>
+
+                    </archive>
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <!-- bind to the packaging phase -->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>

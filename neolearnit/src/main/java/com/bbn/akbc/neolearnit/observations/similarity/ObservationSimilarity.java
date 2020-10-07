@@ -1,6 +1,8 @@
 package com.bbn.akbc.neolearnit.observations.similarity;
 
 import com.bbn.akbc.neolearnit.observations.LearnItObservation;
+import com.bbn.akbc.neolearnit.observations.pattern.LearnitPattern;
+import com.bbn.akbc.neolearnit.observations.pattern.SerifPattern;
 import com.bbn.akbc.utility.Pair;
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
@@ -26,6 +28,8 @@ public abstract class ObservationSimilarity {
         this.observedElement = observedElement;
         this.similarObservations = similarObservations;
     }
+
+
 
     public static List<Pair<LearnItObservation, Double>> mergeMultipleSimilarities(
             Collection<Optional<? extends ObservationSimilarity>> multipleSimilarities,
@@ -57,11 +61,6 @@ public abstract class ObservationSimilarity {
             @Override
             public Pair<LearnItObservation, Double> apply(Map.Entry<LearnItObservation, Double> entry) {
                 return Pair.fromEntry(entry);
-            }
-        }).filter(new Predicate<Pair<LearnItObservation, Double>>() {
-            @Override
-            public boolean apply(Pair<LearnItObservation, Double> pair) {
-                return pair.value >= similarityScoreThreshold;
             }
         }).toSortedList(new Comparator<Pair<LearnItObservation, Double>>() {
             @Override

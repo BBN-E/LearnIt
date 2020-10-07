@@ -29,7 +29,7 @@ public class PrepareTargetMapping {
 		String outdir = args[3];
 
 		LearnItConfig.loadParams(new File(params));
-		Target t = TargetFactory.fromString(targetName);
+		Target t = TargetFactory.fromXMLPathString(targetName);
 
 		File sourceMappingFiles = getSourceMappingsList(t, batchNum);
 		if (!sourceMappingFiles.getParentFile().exists()) {

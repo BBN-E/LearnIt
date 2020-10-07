@@ -61,8 +61,8 @@ public class AMTBinaryEventRelationObserver extends ExternalAnnotationBuilder {
         for (InstanceIdentifier instanceIdentifier : this.inMemoryAnnotationStorage.getAllInstanceIdentifier()) {
             final SentenceTheory sentenceTheory = instanceIdentifierSentenceTheoryMap.get(instanceIdentifier);
             final TokenSequence tokenSequence = sentenceTheory.tokenSequence();
-            final EventMention leftEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlotEntityType(0)).get();
-            final EventMention rightEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlotEntityType(1)).get();
+            final EventMention leftEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType()).get();
+            final EventMention rightEventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlot1SpanningType()).get();
 
             final int leftHeadWordTokenIdx = leftEventMention.anchorNode().head().tokenSpan().endTokenIndexInclusive();
             final int rightHeadWordTokenIdx = rightEventMention.anchorNode().head().tokenSpan().endTokenIndexInclusive();
@@ -95,7 +95,7 @@ public class AMTBinaryEventRelationObserver extends ExternalAnnotationBuilder {
                         orininalHtml
                 );
                 // Obviously, the size of htmlStrList can be used as index
-                htmlStrList.add(String.valueOf(htmlStrList.size() + 1) + ", " + orininalHtml);
+                htmlStrList.add((htmlStrList.size() + 1) + ", " + orininalHtml);
             }
 
             instanceIdToHEadIdxOffCsvPrinter.printRecord(

@@ -4,7 +4,7 @@ class Seed extends LearnItObservation {
 	constructor(originalObjJson, originalScoreTable) {
 		const displayableStr = "(" + originalObjJson.slot0.text[0] + "," + originalObjJson.slot1.text[0] + ")";
 		const key = JSON.stringify(originalObjJson);
-		super(key, originalObjJson, displayableStr, originalScoreTable);
+		super(key, originalObjJson, originalObjJson.toIDString, displayableStr, originalScoreTable);
 	}
 
 	static fromJson(originalObjJson, originalScoreTable) {

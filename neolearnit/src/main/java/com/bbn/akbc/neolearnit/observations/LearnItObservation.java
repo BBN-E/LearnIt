@@ -1,26 +1,17 @@
 package com.bbn.akbc.neolearnit.observations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public abstract class LearnItObservation implements Comparable<LearnItObservation> {
 
 
 	@Override
-	public int hashCode() {
-		throw new RuntimeException("Learnit Observations must implement" +
-				" their own .hashCode and .equals and must not call super.hashCode()!");
-	}
+    public abstract int hashCode();
 
 	@Override
-	public boolean equals(Object obj) {
-		throw new RuntimeException("Learnit Observations must implement" +
-				" their own .hashCode and .equals and must not call super.equals()!");
-	}
-
+    public abstract boolean equals(Object obj);
 	@Override
-	public String toString() {
-		System.out.println("Warning: Learnit Observations does not have it's own" +
-				" toString.");
-		return super.toString();
-	}
+    public abstract String toString();
 
 	public abstract String toIDString();
 

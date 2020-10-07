@@ -18,45 +18,45 @@ import java.util.List;
 
 public class FileUtil {
 
-  public static List<String> readLinesIntoList(File file) {
-    return readLinesIntoList(file.getAbsolutePath());
-  }
-
-  public static List<String> readLinesIntoList(String file) {
-    List<String> lines = new ArrayList<String>();
-
-    int nLine = 0;
-
-    try {
-      BufferedReader reader = new BufferedReader(new FileReader(file));
-      String sline;
-      while ((sline = reader.readLine()) != null) {
-        if (nLine++ % 100000 == 0) {
-          System.out.println("# lines read: " + nLine);
-        }
-
-        lines.add(sline);
-      }
-      reader.close();
-    } catch (IOException e) {
-      e.printStackTrace();
+    public static List<String> readLinesIntoList(File file) {
+        return readLinesIntoList(file.getAbsolutePath());
     }
 
-    return lines;
-  }
+    public static List<String> readLinesIntoList(String file) {
+        List<String> lines = new ArrayList<String>();
 
-  public static String readFileIntoString(String file, String encoding) {
-    StringBuilder sb = new StringBuilder();
+        int nLine = 0;
 
-    try {
-      FileInputStream fis = new FileInputStream(file);
-      BufferedReader reader = new BufferedReader(new InputStreamReader(fis, encoding));
-      int i;
-      while ((i = reader.read()) != -1) {
-        char ch = (char) i;
-        sb.append(ch);
-      }
-      reader.close();
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String sline;
+            while ((sline = reader.readLine()) != null) {
+                if (nLine++ % 100000 == 0) {
+                    System.out.println("# lines read: " + nLine);
+                }
+
+                lines.add(sline);
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return lines;
+    }
+
+    public static String readFileIntoString(String file, String encoding) {
+        StringBuilder sb = new StringBuilder();
+
+        try {
+            FileInputStream fis = new FileInputStream(file);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(fis, encoding));
+            int i;
+            while ((i = reader.read()) != -1) {
+                char ch = (char) i;
+                sb.append(ch);
+            }
+            reader.close();
 
 /*
                         FileInputStream fis = new FileInputStream(file);
@@ -68,43 +68,43 @@ public class FileUtil {
 			}
 			s = contents.toString();
 */
-    } catch (IOException e) {
-      e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return sb.toString();
     }
 
-    return sb.toString();
-  }
-
-  public static boolean isFileExist(String strFile) {
-    File f = new File(strFile);
-    if (f.exists()) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  public static void writeToFile(String text, String fileName) {
-    try {
-      BufferedWriter writer = new BufferedWriter(new FileWriter(new File(fileName)));
-      writer.write(text);
-      writer.close();
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-  }
-
-  // example: delimilator="\n"
-  public static void writeToFile(List<String> strings, String delimilator,
-      String fileName) {
-    StringBuilder sb = new StringBuilder();
-    for (String str : strings) {
-      sb.append(str + delimilator);
+    public static boolean isFileExist(String strFile) {
+        File f = new File(strFile);
+        if (f.exists()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    String text = sb.toString();
-    text = text.substring(0, text.length() - delimilator.length());
+    public static void writeToFile(String text, String fileName) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(new File(fileName)));
+            writer.write(text);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-    writeToFile(text, fileName);
-  }
+    // example: delimilator="\n"
+    public static void writeToFile(List<String> strings, String delimilator,
+                                   String fileName) {
+        StringBuilder sb = new StringBuilder();
+        for (String str : strings) {
+            sb.append(str + delimilator);
+        }
+
+        String text = sb.toString();
+        text = text.substring(0, text.length() - delimilator.length());
+
+        writeToFile(text, fileName);
+    }
 }

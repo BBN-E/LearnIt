@@ -1,12 +1,14 @@
 package com.bbn.akbc.neolearnit.common.targets.constraints.impl;
 
+import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.targets.constraints.ValidTypeConstraint;
+import com.bbn.akbc.neolearnit.observations.seed.Seed;
+import com.bbn.bue.common.exceptions.NotImplementedException;
 import com.bbn.serif.patterns.Pattern.Builder;
 import com.bbn.serif.patterns.ValueMentionPattern;
 import com.bbn.serif.theories.Spanning;
 import com.bbn.serif.theories.ValueMention;
 import com.bbn.serif.types.ValueType;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.Optional;
@@ -40,13 +42,11 @@ public class ValueTypeConstraint extends ValidTypeConstraint {
 
 		if (mention instanceof ValueMention) {
 			Optional<ValueMention> m = Optional.of((ValueMention)mention);
-			if (m.isPresent() &&
-				(validTypes.contains(m.get().fullType().toString()) ||
-				 validTypes.contains("all"))) { // special case: if valueTypes contains "all" then every value type is valid
-				return true;
-			}
-			return false;
-		} else {
+            // special case: if valueTypes contains "all" then every value type is valid
+            return m.isPresent() &&
+                    (validTypes.contains(m.get().fullType().toString()) ||
+                            validTypes.contains("all"));
+        } else {
 			return false;
 		}
 	}
@@ -106,4 +106,14 @@ public class ValueTypeConstraint extends ValidTypeConstraint {
 				+ slot + "]";
 	}
 
+    @Override
+    public boolean valid(InstanceIdentifier instanceId, Seed seed) {
+        if (slot == 0) {
+            return instanceId.getSlot0SpanningType().equals(InstanceIdentifier.SpanningType.ValueMention) && (validTypes.contains("all") || validTypes.contains(instanceId.getSlotEntityType(0)));
+        } else if (slot == 1) {
+            return instanceId.getSlot1SpanningType().equals(InstanceIdentifier.SpanningType.ValueMention) && (validTypes.contains("all") || validTypes.contains(instanceId.getSlotEntityType(1)));
+        } else {
+            throw new NotImplementedException();
+        }
+    }
 }

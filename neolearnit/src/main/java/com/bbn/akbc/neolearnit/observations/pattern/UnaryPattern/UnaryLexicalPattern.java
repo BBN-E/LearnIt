@@ -25,6 +25,7 @@ public class UnaryLexicalPattern extends LearnitPattern {
     }
 
     @Override
+    @JsonProperty
     public String toPrettyString() {
         return this.toString();
     }

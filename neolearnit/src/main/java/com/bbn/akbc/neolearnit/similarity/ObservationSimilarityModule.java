@@ -21,29 +21,24 @@ import java.util.zip.GZIPInputStream;
 
 public class ObservationSimilarityModule {
 
-  private final Mappings mappings;
+    private final Mappings mappings;
 
-  private final Set<Seed> seedsInMappings;
-  private final Map<PatternID,LearnitPattern> patternsInMappings;
+    private final Set<Seed> seedsInMappings;
+    private final Map<PatternID, LearnitPattern> patternsInMappings;
 
-  private Map<SeedPatternPair,Optional<SeedPatternPairSimilarity>> seedPatternPairSimilarityCache = new HashMap<>();
+    private Map<SeedPatternPair, Optional<SeedPatternPairSimilarity>> seedPatternPairSimilarityCache = new HashMap<>();
 
-  //This map ensures that we don't unnecessarily load similarity matrices from the same mappings object again and again
-  private static Map<Mappings,ObservationSimilarityModule> mappingsToSimModule = new HashMap<>();
-  /*
-    Retiring old way of doing lazy-lookup in favor of loading the similarity matrices at the beginning.
-    We will still keep the above cache maps around.
-   */
-  private Map<Seed, SeedSimilarity> seedSimilarityMap = new HashMap<>();
-  private Map<PatternID, PatternSimilarity> patternSimilarityMap = new HashMap<>();
+    /*
+      Retiring old way of doing lazy-lookup in favor of loading the similarity matrices at the beginning.
+      We will still keep the above cache maps around.
+     */
+    private Map<Seed, SeedSimilarity> seedSimilarityMap = new HashMap<>();
+    private Map<PatternID, PatternSimilarity> patternSimilarityMap = new HashMap<>();
 
-  private final String seedSimilarityDir;
-  private final String patternSimilarityDir;
+    private final String seedSimilarityDir;
+    private final String patternSimilarityDir;
 
-  private final boolean honorSlotOrderingForSeeds;
-
-
-
+    private final boolean honorSlotOrderingForSeeds;
 
 
 //  public static void main(String[] args) throws IOException{
@@ -57,205 +52,212 @@ public class ObservationSimilarityModule {
 //    module.getPatternSimilarity(PatternID.from("dummy"));
 //  }
 
-  private ObservationSimilarityModule(Mappings mappings, String suffix, boolean honorSlotOrderingForSeeds,
-                                      Set<Seed> seedsInMappings, Map<PatternID,LearnitPattern> patternsInMappings) {
-    this.mappings = mappings;
+    private ObservationSimilarityModule(Mappings mappings, String similarityDataRoot, boolean honorSlotOrderingForSeeds,
+                                        Set<Seed> seedsInMappings, Map<PatternID, LearnitPattern> patternsInMappings) {
+        this.mappings = mappings;
 
-    // The following convention for similarity dir names is derived from the learnit sequence.
-    String seedSimDirSuffix = suffix+File.separator+"min_freq_"+
-            LearnItConfig.get("min_seed_frequency_per_batch")+"_"+LearnItConfig.get("seed_similarity_threshold");
-    String patternSimDirSuffix = suffix+File.separator+"min_freq_"+
-            LearnItConfig.get("min_pattern_frequency_per_batch")+"_"+LearnItConfig.get("pattern_similarity_threshold");
+        // The following convention for similarity dir names is derived from the learnit sequence.
+        String patternSimDirSuffix = similarityDataRoot + File.separator + "LearnitPattern" + File.separator + "pairwise_tabular";
+        String seedSimDirSuffix = similarityDataRoot + File.separator + "Seed" + File.separator + "pairwise_tabular";
 
-    this.seedSimilarityDir = LearnItConfig.get("seed_similarity_dir")+File.separator+seedSimDirSuffix;
-    this.patternSimilarityDir = LearnItConfig.get("pattern_similarity_dir")+File.separator+patternSimDirSuffix;
-    this.honorSlotOrderingForSeeds = honorSlotOrderingForSeeds;
-    this.seedsInMappings = seedsInMappings;
-    this.patternsInMappings = patternsInMappings;
-  }
-
-  public static ObservationSimilarityModule create(Mappings mappings, String suffix) throws IOException{
-    if (mappingsToSimModule.get(mappings)!=null){
-      System.out.println("Returning similarity module created for mappings object "+mappings.toString()+"....");
-      return mappingsToSimModule.get(mappings);
+        this.seedSimilarityDir = seedSimDirSuffix;
+        this.patternSimilarityDir = patternSimDirSuffix;
+        this.honorSlotOrderingForSeeds = honorSlotOrderingForSeeds;
+        this.seedsInMappings = seedsInMappings;
+        this.patternsInMappings = patternsInMappings;
     }
-    //true by default
-    boolean honorSlotOrderingForSeeds =
-            !LearnItConfig.defined("honor_slot_ordering_for_seed_extraction") ||
-                    LearnItConfig.optionalParamTrue("honor_slot_ordering_for_seed_extraction");
 
-    ObservationSimilarityModule module = new ObservationSimilarityModule(mappings,suffix,honorSlotOrderingForSeeds,
-            getAllSeedsFromMappings(mappings),getAllPatternsFromMappings(mappings));
-    System.out.println("Loading seed-similarity matrix for mappings object "+mappings.toString()+"...");
-    module.loadSeedSimilarityMatrices();
-    System.out.println("Loading pattern-similarity matrix for mappings object "+mappings.toString()+"...");
-    module.loadPatternSimilarityMatrices();
-    mappingsToSimModule.put(mappings,module);
-    return module;
-  }
+    public static ObservationSimilarityModule create(Mappings mappings, String similarityDataRoot) throws IOException {
+        //true by default
+        boolean honorSlotOrderingForSeeds =
+                !LearnItConfig.defined("honor_slot_ordering_for_seed_extraction") ||
+                        LearnItConfig.optionalParamTrue("honor_slot_ordering_for_seed_extraction");
 
-  private static Set<Seed> getAllSeedsFromMappings(Mappings mappings){
-    return mappings.getAllSeeds().elementSet().stream().map(
-            (Seed s)-> (
-                    (s.withProperText(true,true))
-            )).collect(Collectors.toSet());
-  }
-
-  private static Map<PatternID,LearnitPattern> getAllPatternsFromMappings(Mappings mappings){
-    Map<PatternID,LearnitPattern> patternMap = new HashMap<>();
-    for (LearnitPattern pattern : mappings.getAllPatterns().elementSet()){
-      patternMap.put(PatternID.from(pattern),pattern);
+        ObservationSimilarityModule module = new ObservationSimilarityModule(mappings, similarityDataRoot, honorSlotOrderingForSeeds,
+                getAllSeedsFromMappings(mappings), getAllPatternsFromMappings(mappings));
+        System.out.println("Loading seed-similarity matrix for mappings object " + mappings.toString() + "...");
+        module.loadSeedSimilarityMatrices();
+        System.out.println("Loading pattern-similarity matrix for mappings object " + mappings.toString() + "...");
+        module.loadPatternSimilarityMatrices();
+        return module;
     }
-    return patternMap;
-  }
 
-  public Optional<SeedSimilarity> getSeedSimilarity(Seed seed) throws IOException{
-    SeedSimilarity seedSim = seedSimilarityMap.get(seed);
-    Optional<SeedSimilarity> value = Optional.fromNullable(seedSim);
-    return value;
-  }
-
-  public Optional<PatternSimilarity> getPatternSimilarity(PatternID pattern) throws IOException{
-    PatternSimilarity patternSim = patternSimilarityMap.get(pattern);
-    Optional<PatternSimilarity> value = Optional.fromNullable(patternSim);
-    return value;
-  }
-
-  public Optional<SeedPatternPairSimilarity> getSeedPatternPairSimilarity(SeedPatternPair seedPatternPair) throws IOException{
-    if(this.seedPatternPairSimilarityCache.containsKey(seedPatternPair)){
-      return this.seedPatternPairSimilarityCache.get(seedPatternPair);
+    private static Set<Seed> getAllSeedsFromMappings(Mappings mappings) {
+        return mappings.getAllSeeds().elementSet().stream().map(
+                (Seed s) -> (
+                        (s.withProperText(true, true))
+                )).collect(Collectors.toSet());
     }
-    Optional<SeedSimilarity> seedSimilarity = getSeedSimilarity(seedPatternPair.seed());
-    Optional<PatternSimilarity> patternSimilarity = getPatternSimilarity(seedPatternPair.pattern());
-    Optional<SeedPatternPairSimilarity> value = Optional.absent();
-    if(seedSimilarity.isPresent()&& patternSimilarity.isPresent()){
-      Map<SeedPatternPair,Double> similarObsMap = new HashMap<>();
-      for(Pair<? extends LearnItObservation,Double> similarSeedObs : seedSimilarity.get().getSimilarObservationsAsSortedList()){
-        Seed seed = (Seed)similarSeedObs.key;
-        double seedSimScore = similarSeedObs.value;
-        for(Pair<? extends LearnItObservation,Double> similarPatternObs : patternSimilarity.get().getSimilarObservationsAsSortedList()){
-          PatternID pattern = (PatternID)similarPatternObs.key;
-          double patternSimScore = similarPatternObs.value;
-          similarObsMap.put(SeedPatternPair.create(seed,pattern),seedSimScore*patternSimScore);
+
+    private static Map<PatternID, LearnitPattern> getAllPatternsFromMappings(Mappings mappings) {
+        Map<PatternID, LearnitPattern> patternMap = new HashMap<>();
+        for (LearnitPattern pattern : mappings.getAllPatterns().elementSet()) {
+            patternMap.put(PatternID.from(pattern), pattern);
         }
-      }
-      value = Optional.of(SeedPatternPairSimilarity.create(seedPatternPair,similarObsMap));
+        return patternMap;
     }
-    this.seedPatternPairSimilarityCache.put(seedPatternPair,value);
-    return value;
-  }
 
-  private File[] loadSimilarityFiles(String simDir) {
-    return (new File(simDir)).listFiles(new FileFilter() {
-      @Override
-      public boolean accept(File pathname) {
-        return pathname.isFile()&&pathname.getName().endsWith(".gz");
-      }
-    });
-  }
-
-  private List<Seed> getSeedsFromMappings(Seed seed, boolean honorSlotOrderingForSeeds){
-
-    List<Seed> seedsToReturn = new ArrayList<>();
-
-    if (this.seedsInMappings.contains(seed)){
-      seedsToReturn.add(seed);
+    public Optional<SeedSimilarity> getSeedSimilarity(Seed seed) throws IOException {
+        SeedSimilarity seedSim = seedSimilarityMap.get(seed);
+        Optional<SeedSimilarity> value = Optional.fromNullable(seedSim);
+        return value;
     }
-    if (this.seedsInMappings.contains(seed.reversed())){
-      seedsToReturn.add(seed.reversed());
+
+    public Optional<PatternSimilarity> getPatternSimilarity(PatternID pattern) throws IOException {
+        PatternSimilarity patternSim = patternSimilarityMap.get(pattern);
+        Optional<PatternSimilarity> value = Optional.fromNullable(patternSim);
+        return value;
     }
-    return seedsToReturn;
-  }
 
-  private Optional<LearnitPattern> getPatternFromMappings(String patternIDString){
-    PatternID patternID = PatternID.from(patternIDString);
-    return Optional.fromNullable(this.patternsInMappings.get(patternID));
-  }
-
-  private void loadSeedSimilarityMatrices() throws IOException{
-    for(File simFile : loadSimilarityFiles(this.seedSimilarityDir)){
-        BufferedReader br = new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream(simFile))));
-        String line = null;
-        int count = 0;
-        while((line = br.readLine())!=null){
-            count++;
-            if (count%1000==0){
-              System.out.println("Read "+count+" seeds so far...");
-            }
-            List<String> tokens = Arrays.asList(line.split("\t"));
-            //TODO: Hardcoding of language should be removed
-            Seed seed = Seed.from(LearnItConfig.getList("languages").get(0),tokens.get(0),tokens.get(1));
-            List<Seed> seedsFromMappings = getSeedsFromMappings(seed,this.honorSlotOrderingForSeeds);
-            Map<Seed, Double> similarSeedObservations = new HashMap<>();
-            List<String> similarityTokens = new ArrayList<>();
-            tokens = tokens.subList(2,tokens.size());
-            for(int i=0;i<tokens.size();i++){
-              if(i!=0 && (i%3 == 0 || i==tokens.size()-1)){
-                if(i==tokens.size()-1){
-                  similarityTokens.add(tokens.get(i));
+    public Optional<SeedPatternPairSimilarity> getSeedPatternPairSimilarity(SeedPatternPair seedPatternPair) throws IOException {
+        if (this.seedPatternPairSimilarityCache.containsKey(seedPatternPair)) {
+            return this.seedPatternPairSimilarityCache.get(seedPatternPair);
+        }
+        Optional<SeedSimilarity> seedSimilarity = getSeedSimilarity(seedPatternPair.seed());
+        Optional<PatternSimilarity> patternSimilarity = getPatternSimilarity(seedPatternPair.pattern());
+        Optional<SeedPatternPairSimilarity> value = Optional.absent();
+        if (seedSimilarity.isPresent() && patternSimilarity.isPresent()) {
+            Map<SeedPatternPair, Double> similarObsMap = new HashMap<>();
+            for (Pair<? extends LearnItObservation, Double> similarSeedObs : seedSimilarity.get().getSimilarObservationsAsSortedList()) {
+                Seed seed = (Seed) similarSeedObs.key;
+                double seedSimScore = similarSeedObs.value;
+                for (Pair<? extends LearnItObservation, Double> similarPatternObs : patternSimilarity.get().getSimilarObservationsAsSortedList()) {
+                    PatternID pattern = (PatternID) similarPatternObs.key;
+                    double patternSimScore = similarPatternObs.value;
+                    similarObsMap.put(SeedPatternPair.create(seed, pattern), seedSimScore * patternSimScore);
                 }
-                Seed simSeed = Seed.from(seed.getLanguage(),similarityTokens.get(0),similarityTokens.get(1));
-                List<Seed> similarSeeds = getSeedsFromMappings(simSeed,this.honorSlotOrderingForSeeds);
-                double score = Double.parseDouble(similarityTokens.get(2));
-                for(Seed similarSeed : similarSeeds) {
-                  similarSeedObservations.put(similarSeed, score);
-                }
-                similarityTokens.clear();
-              }
-              similarityTokens.add(tokens.get(i));
             }
-            for (Seed seedFromMappings : seedsFromMappings) {
-              SeedSimilarity seedSimilarity = SeedSimilarity.create(seedFromMappings, similarSeedObservations);
-              seedSimilarityMap.put(seedFromMappings, seedSimilarity);
-            }
+            value = Optional.of(SeedPatternPairSimilarity.create(seedPatternPair, similarObsMap));
         }
+        this.seedPatternPairSimilarityCache.put(seedPatternPair, value);
+        return value;
     }
-    //After similarity matrix have been loaded, clear up seedsInMappings
-    this.seedsInMappings.clear();
-  }
 
-  private void loadPatternSimilarityMatrices() throws IOException{
-    for(File simFile : loadSimilarityFiles(this.patternSimilarityDir)){
-      BufferedReader br = new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream(simFile))));
-      String line = null;
-      int count = 0;
-      while((line = br.readLine())!=null){
-        count++;
-        if (count%1000==0){
-          System.out.println("Read "+count+" seeds so far...");
-        }
-        List<String> tokens = Arrays.asList(line.split("\t"));
-        LearnitPattern learnitPattern = getPatternFromMappings(tokens.get(0)).orNull();
-        if (learnitPattern == null){ //if pattern is not found in mappings, continue
-          continue;
-        }
-        PatternID pattern = PatternID.from(learnitPattern);
-        Map<PatternID, Double> similarPatternObservations = new HashMap<>();
-        List<String> similarityTokens = new ArrayList<>();
-        tokens = tokens.subList(1,tokens.size());
-        for(int i=0;i<tokens.size();i++){
-          if(i!=0 && (i%2 == 0 || i==tokens.size()-1)){
-            if(i==tokens.size()-1){
-              similarityTokens.add(tokens.get(i));
+    private File[] loadSimilarityFiles(String simDir) {
+        return (new File(simDir)).listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File pathname) {
+                return pathname.isFile() && pathname.getName().endsWith(".tsv");
             }
-            LearnitPattern similarityPattern = getPatternFromMappings(similarityTokens.get(0)).orNull();
-            if (similarityPattern == null){ //if similar pattern is not found in mappings, continue
-              continue;
-            }
-            PatternID similarPattern = PatternID.from(similarityPattern);
-            double score = Double.parseDouble(similarityTokens.get(1));
-            similarPatternObservations.put(similarPattern,score);
-            similarityTokens.clear();
-          }
-          similarityTokens.add(tokens.get(i));
-        }
-        PatternSimilarity patternSimilarity = PatternSimilarity.create(pattern,similarPatternObservations);
-        patternSimilarityMap.put(pattern,patternSimilarity);
-       }
+        });
     }
-    //After similarity matrix have been loaded, clear up patternInMappings
-    this.patternsInMappings.clear();
-  }
+
+    private List<Seed> getSeedsFromMappings(Seed seed, boolean honorSlotOrderingForSeeds) {
+
+        List<Seed> seedsToReturn = new ArrayList<>();
+
+        if (this.seedsInMappings.contains(seed)) {
+            seedsToReturn.add(seed);
+        }
+        if (this.seedsInMappings.contains(seed.reversed())) {
+            seedsToReturn.add(seed.reversed());
+        }
+        return seedsToReturn;
+    }
+
+    private Optional<LearnitPattern> getPatternFromMappings(String patternIDString) {
+        PatternID patternID = PatternID.from(patternIDString);
+        return Optional.fromNullable(this.patternsInMappings.get(patternID));
+    }
+
+    private void loadSeedSimilarityMatrices() throws IOException {
+        if (!(new File(this.seedSimilarityDir).isDirectory())) {
+            System.err.println(this.seedSimilarityDir + " does not exists!");
+            return;
+        }
+        for (File simFile : loadSimilarityFiles(this.seedSimilarityDir)) {
+            BufferedReader br = new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream(simFile))));
+            String line = null;
+            int count = 0;
+            while ((line = br.readLine()) != null) {
+                count++;
+                if (count % 1000 == 0) {
+                    System.out.println("Read " + count + " seeds so far...");
+                }
+                List<String> tokens = Arrays.asList(line.split("\t"));
+                //TODO: Hardcoding of language should be removed
+                Seed seed = Seed.from(LearnItConfig.getList("languages").get(0), tokens.get(0), tokens.get(1));
+                List<Seed> seedsFromMappings = getSeedsFromMappings(seed, this.honorSlotOrderingForSeeds);
+                Map<Seed, Double> similarSeedObservations = new HashMap<>();
+                List<String> similarityTokens = new ArrayList<>();
+                tokens = tokens.subList(2, tokens.size());
+                for (int i = 0; i < tokens.size(); i++) {
+                    if (i != 0 && (i % 3 == 0 || i == tokens.size() - 1)) {
+                        if (i == tokens.size() - 1) {
+                            similarityTokens.add(tokens.get(i));
+                        }
+                        Seed simSeed = Seed.from(seed.getLanguage(), similarityTokens.get(0), similarityTokens.get(1));
+                        List<Seed> similarSeeds = getSeedsFromMappings(simSeed, this.honorSlotOrderingForSeeds);
+                        double score = Double.parseDouble(similarityTokens.get(2));
+                        for (Seed similarSeed : similarSeeds) {
+                            similarSeedObservations.put(similarSeed, score);
+                        }
+                        similarityTokens.clear();
+                    }
+                    similarityTokens.add(tokens.get(i));
+                }
+                for (Seed seedFromMappings : seedsFromMappings) {
+                    SeedSimilarity seedSimilarity = SeedSimilarity.create(seedFromMappings, similarSeedObservations);
+                    seedSimilarityMap.put(seedFromMappings, seedSimilarity);
+                }
+            }
+        }
+        //After similarity matrix have been loaded, clear up seedsInMappings
+        this.seedsInMappings.clear();
+    }
+
+    private void loadPatternSimilarityMatrices() throws IOException {
+        if (!(new File(this.patternSimilarityDir).isDirectory())) {
+            System.err.println(this.patternSimilarityDir + " does not exists.");
+            return;
+        }
+        for (File simFile : loadSimilarityFiles(this.patternSimilarityDir)) {
+            BufferedReader br = new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream(simFile))));
+            String line = null;
+            int count = 0;
+            while ((line = br.readLine()) != null) {
+                count++;
+                if (count % 1000 == 0) {
+                    System.out.println("Read " + count + " patterns so far...");
+                }
+                List<String> tokens = Arrays.asList(line.split("\t"));
+                LearnitPattern learnitPattern = getPatternFromMappings(tokens.get(0)).orNull();
+                if (learnitPattern == null) { //if pattern is not found in mappings, continue
+                    continue;
+                }
+                PatternID pattern = PatternID.from(learnitPattern);
+                Map<PatternID, Double> similarPatternObservations = new HashMap<>();
+
+                tokens = tokens.subList(1, tokens.size());
+                for (int i = 0; i < tokens.size(); i+=2) {
+                    LearnitPattern similarityPattern = getPatternFromMappings(tokens.get(i)).orNull();
+                    if (similarityPattern == null) { //if similar pattern is not found in mappings, continue
+                        continue;
+                    }
+                    PatternID similarPattern = PatternID.from(similarityPattern);
+                    double score = Double.parseDouble(tokens.get(i+1));
+                    similarPatternObservations.put(similarPattern, score);
+                }
+                int topK = 1000;
+                List<PatternID> allPatternID = new ArrayList<>(similarPatternObservations.keySet());
+                Collections.sort(allPatternID, new Comparator<PatternID>() {
+                    @Override
+                    public int compare(PatternID o1, PatternID o2) {
+                        return (int) ((similarPatternObservations.get(o2) - similarPatternObservations.get(o1)) * 1000000);
+                    }
+                });
+                Map<PatternID, Double> similarPatternObservationsShrinked = new HashMap<>();
+                for (int i = 0; i < Math.min(topK, allPatternID.size()); i++) {
+                    similarPatternObservationsShrinked.put(allPatternID.get(i), similarPatternObservations.get(allPatternID.get(i)));
+                }
+//                Map<PatternID, Double> similarPatternObservationsShrinked = similarPatternObservations;
+                PatternSimilarity patternSimilarity = PatternSimilarity.create(pattern, similarPatternObservationsShrinked);
+                patternSimilarityMap.put(pattern, patternSimilarity);
+            }
+        }
+        //After similarity matrix have been loaded, clear up patternInMappings
+        this.patternsInMappings.clear();
+    }
 
 
 //  private ObservationSimilarity getObservationSimilarity(LearnItObservation observation, String obsDir, String simDir) throws IOException{

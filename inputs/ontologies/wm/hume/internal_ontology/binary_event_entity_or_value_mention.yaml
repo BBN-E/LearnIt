@@ -1,0 +1,66 @@
+---
+- Binary-Event-Entity-ValueMention:
+  - _source: []
+  - _description: "NA"
+  - _examples: []
+  - _alternative_id: null
+  - has_location:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - has_origin_location:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - has_destination_location:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+    - has_intermediate_location:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+  - has_actor:
+    - _source: []
+    - _description: ""
+    - _examples: []
+    - _alternative_id: null
+    - has_active_actor:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+    - has_affected_actor:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+  - has_artifact:
+    - _source: []
+    - _description: ""
+    - _examples: []
+    - _alternative_id: null
+  - has_time:
+    - _source: []
+    - _description: ""
+    - _examples: []
+    - _alternative_id: null
+    - has_start_time:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+    - has_end_time:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+    - has_duration:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null

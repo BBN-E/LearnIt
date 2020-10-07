@@ -34,8 +34,14 @@ public class CausalRelationCNNObserver implements Observer<Pair<InstanceIdentifi
     @Override
     public void observe(Pair<InstanceIdentifier, LabelPattern> observation) {
         InstanceIdentifier instanceIdentifier = observation.getFirst();
+
         MatchInfo.LanguageMatchInfo languageMatchInfo =
-                instanceIdentifier.reconstructMatchInfo(TargetFactory.makeEverythingTarget()).getPrimaryLanguageMatch();
+                null;
+        try {
+            languageMatchInfo = instanceIdentifier.reconstructMatchInfo(TargetFactory.makeEverythingTarget()).getPrimaryLanguageMatch();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         CausalRelationCNN.Builder builder = new CausalRelationCNN.Builder(languageMatchInfo);
         String arg1type = "NA";
         String arg2type = "NA";

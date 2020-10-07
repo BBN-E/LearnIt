@@ -12,6 +12,7 @@ import com.google.common.collect.Sets;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,7 +28,7 @@ public class PatternInstanceMatchMappingExtractor extends AbstractMappingExtract
 	}
 
 	@Override
-	public Multiset<String> getInstances(Mappings m) {
+	public Multiset<String> getInstances(Mappings m) throws IOException {
 		Multiset<String> result = HashMultiset.<String>create();
 		for (InstanceIdentifier id : m.getInstancesForPattern(pattern)) {
 			// try {

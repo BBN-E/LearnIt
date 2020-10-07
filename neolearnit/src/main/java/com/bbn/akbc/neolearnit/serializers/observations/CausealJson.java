@@ -1,31 +1,37 @@
 package com.bbn.akbc.neolearnit.serializers.observations;
 
-import com.bbn.akbc.neolearnit.observations.pattern.LearnitPattern;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.google.common.collect.ImmutableList;
+
+import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CausealJson {
     @JsonProperty String docid;
-    @JsonProperty ImmutableList<ImmutableList<Integer>> arg1_span_list;
+    @JsonProperty
+    List<List<Integer>> arg1_span_list;
     @JsonProperty String arg1_text;
-    @JsonProperty ImmutableList<ImmutableList<Integer>> arg2_span_list;
+    @JsonProperty
+    List<List<Integer>> arg2_span_list;
     @JsonProperty String arg2_text;
     @JsonProperty String connective_text;
     @JsonProperty String relation_type;
     @JsonProperty String semantic_class;
-    @JsonProperty ImmutableList<LearnitPattern> learnit_pattern;
+    @JsonProperty
+    String sentence;
+    @JsonProperty
+    List<String> learnit_pattern;
 
     @JsonCreator
     public CausealJson(@JsonProperty String docid,
-                       @JsonProperty ImmutableList<ImmutableList<Integer>> arg1_span_list,
+                       @JsonProperty List<List<Integer>> arg1_span_list,
                        @JsonProperty String arg1_text,
-                       @JsonProperty ImmutableList<ImmutableList<Integer>> arg2_span_list,
+                       @JsonProperty List<List<Integer>> arg2_span_list,
                        @JsonProperty String arg2_text,
                        @JsonProperty String semantic_class,
-                       @JsonProperty ImmutableList<LearnitPattern> learnit_pattern
+                       @JsonProperty List<String> learnit_pattern,
+                       @JsonProperty String sentence
                                 ){
         this.docid = docid;
         this.arg1_span_list = arg1_span_list;
@@ -36,7 +42,9 @@ public class CausealJson {
         this.relation_type = "Explicit";
         this.semantic_class = semantic_class;
         this.learnit_pattern = learnit_pattern;
+        this.sentence = sentence;
     }
+
 
     @Override
     public boolean equals(Object o){

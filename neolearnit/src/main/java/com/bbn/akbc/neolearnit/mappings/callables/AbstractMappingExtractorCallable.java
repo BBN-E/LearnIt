@@ -30,7 +30,7 @@ public abstract class AbstractMappingExtractorCallable<T> implements Callable<Mu
 		this.data = data;
 	}
 
-	public abstract Multiset<T> getInstances(Mappings m);
+	public abstract Multiset<T> getInstances(Mappings m) throws IOException;
 
 	public abstract Set<LearnitPattern> getPatternsToRestrict(Mappings m);
 

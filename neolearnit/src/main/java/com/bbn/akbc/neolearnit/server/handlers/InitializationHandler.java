@@ -277,7 +277,7 @@ public class InitializationHandler extends SimpleJSONHandler {
       @JettyArg("description") String description,
       @JettyArg("slot0Types") String slot0Types,
       @JettyArg("slot1Types") String slot1Types,
-      @JettyArg("symmetric") String symmetricStr) {
+      @JettyArg("symmetric") String symmetricStr) throws IOException {
 
     String targetPathRel = String.format("inputs/targets/json/%s.json", name);
     String targetPathFull =

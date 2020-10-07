@@ -103,7 +103,7 @@ public class AddEventMentionFromInstanceIdentifier {
         outputDir.mkdirs();
         List<Callable<Boolean>> tasks = new ArrayList<>();
         for (String docId : docIdToDocPath.keySet()) {
-            if (!docIdToInstanceIdentifierSet.keySet().contains(docId)) {
+            if (!docIdToInstanceIdentifierSet.containsKey(docId)) {
                 Path from = Paths.get(docIdToDocPath.get(docId)); //convert from File to Path
                 Path to = Paths.get(outputDirPathStr + File.separator + docId + ".xml"); //convert from String to Path
                 Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING);
@@ -137,7 +137,7 @@ public class AddEventMentionFromInstanceIdentifier {
             Map<Integer,Set<EventEntry>> pendingAddEventSentenceToEventMap = new HashMap<>();
             for(InstanceIdentifier instanceIdentifier:instanceIdentifierSet){
                 if(instanceIdentifier.getSlot0SpanningType().equals(InstanceIdentifier.SpanningType.EventMention)){
-                    Optional<Spanning> leftSpanning = InstanceIdentifier.getSpanning(docTheory.sentenceTheory(instanceIdentifier.getSentid()),instanceIdentifier.getSlot0Start(),instanceIdentifier.getSlot0End(),instanceIdentifier.getSlotEntityType(0));
+                    Optional<Spanning> leftSpanning = InstanceIdentifier.getSpanning(docTheory.sentenceTheory(instanceIdentifier.getSentid()), instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType());
                     if ((!leftSpanning.isPresent() || !(leftSpanning.get() instanceof EventMention)) && instanceIdentifier.getSlot0Start() >= 0 && instanceIdentifier.getSlot0End() >= 0) {
                         Set<EventEntry> buf = pendingAddEventSentenceToEventMap.getOrDefault(instanceIdentifier.getSentid(),new HashSet<>());
                         buf.add(new EventEntry(instanceIdentifier.getSentid(),instanceIdentifier.getSlot0Start(),instanceIdentifier.getSlot0End(),instanceIdentifier.getSlotEntityType(0)));
@@ -145,7 +145,7 @@ public class AddEventMentionFromInstanceIdentifier {
                     }
                 }
                 if(instanceIdentifier.getSlot1SpanningType().equals(InstanceIdentifier.SpanningType.EventMention)){
-                    Optional<Spanning> rightSpanning = InstanceIdentifier.getSpanning(docTheory.sentenceTheory(instanceIdentifier.getSentid()),instanceIdentifier.getSlot1Start(),instanceIdentifier.getSlot1End(),instanceIdentifier.getSlotEntityType(1));
+                    Optional<Spanning> rightSpanning = InstanceIdentifier.getSpanning(docTheory.sentenceTheory(instanceIdentifier.getSentid()), instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlot1SpanningType());
                     if ((!rightSpanning.isPresent() || !(rightSpanning.get() instanceof EventMention)) && instanceIdentifier.getSlot1Start() >= 0 && instanceIdentifier.getSlot1End() >= 0) {
                         Set<EventEntry> buf = pendingAddEventSentenceToEventMap.getOrDefault(instanceIdentifier.getSentid(),new HashSet<>());
                         buf.add(new EventEntry(instanceIdentifier.getSentid(),instanceIdentifier.getSlot1Start(),instanceIdentifier.getSlot1End(),instanceIdentifier.getSlotEntityType(1)));

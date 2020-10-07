@@ -36,6 +36,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -56,7 +57,7 @@ public final class ServerModeDecoder {
             this.target = checkNotNull(target);
         }
 
-        public final Pair<DocTheory,Mappings> LoadDocument(final String serifXMLString) throws IOException {
+        public final Pair<DocTheory,Mappings> LoadDocument(final String serifXMLString) throws IOException, ExecutionException, InterruptedException {
             final SerifXMLLoader serifxmlLoader =
                     LearnItConfig.params().getOptionalBoolean("load_serifxml_with_sloppy_offsets").or(false)?
                             new SerifXMLLoader.Builder().allowSloppyOffsets().build():
@@ -64,12 +65,13 @@ public final class ServerModeDecoder {
             final DocTheory docTheory = serifxmlLoader.loadFromString(serifXMLString);
             MonolingualExtractionModule module = new MonolingualExtractionModule(false);
             MonolingualDocTheoryInstanceLoader docTheoryLoader = module.getDocTheoryLoader(this.target);
-            LoaderUtils.loadSerifXMLString(serifXMLString,docTheoryLoader);
-            //get our mappings out of the module (MAGIC!)
+            List<DocTheory> docTheoryList = new ArrayList<>();
+            docTheoryList.add(docTheory);
+            LoaderUtils.loadDocTheroyList(docTheoryList,docTheoryLoader);
             return new Pair<>(docTheory,module.getInformationForScoring());
         }
 
-        public final List<CausealJson> ConvertRelationsToJson(Pair<DocTheory, Mappings> preprocessedData) {
+        public final List<CausealJson> ConvertRelationsToJson(Pair<DocTheory, Mappings> preprocessedData) throws IOException {
             final DocTheory docTheory = preprocessedData.getFirst();
             final Mappings mappings = new InstanceIdentifierFilter().makeFiltered(preprocessedData.getSecond());
 //        List<Pair<ImmutableList,String>> existingInstances = new ArrayList<>();
@@ -95,7 +97,7 @@ public final class ServerModeDecoder {
 //            int slot0End = instanceIdentifier.getSlot0End();
 //            int slot1Start = instanceIdentifier.getSlot1Start();
 //            int slot1End = instanceIdentifier.getSlot1End();
-                final MatchInfo.LanguageMatchInfo languageMatchInfo = instanceIdentifier.ReConstructMatchInfoWithDocTheory(this.target,docTheory).getPrimaryLanguageMatch();
+                final MatchInfo.LanguageMatchInfo languageMatchInfo = instanceIdentifier.reconstructMatchInfo(this.target).getPrimaryLanguageMatch();
                 final Spanning span1 = languageMatchInfo.getSlot0().get();
                 final Spanning span2 = languageMatchInfo.getSlot1().get();
                 final String span1Text = span1.span().tokenizedText().utf16CodeUnits();
@@ -113,7 +115,8 @@ public final class ServerModeDecoder {
                         span2Text,
                         instance.getSecond(),
 //                    ImmutableList.copyOf(new HashSet<>(mappings.getInstance2Pattern().getPatterns(instanceIdentifier)))
-                        ImmutableList.copyOf(new HashSet<>())
+                        ImmutableList.copyOf(new HashSet<>()),
+                        languageMatchInfo.getSentTheory().span().tokenizedText().utf16CodeUnits()
                 );
                 ret.add(causealJson);
             }
@@ -136,7 +139,12 @@ public final class ServerModeDecoder {
             String serifxmlStr = convertStreamToString(req.getPart("serifxml_str").getInputStream());
             ObjectMapper mapper = StorageUtils.getMapperWithoutTyping();
             System.out.println("Received SerifXML String");
-            List<CausealJson> result = this.singleDocumentDecoder.ConvertRelationsToJson(this.singleDocumentDecoder.LoadDocument(serifxmlStr));
+            List<CausealJson> result = null;
+            try {
+                result = this.singleDocumentDecoder.ConvertRelationsToJson(this.singleDocumentDecoder.LoadDocument(serifxmlStr));
+            } catch (ExecutionException | InterruptedException e) {
+                throw new IOException(e);
+            }
             mapper.writeValue(resp.getWriter(), result);
         }
     }
@@ -146,7 +154,7 @@ public final class ServerModeDecoder {
         String extractorPath = args[2];
         int port = Integer.parseInt(args[3]);
         LearnItConfig.loadParams(new File(params));
-        Target target = TargetFactory.fromString(relation);
+        Target target = TargetFactory.fromNamedString(relation);
         SingleDocumentDecoder singleDocumentDecoder = new SingleDocumentDecoder(target,extractorPath);
         System.out.println("starting server...");
         Server server = new Server(port);

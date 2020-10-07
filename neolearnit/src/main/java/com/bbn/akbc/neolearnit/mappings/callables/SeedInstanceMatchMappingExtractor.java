@@ -12,6 +12,7 @@ import com.google.common.collect.Multiset;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Set;
 
 public class SeedInstanceMatchMappingExtractor extends AbstractMappingExtractorCallable<String> {
@@ -26,7 +27,7 @@ public class SeedInstanceMatchMappingExtractor extends AbstractMappingExtractorC
 	}
 
 	@Override
-	public Multiset<String> getInstances(Mappings m) {
+	public Multiset<String> getInstances(Mappings m) throws IOException {
 		Multiset<String> result = HashMultiset.<String>create();
 		for (InstanceIdentifier id : m.getInstancesForSeed(seed)) {
 //			try {

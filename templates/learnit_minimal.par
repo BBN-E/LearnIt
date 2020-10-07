@@ -1,0 +1,17 @@
+# Template file for learnit params
+
+learnit_root:+learnit_root+
+source_lists:+source_lists+
+corpus_dir: %source_lists%
+corpus_name: default
+
+languages:English
+max_prop_depth:2
+max_regexp_pattern_words:3
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+
+
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 1

@@ -62,6 +62,19 @@ public class Annotation {
             this.annotationStorage.put(instanceIdentifier, buf);
         }
 
+        public void addOrChangeAnnotation(InstanceIdentifier instanceIdentifier, LabelPattern newLabelPattern) {
+            List<LabelPattern> currentExistSameLabelPattern = new ArrayList<>();
+            for (LabelPattern existedLabelPattern : this.lookupInstanceIdentifierAnnotation(instanceIdentifier)) {
+                if (existedLabelPattern.getLabel().equals(newLabelPattern.getLabel())) {
+                    currentExistSameLabelPattern.add(existedLabelPattern);
+                }
+            }
+            for (LabelPattern existedLabelPattern : currentExistSameLabelPattern) {
+                this.deleteAnnotationUnderLabelPattern(instanceIdentifier, existedLabelPattern);
+            }
+            this.addAnnotation(instanceIdentifier, newLabelPattern);
+        }
+
         public boolean isParticularAnnotationExists(InstanceIdentifier instanceIdentifier, LabelPattern labelPattern) {
             Collection<LabelPattern> labelPatterns = this.lookupInstanceIdentifierAnnotation(instanceIdentifier);
             if (labelPatterns == null) return false;

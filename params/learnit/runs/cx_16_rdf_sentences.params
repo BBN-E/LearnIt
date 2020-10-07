@@ -1,0 +1,36 @@
+# Template file for learnit params
+
+INCLUDE ../user.params
+learnit_data_dir: /nfs/raid88/u10/users/hqiu/learnit_data/cx_16_rdf_sentences
+source_lists: %learnit_data_dir%/source_lists
+corpus_dir: %source_lists%
+corpus_name: cx_16_rdf_sentences.params
+
+domain_root: %learnit_root%/inputs/domains/CX_ICM
+
+queue_priority: 5
+languages:English
+max_prop_depth:2
+max_regexp_pattern_words:5
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 1
+mappings_list_batches: 20
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+linux_queue: nongale-sl6
+aggregated_frequency_filter_pattern_min: 1
+max_unary_prop_depth:1
+max_binary_prop_depth:2
+
+## similarity related params
+similarities_dir: %learnit_data_dir%/learnit_similarity_data
+##
+
+debug_extraction: true
+#stages_to_run: mappings-only
+#bert_npz_list: /nfs/raid88/u10/users/hqiu/learnit_data/cx_estonia_baltic.040920/bert_npz.list
+#stages_to_run: similarities-only,unary_event_decoding,binary_event_event_decoding
+#use_human_label: false

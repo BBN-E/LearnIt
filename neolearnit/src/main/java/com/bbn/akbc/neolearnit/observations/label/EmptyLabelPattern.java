@@ -16,6 +16,7 @@ public class EmptyLabelPattern extends LearnitPattern {
 
     final private String patternIDString(){return this.toIDString();}
     @Override
+    @JsonProperty
     public String toPrettyString() {
         return this.toIDString();
     }
@@ -57,6 +58,11 @@ public class EmptyLabelPattern extends LearnitPattern {
         if(!(obj instanceof EmptyLabelPattern))return false;
         EmptyLabelPattern that = (EmptyLabelPattern)obj;
         return this.matchesPattern(that);
+    }
+
+    @Override
+    public String toString() {
+        return this.toIDString();
     }
 
     @JsonCreator

@@ -1,0 +1,251 @@
+---
+- Unary-Entity:
+  - _source: []
+  - _description: "NA"
+  - _examples: []
+  - _alternative_id: null
+  - CONCEPT:
+    - _source: []
+    - _description: "NA"
+    - _examples: []
+    - _alternative_id: null
+    - AGRICULTURE:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - INPUT:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - FERTILIZER:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - IRRIGATION_EQUIPMENT:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - PESTICIDE:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - SEED:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - FARM_EQUIPMENT:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - PEST:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - ARMY_WORM:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - LOCUST:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - PRODUCTION:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - CROP:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - LIVESTOCK:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - PRODUCTION_STORAGE:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - LIVESTOCK_FEED:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - STORAGE:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - STORAGE_INFRASTRUCTURE:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+    - CASH:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - ENVIRONMENT:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - NATURAL_RESOURCES:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - FOSSIL_FUELS:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - LAND:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - PASTURE:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - SOIL:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - WATER_BODIES:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+    - FOOD:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - HUMANITARIAN_ASSISTANCE:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - NON_FOOD_ITEMS:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - INFRASTRUCTURE:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - BRIDGE:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - CONSTRUCTION_MATERIALS:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ELECTRICAL:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - ENERGY:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - FARM:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - HUMANITARIAN:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - IRRIGATION:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - MEDICAL:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - FACILITY:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - ROAD:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - WASH:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - SANITATION:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+        - WATER_INFRASTRUCTURE:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null
+      - COMMUNICATION_INFRASTRUCTURE:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+    - WATER:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+    - EDUCATION:
+      - _source: []
+      - _description: "NA"
+      - _examples: []
+      - _alternative_id: null
+      - EDUCATION_SUPPLIES:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+      - EDUCATION_INFRASTRUCTURE:
+        - _source: []
+        - _description: "NA"
+        - _examples: []
+        - _alternative_id: null
+        - EDUCATION_FACILITIES:
+          - _source: []
+          - _description: "NA"
+          - _examples: []
+          - _alternative_id: null

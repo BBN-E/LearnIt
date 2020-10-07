@@ -13,15 +13,19 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Ensures that the slot's mention is atomic.
- * For names , we take them as they come. For desctiptors, we ensure they have no child mentions.
- * You pretty much always want this on, except for value mentions where it's irrelevant.
- */
+ * Ensures that the slot's mention is has a non-NONE type.
+ * These are the mentions that can appear in Propositions, so you probably always want this
+ * turned on.
+ **/
 public class AtomicMentionConstraint extends AbstractSlotMatchConstraint {
 
 	@JsonCreator
 	public AtomicMentionConstraint(@JsonProperty("slot") int slot) {
 		super(slot);
+	}
+
+	public AtomicMentionConstraint(int slot, boolean canBeEmptySlot) {
+		super(slot, canBeEmptySlot);
 	}
 
 	@Override
@@ -33,17 +37,7 @@ public class AtomicMentionConstraint extends AbstractSlotMatchConstraint {
 	public boolean valid(Spanning spanning) {
 		if (spanning instanceof Mention) {
 			Mention m = (Mention)spanning;
-
-			if (m.mentionType() == Type.NAME) {
-				return true;
-			} else if (m.mentionType() == Type.NONE) {
-				return false;
-			} else {
-				if (m.child().isPresent()) {
-					return false;
-				}
-				return true;
-			}
+			return !(m.mentionType() == Type.NONE);
 		} else if (spanning instanceof ValueMention) {
 			return true;
 		} else if (spanning instanceof EventMention) { // An EventMention should always be atomic

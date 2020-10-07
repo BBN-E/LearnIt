@@ -35,7 +35,7 @@ import java.util.Map;
  */
 public class SimpleRelationExtractor {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		final String paramsFile = args[0];
 		final String inputList = args[1];	// (eng chi alignment) file
 		final String outputDir = args[2];	// write extracted relation instances json file to here

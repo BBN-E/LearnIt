@@ -41,11 +41,12 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ExecutionException;
 
 
 public class GenerateExamplesAndApplyExtractors {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ExecutionException, InterruptedException {
         final String paramsFile = args[0];
 
         LearnItConfig.loadParams(new File(paramsFile));                             // load params file

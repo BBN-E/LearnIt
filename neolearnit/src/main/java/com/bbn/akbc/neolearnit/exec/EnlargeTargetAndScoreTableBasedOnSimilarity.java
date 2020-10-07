@@ -4,7 +4,6 @@ import com.bbn.akbc.common.Pair;
 import com.bbn.akbc.neolearnit.common.Annotation;
 import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
-import com.bbn.akbc.neolearnit.common.MinimumInstanceIdentifier;
 import com.bbn.akbc.neolearnit.mappings.groups.Mappings;
 import com.bbn.akbc.neolearnit.observations.LearnItObservation;
 import com.bbn.akbc.neolearnit.observations.label.LabelPattern;
@@ -17,6 +16,7 @@ import com.bbn.akbc.neolearnit.scoring.scores.PatternScore;
 import com.bbn.akbc.neolearnit.scoring.tables.AbstractScoreTable;
 import com.bbn.akbc.neolearnit.similarity.ObservationSimilarityModule;
 import com.bbn.akbc.neolearnit.util.GeneralUtils;
+import com.bbn.akbc.neolearnit.util.InstanceIdentifierFilterForAnnotation;
 import com.google.common.base.Optional;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
@@ -31,15 +31,15 @@ public class EnlargeTargetAndScoreTableBasedOnSimilarity {
     // @hqiu: Should rename it as Scorer or something
 
     public static Map<String, RecallMultiplierInfo> generateRecallCaluculatorObjBasedOnOTHER(TargetAndScoreTables OTHERTable, int freqCutoff, Mappings autoPopulatedMappings, Annotation.InMemoryAnnotationStorage annotationStorageOTHER) {
-        Set<MinimumInstanceIdentifier> unSeenInstances = new HashSet<>();
-        Set<MinimumInstanceIdentifier> seenInstances = new HashSet<>();
+        Set<InstanceIdentifierFilterForAnnotation.BasicInstanceIdentifier> unSeenInstances = new HashSet<>();
+        Set<InstanceIdentifierFilterForAnnotation.BasicInstanceIdentifier> seenInstances = new HashSet<>();
         for (AbstractScoreTable.ObjectWithScore<LearnitPattern, PatternScore> pattern : OTHERTable.getPatternScores().getObjectsWithScores()) {
             final int freq = pattern.getScore().getFrequency();
             for (InstanceIdentifier instanceIdentifier : autoPopulatedMappings.getInstancesForPattern(pattern.getObject())) {
                 if (freq >= freqCutoff) {
-                    seenInstances.add(new MinimumInstanceIdentifier(instanceIdentifier));
+                    seenInstances.add(new InstanceIdentifierFilterForAnnotation.BasicInstanceIdentifier(instanceIdentifier));
                 } else {
-                    unSeenInstances.add(new MinimumInstanceIdentifier(instanceIdentifier));
+                    unSeenInstances.add(new InstanceIdentifierFilterForAnnotation.BasicInstanceIdentifier(instanceIdentifier));
                 }
             }
         }
@@ -264,8 +264,8 @@ public class EnlargeTargetAndScoreTableBasedOnSimilarity {
 
         // This section is for Adding annotated instances in
         // There are two set of annotations. Normal and OTHER
-        final String instanceIdentifierAnnotationFilePathNormal = String.format("%s/inputs/relation_annotation_by_learnit_ui/%s.sjson", LearnItConfig.get("learnit_root"), LearnItConfig.get("corpus_name"));
-        final String instanceIdentifierAnnotationFilePathOther = String.format("%s/inputs/relation_annotation_by_learnit_ui/%s_other.sjson", LearnItConfig.get("learnit_root"), LearnItConfig.get("corpus_name"));
+        final String instanceIdentifierAnnotationFilePathNormal = String.format("%s.sjson", LearnItConfig.get("human_label_mappings_prefix"));
+        final String instanceIdentifierAnnotationFilePathOther = String.format("%s_other.sjson", LearnItConfig.get("human_label_mappings_prefix"));
         Annotation.InMemoryAnnotationStorage annotationNormal = new Annotation.InMemoryAnnotationStorage(Mappings.deserialize(new File(instanceIdentifierAnnotationFilePathNormal), true));
         Annotation.InMemoryAnnotationStorage annotationOther = new Annotation.InMemoryAnnotationStorage(Mappings.deserialize(new File(instanceIdentifierAnnotationFilePathOther), true));
         List<Annotation.InMemoryAnnotationStorage> annotationStorageList = new ArrayList<>();

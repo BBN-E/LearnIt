@@ -43,7 +43,7 @@ public class QueryInstanceFinderServerMain {
 		Mappings mappings = Mappings.deserialize(new File(mappingsFile), true);
         Map<InstanceIdentifier,MatchInfoDisplay> displayMap = StorageUtils.deserialize(new File(displayMapFile), EfficientMapDataStore.class, true).makeMap();
 //        Map<InstanceIdentifier,MatchInfoDisplay> displayMap = new HashMap<InstanceIdentifier, MatchInfoDisplay>();
-        Target target = TargetFactory.fromString(targetName);
+        Target target = TargetFactory.fromXMLPathString(targetName);
 
         //Fetch the queries
         Multimap<String,Integer> queries = BuildQueryInstanceMappingFromFiles.getQueriesFromFile(new File(queryFile));

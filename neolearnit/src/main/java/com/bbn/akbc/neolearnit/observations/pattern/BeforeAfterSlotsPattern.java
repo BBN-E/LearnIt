@@ -164,6 +164,7 @@ public class BeforeAfterSlotsPattern extends Restriction
 	}
 
 	@Override
+	@JsonProperty
 	public String toPrettyString() {
 		List<String> text = new ArrayList<String>();
 		for (RegexableContent con : content) {

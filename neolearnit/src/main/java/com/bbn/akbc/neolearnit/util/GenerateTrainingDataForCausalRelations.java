@@ -152,7 +152,7 @@ public class GenerateTrainingDataForCausalRelations {
         writerMentionLevel.close();
         outputJsonWritter.close();
     }
-    public static Optional<RelationMentionInfo> fromInstanceIdentifier(String type, InstanceIdentifier instanceIdentifier) {
+    public static Optional<RelationMentionInfo> fromInstanceIdentifier(String type, InstanceIdentifier instanceIdentifier) throws IOException {
 
 
         MatchInfo.LanguageMatchInfo matchInfo =

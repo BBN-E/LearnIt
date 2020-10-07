@@ -1,5 +1,6 @@
 package com.bbn.akbc.neolearnit.bootstrapping;
 
+import com.bbn.akbc.neolearnit.common.Annotation;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
 import com.bbn.akbc.neolearnit.common.targets.TargetFactory;
 import com.bbn.akbc.neolearnit.labelers.LearnItRelationPatternLabeler;
@@ -35,7 +36,7 @@ public class GenerateTrainingDataFromSeedsForOpenNRE {
 
 
         LearnItRelationPatternLabeler learnItRelationPatternLabeler = new LearnItRelationPatternLabeler(mode, strFileExtractor, relationType, MAX_INSTANCES_PER_SEED, USE_PROP_PATTERN_ONLY, NEGATIVE_SAMPLING_RATIO);
-        Mappings labeledMappings = learnItRelationPatternLabeler.LabelMappings(mappings);
+        Mappings labeledMappings = learnItRelationPatternLabeler.LabelMappings(mappings, new Annotation.InMemoryAnnotationStorage()).convertToMappings();
 
         OpenNREObserver openNREObserver = new OpenNREObserver(new File(strOutFilePrefix));
         openNREObserver.observe(labeledMappings);

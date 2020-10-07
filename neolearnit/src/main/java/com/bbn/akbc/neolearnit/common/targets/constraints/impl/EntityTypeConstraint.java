@@ -1,12 +1,14 @@
 package com.bbn.akbc.neolearnit.common.targets.constraints.impl;
 
+import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.targets.constraints.ValidTypeConstraint;
+import com.bbn.akbc.neolearnit.observations.seed.Seed;
+import com.bbn.bue.common.exceptions.NotImplementedException;
 import com.bbn.serif.patterns.MentionPattern;
 import com.bbn.serif.patterns.Pattern.Builder;
 import com.bbn.serif.theories.Mention;
 import com.bbn.serif.theories.Spanning;
 import com.bbn.serif.types.EntityType;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.base.Optional;
@@ -109,4 +111,15 @@ public class EntityTypeConstraint extends ValidTypeConstraint {
 			sb.append(validType + " ");
 		return sb.toString().trim();
 	}
+
+    @Override
+    public boolean valid(InstanceIdentifier instanceId, Seed seed) {
+        if (slot == 0) {
+            return instanceId.getSlot0SpanningType().equals(InstanceIdentifier.SpanningType.Mention) || validTypes.contains(instanceId.getSlotEntityType(slot));
+        } else if (slot == 1) {
+            return instanceId.getSlot1SpanningType().equals(InstanceIdentifier.SpanningType.Mention) || validTypes.contains(instanceId.getSlotEntityType(slot));
+        } else {
+            throw new NotImplementedException();
+        }
+    }
 }

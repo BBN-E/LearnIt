@@ -97,7 +97,7 @@ public class GenerateDecodingDataForCausalRelations{
             Mappings mappings = Mappings.deserialize(new File(filePath), true);
             allSet.addAll(mappings.getSeedInstances());
             allSet.addAll(mappings.getPatternInstances());
-            allSet = InstanceIdentifierFilterForAnnotation.makeFiltered(allSet);
+            allSet = new HashSet<>(InstanceIdentifierFilterForAnnotation.makeFiltered(allSet));
         }
         for(InstanceIdentifier instanceIdentifier : allSet){
             causalRelationCNNObserver.observe(new Pair<>(instanceIdentifier,new LabelPattern(NETURAL_TYPE,FrozenState.NO_FROZEN)));

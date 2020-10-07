@@ -22,7 +22,7 @@ public class InstanceIdentifierFilter implements MappingsFilter{
         MapStorage.Builder<InstanceIdentifier, LearnitPattern> instanceToPatternMapping = input.getInstance2Pattern().getStorage().newBuilder();
         Set<InstanceIdentifier> instanceIdentifierSet = new HashSet<>(input.getPatternInstances());
         instanceIdentifierSet.addAll(input.getSeedInstances());
-        instanceIdentifierSet = InstanceIdentifierFilterForAnnotation.makeFiltered(instanceIdentifierSet);
+        instanceIdentifierSet = new HashSet<>(InstanceIdentifierFilterForAnnotation.makeFiltered(instanceIdentifierSet));
         for(InstanceIdentifier instanceIdentifier:input.getPatternInstances()){
             if(instanceIdentifierSet.contains(instanceIdentifier)){
                 for(LearnitPattern learnitPattern:input.getPatternsForInstance(instanceIdentifier)){

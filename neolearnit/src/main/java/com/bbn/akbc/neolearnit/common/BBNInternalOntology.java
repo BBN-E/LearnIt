@@ -121,8 +121,6 @@ public class BBNInternalOntology {
         public BBNInternalOntologyNode parent;
 
         @JsonProperty
-        public String _id;
-        @JsonProperty
         public List<String> _source;
         @JsonProperty
         public String _description;
@@ -145,6 +143,12 @@ public class BBNInternalOntology {
             return BBNInternalOntologyNode.fromYamlRoot(parseRoot);
         }
 
+        public BBNInternalOntologyNode getRoot(){
+            BBNInternalOntologyNode runner = this;
+            while(runner.parent != null)runner = runner.parent;
+            return runner;
+        }
+
         public static BBNInternalOntologyNode fromYamlRoot(List<Map<String, List<Map<String, Object>>>> root) {
             List<BBNInternalOntologyNode> buf = new ArrayList<>();
             for (Map<String, List<Map<String, Object>>> yamlOntologyNode : root) {
@@ -155,9 +159,8 @@ public class BBNInternalOntology {
                         for (String key : entryMapPair.keySet()) {
                             Object value = entryMapPair.get(key);
                             if (key.startsWith("_")) {
-                                if (key.equals("_id")) {
-                                    ontologyNode._id = (String) value;
-                                } else if (key.equals("_source")) {
+
+                                if (key.equals("_source")) {
                                     for (Object sourceObj : (List<Object>) value) {
                                         String sourceVal = (String) sourceObj;
                                         ontologyNode._source.add(sourceVal);
@@ -200,8 +203,6 @@ public class BBNInternalOntology {
             Map<String, Object> buf;
 
             buf = new HashMap<>();
-            buf.put("_id", this._id);
-            retMap.add(buf);
 
             buf = new HashMap<>();
             buf.put("_source", this._source);
@@ -244,12 +245,12 @@ public class BBNInternalOntology {
             if (o == this) return true;
             if (!(o instanceof BBNInternalOntologyNode)) return false;
             BBNInternalOntologyNode that = (BBNInternalOntologyNode) o;
-            return that._id.equals(this._id);
+            return that.originalKey.equals(this.originalKey);
         }
 
         @Override
         public int hashCode() {
-            return this._id.hashCode();
+            return this.originalKey.hashCode();
         }
 
         @Override
@@ -265,7 +266,7 @@ public class BBNInternalOntology {
 
         private static void dfsWorkerForMap(BBNInternalOntologyNode node, PropStringGetter propStringGetter, Map<String, BBNInternalOntologyNode> map) throws IllegalAccessException {
             if (map.containsKey(propStringGetter.getter(node))) {
-                throw new RuntimeException("The key you chosen is not unique on the whole ontology tree");
+                throw new RuntimeException("The key " + propStringGetter.getter(node) + " you chosen is not unique on the whole ontology tree");
             }
             map.put(propStringGetter.getter(node), node);
             for (BBNInternalOntologyNode child : node.children) {

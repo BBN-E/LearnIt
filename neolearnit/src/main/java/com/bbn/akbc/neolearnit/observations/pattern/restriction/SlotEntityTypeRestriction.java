@@ -53,6 +53,7 @@ public class SlotEntityTypeRestriction extends SlotRestriction
 	}
 
 	@Override
+	@JsonProperty
 	public String toPrettyString() {
 		return toString();
 	}

@@ -54,7 +54,7 @@ public class SourceListsReader {
 		return fullPath;
 	}
 
-	public static class SourceDocumentNotFoundException extends Exception{
+	public static class SourceDocumentNotFoundException extends IOException{
 	    public SourceDocumentNotFoundException(String docId, String sourceListsDir) {
 			super(String.format("Could not find docId %s among those listed in list files in %s", new Object[]{docId,sourceListsDir}));
 		}

@@ -1,0 +1,31 @@
+INCLUDE ../user.params
+learnit_data_dir: /nfs/raid88/u10/users/hqiu/learnit_data/better.mt.022620
+source_lists: %learnit_data_dir%/source_lists
+corpus_dir: %source_lists%
+corpus_name: better.mt.022620.022620
+ontology_root: %learnit_root%/inputs/ontologies/cx/bae_icm/internal_ontology
+
+max_prop_depth:2
+max_regexp_pattern_words:5
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+
+bilingual: true
+languages: english,arabic
+min_alignment_overlap: 0.5
+should_reverse_alignment_table:true
+
+
+#### This section is for run_learnit.pl mappings only
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 1
+linux_queue: nongale-sl6
+mappings_list_batches: 50
+#### End section
+
+stages_to_run: mappings-only,run-specific-program-on-mappings-list,build-dictionary
+
+external_dictionary_path: /nfs/raid88/u10/users/hqiu/learnit_data/better.700k.46733/ar_en.json

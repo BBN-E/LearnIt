@@ -7,10 +7,7 @@ import com.bbn.akbc.neolearnit.observations.pattern.EntityTypeContent;
 import com.bbn.akbc.neolearnit.observations.pattern.RegexableContent;
 import com.bbn.akbc.neolearnit.observations.pattern.SymbolContent;
 import com.bbn.bue.common.collections.PowerSetIterable;
-import com.bbn.serif.theories.Mention;
-import com.bbn.serif.theories.Name;
-import com.bbn.serif.theories.SentenceTheory;
-import com.bbn.serif.theories.Spanning;
+import com.bbn.serif.theories.*;
 import com.google.common.base.Optional;
 import com.google.inject.BindingAnnotation;
 import com.google.inject.Inject;
@@ -47,11 +44,23 @@ public class TextEntityTypeBetweenSlotsObserver extends SlotPairObserver {
 	public int getStartTokenIndex(Spanning spanning) {
         if (spanning instanceof Mention && ((Mention)spanning).mentionType() == Mention.Type.DESC)
 		    return ((Mention)spanning).atomicHead().span().startToken().index();
-        else
+        else if (spanning instanceof EventMention) {
+        	EventMention eventMention = ((EventMention) spanning);
+        	if(eventMention.semanticPhraseStart().isPresent())
+        		return eventMention.semanticPhraseStart().get();
+        	else
+        		return eventMention.span().startToken().index();
+		} else
             return spanning.span().startToken().index();
 	}
 
 	public int getEndTokenIndex(Spanning spanning) {
+		if (spanning instanceof EventMention) {
+			EventMention eventMention = ((EventMention) spanning);
+			if(eventMention.semanticPhraseEnd().isPresent())
+				return eventMention.semanticPhraseEnd().get()+1; // TODO: check whether this index is inclusive
+		}
+
 		return spanning.span().endToken().index()+1;
 	}
 

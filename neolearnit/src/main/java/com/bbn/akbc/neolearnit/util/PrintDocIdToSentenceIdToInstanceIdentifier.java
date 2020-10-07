@@ -20,7 +20,8 @@ import java.io.IOException;
 import java.util.*;
 
 public class PrintDocIdToSentenceIdToInstanceIdentifier {
-    public static void main(String args[]){}
+    public static void main(String[] args) {
+    }
 
     public static void run(Mappings mappings, String strFileList, Target target) throws IOException {
         Map<String, DocTheory> docId2docTheory = readSerifXml(strFileList);
@@ -58,14 +59,14 @@ public class PrintDocIdToSentenceIdToInstanceIdentifier {
                     }
                     // print event mentions
                     for(EventMention eventMention : docTheory.sentenceTheory(sentId).eventMentions()) {
-                        System.out.println("[PrintDocIdToSentenceIdMapping] DocId: " + docId + "\tsentId: " + sentId + "\tEventMention: " + eventMention.anchorNode().tokenSpan().tokenizedText(docTheory));
+                        System.out.println("[PrintDocIdToSentenceIdMapping] DocId: " + docId + "\tsentId: " + sentId + "\tNodeMentionAnnotation: " + eventMention.anchorNode().tokenSpan().tokenizedText(docTheory));
                     }
 
                     boolean foundRelationMention = map.get(docId).containsKey(sentId);
                     if(foundRelationMention){
                         for(InstanceIdentifier instanceIdentifier : map.get(docId).get(sentId).keySet()){
                             MatchInfo.LanguageMatchInfo languageMatchInfo = instanceIdentifier.reconstructMatchInfo(target).getPrimaryLanguageMatch();
-                            System.out.println("[PrintDocIdToSentenceIdMapping] DocId: " + docId + "\tsentId: " + sentId + "\tRelationMention: " +  languageMatchInfo.markedUpTokenString());
+                            System.out.println("[PrintDocIdToSentenceIdMapping] DocId: " + docId + "\tsentId: " + sentId + "\tEdgeMentionAnnotation: " + languageMatchInfo.markedUpTokenString());
 
                             // print pattern
                             for (LearnItObservation record : map.get(docId).get(sentId).get(instanceIdentifier)) {
@@ -74,7 +75,7 @@ public class PrintDocIdToSentenceIdToInstanceIdentifier {
                         }
                     }
                     else{
-                        System.out.println("[PrintDocIdToSentenceIdMapping] DocId: " + docId + "\tsentId: " + sentId + "\tLearnIt cannot find any RelationMention in this sentence.");
+                        System.out.println("[PrintDocIdToSentenceIdMapping] DocId: " + docId + "\tsentId: " + sentId + "\tLearnIt cannot find any EdgeMentionAnnotation in this sentence.");
                     }
                 }
             }

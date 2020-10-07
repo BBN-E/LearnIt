@@ -70,8 +70,8 @@
         </dependency>
         <dependency>
             <groupId>com.bbn.serif</groupId>
-            <artifactId>serif</artifactId>
-            <version>8.10.3-SNAPSHOT</version>
+            <artifactId>text-open-serif</artifactId>
+            <version>1.0.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.bbn.nlp</groupId>
@@ -250,6 +250,9 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5.1</version>
                 </plugin>
+
+
+
 
             </plugins>
         </pluginManagement>

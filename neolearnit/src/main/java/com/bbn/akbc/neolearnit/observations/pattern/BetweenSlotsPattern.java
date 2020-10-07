@@ -8,8 +8,13 @@ import java.util.Set;
 import com.bbn.bue.common.symbols.Symbol;
 import com.bbn.akbc.neolearnit.common.targets.Target;
 import com.bbn.akbc.neolearnit.observations.pattern.restriction.Restriction;
+import com.bbn.serif.patterns.ArgumentPattern;
+import com.bbn.serif.patterns.LabelPatternReturn;
 import com.bbn.serif.patterns.Pattern;
+import com.bbn.serif.patterns.PatternReturn;
 import com.bbn.serif.patterns.RegexPattern;
+import com.bbn.serif.patterns.TextPattern;
+
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -31,6 +36,42 @@ public class BetweenSlotsPattern extends SlotPairPattern<BetweenSlotsContent<Reg
 			@JsonProperty("content") BetweenSlotsContent<RegexableContent> content) {
 
 		return new BetweenSlotsPattern(language, firstSlot, secondSlot, content);
+	}
+
+	public static BetweenSlotsPattern from(RegexPattern brandyRegexPattern) {
+		if (brandyRegexPattern.getSubpatterns().size() != 3) {
+			throw new NonConvertibleException("Brandy RegexPatterns being converted into LearnIt BetweenSlotsPatterns must have 3 subpatterns");
+		}
+		Pattern beforePattern = brandyRegexPattern.getSubpatterns().get(0);
+		Pattern betweenPattern = brandyRegexPattern.getSubpatterns().get(1);
+		Pattern afterPattern = brandyRegexPattern.getSubpatterns().get(2);
+
+		Integer firstSlot = getSlotReturn(beforePattern);
+		Integer secondSlot = getSlotReturn(afterPattern);
+
+		if (!(betweenPattern instanceof TextPattern)) {
+			throw new NonConvertibleException("Brandy RegexPatterns being converted into LearnIt BetweenSlotsPatterns must have the middle pattern be a TextPattern");
+		}
+
+		TextPattern tp = (TextPattern) betweenPattern;
+		BetweenSlotsContent.Builder<RegexableContent> contentBuilder = new BetweenSlotsContent.Builder<>();
+		contentBuilder.withAddContent(new SymbolContent(tp.getText()));
+
+		return from("en", firstSlot, secondSlot, contentBuilder.build());
+	}
+
+	private static Integer getSlotReturn(Pattern p) {
+		String error = "When converting into a LearnIt BetweenSlotPatterns First and third subpatterns must have a return value of either 'slot1' or 'slot2'";
+		PatternReturn pr = p.getPatternReturn();
+		if (pr == null)
+			throw new NonConvertibleException(error);
+		LabelPatternReturn lpr = (LabelPatternReturn) pr;
+		Symbol label = lpr.getLabel();
+		if (label.equalTo(Symbol.from("slot1")))
+			return 1;
+		else if (label.equalTo(Symbol.from("slot2")))
+			return 2;
+		throw new NonConvertibleException(error);
 	}
 
 	@Override
@@ -55,6 +96,7 @@ public class BetweenSlotsPattern extends SlotPairPattern<BetweenSlotsContent<Reg
 	}
 
 	@Override
+	@JsonProperty
 	public String toPrettyString() {
 		return "{"+firstSlot + "} "+ content.toPrettyString() + " {"+ secondSlot+"}";
 	}

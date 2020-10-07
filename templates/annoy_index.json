@@ -1,0 +1,24 @@
+{
+  "runjobs_config": {
+
+  },
+  "feature_extractors": [
+  ],
+  "indexing_features": [
+    {
+      "feature_id": "feature_1",
+      "id": "index_1",
+      "name": "Annoy",
+      "args": {
+        "input_feature_list": "+input_feature_list+",
+        "annoy_metric": "angular",
+        "n_trees": 100,
+        "output_path": "+output_path+"
+      }
+    }
+  ],
+  "queries": [
+  ],
+  "dumpers": [
+  ]
+}

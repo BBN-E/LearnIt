@@ -3,6 +3,8 @@ package com.bbn.akbc.neolearnit.mappings.filters;
 import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
 import com.bbn.akbc.neolearnit.common.targets.Target;
+import com.bbn.akbc.neolearnit.common.targets.constraints.MatchConstraint;
+import com.bbn.akbc.neolearnit.common.targets.constraints.impl.SpanningTypeConstraint;
 import com.bbn.akbc.neolearnit.mappings.filters.storage.MemberStorageFilter;
 import com.bbn.akbc.neolearnit.mappings.groups.Mappings;
 import com.bbn.akbc.neolearnit.mappings.impl.InstanceToPatternMapping;
@@ -14,6 +16,7 @@ import com.google.common.collect.Sets;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class TargetFilter implements MappingsFilter {
 
@@ -34,8 +37,10 @@ public class TargetFilter implements MappingsFilter {
         } else {
             System.out.println(
                     "Removing instances that are no longer relevant (no associated seed or pattern)...");
-            relevantInstances = Sets.intersection(seedMapping.getAllInstances().elementSet(),
+            relevantInstances = Sets.union(seedMapping.getAllInstances().elementSet(),
                     patternMapping.getAllInstances().elementSet());
+            System.out.println(
+                    "Originally we have ... " + relevantInstances.size() + " valid instances");
         }
         relevantInstances = getValidInstances(relevantInstances, seedMapping);
         System.out.println(
@@ -54,7 +59,7 @@ public class TargetFilter implements MappingsFilter {
 
     private Set<InstanceIdentifier> getValidInstances(Set<InstanceIdentifier> instances,
                                                       InstanceToSeedMapping seedMapping) {
-        Set<InstanceIdentifier> targetMatchInstances = new HashSet<InstanceIdentifier>();
+        Set<InstanceIdentifier> targetMatchInstances = new HashSet<>();
         for (InstanceIdentifier id : instances) {
             if (this.target.validInstance(id, seedMapping.getSeeds(id))) {
                 targetMatchInstances.add(id);

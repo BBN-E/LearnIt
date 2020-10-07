@@ -13,10 +13,10 @@ import com.bbn.akbc.neolearnit.observers.instance.matchinfo.MatchInfoDisplayObse
 import com.bbn.akbc.neolearnit.observers.instance.pattern.Binary.PropObserver;
 import com.bbn.akbc.neolearnit.observers.instance.pattern.Binary.TextBeforeAfterSlotsObserver;
 import com.bbn.akbc.neolearnit.observers.instance.pattern.Binary.TextEntityTypeBetweenSlotsObserver;
-import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.UnaryLexicalObserver;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.SerifPatternObserver;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.EventMentionNounPhraseObserver;
+import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.UnaryHeadWordPOSTagObsever;
 import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.UnaryPropObserver;
-import com.bbn.akbc.neolearnit.observers.instance.pattern.Unary.UnaryTriggerPOSTagObsever;
-
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
@@ -59,21 +59,39 @@ public class MonolingualExtractionModule {
             unaryObsBuilder.withObserver(new MatchInfoDisplayObserver(matchDisplayRecorder));
 		}
 
+		// SerifPattern Observer will share Instances
+
+		SerifPatternObserver serifPatternObserver = new SerifPatternObserver(observationRecorder,primaryLanguage,LearnItConfig.getInt("max_unary_prop_depth"),LearnItConfig.getInt("max_binary_prop_depth"),LearnItConfig.getInt("max_regexp_pattern_words"));
+
 		binaryObservers = binaryObsBuilder
 			.withObserver(new SeedObserver(seedRecorder))
-			.withObserver(new PropObserver(observationRecorder, primaryLanguage, LearnItConfig.getInt("max_prop_depth")))
-			.withObserver(new TextEntityTypeBetweenSlotsObserver(observationRecorder, primaryLanguage, LearnItConfig.getInt("max_regexp_pattern_words")))
-			.withObserver(new TextBeforeAfterSlotsObserver(observationRecorder, primaryLanguage, LearnItConfig.getInt("max_regexp_pattern_words")))
+//			.withObserver(new PropObserver(observationRecorder, primaryLanguage, LearnItConfig.getInt("max_binary_prop_depth")))
+//			.withObserver(new TextEntityTypeBetweenSlotsObserver(observationRecorder, primaryLanguage, LearnItConfig.getInt("max_regexp_pattern_words")))
+//			.withObserver(new TextBeforeAfterSlotsObserver(observationRecorder, primaryLanguage, LearnItConfig.getInt("max_regexp_pattern_words")))
+                //.withObserver(new SSUnigramObserver(observationRecorder, primaryLanguage))
 //		    	.withObserver(new CommonRelationFeatureObserver(commonRelationFeatureRecorder))
-			.build();
+				.withObserver(serifPatternObserver)
+				.build();
 
 
         unaryObservers = unaryObsBuilder
                 .withObserver(new SeedObserver(seedRecorder))
-                .withObserver(new UnaryTriggerPOSTagObsever(observationRecorder,primaryLanguage))
-                .withObserver(new UnaryPropObserver(observationRecorder, primaryLanguage))
-                .withObserver(new UnaryLexicalObserver(observationRecorder, primaryLanguage))
+//                .withObserver(new UnaryHeadWordPOSTagObsever(observationRecorder, primaryLanguage))
+//                .withObserver(new UnaryPropObserver(observationRecorder, primaryLanguage))
+                // .withObserver(new ContextWindowObserver(observationRecorder, primaryLanguage))
+
+                //.withObserver(new UnaryTypeObserver(observationRecorder, primaryLanguage))
+//				.withObserver(new UnigramInSameSentence())
+                //.withObserver(new BigramInSameSentence());
+                //		.withObserver(new NameInSameSentence());
+//				.withObserver(new EventMentionNounPhraseObserver(observationRecorder,primaryLanguage))
+				.withObserver(serifPatternObserver)
+				//.withObserver(new ComboPattern(UnaryPropObserver(), ContextWordsPattern()))
                 .build();
+
+
+//        secrury + one of unigrfood, secury + in, securyi i+ supply secury + china
+//			secury + [food supply in china]
 	}
 
 	public MonolingualDocTheoryInstanceLoader getDocTheoryLoader(Target target) {

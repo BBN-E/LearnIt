@@ -10,7 +10,7 @@ import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DifferenceLabeler implements MappingLabeler {
+public class DifferenceLabeler implements MappingsLabeler {
     final Mappings smallMappings;
 
 
@@ -26,12 +26,12 @@ public class DifferenceLabeler implements MappingLabeler {
         String setTMappingsPath = args[2];
         String outputMappingPath = args[3];
         DifferenceLabeler differenceLabeler = new DifferenceLabeler(Mappings.deserialize(new File(setTMappingsPath), true));
-        Mappings result = differenceLabeler.LabelMappings(Mappings.deserialize(new File(setSMappingsPath), true));
+        Mappings result = differenceLabeler.LabelMappings(Mappings.deserialize(new File(setSMappingsPath), true), new Annotation.InMemoryAnnotationStorage()).convertToMappings();
         result.serialize(new File(outputMappingPath), true);
     }
 
     @Override
-    public Mappings LabelMappings(Mappings original) {
+    public Annotation.InMemoryAnnotationStorage LabelMappings(Mappings original, Annotation.InMemoryAnnotationStorage labeledMappings) throws Exception {
         Set<InstanceIdentifier> shouldIgnoreDueToInSmallMappings = new HashSet<>();
         shouldIgnoreDueToInSmallMappings.addAll(this.smallMappings.getSeedInstances());
         shouldIgnoreDueToInSmallMappings.addAll(this.smallMappings.getPatternInstances());
@@ -47,6 +47,6 @@ public class DifferenceLabeler implements MappingLabeler {
         }
 
         System.out.println("Originally we have " + instanceIdentifierinOriginal.size() + " instanceIdentifiers, now it filtered down to " + count);
-        return inMemoryAnnotationStorage.convertToMappings();
+        return inMemoryAnnotationStorage;
     }
 }

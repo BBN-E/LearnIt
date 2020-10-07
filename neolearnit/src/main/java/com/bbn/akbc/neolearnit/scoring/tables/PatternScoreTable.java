@@ -1,12 +1,15 @@
 package com.bbn.akbc.neolearnit.scoring.tables;
 
-import java.util.*;
-
+import com.bbn.akbc.neolearnit.mappings.groups.Mappings;
 import com.bbn.akbc.neolearnit.observations.pattern.ComboPattern;
 import com.bbn.akbc.neolearnit.observations.pattern.LearnitPattern;
 import com.bbn.akbc.neolearnit.scoring.scores.PatternScore;
 import com.bbn.akbc.neolearnit.storage.EfficientMapDataStore;
-import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class PatternScoreTable extends AbstractScoreTable<LearnitPattern,PatternScore> {
 
@@ -14,15 +17,6 @@ public class PatternScoreTable extends AbstractScoreTable<LearnitPattern,Pattern
 		super();
 	}
 
-
-	@JsonProperty(access= JsonProperty.Access.READ_ONLY)
-	public List<String> FrontendSortableKeys(){
-		Set<String> possibleItems = new HashSet<>();
-		for(AbstractScoreTable.ObjectWithScore<LearnitPattern, PatternScore> pattern :this.getObjectsWithScores()){
-			possibleItems.addAll(pattern.getScore().scoreForFrontendRanking.keySet());
-		}
-		return new ArrayList<>(possibleItems);
-	}
 
 	@JsonCreator
 	public PatternScoreTable(@JsonProperty("data") EfficientMapDataStore<LearnitPattern,PatternScore> data,
@@ -60,5 +54,11 @@ public class PatternScoreTable extends AbstractScoreTable<LearnitPattern,Pattern
 			scoredObj.getScore().clearSources();
 		}
 	}
+
+    public void updateScoreTableBasedOnMappings(Mappings mappings) {
+        for (AbstractScoreTable.ObjectWithScore<LearnitPattern, PatternScore> pattern : getObjectsWithScores()) {
+            pattern.getScore().setFrequency(mappings.getInstancesForPattern(pattern.getObject()).size());
+        }
+    }
 
 }

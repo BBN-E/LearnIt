@@ -1,0 +1,25 @@
+{
+  "runjobs_config": {
+
+  },
+  "feature_extractors": [
+    {
+      "id": "feature_1",
+      "name": "LearnItObversationFeatureExtractor",
+      "need_merge": true,
+      "number_of_batches": "+number_of_batches+",
+      "args": {
+        "input_feature_list": "+input_feature_list+",
+        "input_bert_list": "+input_bert_list+",
+        "cap": "+cap+",
+        "output_path": "+output_path+"
+      }
+    }
+  ],
+  "indexing_features": [
+  ],
+  "queries": [
+  ],
+  "dumpers": [
+  ]
+}

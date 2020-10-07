@@ -1,0 +1,25 @@
+{
+  "runjobs_config": {
+
+  },
+  "feature_extractors": [
+
+  ],
+  "indexing_features": [
+
+  ],
+  "queries": [
+
+  ],
+  "dumpers": [
+    {
+      "id": "dumper_1",
+      "name": "LearnItTabularDumper",
+      "args": {
+        "input_sim_matrix_list": "+input_sim_matrix_list+",
+        "cutoff": 100,
+        "output_path": "+output_path+"
+      }
+    }
+  ]
+}

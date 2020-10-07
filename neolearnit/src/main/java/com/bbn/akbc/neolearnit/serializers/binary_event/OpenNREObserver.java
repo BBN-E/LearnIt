@@ -48,8 +48,8 @@ public class OpenNREObserver extends ExternalAnnotationBuilder {
             final SentenceTheory sentenceTheory = instanceIdentifierSentenceTheoryMap.get(instanceIdentifier);
             boolean NALabelAppears = false;
             boolean onlyNALabelAppears = true;
-            final Spanning span1 = InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlotEntityType(0)).get();
-            final Spanning span2 = InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlotEntityType(1)).get();
+            final Spanning span1 = InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType()).get();
+            final Spanning span2 = InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlot1SpanningType()).get();
             final EventMention left = (EventMention) span1;
             final EventMention right = (EventMention) span2;
             for (LabelPattern labelPattern : this.inMemoryAnnotationStorage.lookupInstanceIdentifierAnnotation(instanceIdentifier)) {
@@ -60,16 +60,14 @@ public class OpenNREObserver extends ExternalAnnotationBuilder {
             if (NALabelAppears && onlyNALabelAppears) {
                 LabelPattern labelPattern = new LabelPattern(Symbol.from("NA"), Annotation.FrozenState.FROZEN_BAD);
 
-                OpenNREJson openNREJson = new OpenNREJson(left, right, labelPattern, instanceIdentifier, sentenceTheory);
-                outputBuffer.add(openNREJson);
+                outputBuffer.addAll(OpenNREJson.createOpenNREJsonFromEventMention(left, right, labelPattern, instanceIdentifier, sentenceTheory, null, null));
                 for (Token token : sentenceTheory.tokenSequence()) {
                     this.wordSet.add(Symbol.from(token.tokenizedText().utf16CodeUnits()));
                 }
             } else {
                 for (LabelPattern labelPattern : this.inMemoryAnnotationStorage.lookupInstanceIdentifierAnnotation(instanceIdentifier)) {
                     if (labelPattern.getFrozenState().equals(Annotation.FrozenState.FROZEN_BAD)) continue;
-                    OpenNREJson openNREJson = new OpenNREJson(left, right, labelPattern, instanceIdentifier, sentenceTheory);
-                    outputBuffer.add(openNREJson);
+                    outputBuffer.addAll(OpenNREJson.createOpenNREJsonFromEventMention(left, right, labelPattern, instanceIdentifier, sentenceTheory, null, null));
                     for (Token token : sentenceTheory.tokenSequence()) {
                         this.wordSet.add(Symbol.from(token.tokenizedText().utf16CodeUnits()));
                     }

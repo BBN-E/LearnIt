@@ -17,7 +17,7 @@ public abstract class MonolingualPattern extends LearnitPattern {
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = super.hashCode();
+        int result = 0;
 		result = prime * result
 				+ ((language == null) ? 0 : language.hashCode());
 		return result;
@@ -27,18 +27,13 @@ public abstract class MonolingualPattern extends LearnitPattern {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
 		MonolingualPattern other = (MonolingualPattern) obj;
 		if (language == null) {
-			if (other.language != null)
-				return false;
-		} else if (!language.equals(other.language))
-			return false;
-		return true;
-	}
+            return other.language == null;
+        } else return language.equals(other.language);
+    }
 
 	@Override
 	public String toString() {

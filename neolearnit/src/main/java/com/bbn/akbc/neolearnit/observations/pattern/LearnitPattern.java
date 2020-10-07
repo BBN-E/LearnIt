@@ -13,15 +13,6 @@ import java.util.Set;
 @JsonIgnoreProperties(ignoreUnknown=true)
 public abstract class LearnitPattern extends LearnItObservation {
 
-	@Override
-	public abstract String toPrettyString();
-
-	/**
-	 * Used for identification purposes in server code, must align to javascript pattern objects
-	 * found in static/scripts/objects/Pattern.js
-	 * @return
-	 */
-	public abstract String toIDString();
 
 	public abstract boolean isInCanonicalSymmetryOrder();
 

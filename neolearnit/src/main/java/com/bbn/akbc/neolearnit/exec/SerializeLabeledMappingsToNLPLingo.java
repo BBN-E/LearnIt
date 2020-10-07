@@ -93,13 +93,15 @@ public class SerializeLabeledMappingsToNLPLingo {
         String paramPath = args[0];
         LearnItConfig.loadParams(new File(paramPath));
         String labelledMappingsPath = args[1];
-        String careListPath = args[2];
-        String yamlOntologyPath = args[3];
-        String outputPrefix = args[4];
+//        String careListPath = args[2];
+//        String yamlOntologyPath = args[3];
+        String outputPrefix = args[2];
 
         Mappings labeledMappings = Mappings.deserialize(new File(labelledMappingsPath), true);
-        BBNInternalOntology.BBNInternalOntologyNode ontologyRoot = BBNInternalOntology.BBNInternalOntologyNode.fromInternalOntologyFile(new File(yamlOntologyPath));
-        Map<String, Mappings> partitionInBucket = partitioner(new File(careListPath), ontologyRoot, new Annotation.InMemoryAnnotationStorage(labeledMappings));
+//        BBNInternalOntology.BBNInternalOntologyNode ontologyRoot = BBNInternalOntology.BBNInternalOntologyNode.fromInternalOntologyFile(new File(yamlOntologyPath));
+//        Map<String, Mappings> partitionInBucket = partitioner(new File(careListPath), ontologyRoot, new Annotation.InMemoryAnnotationStorage(labeledMappings));
+        Map<String,Mappings> partitionInBucket = new HashMap<>();
+        partitionInBucket.put("AllInOne",labeledMappings);
         for (String modelName : partitionInBucket.keySet()) {
             Mappings labeledMappingInBucket = partitionInBucket.get(modelName);
             NLPLingoAnnotationObserver nlpLingoAnnotationObserver = new NLPLingoAnnotationObserver(outputPrefix + File.separator + modelName, true);

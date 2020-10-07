@@ -32,7 +32,7 @@ public class EntityTypeOrValueConstraint extends EntityTypeConstraint {
 
 	@Override
 	public boolean valid(InstanceIdentifier instanceId, Seed seed) {
-		return super.valid(instanceId, seed) || instanceId.isSlotMention(slot);
+        return super.valid(instanceId, seed) || instanceId.isSlotMention(slot) || instanceId.isSlotValueMention(slot);
 	}
 
 	@Override

@@ -5,14 +5,12 @@ import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.observations.label.LabelPattern;
 import com.bbn.akbc.neolearnit.serializers.ExternalAnnotationBuilder;
 import com.bbn.akbc.neolearnit.serializers.observations.NLPLingoAnnotation;
-import com.bbn.akbc.neolearnit.util.GeneralUtils;
 import com.bbn.bue.common.files.FileUtils;
 import com.bbn.bue.common.symbols.Symbol;
 import com.bbn.serif.theories.EventMention;
 import com.bbn.serif.theories.SentenceTheory;
 import com.bbn.serif.theories.Spanning;
 import com.google.common.base.Optional;
-import com.google.common.io.Files;
 
 import java.io.*;
 import java.nio.file.Paths;
@@ -56,8 +54,8 @@ public class NLPLingoAnnotationObserver extends ExternalAnnotationBuilder {
                 final SentenceTheory sentenceTheory = instanceIdentifierSentenceTheoryMap.get(instanceIdentifier);
                 final int sentStart = sentenceTheory.span().startCharOffset().asInt();
                 final int sentEnd = sentenceTheory.span().endCharOffset().asInt();
-                final EventMention eventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlotEntityType(0)).get();
-                final Optional<Spanning> slot1Spanning = InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlotEntityType(1));
+                final EventMention eventMention = (EventMention) InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot0Start(), instanceIdentifier.getSlot0End(), instanceIdentifier.getSlot0SpanningType()).get();
+                final Optional<Spanning> slot1Spanning = InstanceIdentifier.getSpanning(sentenceTheory, instanceIdentifier.getSlot1Start(), instanceIdentifier.getSlot1End(), instanceIdentifier.getSlot1SpanningType());
                 if (slot1Spanning.isPresent()) {
                     System.out.println("[WARNING] We're handling unary InstanceIdentifier, you happen to send binary one, which slot1 gets dropped.");
                 }

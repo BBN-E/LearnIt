@@ -3,10 +3,17 @@ package com.bbn.akbc.neolearnit.common.bilingual;
 import com.bbn.akbc.neolearnit.common.LearnItConfig;
 import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfo;
 import com.bbn.akbc.neolearnit.common.targets.Target;
+import com.bbn.bue.common.symbols.Symbol;
 import com.bbn.serif.io.SerifXMLLoader;
-import com.bbn.serif.theories.*;
-import com.bbn.serif.theories.Mention.Type;
+import com.bbn.serif.theories.DocTheory;
+import com.bbn.serif.theories.EventMention;
+import com.bbn.serif.theories.Mention;
+import com.bbn.serif.theories.SentenceTheory;
+import com.bbn.serif.theories.Spanning;
+import com.bbn.serif.theories.SynNode;
 import com.bbn.serif.theories.TokenSequence.Span;
+import com.bbn.serif.theories.ValueMention;
+
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Sets;
@@ -15,9 +22,19 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class BilingualDocTheory {
+
+	@Override
+	public String toString(){
+		return this.sourceDocLanguage+"\t"+this.sourceDoc.docid().asString()+"\t"+this.targetDocLanguage+"\t"+this.targetDoc.docid().asString();
+	}
 
 	private final String sourceDocLanguage;
 	private final DocTheory sourceDoc;
@@ -65,23 +82,75 @@ public class BilingualDocTheory {
 	}
 
 	public Optional<Spanning> tryAlignSpanning(final Spanning slot, final DocTheory alignedDoc, final SentenceTheory alignedSent) {
-		final Iterable<? extends Spanning> slotCandidates = getSpanningCandidates(slot);	// candidates (Mention or ValueMention) from target sentence
+		final Iterable<? extends Spanning> slotCandidates = LearnItConfig.optionalParamTrue("relax_spanning_candidates")? getSpanningCandidatesRelaxed(slot): getSpanningCandidates(slot);	// candidates (Mention or ValueMention) from target sentence
+
+		/*
+		System.out.println("====================");
+		System.out.println("target slot = [" + slot.span().text().utf16CodeUnits().toString() + "]");
+		for(final Spanning span : slotCandidates) {
+			if(span instanceof Mention) {
+				final Mention m = (Mention)span;
+				System.out.println("slotCandidate: " + this.sourceDoc.docid().asString() + " " + m.span().text().utf16CodeUnits().toString());
+			}
+		}
+		*/
 
 		Map<Span, Double> slotScoreCache = new HashMap<Span,Double>();
 
 		double bestScore = 0.0;
+		for(final Spanning s : slotCandidates) {
+			final double alignmentScore = scoreAlignment(slot, s, slotScoreCache, false);
+			if(alignmentScore == 0.0) {
+                        	continue;
+			}
+			if(alignmentScore > bestScore) {
+				bestScore = alignmentScore;
+			}
+		}
+
+		List<Spanning> bestCandidates = new ArrayList<Spanning>();
 		Spanning bestCandidate = null;
 		for(final Spanning s : slotCandidates) {
 			final double alignmentScore = scoreAlignment(slot, s, slotScoreCache, false);
-			if(alignmentScore >= LearnItConfig.getDouble("min_alignment_overlap")) {
-				if(alignmentScore > bestScore) {
-					bestScore = alignmentScore;
+			if((alignmentScore > 0) && (alignmentScore == bestScore)) {
+				if(alignmentScore >= LearnItConfig.getDouble("min_alignment_overlap")) {
 					bestCandidate = s;
+					bestCandidates.add(s);
 				}
 			}
 		}
 
+                String spanType = "";
+              	if(slot instanceof Mention) {
+                        spanType = "Mention";
+                } else if(slot instanceof ValueMention) {
+			spanType = "ValueMention";
+                } else if(slot instanceof EventMention) {
+			spanType = "EventMention";
+                } else if(slot instanceof SynNode) {
+			spanType = "SynNode";
+                }
+
+		/*
+		if(bestCandidate == null) {
+			System.out.println("cannot find alignment for " + spanType + " " + this.sourceDoc.docid().asString() + " [" + slot.span().text().utf16CodeUnits().toString() + "] alignmentScore=" + bestScore + " threshold=" + LearnItConfig.getDouble("min_alignment_overlap"));
+		} else {
+			final StringBuffer s = new StringBuffer("");
+			for(final Spanning cand : bestCandidates) {
+				s.append(" ____ " + cand.span().text().utf16CodeUnits().toString() + " ");
+			}
+			System.out.println("Found alignment for " + spanType + "\t" + this.sourceDoc.docid().asString() + "\t[" + slot.span().text().utf16CodeUnits().toString() + "]\talignmentScore=" + bestScore + "\tthreshold=" + LearnItConfig.getDouble("min_alignment_overlap") + " aligned to\t" + s.toString());
+                }
+		System.out.println("====================");
+		*/
+
 		return Optional.fromNullable(bestCandidate);
+	}
+
+	public static BilingualDocTheory fromTabularPathLists(String docId, Map<String, String> pathEntries) throws IOException {
+		String lang1 = LearnItConfig.getList("languages").get(0);
+		String lang2 = LearnItConfig.getList("languages").get(1);
+		return fromPaths(lang1, pathEntries.get(lang1), lang2, pathEntries.get(lang2), pathEntries.get("alignment"));
 	}
 
 	// Given slot0 & slot1 from source sentence (each MUST BE either Mention or ValueMention):
@@ -92,8 +161,8 @@ public class BilingualDocTheory {
 	// slot0, slot1 will be Mention or ValueMention from source sentence
 	public Optional<SpanningPair> tryAlignSpanningPair(Spanning slot0, Spanning slot1,
 			DocTheory alignedDoc, SentenceTheory alignedSent, Target target) {
-		Iterable<? extends Spanning> slot0Candidates = getSpanningCandidates(slot0);	// candidates (Mention or ValueMention) from target sentence
-		Iterable<? extends Spanning> slot1Candidates = getSpanningCandidates(slot1);	// candidates (Mention or ValueMention) from target sentence
+		Iterable<? extends Spanning> slot0Candidates = LearnItConfig.optionalParamTrue("relax_spanning_candidates")? getSpanningCandidatesRelaxed(slot0): getSpanningCandidates(slot0);	// candidates (Mention or ValueMention) from target sentence
+		Iterable<? extends Spanning> slot1Candidates = LearnItConfig.optionalParamTrue("relax_spanning_candidates")? getSpanningCandidatesRelaxed(slot1): getSpanningCandidates(slot1);	// candidates (Mention or ValueMention) from target sentence
 
 		Map<Span, Double> slot0ScoreCache = new HashMap<Span,Double>();
 		Map<Span, Double> slot1ScoreCache = new HashMap<Span,Double>();
@@ -127,7 +196,7 @@ public class BilingualDocTheory {
 			Mention sourceM = (Mention)source;
 			for (Mention m : targetDoc.sentenceTheory(source.span().sentenceIndex()).mentions()) {
 				if (m.entityType().equals(sourceM.entityType()) && m.mentionType().equals(sourceM.mentionType())) {
-					if (m.mentionType().equals(Type.NAME) || !(m.child().isPresent())) { // check that it's atomic
+					if (m.mentionType().equals(Mention.Type.NAME) || !(m.child().isPresent())) { // check that it's atomic
 						results.add(m);
 					}
 				}
@@ -142,6 +211,68 @@ public class BilingualDocTheory {
 				}
 			}
 			return results;
+		} else if (source instanceof EventMention) {
+			List<EventMention> results = new ArrayList<EventMention>();
+			EventMention sourceM = (EventMention)source;
+			for (EventMention m : targetDoc.sentenceTheory(source.span().sentenceIndex()).eventMentions()) {
+				Set<Symbol> eventTypes1 = new HashSet<Symbol>();
+				Set<Symbol> eventTypes2 = new HashSet<Symbol>();
+				for(EventMention.EventType eventType : sourceM.eventTypes())
+					eventTypes1.add(eventType.eventType());
+				for(EventMention.EventType eventType : m.eventTypes())
+					eventTypes2.add(eventType.eventType());
+
+				if (eventTypes1.equals(eventTypes2)) {
+					results.add(m);
+				}
+			}
+			return results;
+		} else if (source instanceof SynNode) {
+			SynNode srcSynNode = (SynNode) source;
+			GetAllSynNode synNodeGetter = new GetAllSynNode();
+			targetDoc.sentenceTheory(srcSynNode.span().sentenceIndex()).parse().preorderTraversal(synNodeGetter);
+			return new ArrayList<>(synNodeGetter.getAllNode());
+		} else {
+			throw new RuntimeException("Invalid spanning type "+source);
+		}
+	}
+
+	protected Iterable<? extends Spanning> getSpanningCandidatesRelaxed(Spanning source) {
+		if (source instanceof Mention) {		// relaxed vs getSpanningCandidates
+			List<Mention> results = new ArrayList<Mention>();
+			Mention sourceM = (Mention)source;
+			for (Mention m : targetDoc.sentenceTheory(source.span().sentenceIndex()).mentions()) {
+				results.add(m);
+			}
+			return results;
+		} else if (source instanceof ValueMention) {	// relaxed vs getSpanningCandidates
+			List<ValueMention> results = new ArrayList<ValueMention>();
+			ValueMention sourceVM = (ValueMention)source;
+			for (ValueMention vm : targetDoc.sentenceTheory(source.span().sentenceIndex()).valueMentions()) {
+				results.add(vm);
+			}
+			return results;
+		} else if (source instanceof EventMention) {	// no change vs getSpanningCandidates
+			List<EventMention> results = new ArrayList<EventMention>();
+			EventMention sourceM = (EventMention)source;
+			for (EventMention m : targetDoc.sentenceTheory(source.span().sentenceIndex()).eventMentions()) {
+				Set<Symbol> eventTypes1 = new HashSet<Symbol>();
+				Set<Symbol> eventTypes2 = new HashSet<Symbol>();
+				for(EventMention.EventType eventType : sourceM.eventTypes())
+					eventTypes1.add(eventType.eventType());
+				for(EventMention.EventType eventType : m.eventTypes())
+					eventTypes2.add(eventType.eventType());
+
+				if (eventTypes1.equals(eventTypes2)) {
+					results.add(m);
+				}
+			}
+			return results;
+		} else if (source instanceof SynNode) {		// no change vs getSpanningCandidates
+			SynNode srcSynNode = (SynNode) source;
+			GetAllSynNode synNodeGetter = new GetAllSynNode();
+			targetDoc.sentenceTheory(srcSynNode.span().sentenceIndex()).parse().preorderTraversal(synNodeGetter);
+			return new ArrayList<>(synNodeGetter.getAllNode());
 		} else {
 			throw new RuntimeException("Invalid spanning type "+source);
 		}
@@ -278,10 +409,10 @@ public class BilingualDocTheory {
 
 	public static BilingualDocTheory fromPaths(String sourceLang, String sourcePath, String targetLang, String targetPath, String alignmentPath) throws IOException {
 		Builder builder = new Builder(sourceLang,targetLang);
-		System.out.println("Loading "+sourcePath);
+//		System.out.println("Loading "+sourcePath);
 		DocTheory sourceDoc = SerifXMLLoader.fromStandardACETypes().loadFrom(new File(sourcePath));
 		builder.setSourceDoc(sourceDoc);
-		System.out.println("Loading "+targetPath);
+//		System.out.println("Loading "+targetPath);
 		DocTheory targetDoc = SerifXMLLoader.fromStandardACETypes().loadFrom(new File(targetPath));
 		builder.setTargetDoc(targetDoc);
 
@@ -289,9 +420,27 @@ public class BilingualDocTheory {
 		String line;
 		int sent = 0;
 		while ((line = br.readLine()) != null) {
+
 			for (String alignment : line.trim().split(" ")) {
+
 				String[] pieces = alignment.split(":");
-				builder.withAddedAlignment(sent, Integer.parseInt(pieces[0]), Integer.parseInt(pieces[1]));
+				if(pieces.length == 2){
+					if(LearnItConfig.optionalParamTrue("should_reverse_alignment_table")){
+						builder.withAddedAlignment(sent, Integer.parseInt(pieces[1]), Integer.parseInt(pieces[0]));
+					}
+					else{
+						builder.withAddedAlignment(sent, Integer.parseInt(pieces[0]), Integer.parseInt(pieces[1]));
+					}
+				}
+				else{
+					try{
+						throw new RuntimeException("Unparseable alignment file " + alignmentPath);
+					}
+					catch (Exception e){
+						System.err.println("Exception: Unparseable alignment file "+alignmentPath+" .Ignore until MT have a fix");
+					}
+				}
+
 			}
 			sent++;
 		}
@@ -323,7 +472,25 @@ public class BilingualDocTheory {
 		//english /nfs/mercury-04/u41/ChineseGigawordV5/data/serifxml/english/AFP_CMN/200411/AFP-CMN-20041104.0020.xml.xml chinese /nfs/mercury-04/u41/ChineseGigawordV5/data/serifxml/chinese/AFP_CMN/200411/AFP-CMN-20041104.0020.xml.xml /nfs/mercury-04/u41/ChineseGigawordV5/data/alignments/english/AFP_CMN/200411/AFP-CMN-20041104.0020.xml.alignment
 		String[] parts = input.trim().split(" ");
 		return fromPaths(parts[2],parts[3],parts[0],parts[1],parts[4]);
+//		return fromPaths(parts[0],parts[1],parts[2],parts[3],parts[4]);
 	}
 
+	public static class GetAllSynNode implements SynNode.PreorderVisitor {
+		final Set<SynNode> buf;
+
+		public GetAllSynNode() {
+			buf = new HashSet<>();
+		}
+
+		@Override
+		public boolean visitChildren(SynNode synNode) {
+			buf.add(synNode);
+			return true;
+		}
+
+		public Set<SynNode> getAllNode() {
+			return buf;
+		}
+	}
 
 }

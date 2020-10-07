@@ -1,0 +1,12 @@
+# Template file for learnit params
+
+learnit_root:/home/hqiu/ld100/learnit
+source_lists: /nfs/raid88/u10/users/hqiu/learnit_data/learnit_bi_dev.010719/source_lists
+max_prop_depth:0
+max_regexp_pattern_words:0
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+loader_concurrency:5
+learnit_expt_suffix:default
+bilingual: true
+languages: english,arabic
+min_alignment_overlap: 0.5

@@ -118,7 +118,8 @@ public class MatchInfo {
 	// sent : source sentence
 	public static MatchInfo from(final Target target, final BilingualDocTheory bidoc, final SentenceTheory sent, final Spanning slot0) {
 		final LanguageMatchInfo sourceLMI = new LanguageMatchInfo(bidoc.getSourceDocLanguage(), bidoc.getSourceDoc(), sent,
-				slot0, sent.parse().root().get());
+				slot0);
+//				slot0, sent.parse().root().get());
 
 		final DocTheory alignedDoc = bidoc.getTargetDoc();										// get target document
 		final SentenceTheory alignedSent = bidoc.getTargetDoc().sentenceTheory(sent.index());	// get target sentence
@@ -129,7 +130,8 @@ public class MatchInfo {
         LanguageMatchInfo targetLMI;
 
 		if (alignedSlot.isPresent()) {
-			targetLMI = new LanguageMatchInfo(bidoc.getTargetDocLanguage(), alignedDoc, alignedSent, alignedSlot.get(), alignedSent.parse().root().get());
+			targetLMI = new LanguageMatchInfo(bidoc.getTargetDocLanguage(), alignedDoc, alignedSent, alignedSlot.get());
+			// , alignedSent.parse().root().get());
 		} else {
             targetLMI = new LanguageMatchInfo(bidoc.getTargetDocLanguage(), alignedDoc, alignedSent);
 		}
@@ -303,7 +305,7 @@ public class MatchInfo {
 					docTheory.docid().toString() + ", Sentence: " +
 					sentTheory.index() + "\n");
 			for (Token t : sentTheory.tokenSequence()) {
-				// if (slot0.isPresent()) {
+				if (slot0.isPresent()) {
 					if (t.index() == slot0.get().span().startToken().index()) {
 						builder.append("<SLOT0>");
 					}
@@ -313,9 +315,9 @@ public class MatchInfo {
 							builder.append("<SLOT1>");
 						}
 					}
-				// }
+				}
 				builder.append(t.text());
-				// if (slot0.isPresent()) {
+				if (slot0.isPresent()) {
 					if(slot1.isPresent()) {
 						if (t.index() == slot1.get().span().endToken()
 								.index()) {
@@ -325,7 +327,7 @@ public class MatchInfo {
 					if (t.index() == slot0.get().span().endToken().index()) {
 						builder.append("</SLOT0>");
 					}
-				// }
+				}
 				builder.append(" ");
 			}
 			builder.append("\n");

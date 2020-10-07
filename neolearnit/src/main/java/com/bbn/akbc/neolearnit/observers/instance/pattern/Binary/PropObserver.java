@@ -1,5 +1,6 @@
 package com.bbn.akbc.neolearnit.observers.instance.pattern.Binary;
 
+import com.bbn.akbc.neolearnit.common.InstanceIdentifier;
 import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfo;
 import com.bbn.akbc.neolearnit.common.matchinfo.MatchInfo.LanguageMatchInfo;
 import com.bbn.akbc.neolearnit.mappings.impl.InstanceToPatternMapping;
@@ -8,10 +9,14 @@ import com.bbn.akbc.neolearnit.observations.pattern.PropPattern.PropArgObservati
 import com.bbn.akbc.neolearnit.observers.instance.pattern.MonolingualPatternObserver;
 import com.bbn.bue.common.collections.PowerSetIterable;
 import com.bbn.bue.common.symbols.Symbol;
-import com.bbn.serif.theories.*;
+import com.bbn.serif.theories.Mention;
+import com.bbn.serif.theories.Proposition;
 import com.bbn.serif.theories.Proposition.Argument;
 import com.bbn.serif.theories.Proposition.MentionArgument;
 import com.bbn.serif.theories.Proposition.PropositionArgument;
+import com.bbn.serif.theories.SentenceTheory;
+import com.bbn.serif.theories.SynNode;
+import com.bbn.serif.types.EntityType;
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableSet;
 import com.google.inject.BindingAnnotation;
@@ -19,11 +24,7 @@ import com.google.inject.Inject;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
@@ -35,6 +36,7 @@ public class PropObserver extends MonolingualPatternObserver {
 	@BindingAnnotation @Target({ PARAMETER }) @Retention(RUNTIME)
 	public @interface PropDepth {}
 
+    static Set<EntityType> shouldNotCareEntityTypes = new HashSet<>(Arrays.asList(EntityType.undetermined(), EntityType.of("OTH")));
 	@Inject
 	public PropObserver(InstanceToPatternMapping.Builder recorder, String language, @PropDepth int maxDepth) {
 		super(recorder, language);
@@ -45,33 +47,35 @@ public class PropObserver extends MonolingualPatternObserver {
 	public void observe(MatchInfo parent, LanguageMatchInfo match) {
 
 
-		Optional<SynNode> s0Op = getNode(match.getSlot0().get(), match.getDocTheory());
-		Optional<SynNode> s1Op = getNode(match.getSlot1().get(), match.getDocTheory());
+		List<SynNode> s0list = InstanceIdentifier.getNode(match.getSlot0().get(), match.getDocTheory());
+		List<SynNode> s1list = InstanceIdentifier.getNode(match.getSlot1().get(), match.getDocTheory());
 
-		if (s0Op.isPresent() && s1Op.isPresent()) {
-			SynNode s0 = s0Op.get();
-			SynNode s1 = s1Op.get();
-//			boolean isEventPairInstance = match.getSlot0().isPresent()&&match.getSlot1().isPresent()&&match.getSlot0().get() instanceof EventMention && match.getSlot1().get() instanceof EventMention;
-			//Hard-coding the following to true
-			//It may be a good idea to always treat Entities and Events the same way
-			boolean isEventPairInstance = true;
-			List<PropPattern> props = new ArrayList<PropPattern>(); // stores all instantiated PropPattern
-			for (Proposition topProp : match.getSentTheory().propositions()) {
-				collectPropObservations(topProp,s0,s1,props,match.getSentTheory(), new HashSet<Proposition>());
+		// if (s0Op.isPresent() && s1Op.isPresent()) {
+		for(SynNode s0 : s0list) {
+			for (SynNode s1: s1list) {
 
-			}
+	//			boolean isEventPairInstance = match.getSlot0().isPresent()&&match.getSlot1().isPresent()&&match.getSlot0().get() instanceof EventMention && match.getSlot1().get() instanceof EventMention;
+				//Hard-coding the following to true
+				//It may be a good idea to always treat Entities and Events the same way
+				boolean isEventPairInstance = true;
+				List<PropPattern> props = new ArrayList<PropPattern>(); // stores all instantiated PropPattern
+				for (Proposition topProp : match.getSentTheory().propositions()) {
+					collectPropObservations(topProp, s0, s1, props, match.getSentTheory(), new HashSet<Proposition>());
 
-			Set<PropPattern> unique = new HashSet<PropPattern>();
-			for (PropPattern pobs : props) {
-				int numNestedSlotsInMainPattern = pobs.getNestedSlots().size();
-				int numArgsInMainPattern = pobs.args().size();
-				for (PropPattern variant : pobs.split()) {
-					if (!unique.contains(variant) &&
-						(variant.depth() <= maxDepth)) {
-						if (variant.hasAtLeastTwoUniqueSlots() ||
-								(variant.getNestedSlots().size() == numNestedSlotsInMainPattern && variant.args().size()==numArgsInMainPattern && isEventPairInstance)) {
-							this.record(parent, variant);
-							unique.add(variant);
+				}
+
+				Set<PropPattern> unique = new HashSet<PropPattern>();
+				for (PropPattern pobs : props) {
+					int numNestedSlotsInMainPattern = pobs.getNestedSlots().size();
+					int numArgsInMainPattern = pobs.args().size();
+					for (PropPattern variant : pobs.split()) {
+						if (!unique.contains(variant) &&
+								(variant.depth() <= maxDepth)) {
+							if (variant.hasAtLeastTwoUniqueSlots() ||
+									(variant.getNestedSlots().size() == numNestedSlotsInMainPattern && variant.args().size() == numArgsInMainPattern && isEventPairInstance)) {
+								this.record(parent, variant);
+								unique.add(variant);
+							}
 						}
 					}
 				}
@@ -103,8 +107,10 @@ public class PropObserver extends MonolingualPatternObserver {
 
         for (Iterable<PropArgObservation> args : argArrangementsBuilder.build()) {	// for each combination
             PropPattern.Builder propBuilder = new PropPattern.Builder(language, p.predType());
-            if (p.predSymbol().isPresent())
+            if (p.predSymbol().isPresent()) {
                 propBuilder.withPredicate(p.predSymbol().get());
+            }
+
             for (PropArgObservation arg : args)
                 propBuilder.withArg(arg);
             PropPattern prop = propBuilder.build();
@@ -123,6 +129,57 @@ public class PropObserver extends MonolingualPatternObserver {
 				}
 			}
             propsBuilder.add(prop);
+
+			if (p.predHead().isPresent() && p.predHead().get().span().equals(s1.span())) {
+				propBuilder = new PropPattern.Builder(language, p.predType());
+				if (p.predSymbol().isPresent()) {
+					propBuilder.withPredicate(Symbol.from("[0]"));
+				}
+
+				for (PropArgObservation arg : args)
+					propBuilder.withArg(arg);
+				prop = propBuilder.build();
+				if (prop.hasAtLeastTwoUniqueSlots()) {
+					props.add(prop);
+//	    }//TODO: check if we want atLeastTwoUnique for exactlyTwoUnique for this conditional statement
+//            if (prop.hasExactlyTwoUniqueSlots()) {
+//                props.add(prop);
+				} else if (prop.getNestedSlots().size() == 1 && prop.args().size() == 1) {
+					//if s0 and s1 are anchorNodes of EventMentions, if one of the synNodes is an argument, the other one should be the predicate of the parent proposition
+					int slotNo = prop.getNestedSlots().get(0);
+					int slotNoOther = slotNo == 0 ? 1 : 0;
+					if (prop.predicates().contains(Symbol.from("[" + slotNoOther + "]"))) {
+						props.add(prop);
+					}
+				}
+				propsBuilder.add(prop);
+			}
+
+			if (p.predHead().isPresent() && p.predHead().get().span().equals(s2.span())) {
+				propBuilder = new PropPattern.Builder(language, p.predType());
+				if (p.predSymbol().isPresent()) {
+					propBuilder.withPredicate(Symbol.from("[1]"));
+				}
+
+				for (PropArgObservation arg : args)
+					propBuilder.withArg(arg);
+				prop = propBuilder.build();
+				if (prop.hasAtLeastTwoUniqueSlots()) {
+					props.add(prop);
+//	    }//TODO: check if we want atLeastTwoUnique for exactlyTwoUnique for this conditional statement
+//            if (prop.hasExactlyTwoUniqueSlots()) {
+//                props.add(prop);
+				} else if (prop.getNestedSlots().size() == 1 && prop.args().size() == 1) {
+					//if s0 and s1 are anchorNodes of EventMentions, if one of the synNodes is an argument, the other one should be the predicate of the parent proposition
+					int slotNo = prop.getNestedSlots().get(0);
+					int slotNoOther = slotNo == 0 ? 1 : 0;
+					if (prop.predicates().contains(Symbol.from("[" + slotNoOther + "]"))) {
+						props.add(prop);
+					}
+				}
+				propsBuilder.add(prop);
+			}
+
         }
 
 		return propsBuilder.build();
@@ -142,9 +199,13 @@ public class PropObserver extends MonolingualPatternObserver {
             while (mention != null) {
                 if (mention.equals(s0)) {
                     argsBuilder.add(new PropArgObservation(role, 0));
+                    if (!shouldNotCareEntityTypes.contains(ma.mention().entityType()))
+                        argsBuilder.add(new PropArgObservation(Symbol.from(role + " " + ma.mention().entityType().name().asString()), 0));
                 }
                 else if (mention.equals(s1)) {
                     argsBuilder.add(new PropArgObservation(role, 1));
+                    if (!shouldNotCareEntityTypes.contains(ma.mention().entityType()))
+                        argsBuilder.add(new PropArgObservation(Symbol.from(role + " " + ma.mention().entityType().name().asString()), 1));
                 }
                 mention = mention.head().equals(mention) ? null : mention.head();
             }
@@ -246,18 +307,4 @@ public class PropObserver extends MonolingualPatternObserver {
 		return ret.build();
 	}
 
-	// the input 'span' must be either a Mention, ValueMention, or SynNode
-	public static Optional<SynNode> getNode(Spanning span, DocTheory dt) {
-		if (span instanceof Mention) {
-			return Optional.of(((Mention)span).node());
-		} else if (span instanceof ValueMention) {
-			return ValueMention.node(dt, ((ValueMention)span));
-		} else if (span instanceof SynNode) {
-			return Optional.of(((SynNode) span));
-		} else if (span instanceof EventMention) {
-			return Optional.of(((EventMention) span).anchorNode());
-		} else {
-			throw new RuntimeException("Unhandled span type: "+span);
-		}
-	}
 }

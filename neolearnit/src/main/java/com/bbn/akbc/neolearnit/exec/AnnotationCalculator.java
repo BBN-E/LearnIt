@@ -63,8 +63,8 @@ public class AnnotationCalculator {
 //        String mappingsPath = args[1];
 //        Mappings mappings = Mappings.deserialize(new File(mappingsPath), true);
 //        Map<String, TargetAndScoreTables> latestExtractors = GeneralUtils.loadLatestExtractors();
-        final String instanceIdentifierAnnotationFilePathNormal = String.format("%s/inputs/relation_annotation_by_learnit_ui/%s.sjson", LearnItConfig.get("learnit_root"), LearnItConfig.get("corpus_name"));
-        final String instanceIdentifierAnnotationFilePathOther = String.format("%s/inputs/relation_annotation_by_learnit_ui/%s_other.sjson", LearnItConfig.get("learnit_root"), LearnItConfig.get("corpus_name"));
+        final String instanceIdentifierAnnotationFilePathNormal = String.format("%s.sjson", LearnItConfig.get("human_label_mappings_prefix"));
+        final String instanceIdentifierAnnotationFilePathOther = String.format("%s_other.sjson", LearnItConfig.get("human_label_mappings_prefix"));
         final Annotation.InMemoryAnnotationStorage inMemoryAnnotationStorageNormal = new Annotation.InMemoryAnnotationStorage(Mappings.deserialize(new File(instanceIdentifierAnnotationFilePathNormal), true));
         final Annotation.InMemoryAnnotationStorage inMemoryAnnotationStorageOther = new Annotation.InMemoryAnnotationStorage(Mappings.deserialize(new File(instanceIdentifierAnnotationFilePathOther), true));
         Map<String, Map<InstanceIdentifier, Annotation.FrozenState>> staticMap = new HashMap<>();

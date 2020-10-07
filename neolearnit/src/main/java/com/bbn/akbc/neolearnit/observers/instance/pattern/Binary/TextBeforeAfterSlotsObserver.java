@@ -10,6 +10,8 @@ import com.bbn.akbc.neolearnit.mappings.impl.InstanceToPatternMapping;
 import com.bbn.akbc.neolearnit.observations.pattern.BeforeAfterSlotsPattern;
 import com.bbn.akbc.neolearnit.observations.pattern.RegexableContent;
 import com.bbn.akbc.neolearnit.observations.pattern.SymbolContent;
+import com.bbn.serif.theories.EventMention;
+import com.bbn.serif.theories.Mention;
 import com.bbn.serif.theories.SentenceTheory;
 import com.bbn.serif.theories.Spanning;
 import com.google.inject.BindingAnnotation;
@@ -43,10 +45,22 @@ public class TextBeforeAfterSlotsObserver extends MonolingualPatternObserver {
 	}
 
 	public int getStartTokenIndex(Spanning spanning) {
+		if (spanning instanceof EventMention) {
+			EventMention eventMention = ((EventMention) spanning);
+			if (eventMention.semanticPhraseStart().isPresent())
+				return eventMention.semanticPhraseStart().get();
+		}
+
 		return spanning.span().startToken().index();
 	}
 
 	public int getEndTokenIndex(Spanning spanning) {
+		if (spanning instanceof EventMention) {
+			EventMention eventMention = ((EventMention) spanning);
+			if(eventMention.semanticPhraseEnd().isPresent())
+				return eventMention.semanticPhraseEnd().get()+1; // TODO: check whether this index is inclusive
+		}
+
 		return spanning.span().endToken().index()+1;
 	}
 

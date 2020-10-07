@@ -58,6 +58,15 @@ public class BilingualDocTheoryInstanceLoader extends AbstractInstanceLoader<Bil
         for (final SentenceTheory sourceSt : sourceDoc.sentenceTheories()) {
             // TODO : this needs to be better handled, perhaps by adding a boolean variable to Target
 
+            for (final Spanning slot : sourceSt.eventMentions()) {
+                MatchInfo match = MatchInfo.from(target, bidoc, sourceSt, slot);
+                if (target.validMatch(match, this.isEvaluating())) {
+                    this.handleUnaryMatch(match);
+                }
+            }
+
+
+            /*
             for (final Spanning slot : sourceSt.mentions()) {
                 MatchInfo match = MatchInfo.from(target, bidoc, sourceSt, slot);
                 if (target.validMatch(match, this.isEvaluating())) {
@@ -81,6 +90,8 @@ public class BilingualDocTheoryInstanceLoader extends AbstractInstanceLoader<Bil
                 }
 
             }
+            */
+
         }
 
     }

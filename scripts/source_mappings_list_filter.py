@@ -1,4 +1,5 @@
-import os,sys
+import os
+import sys
 
 
 def main(source_mapping_list_dir):
@@ -8,7 +9,7 @@ def main(source_mapping_list_dir):
             with open(os.path.join(root,file),'r') as fp:
                 for i in fp:
                     i = i.strip()
-                    if "mappings.master.sjson" in i or ".before_filter" in i:
+                    if "mappings.master.sjson" in i:
                         continue
                     buffer.append(i)
             with open(os.path.join(root,file),'w') as fp:

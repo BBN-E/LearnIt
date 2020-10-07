@@ -1,0 +1,27 @@
+# Template file for learnit params
+INCLUDE ../user.params
+
+linux_queue: nongale-sl6
+queue_priority: 5
+loader_concurrency: 5
+languages:English
+learnit_expt_suffix:default
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 2
+max_unary_prop_depth:1
+max_binary_prop_depth:2
+max_prop_depth:2
+max_regexp_pattern_words:5
+stopwords:%learnit_root%/inputs/resources/stopwords/english_causal_relationships.txt
+aggregated_frequency_filter_pattern_max: -1
+aggregated_frequency_filter_pattern_min: 5
+
+
+use_human_label: false
+
+corpus_name: wm_dart.082020
+bootstrap_serifxml_list:/nfs/raid88/u10/users/hqiu/serifxml_lists/wm_demo_all.list
+
+learnit_data_root: /nfs/raid88/u10/users/hqiu/learnit_data/%corpus_name%
+domain_root: %learnit_root%/inputs/domains/WM
+bert_npz_list: /home/hqiu/ld100/Hume_pipeline_int/Hume/expts/wm_dart_bert.060520/bert/bert_npz.list

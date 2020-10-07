@@ -1,0 +1,63 @@
+# Template file for learnit params
+INCLUDE ../user.params
+
+# learnit_root:/home/hqiu/ld100/learnit
+learnit_data_dir: /nfs/raid88/u10/data/learnit/ChineseGigawordV5sample/data
+source_lists: %learnit_data_dir%/source_lists/bidoc_source_lists
+corpus_dir: %source_lists%
+corpus_name: bilingual_chinese_gigaword_sample.v1
+
+path_conversions: %learnit_root%/params/learnit/domains/bilingual_chinese_gigaword/path_conversions.txt
+alignment_path_conversions: %learnit_root%/params/learnit/domains/bilingual_chinese_gigaword/alignment_path_conversions.txt
+source_dir: /nfs/mercury-04/u41/ChineseGigawordV5/data/serifxml/+language+
+
+# A file containing a list of stopwords.  These are used to rule out
+# search queries and patterns that would overgenerate.
+stopwords: %learnit_root%/inputs/resources/stopwords/chinese_gigaword_df.txt
+
+bilingual: true
+languages: chinese,english
+alignments_dir: /nfs/mercury-07/u36/copied_from_mercury-04/u41/ChineseGigawordV5/data/alignments
+min_alignment_overlap: 0.5
+language_variants: English:source:english, Chinese:source:chinese
+variant_alignments: Chinese:source=English:source english
+
+max_prop_depth:3
+max_regexp_pattern_words:3
+loader_concurrency:5
+learnit_expt_suffix:default
+min_seed_frequency_per_batch: 1
+min_pattern_frequency_per_batch: 1
+
+mappings_dir: %learnit_data_dir%/source_mappings
+mappings_lists_dir: %learnit_data_dir%/source_mappings_lists
+linux_queue: nongale-sl6
+mappings_list_batches: 1
+
+
+## similarity related params
+# follwing embeddings files are word-embeddings files
+#embeddings_file_for_seeds: /nfs/raid87/u15/learnit_similarity_data/glove_6B_50d_embeddings/glove.6B.50d.p
+#embeddings_file_for_patterns: /nfs/raid87/u15/learnit_similarity_data/glove_6B_50d_embeddings/glove.6B.50d.p
+# following embeddings files are learned using TransE model on gigaword event-event pairs
+embeddings_file_for_seeds: /nfs/raid87/u12/hqiu/runjob/expts/RNN_TransE_sequence/output/learnit_textgraph/75d_emb_adagrad/ents_phr_embs.p
+embeddings_file_for_patterns: /nfs/raid87/u12/hqiu/runjob/expts/RNN_TransE_sequence/output/learnit_textgraph/75d_emb_adagrad/rels_phr_embs.p
+embeddings_file_glove: /nfs/raid88/u10/users/hqiu/archive/glove.6B.50d.p
+# directory where similarity output is written or read from
+similarity_data_dir: %learnit_data_dir%/learnit_similarity_data
+# directory where similarity output is written or read from
+seeds_dir: %similarity_data_dir%/seeds_from_mappings
+seeds_lists_dir: %similarity_data_dir%/seeds_lists
+patterns_dir: %similarity_data_dir%/patterns_from_mappings
+patterns_lists_dir: %similarity_data_dir%/patterns_lists
+seed_vectors_dir: %similarity_data_dir%/seed_vectors
+#seed_vector_lists_dir: %similarity_data_dir%/seed_vector_lists
+pattern_vectors_dir: %similarity_data_dir%/pattern_vectors
+#pattern_vector_lists_dir: %similarity_data_dir%/pattern_vector_lists
+seed_similarity_threshold: 0.1
+pattern_similarity_threshold: 0.1
+seed_similarity_dir: %similarity_data_dir%/seed_similarity_dir
+seed_similarity_lists_dir: %similarity_data_dir%/seed_similarity_lists_dir
+pattern_similarity_dir: %similarity_data_dir%/pattern_similarity_dir
+pattern_similarity_lists_dir: %similarity_data_dir%/pattern_similarity_lists_dir
+##

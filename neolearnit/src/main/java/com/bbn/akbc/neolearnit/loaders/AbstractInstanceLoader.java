@@ -10,8 +10,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public abstract class AbstractInstanceLoader<T> implements Loader<T> {
 
-	private final InstanceObservers binaryObservers;
-	private final InstanceObservers unaryObservers;
+	protected final InstanceObservers binaryObservers;
+	protected final InstanceObservers unaryObservers;
 	protected final boolean evaluating;
 	protected final Map<String,DocTheory> docTheoryCache;
 
