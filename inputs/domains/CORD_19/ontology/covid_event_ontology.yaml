@@ -1,0 +1,365 @@
+---
+- Event:
+  - _source:
+    - "BBN: #event"
+  - _description: null
+  - _examples: []
+  - _alternative_id: null
+  - HealthOrMedical:
+    - _source: []
+    - _description: "a condition or event involving or directly affecting the bodily or mental health of a person or population"
+    - _examples: []
+    - _alternative_id: null
+    - Pathogen:
+      - _source: []
+      - _description: "[the presence of] a bacterium, virus, or other microorganism that can cause disease"
+      - _examples: []
+      - _alternative_id: null
+      - Virus:
+        - _source: []
+        - _description: "[the presence of] a virus in a human; its manifestation as a disease"
+        - _examples: []
+        - _alternative_id: null
+        - Coronavirus:
+          - _source: []
+          - _description: ""
+          - _examples: []
+          - _alternative_id: null
+          - _is_a: ["Virus", "Disease", "COVID-19"]
+        - Chikungunya:
+          - _source: []
+          - _description: ""
+          - _examples: []
+          - _alternative_id: null
+          - _is_a: ["Virus", "Disease"]
+        - Ebola:
+          - _source: []
+          - _description: ""
+          - _examples: []
+          - _alternative_id: null
+          - _is_a: ["Virus", "Disease"]
+      - Bacteria:
+        - _source: []
+        - _description: "[the presence of] bacteria, especially those that can cause disease"
+        - _examples: []
+        - _alternative_id: null
+    - Vaccination:
+      - _source: []
+      - _description: "treatment with a vaccine to produce immunity against a disease; inoculation"
+      - _examples: []
+      - _alternative_id: null
+    - Disease:
+      - _source: []
+      - _description: "deviation from the normal functioning of a [human] organism; sickness"
+      - _examples: []
+      - _alternative_id: null
+      - COVID-19:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+        - _is_a: ["Disease", "Virus", "Coronavirus"]
+    - Vaccine:
+      - _source: []
+      - _description: "[the production of] a substance used to stimulate the production of antibodies and provide immunity against one or several diseases"
+      - _examples: []
+      - _alternative_id: null
+    - MentalOrMood:
+      - _source: []
+      - _description: "the mental/psychological condition of a person or population"
+      - _examples: []
+      - _alternative_id: null
+    - Death:
+      - _source: []
+      - _description: "the event of [a person's] dying"
+      - _examples: []
+      - _alternative_id: null
+    - DiseaseSpread:
+      - _source: []
+      - _description: "the spread of a disease among a [human] population"
+      - _examples: []
+      - _alternative_id: null
+    - Infection:
+      - _source: []
+      - _description: "the event of becoming infected by a disease"
+      - _examples: []
+      - _alternative_id: null
+    - Transmission:
+      - _source: []
+      - _description: "the passing on of a disease from one organism or human to another"
+      - _examples: []
+      - _alternative_id: null
+    - DiseaseOutbreak:
+      - _source: []
+      - _description: "the occurrence of disease cases in excess of normal expectancy"
+      - _examples: []
+      - _alternative_id: null
+      - Pandemic:
+        - _source: []
+        - _description: "a disease outbreak prevalent over a whole country or the world"
+        - _examples: []
+        - _alternative_id: null
+        - _is_a: ["DiseaseOutbreak"]
+    - Risk:
+      - _source: []
+      - _description: "a situation involving exposure to danger [especially with regard to disease]"
+      - _examples: []
+      - _alternative_id: null
+    - Case:
+      - _source: []
+      - _description: "an instance of a human contracting disease"
+      - _examples: []
+      - _alternative_id: null
+    - Treatment:
+      - _source: []
+      - _description: "medical care or administration of a dose of medicine to a patient for an illness or injury"
+      - _examples: []
+      - _alternative_id: null
+    - Testing:
+      - _source: []
+      - _description: "medical procedure performed to detect, diagnose, or monitor diseases"
+      - _examples: []
+      - _alternative_id: null
+    - Symptom:
+      - _source: []
+      - _description: "a physical or mental feature which is regarded as indicating a condition of disease"
+      - _examples: []
+      - _alternative_id: null
+    - EndTreatment:
+      - _source: []
+      - _description: "cessation of [a period of] medical treatment"
+      - _examples: []
+      - _alternative_id: null
+  - Economy:
+    - _source: []
+    - _description: "temporary or permanent shutting down of a facility's operations"
+    - _examples: []
+    - _alternative_id: null
+    - Foreclosures:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+    - Closures:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - BusinessClosures:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+        - _is_a: ["Closures"]
+      - SchoolClosures:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+        - _is_a: ["Closures"]
+      - PublicPlaceClosures:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+        - _is_a: ["Closures"]
+      - BorderClosures:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+        - _is_a: ["Closures"]
+    - EconomicCrisis:
+      - _source: []
+      - _description: "a period of economic slowdown characterised by declining productivity and devaluing of financial institutions"
+      - _examples: []
+      - _alternative_id: null
+      - Inflation:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+    - EconomicGrowth:
+      - _source: []
+      - _description: "a period of economic expansion following a recession"
+      - _examples: []
+      - _alternative_id: null
+      - EconomicRecovery:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+    - Reopening:
+      - _source: []
+      - _description: "the reopening of a facility after being shut down for a period of time, especially due to the pandemic"
+      - _examples: []
+      - _alternative_id: null
+    - Employment:
+      - _source: []
+      - _description: "the availability of having paid work among a population"
+      - _examples: []
+      - _alternative_id: null
+    - Unemployment:
+      - _source: []
+      - _description: "the unavailability of paid work among a population; joblessness"
+      - _examples: []
+      - _alternative_id: null
+    - SupplyChainDisruption:
+      - _source: []
+      - _description: "a sudden change or crisis that negatively impacts the delivery of a product from a supplier to a customer"
+      - _examples: []
+      - _alternative_id: null
+    - EconomicRelief:
+      - _source: []
+      - _description: "monetary or other assistance given to those in financial need [especially with regard to the effects of the pandemic"
+      - _examples: []
+      - _alternative_id: null
+  - ContactTracing:
+    - _source: []
+    - _description: "the process of identification of persons who may have come into contact with an infected person"
+    - _examples: []
+    - _alternative_id: null
+  - Shortage:
+    - _source: []
+    - _description: "a state or situation in which an essential resource or service cannot be obtained in sufficient amounts"
+    - _examples: []
+    - _alternative_id: null
+    - ShortageOfPPE:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Shortage"]
+    - ShortageOfVentillators:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Shortage"]
+    - ShortageOfCovidTesting:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Shortage"]
+    - ShortageOfMedicalPersonnel:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Shortage"]
+    - ShortageOfMedicine:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Shortage"]
+    - ShortageOfFood:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Shortage"]
+  - Access:
+    - _source: []
+    - _description: "means of accessing a needed resource or utility"
+    - _examples: []
+    - _alternative_id: null
+    - AccessToHealthcare:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Access"]
+    - AccessToFood:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Access"]
+    - AccessToData:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - _is_a: ["Access"]
+  - PolicyInterventions:
+    - _source: []
+    - _description: "a course of action, programme or activity taken or mandated by national or international authorities and non-state actors [especially as to change the course of the pandemic]"
+    - _examples: []
+    - _alternative_id: null
+    - TravelRestrictions:
+      - _source: []
+      - _description: "restrictions on the freedom to travel imposed by a government on a population [especially those intended to reduce the spread of disease]"
+      - _examples: []
+      - _alternative_id: null
+    - Stay-at-homeOrder:
+      - _source: []
+      - _description: "order from a government authority for residents to stay home except for essential tasks or for work in essential businesses, intended to mitigate a pandemic"
+      - _examples: []
+      - _alternative_id: null
+    - PublicHealthMeasures:
+      - _source: []
+      - _description: "non-medical�interventions�used to reduce the spread of disease"
+      - _examples: []
+      - _alternative_id: null
+      - SocialDistancingMeasures:
+        - _source: []
+        - _description: ""
+        - _examples: []
+        - _alternative_id: null
+      - IsolationOrConfinement:
+        - _source: []
+        - _description: "a state or period of quarantining, especially of an individual potentially exposed to disease"
+        - _examples: []
+        - _alternative_id: null
+      - Lockdown:
+        - _source: []
+        - _description: "a community-wide state of isolation or restricted access instituted as a security measure [especially against disease]"
+        - _examples: []
+        - _alternative_id: null
+  - Social:
+    - _source: []
+    - _description: ""
+    - _examples: []
+    - _alternative_id: null
+    - PersonalBehaviors:
+      - _source: []
+      - _description: ""
+      - _examples: []
+      - _alternative_id: null
+      - MaskWearing:
+        - _source: []
+        - _description: "the practice of wearing masks or face coverings in public to reduce the transmission of infection"
+        - _examples: []
+        - _alternative_id: null
+      - SocialDistancing:
+        - _source: []
+        - _description: "the practice of maintaining a greater than usual physical distance from other people or of avoiding direct contact with people or objects in public places in order to minimize exposure and reduce the transmission of infection"
+        - _examples: []
+        - _alternative_id: null
+      - HandWashing:
+        - _source: []
+        - _description: "the practice of cleaning one's hands with soap and water to remove pathogens and other unwanted substances stuck to the hands"
+        - _examples: []
+        - _alternative_id: null
+    - Protest:
+      - _source: []
+      - _description: "a statement or action expressing disapproval of or objection to something"
+      - _examples: []
+      - _alternative_id: null
+    - Travel:
+      - _source: []
+      - _description: "movement of people from one place to another, typically over a distance of some length; the frequency of travel"
+      - _examples: []
+      - _alternative_id: null
+    - Eviction:
+      - _source: []
+      - _description: "the action of expelling someone, especially a tenant, from a property"
+      - _examples: []
+      - _alternative_id: null
+    - Conflict:
+      - _source: []
+      - _description: "a serious disagreement or argument"
+      - _examples: []
+      - _alternative_id: null
